@@ -1,0 +1,25 @@
+.hero_up_img{
+    border: 1px solid #fff;
+  }
+  
+.img_row_col {
+    animation: slideUp 20s linear infinite;
+  }
+  
+  @keyframes slideUp {
+    100% { 
+      transform: translateY(-200.6666%);  
+    }
+  }
+  .img_row_col2 {
+    animation: slideUp2 50s linear infinite;
+  }
+  
+  @keyframes slideUp2 {
+    0% {
+      transform: translateY(-500.6666%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
