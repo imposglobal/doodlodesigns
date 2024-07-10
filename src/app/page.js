@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Logo from "./Images/logo";
 import styles from "./page.module.css";
-import ImageRow from './Images/Imagerow';
+import ImageRow from './Images/ImageRow';
 
 
 const Home = () => {
