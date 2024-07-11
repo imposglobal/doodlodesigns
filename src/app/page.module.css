@@ -9,11 +9,16 @@
   width: 10%;
   padding: 50px;
 }
+
 .hero_up_img{
-  border: 1px solid #fff;
+ 
 }
 
 .img_row_col {
+  width: 12%;
+  animation: slideUp 30s linear infinite;
+}
+.img_row_col3 {
   width: 12%;
   animation: slideUp 30s linear infinite;
 }
@@ -60,6 +65,8 @@
 }
 
 .text_stroke_hover {
+  margin-top: -94px;
+  display: inline-block;
   position: relative;
   font-size: 55px;
   font-family: 'Poppins', sans-serif;

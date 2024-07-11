@@ -2,31 +2,36 @@ import Image from "next/image";
 import Logo from "./Images/logo";
 import styles from "./page.module.css";
 import ImageRow from './Images/ImageRow';
+import Menu from "./Component/Menu"
+import SmoothScroll from './Component/SmoothScroll';
+
 
 
 const Home = () => {
   const imagesRow1 = [
     "/home/row1img1.jpg",
+    "/home/row1img2.jpg",
+    "/home/row1img3.jpg",
+    "/home/row1img4.jpg",
     "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
+    "/home/row1img2.jpg",
+    "/home/row1img3.jpg",
+    "/home/row1img4.jpg",
   ];
 
   const imagesRow2 = [
-   "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
-    "/home/row1img1.jpg",
+    "/home/row2img1.jpg",
+    "/home/row2img2.jpg",
+    "/home/row2img3.jpg",
+    "/home/row2img4.jpg",
+    "/home/row2img1.jpg",
+    "/home/row2img2.jpg",
+    "/home/row2img3.jpg",
+    "/home/row2img4.jpg",
+    "/home/row2img1.jpg",
+    "/home/row2img2.jpg",
+    "/home/row2img3.jpg",
+    "/home/row2img4.jpg",
   ];
 
   const imagesRow3 = [
@@ -41,11 +46,12 @@ const Home = () => {
    ];
 
   return (
-    <section className={styles.home_bg}>
+    <section>
+    <div className={styles.home_bg}>
       <div className={styles.logo_col}>
         <Logo />
       </div>
-
+      
       {/* First row of images */}
       <div className={styles.img_row_col}>
       <ImageRow images={imagesRow1} />
@@ -55,11 +61,11 @@ const Home = () => {
         <ImageRow images={imagesRow2} />
       </div>
        {/* Third row of images */}
-       <div className={styles.img_row_col}>
+       <div className={styles.img_row_col3}>
       <ImageRow images={imagesRow3} />
       </div>
-
      <div className={styles.home_hero_content}> 
+     <Menu />
      <Image
             className={styles.homestar}
             src="/home/homestar.png"
@@ -73,6 +79,7 @@ const Home = () => {
       <h2 data-text="We're your go-to" className={styles.text_title}>Creative Studio</h2>
       <p className={styles.home_hero_desc}>Of course we're into Branding, Web<br/> Design, Packaging, Illustrations,<br/> publication, social media & what not!</p>
       <a className="boton_elegante">EXPLORE MORE</a>
+     </div>
      </div>
     </section>
   );
