@@ -1,0 +1,29 @@
+/* styles/WorkAnimated.module.css */
+.wokeani {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+  
+  .scrollingText {
+    display: inline-block;
+  }
+  
+  .scrollingText span {
+    display: inline-block;
+    padding: 0 10px; /* Adjust the padding as needed */
+  }
+  /* YourStyles.module.css */
+.wokeanilr {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .animationContainer {
+    display: inline-block;
+    will-change: transform;
+  }
+  
+  
+  

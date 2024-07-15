@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+  scroll-behavior: smooth;
+}
+html, body {
+  scroll-behavior: smooth;
+}
 
 body{
     margin-left: auto;
@@ -6,7 +12,11 @@ body{
     margin: 0;
     background-color: #000;
 }
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
 .boton_elegante {
+    margin-top: 10px;
     font-family: 'poppins';
     padding: 15px 30px;
     border: 1px solid #fff;
@@ -72,7 +82,7 @@ body{
     float: right;
 }
 .imageup{
- border: 1px solid #fff;
+ border: 1px solid #ffffff63;
 }
 @keyframes fadeInOut {
   0% {
@@ -128,6 +138,9 @@ body{
   /* opacity: 0 !important; */
   animation: fadeInup 7s infinite;
   
+}
+.page_logo_col__3wXi8 svg {
+  width: 85%;
 }
 
 

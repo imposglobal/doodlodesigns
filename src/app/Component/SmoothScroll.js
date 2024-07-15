@@ -1,65 +1,88 @@
 // components/SmoothScroll.js
 "use client";
-
+// components/ScrollAnimation.js
 import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import gsap from 'gsap';
 
-gsap.registerPlugin(ScrollTrigger);
-
-const SmoothScroll = ({ children }) => {
-  const wrapperRef = useRef();
-  const contentRef = useRef();
+const ScrollAnimation = () => {
+  const scroller = useRef(null);
 
   useEffect(() => {
-    const wrapper = wrapperRef.current;
-    const content = contentRef.current;
+    const html = document.documentElement;
+    const body = document.body;
 
-    const scrollTween = gsap.to(content, {
-      y: () => -(content.scrollHeight - document.documentElement.clientHeight),
-      ease: 'none',
-      scrollTrigger: {
-        trigger: wrapper,
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: 1,
-        invalidateOnRefresh: true,
-      },
+    const ease = 0.05; // scroll speed
+    let endY = 0;
+    let y = 0;
+    let resizeRequest = 1;
+    let scrollRequest = 0;
+    let requestId = null;
+
+    gsap.set(scroller.current, {
+      rotation: 0.01,
+      force3D: true
     });
 
-    ScrollTrigger.scrollerProxy(wrapper, {
-      scrollTop(value) {
-        return arguments.length ? (wrapper.scrollTop = value) : wrapper.scrollTop;
-      },
-      getBoundingClientRect() {
-        return {
-          top: 0,
-          left: 0,
-          width: window.innerWidth,
-          height: window.innerHeight,
-        };
-      },
-      pinType: wrapper.style.transform ? 'transform' : 'fixed',
-    });
-
-    const refresh = () => {
-      ScrollTrigger.refresh();
+    const onLoad = () => {
+      updateScroller();
+      window.focus();
+      window.addEventListener("resize", onResize);
+      document.addEventListener("scroll", onScroll);
     };
 
-    window.addEventListener('resize', refresh);
+    const updateScroller = () => {
+      const resized = resizeRequest > 0;
+
+      if (resized) {
+        const height = scroller.current.clientHeight;
+        body.style.height = `${height}px`;
+        resizeRequest = 0;
+      }
+
+      const scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
+
+      endY = scrollY;
+      y += (scrollY - y) * ease;
+
+      if (Math.abs(scrollY - y) < 0.05 || resized) {
+        y = scrollY;
+        scrollRequest = 0;
+      }
+
+      gsap.set(scroller.current, {
+        y: -y
+      });
+
+      requestId = scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
+    };
+
+    const onScroll = () => {
+      scrollRequest++;
+      if (!requestId) {
+        requestId = requestAnimationFrame(updateScroller);
+      }
+    };
+
+    const onResize = () => {
+      resizeRequest++;
+      if (!requestId) {
+        requestId = requestAnimationFrame(updateScroller);
+      }
+    };
+
+    window.addEventListener("load", onLoad);
 
     return () => {
-      window.removeEventListener('resize', refresh);
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-      scrollTween.kill();
+      window.removeEventListener("resize", onResize);
+      document.removeEventListener("scroll", onScroll);
     };
   }, []);
 
   return (
-    <div ref={wrapperRef} style={{ overflow: 'hidden', height: '100vh' }}>
-      <div ref={contentRef}>{children}</div>
+    <div id="scroll-container" ref={scroller}>
+      {/* Your content here */}
     </div>
   );
 };
 
-export default SmoothScroll;
+export default ScrollAnimation;
