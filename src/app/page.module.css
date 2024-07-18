@@ -233,7 +233,8 @@
 .wokeani span{
   font-family: 'poppins';
   margin: 0 30px;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: 600;
 }
 .wokeanilr {
   margin-top: -80px;
@@ -245,67 +246,49 @@
 .wokeanilr span{
   font-family: 'poppins';
   margin: 0 30px;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: 600;
 }
 .filtersec{
-  padding: 100px 100px 0 100px;
-}
-.rowfilter {
-  padding: 40px 40px 0  40px;
-  display: flex;
-}
-
-/* Create two equal columns that sits next to each other */
-.fcolumn1 {
-  flex: 70%;
-  padding: 10px;
- /* Should be removed. Only for demonstration */
-}
-.fcolumn2 {
-  flex: 30%;
-  padding: 10px;
- /* Should be removed. Only for demonstration */
-}
-.fhead{
-  font-size: 24px;
-  color: #fff;
+  padding: 180px 100px 0 100px;
   font-family: 'poppins';
-}
-.fdesc{
-  font-size: 20px;
-  color: #fff;
-  font-family: 'poppins';
-}
-.filterdrop {
-  float: inline-end;
-  border-radius: 10px;
-  font-size: 20px;
-  padding: 18px 48px;
-  font-family: 'Poppins';
-  border-right: solid 30px #fff;
-}
-.ecommimg{
-  width: 100%;
+  font-size: 18px;
 }
 .filtergal{
-  display: flex;
-  padding: 30px 150px;
+  padding: 50px 150px;
 }
-.frow1{
-  display: flex;
-  flex: 10%;
-  width: 20%;
+.clientle{
+  padding: 50px 130px;
 }
-/* Create three equal columns that floats next to each other */
-.columngal {
-  width: 33.33%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+.divider {
+  gap: 40px;
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'poppins';
+  display: flex;
+  color: #898989;
+  align-items: center;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.divider::before, .divider::after {
+  flex: 1;
+  content: '';
+  padding: 0.5px;
+  background-color: #959595;
+  margin: 5px;
+}
+.partnerimgsec{
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+.partnerimg{
+  width: 13% !important;
+    margin: 0 20px;
+    height: 35px !important;
+    object-fit: none;
+}
+.setsapart{
+  padding: 80px 100px;
 }

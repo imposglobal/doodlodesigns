@@ -8,18 +8,15 @@ import { useEffect,useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import WorkAnimated from './Component/WorkAnimated';
-import WorkAnimatedlr from './Component/WorkAnimatedLR';
+import Carousel from "./Component/Carousel";
+import Gallery from "./Component/Gallery";
+import ImageFlip from "./Component/FlipImage";
+import Arrows from "./Component/Arrowanimation";
 
 
 const Home = () => {
   const [selectedOption, setSelectedOption] = useState('someOption');
 
-  const handleChange = (event) => {
-    const newValue = event.target.value;
-    setSelectedOption(newValue);
-    console.log('Selected option:', newValue);
-    // You can perform other actions here based on the selected option
-  };
   useEffect(() =>{
     AOS.init({
       duration: 1000, // Customize the duration of the animations
@@ -62,6 +59,21 @@ const Home = () => {
      "/home/row3img3.jpg",
      "/home/row3img4.jpg",
    ];
+
+
+   const items = [
+    { id: 1, ids: 'fimg1', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
+    { id: 2, ids: 'fimg2', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
+    { id: 3, ids: 'fimg3', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
+    { id: 4, ids: 'fimg4', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
+    { id: 5, ids: 'fimg5', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
+    { id: 6, ids: 'fimg6', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
+    { id: 7, ids: 'fimg7', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
+    { id: 8, ids: 'fimg8', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
+    { id: 9, ids: 'fimg9', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
+    { id: 10, ids: 'fimg10', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
+    // Add more items with appropriate categories
+  ];
 
   return (
     <section>
@@ -325,116 +337,79 @@ const Home = () => {
             <WorkAnimated />
           </div>
       </div>
+
     <div className={styles.wokeanilr}>
         <div>
         <WorkAnimated />
         </div>
     </div>
 
-    {/* Filter section */}
-    <div className={styles.filtersec}>
-      <div className={styles.rowfilter}>
-        <div className={styles.fcolumn1}>
-          <h4 className={styles.fhead}>Curious how we can turn your brand into a game-changer?</h4>
-          <p className={styles.fdesc}>Discover the impact of our work. Check out our case studies and portfolio to see how we’ve transformed brands across various industries.</p>
-        </div>
-        <div className={styles.fcolumn2}>
-          <select className={styles.filterdrop} value={selectedOption} onChange={handleChange}>
-            <option value="someOption">All</option>
-            <option value="otherOption">Other option</option>
-          </select>
-        </div>
+    <div data-aos="fade-up" className={styles.filtergal}>
+      <Gallery items={items} />
+    </div>
+
+    <div className={styles.clientle}>
+      <h2 className={styles.mainheading}>OUR</h2>
+      <h2 className={styles.sec_heading}>clientele</h2>
+      <ImageFlip />
+
+      <div className={styles.divider}>Partnered with</div>
+      <div className={styles.partnerimgsec}>
+      <Image
+            className={styles.partnerimg}
+            src="/home/partner/part1.png"
+            alt="Next.js Logo"
+            layout="responsive"
+            width={100}
+            height={37}
+            priority
+          />
+          <Image
+            className={styles.partnerimg}
+            src="/home/partner/part2.png"
+            alt="Next.js Logo"
+            layout="responsive"
+            width={100}
+            height={37}
+            priority
+          />
+          <Image
+            className={styles.partnerimg}
+            src="/home/partner/part3.png"
+            alt="Next.js Logo"
+            layout="responsive"
+            width={100}
+            height={37}
+            priority
+          />
+          <Image
+            className={styles.partnerimg}
+            src="/home/partner/part4.png"
+            alt="Next.js Logo"
+            layout="responsive"
+            width={100}
+            height={37}
+            priority
+          />
       </div>
     </div>
-    <div className={styles.filtergal}>
-      <div className={styles.columngal}>
-        <Image
-            className={styles.ecommimg}
-            src="/home/ecomm1.png"
-            alt="Next.js Logo"
-            layout="responsive"
-            width={100}
-            height={37}
-            priority
-          />
-          <Image
-            className={styles.ecommimg}
-            src="/home/ecomm1.png"
-            alt="Next.js Logo"
-            layout="responsive"
-            width={100}
-            height={37}
-            priority
-          />
-          <Image
-            className={styles.ecommimg}
-            src="/home/ecomm1.png"
-            alt="Next.js Logo"
-            layout="responsive"
-            width={100}
-            height={37}
-            priority
-          />
-        </div>
-        <div className={styles.columngal}>
-        <Image
-            className={styles.ecommimg}
-            src="/home/ecomm1.png"
-            alt="Next.js Logo"
-            layout="responsive"
-            width={100}
-            height={37}
-            priority
-          />
-          <Image
-            className={styles.ecommimg}
-            src="/home/ecomm1.png"
-            alt="Next.js Logo"
-            layout="responsive"
-            width={100}
-            height={37}
-            priority
-          />
-          <Image
-            className={styles.ecommimg}
-            src="/home/ecomm1.png"
-            alt="Next.js Logo"
-            layout="responsive"
-            width={100}
-            height={37}
-            priority
-          />
-        </div>
-        <div className={styles.columngal}>
-        <Image
-            className={styles.ecommimg}
-            src="/home/ecomm1.png"
-            alt="Next.js Logo"
-            layout="responsive"
-            width={100}
-            height={37}
-            priority
-          />
-          <Image
-            className={styles.ecommimg}
-            src="/home/ecomm1.png"
-            alt="Next.js Logo"
-            layout="responsive"
-            width={100}
-            height={37}
-            priority
-          />
-          <Image
-            className={styles.ecommimg}
-            src="/home/ecomm1.png"
-            alt="Next.js Logo"
-            layout="responsive"
-            width={100}
-            height={37}
-            priority
-          />
-        </div>
-    </div>
+
+   {/* review slider */}
+   <div className="testimonial">
+    <h2 className={styles.mainheading}>Client</h2>
+      <h2 className={styles.sec_heading}>Feedback</h2>
+      </div>
+    <Carousel />
+    {/* review slider End*/}
+    
+    <div className={styles.setsapart}>
+    <h2 className={styles.mainheading}>What</h2>
+      <h2 className={styles.sec_heading}>Sets us apart</h2>
+      <Arrows />
+      </div>
+      
+
+
     </section>
   );
 };
