@@ -12,6 +12,7 @@ import Carousel from "./Component/Carousel";
 import Gallery from "./Component/Gallery";
 import ImageFlip from "./Component/FlipImage";
 import Arrows from "./Component/Arrowanimation";
+import WorkAnimationlr from "./Component/WorkAnimatedLR";
 
 
 const Home = () => {
@@ -402,14 +403,169 @@ const Home = () => {
     <Carousel />
     {/* review slider End*/}
     
-    <div className={styles.setsapart}>
+    <div data-aos="fade-up" className={styles.setsapart}>
     <h2 className={styles.mainheading}>What</h2>
       <h2 className={styles.sec_heading}>Sets us apart</h2>
-      <Arrows />
+      <div className={styles.rowpart}>
+        <div className={styles.columnpart1}>
+          <Arrows />
+        </div>
+        <div className={styles.columnpart2}>
+        {/* pointer start */}
+          <div data-aos="fade-up" className={`${styles.pointer} ${styles.pmar}`}>
+            <div className={styles.pointer_inner}>
+              <div className={styles.pnum}>
+                01.
+              </div>
+              <div className={styles.pimg}>
+                  <Image
+                  className={styles.ppimg}
+                  src="/home/pointers/pimg1.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+              </div>
+              <div className={styles.pdesc}>
+                <h2>Tailored Approach</h2>
+                <p>Custom solutions that fit your brand perfectly.</p>
+              </div>
+            </div>
+          </div>
+          {/* pointer end */}
+
+          {/* pointer start */}
+          <div data-aos="fade-up" className={styles.pointers}>
+            <div className={styles.pointer_inner}>
+              <div className={styles.pnum}>
+                02.
+              </div>
+              <div className={styles.pimg}>
+                  <Image
+                  className={styles.ppimg}
+                  src="/home/pointers/pimg2.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+              </div>
+              <div className={styles.pdesc}>
+                <h2>End to End Solution</h2>
+                <p>From concept to launch, we’ve got you covered.</p>
+              </div>
+            </div>
+          </div>
+          {/* pointer end */}
+
+          {/* pointer start */}
+          <div data-aos="fade-up" className={`${styles.pointer}`}>
+            <div className={styles.pointer_inner}>
+              <div className={styles.pnum}>
+                03.
+              </div>
+              <div className={styles.pimg}>
+                  <Image
+                  className={styles.ppimg}
+                  src="/home/pointers/pimg3.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+              </div>
+              <div className={styles.pdesc}>
+                <h2>Industry Expertise</h2>
+                <p>Extensive expertise across diverse industries.</p>
+              </div>
+            </div>
+          </div>
+          {/* pointer end */}
+
+          {/* pointer start */}
+          <div data-aos="fade-up" className={styles.pointers}>
+            <div className={styles.pointer_inner}>
+              <div className={styles.pnum}>
+                04.
+              </div>
+              <div className={styles.pimg}>
+                  <Image
+                  className={styles.ppimg}
+                  src="/home/pointers/pimg4.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+              </div>
+              <div className={styles.pdesc}>
+                <h2>Client - Centric focus </h2>
+                <p>Your needs drive our creativity.</p>
+              </div>
+            </div>
+          </div>
+          {/* pointer end */}
+
+          {/* pointer start */}
+          <div data-aos="fade-up" className={styles.pointers}>
+            <div className={styles.pointer_inner}>
+              <div className={styles.pnum}>
+                05.
+              </div>
+              <div className={styles.pimg}>
+                  <Image
+                  className={styles.ppimg}
+                  src="/home/pointers/pimg5.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+              </div>
+              <div className={styles.pdesc}>
+                <h2>Quality & Efficiency</h2>
+                <p>High standards, fast turnaround.</p>
+              </div>
+            </div>
+          </div>
+          {/* pointer end */}
+
+        </div>
+        
       </div>
-      
 
+       {/* Lets Discuss section */}
+       <div data-aos="fade-up" className={`${styles.pointer}`}>
+        <div className={styles.discuss_row}>
+        <h2 className={styles.mainheadingdis}>Let’s Discuss </h2>
+          <h2 className={styles.sec_headingdis}>Your next project</h2>
+          <p className={styles.disdesc}><b>Ready to turn your vision into reality?</b> Whether you need branding, web design, packaging, or digital marketing, we’re here to help. Let’s brainstorm, create, and bring your ideas to life.</p>
+          <a className="boton_elegante mtbtn">Book an appointment </a>
+          <div className={styles.booknow}>
+            <div className={styles.bookwrap}>
+            <WorkAnimationlr />
+            </div>
+            <div className={styles.bookwrap1}>
+            <WorkAnimationlr />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Lets Discuss section End */}
 
+      {/* Our Story section start */}
+      <div className={styles.story}>
+        <h2 className={styles.mainheading}>Our</h2>
+        <h2 className={styles.sec_heading}>Story</h2>
+      </div>
+      {/* Our Story section end */}
+      </div>
     </section>
   );
 };

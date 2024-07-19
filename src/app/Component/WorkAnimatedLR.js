@@ -11,7 +11,7 @@ const WorkAnimationlr = () => {
 
     animation.to(container, {
       x: '-100%', // Move left instead of right to achieve the desired effect
-      duration: 50,
+      duration: 130,
       ease: 'linear',
       modifiers: {
         x: gsap.utils.unitize(x => parseFloat(x) % 100), // Ensure smooth looping
@@ -26,8 +26,9 @@ const WorkAnimationlr = () => {
   return (
     <div className={styles.wokeanilr}>
       <div ref={containerRef} className={styles.animationContainer}>
-        {Array(200).fill(0).map((_, index) => (
-          <span key={index}>work *</span>
+        {Array(100).fill(0).map((_, index) => (
+          <span key={index}>Book Now <span className="rstar">*</span></span>
+          
         ))}
       </div>
     </div>

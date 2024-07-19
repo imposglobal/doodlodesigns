@@ -292,3 +292,125 @@
 .setsapart{
   padding: 80px 100px;
 }
+.rowpart {
+  padding: 0px ;
+  display: flex;
+  border-radius: 10px ;
+}
+
+/* Create two equal columns that sits next to each other */
+.columnpart1 {  
+  flex: 45%;
+  padding: 10px;
+ /* Should be removed. Only for demonstration */
+}
+.columnpart2 {
+  flex: 55%;
+  padding: 10px;
+ /* Should be removed. Only for demonstration */
+}
+.pointers{
+  margin: 30px 0;
+}
+.pointer_inner{
+  display: flex;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #9E9E9E80;
+    margin-right: 52px;
+}
+.pnum{
+  margin: 0 20px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #9E9E9E;
+  font-family: 'poppins';
+}
+.pimg{
+  margin: 0 30px;
+}
+.pdesc h2{
+  font-family: 'poppins';
+  color: #fff;
+  font-size: 22px; 
+  font-weight: 600;
+}
+.pdesc p{
+  font-family: 'poppins';
+  color: #9E9E9E;
+  font-size: 18px; 
+  font-weight: 300;
+}
+.pmar{
+  margin-top: 0 !important;
+}
+.ppimg{
+  width: 80% !important;
+}
+.discuss_row{
+  overflow: hidden;
+  padding: 30px 0 0 50px;
+  margin: 100px 100px;
+  border: 1px solid #fff;
+  border-radius: 10px ;
+}
+.mainheadingdis {
+  margin-top: 0;
+  font-size: 58px;
+  font-family: 'Poppins', sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
+}
+.sec_headingdis{
+  margin-top: -35px;
+  padding: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 58px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+.disdesc{
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: "poppins";
+  font-size: 18px;
+  font-weight: 300 !important;
+  padding-right: 200px;
+}
+.booknow{
+  margin-top: 100px;
+}
+.bookwrap1{
+  padding: 3px 0;
+  opacity: 1;
+  background-color: #fff;
+  rotate: -25deg;
+  width: 505px;
+  margin-right: -52px;
+  float: right;
+  margin-top: -102px;
+} 
+.bookwrap{
+  padding: 3px 0;
+  opacity: 0.5;
+  background-color: #fff;
+  rotate: -15deg;
+  width: 671px;
+  margin-right: -19px;
+  float: right;
+  margin-top: -86px;
+} 
+.bookwrap span{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Poppins';
+
+}
+.bookwrap1 span{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Poppins';
+
+}

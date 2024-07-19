@@ -285,6 +285,12 @@ h2.client_h2 {
   flex-direction: column;
   align-items: center;
 }
+#pointer1{
+  margin-top: 0px !important;
+}
+.rstar{
+  margin: 0 30px;
+}
 
 .arrow {
   width: 0; 
@@ -330,4 +336,9 @@ h2.client_h2 {
       transform: translateY(-5px);
   }
 }
+.mtbtn{
+  margin-top:30ox !important;
+  text-transform: uppercase;
+}
+
 
