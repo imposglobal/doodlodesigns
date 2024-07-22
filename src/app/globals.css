@@ -340,5 +340,13 @@ h2.client_h2 {
   margin-top:30ox !important;
   text-transform: uppercase;
 }
-
+.brandspan{
+  font-size: 55px;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #9E9E9E;
+    text-transform: none;
+    margin: 0 0 0 40px;
+}
 

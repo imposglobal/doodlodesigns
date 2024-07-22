@@ -13,6 +13,9 @@ import Gallery from "./Component/Gallery";
 import ImageFlip from "./Component/FlipImage";
 import Arrows from "./Component/Arrowanimation";
 import WorkAnimationlr from "./Component/WorkAnimatedLR";
+import BrandAnimated from "./Component/Brandlineanimation";
+import ReachusAnimated from "./Component/ReachusAnimation";
+import ContactForm from "./Component/ContactForm";
 
 
 const Home = () => {
@@ -75,6 +78,16 @@ const Home = () => {
     { id: 10, ids: 'fimg10', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
     // Add more items with appropriate categories
   ];
+
+  const [hoverText, setHoverText] = useState('PROJECTS THAT MAKE A DIFFERENCE');
+
+  const handleMouseEnter = (text) => {
+    setHoverText(text);
+  };
+
+  const handleMouseLeave = () => {
+    setHoverText('PROJECTS THAT MAKE A DIFFERENCE');
+  };
 
   return (
     <section>
@@ -561,11 +574,98 @@ const Home = () => {
 
       {/* Our Story section start */}
       <div className={styles.story}>
-        <h2 className={styles.mainheading}>Our</h2>
-        <h2 className={styles.sec_heading}>Story</h2>
+        <div className={styles.rowstory}>
+          <div className={styles.columnst1}>
+          <h2 className={styles.mainheading}>Our</h2>
+          <h2 className={styles.sec_heading}>Story</h2>
+          <p className={styles.storydesc}>
+          At Doodlo, we're storytellers at heart. We believe brands are powerful narratives, and we craft them with simplicity and impact. We don't just design, we translate your vision into actionable solutions that resonate with your audience.<br/><br/>
+
+          <b>Decoding Brands, Website & Designs driven<br/> bypassion & Possibilities.</b><br/><br/>
+
+          Our love for life, color, and endless possibilities fuels our creative fire. It's what we call the "Doodlo 3D's": Doodle, Design, Develop. We guide you through every step of the storytelling journey, from brainstorming to flawless execution. We craft user experiences that are not only beautiful but also functional. With a healthy dose of passion, flexibility, and precision, we build brands that achieve results.
+          </p>
+          </div>
+          <div className={styles.columnst2}>
+            <div className={styles.stimg}>
+            <Image
+                  className={styles.ppimg}
+                  src="/home/storyimg.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+            </div>
+          </div>
+        </div>
       </div>
       {/* Our Story section end */}
+     
       </div>
+      <div className={styles.brandanim}>
+        <BrandAnimated/>
+      </div>
+
+    {/* Project Diffrence */}
+    <div className={styles.prodiff} data-aos="fade-up">
+      <div className={styles.rowstory}>
+        <div className={styles.columnpdiff1}>
+        <h2>{hoverText}</h2>
+        </div>
+        <div className={styles.columnpdiff2}>
+          <h3 className={styles.prtitle}>260+</h3>
+          <p className={styles.prdesc}>260+ Project Delivered & Counting</p>
+        </div>
+      </div>
+      <div className={styles.rowstory} id={styles.proj}>
+        <div className={styles.columnpdiff3} onMouseEnter={() => handleMouseEnter('6 Years of Design Operations')} onMouseLeave={handleMouseLeave}>
+        <h3 className={styles.prtitle}>6</h3>
+          <p className={styles.prdesc}>Years of Design Operations </p>
+        </div>
+        <div className={styles.columnpdiff4} onMouseEnter={() => handleMouseEnter('56+ Happy Clients')} onMouseLeave={handleMouseLeave}>
+          <h3 className={styles.prtitle}>56+</h3>
+          <p className={styles.prdesc}>Happy Clients </p>
+        </div>
+        <div className={styles.columnpdiff5} onMouseEnter={() => handleMouseEnter('7+ Professional Designers')} onMouseLeave={handleMouseLeave}>
+          <h3 className={styles.prtitle}>7+</h3>
+          <p className={styles.prdesc}>Professional Designers</p>
+        </div>
+        <div className={styles.columnpdiff6} onMouseEnter={() => handleMouseEnter('14+ Industries Served')} onMouseLeave={handleMouseLeave}>
+          <h3 className={styles.prtitle}>14+</h3>
+          <p className={styles.prdesc}>Industries served</p>
+        </div>
+      </div>
+    </div>
+
+    <div className={styles.videosec}>
+    <Image
+                  className={styles.ppimg}
+                  src="/home/video.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+    </div>
+
+   {/* section Reach Us animated */}
+   <div className={styles.wokeani}>
+      <div>
+            <ReachusAnimated />
+          </div>
+      </div>
+
+    <div className={styles.wokeanilr}>
+        <div>
+        <ReachusAnimated />
+        </div>
+    </div>
+
+    {/* contact form section */}
+    <ContactForm />
     </section>
   );
 };

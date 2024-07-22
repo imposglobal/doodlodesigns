@@ -1,0 +1,92 @@
+.controw {
+    margin: 100px 120px;
+    overflow: hidden;
+    display: flex;
+    border: 1px solid #BCBCBC
+    ;
+    border-radius: 10px ;
+  }
+  .contcolumn1 {
+    flex: 50%;
+    padding: 50px 50px 80px 50px;
+   /* Should be removed. Only for demonstration */
+  }
+  .contcolumn2 {
+    background-color: #FFF8F0;
+    flex: 50%;
+    padding: 10px;
+   /* Should be removed. Only for demonstration */
+  }
+  .formcontainer{
+    padding: 80px !important;
+  }
+  .caas{
+    margin-left: -35px;
+    width: 40% !important;
+  }
+  .fdesc{
+    font-family: 'poppins';
+    color: #9E9E9E;
+    font-size: 20px;
+  }
+  .conhead{
+    margin-top: 50px;
+    font-family: 'poppins';
+    color: #fff;
+    font-size: 25px;
+  }
+  .scicon{
+    width: 6% !important;
+    margin: 0 11px 0 0;
+  }
+  .socialmedia{
+    margin-top: 20px;
+  }
+  .formhead{
+    color: #000000;
+    font-family: 'poppins';
+    font-size: 35px;
+  }
+  .formdesc{
+    margin-top: -10px;
+    font-family: 'poppins';
+    font-weight: 300 !important;
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+  .formInput{
+    width: 100%;
+    margin: 30px 0;
+  }
+  .formInput input{
+    width: 100%;
+    font-weight: 300 !important;
+    padding: 5px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-family: 'poppins';
+    font-size: 18px;
+    color: #000;
+    -webkit-transition: 0.1s;
+  transition: 0.1s;
+  }
+  .formInput input:focus {
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+  }
+  .checktitle{
+    font-size: 18px;
+    color: #000;
+    font-family: 'poppins';
+    font-weight: 300 !important;
+    margin-bottom: 10px;
+  }
+  .chekinput{
+    font-family: 'poppins';
+  }
+  .chekinput label{
+    font-weight: 300;
+    margin: 0 48px 0 0;
+  }
