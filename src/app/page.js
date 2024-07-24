@@ -89,9 +89,21 @@ const Home = () => {
   const handleMouseLeave = () => {
     setHoverText('PROJECTS THAT MAKE A DIFFERENCE');
   };
+  const [inactive, setInactive] = useState(true); // Set initial state to true
+
+  const toggleClass = () => {
+    setInactive(!inactive);
+  };
+
 
   return (
     <section>
+     <div id="wrapper">
+      <div className={`menuwrap ${inactive ? 'inactive' : ''} doodbg`}>
+        <h1>Content</h1>
+      </div>
+    </div>
+
     <div className={styles.home_bg}>
       <div className={styles.logo_col}>
         <Logo />
@@ -110,7 +122,7 @@ const Home = () => {
       <ImageRow images={imagesRow3} />
       </div>
      <div className={styles.home_hero_content}> 
-     <Menu />
+     <Menu onClick={toggleClass} />
      <div className={styles.block}>
       <Image
             className={styles.homestar}
@@ -120,6 +132,7 @@ const Home = () => {
             width={100}
             height={37}
             priority
+            onClick={toggleClass}
           />
      </div>
       <h2 data-aos="flip-up" className={styles.text_stroke_hover}>We're your go-to</h2>
@@ -192,7 +205,7 @@ const Home = () => {
           />
           <Image
             className={`${styles.grid_item_img} ${styles.brimg5}`}
-            src="/home/branding5.jpg"
+            src="/home/branding5.png"
             alt="Next.js Logo"
             layout="responsive"
             width={100}

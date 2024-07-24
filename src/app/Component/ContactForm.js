@@ -151,7 +151,7 @@ const ContactForm = () => {
                         <div className={styles.formInput}>
                         <input
                             type="text"
-                            name="name"
+                            name="message"
                             value={formData.message}
                             onChange={handleChange}
                             placeholder="Hi, I am"

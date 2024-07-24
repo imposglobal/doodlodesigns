@@ -79,7 +79,7 @@ const Footer = () => {
                     <h3 className={styles.updatet}>Job Updates:</h3>
                     <p className={styles.updatep}>careers@doodlodesigns.com</p>
                     
-                    <h3 className={styles.updatet}>Job Updates:</h3>
+                    <h3 className={styles.updatet}>Business Queries:</h3>
                     <p className={styles.updatep}>careers@doodlodesigns.com</p>
                     </div>
                     <div className={styles.footercol2}>
