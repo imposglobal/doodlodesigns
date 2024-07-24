@@ -350,3 +350,10 @@ h2.client_h2 {
     margin: 0 0 0 40px;
 }
 
+
+/* Target MacBooks with a minimum width of 1280px */
+@media only screen and (min-width: 1280px) {
+  /* CSS rules for MacBook */
+ 
+}
+

@@ -1,13 +1,17 @@
 .home_bg{
   display: flex;
   overflow: hidden;
-  height: 700px;
+  height: 100vh;
   background-color: black;
   border-bottom: 1px solid #ffffff63;
 }
 .logo_col{
   width: 10%;
   padding: 50px 60px;
+}
+.block{
+  width: 90%;
+  display: inline-block;
 }
 
 .hero_up_img{
@@ -83,7 +87,7 @@
     float: right;
     position: relative;
     top: -50px;
-    left: -42px;
+    right: 5vh;
 }
 .text_title{
   margin-top: -28px;
@@ -583,4 +587,89 @@
 .columnpdiff5 h3:hover,
 .columnpdiff6 h3:hover {
     color: #fff;
+}
+.shopsec{
+  overflow: hidden;
+  margin: 100px 150px;
+  height: 350px;
+  background-image: url('/home/shopbg.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.shoprow {
+  padding: 0px ;
+  display: flex;
+}
+.shopcol1{
+  margin-left: 50px !important;
+  flex: 40%;
+}
+.shopcol2{
+  padding-left: 50px;
+  flex: 80%;
+}
+.shopwi2{
+  height: 200px;
+  animation: slideUp 20s linear infinite;
+  width: 100%;
+  margin: 0 4px;
+}
+.shopwi1{
+  height: 200px;
+  width: 100%;
+  margin: 0 3px;
+  animation: slideUp 20s linear infinite;
+}
+.shoprowinn{
+  rotate: -6deg;
+  margin: 0 20px;
+  text-align: center;
+  padding: 0px ;
+  display: flex;
+}
+.ppimgs{
+  margin: 1px 0;
+  width: 100% !important;
+  
+}
+.mainheadingdc {
+  margin-top: 30px;
+  font-size: 56px;
+  font-family: 'Poppins', sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
+}
+.sec_headingdc{
+  margin-top: -30px;
+  padding: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 56px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+.starim{
+  width: 30px !important;
+  height: 100% !important;
+  margin-top: 42px;
+  margin-left: 9px;
+}
+.dcdesc{
+  color: #fff;
+  font-family: 'poppins';
+  font-size: 20px;
+  margin: 0 100px 30px 0px;
+}
+.dcbtn{
+  background: #fff;
+  padding: 12px 30px;
+  color: #000;
+  font-family: 'poppins';
+  font-size: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
 }

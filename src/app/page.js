@@ -16,6 +16,7 @@ import WorkAnimationlr from "./Component/WorkAnimatedLR";
 import BrandAnimated from "./Component/Brandlineanimation";
 import ReachusAnimated from "./Component/ReachusAnimation";
 import ContactForm from "./Component/ContactForm";
+import Footer from "./Component/Footer";
 
 
 const Home = () => {
@@ -110,7 +111,8 @@ const Home = () => {
       </div>
      <div className={styles.home_hero_content}> 
      <Menu />
-     <Image
+     <div className={styles.block}>
+      <Image
             className={styles.homestar}
             src="/home/homestar.png"
             alt="Next.js Logo"
@@ -119,6 +121,7 @@ const Home = () => {
             height={37}
             priority
           />
+     </div>
       <h2 data-aos="flip-up" className={styles.text_stroke_hover}>We're your go-to</h2>
       <h2 data-aos="flip-up" className={styles.text_title}>Creative Studio</h2>
       <p className={styles.home_hero_desc}>Of course we're into Branding, Web<br/> Design, Packaging, Illustrations,<br/> publication, social media & what not!</p>
@@ -666,6 +669,294 @@ const Home = () => {
 
     {/* contact form section */}
     <ContactForm />
+    {/* contac Form End */}
+
+    {/* Doodlo Shop Section */}
+    <div className={styles.shopsec}>
+      <div className={styles.shoprow}>
+        <div className={styles.shopcol1}>
+          <div className={styles.shoprowinn}>
+          <div className={styles.shopwi1}>
+          <Image
+                  className={styles.ppimgs}
+                  src="/home/crow1.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow2.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow3.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                 <Image
+                  className={styles.ppimgs}
+                  src="/home/crow1.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow2.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow3.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                 <Image
+                  className={styles.ppimgs}
+                  src="/home/crow1.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow2.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow3.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow1.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow2.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow3.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+          </div>
+          <div className={styles.shopwi2}>
+          <Image
+                  className={styles.ppimgs}
+                  src="/home/crow21.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow22.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow23.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                 <Image
+                  className={styles.ppimgs}
+                  src="/home/crow24.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                 <Image
+                  className={styles.ppimgs}
+                  src="/home/crow21.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow22.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow23.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                 <Image
+                  className={styles.ppimgs}
+                  src="/home/crow24.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                 <Image
+                  className={styles.ppimgs}
+                  src="/home/crow21.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow22.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow23.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                 <Image
+                  className={styles.ppimgs}
+                  src="/home/crow24.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                 <Image
+                  className={styles.ppimgs}
+                  src="/home/crow21.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow22.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                <Image
+                  className={styles.ppimgs}
+                  src="/home/crow23.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                 <Image
+                  className={styles.ppimgs}
+                  src="/home/crow24.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                
+                 
+          </div>
+          </div>
+        </div>
+        <div className={styles.shopcol2}>
+          <div className={styles.shoprow}>
+        <h2 className={styles.mainheadingdc}>Shop</h2>
+                <Image
+                  className={styles.starim}
+                  src="/home/startdc.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+        </div>
+        <h2 className={styles.sec_headingdc}>For Cute Goodies</h2>
+        <p className={styles.dcdesc}>Wanna buy some cute stuff? Explore our selection online, then visit our store for even more amazing finds!</p>
+        <a href="" className={styles.dcbtn}>Shop doodlo comics </a>
+        </div>
+      </div>
+    </div>
+
+   
     </section>
   );
 };

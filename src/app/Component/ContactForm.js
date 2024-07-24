@@ -133,21 +133,31 @@ const ContactForm = () => {
                             <h4 className={styles.checktitle}>I am looking for</h4>
                             <div className={styles.chekinput}>
                                 <input type="checkbox" value="" />
-                                <label>Option 1</label>
+                                <label>Branding</label>
                                 <input type="checkbox" value="" />
-                                <label>Option 1</label>
+                                <label>Packaging</label>
                                 <input type="checkbox" value="" />
-                                <label>Option 1</label>
+                                <label>Website</label>
+                            </div>
+                            <div className={styles.chekinputt}>
+                                <input type="checkbox" value="" />
+                                <label>Publication</label>
+                                <input type="checkbox" value="" />
+                                <label>Social Media</label>
+                                
                             </div>
 
                         </div>
-                        <textarea
-                            name="message"
+                        <div className={styles.formInput}>
+                        <input
+                            type="text"
+                            name="name"
                             value={formData.message}
                             onChange={handleChange}
-                            placeholder="Message"
-                        ></textarea>
-                        <button type="submit">Submit</button>
+                            placeholder="Hi, I am"
+                        />
+                        </div>
+                        <button type="submit" className={styles.subsbtn}>Submit</button>
                         </form>
                 </div>
             </div>

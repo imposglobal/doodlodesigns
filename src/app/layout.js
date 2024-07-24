@@ -1,3 +1,4 @@
+import Footer from "./Component/Footer";
 import "./globals.css";
 
 export const metadata = {
@@ -8,7 +9,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{metadata.title}</title>
+      </head>
+      <body>{children}
+         {/* Footer Starts */}
+        <Footer />
+      </body>
     </html>
   );
 }

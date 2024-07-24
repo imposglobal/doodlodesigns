@@ -18,7 +18,7 @@
    /* Should be removed. Only for demonstration */
   }
   .formcontainer{
-    padding: 80px !important;
+    padding: 60px 80px !important;
   }
   .caas{
     margin-left: -35px;
@@ -77,16 +77,141 @@
     outline: none;
   }
   .checktitle{
-    font-size: 18px;
+    font-size: 18 px;
     color: #000;
     font-family: 'poppins';
     font-weight: 300 !important;
     margin-bottom: 10px;
   }
-  .chekinput{
+  .chekinput, .chekinputt{
     font-family: 'poppins';
+    margin: 5px 0;
   }
   .chekinput label{
     font-weight: 300;
-    margin: 0 48px 0 0;
+    margin: 0 46px 0 0;
+  }
+  .chekinputt label{
+    font-weight: 300;
+    margin: 0 30px 0 0;
+  }
+  .contbtn{
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    float: right;
+    padding: 12px 20px;
+    border-radius: 10px;
+  }
+  .footerwrap{
+    background: #FFF6E8;
+    padding: 80px 150px;
+  }
+  .footerrow {
+    padding: 0px ;
+    display: flex;
+  }
+  .footercol1{
+    flex: 45%;
+  }
+  .footercol2{
+    flex: 55%;
+  }
+  .footlogo{
+    width: 25% !important;
+    margin-bottom: 90px;
+  }
+  .countrytitle{
+    font-family: 'poppins';
+    font-size: 50px;
+    font-weight: 275 !important;
+  }
+  .addr{
+    font-family: 'poppins';
+    font-size: 18px;
+    padding-right: 66px;
+    font-weight: 300 !important;
+    margin: 30px 0;
+  }
+  .cphone{
+    font-family: 'poppins';
+    font-size: 18px;
+    font-weight: 300 !important;
+  }
+  .footdesc{
+    font-family: 'poppins';
+    font-size: 18px;
+    font-weight: 300 !important;
+    margin-bottom: 30px;
+  }
+  .ftitle{
+    font-family: 'poppins';
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  .flinks{
+    font-family: 'poppins';
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 300 !important;
+  }
+  .plink{
+    margin: 14px 0;
+  }
+  .updatet{
+    font-size: 22px;
+    font-family: 'poppins';
+    font-weight: 400 !important;
+  }
+  .updatep{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'poppins';
+    font-weight: 300 !important;
+  }
+  .footerrowss{
+    margin-top: 50px;
+  }
+  .footinn{
+    padding-left: 50px;
+  }
+  .substext{
+    font-size: 22px;
+    font-family: 'poppins';
+    font-weight: 500 !important;
+  }
+  .subswrap{
+    margin: 15px 0;
+  }
+  .subswrap input{
+    background: transparent;
+    padding: 12px 60px;
+    font-family: 'poppins';
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid #000;
+  }
+  .subsbtn{
+    padding: 7px 15px 13px 15px;
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin: 0 11px;
+  }
+  .subbtni{
+    margin-top: 3px;
+    margin-bottom: -7px;
+    width: 25px !important;
+  }
+  .subbtnisc{
+    margin: 3px 6px;
+    margin-bottom: -7px;
+    width: 25px !important;
+  }
+  .gtintitle{
+    font-size: 14px;
+    font-family: 'poppins';
+    font-weight: 300 !important;
   }
