@@ -11,6 +11,11 @@
     padding: 10px;
    /* Should be removed. Only for demonstration */
   }
+  .column1pkg {
+    flex: 31%;
+    padding: 10px;
+   /* Should be removed. Only for demonstration */
+  }
   .column2 {
     flex: 70%;
     padding: 10px;
@@ -34,18 +39,19 @@
     font-family: 'Poppins', sans-serif;
     color: #fff;
   }
-  .sevices_heading{
+  .services_heading{
     line-height: 45px;
     font-family: 'poppins';
     font-size: 38px;
     font-weight: 600;
-    color: #fff;
+    color: #fff !important;
     /* margin-bottom: 40px; */
   }
-  .sevices_subheading{
+  
+  .services_subheading{
     font-family: 'poppins';
     font-size: 20px;
-    color: #fff;
+    color: #fff !important;
   }
   .service_list{
     font-size: 18px;
@@ -109,7 +115,7 @@
       margin: 40px 0;
   }
   .digiimgsec{
-    padding: 50px 0 30px 0;
+    padding: 0px 0 30px 0;
   }
   .digiimg{
     width: 30% !important;

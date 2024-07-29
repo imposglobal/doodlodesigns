@@ -457,20 +457,20 @@ button.slick-arrow.slick-next {
   
 }
 
-.panel, .panelt {
+.panel, .panel2 {
   height: 100%;
   position: relative;
   overflow: hidden;
-  margin: 20px 150px;
+  margin: 30px 0px;
   padding: 40px 40px 40px 40px;
   border: 1px solid #fff;
   border-radius: 10px;
 }
-.panel h2 {
+.panel h2, .panel2 h2  {
   margin: 0;
   cursor: pointer;
 }
 
-.content {
+.content, .content2 {
   transition: all 0.3s ease-out;
 }
