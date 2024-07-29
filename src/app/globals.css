@@ -450,3 +450,27 @@ button.slick-arrow.slick-next {
   content: ">" !important;
   margin-left: 20px;
 }
+/* styles.css */
+.accordion {
+  /* display: flex;
+  flex-direction: column; */
+  
+}
+
+.panel, .panelt {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 150px;
+  padding: 40px 40px 40px 40px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.panel h2 {
+  margin: 0;
+  cursor: pointer;
+}
+
+.content {
+  transition: all 0.3s ease-out;
+}

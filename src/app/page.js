@@ -4,7 +4,7 @@ import Logo from "./Images/logo";
 import styles from "./page.module.css";
 import ImageRow from './Images/ImageRow';
 import Menu from "./Component/Menu"
-import { useEffect,useState } from 'react';
+import { useEffect,useState,useRef,useLayoutEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import WorkAnimated from './Component/WorkAnimated';
@@ -16,7 +16,11 @@ import WorkAnimationlr from "./Component/WorkAnimatedLR";
 import BrandAnimated from "./Component/Brandlineanimation";
 import ReachusAnimated from "./Component/ReachusAnimation";
 import ContactForm from "./Component/ContactForm";
-import Footer from "./Component/Footer";
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import AccordionOne from "./Component/Accordions/AccordianOne";
+import AccordianTwo from "./Component/Accordions/AccordianTwo";
+
 
 
 const Home = () => {
@@ -95,7 +99,8 @@ const Home = () => {
     setInactive(!inactive);
   };
 
-
+  
+  
   return (
     <section>
      <div id="wrapper">
@@ -143,6 +148,11 @@ const Home = () => {
      </div>
     
     {/* Our services */}
+    <div className="accordion">
+    <AccordionOne />
+
+    </div>
+    
     <div className={`${styles.services} ${styles.srv_scroller}`}>
     <div className={styles.service_hight}>
     <h2 className={styles.mainheading}>OUR</h2>

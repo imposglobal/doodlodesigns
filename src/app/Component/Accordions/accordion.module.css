@@ -1,0 +1,117 @@
+.row {
+    /* padding: 40px 40px 0  40px; */
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px ; */
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 30%;
+    padding: 10px;
+   /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    flex: 70%;
+    padding: 10px;
+   /* Should be removed. Only for demonstration */
+  }
+  .mainheading {
+    margin-top: 0;
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-transform: uppercase;
+  }
+  .sec_heading{
+    margin-top: -40px;
+    padding: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  .sevices_heading{
+    line-height: 45px;
+    font-family: 'poppins';
+    font-size: 38px;
+    font-weight: 600;
+    color: #fff;
+    /* margin-bottom: 40px; */
+  }
+  .sevices_subheading{
+    font-family: 'poppins';
+    font-size: 20px;
+    color: #fff;
+  }
+  .service_list{
+    font-size: 18px;
+    color: #9E9E9E;
+    font-family: 'poppins';
+    font-weight: 300;
+    margin: 25px 0;
+  }
+  .grid_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .grid_item {
+    
+  }
+  .grimg1{
+    padding: 0 10px;
+  }
+  .grid_item_img {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-radius: 16px;
+  }
+  .gridsec{
+    margin: 22px 0;
+    display: flex;
+    background-color: #000;
+  }
+  .brimg2{
+    width: 38% !important;
+  }
+  .brimg3{
+    width: 58% !important;
+  }
+  .brimg4{
+    width: 29% !important;
+  }
+  .brimg5{
+    width: 34% !important;
+  }
+  .brimg6{
+    width: 31% !important;
+  }
+  .nwmr{
+    margin-top: 60px;
+  }
+  .servies_know_more{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'poppins';
+  }
+  .service_hight{
+      height: auto;
+      display: inline-grid;
+      align-items: center;
+      margin: 40px 0;
+  }
+  .digiimgsec{
+    padding: 50px 0 30px 0;
+  }
+  .digiimg{
+    width: 30% !important;
+    margin: 8px;
+  }

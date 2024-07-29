@@ -106,10 +106,10 @@
   padding: 100px 140px;
 }
 .row {
-  padding: 40px 40px 0  40px;
+  /* padding: 40px 40px 0  40px; */
   display: flex;
-  border: 1px solid #fff;
-  border-radius: 10px ;
+  /* border: 1px solid #fff; */
+  /* border-radius: 10px ; */
 }
 
 /* Create two equal columns that sits next to each other */
@@ -147,7 +147,7 @@
   font-size: 38px;
   font-weight: 600;
   color: #fff;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 .sevices_subheading{
   font-family: 'poppins';
@@ -179,7 +179,7 @@
   border-radius: 16px;
 }
 .gridsec{
-  margin: 47px 0;
+  margin: 22px 0;
   display: flex;
   background-color: #000;
 }
@@ -672,4 +672,13 @@
   border-radius: 10px;
   text-decoration: none;
   text-transform: uppercase;
+}
+.accordion {
+ 
+}
+
+.content {
+  height: auto;
+  overflow: hidden;
+  transition: height 0.3s ease;
 }
