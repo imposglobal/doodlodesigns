@@ -1,88 +1,31 @@
-// components/SmoothScroll.js
+// components/GSAPScrollSmoother.js
 "use client";
-// components/ScrollAnimation.js
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
 
-const ScrollAnimation = () => {
-  const scroller = useRef(null);
+import { useEffect } from 'react';
+import { gsap } from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import ScrollSmoother from 'gsap/ScrollSmoother';
+import ScrollToPlugin from 'gsap/ScrollToPlugin';
 
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
+
+const GSAPScrollSmoother = () => {
   useEffect(() => {
-    const html = document.documentElement;
-    const body = document.body;
-
-    const ease = 0.05; // scroll speed
-    let endY = 0;
-    let y = 0;
-    let resizeRequest = 1;
-    let scrollRequest = 0;
-    let requestId = null;
-
-    gsap.set(scroller.current, {
-      rotation: 0.01,
-      force3D: true
+    const smoother = ScrollSmoother.create({
+      smooth: 1.35,
+      effects: true,
+      smoothTouch: false,
+      normalizeScroll: false,
+      ignoreMobileResize: true,
     });
 
-    const onLoad = () => {
-      updateScroller();
-      window.focus();
-      window.addEventListener("resize", onResize);
-      document.addEventListener("scroll", onScroll);
-    };
-
-    const updateScroller = () => {
-      const resized = resizeRequest > 0;
-
-      if (resized) {
-        const height = scroller.current.clientHeight;
-        body.style.height = `${height}px`;
-        resizeRequest = 0;
-      }
-
-      const scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
-
-      endY = scrollY;
-      y += (scrollY - y) * ease;
-
-      if (Math.abs(scrollY - y) < 0.05 || resized) {
-        y = scrollY;
-        scrollRequest = 0;
-      }
-
-      gsap.set(scroller.current, {
-        y: -y
-      });
-
-      requestId = scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
-    };
-
-    const onScroll = () => {
-      scrollRequest++;
-      if (!requestId) {
-        requestId = requestAnimationFrame(updateScroller);
-      }
-    };
-
-    const onResize = () => {
-      resizeRequest++;
-      if (!requestId) {
-        requestId = requestAnimationFrame(updateScroller);
-      }
-    };
-
-    window.addEventListener("load", onLoad);
-
+    // Cleanup function to destroy smoother instance on component unmount
     return () => {
-      window.removeEventListener("resize", onResize);
-      document.removeEventListener("scroll", onScroll);
+      smoother.kill();
     };
   }, []);
 
-  return (
-    <div id="scroll-container" ref={scroller}>
-      {/* Your content here */}
-    </div>
-  );
+  return null; // This component does not render anything
 };
 
-export default ScrollAnimation;
+export default GSAPScrollSmoother;

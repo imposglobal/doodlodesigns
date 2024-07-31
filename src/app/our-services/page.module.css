@@ -1,0 +1,187 @@
+.row {
+    /* padding: 40px 40px 0  40px; */
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px ; */
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    flex: 40%;
+    padding: 50px;
+   /* Should be removed. Only for demonstration */
+  }
+  .logosec{
+    padding-left: 80px;
+  }
+  .menuicon{
+    top: 0 !important;
+  }
+  .text_stroke_hover {
+    display: inline-block;
+    position: relative;
+    font-size: 43px;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    text-transform: uppercase;
+  }
+  .text_stroke_hover:hover{
+    color: #fff;
+  }
+  .text_title{
+    margin-top: -28px;
+    text-transform: uppercase;
+    font-size: 53px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  .stext_stroke_hover {
+    display: inline-block;
+    position: relative;
+    font-size: 53px;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    text-transform: uppercase;
+  }
+  .stext_stroke_hover:hover{
+    color: #fff;
+  }
+  .stext_title{
+    margin-top: -28px;
+    text-transform: uppercase;
+    font-size: 53px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+   /* Create two equal columns that sits next to each other */
+   .columnst1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .columnst2 {
+    flex: 40%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .storyhero{
+    padding: 30px 150px;
+  }
+  .desc{
+    font-family: 'poppins';
+    color: #9E9E9E;
+    font-size: 18px;
+    font-weight: 300 !important;
+    margin-bottom: 30px;
+  }
+  .imgcol {
+    flex: 25%;
+    height: 300px;
+    padding: 50px 10px;
+   /* Should be removed. Only for demonstration */
+  }
+  .ourimg1{
+
+  }
+  .ourimg2{
+    margin-top: 72px;
+  }
+  .servicesec{
+    padding: 50px 150px;
+  }
+
+  .sertcol1 {
+    flex: 85%;
+  
+   /* Should be removed. Only for demonstration */
+  }
+  .sertcol2 {
+    flex: 15% 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  
+   /* Should be removed. Only for demonstration */
+  }
+  .stitle{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #C9C9C9;
+    font-weight: 500;
+    font-family: 'poppins';
+  }
+  .sbtitle{
+    font-size: 25px;
+    color: #C9C9C9;
+    font-weight: bold;
+    font-family: 'poppins';
+  }
+  .sdesc{
+    font-family: 'poppins';
+    color: #9E9E9E;
+    font-size: 18px;
+    font-weight: 400 !important;
+    margin-bottom: 30px;
+  }
+  .sbdesc{
+    font-family: 'poppins';
+    color: #9E9E9E;
+    font-size: 18px;
+    font-weight: 400 !important;
+    margin-left: 53px;
+  }
+  .sbdesc1{
+    font-family: 'poppins';
+    color: #9E9E9E;
+    font-size: 18px;
+    font-weight: 400 !important;
+    margin-left: 47px;
+  }
+  .sbdesc4{
+    font-family: 'poppins';
+    color: #9E9E9E;
+    font-size: 18px;
+    font-weight: 400 !important;
+    margin-left: 56px;
+  }
+  .sercol1 {
+    flex: 50% 1;
+    margin-right: 10px;
+
+   /* Should be removed. Only for demonstration */
+  }
+  .sercol2 {
+    flex: 50% 1;
+    margin-left: 10px;
+  
+   /* Should be removed. Only for demonstration */
+  }
+  .serbox{
+    border: 1px solid #d9d9d998;
+    border-radius: 10px;
+    padding: 30px; 
+    margin: 10px 0;
+  }
+  .num{
+    margin: 0  10px 0 0px;
+  }
+  .subsbtn{
+    background: #000;
+    float: right;
+    color: #fff;
+    border-radius: 10px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-family: 'poppins';
+    text-transform: uppercase;
+  }

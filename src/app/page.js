@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link"
 import Image from "next/image";
 import Logo from "./Images/logo";
 import styles from "./page.module.css";
@@ -19,8 +20,6 @@ import ContactForm from "./Component/ContactForm";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import AccordionOne from "./Component/Accordions/AccordianOne";
-import AccordianTwo from "./Component/Accordions/AccordianTwo";
-import AccordionTwo from "./Component/Accordions/AccordianTwo";
 
 
 
@@ -130,7 +129,7 @@ const Home = () => {
      <div className={styles.home_hero_content}> 
      <Menu onClick={toggleClass} />
      <div className={styles.block}>
-      <Image
+      <Image data-aos="fade-up"
             className={styles.homestar}
             src="/home/homestar.png"
             alt="Next.js Logo"
@@ -141,10 +140,15 @@ const Home = () => {
             onClick={toggleClass}
           />
      </div>
-      <h2 data-aos="flip-up" className={styles.text_stroke_hover}>We're your go-to</h2>
-      <h2 data-aos="flip-up" className={styles.text_title}>Creative Studio</h2>
-      <p className={styles.home_hero_desc}>Of course we're into Branding, Web<br/> Design, Packaging, Illustrations,<br/> publication, social media & what not!</p>
-      <a className="boton_elegante">EXPLORE MORE</a>
+      <h2 data-aos="fade-up" className={styles.text_stroke_hover}>We're your go-to</h2>
+      <h2 data-aos="fade-up" className={styles.text_title}>Creative Studio</h2>
+      <p data-aos="fade-up" className={styles.home_hero_desc}>Of course we're into Branding, Web<br/> Design, Packaging, Illustrations,<br/> publication, social media & what not!</p>
+      <div data-aos="fade-up">
+      <Link className="boton_elegante" href="/reach-us">
+      EXPLORE MORE
+      </Link>
+      </div>
+      
      </div>
      </div>
     
