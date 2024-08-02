@@ -121,7 +121,7 @@
     font-family: 'poppins';
   }
   .sbtitle{
-    font-size: 25px;
+    font-size: 23px;
     color: #C9C9C9;
     font-weight: bold;
     font-family: 'poppins';
@@ -136,21 +136,21 @@
   .sbdesc{
     font-family: 'poppins';
     color: #9E9E9E;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400 !important;
     margin-left: 53px;
   }
   .sbdesc1{
     font-family: 'poppins';
     color: #9E9E9E;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400 !important;
     margin-left: 47px;
   }
   .sbdesc4{
     font-family: 'poppins';
     color: #9E9E9E;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400 !important;
     margin-left: 56px;
   }
@@ -185,3 +185,142 @@
     font-family: 'poppins';
     text-transform: uppercase;
   }
+  .pointers{
+    margin: 30px  0;
+  }
+  .pointer_inner{
+    display: flex;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #9E9E9E80;
+      margin-right: 52px;
+  }
+  .pnum{
+    margin: 0 20px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #9E9E9E;
+    font-family: 'poppins';
+  }
+  .pimg{
+    margin: 0 30px;
+  }
+  .pdesc h2{
+    font-family: 'poppins';
+    color: #fff;
+    font-size: 22px; 
+    font-weight: 600;
+  }
+  .pdesc p{
+    font-family: 'poppins';
+    color: #9E9E9E;
+    font-size: 18px; 
+    font-weight: 300;
+  }
+  .pmar{
+    margin-top: 0 !important;
+  }
+  .ppimg{
+    width: 80% !important;
+  }
+  .discuss_row{
+    overflow: hidden;
+    padding: 30px 0 0 50px;
+    margin: 100px 200px;
+    border: 1px solid #fff;
+    border-radius: 10px ;
+  }
+  .mainheadingdis {
+    margin-top: 0;
+    font-size: 58px;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-transform: uppercase;
+  }
+  .sec_headingdis{
+    margin-top: -35px;
+    padding: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 58px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  .disdesc{
+    margin-bottom: 40px;
+    color: #fff;
+    font-family: "poppins";
+    font-size: 18px;
+    font-weight: 300 !important;
+    padding-right: 200px;
+  }
+  .booknow{
+    margin-top: 100px;
+  }
+  .bookwrap1{
+    padding: 3px 0;
+    opacity: 1;
+    background-color: #fff;
+    rotate: -25deg;
+    width: 505px;
+    margin-right: -52px;
+    float: right;
+    margin-top: -102px;
+  } 
+  .bookwrap{
+    padding: 3px 0;
+    opacity: 0.5;
+    background-color: #fff;
+    rotate: -15deg;
+    width: 671px;
+    margin-right: -19px;
+    float: right;
+    margin-top: -86px;
+  } 
+  .bookwrap span{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins';
+  
+  }
+  .bookwrap1 span{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins';
+  
+  }
+  .addsec{
+    padding-top: 80px;
+  }
+  .addcol1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .addcol2 {
+    flex: 40%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .adesc{
+    font-size: 18px;
+    font-family: 'poppins';
+    color: #9E9E9E;
+    padding-right:312px
+  }
+  
+.numlist{
+
+}
+.innnum{
+
+}
+.numtext{
+  color: #9E9E9E;
+  font-size: 20px;
+  font-family: 'poppins';
+}
+.numm{
+  margin-right: 20px;
+}
