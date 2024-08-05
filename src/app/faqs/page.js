@@ -3,11 +3,18 @@ import Accordion from "../Component/Faq/Accordion";
 import Menu from "../Component/Menu";
 import Logo from "../Images/logo";
 import styles from "./page.module.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import {useState, useEffect} from 'react';
 
 const Faqs = () => {
 
-   
+    useEffect(() =>{
+        AOS.init({
+          duration: 1000, // Customize the duration of the animations
+          once: false,     // Whether animation should happen only once - while scrolling down
+        });
+      }, []);
    
     const [inactive, setInactive] = useState(true); // Set initial state to true
   
