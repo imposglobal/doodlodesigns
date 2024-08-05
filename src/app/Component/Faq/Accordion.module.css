@@ -1,0 +1,81 @@
+.accordion {
+    width: 75%;
+    margin: 50px auto;
+}
+
+.accordion-item {
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    /* border-bottom: 1px solid #333; */
+}
+
+.accordion-title {
+    margin: 0;
+    font-family: 'poppins';
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.accordion-description {
+    flex-grow: 1;
+    font-family: 'poppins';
+    color: #fff;
+    margin-right: 88px;
+    margin-left: 40px;
+    font-size: 1.1em;
+}
+
+.accordion-button {
+    background-color: #F6FA5E;
+    border: none;
+    font-family: 'poppins';
+    border-radius: 50%;
+    width: 47px;
+    height: 40px;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.accordion-button:focus {
+    outline: none;
+}
+
+.accordion-button.open {
+    transform: rotate(0deg);
+}
+
+.accordion-collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+.accordion-collapse.show {
+    max-height: 500px; /* Adjust as needed for content height */
+}
+
+.accordion-body {
+    padding: 10px 20px 20px 20px;
+    font-family: 'poppins';
+    color: #fff;
+    font-size: 1em;
+    margin-left: 78px;
+    margin-right: 110px;
+    background-color: transparent;
+}
+.accordion-body {
+    font-size: 1em;
+    white-space: pre-line; /* Preserves whitespace and line breaks */
+}
