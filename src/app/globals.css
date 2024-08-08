@@ -1,11 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 * {
   scroll-behavior: smooth;
 }
 html, body {
+  cursor:url('/home/cursor.svg'), auto;
   scroll-behavior: smooth;
+  
 }
-
+@keyframes rotateCursor {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+a,button{
+  cursor:url('/home/cursor.svg'), auto !important;
+}
 body{
     margin-left: auto;
     margin-right: auto;
@@ -212,7 +224,8 @@ h1,h2,h3,h4,h5,h6,p{
   padding: 0 4px;
 }
 .gallery-item {
-  text-align: center;
+  
+  position: relative;
   width: 30%;
 }
 .gallery-item img {
@@ -220,17 +233,63 @@ h1,h2,h3,h4,h5,h6,p{
   transition: transform 1s ease;
   height: auto;
 }
-img#fimg5 {
+.imgtitle{
+  color: #fff;
+    font-family: 'Poppins';
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.portdesc{
+  color: #fff;
+  font-size: 16px;
+  font-family: 'poppins';
+}
+.pover{
+   width: 78%;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150px, -104pt);
+  
+  
+}
+.gallery-item:hover img {
+  opacity: 0.3;
+  background: #000;
+}
+
+.gallery-item:hover .pover {
+  opacity: 1;
+  width: 78%;
+  
+}
+#fimg5 .pover, #fimg6 .pover{
+  transform: translate(-150px, -154pt);
+}
+#fimg7 .pover{
+  transform: translate(-150px, -90pt);
+}
+div#fimg7 .gallery_plink__u_ez2{
+  bottom: -60px !important;
+}
+
+  
+#fimg5 {
   margin-top: -87px;
 }
-img#fimg6 {
+#fimg6 {
   margin-top: -87px;
 }
-img#fimg8 {
+#fimg8 {
   margin-top: -158px;
 }
-img#fimg9 {
+#fimg9 {
   margin-top: -158px;
+}
+div#fimg2 .gallery_plink__u_ez2,div#fimg3 .gallery_plink__u_ez2 {
+  bottom: -60px !important;
 }
 
 
@@ -376,6 +435,7 @@ h2.client_h2 {
   text-transform: uppercase;
 }
 .brandspan{
+  font-weight: 600;
   font-size: 55px;
     font-family: 'Poppins', sans-serif;
     color: transparent;
@@ -384,7 +444,9 @@ h2.client_h2 {
     text-transform: none;
     margin: 0 0 0 40px;
 }
-
+#fnum{
+  color: #34FF9D !important;
+}
 
 /* Target MacBooks with a minimum width of 1280px */
 @media only screen and (min-width: 1280px) {
@@ -510,7 +572,7 @@ img{
   height: auto;
   border: 0 !important;
 }
-.page_logosec__PXVwJ .menuicon,.page_logosec__ct6nW .menuicon, .page_column2__W874Q .menuicon
+.page_logosec__PXVwJ .menuicon,.page_logosec__ct6nW .menuicon, .page_column2__W874Q .menuicon, .page_column2___dcdx .menuicon
 {
   top: 0 !important;
 }
@@ -624,3 +686,34 @@ img{
 .circle:nth-child(3) { left: 37.3% }
 .circle:nth-child(4) { left: 53.3% }
 .circle:nth-child(5) { left: 74.7% }
+
+.Slider_slide__wISi2 {
+  display: flex !important;
+}
+.slick-dots li button:before {
+  font-size: 12px;
+  width: 10px !important;
+  height: 5px !important;
+  content: '' !important;
+  color: white !important;
+  background-color: #D9D9D9;
+  margin: 10px 30px;
+  border-radius: 100px;
+} 
+
+.slick-dots li.slick-active button:before {
+  color: white !important;
+  font-size: 12px;
+  width: 40px !important;
+  height: 5px !important;
+  content: '' !important;
+  background-color: #D9D9D9;
+  margin: 10px 10px;
+} 
+ul.slick-dots {
+  left: -356px !important;
+  bottom: -39px !important;
+}
+.slick-prev:before {
+  content: '<' !important;
+}

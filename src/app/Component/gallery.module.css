@@ -215,4 +215,66 @@
 }
 
 
+.imgtitle{
+  color: #fff;
+}
+.pover{
+ 
+  background-color: #000000b9;
+}
   
+.gallery {
+  display: grid;
+  padding: 10px 50px;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 20px;
+}
+
+.galleryItem {
+  text-align: center;
+}
+
+.galleryItem img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.imgauto {
+  margin-top: 0px !important;
+  border: 2px solid #000; /* Example style, change as needed */
+  transition: transform 0.3s ease;
+}
+
+.pover {
+  /* Add styling for the pover class if needed */
+}
+
+.imgtitle {
+  /* Add styling for the imgtitle class if needed */
+}
+
+.boton_elegante {
+  /* Add styling for the boton_elegante class if needed */
+}
+
+.btn_center {
+  text-align: center;
+  margin-top: 20px;
+}
+.plink{
+  position: relative;
+  bottom: -100px;
+  float: right;
+}
+.plinks{
+  cursor: none;
+  opacity: 1 !important;
+  width: 95% !important;
+  background: transparent !important;
+}
+.plinks:hover {
+  transform: scale(1.3) rotateX(10deg);
+}

@@ -17,8 +17,6 @@ import WorkAnimationlr from "./Component/WorkAnimatedLR";
 import BrandAnimated from "./Component/Brandlineanimation";
 import ReachusAnimated from "./Component/ReachusAnimation";
 import ContactForm from "./Component/ContactForm";
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import AccordionOne from "./Component/Accordions/AccordianOne";
 
 
@@ -26,11 +24,21 @@ import AccordionOne from "./Component/Accordions/AccordianOne";
 const Home = () => {
   const [selectedOption, setSelectedOption] = useState('someOption');
 
-  useEffect(() =>{
+  useEffect(() => {
     AOS.init({
       duration: 1000, // Customize the duration of the animations
-      once: false,     // Whether animation should happen only once - while scrolling down
+      once: false,    // Whether animation should happen only once - while scrolling down
     });
+
+    const handleScroll = () => {
+      AOS.refresh();
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
   const imagesRow1 = [
     "/home/row1img1.jpg",
@@ -71,16 +79,16 @@ const Home = () => {
 
 
    const items = [
-    { id: 1, ids: 'fimg1', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
-    { id: 2, ids: 'fimg2', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
-    { id: 3, ids: 'fimg3', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
-    { id: 4, ids: 'fimg4', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
-    { id: 5, ids: 'fimg5', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
-    { id: 6, ids: 'fimg6', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
-    { id: 7, ids: 'fimg7', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
-    { id: 8, ids: 'fimg8', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
-    { id: 9, ids: 'fimg9', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
-    { id: 10, ids: 'fimg10', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
+    { id: 1, ids: 'fimg1', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
+    { id: 2, ids: 'fimg2', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
+    { id: 3, ids: 'fimg3', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
+    { id: 4, ids: 'fimg4', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
+    { id: 5, ids: 'fimg5', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
+    { id: 6, ids: 'fimg6', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
+    { id: 7, ids: 'fimg7', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
+    { id: 8, ids: 'fimg8', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
+    { id: 9, ids: 'fimg9', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
+    { id: 10, ids: 'fimg10', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
     // Add more items with appropriate categories
   ];
 
@@ -148,14 +156,25 @@ const Home = () => {
       EXPLORE MORE
       </Link>
       </div>
-      
+      <div>
+      <Image
+            className={styles.trustp}
+            src="/home/trustp.svg"
+            alt="Next.js Logo"
+            layout="responsive"
+            width={100}
+            height={37}
+            priority
+          />
+          <p className={styles.trustdesc}>TrustScore <b>4.8</b> | <b>347</b> Reviews</p>
+      </div>
      </div>
      </div>
     
     {/* Our services */}
     
     
-    <div className={`${styles.services} ${styles.srv_scroller}`}>
+    <div data-aos="fade-up" className={`${styles.services} ${styles.srv_scroller}`}>
     <div className={styles.service_hight}>
     <h2 className={styles.mainheading}>OUR</h2>
     <h2 className={styles.sec_heading}>SERVICES</h2>
@@ -183,12 +202,14 @@ const Home = () => {
     </div>
 
     <div className={styles.clientle}>
-      <h2 className={styles.mainheading}>OUR</h2>
-      <h2 className={styles.sec_heading}>clientele</h2>
-      <ImageFlip />
-
-      <div className={styles.divider}>Partnered with</div>
-      <div className={styles.partnerimgsec}>
+      <h2 data-aos="fade-up" className={styles.mainheading}>OUR</h2>
+      <h2 data-aos="fade-up" className={styles.sec_heading}>clientele</h2>
+      <div data-aos="fade-up">
+      <ImageFlip  />
+      </div>
+      
+      <div data-aos="fade-up" className={styles.divider}>Partnered with</div>
+      <div data-aos="fade-up" className={styles.partnerimgsec}>
       <Image
             className={styles.partnerimg}
             src="/home/partner/part1.png"
@@ -230,8 +251,8 @@ const Home = () => {
 
    {/* review slider */}
    <div className="testimonial">
-    <h2 className={styles.mainheading}>Client</h2>
-      <h2 className={styles.sec_heading}>Feedback</h2>
+    <h2 data-aos="fade-up" className={styles.mainheading}>Client</h2>
+      <h2 data-aos="fade-up" className={styles.sec_heading}>Feedback</h2>
       </div>
     <Carousel />
     {/* review slider End*/}
@@ -435,7 +456,7 @@ const Home = () => {
         <h2>{hoverText}</h2>
         </div>
         <div className={styles.columnpdiff2}>
-          <h3 className={styles.prtitle}>260+</h3>
+          <h3 id="fnum" className={styles.prtitle}>260+</h3>
           <p className={styles.prdesc}>260+ Project Delivered & Counting</p>
         </div>
       </div>

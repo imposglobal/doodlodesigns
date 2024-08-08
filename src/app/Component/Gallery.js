@@ -1,6 +1,8 @@
 "use client";
 import { useState } from 'react';
 import styles from "./gallery.module.css";
+import Link from 'next/link';
+import Image from "next/image";
 
 const Gallery = ({ items = [] }) => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -30,14 +32,31 @@ const Gallery = ({ items = [] }) => {
 
       <div className="gallery">
         {filteredItems.map(item => (
-          <div key={item.id} className="gallery-item">
+          <div id={item.ids}  key={item.id} className="gallery-item">
             <img 
-              id={item.ids} 
+              
               src={item.image} 
               alt={item.name} 
               className={activeFilter !== 'all' ? 'imgauto' : ''}
             />
             {/* <p>{item.name}</p> */}
+              <div className="pover">
+                <h4 className="imgtitle">{item.ptitle} </h4>
+                <p className="portdesc">{item.pdesc} </p>
+                <div className={styles.plink}>
+                  <Link href="#">
+                  <Image
+                    className={styles.plinks}
+                    src="/home/plink.svg"
+                    alt="Next.js Logo"
+                    layout="responsive"
+                    width={100}
+                    height={37}
+                    priority
+                  />
+                  </Link>
+                </div>
+              </div>
           </div>
         ))}
       </div>

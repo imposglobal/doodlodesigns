@@ -34,7 +34,7 @@ const AccordionOne = () => {
         // Create ScrollTrigger for each panel
         ScrollTrigger.create({
           trigger: panel,
-          start: 'top 10%', // Adjust start and end to avoid overlap
+          start: 'top 30%', // Adjust start and end to avoid overlap
           end: 'top 60%',
           onEnter: () => {
             setActivePanel(index);

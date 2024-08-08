@@ -7,7 +7,7 @@
     border-radius: 10px ;
   }
   .contcolumn1 {
-    flex: 50%;
+    flex: 40%;
     padding: 50px 50px 80px 50px;
    /* Should be removed. Only for demonstration */
   }
@@ -27,7 +27,7 @@
   .fdesc{
     font-family: 'poppins';
     color: #9E9E9E;
-    font-size: 20px;
+    font-size: 16px;
   }
   .conhead{
     margin-top: 50px;
@@ -45,18 +45,18 @@
   .formhead{
     color: #000000;
     font-family: 'poppins';
-    font-size: 35px;
+    font-size: 32px;
   }
   .formdesc{
-    margin-top: -10px;
+    margin-top: -2px;
     font-family: 'poppins';
     font-weight: 300 !important;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 50px;
   }
   .formInput{
     width: 100%;
-    margin: 30px 0;
+    margin: 25px 0;
   }
   .formInput input{
     width: 100%;
@@ -66,7 +66,7 @@
     border: none;
     border-bottom: 1px solid #000;
     font-family: 'poppins';
-    font-size: 18px;
+    font-size: 16px;
     color: #000;
     -webkit-transition: 0.1s;
   transition: 0.1s;
@@ -193,7 +193,7 @@
     border-radius: 10px;
     border: 1px solid #000;
   }
-  .subsbtn{
+  .subsbtns{
     padding: 7px 15px 13px 15px;
     background: transparent;
     border: 1px solid #000;

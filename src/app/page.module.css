@@ -230,7 +230,7 @@
 .wokeani {
   background: #fff;
   opacity: 0.2;
-  padding: 20px;
+  padding: 6px;
   rotate: 4deg;
   transform: skewX(5deg);
 }
@@ -239,11 +239,12 @@
   margin: 0 30px;
   font-size: 30px;
   font-weight: 600;
+  text-transform: capitalize;
 }
 .wokeanilr {
   margin-top: -80px;
   background: #fff;
-  padding: 20px;
+  padding: 6px;
   rotate: -4deg;
   transform: skewX(-4deg);
 }
@@ -252,6 +253,7 @@
   margin: 0 30px;
   font-size: 30px;
   font-weight: 600;
+  text-transform: capitalize;
 }
 .filtersec{
   padding: 180px 100px 0 100px;
@@ -330,7 +332,10 @@
   font-family: 'poppins';
 }
 .pimg{
+  height: 92px;
+  width: 85px;
   margin: 0 30px;
+  ;
 }
 .pdesc h2{
   font-family: 'poppins';
@@ -682,3 +687,16 @@
   overflow: hidden;
   transition: height 0.3s ease;
 }
+.trustp{
+  width: 25% !important;
+  float: right;
+}
+.trustdesc{
+  color: #fff;
+    margin-top: 87px;
+    float: right;
+    font-size: 11.3px;
+    margin-right: -158px;
+    font-family: 'Poppins';
+}
+
