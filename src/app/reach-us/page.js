@@ -13,6 +13,9 @@ import BrandAnimated from "../Component/Brandlineanimation";
 import Calendly from "../Component/Calendly";
 import React, { useEffect, useRef,useState } from 'react';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Reachus = () => {
     const [hoverText, setHoverText] = useState('PROJECTS THAT MAKE A DIFFERENCE');
@@ -65,40 +68,64 @@ const Reachus = () => {
 
     //gallery
     const items = [
-        { id: 1, ids: 'fimg1', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
-        { id: 2, ids: 'fimg2', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
-        { id: 3, ids: 'fimg3', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
-        { id: 4, ids: 'fimg4', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
-        { id: 5, ids: 'fimg5', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
-        { id: 6, ids: 'fimg6', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
-        { id: 7, ids: 'fimg7', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
-        { id: 8, ids: 'fimg8', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
-        { id: 9, ids: 'fimg9', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
-        { id: 10, ids: 'fimg10', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
-        // Add more items with appropriate categories
-      ];
+      { id: 1, ids: 'fimg1', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
+      { id: 2, ids: 'fimg2', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
+      { id: 3, ids: 'fimg3', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
+      { id: 4, ids: 'fimg4', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
+      { id: 5, ids: 'fimg5', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
+      { id: 6, ids: 'fimg6', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
+      { id: 7, ids: 'fimg7', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
+      { id: 8, ids: 'fimg8', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
+      { id: 9, ids: 'fimg9', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
+      { id: 10, ids: 'fimg10', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
+      // Add more items with appropriate categories
+    ];
 
 
-
-      const textRefs = useRef([]);
-
-      useEffect(() => {
-        gsap.fromTo(
-          textRefs.current,
-          { opacity: 0, y: 50 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 1.5,
-            stagger: 1.5,
-            repeat: -1,
-            repeatDelay: 1,
-            yoyo: true,
-            ease: 'power3.inOut',
-          }
-        );
-      }, []);
+  
+      const [index, setIndex] = useState(0);
+      const textRef = useRef(null);
+      const texts = ['brand', 'Website', 'Next Story Book','Social Media Presence','Packaging Design'];
     
+      useEffect(() => {
+        const interval = setInterval(() => {
+          // Trigger the slide-up animation by changing the text
+          textRef.current.classList.add(styles.slideOut);
+    
+          // Change the text after the slide-out animation
+          setTimeout(() => {
+            setIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    
+            // Reset the animation class and trigger slide-up in
+            textRef.current.classList.remove(styles.slideOut);
+            textRef.current.classList.add(styles.slideIn);
+    
+            // Remove the slide-in class after the animation ends
+            setTimeout(() => {
+              textRef.current.classList.remove(styles.slideIn);
+            }, 800); // Duration of the slide-in animation
+          }, 800); // Duration of the slide-out animation
+        }, 3000); // Change text every 3 seconds
+    
+        return () => clearInterval(interval);
+      }, [texts.length]);
+    
+    // image scroll 
+    const [rotation, setRotation] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setRotation(scrollY * 0.2); // Adjust the rotation speed as needed
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
    
     return(
         <section>
@@ -117,8 +144,25 @@ const Reachus = () => {
                     <div className={styles.innersec}>
                     <div>
                 </div>
-                    <h2 data-aos="fade-up" className={styles.text_stroke_hover}>LET’S BUILD </h2>
-                    <h2 data-aos="fade-up" className={styles.text_title}>YOUR brand</h2>
+                <div className={styles.container} data-aos="fade-up">
+      <h1 className={styles.text}>
+        LET’S BUILD Your <span className={styles.rotatingText} ref={textRef}>{texts[index]}</span>
+      </h1>
+    </div>
+      <div data-aos="fade-up" className={styles.search}>
+        <div className={styles.typewriterContainer}>
+        <Image data-aos="fade-up"
+                                    className={styles.rsearch}
+                                    src="/home/rsearch.svg"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+        <p data-aos="fade-up" className={styles.typing}>Branding & Web Design Agency </p>
+      </div>
+      </div>
                     <div className={styles.row}>
                         <div className={styles.innercolumn1}>
                             <div className={styles.rowimg}>
@@ -169,6 +213,52 @@ const Reachus = () => {
                                 />
                                 </div>
                         </div>
+                    </div>
+                    <div className={styles.partnersec}>
+                      <p data-aos="fade-up" className={styles.partnerh}>Partnered with </p>
+                      <div className={styles.partnerimgsec}>
+                        <div className={styles.shopify}>
+                        <Image data-aos="fade-up"
+                                  className={styles.shopify}
+                                  src="/home/partner/shopify.svg"
+                                  alt="Next.js Logo"
+                                  layout="responsive"
+                                  width={100}
+                                  height={37}
+                                  priority
+                                  />
+                        </div>
+                        <div className={styles.partnerimg}>
+                        <Image data-aos="fade-up"
+                                  src="/home/partner/uber.svg"
+                                  alt="Next.js Logo"
+                                  layout="responsive"
+                                  width={100}
+                                  height={37}
+                                  priority
+                                  />
+                        </div>
+                        <div className={styles.partnerimg}>
+                        <Image data-aos="fade-up"
+                                  src="/home/partner/google.svg"
+                                  alt="Next.js Logo"
+                                  layout="responsive"
+                                  width={100}
+                                  height={37}
+                                  priority
+                                  />
+                        </div>
+                        <div className={styles.partnerimg}>
+                        <Image data-aos="fade-up"
+                                  src="/home/partner/word.svg"
+                                  alt="Next.js Logo"
+                                  layout="responsive"
+                                  width={100}
+                                  height={37}
+                                  priority
+                                  />
+                        </div>
+                      </div>
                     </div>
                     </div>
                 </div>
@@ -239,6 +329,18 @@ const Reachus = () => {
                         <button type="submit" className={styles.subsbtn}>Submit</button>
                         </form>
                 </div>
+               <div className={styles.caassec}>
+               <Image
+                className={styles.cass}
+                src="/home/saasc.svg"
+                alt="Next.js Logo"
+                layout="responsive"
+                width={100}
+                height={37}
+                priority
+                style={{ transform: `rotate(${rotation}deg)` }}
+               />
+               </div>
                 </div>
             </div>
         </div>
@@ -248,6 +350,10 @@ const Reachus = () => {
             <ImageFlip />
        </div>
        <div data-aos="fade-up" className={styles.filtergal}>
+        <div className={styles.featured}>
+        <h2 className={styles.mainheadingf}>FEATURED</h2>
+        <h2 className={styles.sec_headingf}>Works</h2>
+        </div>
         <Portfolio items={items} />
         </div>
 

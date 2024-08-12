@@ -1,8 +1,10 @@
 "use client";
 import { useState } from 'react';
 import styles from "./gallery.module.css";
+import Link from 'next/link';
+import Image from "next/image";
 
-const Portfolio = ({ items = [] }) => {
+const Gallery = ({ items = [] }) => {
   const [activeFilter, setActiveFilter] = useState('all');
 
   const handleFilterChange = (event) => {
@@ -13,12 +15,10 @@ const Portfolio = ({ items = [] }) => {
 
   return (
     <div>
-        <div className={styles.port}>
-        <h2 data-aos="fade-up" className={styles.text_stroke_hovers}>FEATURED</h2>
-        <h2 data-aos="fade-up" className={styles.text_titles}>Works</h2>
-        </div>
-      <div className={styles.rowfilterp}>
+      <div className={styles.rowfilter}>
         <div className={styles.fcolumn1}>
+          <h4 className={styles.fhead}>Curious how we can turn your brand into a game-changer?</h4>
+          <p className={styles.fdesc}>Discover the impact of our work. Check out our case studies and portfolio to see how we’ve transformed brands across various industries.</p>
         </div>
         <div className={styles.fcolumn2}>
           <select className={styles.filterdrop} onChange={handleFilterChange} value={activeFilter}>
@@ -32,14 +32,33 @@ const Portfolio = ({ items = [] }) => {
 
       <div className="gallery">
         {filteredItems.map(item => (
-          <div key={item.id} className="gallery-item">
+          <div id={item.ids}  key={item.id} className="gallery-item">
+            <div className="imgblack"> 
             <img 
-              id={item.ids} 
+              
               src={item.image} 
               alt={item.name} 
               className={activeFilter !== 'all' ? 'imgauto' : ''}
             />
             {/* <p>{item.name}</p> */}
+              <div className="pover">
+                <h4 className="imgtitle">{item.ptitle} </h4>
+                <p className="portdesc">{item.pdesc} </p>
+                <div className={styles.plink}>
+                  <Link href="#">
+                  <Image
+                    className={styles.plinks}
+                    src="/home/plink.svg"
+                    alt="Next.js Logo"
+                    layout="responsive"
+                    width={100}
+                    height={37}
+                    priority
+                  />
+                  </Link>
+                </div>
+              </div>
+          </div>
           </div>
         ))}
       </div>
@@ -74,4 +93,4 @@ const Portfolio = ({ items = [] }) => {
   );
 };
 
-export default Portfolio;
+export default Gallery;

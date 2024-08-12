@@ -170,24 +170,24 @@ const Ourstory = () => {
                             <div className="circle"></div>
 
                             <div className="step step1">
-                                <div className="step-title">Discovery</div>
-                                <div className="step-description">Understanding your brand, goals, & audience.</div>
+                                <div data-aos="fade-up" className="step-title">Discovery</div>
+                                <div data-aos="fade-up" className="step-description">Understanding your brand, goals, & audience.</div>
                             </div>
                             <div className="step step2">
-                                <div className="step-title">Research</div>
-                                <div className="step-description">Conducting market analysis & identifying opportunities.</div>
+                                <div data-aos="fade-up" className="step-title">Research</div>
+                                <div data-aos="fade-up" className="step-description">Conducting market analysis & identifying opportunities.</div>
                             </div>
                             <div className="step step3">
-                                <div className="step-title">Strategy</div>
-                                <div className="step-description">Developing a tailored brand strategy.</div>
+                                <div data-aos="fade-up" className="step-title">Strategy</div>
+                                <div data-aos="fade-up" className="step-description">Developing a tailored brand strategy.</div>
                             </div>
                             <div className="step step2">
-                                <div className="step-title">Design</div>
-                                <div className="step-description">Creating unique & cohesive brand elements.</div>
+                                <div data-aos="fade-up" className="step-title">Design</div>
+                                <div data-aos="fade-up" className="step-description">Creating unique & cohesive brand elements.</div>
                             </div>
                             <div className="step step4">
-                                <div className="step-title">Implementation</div>
-                                <div className="step-description mdesc">Applying your new brand identity across all channels.</div>
+                                <div data-aos="fade-up" className="step-title">Implementation</div>
+                                <div data-aos="fade-up" className="step-description mdesc">Applying your new brand identity across all channels.</div>
                             </div>
                         </div>
                     </div>
@@ -253,24 +253,24 @@ const Ourstory = () => {
                             <div className="circle"></div>
 
                             <div className="step step1">
-                                <div className="step-title">Discovery & Strategy</div>
-                                <div className="step-description">Understand your goals & develop a strategic plan.</div>
+                                <div data-aos="fade-up" className="step-title">Discovery & Strategy</div>
+                                <div data-aos="fade-up" className="step-description">Understand your goals & develop a strategic plan.</div>
                             </div>
                             <div className="step step2">
-                                <div className="step-title">Design & Prototype</div>
-                                <div className="step-description">Create wireframes & prototypes to visualize your website.</div>
+                                <div data-aos="fade-up" className="step-title">Design & Prototype</div>
+                                <div data-aos="fade-up"s className="step-description">Create wireframes & prototypes to visualize your website.</div>
                             </div>
                             <div className="step step3">
-                                <div className="step-title">Development</div>
-                                <div className="step-description mdesd">Build a custom website using the latest technologies & wireframes.</div>
+                                <div data-aos="fade-up" className="step-title">Development</div>
+                                <div data-aos="fade-up" className="step-description mdesd">Build a custom website using the latest technologies & wireframes.</div>
                             </div>
                             <div className="step step2">
-                                <div className="step-title">Testing & Launch</div>
-                                <div className="step-description mdesd">Conduct thorough testing to ensure flawless performance.</div>
+                                <div data-aos="fade-up" className="step-title">Testing & Launch</div>
+                                <div data-aos="fade-up" className="step-description mdesd">Conduct thorough testing to ensure flawless performance.</div>
                             </div>
                             <div className="step step4">
-                                <div className="step-title">Optimization & Maintenance</div>
-                                <div className="step-description">Continuously optimize and maintain your website for peak performance.</div>
+                                <div data-aos="fade-up" className="step-title">Optimization & Maintenance</div>
+                                <div data-aos="fade-up"s className="step-description">Continuously optimize and maintain your website for peak performance.</div>
                             </div>
                         </div>
                     </div>
@@ -335,24 +335,24 @@ const Ourstory = () => {
                             <div className="circle"></div>
 
                             <div className="step step1">
-                                <div className="step-title">Discovery & Research</div>
-                                <div className="step-description">Understand your brand, market, and consumer needs.</div>
+                                <div data-aos="fade-up" className="step-title">Discovery & Research</div>
+                                <div data-aos="fade-up"s className="step-description">Understand your brand, market, and consumer needs.</div>
                             </div>
                             <div className="step step2">
-                                <div className="step-title">Strategy & Planning</div>
-                                <div className="step-description">Develop a cohesive brand strategy and product positioning plan.</div>
+                                <div data-aos="fade-up" className="step-title">Strategy & Planning</div>
+                                <div data-aos="fade-up"s className="step-description">Develop a cohesive brand strategy and product positioning plan.</div>
                             </div>
                             <div className="step step3">
-                                <div className="step-title">Design & Prototyping</div>
-                                <div className="step-description mdesd">Create innovative packaging designs and prototypes.</div>
+                                <div data-aos="fade-up" className="step-title">Design & Prototyping</div>
+                                <div data-aos="fade-up" className="step-description mdesd">Create innovative packaging designs and prototypes.</div>
                             </div>
                             <div className="step step2">
-                                <div className="step-title">Review & Refinement</div>
-                                <div className="step-description mdesd">Iterate & refine based on feedback to ensure the best outcome.</div>
+                                <div data-aos="fade-up" className="step-title">Review & Refinement</div>
+                                <div data-aos="fade-up" className="step-description mdesd">Iterate & refine based on feedback to ensure the best outcome.</div>
                             </div>
                             <div className="step step4">
-                                <div className="step-title">Finalization & Implementation</div>
-                                <div className="step-description">Finalize designs and oversee the production process to ensure top quality.</div>
+                                <div data-aos="fade-up" className="step-title">Finalization & Implementation</div>
+                                <div data-aos="fade-up"s className="step-description">Finalize designs and oversee the production process to ensure top quality.</div>
                             </div>
                         </div>
                     </div>
@@ -418,23 +418,23 @@ const Ourstory = () => {
 
                             <div className="step step1">
                                 <div className="step-title titlemt">Discovery & Planning</div>
-                                <div className="step-description">Understand your business goals and target audience.</div>
+                                <div data-aos="fade-up"s className="step-description">Understand your business goals and target audience.</div>
                             </div>
                             <div className="step step2">
-                                <div className="step-title">Design & Development</div>
-                                <div className="step-description">Create a tailored eCommerce solution that meets your specific needs.</div>
+                                <div data-aos="fade-up" className="step-title">Design & Development</div>
+                                <div data-aos="fade-up"s className="step-description">Create a tailored eCommerce solution that meets your specific needs.</div>
                             </div>
                             <div className="step step3 titlemt">
-                                <div className="step-title">Design & Prototyping</div>
-                                <div className="step-description mdesd">Create innovative packaging designs and prototypes.</div>
+                                <div data-aos="fade-up" className="step-title">Design & Prototyping</div>
+                                <div data-aos="fade-up" className="step-description mdesd">Create innovative packaging designs and prototypes.</div>
                             </div>
                             <div className="step step2">
-                                <div className="step-title">Testing & Launch</div>
-                                <div className="step-description mdesd">Rigorous testing to ensure a flawless user experience before launch.</div>
+                                <div data-aos="fade-up" className="step-title">Testing & Launch</div>
+                                <div data-aos="fade-up" className="step-description mdesd">Rigorous testing to ensure a flawless user experience before launch.</div>
                             </div>
                             <div className="step step4">
-                                <div className="step-title">Optimization & Growth</div>
-                                <div className="step-description">Continuously optimize your eCommerce platform for improved performance and growth.</div>
+                                <div data-aos="fade-up" className="step-title">Optimization & Growth</div>
+                                <div data-aos="fade-up"s className="step-description">Continuously optimize your eCommerce platform for improved performance and growth.</div>
                             </div>
                         </div>
                     </div>
