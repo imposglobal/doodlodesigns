@@ -6,6 +6,7 @@ import styles from './accordion.module.css';
 import AOS from 'aos';
 import Image from "next/image";
 import 'aos/dist/aos.css';
+import Link from 'next/link';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,6 +28,7 @@ const AccordionOne = () => {
     panelRefs.current.forEach((panel, index) => {
       if (panel) {
         const content = panel.querySelector('.content');
+        const arrowd = panel.querySelector('.arrowd');
 
         // Set initial state for each panel
         gsap.set(content, { height: '0', opacity: 0, duration: 0.5 });
@@ -64,9 +66,20 @@ const AccordionOne = () => {
             <h3 className={styles.services_heading}>Branding Experience</h3>
           </div>
           <div className={`${styles.column2}`}>
-            <p className={styles.services_subheading}>
+           <div className={styles.arrsec}>
+           <p className={styles.services_subheading}>
               Transform your brand with our expert touch. We craft memorable identities that resonate and captivate your audience.
             </p>
+            <Image
+                    className="arrowd"
+                    src="/home/dwn.svg"
+                    alt="Branding Image 1"
+                    layout="responsive"
+                    width={100}
+                    height={37}
+                    priority
+                  />
+           </div>
           </div>
         </div>
         <div className="content">
@@ -77,7 +90,9 @@ const AccordionOne = () => {
               <p className={styles.service_list}>3. Brand Identity & Positioning</p>
               <p className={styles.service_list}>4. Naming & Domain</p>
               <div className={styles.nwmr}>
-                <a className={styles.services_know_more}>Know More</a>
+              <Link className="boton_elegante" href="/reach-us">
+              KNOW MORE
+              </Link>
               </div>
             </div>
             <div className={`${styles.column2}`}>
@@ -157,7 +172,18 @@ const AccordionOne = () => {
           <h3 className={styles.services_heading}>Digital Experience  </h3>
           </div>
           <div className={`${styles.column2}`}>
+            <div className={styles.arrsec}>
             <p className={styles.services_subheading}>Engage your visitors with stunning web designs. Our user-friendly, visually striking websites turn clicks into loyal customers.</p>
+            <Image
+                    className="arrowd"
+                    src="/home/dwn.svg"
+                    alt="Branding Image 1"
+                    layout="responsive"
+                    width={100}
+                    height={37}
+                    priority
+                  />
+           </div>
           </div>
         </div>
         <div className="content">
@@ -169,7 +195,9 @@ const AccordionOne = () => {
             <p className={styles.service_list}>4. Performance Optimisation</p>
 
             <div className={styles.nwmr}>
-              <a className={styles.servies_know_more}>Know More</a>
+            <Link className="boton_elegante" href="/reach-us">
+            KNOW MORE
+            </Link>
             </div>
             </div>
             <div className={`${styles.column2}`}>
@@ -214,9 +242,20 @@ const AccordionOne = () => {
           <h3 className={styles.services_heading}>Packaging  Experience  </h3>
           </div>
           <div className={`${styles.column2}`}>
-            <p className={styles.services_subheading}>
+          <div className={styles.arrsec}>
+          <p className={styles.services_subheading}>
             Stand out on the shelves with our eye-catching packaging designs. We blend form and function to make your products irresistible.
             </p>
+            <Image
+                    className="arrowd"
+                    src="/home/dwn.svg"
+                    alt="Branding Image 1"
+                    layout="responsive"
+                    width={100}
+                    height={37}
+                    priority
+                  />
+           </div>
           </div>
         </div>
         <div className="content">
@@ -229,7 +268,9 @@ const AccordionOne = () => {
             <p className={styles.service_list}>4. Guideline formulation</p>
 
             <div className={styles.nwmr}>
-              <a className={styles.servies_know_more}>Know More</a>
+            <Link className="boton_elegante" href="/reach-us">
+            KNOW MORE
+            </Link>
             </div>
             </div>
             <div className={`${styles.column2}`}>
@@ -273,9 +314,21 @@ const AccordionOne = () => {
             <h3 className={styles.services_heading}>Ecommerce Experience</h3>
           </div>
           <div className={`${styles.column2}`}>
+            
+            <div className={styles.arrsec}>
             <p className={styles.services_subheading}>
             Boost your online sales with our seamless eCommerce solutions. From design to launch, we create digital storefronts that convert.
             </p>
+            <Image
+                    className="arrowd"
+                    src="/home/dwn.svg"
+                    alt="Branding Image 1"
+                    layout="responsive"
+                    width={100}
+                    height={37}
+                    priority
+                  />
+           </div>
           </div>
         </div>
         <div className="content">
@@ -286,7 +339,9 @@ const AccordionOne = () => {
             <p className={styles.service_list}>3. E-com store Set up Strategy</p>
             <p className={styles.service_list}>4. Front-end & Back-end development</p>
             <div className={styles.nwmr}>
-              <a className={styles.servies_know_more}>Know More</a>
+            <Link className="boton_elegante" href="/reach-us">
+            KNOW MORE
+            </Link>
             </div>
             </div>
             <div className={`${styles.column2}`}>

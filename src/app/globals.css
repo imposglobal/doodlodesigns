@@ -444,9 +444,9 @@ h2.client_h2 {
     text-transform: none;
     margin: 0 0 0 40px;
 }
-#fnum{
+/* #fnum{
   color: #34FF9D !important;
-}
+} */
 
 /* Target MacBooks with a minimum width of 1280px */
 @media only screen and (min-width: 1280px) {
@@ -532,6 +532,34 @@ button.slick-arrow.slick-next {
 .panel h2, .panel2 h2  {
   margin: 0;
   cursor: pointer;
+}
+.panel:hover .content{
+  height: 324px !important;
+  opacity: 1 !important;
+}
+.panel:hover{
+  background-image: linear-gradient(
+    50deg,
+    hsl(0deg 0% 16%) 0%,
+    hsl(0deg 0% 16%) 29%,
+    hsl(0deg 0% 16%) 43%,
+    hsl(0deg 0% 17%) 57%,
+    hsl(0deg 0% 22%) 71%,
+    hsl(0deg 0% 31%) 100%
+  );
+  transition: background-image 0.5s ease-out;
+}
+.panel:hover .arrowd{
+  transform: scaleY(-1);
+}
+.arrowd{
+  background: #F6FA5E;
+  width: 21px !important;
+  padding: 11px 15px;
+  height: 27px !important;
+  border-radius: 50%;
+  cursor: none;
+  transition: all 0.3s ease-out;
 }
 
 .content, .content2 {

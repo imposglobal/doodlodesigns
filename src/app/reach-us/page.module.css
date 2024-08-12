@@ -16,7 +16,7 @@
    /* Should be removed. Only for demonstration */
   }
   .column2 {
-    flex: 40%;
+    flex: 35%;
     padding: 50px;
     background: #FFF8F0;
    /* Should be removed. Only for demonstration */
@@ -461,7 +461,7 @@
     transition: height 0.3s ease;
   }
   .formcontainer{
-    padding: 60px 60px !important;
+    padding: 60px 30px !important;
   }
   .caas{
     margin-left: -35px;
@@ -471,6 +471,7 @@
     font-family: 'poppins';
     color: #9E9E9E;
     font-size: 20px;
+
   }
   .conhead{
     margin-top: 50px;
@@ -488,13 +489,14 @@
   .formhead{
     color: #000000;
     font-family: 'poppins';
-    font-size: 35px;
+    font-size: 34px;
+    text-align: center;
   }
   .formdesc{
     margin-top: 0px;
     font-family: 'poppins';
     font-weight: 300 !important;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 50px;
     text-align: center;
   }
@@ -557,6 +559,24 @@
     font-family: 'poppins';
     text-transform: uppercase;
   }
+  /* components/RotatingText.module.css */
+
+.container {
+  font-size: 2em;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.rotateText {
+  font-family: 'Poppins', sans-serif; /* Adjust font-family as needed */
+  font-size: 55px;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  height: 1.6em; /* Adjust to fit text height */
+}
+
+
   
   
   

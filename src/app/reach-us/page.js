@@ -4,7 +4,6 @@ import Image from "next/image";
 import Head from 'next/head'
 import styles from "./page.module.css";
 import Logobw from "../Images/logobw";
-import {useState} from 'react';
 import Menu from "../Component/Menu";
 import ImageFlip from "../Component/FlipImage";
 import Gallery from "../Component/Gallery";
@@ -12,6 +11,8 @@ import Portfolio from "../Component/Portfolio";
 import AccordionOne from "../Component/Accordions/AccordianOne";
 import BrandAnimated from "../Component/Brandlineanimation";
 import Calendly from "../Component/Calendly";
+import React, { useEffect, useRef,useState } from 'react';
+import gsap from 'gsap';
 
 const Reachus = () => {
     const [hoverText, setHoverText] = useState('PROJECTS THAT MAKE A DIFFERENCE');
@@ -76,6 +77,28 @@ const Reachus = () => {
         { id: 10, ids: 'fimg10', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
         // Add more items with appropriate categories
       ];
+
+
+
+      const textRefs = useRef([]);
+
+      useEffect(() => {
+        gsap.fromTo(
+          textRefs.current,
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1.5,
+            stagger: 1.5,
+            repeat: -1,
+            repeatDelay: 1,
+            yoyo: true,
+            ease: 'power3.inOut',
+          }
+        );
+      }, []);
+    
    
     return(
         <section>
@@ -92,6 +115,8 @@ const Reachus = () => {
                     <Logobw />
                     </div>
                     <div className={styles.innersec}>
+                    <div>
+                </div>
                     <h2 data-aos="fade-up" className={styles.text_stroke_hover}>LET’S BUILD </h2>
                     <h2 data-aos="fade-up" className={styles.text_title}>YOUR brand</h2>
                     <div className={styles.row}>

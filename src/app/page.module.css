@@ -72,7 +72,7 @@
   margin-top: -94px;
   display: inline-block;
   position: relative;
-  font-size: 55px;
+  font-size: 50px;
   font-family: 'Poppins', sans-serif;
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -83,7 +83,7 @@
   color: #fff;
 }
 .homestar{
-  width: 100px !important;
+  width: 80px !important;
     float: right;
     position: relative;
     top: -50px;
@@ -92,7 +92,7 @@
 .text_title{
   margin-top: -28px;
   text-transform: uppercase;
-  font-size: 70px;
+  font-size: 63px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
@@ -486,6 +486,9 @@
   color: #fff;
   font-weight: 600;
 }
+.columnpdiff2 h3:hover, .columnpdiff3 h3:hover, .columnpdiff4 h3:hover, .columnpdiff5 h3:hover, .columnpdiff6 h3:hover{
+  color: #34FF9D !important;
+}
 .columnpdiff2 p{
   padding: 0 89px;
   text-align: center;
@@ -699,4 +702,6 @@
     margin-right: -158px;
     font-family: 'Poppins';
 }
-
+.galtitle{
+  margin: 20px 46px;
+}

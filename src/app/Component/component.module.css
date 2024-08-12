@@ -193,12 +193,23 @@
     border-radius: 10px;
     border: 1px solid #000;
   }
-  .subsbtns{
+  .subsbtn{
     padding: 7px 15px 13px 15px;
     background: transparent;
     border: 1px solid #000;
     border-radius: 10px;
     margin: 0 11px;
+  }
+  .subsbtns{
+    padding: 13px 30px 13px 30px;
+    background: #000;
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'poppins';
+    border-radius: 10px;
+    margin: 0 11px 30px 11px;
   }
   .subbtni{
     margin-top: 3px;

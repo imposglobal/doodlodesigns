@@ -40,7 +40,7 @@
     color: #fff;
   }
   .services_heading{
-    line-height: 45px;
+    line-height: 40px;
     font-family: 'poppins';
     font-size: 38px;
     font-weight: 600;
@@ -50,11 +50,12 @@
   
   .services_subheading{
     font-family: 'poppins';
-    font-size: 20px;
+    font-size: 18px;
     color: #fff !important;
+    margin-right: 50px;
   }
   .service_list{
-    font-size: 18px;
+    font-size: 16px;
     color: #9E9E9E;
     font-family: 'poppins';
     font-weight: 300;
@@ -80,7 +81,7 @@
   .gridsec{
     margin: 22px 0;
     display: flex;
-    background-color: #000;
+    
   }
   .brimg2{
     width: 38% !important;
@@ -120,4 +121,15 @@
   .digiimg{
     width: 30% !important;
     margin: 8px;
+  }
+  .arrsec{
+    display: flex;
+  }
+  .arrowd{
+    background: #F6FA5E;
+    width: 21px !important;
+    padding: 11px 15px;
+    height: 27px !important;
+    border-radius: 50%;
+    cursor: none;
   }

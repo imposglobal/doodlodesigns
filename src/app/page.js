@@ -166,7 +166,7 @@ const Home = () => {
             height={37}
             priority
           />
-          <p className={styles.trustdesc}>TrustScore <b>4.8</b> | <b>347</b> Reviews</p>
+          <p className={styles.trustdesc}>TrustScore <b>4.1</b> | <b>347</b> Reviews</p>
       </div>
      </div>
      </div>
@@ -198,6 +198,10 @@ const Home = () => {
     </div>
 
     <div data-aos="fade-up" className={styles.filtergal}>
+    <div className={styles.galtitle}>
+    <h2 className={styles.mainheading}>OUR</h2>
+    <h2 className={styles.sec_heading}>Portfolio</h2>
+    </div>
       <Gallery items={items} />
     </div>
 
@@ -417,9 +421,9 @@ const Home = () => {
       <div className={styles.story}>
         <div className={styles.rowstory}>
           <div className={styles.columnst1}>
-          <h2 className={styles.mainheading}>Our</h2>
-          <h2 className={styles.sec_heading}>Story</h2>
-          <p className={styles.storydesc}>
+          <h2 data-aos="fade-up" className={styles.mainheading}>Our</h2>
+          <h2 data-aos="fade-up" className={styles.sec_heading}>Story</h2>
+          <p data-aos="fade-up" className={styles.storydesc}>
           At Doodlo, we're storytellers at heart. We believe brands are powerful narratives, and we craft them with simplicity and impact. We don't just design, we translate your vision into actionable solutions that resonate with your audience.<br/><br/>
 
           <b>Decoding Brands, Website & Designs driven<br/> bypassion & Possibilities.</b><br/><br/>
@@ -429,7 +433,7 @@ const Home = () => {
           </div>
           <div className={styles.columnst2}>
             <div className={styles.stimg}>
-            <Image
+            <Image data-aos="fade-up"
                   className={styles.ppimg}
                   src="/home/storyimg.png"
                   alt="Next.js Logo"
@@ -452,35 +456,35 @@ const Home = () => {
     {/* Project Diffrence */}
     <div className={styles.prodiff} data-aos="fade-up">
       <div className={styles.rowstory}>
-        <div className={styles.columnpdiff1}>
+        <div data-aos="fade-up" className={styles.columnpdiff1}>
         <h2>{hoverText}</h2>
         </div>
-        <div className={styles.columnpdiff2}>
-          <h3 id="fnum" className={styles.prtitle}>260+</h3>
-          <p className={styles.prdesc}>260+ Project Delivered & Counting</p>
+        <div data-aos="fade-up" className={styles.columnpdiff2}>
+          <h3 data-aos="fade-up" id="fnum" className={styles.prtitle}>260+</h3>
+          <p data-aos="fade-up" className={styles.prdesc}>260+ Project Delivered & Counting</p>
         </div>
       </div>
       <div className={styles.rowstory} id={styles.proj}>
         <div className={styles.columnpdiff3} onMouseEnter={() => handleMouseEnter('6 Years of Design Operations')} onMouseLeave={handleMouseLeave}>
-        <h3 className={styles.prtitle}>6</h3>
-          <p className={styles.prdesc}>Years of Design Operations </p>
+        <h3 data-aos="fade-up" className={styles.prtitle}>6</h3>
+          <p data-aos="fade-up" className={styles.prdesc}>Years of Design Operations </p>
         </div>
         <div className={styles.columnpdiff4} onMouseEnter={() => handleMouseEnter('56+ Happy Clients')} onMouseLeave={handleMouseLeave}>
-          <h3 className={styles.prtitle}>56+</h3>
-          <p className={styles.prdesc}>Happy Clients </p>
+          <h3 className={styles.prtitle} data-aos="fade-up">56+</h3>
+          <p className={styles.prdesc} data-aos="fade-up">Happy Clients </p>
         </div>
         <div className={styles.columnpdiff5} onMouseEnter={() => handleMouseEnter('7+ Professional Designers')} onMouseLeave={handleMouseLeave}>
-          <h3 className={styles.prtitle}>7+</h3>
-          <p className={styles.prdesc}>Professional Designers</p>
+          <h3 className={styles.prtitle} data-aos="fade-up">7+</h3>
+          <p className={styles.prdesc} data-aos="fade-up">Professional Designers</p>
         </div>
         <div className={styles.columnpdiff6} onMouseEnter={() => handleMouseEnter('14+ Industries Served')} onMouseLeave={handleMouseLeave}>
-          <h3 className={styles.prtitle}>14+</h3>
-          <p className={styles.prdesc}>Industries served</p>
+          <h3 className={styles.prtitle} data-aos="fade-up">14+</h3>
+          <p className={styles.prdesc} data-aos="fade-up">Industries served</p>
         </div>
       </div>
     </div>
 
-    <div className={styles.videosec}>
+    <div className={styles.videosec} data-aos="fade-up">
     <Image
                   className={styles.ppimg}
                   src="/home/video.png"
@@ -506,11 +510,12 @@ const Home = () => {
     </div>
 
     {/* contact form section */}
+    <div></div>
     <ContactForm />
     {/* contac Form End */}
 
     {/* Doodlo Shop Section */}
-    <div className={styles.shopsec}>
+    <div className={styles.shopsec} data-aos="fade-up">
       <div className={styles.shoprow}>
         <div className={styles.shopcol1}>
           <div className={styles.shoprowinn}>
@@ -776,8 +781,8 @@ const Home = () => {
         </div>
         <div className={styles.shopcol2}>
           <div className={styles.shoprow}>
-        <h2 className={styles.mainheadingdc}>Shop</h2>
-                <Image
+        <h2 data-aos="fade-up" className={styles.mainheadingdc}>Shop</h2>
+                <Image data-aos="fade-up"
                   className={styles.starim}
                   src="/home/startdc.png"
                   alt="Next.js Logo"
@@ -787,9 +792,12 @@ const Home = () => {
                   priority
                 />
         </div>
-        <h2 className={styles.sec_headingdc}>For Cute Goodies</h2>
-        <p className={styles.dcdesc}>Wanna buy some cute stuff? Explore our selection online, then visit our store for even more amazing finds!</p>
-        <a href="" className={styles.dcbtn}>Shop doodlo comics </a>
+        <h2 data-aos="fade-up" className={styles.sec_headingdc}>For Cute Goodies</h2>
+        <p data-aos="fade-up" className={styles.dcdesc}>Wanna buy some cute stuff? Explore our selection online, then visit our store for even more amazing finds!</p>
+        <div data-aos="fade-up">
+        <a  href="" className={styles.dcbtn}>Shop doodlo comics </a>
+        </div>
+        
         </div>
       </div>
     </div>
