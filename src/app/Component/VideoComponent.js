@@ -1,10 +1,5 @@
-// components/VideoComponent.js
 "use client";
 import React, { useRef, useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-gsap.registerPlugin(ScrollTrigger);
 
 const VideoComponent = () => {
   const videoRef = useRef(null);
@@ -12,42 +7,50 @@ const VideoComponent = () => {
   useEffect(() => {
     let videoElement = videoRef.current;
 
-    if (videoElement) {
-      ScrollTrigger.create({
-        trigger: videoElement,
-        start: 'top center', // Adjust these as needed
-        onEnter: () => {
+    // Callback function to handle intersection changes
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
           videoElement.play();
-        },
-        onLeave: () => {
+        } else {
           videoElement.pause();
           videoElement.currentTime = 0; // Reset to the start if needed
-        },
-        onEnterBack: () => {
-          videoElement.play();
-        },
-        onLeaveBack: () => {
-          videoElement.pause();
-        },
+        }
       });
+    };
+
+    // Options for the observer (adjust as needed)
+    const options = {
+      root: null, // Use the viewport as the root
+      rootMargin: '0px',
+      threshold: 0.5, // Play when 50% of the video is in view
+    };
+
+    // Create the observer
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    // Start observing the video element
+    if (videoElement) {
+      observer.observe(videoElement);
     }
 
     return () => {
       if (videoElement) {
-        videoElement.pause();
-        videoElement.currentTime = 0;
+        observer.unobserve(videoElement);
       }
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      videoElement.pause();
+      videoElement.currentTime = 0; // Reset to the start if needed
     };
   }, []);
 
   return (
-    <div>
+    <div style={{ padding: '20px', textAlign: 'center' }}>
       <video
         className="videoint"
         ref={videoRef}
         src="/home/video/dds_intro.webm" // Replace with your video source
-        controls={false}
+        controls
+        muted // Ensure muted for autoplay compliance
       />
     </div>
   );

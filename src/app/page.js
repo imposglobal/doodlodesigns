@@ -508,7 +508,7 @@ const Home = () => {
       </div>
     </div>
 
-    <div className={styles.videosec} data-aos="fade-up">
+    <div className={styles.videosec} >
     <div>
       {/* Other components or content */}
       <VideoComponent />
