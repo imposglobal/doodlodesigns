@@ -1,6 +1,6 @@
 "use client()";
 // components/Carousel.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -9,17 +9,37 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import '../lib/fontawesome'; // Import the configuration
 
 const Carousel = () => {
+  const [slidesToShow, setSlidesToShow] = useState(4);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setSlidesToShow(1);
+      } else {
+        setSlidesToShow(4);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Call the function initially
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 300, // Decrease scrolling time
-    slidesToShow: 4,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true, // Enable autoplay
     autoplaySpeed: 2000, // Time between each scroll (2 seconds)
     prevArrow: <SamplePrevArrow />,
     nextArrow: <SampleNextArrow />,
   };
+
 
   return (
     <div className="carousel-container">

@@ -5,6 +5,8 @@
 html, body {
   cursor:url('/home/cursor.svg'), auto;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  box-sizing: border-box;
   
 }
 @keyframes rotateCursor {
@@ -215,7 +217,7 @@ h1,h2,h3,h4,h5,h6,p{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
+  justify-content: start;
 }
 .columngal {
   -ms-flex: 25%; /* IE10 */
@@ -226,7 +228,7 @@ h1,h2,h3,h4,h5,h6,p{
 .gallery-item {
   
   position: relative;
-  width: 30%;
+  width: 32.33%;
 }
 .gallery-item img {
   margin-bottom: -4px;
@@ -237,12 +239,12 @@ h1,h2,h3,h4,h5,h6,p{
 .imgtitle{
   color: #fff;
     font-family: 'Poppins';
-    font-size: 35px;
+    font-size: 25px;
     text-transform: uppercase;
 }
 .portdesc{
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'poppins';
 }
 .pover{
@@ -271,33 +273,92 @@ h1,h2,h3,h4,h5,h6,p{
   border-radius: 15px;
   margin: 0;
 }
-#fimg5 .pover, #fimg6 .pover{
-  transform: translate(-150px, -154pt);
+div#fimg11 {
+  margin-top: -197px;
 }
-#fimg7 .pover{
-  transform: translate(-150px, -90pt);
+div#fimg1 .pover {
+  transform: translate(-150px, -158pt);
+}
+div#fimg4 .pover {
+  transform: translate(-150px, -196pt);
+}
+#fimg6 .pover {
+  transform: translate(-150px, -131pt);
+}
+#fimg5 .pover{
+  transform: translate(-150px, -170pt);
+}
+#fimg7 .pover {
+  transform: translate(-150px, -277px);
+}
+div#fimg8 .pover {
+  transform: translate(-150px, -232pt);
+}
+#fimg9 .pover {
+  transform: translate(-150px, -162pt);
+}
+#fimg10 .pover {
+  transform: translate(-150px, -181pt);
 }
 div#fimg7 .gallery_plink__u_ez2{
   bottom: -60px !important;
 }
-
-  
+#fimg11 .pover {
+  transform: translate(-150px, -138pt);
+}
+video.videoint {
+  width: 100%;
+  border-radius: 10px;
+}
+#fimg4 {
+  margin-top: -184px;
+}
 #fimg5 {
-  margin-top: -87px;
+  margin-top: -80px;
 }
 #fimg6 {
-  margin-top: -87px;
+  margin-top: 0px;
+}
+#fimg7 {
+  margin-top: -105px;
 }
 #fimg8 {
-  margin-top: -158px;
+  margin-top: -199px;
 }
 #fimg9 {
-  margin-top: -158px;
+  margin-top: 0px;
 }
-div#fimg2 .gallery_plink__u_ez2,div#fimg3 .gallery_plink__u_ez2 {
-  bottom: -60px !important;
+#fimg10 {
+  margin-top: -300px;
 }
 
+div#fimg2.gallery_plink__u_ez2 {
+  margin-top: 8px;
+}
+div#fimg2 .pover {
+  transform: translate(-150px, -159pt);
+}
+#fimg3 .gallery_plink__u_ez2{
+  margin-top: 50px;
+}
+div#fimg3 .pover {
+  transform: translate(-150px, -156pt);
+}
+div#fimg1 .gallery_plink__u_ez2 {
+  margin-top: -50px;
+}
+#fimg4 .gallery_plink__u_ez2 {
+  margin-top: 52px;
+}
+#fimg5 .gallery_plink__u_ez2 {
+  margin-top: -39px;
+}
+#fimg8 .gallery_plink__u_ez2 {
+  margin-top: 54px;
+}
+#fimg9 .gallery_plink__u_ez2 {
+  margin-top: 50px;
+}
 
 
 /* styles/Carousel.css */
@@ -315,7 +376,7 @@ div#fimg2 .gallery_plink__u_ez2,div#fimg3 .gallery_plink__u_ez2 {
   border: none;
   color: white;
   padding: 10px 20px;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .card {
@@ -767,3 +828,69 @@ ul.slick-dots {
   position: relative;
   margin: 0 !important;
 }
+.page_mobmenu__73oe9 .menuicon{
+  top: 20px !important;
+}
+@media only screen and (max-width: 600px) {
+  .arrowd {
+    background: #34FF9D;
+    width: 21px !important;
+    padding: 11px 13px;
+    height: 27px !important;
+    border-radius: 50%;
+    cursor: none;
+    transition: all 0.3s ease-out;
+    margin-top: -79px;
+    margin-right: -14px;
+}
+.panel, .panel2 {
+  position: relative;
+  overflow: hidden;
+  margin: 30px 0px;
+  padding: 40px 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: 84%;
+}
+.panel:hover .content{
+  height: auto !important;
+  opacity: 1 !important;
+}
+.gallery{
+  margin-top: 84px;
+  display: block !important;
+}
+.gallery-item {
+  position: relative;
+  width: auto !important;
+  margin: 31px;
+}
+#fimg5, #fimg4, #fimg3,#fimg2,#fimg1,#fimg6,#fimg7,#fimg8,#fimg9 {
+  margin-top: 0;
+}
+.testimonial {
+  padding: 20px 23px;
+}
+
+.slick-prev {
+  display: none !important;
+  left: -25px;
+}
+.slick-next {
+  display: none !important;
+  left: -25px;
+}
+.carousel-container {
+  margin-top: -10px ! IMPORTANT;
+  width: 100%;
+  margin: 0 auto;
+}
+.card_inner {
+  border: .5px solid #ffffff70;
+  width: 320px !important;
+  height: 294px;
+  padding: 20px;
+  border-radius: 8.24px;
+}
+}
+

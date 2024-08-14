@@ -133,3 +133,41 @@
     border-radius: 50%;
     cursor: none;
   }
+  @media only screen and (max-width: 600px) {
+    .row{
+      display: block;
+    }
+    .services_subheading {
+      font-family: 'poppins';
+      font-size: 18px;
+      color: #fff !important;
+      margin-right: -50px;
+  }
+  .mobileContentHeight {
+    height: 72vh;
+  }
+  .grimg1 {
+    display: none;
+}
+.grid_item {
+  display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+}
+.brimg2{
+  width: auto !important;
+}
+.grid_container {
+  display: flex;
+  gap: 20px;
+}
+.digiimgsec {
+  display: flex;
+    margin-top: 35px;
+    overflow-x: scroll;
+}
+.digiimg {
+  width: 50% !important;
+  margin: 8px;
+}
+  }

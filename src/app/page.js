@@ -18,6 +18,7 @@ import BrandAnimated from "./Component/Brandlineanimation";
 import ReachusAnimated from "./Component/ReachusAnimation";
 import ContactForm from "./Component/ContactForm";
 import AccordionOne from "./Component/Accordions/AccordianOne";
+import VideoComponent from "./Component/VideoComponent";
 
 
 
@@ -41,54 +42,59 @@ const Home = () => {
     };
   }, []);
   const imagesRow1 = [
+    "/home/nrow1img1.png",
     "/home/row1img1.jpg",
     "/home/row1img2.jpg",
     "/home/row1img3.jpg",
-    "/home/row1img4.jpg",
+    "/home/nrow1last.png",
+    "/home/nrow1img1.png",
     "/home/row1img1.jpg",
     "/home/row1img2.jpg",
     "/home/row1img3.jpg",
-    "/home/row1img4.jpg",
+    "/home/nrow1last.png",
   ];
 
   const imagesRow2 = [
+    "/home/nrow2img1.png",
     "/home/row2img1.jpg",
     "/home/row2img2.jpg",
     "/home/row2img3.jpg",
-    "/home/row2img4.jpg",
+    "/home/row2last.png",
     "/home/row2img1.jpg",
     "/home/row2img2.jpg",
     "/home/row2img3.jpg",
-    "/home/row2img4.jpg",
+    "/home/row2last.png",
     "/home/row2img1.jpg",
     "/home/row2img2.jpg",
-    "/home/row2img3.jpg",
-    "/home/row2img4.jpg",
+    "/home/row2img3.png",
   ];
 
   const imagesRow3 = [
+    "/home/nrow3img1.png",
+    "/home/nrow3img2.png",
      "/home/row3img1.jpg",
      "/home/row3img2.jpg",
-     "/home/row3img3.jpg",
-     "/home/row3img4.jpg",
+      "/home/row2img4.jpg",
+      "/home/nrow3img1.png",
+      "/home/nrow3img2.png",
      "/home/row3img1.jpg",
      "/home/row3img2.jpg",
-     "/home/row3img3.jpg",
-     "/home/row3img4.jpg",
+      "/home/row2img4.jpg",
    ];
 
 
    const items = [
-    { id: 1, ids: 'fimg1', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
-    { id: 2, ids: 'fimg2', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
-    { id: 3, ids: 'fimg3', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
-    { id: 4, ids: 'fimg4', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
-    { id: 5, ids: 'fimg5', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
-    { id: 6, ids: 'fimg6', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
-    { id: 7, ids: 'fimg7', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
-    { id: 8, ids: 'fimg8', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
-    { id: 9, ids: 'fimg9', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
-    { id: 10, ids: 'fimg10', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
+    { id: 1, ids: 'fimg1', ptitle:'Yolomart', pdesc:'Branding | UI | Social Media', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
+    { id: 2, ids: 'fimg2', ptitle:'Black B', pdesc:'UI', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
+    { id: 3, ids: 'fimg3', ptitle:'Swiggy', pdesc:'Packaging', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
+    { id: 4, ids: 'fimg4', ptitle:'Coinsafe', pdesc:'Branding | UI ', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
+    { id: 5, ids: 'fimg5', ptitle:'Nutribee', pdesc:'Packaging', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
+    { id: 6, ids: 'fimg6', ptitle:'Mahati', pdesc:'Branding | UI | Illustration', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
+    { id: 7, ids: 'fimg7', ptitle:'Wurth', pdesc:'Publication', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
+    { id: 8, ids: 'fimg8', ptitle:'Betsetwin', pdesc:'Branding | UI ', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
+    { id: 9, ids: 'fimg9', ptitle:'Tarabai', pdesc:'Branding', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
+    { id: 10, ids: 'fimg10', ptitle:'Little Learners Trove', pdesc:'Illustration | Packaging', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
+    { id: 11, ids: 'fimg11', ptitle:'Click r&D', pdesc:'Branding | UI ', name: 'Item 11', image: '/home/gallery/gal11.png', category: 'category2' },
     // Add more items with appropriate categories
   ];
 
@@ -116,14 +122,28 @@ const Home = () => {
         <h1>Content</h1>
       </div>
     </div>
-
+    {/* Mobile Menu */}
+    <div className={styles.mobmenu}>
+      <div className={styles.row}>
+        <div className={styles.mobcol}>
+          <div className={styles.moblogo}>
+          <Logo />
+          </div>
+          </div>
+        <div className={styles.mobcol}>
+        <Menu onClick={toggleClass} />
+        </div>
+      </div>
+    </div>
+    {/* mobile menu end */}
     <div className={styles.home_bg}>
       <div className={styles.logo_col}>
         <Logo />
       </div>
       
-      {/* First row of images */}
-      <div className={styles.img_row_col}>
+    <div className={styles.scrollimg}>
+        {/* First row of images */}
+        <div className={styles.img_row_col}>
       <ImageRow images={imagesRow1} />
       </div>
       {/* Second row of images */}
@@ -134,8 +154,12 @@ const Home = () => {
        <div className={styles.img_row_col3}>
       <ImageRow images={imagesRow3} />
       </div>
+    </div>
      <div className={styles.home_hero_content}> 
-     <Menu onClick={toggleClass} />
+      <div className={styles.deskmenu}  onClick={toggleClass} >
+      <Menu />
+      </div>
+     
      <div className={styles.block}>
       <Image data-aos="fade-up"
             className={styles.homestar}
@@ -156,7 +180,7 @@ const Home = () => {
       EXPLORE MORE
       </Link>
       </div>
-      <div>
+      <div data-aos="fade-up">
       <Image
             className={styles.trustp}
             src="/home/trustp.svg"
@@ -485,15 +509,11 @@ const Home = () => {
     </div>
 
     <div className={styles.videosec} data-aos="fade-up">
-    <Image
-                  className={styles.ppimg}
-                  src="/home/video.png"
-                  alt="Next.js Logo"
-                  layout="responsive"
-                  width={100}
-                  height={37}
-                  priority
-                />
+    <div>
+      {/* Other components or content */}
+      <VideoComponent />
+      {/* More content */}
+    </div>
     </div>
 
    {/* section Reach Us animated */}

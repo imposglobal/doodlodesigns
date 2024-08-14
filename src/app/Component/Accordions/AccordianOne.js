@@ -16,19 +16,21 @@ const AccordionOne = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Customize the duration of the animations
-      once: false,    // Whether animation should happen only once - while scrolling down
+      duration: 1000,
+      once: false,
     });
   }, []);
 
   useLayoutEffect(() => {
     // Clean up any existing ScrollTriggers
-    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+
+    const isMobile = window.innerWidth <= 768; // Define breakpoint for mobile
 
     panelRefs.current.forEach((panel, index) => {
       if (panel) {
         const content = panel.querySelector('.content');
-        const arrowd = panel.querySelector('.arrowd');
+        const height = isMobile ? 'auto' : '324px'; // Set height based on screen size
 
         // Set initial state for each panel
         gsap.set(content, { height: '0', opacity: 0, duration: 0.5 });
@@ -36,11 +38,11 @@ const AccordionOne = () => {
         // Create ScrollTrigger for each panel
         ScrollTrigger.create({
           trigger: panel,
-          start: 'top 30%', // Adjust start and end to avoid overlap
+          start: 'top 30%',
           end: 'top 60%',
           onEnter: () => {
             setActivePanel(index);
-            gsap.to(content, { height: '324px', opacity: 1, duration: 0.5, ease: 'power2.out' });
+            gsap.to(content, { height, opacity: 1, duration: 0.5, ease: 'power2.out' });
           },
           onLeaveBack: () => {
             if (activePanel === index) {
@@ -48,7 +50,7 @@ const AccordionOne = () => {
               gsap.to(content, { height: '0', opacity: 0, duration: 0.5, ease: 'power2.out' });
             }
           },
-          markers: false, // Disable markers for a cleaner UI
+          markers: false,
         });
       }
     });

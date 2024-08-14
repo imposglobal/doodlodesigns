@@ -1,4 +1,5 @@
 "use client();"
+import Link from 'next/link';
 import styles from './component.module.css';
 import Image from "next/image";
 // import { useState } from 'react';
@@ -19,26 +20,21 @@ const Footer = () => {
                         height={37}
                         priority
                         />
+                        
                          <div className={styles.footerrow}>
                          <div className={styles.footercol1}>
                             <h3 className={styles.countrytitle}>IND</h3>
                             <p className={styles.addr}>
-                            911-914, Clover Hills Plaza, Pune, Maharashra 411048
+                            911-914, Clover Hills Plaza, Pune, 411048
                             </p>
 
-                            <p className={styles.cphone}>
-                            +91 3484 958 432
-                            </p>
                          </div>
                          <div className={styles.footercol2}>
                             <h3 className={styles.countrytitle}>UK</h3>
                             <p className={styles.addr}>
-                            7 Bell Yard, London, England, WC2A <br/>2JR
+                            7 Bell Yard, London, England, WC2A 2JR
                             </p>
 
-                            <p className={styles.cphone}>
-                            +91 3484 958 432
-                            </p>
                          </div>
                          </div>
                     </div>
@@ -52,13 +48,13 @@ const Footer = () => {
                         <div className={styles.footerrow}>
                          <div className={styles.footercol1}>
                             <h3 className={styles.ftitle}>Our Studio</h3>
-                            <p className={styles.plink}><a className={styles.flinks} href='#'>Services</a></p>
-                            <p className={styles.plink}><a className={styles.flinks} href='#'>Portfolio</a></p>
-                            <p className={styles.plink}><a className={styles.flinks} href='#'>Our Story </a></p>
+                            <p className={styles.plink}><Link href='our-services' className={styles.flinks}>Services</Link></p>
+                            <p className={styles.plink}><Link href='our-services' className={styles.flinks}>Portfolio</Link></p>
+                            <p className={styles.plink}><Link href='our-story' className={styles.flinks}>Our Story</Link></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Career</a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Blog</a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Shop</a></p>
-                            <p className={styles.plink}><a className={styles.flinks} href='#'>FAQ</a></p>
+                            <p className={styles.plink}><Link href='faqs' className={styles.flinks}>FAQ</Link></p>
                          </div>
                          <div className={styles.footercol2}>
                          <h3 className={styles.ftitle}>What we do </h3>
@@ -76,10 +72,10 @@ const Footer = () => {
                 </div>
                 <div className={`${styles.footerrow} ${styles.footerrowss}`}>
                     <div className={styles.footercol1}>
-                    <h3 className={styles.updatet}>Job Updates:</h3>
-                    <p className={styles.updatep}>careers@doodlodesigns.com</p>
-                    
                     <h3 className={styles.updatet}>Business Queries:</h3>
+                    <p className={styles.updatep}>contact@doodlodesigns.com</p>
+
+                    <h3 className={styles.updatet}>Job Updates:</h3>
                     <p className={styles.updatep}>careers@doodlodesigns.com</p>
                     </div>
                     <div className={styles.footercol2}>
@@ -114,7 +110,7 @@ const Footer = () => {
                     <div className={styles.footercol1}>
                         <div className={styles.gtint}>
                             <span className={styles.gtintitle}>Get in touch </span>
-                                    <a href="#">
+                                    <Link href="https://www.facebook.com/DoodloDesign">
                                     <Image
                                     className={styles.subbtnisc}
                                     src="/home/social/flinked.svg"
@@ -124,8 +120,8 @@ const Footer = () => {
                                     height={37}
                                     priority
                                     />
-                                    </a>
-                                    <a href="#">
+                                    </Link>
+                                    <Link href="https://www.instagram.com/doodlo_design/">
                                     <Image
                                     className={styles.subbtnisc}
                                     src="/home/social/finsta.svg"
@@ -135,8 +131,8 @@ const Footer = () => {
                                     height={37}
                                     priority
                                     />
-                                    </a>
-                                    <a href="#">
+                                    </Link>
+                                    <Link href="https://www.linkedin.com/company/13436743">
                                     <Image
                                     className={styles.subbtnisc}
                                     src="/home/social/ffb.svg"
@@ -146,7 +142,7 @@ const Footer = () => {
                                     height={37}
                                     priority
                                     />
-                                    </a>
+                                    </Link>
                         </div>
                     </div>
                     <div className={styles.footercol2}>
