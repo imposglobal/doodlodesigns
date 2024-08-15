@@ -421,7 +421,7 @@ const Home = () => {
         </div>
         
       </div>
-
+      <div className={styles.desktopv}>
        {/* Lets Discuss section */}
        <div data-aos="fade-up" className={`${styles.pointer}`}>
         <div className={styles.discuss_row}>
@@ -439,6 +439,27 @@ const Home = () => {
           </div>
         </div>
       </div>
+      </div>
+      <div className={styles.mobilev}>
+       {/* Lets Discuss section */}
+       <div data-aos="fade-up" className={`${styles.pointer}`}>
+        <div className={styles.discuss_row}>
+        <div className={styles.booknow}>
+            <div className={styles.bookwrap}>
+            <WorkAnimationlr />
+            </div>
+            <div className={styles.bookwrap1}>
+            <WorkAnimationlr />
+            </div>
+          </div>
+        <h2 className={styles.mainheadingdis}>Let’s Discuss </h2>
+          <h2 className={styles.sec_headingdis}>Your next project</h2>
+          <p className={styles.disdesc}><b>Ready to turn your vision into reality?</b> Whether you need branding, web design, packaging, or digital marketing, we’re here to help. Let’s brainstorm, create, and bring your ideas to life.</p>
+          <a className="boton_elegante mtbtn">Book an appointment </a>
+          
+        </div>
+      </div>
+      </div>
       {/* Lets Discuss section End */}
 
       {/* Our Story section start */}
@@ -447,6 +468,17 @@ const Home = () => {
           <div className={styles.columnst1}>
           <h2 data-aos="fade-up" className={styles.mainheading}>Our</h2>
           <h2 data-aos="fade-up" className={styles.sec_heading}>Story</h2>
+          <div className={`${styles.stimg} ${styles.mobilev}`}>
+            <Image data-aos="fade-up"
+                  className={styles.ppimg}
+                  src="/home/storyimg.png"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+            </div>
           <p data-aos="fade-up" className={styles.storydesc}>
           At Doodlo, we're storytellers at heart. We believe brands are powerful narratives, and we craft them with simplicity and impact. We don't just design, we translate your vision into actionable solutions that resonate with your audience.<br/><br/>
 
@@ -456,7 +488,7 @@ const Home = () => {
           </p>
           </div>
           <div className={styles.columnst2}>
-            <div className={styles.stimg}>
+            <div className={`${styles.stimg} ${styles.desktopv}`}>
             <Image data-aos="fade-up"
                   className={styles.ppimg}
                   src="/home/storyimg.png"
@@ -478,8 +510,8 @@ const Home = () => {
       </div>
 
     {/* Project Diffrence */}
-    <div className={styles.prodiff} data-aos="fade-up">
-      <div className={styles.rowstory}>
+    <div className={`${styles.prodiff} ${styles.desktopv}`} data-aos="fade-up">
+      <div className={`${styles.rowstory} ${styles.projrow}`}>
         <div data-aos="fade-up" className={styles.columnpdiff1}>
         <h2>{hoverText}</h2>
         </div>
@@ -488,7 +520,7 @@ const Home = () => {
           <p data-aos="fade-up" className={styles.prdesc}>260+ Project Delivered & Counting</p>
         </div>
       </div>
-      <div className={styles.rowstory} id={styles.proj}>
+      <div className={`${styles.rowstory} ${styles.projrowp}`} id={styles.proj}>
         <div className={styles.columnpdiff3} onMouseEnter={() => handleMouseEnter('6 Years of Design Operations')} onMouseLeave={handleMouseLeave}>
         <h3 data-aos="fade-up" className={styles.prtitle}>6</h3>
           <p data-aos="fade-up" className={styles.prdesc}>Years of Design Operations </p>
@@ -507,6 +539,36 @@ const Home = () => {
         </div>
       </div>
     </div>
+
+    <div className={`${styles.prodifff} ${styles.mobilev}`} data-aos="fade-up">
+  <div className={styles.gridContainer}>
+    <div className={styles.gridItem}>
+      <h2 className={styles.overtext}>{hoverText}</h2>
+    </div>
+    <div className={styles.gridItem}>
+      <h3 id="fnum" className={styles.prtitle}>260+</h3>
+      <p className={styles.prdesc}>260+ Project Delivered & Counting</p>
+    </div>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('6 Years of Design Operations')} onMouseLeave={handleMouseLeave}>
+      <h3 className={styles.prtitle}>6</h3>
+      <p className={styles.prdesc}>Years of Design Operations</p>
+    </div>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('56+ Happy Clients')} onMouseLeave={handleMouseLeave}>
+      <h3 className={styles.prtitle}>56+</h3>
+      <p className={styles.prdesc}>Happy Clients</p>
+    </div>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('7+ Professional Designers')} onMouseLeave={handleMouseLeave}>
+      <h3 className={styles.prtitle}>7+</h3>
+      <p className={styles.prdesc}>Professional Designers</p>
+    </div>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('14+ Industries Served')} onMouseLeave={handleMouseLeave}>
+      <h3 className={styles.prtitle}>14+</h3>
+      <p className={styles.prdesc}>Industries served</p>
+    </div>
+  </div>
+</div>
+
+
 
     <div className={styles.videosec} >
     <div>

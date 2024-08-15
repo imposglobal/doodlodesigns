@@ -252,3 +252,36 @@
     background: #fff;
     padding: 80px 130px;
   }
+  @media only screen and (max-width: 600px) {
+    .controw {
+      margin: 100px 20px;
+      overflow: hidden;
+      display: block;
+      border: 1px solid #BCBCBC;
+      border-radius: 10px;
+  }
+  .caas {
+    margin-left: -13px;
+    margin-bottom: 20px;
+    width: 60% !important;
+}
+.scicon {
+  width: 12% !important;
+  margin: 0 11px 0 0;
+}
+.formcontainer {
+  padding: 75px 40px !important;
+}
+.formhead {
+  color: #000000;
+  font-family: 'poppins';
+  font-size: 22.5px;
+}
+.formdesc {
+  margin-top: -2px;
+  font-family: 'poppins';
+  font-weight: 300 !important;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+  }

@@ -5,7 +5,7 @@
 html, body {
   cursor:url('/home/cursor.svg'), auto;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   box-sizing: border-box;
   
 }
@@ -246,6 +246,7 @@ h1,h2,h3,h4,h5,h6,p{
   color: #fff;
   font-size: 14px;
   font-family: 'poppins';
+  font-weight: 300 !important;
 }
 .pover{
    width: 78%;
@@ -307,8 +308,12 @@ div#fimg7 .gallery_plink__u_ez2{
   transform: translate(-150px, -138pt);
 }
 video.videoint {
-  width: 100%;
-  border-radius: 10px;
+  width: 87%;
+  padding: 80px 0;
+  border-radius: 10px !important;
+}
+.slick-next, .slick-prev {
+  background-color: transparent !important;
 }
 #fimg4 {
   margin-top: -184px;
@@ -366,7 +371,7 @@ div#fimg1 .gallery_plink__u_ez2 {
   padding: 20px 110px;
 } 
 .carousel-container {
-  margin-top: -40px ! IMPORTANT;
+  margin-top: 0px ! IMPORTANT;
   width: 88%;
   margin: 0 auto;
 }
@@ -865,7 +870,10 @@ ul.slick-dots {
   width: auto !important;
   margin: 31px;
 }
-#fimg5, #fimg4, #fimg3,#fimg2,#fimg1,#fimg6,#fimg7,#fimg8,#fimg9 {
+#fimg5, #fimg4, #fimg3,#fimg2,#fimg1,#fimg6,#fimg7,#fimg8,#fimg9,#fimg10,#fimg11 {
+  margin-top: 0;
+}
+div#fimg11 {
   margin-top: 0;
 }
 .testimonial {
@@ -892,5 +900,49 @@ ul.slick-dots {
   padding: 20px;
   border-radius: 8.24px;
 }
+div#fimg1 .pover {
+  transform: translate(-150px, -80pt);
+}
+div#fimg2 .pover {
+  transform: translate(-150px, -117pt);
+}
+div#fimg3 .pover {
+  transform: translate(-150px, -156pt);
+}
+div#fimg4 .pover {
+  transform: translate(-150px, -145pt);
+}
+#fimg5 .pover {
+  transform: translate(-150px, -83pt);
+}
+#fimg6 .pover {
+  transform: translate(-150px, -112pt);
+}
+#fimg7 .pover {
+  transform: translate(-150px, -106px);
+}
+div#fimg8 .pover {
+  transform: translate(-150px, -134pt);
+}
+#fimg10 .pover {
+  transform: translate(-150px, -121pt);
+}
+.menuwrap{
+  z-index: 100;
+  width: 300px !important;
+  padding: 16px;
+  height: 100%;
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  border-radius: 30px 0;
+  float: right;
+  transition: right .5s cubic-bezier(0.820, 0.085, 0.395, 0.895);
+}
+.inactive {
+  right: -350px;
+  
+}
+
 }
 
