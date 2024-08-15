@@ -307,6 +307,13 @@
   top: 0;
   left: 0;
 }
+.updatep {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: 'poppins';
+  font-weight: 300 !important;
+}
+
 
 
 }

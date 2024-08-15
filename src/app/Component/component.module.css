@@ -111,6 +111,10 @@
     padding: 0px ;
     display: flex;
   }
+  .footerrows {
+    padding: 0px ;
+    display: block;
+  }
   .footercol1{
     flex: 45%;
   }
@@ -284,4 +288,86 @@
   font-size: 16px;
   margin-bottom: 50px;
 }
+.footlogo{
+  width: 45% !important;
+  margin-bottom: 50px;
+}
+.footerwrap {
+  background: #FFF6E8;
+  padding: 80px 20px;
+}
+.footdesc {
+  font-family: 'poppins';
+  font-size: 14px;
+  font-weight: 300 !important;
+  margin-bottom: 30px;
+}
+.countrytitle {
+  font-family: 'poppins';
+  font-size: 35px;
+  font-weight: 275 !important;
+}
+.addr {
+  font-family: 'poppins';
+  font-size: 14px;
+  padding-right: 35px;
+  font-weight: 300 !important;
+  margin: 19px 0 30px 0;
+}
+.footinn {
+  padding-top: 33px;
+  padding-left: 0 !important;
+}
+.subswrap input {
+  background: transparent;
+  padding: 12px 60px;
+  font-family: 'poppins';
+  width: 161px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+.footerrow {
+  padding: 0px;
+  display: flex;
+}
+.ftitle {
+  font-family: 'poppins';
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.flinks {
+  font-family: 'poppins';
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 300 !important;
+  cursor: pointer !important;
+}
+.socialrow{
+  display: block !important;
+}
+.updatep {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: 'poppins';
+  font-weight: 300 !important;
+}
+.updatep {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-family: 'poppins';
+  font-weight: 300 !important;
+}
+.desktopv{
+  display: none;
+}
+.mobilev{
+  display: block;
+}
   }
+
+.mobilev{
+  display: none;
+}

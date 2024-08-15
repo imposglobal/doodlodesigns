@@ -534,7 +534,7 @@ h2.client_h2 {
   width: 600px !important;
   padding: 16px;
   height: 100%;
-  position: fixed;
+  position: fixed !important;
   top: 0;
   right: 0;
   border-radius: 30px 0;
@@ -837,6 +837,29 @@ ul.slick-dots {
   top: 20px !important;
 }
 @media only screen and (max-width: 600px) {
+  .page_column2__qMozd.page_secondsec__D3bKx .menuicon {
+    display: none;
+}
+  .page_mobcol__UcHgm.page_reachuslogo__W7ERA .menuicon {
+    top: 21px !important;
+    fill: #000 !important;
+}
+.page_mobcol__UcHgm.page_reachuslogo__W7ERA .menuicon svg .line{
+  top: 0 !important;
+  fill: #000 !important;
+}
+  .menuwrap {
+    z-index: 100;
+    width: 300px !important;
+    padding: 16px;
+    height: 100%;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    border-radius: 30px 0;
+    float: right;
+    transition: right .5s cubic-bezier(0.820, 0.085, 0.395, 0.895);
+}
   .arrowd {
     background: #34FF9D;
     width: 21px !important;
@@ -927,22 +950,22 @@ div#fimg8 .pover {
 #fimg10 .pover {
   transform: translate(-150px, -121pt);
 }
-.menuwrap{
-  z-index: 100;
-  width: 300px !important;
-  padding: 16px;
-  height: 100%;
-  position: fixed !important;
-  top: 0;
-  right: 0;
-  border-radius: 30px 0;
-  float: right;
-  transition: right .5s cubic-bezier(0.820, 0.085, 0.395, 0.895);
-}
+
 .inactive {
   right: -350px;
   
 }
-
+.mobilev{
+  display: block;
+}
+.secondsec .menuicon{
+  display: none !important;
+}
+.pover {
+  padding: 20px !important;
 }
 
+}
+.desktopv{
+  display: none;
+}

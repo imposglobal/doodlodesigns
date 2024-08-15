@@ -134,8 +134,22 @@ const Reachus = () => {
                     <h1>Content</h1>
                 </div>
                 </div>
+                {/* Mobile Menu */}
+            <div className={styles.mobmenu}>
+              <div className={styles.mobrow}>
+                <div className={styles.mobcol}>
+                  <div className={styles.moblogo}>
+                  <Logobw />
+                  </div>
+                  </div>
+                <div className= {`${styles.mobcol} ${styles.reachuslogo}`}>
+                <Menu onClick={toggleClass} />
+                </div>
+              </div>
+            </div>
+          {/* mobile menu end */}
         <div className={styles.reachhero}>
-            
+             
             <div className={styles.row}>
                 <div className={styles.column1}>
                     <div className={styles.logosec}>
@@ -262,7 +276,7 @@ const Reachus = () => {
                     </div>
                     </div>
                 </div>
-                <div className={styles.column2}>
+                <div className= {`${styles.column2} ${styles.secondsec}`}>
                   <Menu onClick={toggleClass} />
                 
                   <div className={styles.formcontainer}>
