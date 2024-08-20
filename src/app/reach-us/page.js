@@ -68,16 +68,17 @@ const Reachus = () => {
 
     //gallery
     const items = [
-      { id: 1, ids: 'fimg1', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
-      { id: 2, ids: 'fimg2', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
-      { id: 3, ids: 'fimg3', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
-      { id: 4, ids: 'fimg4', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
-      { id: 5, ids: 'fimg5', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
-      { id: 6, ids: 'fimg6', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
-      { id: 7, ids: 'fimg7', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
-      { id: 8, ids: 'fimg8', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
-      { id: 9, ids: 'fimg9', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
-      { id: 10, ids: 'fimg10', ptitle:'Yolomart', pdesc:'Brand Designing | UI design', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
+      { id: 1, ids: 'fimg1', ptitle:'Yolomart', pdesc:'Branding | UI | Social Media', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
+      { id: 2, ids: 'fimg2', ptitle:'Black B', pdesc:'UI', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
+      { id: 3, ids: 'fimg3', ptitle:'Swiggy', pdesc:'Packaging', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
+      { id: 4, ids: 'fimg4', ptitle:'Coinsafe', pdesc:'Branding | UI ', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
+      { id: 5, ids: 'fimg5', ptitle:'Nutribee', pdesc:'Packaging', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
+      { id: 6, ids: 'fimg6', ptitle:'Mahati', pdesc:'Branding | UI | Illustration', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
+      { id: 7, ids: 'fimg7', ptitle:'Wurth', pdesc:'Publication', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
+      { id: 8, ids: 'fimg8', ptitle:'Betsetwin', pdesc:'Branding | UI ', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
+      { id: 9, ids: 'fimg9', ptitle:'Tarabai', pdesc:'Branding', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
+      { id: 10, ids: 'fimg10', ptitle:'Little Learners Trove', pdesc:'Illustration | Packaging', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
+      { id: 11, ids: 'fimg11', ptitle:'Click r&D', pdesc:'Branding | UI ', name: 'Item 11', image: '/home/gallery/gal11.png', category: 'category2' },
       // Add more items with appropriate categories
     ];
 
@@ -218,7 +219,7 @@ const Reachus = () => {
                                 
                                 <Image data-aos="fade-up"
                                 className={styles.reachimg}
-                                src="/home/reach/reach5.png"
+                                src="/home/reach/reachuslast.png"
                                 alt="Next.js Logo"
                                 layout="responsive"
                                 width={100}
@@ -388,36 +389,64 @@ const Reachus = () => {
       </div>
 
 
-     {/* Project Diffrence */}
-     <div className={styles.prodiff} data-aos="fade-up">
-      <div className={styles.rowstory}>
-        <div className={styles.columnpdiff1}>
+      {/* Project Diffrence */}
+    <div className={`${styles.prodiff} ${styles.desktopv}`} data-aos="fade-up">
+      <div className={`${styles.rowstory} ${styles.projrow}`}>
+        <div data-aos="fade-up" className={styles.columnpdiff1}>
         <h2>{hoverText}</h2>
         </div>
-        <div className={styles.columnpdiff2}>
-          <h3 className={styles.prtitle}>260+</h3>
-          <p className={styles.prdesc}>260+ Project Delivered & Counting</p>
+        <div data-aos="fade-up" className={styles.columnpdiff2}>
+          <h3 data-aos="fade-up" id="fnum" className={styles.prtitle}>260+</h3>
+          <p data-aos="fade-up" className={styles.prdesc}>260+ Project Delivered & Counting</p>
         </div>
       </div>
-      <div className={styles.rowstory} id={styles.proj}>
+      <div className={`${styles.rowstory} ${styles.projrowp}`} id={styles.proj}>
         <div className={styles.columnpdiff3} onMouseEnter={() => handleMouseEnter('6 Years of Design Operations')} onMouseLeave={handleMouseLeave}>
-        <h3 className={styles.prtitle}>6</h3>
-          <p className={styles.prdesc}>Years of Design Operations </p>
+        <h3 data-aos="fade-up" className={styles.prtitle}>6</h3>
+          <p data-aos="fade-up" className={styles.prdesc}>Years of Design Operations </p>
         </div>
         <div className={styles.columnpdiff4} onMouseEnter={() => handleMouseEnter('56+ Happy Clients')} onMouseLeave={handleMouseLeave}>
-          <h3 className={styles.prtitle}>56+</h3>
-          <p className={styles.prdesc}>Happy Clients </p>
+          <h3 className={styles.prtitle} data-aos="fade-up">56+</h3>
+          <p className={styles.prdesc} data-aos="fade-up">Happy Clients </p>
         </div>
         <div className={styles.columnpdiff5} onMouseEnter={() => handleMouseEnter('7+ Professional Designers')} onMouseLeave={handleMouseLeave}>
-          <h3 className={styles.prtitle}>7+</h3>
-          <p className={styles.prdesc}>Professional Designers</p>
+          <h3 className={styles.prtitle} data-aos="fade-up">7+</h3>
+          <p className={styles.prdesc} data-aos="fade-up">Professional Designers</p>
         </div>
         <div className={styles.columnpdiff6} onMouseEnter={() => handleMouseEnter('14+ Industries Served')} onMouseLeave={handleMouseLeave}>
-          <h3 className={styles.prtitle}>14+</h3>
-          <p className={styles.prdesc}>Industries served</p>
+          <h3 className={styles.prtitle} data-aos="fade-up">14+</h3>
+          <p className={styles.prdesc} data-aos="fade-up">Industries served</p>
         </div>
       </div>
     </div>
+
+    <div className={`${styles.prodifff} ${styles.mobilev}`} data-aos="fade-up">
+  <div className={styles.gridContainer}>
+    <div className={styles.gridItem}>
+      <h2 className={styles.overtext}>{hoverText}</h2>
+    </div>
+    <div className={styles.gridItem}>
+      <h3 id="fnum" className={styles.prtitle}>260+</h3>
+      <p className={styles.prdesc}>260+ Project Delivered & Counting</p>
+    </div>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('6 Years of Design Operations')} onMouseLeave={handleMouseLeave}>
+      <h3 className={styles.prtitle}>6</h3>
+      <p className={styles.prdesc}>Years of Design Operations</p>
+    </div>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('56+ Happy Clients')} onMouseLeave={handleMouseLeave}>
+      <h3 className={styles.prtitle}>56+</h3>
+      <p className={styles.prdesc}>Happy Clients</p>
+    </div>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('7+ Professional Designers')} onMouseLeave={handleMouseLeave}>
+      <h3 className={styles.prtitle}>7+</h3>
+      <p className={styles.prdesc}>Professional Designers</p>
+    </div>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('14+ Industries Served')} onMouseLeave={handleMouseLeave}>
+      <h3 className={styles.prtitle}>14+</h3>
+      <p className={styles.prdesc}>Industries served</p>
+    </div>
+  </div>
+</div>
       {/* calendly sec */}
       <Calendly />
         </section>

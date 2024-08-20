@@ -32,8 +32,8 @@ const Gallery = ({ items = [] }) => {
 
       <div className="gallery">
         {filteredItems.map(item => (
-          <div id={item.ids}  key={item.id} className="gallery-item">
-            <div className="imgblack"> 
+          <div id={item.ids}  key={item.id} className={`gallery-item ${activeFilter !== 'all' ? 'imgauto' : ''}`}
+>
             <img 
               
               src={item.image} 
@@ -58,7 +58,6 @@ const Gallery = ({ items = [] }) => {
                   </Link>
                 </div>
               </div>
-          </div>
           </div>
         ))}
       </div>

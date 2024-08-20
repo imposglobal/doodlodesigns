@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import {useState, useEffect} from 'react';
 import BrandAnimated from "../Component/Brandlineanimation";
 import WorkAnimationlr from "../Component/WorkAnimatedLR";
+import Arrows from "../Component/Arrowanimation";
 
 const Ourstory = () => {
 
@@ -35,7 +36,7 @@ const Ourstory = () => {
                 </div>
                 </div>
        
-        <div className={styles.row}>
+        <div className={`${styles.row} ${styles.mobrow}`}>
         <div className={styles.column1}>
             <div className={styles.logosec}>
             <Logo />
@@ -64,7 +65,7 @@ const Ourstory = () => {
                 </div>
             </div>
             <div className={styles.row}>
-                <div className={styles.imgcol}>
+                <div className={`${styles.imgcol} ${styles.paddt}`} >
                      <Image data-aos="fade-up"
                                     className={styles.ourimg1}
                                     src="/home/ourstory/our1.png"
@@ -191,6 +192,14 @@ const Ourstory = () => {
                             </div>
                         </div>
                     </div>
+                    <div className={styles.pmidd}>
+                        <h4 data-aos="fade-up" className={styles.promtext}>Decode your Brand Story with us!</h4>
+                        <div data-aos="fade-up">
+                        <Link className="boton_elegante" href="/reach-us">
+                        Reach Us
+                        </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
             {/* Branding experience 1*/}
@@ -272,6 +281,14 @@ const Ourstory = () => {
                                 <div data-aos="fade-up" className="step-title">Optimization & Maintenance</div>
                                 <div data-aos="fade-up"s className="step-description">Continuously optimize and maintain your website for peak performance.</div>
                             </div>
+                        </div>
+                    </div>
+                    <div className={styles.pmidd}>
+                        <h4 data-aos="fade-up" className={styles.promtext}>Decode your Brand Story with us!</h4>
+                        <div data-aos="fade-up">
+                        <Link className="boton_elegante" href="/reach-us">
+                        Reach Us
+                        </Link>
                         </div>
                     </div>
                 </div>
@@ -356,6 +373,14 @@ const Ourstory = () => {
                             </div>
                         </div>
                     </div>
+                    <div className={styles.pmidd}>
+                        <h4 data-aos="fade-up" className={styles.promtext}>Decode your Brand Story with us!</h4>
+                        <div data-aos="fade-up">
+                        <Link className="boton_elegante" href="/reach-us">
+                        Reach Us
+                        </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
             {/* Branding experience 3*/}
@@ -438,6 +463,14 @@ const Ourstory = () => {
                             </div>
                         </div>
                     </div>
+                    <div className={styles.pmidd}>
+                        <h4 data-aos="fade-up" className={styles.promtext}>Decode your Brand Story with us!</h4>
+                        <div data-aos="fade-up">
+                        <Link className="boton_elegante" href="/reach-us">
+                        Reach Us
+                        </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
             {/* Branding experience 4*/}
@@ -451,12 +484,48 @@ const Ourstory = () => {
                 <p className={styles.adesc}>
                 We understand that every brand has unique needs. That's why we offer a comprehensive suite of add-on services to complement your end-to-end brand solution.
                 </p>
-
+                <div className={styles.arr}>
+                <Arrows />
+                </div>
+                
                 </div>
                 <div className={styles.addcol2}>
                     <div className={styles.numlist}>
-                        <div className={styles.innnum}>
+                        <div className={styles.innnum} data-aos="fade-up">
                             <h4 className={styles.numtext}> <span className={styles.numm}>01.</span> Digital Asset Creation</h4>
+                            <div className={styles.borderbot}></div>
+                        </div>
+                        <div className={styles.innnum} data-aos="fade-up">
+                            <h4 className={styles.numtext}> <span className={styles.numm}>02.</span> Merch Design</h4>
+                            <div className={styles.borderbot}></div>
+                        </div>
+                        <div className={styles.innnum} data-aos="fade-up">
+                            <h4 className={styles.numtext}> <span className={styles.numm}>03.</span> Content creation</h4>
+                            <div className={styles.borderbot}></div>
+                        </div>
+                        <div className={styles.innnum} data-aos="fade-up">
+                            <h4 className={styles.numtext}> <span className={styles.numm}>04.</span> Social Media Design</h4>
+                            <div className={styles.borderbot}></div>
+                        </div>
+                        <div className={styles.innnum} data-aos="fade-up">
+                            <h4 className={styles.numtext}> <span className={styles.numm}>05.</span> Social Media Management</h4>
+                            <div className={styles.borderbot}></div>
+                        </div>
+                        <div className={styles.innnum} data-aos="fade-up">
+                            <h4 className={styles.numtext}> <span className={styles.numm}>06.</span> Wall & Mural Graffiti</h4>
+                            <div className={styles.borderbot}></div>
+                        </div>
+                        <div className={styles.innnum} data-aos="fade-up">
+                            <h4 className={styles.numtext}> <span className={styles.numm}>07.</span> Illustrations & mascots</h4>
+                            <div className={styles.borderbot}></div>
+                        </div>
+                        <div className={styles.innnum} data-aos="fade-up">
+                            <h4 className={styles.numtext}> <span className={styles.numm}>08.</span> Editorial & Book Design</h4>
+                            <div className={styles.borderbot}></div>
+                        </div>
+                        <div className={styles.innnum} data-aos="fade-up">
+                            <h4 className={styles.numtext}> <span className={styles.numm}>09.</span> Motion Design</h4>
+                            <div className={styles.borderbot}></div>
                         </div>
                     </div>
                 </div>
@@ -483,6 +552,11 @@ const Ourstory = () => {
         </div>
       </div>
       {/* Lets Discuss section End */}
+      <style global jsx>{`
+        body {
+           overflow-x: auto !important;
+        }
+      `}</style>
         </div>
     );
 };

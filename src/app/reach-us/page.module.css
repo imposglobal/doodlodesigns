@@ -70,7 +70,7 @@
   }
   .reachimg{
     margin: 5px;
-    width: 100% !important;
+    width: 88% !important;
     height: 60.2vh  !important;
   }
   .rowimg {
@@ -862,6 +862,63 @@
   font-family: 'Poppins', sans-serif;
   color: #000;
 }
-
+.shopify {
+  width: 64px !important;
+  margin-right: 15px !important;
+  filter: grayscale(1);
+}
+.services {
+  padding: 50px 20px;
+}
+.desktopv{
+  display: none !important;
+}
+.mobilev{
+  display: block !important;
+}
 }
 .secondsec{}
+.gridContainer {
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0; /* Adjust as needed */
+}
+
+.gridItem {
+  align-items: center;
+  font-family: 'poppins';
+  height: 140px;
+  border: 0.5px solid #ffffff30;
+  background-color: transparent; /* Optional: background color for each item */
+  padding: 20px; /* Optional: padding for each item */
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.desktopv{
+  display: block;
+}
+
+.prtitle {
+  color: #fff;
+  font-size: 2em;
+ 
+}
+
+.prdesc {
+  font-size: 1em;
+  color: #fff; /* Optional: color for the description */
+}
+.overtext{
+  color: #fff;
+    text-align: left;
+    font-size: 19px;  
+}
+.mobilev{
+  display: none;
+}
+.prodifff{
+  margin: 100px 20px;
+}
