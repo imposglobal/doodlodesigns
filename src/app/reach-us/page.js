@@ -396,22 +396,22 @@ const Reachus = () => {
         <h2>{hoverText}</h2>
         </div>
         <div data-aos="fade-up" className={styles.columnpdiff2}>
-          <h3 data-aos="fade-up" id="fnum" className={styles.prtitle}>260+</h3>
-          <p data-aos="fade-up" className={styles.prdesc}>260+ Project Delivered & Counting</p>
+          <h3 data-aos="fade-up" id="fnum" className={styles.prtitle}>387+</h3>
+          <p data-aos="fade-up" className={styles.prdesc}>Project Delivered & Counting</p>
         </div>
       </div>
       <div className={`${styles.rowstory} ${styles.projrowp}`} id={styles.proj}>
-        <div className={styles.columnpdiff3} onMouseEnter={() => handleMouseEnter('6 Years of Design Operations')} onMouseLeave={handleMouseLeave}>
-        <h3 data-aos="fade-up" className={styles.prtitle}>6</h3>
-          <p data-aos="fade-up" className={styles.prdesc}>Years of Design Operations </p>
+        <div className={styles.columnpdiff3} onMouseEnter={() => handleMouseEnter('22+ Years of Combined Experience')} onMouseLeave={handleMouseLeave}>
+        <h3 data-aos="fade-up" className={styles.prtitle}>22+</h3>
+          <p data-aos="fade-up" className={styles.prdesc}>Years of Combined Experience </p>
         </div>
-        <div className={styles.columnpdiff4} onMouseEnter={() => handleMouseEnter('56+ Happy Clients')} onMouseLeave={handleMouseLeave}>
-          <h3 className={styles.prtitle} data-aos="fade-up">56+</h3>
-          <p className={styles.prdesc} data-aos="fade-up">Happy Clients </p>
+        <div className={styles.columnpdiff4} onMouseEnter={() => handleMouseEnter('22+ Brands Shaped')} onMouseLeave={handleMouseLeave}>
+          <h3 className={styles.prtitle} data-aos="fade-up">65+</h3>
+          <p className={styles.prdesc} data-aos="fade-up">Brands Shaped </p>
         </div>
-        <div className={styles.columnpdiff5} onMouseEnter={() => handleMouseEnter('7+ Professional Designers')} onMouseLeave={handleMouseLeave}>
-          <h3 className={styles.prtitle} data-aos="fade-up">7+</h3>
-          <p className={styles.prdesc} data-aos="fade-up">Professional Designers</p>
+        <div className={styles.columnpdiff5} onMouseEnter={() => handleMouseEnter('7+ Happy Clients')} onMouseLeave={handleMouseLeave}>
+          <h3 className={styles.prtitle} data-aos="fade-up">9/10</h3>
+          <p className={styles.prdesc} data-aos="fade-up">Happy Clients</p>
         </div>
         <div className={styles.columnpdiff6} onMouseEnter={() => handleMouseEnter('14+ Industries Served')} onMouseLeave={handleMouseLeave}>
           <h3 className={styles.prtitle} data-aos="fade-up">14+</h3>
@@ -426,20 +426,20 @@ const Reachus = () => {
       <h2 className={styles.overtext}>{hoverText}</h2>
     </div>
     <div className={styles.gridItem}>
-      <h3 id="fnum" className={styles.prtitle}>260+</h3>
-      <p className={styles.prdesc}>260+ Project Delivered & Counting</p>
+      <h3 id="fnum" className={styles.prtitle}>387+</h3>
+      <p className={styles.prdesc}>387+ Project Delivered & Counting</p>
     </div>
-    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('6 Years of Design Operations')} onMouseLeave={handleMouseLeave}>
-      <h3 className={styles.prtitle}>6</h3>
-      <p className={styles.prdesc}>Years of Design Operations</p>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('22+ Years of Combined Experience')} onMouseLeave={handleMouseLeave}>
+      <h3 className={styles.prtitle}>22+</h3>
+      <p className={styles.prdesc}>Years of Combined Experience</p>
     </div>
-    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('56+ Happy Clients')} onMouseLeave={handleMouseLeave}>
-      <h3 className={styles.prtitle}>56+</h3>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('65+ Brands Shaped')} onMouseLeave={handleMouseLeave}>
+      <h3 className={styles.prtitle}>65+</h3>
+      <p className={styles.prdesc}>Brands Shaped</p>
+    </div>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('9/10 Happy Clients')} onMouseLeave={handleMouseLeave}>
+      <h3 className={styles.prtitle}>9/10</h3>
       <p className={styles.prdesc}>Happy Clients</p>
-    </div>
-    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('7+ Professional Designers')} onMouseLeave={handleMouseLeave}>
-      <h3 className={styles.prtitle}>7+</h3>
-      <p className={styles.prdesc}>Professional Designers</p>
     </div>
     <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('14+ Industries Served')} onMouseLeave={handleMouseLeave}>
       <h3 className={styles.prtitle}>14+</h3>

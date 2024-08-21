@@ -652,7 +652,7 @@
     color: #000;
     width:750px;
     border-right: 1.6px solid #000;
-    animation: Typing 3.9s steps(70, end) infinite alternate,
+    animation: Typing 5.9s steps(70, end) infinite alternate,
       Bar 1s step-end infinite;
     
   }

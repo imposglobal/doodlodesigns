@@ -10,6 +10,7 @@ import {useState, useEffect} from 'react';
 import BrandAnimated from "../Component/Brandlineanimation";
 import WorkAnimation from "../Component/WorkAnimated";
 import Arrows from "../Component/Arrowanimation";
+import WorkAnimationlr from "../Component/WorkAnimatedLR";
 
 const Portfolio = () => {
     useEffect(() =>{
@@ -25,7 +26,31 @@ const Portfolio = () => {
       setInactive(!inactive);
     };
 
+    const portfolioItems = [
+      {no:"01.",  id: 1, title: "SWIGGY + BOWL COMPANY", category: "Packaging | Collaterals", imageUrl: "/home/portfolio/1.png" },
+      {no:"02.",  id: 2, title: "BLACK R FINANCE", category: "Branding | Website Design", imageUrl: "/home/portfolio/2.png" },
+      {no:"03.",  id: 3, title: "CONSAFE VPN", category: "Branding | Website Design", imageUrl: "/home/portfolio/3.png" },
+      {no:"04.",  id: 4, title: "MAHAIT INTERACTIVES", category: "Branding | Interactive Installations", imageUrl: "/home/portfolio/4.png" },
+      {no:"05.",  id: 5, title: "TARBARI", category: "Packaging", imageUrl: "/home/portfolio/5.png" },
+      {no:"06.",  id: 6, title: "CITIBANK", category: "Handbook | Poster", imageUrl: "/home/portfolio/6.png" },
+      {no:"07.",  id: 7, title: "YOLOMART", category: "Branding | Retail Store", imageUrl: "/home/portfolio/7.png" },
+      {no:"08.",  id: 8, title: "coffee table book", category: "Illustration | Publication ", imageUrl: "/home/portfolio/8.png" },
+      {no:"09.",  id: 9, title: "Nutribee", category: "Packaging | Illustration ", imageUrl: "/home/portfolio/10.png" },
+      {no:"10.",  id: 9, title: "Royal Wedding ", category: "Branding", imageUrl: "/home/portfolio/11.png" },
+      {no:"11.",  id: 9, title: "Littile learners trove", category: "Branding | Flashcards Illustration | Packaging ", imageUrl: "/home/portfolio/12.png" },
+      // Add more items as needed
+  ];
+
+  // State to track the number of items to display
+  const [visibleItems, setVisibleItems] = useState(6);
+
+  // Function to load more items
+  const loadMore = () => {
+      setVisibleItems(prevCount => prevCount + 6);
+  };
+
     return (
+      <div>
         <div className={styles.portfolio}>
              <div id="wrapper">
                 <div className={`menuwrap ${inactive ? 'inactive' : ''} doodbg`}>
@@ -53,7 +78,68 @@ const Portfolio = () => {
             <WorkAnimation />
             </div>
           </div>
+          {/* Porfolio Section */}
+          
         </div>
+        <div className={styles.portsec}>
+            <div className={styles.grid}>
+              <div className={styles.texta}>
+              <h2 data-aos="fade-up" className={styles.title}>Our 
+              <Image data-aos="fade-up"
+            className={styles.homestar}
+            src="/home/homestar.png"
+            alt="Next.js Logo"
+            layout="responsive"
+            width={100}
+            height={37}
+            priority
+            onClick={toggleClass}
+          />
+              </h2>
+              <h2 data-aos="fade-up" className={styles.sec_heading}>Portfolio</h2>
+              </div>
+              <div>
+              
+              </div>
+                {portfolioItems.slice(0, visibleItems).map((item, index) => (
+                    <div
+                        key={item.id}
+                        className={`${styles.card}`}
+                    >
+                      <h2 data-aos="fade-up" className={styles.titles}>{item.no} </h2>
+                        <img data-aos="fade-up" src={item.imageUrl} alt={item.title} className={styles.image} />
+                        <div data-aos="fade-up" className={styles.textContainer}>
+                            <h2 className={styles.itemTitle}>{item.title}</h2>
+                            <p className={styles.category}>{item.category}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            {visibleItems < portfolioItems.length && (
+                <button className={styles.loadMore} onClick={loadMore}>
+                    Load More
+                </button>
+            )}
+        </div>
+          {/* Lets Discuss section */}
+       <div data-aos="fade-up" className={`${styles.pointer}`}>
+        <div className={styles.discuss_row}>
+        <h2 className={styles.mainheadingdis}>Ready to Take Your</h2>
+          <h2 className={styles.sec_headingdis}>Brand to the Next Level?</h2>
+          <p className={styles.disdesc}>Contact Doodlo Design Studio today for a free consultation!</p>
+          <a className="boton_elegante mtbtn">Schedule a Free Consultation</a>
+          <div className={styles.booknows}>
+            <div className={styles.bookwraps}>
+            <WorkAnimationlr />
+            </div>
+            <div className={styles.bookwraps1}>
+            <WorkAnimationlr />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Lets Discuss section End */}
+      </div>
     );
 };
 

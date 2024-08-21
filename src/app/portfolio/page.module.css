@@ -23,20 +23,20 @@
     top: 0 !important;
   }
   .bookwrap1{
-       /* padding: 3px 0; */
-       opacity: 1;
-       background-color: #fff;
-       rotate: -30deg;
-       width: 65%;
-       margin-left: -150px;
-       float: left;
-       margin-top: -59px;
+           /* padding: 3px 0; */
+    opacity: 1;
+    background-color: #fff;
+    rotate: -25deg;
+    width: 65%;
+    margin-left: -150px;
+    float: left;
+    margin-top: -23px;
   } 
   .bookwrap{
     padding: 3px 0;
     opacity: 0.5;
     background-color: #fff;
-    rotate: -20deg;
+    rotate: -18deg;
     width: 72%;
     margin-left: -150px;
     float: left;
@@ -55,5 +55,433 @@
   
   }
   .booknow{
-    height: 500px;
+    height: 200px;
   }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "left right"
+      "left right";
+  }
+  
+  .left-column {
+    grid-area: left;
+  }
+  
+  .right-column {
+    grid-area: right;
+    position: relative; /* Add this to position the pseudo-element */
+  }
+  
+  .right-column::before {
+    content: "";
+    display: block;
+    height: 50px; /* Height of the margin */
+    width: 100%;
+    position: absolute;
+    top: -50px; /* Adjust this value based on where you want the margin */
+    left: 0;
+  }
+  
+  
+.portsec{
+  margin-top: -157px;
+  padding: 0 150px 50px 150px;
+}
+/* Portfolio.module.css */
+
+
+
+.title {
+  margin-right: 31vh;
+  display: inline-block;
+    position: relative;
+    font-size: 55px;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    text-transform: uppercase;
+}
+.titles {
+    direction: ltr;
+    text-align: left;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    text-transform: uppercase;
+}
+.sec_heading{
+  margin-top: -30px;
+  padding: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 3rem; /* Spacing between items */
+  direction: rtl;
+}
+
+.card {
+  padding: 0 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+.image {
+  width: 100%; /* Full width for image */
+  height: auto;
+  border-radius: 10px;
+}
+
+.textContainer {
+  font-family: 'poppins';
+  text-align: left;
+  margin-top: 1rem;
+}
+.homestar{
+  width: 49px !important;
+    position: absolute;
+    top: -26px;
+}
+.itemTitle {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.category {
+  font-size: 1rem;
+  color: #bbb; /* Slightly lighter color for the category */
+  margin-top: 0.5rem;
+}
+
+/* Zig-Zag Effect */
+
+.card:nth-child(even) {
+  transform: translateY(15rem) !important; /* Shifts odd cards downwards to create zig-zag effect */
+}
+
+/* Load More Button */
+
+.loadMore {
+  display: block;
+  margin: 21rem auto 4rem auto; /* Center the button */
+  padding: 1rem 4rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loadMore:hover {
+  border-color: #666666;
+  background: #292929;
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.texta{
+  text-align: right;
+  direction: ltr !important;
+  padding: 0 30px;
+}
+.discuss_row{
+  overflow: hidden;
+  padding: 30px 0 0 50px;
+  margin: 100px 200px;
+  border: 1px solid #fff;
+  border-radius: 10px ;
+}
+.mainheadingdis {
+  margin-top: 0;
+  font-size: 58px;
+  font-family: 'Poppins', sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
+}
+.sec_headingdis{
+  margin-top: -35px;
+  padding: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 58px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+.disdesc{
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: "poppins";
+  font-size: 18px;
+  font-weight: 300 !important;
+  padding-right: 200px;
+}
+.bookwraps1{
+  padding: 3px 0;
+  opacity: 1;
+  background-color: #fff;
+  rotate: -25deg;
+  width: 505px;
+  margin-right: -52px;
+  float: right;
+  margin-top: -102px;
+} 
+.bookwraps{
+  padding: 3px 0;
+  opacity: 0.5;
+  background-color: #fff;
+  rotate: -15deg;
+  width: 671px;
+  margin-right: -19px;
+  float: right;
+  margin-top: -86px;
+} 
+.bookwraps span{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Poppins';
+
+}
+.bookwraps1 span{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Poppins';
+
+}
+.booknows{
+  margin-top: 100px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 767px) {
+  .grid {
+      grid-template-columns: 1fr; /* Single column on small screens */
+  }
+
+  .card {
+      margin-top: 0; /* Remove top margin in single column layout */
+  }
+
+  .card:nth-child(odd) {
+      transform: translateY(0); /* Remove zig-zag effect on small screens */
+  }
+}
+.pointers{
+  margin: 30px  0;
+}
+@media only screen and (max-width: 600px) {
+  .logosec {
+    padding-left: 20px;
+}
+.bookwrap1 span{
+  font-size: 14px;
+}
+.bookwrap span{
+  font-size: 14px;
+}
+.bookwrap{
+  padding: 3px 0;
+  opacity: 0.5;
+  background-color: #fff;
+  rotate: -34deg;
+  width: 471px;
+  margin-left: -77px;
+  float: left;
+  margin-top: -23px;
+}
+.bookwrap1{
+  padding: 3px 0;
+  opacity: 1;
+  background-color: #fff;
+  rotate: -28deg;
+  width: 494px;
+  margin-left: -83px;
+  float: left;
+  margin-top: -42px;
+}
+.portsec{
+  margin-top: -157px;
+  padding: 50px 20px;
+}
+.texta {
+  text-align: left;
+  direction: ltr !important;
+  padding: 0;
+}
+.title {
+  margin-right: 31vh;
+  display: block;
+  position: relative;
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  text-transform: uppercase;
+}
+.texta {
+  margin-top: 68px;
+  text-align: left;
+  direction: ltr !important;
+  margin-bottom: -63px;
+  padding: 15px;
+}
+.card:nth-child(even) {
+  transform: translateY(0rem) !important; /* Shifts odd cards downwards to create zig-zag effect */
+}
+.loadMore {
+  display: block;
+  margin: 7rem auto 4rem auto;
+  padding: 1rem 4rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.card{
+  direction: ltr;
+}
+.card {
+  padding: 13px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.sec_heading {
+  margin-top: -6px;
+  padding: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 27px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+.titles {
+  direction: ltr;
+  text-align: left;
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+.itemTitle {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+.category {
+  font-size: 0.7rem;
+  color: #bbb;
+  margin-top: 0.5rem;
+}
+.column2{
+  flex: 40% 1;
+  padding: 50px 20px;
+}
+.homestar {
+  width: 39px !important;
+  position: absolute;
+  top: -26px;
+}
+.discuss_row {
+  overflow: hidden;
+  padding: 25px;
+  margin: 0px 20px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin-bottom:50px;
+}
+.bookwraps{
+  padding: 3px 0;
+  opacity: 0.5;
+  background-color: #fff;
+  rotate: -8deg;
+  width: 671px;
+  margin-right: -50px;
+  float: right;
+  margin-top: -16px;
+}
+.bookwraps1{
+  padding: 3px 0;
+  opacity: 1;
+  background-color: #fff;
+  rotate: -17deg;
+  width: 505px;
+  margin-right: -52px;
+  float: right;
+  margin-top: -18px;
+}
+.bookwraps1 span, .bookwraps span{
+  font-size: 18px;
+}
+.mainheadingdis {
+  margin-top: 0;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
+}
+.sec_headingdis {
+  margin-top: -10px;
+  padding: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 23px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+.disdesc {
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: 300 !important;
+  padding-right: 0;
+  margin-bottom: 35px;
+}
+.adesc {
+  font-size: 16px;
+  font-family: 'poppins';
+  color: #9E9E9E;
+  padding-right: 0;
+}
+}
+  
