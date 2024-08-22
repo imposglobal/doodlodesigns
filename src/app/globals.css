@@ -981,8 +981,9 @@ a.mitem {
   width: auto !important;
   margin: 31px 10px;
 }
-#fimg5, #fimg4, #fimg3,#fimg2,#fimg1,#fimg6,#fimg7,#fimg8,#fimg9,#fimg10,#fimg11 {
+#fimg5, #fimg4, #fimg3, #fimg2, #fimg1, #fimg6, #fimg7, #fimg8, #fimg9, #fimg10, #fimg11 {
   margin-top: 0;
+  padding: 0 20px;
 }
 div#fimg11 {
   margin-top: 0;
