@@ -13,6 +13,10 @@ import Arrows from "../Component/Arrowanimation";
 
 const Ourstory = () => {
 
+    useEffect(() => {
+        document.title = "Services - Doodlo Designs Studio";
+      }, []);
+
     useEffect(() =>{
         AOS.init({
           duration: 1000, // Customize the duration of the animations

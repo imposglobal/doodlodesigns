@@ -18,6 +18,10 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 const Reachus = () => {
+  useEffect(() => {
+    document.title = "Reach us - Doodlo Designs Studio";
+  }, []);
+
     const [hoverText, setHoverText] = useState('PROJECTS THAT MAKE A DIFFERENCE');
 
   const handleMouseEnter = (text) => {
@@ -90,22 +94,28 @@ const Reachus = () => {
     
       useEffect(() => {
         const interval = setInterval(() => {
-          // Trigger the slide-up animation by changing the text
-          textRef.current.classList.add(styles.slideOut);
+          if (textRef.current) {
+            // Trigger the slide-out animation by changing the text
+            textRef.current.classList.add(styles.slideOut);
     
-          // Change the text after the slide-out animation
-          setTimeout(() => {
-            setIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    
-            // Reset the animation class and trigger slide-up in
-            textRef.current.classList.remove(styles.slideOut);
-            textRef.current.classList.add(styles.slideIn);
-    
-            // Remove the slide-in class after the animation ends
+            // Change the text after the slide-out animation
             setTimeout(() => {
-              textRef.current.classList.remove(styles.slideIn);
-            }, 800); // Duration of the slide-in animation
-          }, 800); // Duration of the slide-out animation
+              setIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    
+              if (textRef.current) {
+                // Reset the animation class and trigger slide-up in
+                textRef.current.classList.remove(styles.slideOut);
+                textRef.current.classList.add(styles.slideIn);
+    
+                // Remove the slide-in class after the animation ends
+                setTimeout(() => {
+                  if (textRef.current) {
+                    textRef.current.classList.remove(styles.slideIn);
+                  }
+                }, 800); // Duration of the slide-in animation
+              }
+            }, 800); // Duration of the slide-out animation
+          }
         }, 3000); // Change text every 3 seconds
     
         return () => clearInterval(interval);
@@ -160,7 +170,7 @@ const Reachus = () => {
                 Reach us
               </Link>
               <div className="border-bottom"></div>
-              
+
             </div>
 
             <div className="menuitem">

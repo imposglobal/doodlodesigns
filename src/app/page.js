@@ -19,11 +19,16 @@ import ReachusAnimated from "./Component/ReachusAnimation";
 import ContactForm from "./Component/ContactForm";
 import AccordionOne from "./Component/Accordions/AccordianOne";
 import VideoComponent from "./Component/VideoComponent";
+import Head from "next/head";
 
 
 
 const Home = () => {
   const [selectedOption, setSelectedOption] = useState('someOption');
+
+  useEffect(() => {
+    document.title = "Doodlo Designs Studio";
+  }, []);
 
   useEffect(() => {
     AOS.init({

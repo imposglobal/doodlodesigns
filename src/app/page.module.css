@@ -735,6 +735,7 @@
   }
   .home_hero_content{
     width: 100%;
+    margin-top: 6px;
   }
   .home_bg{
     height: auto;
@@ -752,7 +753,7 @@
 .home_hero_content {
   display: block;
   padding: 27px;
-  margin-top: 60px;
+  margin-top: 6px;
 }
 .deskmenu{
   display: none;
@@ -1023,6 +1024,7 @@
   font-size: 11.3px;
   margin-right: -128px;
   font-family: 'Poppins';
+  margin-bottom: 30px;
 }
 .trustp {
   width: 28% !important;

@@ -13,6 +13,10 @@ import Arrows from "../Component/Arrowanimation";
 import WorkAnimationlr from "../Component/WorkAnimatedLR";
 
 const Portfolio = () => {
+  useEffect(() => {
+    document.title = "Portfolio - Doodlo Designs Studio";
+  }, []);
+
     useEffect(() =>{
         AOS.init({
           duration: 1000, // Customize the duration of the animations
