@@ -259,7 +259,7 @@ const Home = () => {
       <h2 data-aos="fade-up" className={styles.text_title}>Creative Studio</h2>
       <p data-aos="fade-up" className={styles.home_hero_desc}>Of course we're into Branding, Web<br/> Design, Packaging, Illustrations,<br/> publication, social media & what not!</p>
       <div data-aos="fade-up">
-      <Link className="boton_elegante" href="/reach-us">
+      <Link className="boton_elegante" href="/our-services">
       EXPLORE MORE
       </Link>
       </div>

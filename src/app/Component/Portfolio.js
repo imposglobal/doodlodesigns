@@ -62,7 +62,10 @@ const Gallery = ({ items = [] }) => {
         ))}
       </div>
       <div className={styles.btn_center}>
-      <a className="boton_elegante">EXPLORE MORE</a>
+      <Link href="/portfolio" className="boton_elegante">
+      EXPLORE MORE
+      </Link>
+
       </div>
       
       <style jsx>{`

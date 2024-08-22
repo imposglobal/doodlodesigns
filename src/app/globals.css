@@ -930,6 +930,11 @@ a.mitem {
   top: 0 !important;
   fill: #000 !important;
 }
+.border-bottom {
+  background: #9595955e;
+  height: 1px;
+  margin-top: -9px;
+}
   .menuwrap {
     box-sizing: border-box;
     z-index: 100;
@@ -974,7 +979,7 @@ a.mitem {
 .gallery-item {
   position: relative;
   width: auto !important;
-  margin: 31px;
+  margin: 31px 10px;
 }
 #fimg5, #fimg4, #fimg3,#fimg2,#fimg1,#fimg6,#fimg7,#fimg8,#fimg9,#fimg10,#fimg11 {
   margin-top: 0;
