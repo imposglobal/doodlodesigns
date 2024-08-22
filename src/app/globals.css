@@ -584,6 +584,7 @@ a.mitem {
   overflow: hidden;
 }
 .menuwrap {
+  box-sizing: border-box;
   z-index: 100;
   width: 600px !important;
   padding: 16px;
@@ -591,7 +592,7 @@ a.mitem {
   position: fixed !important;
   top: 0;
   right: 0;
-  border-radius: 30px 0;
+  border-radius: 20px 0 0 20px;
   float: right;
   transition: right .5s cubic-bezier(0.820, 0.085, 0.395, 0.895);
 }
@@ -908,6 +909,16 @@ ul.slick-dots {
   font-size: 14px;
   padding: 0 23px;
 }
+a.mitem {
+  font-size: 20px;
+  color: #000;
+  font-weight: 300;
+  text-decoration: none;
+  font-family: 'Poppins';
+}
+.active {
+  font-size: 25px !important;
+}
   .page_column2__qMozd.page_secondsec__D3bKx .menuicon {
     display: none;
 }
@@ -920,6 +931,7 @@ ul.slick-dots {
   fill: #000 !important;
 }
   .menuwrap {
+    box-sizing: border-box;
     z-index: 100;
     width: 300px !important;
     padding: 16px;
@@ -927,7 +939,7 @@ ul.slick-dots {
     position: fixed !important;
     top: 0;
     right: 0;
-    border-radius: 30px 0;
+    border-radius: 20px 0 0 20px;
     float: right;
     transition: right .5s cubic-bezier(0.820, 0.085, 0.395, 0.895);
 }

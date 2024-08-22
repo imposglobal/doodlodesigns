@@ -144,7 +144,7 @@ const Portfolio = () => {
        
         <div className={`${styles.row} ${styles.mobrow}`}>
         <div className={styles.column1}>
-            <div className={styles.logosec}>
+            <div className={`${styles.logosec} ${styles.mlsec}`}>
             <Logo />
             </div>
         </div>

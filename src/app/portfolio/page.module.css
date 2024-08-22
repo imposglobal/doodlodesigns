@@ -279,7 +279,9 @@
 .booknows{
   margin-top: 100px;
 }
-
+.mlsec svg{
+  width: auto;
+}
 /* Responsive Design */
 
 @media (max-width: 767px) {
@@ -337,11 +339,14 @@
   direction: ltr !important;
   padding: 0;
 }
+.mlsec svg{
+  width: 100px;
+}
 .title {
   margin-right: 31vh;
   display: block;
   position: relative;
-  font-size: 26px;
+  font-size: 30px;
   font-family: 'Poppins', sans-serif;
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -383,7 +388,7 @@
   padding: 0;
   margin-bottom: 0;
   text-transform: uppercase;
-  font-size: 27px;
+  font-size: 33px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }

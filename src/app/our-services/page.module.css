@@ -19,6 +19,7 @@
   .logosec{
     padding-left: 80px;
   }
+  
   .menuicon{
     top: 0 !important;
   }
@@ -346,6 +347,9 @@
 .arr{
   margin-top: 30px;
 }
+.mlsec svg{
+  width: auto;
+}
 /* Mobile View */
 @media only screen and (max-width: 600px) {
   .column2 {
@@ -355,6 +359,9 @@
 .logosec {
   padding-left: 20px;
 }
+.mlsec svg{
+    width: 100px;
+  }
 .storyhero {
   padding: 30px 20px;
 }
