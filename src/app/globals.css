@@ -521,16 +521,65 @@ h2.client_h2 {
     text-transform: none;
     margin: 0 0 0 40px;
 }
-/* #fnum{
-  color: #34FF9D !important;
-} */
-
-/* Target MacBooks with a minimum width of 1280px */
-@media only screen and (min-width: 1280px) {
-  /* CSS rules for MacBook */
- 
+.menusec {
+  margin-top: 150px;
+  padding: 0 0 0 60px;
 }
-
+.menurow {
+  padding: 0px ;
+  display: flex;
+  border-radius: 10px ;
+}
+.mcol1{
+  flex: 80%;
+}
+.mcol2{
+  flex: 20%;
+}
+.msocial{
+  width: 30px !important;
+    display: block;
+    margin: 23px auto
+}
+.socialsec{
+  margin-top: 80px;
+}
+.menuitem{
+  margin-bottom: 20px ;
+}
+a.mitem {
+  font-size: 25px;
+  color: #000;
+  font-weight: 300;
+  text-decoration: none;
+  font-family: 'Poppins';
+}
+.active{
+  font-size: 35px !important;
+  color: #000;
+  font-weight: 700 !important;
+  text-decoration: none;
+  font-family: 'Poppins';
+}
+.gtt {
+  writing-mode: vertical-lr;
+  -webkit-text-orientation: mixed;
+  text-orientation: mixed;
+  margin: auto;
+  font-family: 'poppins';
+  color: #a8a8a8;
+}
+.border-bottom{
+  background: #9595955e;
+  height: 1px;
+  margin-top:-12px
+}
+.mcopy {
+  margin-top: 122px;
+  text-align: center;
+  font-family: 'poppins';
+  font-size: 14px;
+}
 #wrapper {
   overflow: hidden;
 }
@@ -848,6 +897,17 @@ ul.slick-dots {
   top: 20px !important;
 }
 @media only screen and (max-width: 600px) {
+  .menusec {
+    margin-top: 150px;
+    padding: 0 0 0 29px;
+}
+.mcopy {
+  margin-top: 122px;
+  text-align: center;
+  font-family: 'poppins';
+  font-size: 14px;
+  padding: 0 23px;
+}
   .page_column2__qMozd.page_secondsec__D3bKx .menuicon {
     display: none;
 }

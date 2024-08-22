@@ -66,7 +66,7 @@ const Home = () => {
     "/home/row2last.png",
     "/home/row2img1.jpg",
     "/home/row2img2.jpg",
-    "/home/row2img3.png",
+    "/home/row2img3.jpg",
   ];
 
   const imagesRow3 = [
@@ -117,11 +117,90 @@ const Home = () => {
   
   return (
     <section>
+    {/* Menu start */}
      <div id="wrapper">
       <div className={`menuwrap ${inactive ? 'inactive' : ''} doodbg`}>
-        <h1>Content</h1>
+        <div className="menusec">
+          <div className="menurow">
+            <div className="mcol1">
+            <div className="menuitem">
+              <Link href="/" className="mitem active">
+                Home
+              </Link>
+              <div className="border-bottom"></div>
+            </div>
+
+            <div className="menuitem">
+              <Link href="/portfolio" className="mitem">
+                Portfolio
+              </Link>
+            </div>
+
+            <div className="menuitem">
+              <Link href="/our-services" className="mitem">
+                Our Services
+              </Link>
+            </div>
+
+            <div className="menuitem">
+              <Link href="/reach-us" className="mitem">
+                Reach us
+              </Link>
+            </div>
+
+            <div className="menuitem">
+              <Link href="https://doodlocomics.com/" className="mitem">
+                Shop
+              </Link>
+            </div>
+
+            </div>
+            <div className="mcol2">
+              <div className="socialsec">
+                <p className="gtt">Get in touch </p>
+                <Link href="https://www.facebook.com/DoodloDesign">
+                                    <Image
+                                    className="msocial"
+                                    src="/home/social/flinked.svg"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+                                    </Link>
+                                    <Link href="https://www.instagram.com/doodlo_design/">
+                                    <Image
+                                    className="msocial"
+                                    src="/home/social/finsta.svg"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+                                    </Link>
+                                    <Link href="https://www.linkedin.com/company/13436743">
+                                    <Image
+                                    className="msocial"
+                                    src="/home/social/ffb.svg"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+                                    </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mcopy">
+        <p>© 2024 Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</p>
+        </div>
       </div>
     </div>
+    {/* Menu end */}
     {/* Mobile Menu */}
     <div className={styles.mobmenu}>
       <div className={styles.row}>
@@ -169,7 +248,6 @@ const Home = () => {
             width={100}
             height={37}
             priority
-            onClick={toggleClass}
           />
      </div>
       <h2 data-aos="fade-up" className={styles.text_stroke_hover}>We're your go-to</h2>
