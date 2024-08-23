@@ -211,7 +211,7 @@ const Portfolio = () => {
         <h2 className={styles.mainheadingdis}>Ready to Take Your</h2>
           <h2 className={styles.sec_headingdis}>Brand to the Next Level?</h2>
           <p className={styles.disdesc}>Contact Doodlo Design Studio today for a free consultation!</p>
-          <a className="boton_elegante mtbtn">Schedule a Free Consultation</a>
+          <Link href="/reach-us#calendly" className="boton_elegante mtbtn">Schedule a Free Consultation</Link>
           <div className={styles.booknows}>
             <div className={styles.bookwraps}>
             <WorkAnimationlr />

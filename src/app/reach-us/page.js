@@ -541,7 +541,10 @@ const Reachus = () => {
   </div>
 </div>
       {/* calendly sec */}
+      <div id="calendly">
       <Calendly />
+      </div>
+      
         </section>
     );
 };
