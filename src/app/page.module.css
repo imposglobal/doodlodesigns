@@ -704,7 +704,7 @@
     margin-top: 145px;
     float: right;
     font-size: 11.3px;
-    margin-right: -158px;
+    margin-right: -127px;
     font-family: 'Poppins';
 }
 .galtitle{
@@ -720,6 +720,9 @@
   width: 32%;
 }
 @media only screen and (max-width: 600px) {
+  .videosec{
+    margin: -98px 0 50px 0px !important;
+  }
   .mobmenu {
     padding: 10px 20px;
     display: block;
@@ -1020,15 +1023,15 @@
 .trustdesc {
   color: #fff;
   margin-top: 123px;
-  float: right;
+  float: left;
   font-size: 11.3px;
-  margin-right: -128px;
+  margin-left: -176px;
   font-family: 'Poppins';
   margin-bottom: 30px;
 }
 .trustp {
   width: 28% !important;
-  float: right;
+  float: left;
   margin-right: 74px;
   margin-top: 61px;
 }

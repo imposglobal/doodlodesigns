@@ -54,7 +54,7 @@ const Ourstory = () => {
             </div>
 
             <div className="menuitem">
-              <Link href="/our-services" className="mitem active">
+              <Link href="/services" className="mitem active">
                 Our Services
               </Link>
               <div className="border-bottom"></div>

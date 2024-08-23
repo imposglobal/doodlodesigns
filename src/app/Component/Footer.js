@@ -48,12 +48,12 @@ const Footer = () => {
                         <div className={styles.footerrow}>
                          <div className={styles.footercol1}>
                             <h3 className={styles.ftitle}>Our Studio</h3>
-                            <p className={styles.plink}><Link href='our-services' className={styles.flinks}>Services</Link></p>
-                            <p className={styles.plink}><Link href='our-services' className={styles.flinks}>Portfolio</Link></p>
+                            <p className={styles.plink}><Link href='/services' className={styles.flinks}>Services</Link></p>
+                            <p className={styles.plink}><Link href='/portfolio' className={styles.flinks}>Portfolio</Link></p>
                             <p className={styles.plink}><Link href='our-story' className={styles.flinks}>Our Story</Link></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Career</a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Blog</a></p>
-                            <p className={styles.plink}><a className={styles.flinks} href='#'>Shop</a></p>
+                            <p className={styles.plink}><Link className={styles.flinks} href='https://doodlocomics.com'>Shop</Link></p>
                             <p className={styles.plink}><Link href='faqs' className={styles.flinks}>FAQ</Link></p>
                          </div>
                          <div className={styles.footercol2}>
@@ -72,7 +72,7 @@ const Footer = () => {
                 </div>
                 <div className={`${styles.footerrow} ${styles.footerrowss}`}>
                     <div className={styles.footercol1}>
-                    <h3 className={styles.updatet}>Business Queries:</h3>
+                    <h3 className={`${styles.updatet} ${styles.mtop}`}>Business Queries:</h3>
                     <p className={styles.updatep}>contact@doodlodesigns.com</p>
 
                     <h3 className={styles.updatet}>Job Updates:</h3>
@@ -109,7 +109,7 @@ const Footer = () => {
                 <div className={`${styles.footerrow} ${styles.footerrowss}`}>
                     <div className={styles.footercol1}>
                         <div className={styles.gtint}>
-                            <span className={styles.gtintitle}>Get in touch </span>
+                            <span className={styles.gtintitle}>Follow us on </span>
                                     <Link href="https://www.facebook.com/DoodloDesign">
                                     <Image
                                     className={styles.subbtnisc}
@@ -186,7 +186,7 @@ const Footer = () => {
 
                          </div>
                          </div>
-                         <div className={styles.footercol1}>
+                         <div className={`${styles.footercol1}`}>
                     <h3 className={styles.updatet}>Business Queries:</h3>
                     <p className={styles.updatep}>contact@doodlodesigns.com</p>
 
@@ -201,12 +201,12 @@ const Footer = () => {
                         <div className={styles.footerrow}>
                          <div className={styles.footercol1}>
                             <h3 className={styles.ftitle}>Our Studio</h3>
-                            <p className={styles.plink}><Link href='our-services' className={styles.flinks}>Services</Link></p>
-                            <p className={styles.plink}><Link href='our-services' className={styles.flinks}>Portfolio</Link></p>
+                            <p className={styles.plink}><Link href='/services' className={styles.flinks}>Services</Link></p>
+                            <p className={styles.plink}><Link href='/portfolio' className={styles.flinks}>Portfolio</Link></p>
                             <p className={styles.plink}><Link href='our-story' className={styles.flinks}>Our Story</Link></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Career</a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Blog</a></p>
-                            <p className={styles.plink}><a className={styles.flinks} href='#'>Shop</a></p>
+                            <p className={styles.plink}><Link className={styles.flinks} href='https://doodlocomics.com'>Shop</Link></p>
                             <p className={styles.plink}><Link href='faqs' className={styles.flinks}>FAQ</Link></p>
                          </div>
                          <div className={styles.footercol2}>
@@ -256,7 +256,7 @@ const Footer = () => {
                 <div className={`${styles.footerrow} ${styles.footerrowss} ${styles.socialrow}`}>
                     <div className={styles.footercol1}>
                         <div className={styles.gtint}>
-                            <span className={styles.gtintitle}>Get in touch </span>
+                            <span className={styles.gtintitle}>Follow us on </span>
                                     <Link href="https://www.facebook.com/DoodloDesign">
                                     <Image
                                     className={styles.subbtnisc}

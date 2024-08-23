@@ -313,8 +313,8 @@ div#fimg7 .gallery_plink__u_ez2{
   transform: translate(-150px, -138pt);
 }
 video.videoint {
-  width: 80%;
-  padding: 80px 0;
+  width: 66%;
+  padding: 50px 0 100px 0;
   border-radius: 10px !important;
 }
 .slick-next, .slick-prev {
@@ -664,6 +664,7 @@ button.slick-arrow.slick-next {
   height: 324px !important;
   opacity: 1 !important;
 }
+
 .panel:hover{
   background-image: linear-gradient(
     50deg,
@@ -675,6 +676,9 @@ button.slick-arrow.slick-next {
     hsl(0deg 0% 31%) 100%
   );
   transition: background-image 0.5s ease-out;
+}
+.panel.undefined.accordion_active__ytCkG .arrowd{
+  transform: scaleY(-1);
 }
 .panel:hover .arrowd{
   transform: scaleY(-1);
@@ -968,6 +972,7 @@ a.mitem {
   border-radius: 10px;
   width: 84%;
 }
+
 .panel:hover .content{
   height: auto !important;
   opacity: 1 !important;
@@ -979,7 +984,12 @@ a.mitem {
 .gallery-item {
   position: relative;
   width: auto !important;
-  margin: 31px 10px;
+  margin: 12px 10px;
+}
+video.videoint {
+  width: 100%;
+  padding: 50px 0 100px 0;
+  border-radius: 10px !important;
 }
 #fimg5, #fimg4, #fimg3, #fimg2, #fimg1, #fimg6, #fimg7, #fimg8, #fimg9, #fimg10, #fimg11 {
   margin-top: 0;

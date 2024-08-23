@@ -142,7 +142,7 @@ const Home = () => {
             </div>
 
             <div className="menuitem">
-              <Link href="/our-services" className="mitem">
+              <Link href="/services" className="mitem">
                 Our Services
               </Link>
             </div>
@@ -162,7 +162,7 @@ const Home = () => {
             </div>
             <div className="mcol2">
               <div className="socialsec">
-                <p className="gtt">Get in touch </p>
+                <p className="gtt">Follow us on </p>
                 <Link href="https://www.facebook.com/DoodloDesign">
                                     <Image
                                     className="msocial"
@@ -257,9 +257,9 @@ const Home = () => {
      </div>
       <h2 data-aos="fade-up" className={styles.text_stroke_hover}>We're your go-to</h2>
       <h2 data-aos="fade-up" className={styles.text_title}>Creative Studio</h2>
-      <p data-aos="fade-up" className={styles.home_hero_desc}>Of course we're into Branding, Web<br/> Design, Packaging, Illustrations,<br/> publication, social media & what not!</p>
+      <p data-aos="fade-up" className={styles.home_hero_desc}>Of Course we're into Branding, Web<br/> Design, Packaging, Illustrations,<br/> Publication, Social Media & What Not!</p>
       <div data-aos="fade-up">
-      <Link className="boton_elegante" href="/our-services">
+      <Link className="boton_elegante" href="/services">
       EXPLORE MORE
       </Link>
       </div>
@@ -273,7 +273,7 @@ const Home = () => {
             height={37}
             priority
           />
-          <p className={styles.trustdesc}>TrustScore <b>4.1</b> | <b>347</b> Reviews</p>
+          <p className={styles.trustdesc}>TrustScore <b>4.2+</b></p>
       </div>
      </div>
      </div>
@@ -604,19 +604,19 @@ const Home = () => {
         </div>
       </div>
       <div className={`${styles.rowstory} ${styles.projrowp}`} id={styles.proj}>
-        <div className={styles.columnpdiff3} onMouseEnter={() => handleMouseEnter('22+ Years of Combined Experience')} onMouseLeave={handleMouseLeave}>
+        <div className={styles.columnpdiff3} onMouseEnter={() => handleMouseEnter('Years of Crafting Creative Solutions')} onMouseLeave={handleMouseLeave}>
         <h3 data-aos="fade-up" className={styles.prtitle}>22+</h3>
           <p data-aos="fade-up" className={styles.prdesc}>Years of Combined Experience </p>
         </div>
-        <div className={styles.columnpdiff4} onMouseEnter={() => handleMouseEnter('22+ Brands Shaped')} onMouseLeave={handleMouseLeave}>
+        <div className={styles.columnpdiff4} onMouseEnter={() => handleMouseEnter('Brands That We’ve Shaped')} onMouseLeave={handleMouseLeave}>
           <h3 className={styles.prtitle} data-aos="fade-up">65+</h3>
           <p className={styles.prdesc} data-aos="fade-up">Brands Shaped </p>
         </div>
-        <div className={styles.columnpdiff5} onMouseEnter={() => handleMouseEnter('7+ Happy Clients')} onMouseLeave={handleMouseLeave}>
-          <h3 className={styles.prtitle} data-aos="fade-up">9/10</h3>
-          <p className={styles.prdesc} data-aos="fade-up">Happy Clients</p>
+        <div className={styles.columnpdiff5} onMouseEnter={() => handleMouseEnter('Clients who loved our Designs')} onMouseLeave={handleMouseLeave}>
+          <h3 className={styles.prtitle} data-aos="fade-up">4.2 +</h3>
+          <p className={styles.prdesc} data-aos="fade-up">Trust Score</p>
         </div>
-        <div className={styles.columnpdiff6} onMouseEnter={() => handleMouseEnter('14+ Industries Served')} onMouseLeave={handleMouseLeave}>
+        <div className={styles.columnpdiff6} onMouseEnter={() => handleMouseEnter('Design Excellence Across 14 + Industries')} onMouseLeave={handleMouseLeave}>
           <h3 className={styles.prtitle} data-aos="fade-up">14+</h3>
           <p className={styles.prdesc} data-aos="fade-up">Industries served</p>
         </div>
@@ -632,19 +632,19 @@ const Home = () => {
       <h3 id="fnum" className={styles.prtitle}>387+</h3>
       <p className={styles.prdesc}>387+ Project Delivered & Counting</p>
     </div>
-    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('22+ Years of Combined Experience')} onMouseLeave={handleMouseLeave}>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('Years of Crafting Creative Solutions')} onMouseLeave={handleMouseLeave}>
       <h3 className={styles.prtitle}>22+</h3>
       <p className={styles.prdesc}>Years of Combined Experience</p>
     </div>
-    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('65+ Brands Shaped')} onMouseLeave={handleMouseLeave}>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('Brands That We’ve Shaped')} onMouseLeave={handleMouseLeave}>
       <h3 className={styles.prtitle}>65+</h3>
       <p className={styles.prdesc}>Brands Shaped</p>
     </div>
-    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('9/10 Happy Clients')} onMouseLeave={handleMouseLeave}>
-      <h3 className={styles.prtitle}>9/10</h3>
-      <p className={styles.prdesc}>Happy Clients</p>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('Clients who loved our Designs')} onMouseLeave={handleMouseLeave}>
+      <h3 className={styles.prtitle}>4.2+</h3>
+      <p className={styles.prdesc}>Trust Score</p>
     </div>
-    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('14+ Industries Served')} onMouseLeave={handleMouseLeave}>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('Design Excellence Across 14 + Industries')} onMouseLeave={handleMouseLeave}>
       <h3 className={styles.prtitle}>14+</h3>
       <p className={styles.prdesc}>Industries served</p>
     </div>
@@ -960,7 +960,10 @@ const Home = () => {
         <h2 data-aos="fade-up" className={styles.sec_headingdc}>For Cute Goodies</h2>
         <p data-aos="fade-up" className={styles.dcdesc}>Wanna buy some cute stuff? Explore our selection online, then visit our store for even more amazing finds!</p>
         <div data-aos="fade-up">
-        <a  href="" className={styles.dcbtn}>Shop doodlo comics </a>
+          <Link className={styles.dcbtn} href="https://doodlocomics.com/">
+          Shop doodlo comics
+          </Link>
+      
         </div>
         
         </div>

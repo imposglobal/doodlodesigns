@@ -32,10 +32,10 @@ const Portfolio = () => {
 
     const portfolioItems = [
       {no:"01.",  id: 1, title: "SWIGGY + BOWL COMPANY", category: "Packaging | Collaterals", imageUrl: "/home/portfolio/1.png" },
-      {no:"02.",  id: 2, title: "BLACK R FINANCE", category: "Branding | Website Design", imageUrl: "/home/portfolio/2.png" },
-      {no:"03.",  id: 3, title: "CONSAFE VPN", category: "Branding | Website Design", imageUrl: "/home/portfolio/3.png" },
-      {no:"04.",  id: 4, title: "MAHAIT INTERACTIVES", category: "Branding | Interactive Installations", imageUrl: "/home/portfolio/4.png" },
-      {no:"05.",  id: 5, title: "TARBARI", category: "Packaging", imageUrl: "/home/portfolio/5.png" },
+      {no:"02.",  id: 2, title: "BLACK B FINANCE", category: "Branding | Website Design", imageUrl: "/home/portfolio/2.png" },
+      {no:"03.",  id: 3, title: "COINSAFE VPN", category: "Branding | Website Design", imageUrl: "/home/portfolio/3.png" },
+      {no:"04.",  id: 4, title: "MAHATEE INTERACTIVES", category: "Branding | Interactive Installations", imageUrl: "/home/portfolio/4.png" },
+      {no:"05.",  id: 5, title: "TARABAI", category: "Packaging", imageUrl: "/home/portfolio/5.png" },
       {no:"06.",  id: 6, title: "CITIBANK", category: "Handbook | Poster", imageUrl: "/home/portfolio/6.png" },
       {no:"07.",  id: 7, title: "YOLOMART", category: "Branding | Retail Store", imageUrl: "/home/portfolio/7.png" },
       {no:"08.",  id: 8, title: "coffee table book", category: "Illustration | Publication ", imageUrl: "/home/portfolio/8.png" },
@@ -77,7 +77,7 @@ const Portfolio = () => {
             </div>
 
             <div className="menuitem">
-              <Link href="/our-services" className="mitem">
+              <Link href="/services" className="mitem">
                 Our Services
               </Link>
             </div>

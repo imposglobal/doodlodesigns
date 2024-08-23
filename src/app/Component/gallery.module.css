@@ -32,6 +32,9 @@
     font-family: 'Poppins';
     border-right: solid 30px #fff;
   }
+  .filterdrop{
+    display: none;
+  }
   .ecommimg{
     width: 100%;
   }

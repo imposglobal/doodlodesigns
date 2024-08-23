@@ -43,11 +43,13 @@ const AccordionOne = () => {
           onEnter: () => {
             setActivePanel(index);
             gsap.to(content, { height, opacity: 1, duration: 0.5, ease: 'power2.out' });
+            panel.classList.add(styles.active); // Add the active class
           },
           onLeaveBack: () => {
             if (activePanel === index) {
               setActivePanel(null);
               gsap.to(content, { height: '0', opacity: 0, duration: 0.5, ease: 'power2.out' });
+              panel.classList.remove(styles.active); // Remove the active class
             }
           },
           markers: false,
@@ -62,7 +64,7 @@ const AccordionOne = () => {
   return (
     <div>
       {/* Accordion start */}
-      <div className={`panel ${activePanel === 0 ? styles.open : ''}`} ref={el => (panelRefs.current[0] = el)}>
+      <div className={`${"panel"} ${activePanel === 0 ? styles.open : ''}`} ref={el => (panelRefs.current[0] = el)}>
         <div className={styles.row}>
           <div className={styles.column1}>
             <h3 className={styles.services_heading}>Branding Experience</h3>
@@ -168,7 +170,7 @@ const AccordionOne = () => {
       </div>
 
       {/* Accordion start */}
-      <div className={`panel ${activePanel === 1 ? styles.open : ''}`} ref={el => (panelRefs.current[1] = el)}>
+      <div className={`${"panel"} ${activePanel === 0 ? styles.open : ''}`} ref={el => (panelRefs.current[1] = el)}>
         <div className={styles.row}>
           <div className={styles.column1}>
           <h3 className={styles.services_heading}>Digital Experience  </h3>
@@ -238,7 +240,7 @@ const AccordionOne = () => {
       </div>
 
       {/* Accordion start */}
-      <div className={`panel ${activePanel === 2 ? styles.open : ''}`} ref={el => (panelRefs.current[2] = el)}>
+      <div className={`${"panel"} ${activePanel === 0 ? styles.open : ''}`} ref={el => (panelRefs.current[2] = el)}>
         <div className={styles.row}>
           <div className={styles.column1}>
           <h3 className={styles.services_heading}>Packaging  Experience  </h3>
@@ -310,7 +312,7 @@ const AccordionOne = () => {
         </div>
       </div>
             {/* Accordion start */}
-            <div className={`panel ${activePanel === 3 ? styles.open : ''}`} ref={el => (panelRefs.current[3] = el)}>
+            <div className={`${"panel"} ${activePanel === 0 ? styles.open : ''}`} ref={el => (panelRefs.current[3] = el)}>
         <div className={styles.row}>
           <div className={styles.column1}>
             <h3 className={styles.services_heading}>Ecommerce Experience</h3>

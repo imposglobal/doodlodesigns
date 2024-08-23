@@ -160,7 +160,7 @@ const Reachus = () => {
             </div>
 
             <div className="menuitem">
-              <Link href="/our-services" className="mitem">
+              <Link href="/services" className="mitem">
                 Our Services
               </Link>
             </div>
@@ -321,10 +321,10 @@ const Reachus = () => {
                         </div>
                     </div>
                     <div className={styles.partnersec}>
-                      <p data-aos="fade-up" className={styles.partnerh}>Partnered with </p>
+                      <p  className={styles.partnerh}>Partnered with </p>
                       <div className={styles.partnerimgsec}>
                         <div className={styles.shopify}>
-                        <Image data-aos="fade-up"
+                        <Image 
                                   className={styles.shopify}
                                   src="/home/partner/shopify.svg"
                                   alt="Next.js Logo"
@@ -335,7 +335,7 @@ const Reachus = () => {
                                   />
                         </div>
                         <div className={styles.partnerimg}>
-                        <Image data-aos="fade-up"
+                        <Image 
                                   src="/home/partner/uber.svg"
                                   alt="Next.js Logo"
                                   layout="responsive"
@@ -345,7 +345,7 @@ const Reachus = () => {
                                   />
                         </div>
                         <div className={styles.partnerimg}>
-                        <Image data-aos="fade-up"
+                        <Image 
                                   src="/home/partner/google.svg"
                                   alt="Next.js Logo"
                                   layout="responsive"
@@ -355,7 +355,7 @@ const Reachus = () => {
                                   />
                         </div>
                         <div className={styles.partnerimg}>
-                        <Image data-aos="fade-up"
+                        <Image 
                                   src="/home/partner/word.svg"
                                   alt="Next.js Logo"
                                   layout="responsive"
@@ -419,6 +419,8 @@ const Reachus = () => {
                                 <label>Publication</label>
                                 <input type="checkbox" value="" />
                                 <label>Social Media</label>
+                                <input type="checkbox" value="" />
+                                <label>Ecommerce</label>
                                 
                             </div>
 
@@ -429,7 +431,7 @@ const Reachus = () => {
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
-                            placeholder="Hi, I am"
+                            placeholder="Breif about the Project"
                         />
                         </div>
                         <button type="submit" className={styles.subsbtn}>Submit</button>
@@ -457,8 +459,8 @@ const Reachus = () => {
        </div>
        <div data-aos="fade-up" className={styles.filtergal}>
         <div className={styles.featured}>
-        <h2 className={styles.mainheadingf}>FEATURED</h2>
-        <h2 className={styles.sec_headingf}>Works</h2>
+        <h2 className={styles.mainheadingf}>Our</h2>
+        <h2 className={styles.sec_headingf}>Portfolio</h2>
         </div>
         <Portfolio items={items} />
         </div>
@@ -492,19 +494,19 @@ const Reachus = () => {
         </div>
       </div>
       <div className={`${styles.rowstory} ${styles.projrowp}`} id={styles.proj}>
-        <div className={styles.columnpdiff3} onMouseEnter={() => handleMouseEnter('22+ Years of Combined Experience')} onMouseLeave={handleMouseLeave}>
+        <div className={styles.columnpdiff3} onMouseEnter={() => handleMouseEnter('Years of Crafting Creative Solutions')} onMouseLeave={handleMouseLeave}>
         <h3 data-aos="fade-up" className={styles.prtitle}>22+</h3>
           <p data-aos="fade-up" className={styles.prdesc}>Years of Combined Experience </p>
         </div>
-        <div className={styles.columnpdiff4} onMouseEnter={() => handleMouseEnter('22+ Brands Shaped')} onMouseLeave={handleMouseLeave}>
+        <div className={styles.columnpdiff4} onMouseEnter={() => handleMouseEnter('Brands That We’ve Shaped')} onMouseLeave={handleMouseLeave}>
           <h3 className={styles.prtitle} data-aos="fade-up">65+</h3>
           <p className={styles.prdesc} data-aos="fade-up">Brands Shaped </p>
         </div>
-        <div className={styles.columnpdiff5} onMouseEnter={() => handleMouseEnter('7+ Happy Clients')} onMouseLeave={handleMouseLeave}>
-          <h3 className={styles.prtitle} data-aos="fade-up">9/10</h3>
-          <p className={styles.prdesc} data-aos="fade-up">Happy Clients</p>
+        <div className={styles.columnpdiff5} onMouseEnter={() => handleMouseEnter('Clients who loved our Designs')} onMouseLeave={handleMouseLeave}>
+          <h3 className={styles.prtitle} data-aos="fade-up">4.2 +</h3>
+          <p className={styles.prdesc} data-aos="fade-up">Trust Score</p>
         </div>
-        <div className={styles.columnpdiff6} onMouseEnter={() => handleMouseEnter('14+ Industries Served')} onMouseLeave={handleMouseLeave}>
+        <div className={styles.columnpdiff6} onMouseEnter={() => handleMouseEnter('Design Excellence Across 14 + Industries')} onMouseLeave={handleMouseLeave}>
           <h3 className={styles.prtitle} data-aos="fade-up">14+</h3>
           <p className={styles.prdesc} data-aos="fade-up">Industries served</p>
         </div>
@@ -520,19 +522,19 @@ const Reachus = () => {
       <h3 id="fnum" className={styles.prtitle}>387+</h3>
       <p className={styles.prdesc}>387+ Project Delivered & Counting</p>
     </div>
-    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('22+ Years of Combined Experience')} onMouseLeave={handleMouseLeave}>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('Years of Crafting Creative Solutions')} onMouseLeave={handleMouseLeave}>
       <h3 className={styles.prtitle}>22+</h3>
       <p className={styles.prdesc}>Years of Combined Experience</p>
     </div>
-    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('65+ Brands Shaped')} onMouseLeave={handleMouseLeave}>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('Brands That We’ve Shaped')} onMouseLeave={handleMouseLeave}>
       <h3 className={styles.prtitle}>65+</h3>
       <p className={styles.prdesc}>Brands Shaped</p>
     </div>
-    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('9/10 Happy Clients')} onMouseLeave={handleMouseLeave}>
-      <h3 className={styles.prtitle}>9/10</h3>
-      <p className={styles.prdesc}>Happy Clients</p>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('Clients who loved our Designs')} onMouseLeave={handleMouseLeave}>
+      <h3 className={styles.prtitle}>4.2+</h3>
+      <p className={styles.prdesc}>Trust Score</p>
     </div>
-    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('14+ Industries Served')} onMouseLeave={handleMouseLeave}>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('Design Excellence Across 14 + Industries')} onMouseLeave={handleMouseLeave}>
       <h3 className={styles.prtitle}>14+</h3>
       <p className={styles.prdesc}>Industries served</p>
     </div>

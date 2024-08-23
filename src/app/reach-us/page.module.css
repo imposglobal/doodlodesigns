@@ -49,7 +49,7 @@
     padding: 25px 20px 50px 80px;
   }
   .innercolumn1 {
-    flex: 34%;
+    flex: 22%;
     background: #fff;
    /* Should be removed. Only for demonstration */
   }
@@ -72,7 +72,7 @@
   .reachimg{
     margin: 5px;
     width: 88% !important;
-    height: 60.2vh  !important;
+    height: 53.2vh  !important;
   }
   .rowimg {
     object-fit: contain;
@@ -83,17 +83,17 @@
   }
   .reachimg1{
     width: auto !important;
-    height: 26vh !important;
+    height: 23vh !important;
     margin: 5px;
   }
   .reachimg2{
     width: auto !important;
-    height: 26vh !important ;
+    height: 23vh !important ;
     margin: 5px;
   }
   .reachimg3{
     width: auto !important;
-    height: 32.6vh  !important;
+    height: 28.8vh    !important;
     margin: 5px;
   }
   .clientle{
@@ -767,7 +767,7 @@
 }
 .text {
   margin-bottom: 10px;
-  font-size: 6.6vw;
+  font-size: 7.4vw;
   font-family: 'Poppins', sans-serif;
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -791,9 +791,9 @@
   font-size: 14px;
   font-style: italic;
   color: #000;
-  width: 750px;
+  width: auto;
   border-right: 1.6px solid #000;
-  animation: page_Typing__hdKf7 3.9s steps(70, end) infinite alternate, page_Bar__Cnavh 1s step-end infinite;
+  animation: Typing 3.9s steps(70, end) infinite alternate, page_Bar__Cnavh 1s step-end infinite;
 }
 .rsearch {
   width: 14px !important;

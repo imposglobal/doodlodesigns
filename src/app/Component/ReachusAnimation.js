@@ -14,7 +14,7 @@ const ReachusAnimated = () => {
 
     gsap.to(textRef.current, {
       x: `-${textWidth}px`,
-      duration: 130,
+      duration: 200,
       repeat: -100,
       ease: 'linear',
       modifiers: {

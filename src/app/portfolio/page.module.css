@@ -214,9 +214,10 @@
 .discuss_row{
   overflow: hidden;
   padding: 30px 0 0 50px;
-  margin: 100px 200px;
+  margin: 68px 200px;
   border: 1px solid #fff;
   border-radius: 10px ;
+  margin-bottom: 140px;
 }
 .mainheadingdis {
   margin-top: 0;
@@ -430,7 +431,7 @@
   margin: 0px 20px;
   border: 1px solid #fff;
   border-radius: 10px;
-  margin-bottom:50px;
+  margin-bottom:90px;
 }
 .bookwraps{
   padding: 3px 0;

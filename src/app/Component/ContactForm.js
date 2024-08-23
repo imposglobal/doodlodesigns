@@ -105,7 +105,7 @@ const ContactForm = () => {
             </div>
             <div className={styles.contcolumn2}>
                 <div className={styles.formcontainer}>
-                    <h3 data-aos="fade-up" className={styles.formhead}>Get A Free Design Audit</h3>
+                    <h3 data-aos="fade-up" className={styles.formhead}>Get a Free Design Audit</h3>
                     <p data-aos="fade-up" className={styles.formdesc}>
                     Fill in the details to know more
                     </p>
@@ -142,16 +142,18 @@ const ContactForm = () => {
                             <div className={styles.chekinput}>
                                 <input type="checkbox" value="Branding" />
                                 <label>Branding</label>
-                                <input type="checkbox" value="" />
+                                <input type="checkbox" value="Packaging" />
                                 <label>Packaging</label>
-                                <input type="checkbox" value="" />
+                                <input type="checkbox" value="Website" />
                                 <label>Website</label>
                             </div>
                             <div className={styles.chekinputt}>
-                                <input type="checkbox" value="" />
+                                <input type="checkbox" value="Publication" />
                                 <label>Publication</label>
-                                <input type="checkbox" value="" />
+                                <input type="checkbox" value="Social Media" />
                                 <label>Social Media</label>
+                                <input type="checkbox" value="Ecommerce" />
+                                <label>Ecommerce</label>
                                 
                             </div>
 
@@ -162,7 +164,7 @@ const ContactForm = () => {
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
-                            placeholder="Hi, I am"
+                            placeholder="Brief about the Project"
                         />
                         </div>
                         <button type="submit" className={styles.subsbtns}>Submit</button>
