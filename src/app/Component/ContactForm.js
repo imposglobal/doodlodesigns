@@ -109,7 +109,7 @@ const ContactForm = () => {
                     <p data-aos="fade-up" className={styles.formdesc}>
                     Fill in the details to know more
                     </p>
-                    <form data-aos="fade-up" onSubmit={handleSubmit}>
+                    <form data-aos="fade-up" onSubmit={handleSubmit} netlify>
                         <div className={styles.formInput}>
                         <input
                             type="text"

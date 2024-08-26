@@ -376,7 +376,7 @@ const Reachus = () => {
                     <p className={styles.formdesc}>
                     Fill in the details to know more
                     </p>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} netlify>
                         <div className={styles.formInput}>
                         <input
                             type="text"
