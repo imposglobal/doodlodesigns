@@ -271,6 +271,7 @@ const OurStory = () => {
                   priority
                 />
             </div>
+            <p data-aos="fade-up" className={styles.toottext}>More tools like our sketch books, pens, pencils, and we love our stationary utterly!</p>
     </div>
     {/* Tool kit end */}
 
@@ -465,7 +466,7 @@ const OurStory = () => {
        {/* team Inner End */}
       </div>
       <div className={styles.rows}>
-       {/* team inner */}
+       {/* team inner */} 
        <div className={styles.tcol}>
           <div className={styles.teaminner}>
           <Image data-aos="fade-up"

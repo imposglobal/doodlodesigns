@@ -729,7 +729,25 @@
   display: none;
 }
 @media only screen and (max-width: 600px) {
-  
+  .service_hight{
+    display: block;
+  }
+  .formInput input{
+    font-size: 14px !important;
+  }
+  .checktitle{
+    font-size: 14px;
+  }
+  .chekinput label {
+    font-weight: 300;
+    margin: 0 10px 0 0;
+    font-size: 12px;
+}
+.chekinputt label {
+  font-weight: 300;
+  margin: 0 10px 0 0;
+  font-size: 12px;
+}
   .mobmenu {
     padding: 10px 20px;
     display: block;
@@ -890,7 +908,7 @@
 .gridItem {
   align-items: center;
   font-family: 'poppins';
-  height: 140px;
+  height: 100px;
   border: 0.5px solid #ffffff30;
   background-color: transparent; /* Optional: background color for each item */
   padding: 20px; /* Optional: padding for each item */
@@ -909,13 +927,13 @@
 }
 
 .prdesc {
-  font-size: 1em;
+  font-size: 12px;
   color: #fff; /* Optional: color for the description */
 }
 .overtext{
   color: #fff;
     text-align: left;
-    font-size: 19px;  
+    font-size: 18px;  
 }
 .mobilev{
   display: none;

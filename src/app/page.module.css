@@ -726,6 +726,8 @@
   .mobmenu {
     padding: 10px 20px;
     display: block;
+    width: 100%;
+    box-sizing: border-box;
   }
   .mobcol{
     flex: 50%;
@@ -744,6 +746,9 @@
     height: auto;
     display: block !important;
   }
+  .service_hight{
+    display: block;
+  }
   .scrollimg {
     overflow: hidden;
     padding: 20px;
@@ -757,26 +762,30 @@
   display: block;
   padding: 27px;
   margin-top: 6px;
+  box-sizing: border-box;
+}
+.home_hero_desc{
+  font-size: 16px;
 }
 .deskmenu{
   display: none;
 }
 .text_stroke_hover{
-  font-size: 28px;
+  font-size: 25px;
 }
 .text_title {
   margin-top: -15px;
   text-transform: uppercase;
-  font-size: 37px;
+  font-size: 31px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
 .homestar {
-  width: 43px !important;
+  width: 37px !important;
   float: right;
   position: relative;
-  top: -7px;
-  right: 7vh;
+  top: 3px;
+  right: 0vh;
 }
 .services{
   padding: 63px 20px;
@@ -841,9 +850,9 @@
   margin: 0 0px;
 }
 .discuss_row {
-  height: 455px;
+  height: 63vh;
   overflow: hidden;
-  padding: 30px 0 0 32px;
+  padding: 30px 20px;
   margin: 68px 0px;
   border: 1px solid #fff;
   border-radius: 10px;
@@ -861,7 +870,7 @@
   margin-bottom: 40px;
   color: #fff;
   font-family: "poppins";
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300 !important;
   padding-right: 22px;
 }
@@ -870,9 +879,10 @@
   padding: 0;
   margin-bottom: 0;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 24px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+  margin-bottom: 5px;
 }
 .desktopv{
   display: none;
@@ -965,11 +975,21 @@
 .shopsec {
   overflow: hidden;
   margin: 100px 20px;
-  height: 631px;
+  height: 82vh;
   background-image: url(/home/shopbg.png);
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+}
+.divider {
+  gap: 16px;
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'poppins';
+  display: flex;
+  color: #898989;
+  align-items: center;
 }
 .shoprow {
   padding: 0px;
@@ -991,7 +1011,7 @@
   rotate: 91deg;
 }
 .shopcol2 {
-  padding-left: 25px;
+  padding-left: 20px;
   flex: 80% 1;
   margin-top: 30px !important;
 }
@@ -1016,24 +1036,40 @@
   padding: 0;
   margin-bottom: 0;
   text-transform: uppercase;
-  font-size: 33px;
+  font-size: 28px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
+.dcdesc {
+  color: #fff;
+  font-family: 'poppins';
+  font-size: 15px;
+  margin: 0;
+  margin-right: 25px;
+  margin-bottom: 36px;
+}
 .trustdesc {
   color: #fff;
-  margin-top: 123px;
+  margin-top: 98px;
   float: left;
   font-size: 11.3px;
-  margin-left: -176px;
+  margin-left: -20.8vh;
   font-family: 'Poppins';
   margin-bottom: 30px;
+  
 }
 .trustp {
   width: 28% !important;
   float: left;
-  margin-right: 74px;
-  margin-top: 61px;
+  margin-right: 90px;
+  margin-top: 47px;
+  padding-bottom: 50px;
+}
+.trustpara{
+  font-size: 10px;
+  margin: 0;
+  position: absolute;
+  top: 95px;
 }
 }
 
@@ -1052,7 +1088,7 @@
 .gridItem {
   align-items: center;
   font-family: 'poppins';
-  height: 140px;
+  height: 100px;
   border: 0.5px solid #ffffff30;
   background-color: transparent; /* Optional: background color for each item */
   padding: 20px; /* Optional: padding for each item */
@@ -1069,13 +1105,13 @@
 }
 
 .prdesc {
-  font-size: 1em;
+  font-size: 12px;
   color: #fff; /* Optional: color for the description */
 }
 .overtext{
   color: #fff;
     text-align: left;
-    font-size: 19px;  
+    font-size: 18px;  
 }
 .videosec {
   margin: 50px 0px;

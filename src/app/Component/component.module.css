@@ -194,7 +194,7 @@
     background: transparent;
     padding: 12px 60px;
     font-family: 'poppins';
-    width: 250px;
+    width: 45vh;
     border-radius: 10px;
     border: 1px solid #000;
   }
@@ -260,6 +260,19 @@
     margin-top: -50px;
   }
   @media only screen and (max-width: 600px) {
+    .contcolumn1 {
+      flex: 40% 1;
+      padding: 50px 20px 80px 20px;
+  }
+  .conhead {
+    margin-top: 50px;
+    font-family: 'poppins';
+    color: #fff;
+    font-size: 20px;
+}
+.formcontainer{
+  padding: 75px 20px !important;
+}
     .controw {
       margin: 100px 20px;
       overflow: hidden;
@@ -276,9 +289,7 @@
   width: 12% !important;
   margin: 0 11px 0 0;
 }
-.formcontainer {
-  padding: 75px 40px !important;
-}
+
 .formhead {
   color: #000000;
   font-family: 'poppins';
@@ -325,7 +336,7 @@
   background: transparent;
   padding: 12px 60px;
   font-family: 'poppins';
-  width: 161px;
+  width: 18vh;
   border-radius: 10px;
   border: 1px solid #000;
 }
@@ -386,10 +397,31 @@
 .text_titlec {
   margin-top: -12px;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 26px;
   font-family: 'Poppins', sans-serif;
   color: #000;
 }
+.formInput input{
+  font-size: 14px !important;
+}
+.checktitle {
+  font-size: 14px;
+  color: #000;
+  font-family: 'poppins';
+  font-weight: 300 !important;
+  margin-bottom: 10px;
+}
+.chekinput label {
+  font-weight: 300;
+  margin: 0px 10px 0 0;
+  font-size: 12px;
+}
+.chekinputt label {
+  font-weight: 300;
+  margin: 0px 0px 0 0;
+  font-size: 12px;
+}
+
   }
 
 .mobilev{

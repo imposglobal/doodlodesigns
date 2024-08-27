@@ -623,7 +623,7 @@ const Ourstory = () => {
         <div className={styles.discuss_row}>
         <h2 className={styles.mainheadingdis}>Ready to Take Your</h2>
           <h2 className={styles.sec_headingdis}>Brand to the Next Level?</h2>
-          <p className={styles.disdesc}>Contact Doodlo Design Studio today for a free consultation!</p>
+          <p className={styles.disdesc}>Contact Doodlo Design Studio today for your brand consultation!</p>
           <Link href="/reach-us/#calendly" className="boton_elegante mtbtn">Schedule a Free Consultation</Link>
           <div className={styles.booknow}>
             <div className={styles.bookwrap}>

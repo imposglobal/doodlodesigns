@@ -94,8 +94,8 @@ const Home = () => {
     { id: 3, ids: 'fimg3', ptitle:'Swiggy', pdesc:'Packaging', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
     { id: 4, ids: 'fimg4', ptitle:'Coinsafe', pdesc:'Branding | UI ', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
     { id: 5, ids: 'fimg5', ptitle:'Nutribee', pdesc:'Packaging', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
-    { id: 6, ids: 'fimg6', ptitle:'Mahati', pdesc:'Branding | UI | Illustration', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
-    { id: 7, ids: 'fimg7', ptitle:'Wurth', pdesc:'Publication', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
+    { id: 6, ids: 'fimg6', ptitle:'Mahatee Interactives', pdesc:'Branding | UI | Illustration', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
+    { id: 7, ids: 'fimg7', ptitle:'Wuerth Industries', pdesc:'Publication', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
     { id: 8, ids: 'fimg8', ptitle:'Betsetwin', pdesc:'Branding | UI ', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
     { id: 9, ids: 'fimg9', ptitle:'Tarabai', pdesc:'Branding', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
     { id: 10, ids: 'fimg10', ptitle:'Little Learners Trove', pdesc:'Illustration | Packaging', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
@@ -262,8 +262,20 @@ const Home = () => {
       <Link className="boton_elegante" href="/services">
       EXPLORE MORE
       </Link>
+      <div data-aos="fade-up" className={styles.mobilev}>
+      <Image
+            className={styles.trustp}
+            src="/home/trustp.svg"
+            alt="Next.js Logo"
+            layout="responsive"
+            width={100}
+            height={37}
+            priority
+          />
+          <p className={`${styles.trustdesc} ${styles.trustpara}`}>TrustScore <b>4.2+</b></p>
       </div>
-      <div data-aos="fade-up">
+      </div>
+      <div data-aos="fade-up" className={styles.desktopv}>
       <Image
             className={styles.trustp}
             src="/home/trustp.svg"
@@ -318,7 +330,7 @@ const Home = () => {
       <div data-aos="fade-up">
       <ImageFlip  />
       </div>
-      
+      <div>
       <div data-aos="fade-up" className={styles.divider}>Partnered with</div>
       <div data-aos="fade-up" className={styles.partnerimgsec}>
       <Image
@@ -357,6 +369,7 @@ const Home = () => {
             height={37}
             priority
           />
+          </div>
       </div>
     </div>
 
