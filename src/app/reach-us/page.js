@@ -503,7 +503,7 @@ const Reachus = () => {
           <p className={styles.prdesc} data-aos="fade-up">Brands Shaped </p>
         </div>
         <div className={styles.columnpdiff5} onMouseEnter={() => handleMouseEnter('Clients who loved our Designs')} onMouseLeave={handleMouseLeave}>
-          <h3 className={styles.prtitle} data-aos="fade-up">4.2 +</h3>
+          <h3 className={styles.prtitle} data-aos="fade-up">4.2+</h3>
           <p className={styles.prdesc} data-aos="fade-up">Trust Score</p>
         </div>
         <div className={styles.columnpdiff6} onMouseEnter={() => handleMouseEnter('Design Excellence Across 14 + Industries')} onMouseLeave={handleMouseLeave}>

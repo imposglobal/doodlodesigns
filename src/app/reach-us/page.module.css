@@ -388,6 +388,9 @@
   .columnpdiff6 h3:hover {
       color: #fff;
   }
+  .columnpdiff2 h3:hover, .columnpdiff3 h3:hover, .columnpdiff4 h3:hover, .columnpdiff5 h3:hover, .columnpdiff6 h3:hover{
+    color: #34FF9D !important;
+  }
   .shopsec{
     overflow: hidden;
     margin: 100px 150px;
