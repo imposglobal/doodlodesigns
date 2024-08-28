@@ -31,11 +31,11 @@ const Carousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 300, // Decrease scrolling time
+    speed: 1000, // Decrease scrolling time
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 2000, // Time between each scroll (2 seconds)
+    autoplaySpeed: 5000, // Time between each scroll (2 seconds)
     prevArrow: <SamplePrevArrow />,
     nextArrow: <SampleNextArrow />,
   };

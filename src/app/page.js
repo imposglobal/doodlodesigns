@@ -90,16 +90,16 @@ const Home = () => {
 
 
    const items = [
-    { id: 1, ids: 'fimg1', ptitle:'Yolomart', pdesc:'Branding | UI | Social Media', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
-    { id: 2, ids: 'fimg2', ptitle:'Black B', pdesc:'UI', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
-    { id: 3, ids: 'fimg3', ptitle:'Swiggy', pdesc:'Packaging', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
-    { id: 4, ids: 'fimg4', ptitle:'Coinsafe', pdesc:'Branding | UI ', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
-    { id: 5, ids: 'fimg5', ptitle:'Nutribee', pdesc:'Packaging', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
-    { id: 6, ids: 'fimg6', ptitle:'Mahatee Interactives', pdesc:'Branding | UI | Illustration', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
-    { id: 7, ids: 'fimg7', ptitle:'Wuerth Industries', pdesc:'Publication', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
-    { id: 8, ids: 'fimg8', ptitle:'Betsetwin', pdesc:'Branding | UI ', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
-    { id: 9, ids: 'fimg9', ptitle:'Tarabai', pdesc:'Branding', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
-    { id: 10, ids: 'fimg10', ptitle:'Little Learners Trove', pdesc:'Illustration | Packaging', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
+    { id: 1, ids: 'fimg1', ptitle:'Yolomart', pdesc:'Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
+    { id: 2, ids: 'fimg2', ptitle:'Black B Finance', pdesc:'Branding | Website UI | Web Development', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
+    { id: 3, ids: 'fimg3', ptitle:'Swiggy + Bowl Company', pdesc:'Packaging Design | Marketing collaterals | Advertising ', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
+    { id: 4, ids: 'fimg4', ptitle:'Coinsafe', pdesc:'Branding | Website UI | Web Development | Application | Marketing Collaterals ', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
+    { id: 5, ids: 'fimg5', ptitle:'Nutribee', pdesc:'Illustration | Packaging Design', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
+    { id: 6, ids: 'fimg6', ptitle:'Mahatee Interactives', pdesc:'Branding | Website UI | Shopify Development | Ecommerce Setup | Illustrations | Publication & Book Design | Social Media', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
+    { id: 7, ids: 'fimg7', ptitle:'Wuerth Industries', pdesc:'Publication - Coffee Table Book Design | Corporate Giftings', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
+    { id: 8, ids: 'fimg8', ptitle:'Betsetwin', pdesc:'Branding | Website UI | Social Media', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
+    { id: 9, ids: 'fimg9', ptitle:'Tarabai', pdesc:'Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
+    { id: 10, ids: 'fimg10', ptitle:'Little Learners Trove', pdesc:'Branding | Illustrations | Product Design | Packaging Design | Social Media', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
     { id: 11, ids: 'fimg11', ptitle:'Click r&D', pdesc:'Branding | UI ', name: 'Item 11', image: '/home/gallery/gal11.png', category: 'category2' },
     // Add more items with appropriate categories
   ];
@@ -406,7 +406,7 @@ const Home = () => {
           <div data-aos="fade-up" className={`${styles.pointer} ${styles.pmar}`}>
             <div className={styles.pointer_inner}>
               <div className={styles.pnum}>
-                01.
+                01
               </div>
               <div className={styles.pimg}>
                   <Image
@@ -431,7 +431,7 @@ const Home = () => {
           <div data-aos="fade-up" className={styles.pointers}>
             <div className={styles.pointer_inner}>
               <div className={styles.pnum}>
-                02.
+                02
               </div>
               <div className={styles.pimg}>
                   <Image
@@ -456,7 +456,7 @@ const Home = () => {
           <div data-aos="fade-up" className={`${styles.pointer}`}>
             <div className={styles.pointer_inner}>
               <div className={styles.pnum}>
-                03.
+                03
               </div>
               <div className={styles.pimg}>
                   <Image
@@ -481,7 +481,7 @@ const Home = () => {
           <div data-aos="fade-up" className={styles.pointers}>
             <div className={styles.pointer_inner}>
               <div className={styles.pnum}>
-                04.
+                04
               </div>
               <div className={styles.pimg}>
                   <Image
@@ -506,7 +506,7 @@ const Home = () => {
           <div data-aos="fade-up" className={styles.pointers}>
             <div className={styles.pointer_inner}>
               <div className={styles.pnum}>
-                05.
+                05
               </div>
               <div className={styles.pimg}>
                   <Image

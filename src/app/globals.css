@@ -244,7 +244,7 @@ h1,h2,h3,h4,h5,h6,p{
 .imgtitle{
   color: #fff;
     font-family: 'Poppins';
-    font-size: 25px;
+    font-size: 22px;
     text-transform: uppercase;
 }
 .portdesc{
@@ -525,7 +525,7 @@ h2.client_h2 {
     margin: 0 0 0 40px;
 }
 .menusec {
-  margin-top: 150px;
+  margin-top: 168px;
   padding: 0 0 0 60px;
 }
 .menurow {
@@ -556,6 +556,15 @@ a.mitem {
   font-weight: 300;
   text-decoration: none;
   font-family: 'Poppins';
+  transition: all .4s ease-in-out;
+}
+.mitem:hover{
+  transform: scale(1);
+  font-size: 35px !important;
+  color: #000;
+  font-weight: 700 !important;
+  text-decoration: none;
+  font-family: 'Poppins';
 }
 .active{
   font-size: 35px !important;
@@ -578,7 +587,7 @@ a.mitem {
   margin-top:-12px
 }
 .mcopy {
-  margin-top: 122px;
+  margin-top: 115px;
   text-align: center;
   font-family: 'poppins';
   font-size: 14px;
@@ -689,7 +698,7 @@ button.slick-arrow.slick-next {
 .arrowd{
   background: #34FF9D;
   width: 21px !important;
-  padding: 11px 15px;
+  padding: 9px 12px;
   height: 27px !important;
   border-radius: 50%;
   cursor: none;
@@ -913,6 +922,18 @@ ul.slick-dots {
     margin-top: 150px;
     padding: 0 0 0 29px;
 }
+.gallery_fcolumn2__UWqUp {
+ display: none;
+}
+.page_filtergal__hBfN9 .jsx-6aef31e2b66eceb3 .gallery-item {
+              position: relative;
+              width: auto !important;
+              margin: 12px 0 !important;
+          }
+          .page_filtergal__hBfN9 #fimg5, .page_filtergal__hBfN9 #fimg4,.page_filtergal__hBfN9 #fimg3,.page_filtergal__hBfN9 #fimg2, .page_filtergal__hBfN9 #fimg1, .page_filtergal__hBfN9 #fimg6, .page_filtergal__hBfN9 #fimg7, .page_filtergal__hBfN9 #fimg8,  .page_filtergal__hBfN9 #fimg9, .page_filtergal__hBfN9 #fimg10, .page_filtergal__hBfN9 #fimg11 {
+            margin-top: 0;
+            padding: 0 0;
+        }
 .mcopy {
   margin-top: 35px;
         text-align: center;
@@ -924,6 +945,14 @@ a.mitem {
   font-size: 20px;
   color: #000;
   font-weight: 300;
+  text-decoration: none;
+  font-family: 'Poppins';
+}
+.mitem:hover{
+  transform: scale(1);
+  font-size: 25px !important;
+  color: #000;
+  font-weight: 700 !important;
   text-decoration: none;
   font-family: 'Poppins';
 }
@@ -962,7 +991,7 @@ a.mitem {
   .arrowd {
     background: #34FF9D;
     width: 21px !important;
-    padding: 7px 11px;
+    padding: 7px 10px;
     height: 27px !important;
     border-radius: 50%;
     cursor: none;
@@ -982,7 +1011,7 @@ a.mitem {
   box-sizing: border-box;
 }
 .client_review{
-  font-size: 2vh !important;
+  font-size: 1.6vh !important;
 }
 .panel:hover .content{
   height: auto !important;

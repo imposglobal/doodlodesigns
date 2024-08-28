@@ -67,7 +67,8 @@ const AccordionOne = () => {
       <div className={`${"panel"} ${activePanel === 0 ? styles.open : ''}`} ref={el => (panelRefs.current[0] = el)}>
         <div className={styles.row}>
           <div className={styles.column1}>
-            <h3 className={styles.services_heading}>Branding Experience</h3>
+            <h3 className={`${styles.services_heading} ${styles.desktopv}`}>Branding Experience</h3>
+            <h3 className={`${styles.services_heading} ${styles.mobilev}`}>Branding <br/>Experience  </h3>
           </div>
           <div className={`${styles.column2}`}>
            <div className={styles.arrsec}>
@@ -191,7 +192,8 @@ const AccordionOne = () => {
       <div className={`${"panel"} ${activePanel === 0 ? styles.open : ''}`} ref={el => (panelRefs.current[1] = el)}>
         <div className={styles.row}>
           <div className={styles.column1}>
-          <h3 className={styles.services_heading}>Digital Experience  </h3>
+          <h3 className={`${styles.services_heading} ${styles.desktopv}`}>Digital Experience  </h3>
+          <h3 className={`${styles.services_heading} ${styles.mobilev}`}>Digital <br/>Experience  </h3>
           </div>
           <div className={`${styles.column2}`}>
             <div className={styles.arrsec}>
@@ -261,7 +263,8 @@ const AccordionOne = () => {
       <div className={`${"panel"} ${activePanel === 0 ? styles.open : ''}`} ref={el => (panelRefs.current[2] = el)}>
         <div className={styles.row}>
           <div className={styles.column1}>
-          <h3 className={styles.services_heading}>Packaging  Experience  </h3>
+          <h3 className={`${styles.services_heading} ${styles.desktopv}`}>Packaging Experience</h3>
+          <h3 className={`${styles.services_heading} ${styles.mobilev}`}>Packaging <br/>Experience  </h3>
           </div>
           <div className={`${styles.column2}`}>
           <div className={styles.arrsec}>
@@ -333,7 +336,8 @@ const AccordionOne = () => {
             <div className={`${"panel"} ${activePanel === 0 ? styles.open : ''}`} ref={el => (panelRefs.current[3] = el)}>
         <div className={styles.row}>
           <div className={styles.column1}>
-            <h3 className={styles.services_heading}>Ecommerce Experience</h3>
+            <h3 className={`${styles.services_heading} ${styles.desktopv}`}>Ecommerce Experience</h3>
+            <h3 className={`${styles.services_heading} ${styles.mobilev}`}>Ecommerce <br/>Experience  </h3>
           </div>
           <div className={`${styles.column2}`}>
             

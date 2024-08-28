@@ -13,6 +13,7 @@ import BrandAnimated from "../Component/Brandlineanimation";
 import Calendly from "../Component/Calendly";
 import React, { useEffect, useRef,useState } from 'react';
 import gsap from 'gsap';
+import Logoslide from "../Component/Logoslider";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -72,20 +73,19 @@ const Reachus = () => {
 
     //gallery
     const items = [
-      { id: 1, ids: 'fimg1', ptitle:'Yolomart', pdesc:'Branding | UI | Social Media', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
-      { id: 2, ids: 'fimg2', ptitle:'Black B', pdesc:'UI', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
-      { id: 3, ids: 'fimg3', ptitle:'Swiggy', pdesc:'Packaging', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
-      { id: 4, ids: 'fimg4', ptitle:'Coinsafe', pdesc:'Branding | UI ', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
-      { id: 5, ids: 'fimg5', ptitle:'Nutribee', pdesc:'Packaging', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
-      { id: 6, ids: 'fimg6', ptitle:'Mahati', pdesc:'Branding | UI | Illustration', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
-      { id: 7, ids: 'fimg7', ptitle:'Wurth', pdesc:'Publication', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
-      { id: 8, ids: 'fimg8', ptitle:'Betsetwin', pdesc:'Branding | UI ', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
-      { id: 9, ids: 'fimg9', ptitle:'Tarabai', pdesc:'Branding', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
-      { id: 10, ids: 'fimg10', ptitle:'Little Learners Trove', pdesc:'Illustration | Packaging', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
+      { id: 1, ids: 'fimg1', ptitle:'Yolomart', pdesc:'Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
+      { id: 2, ids: 'fimg2', ptitle:'Black B Finance', pdesc:'Branding | Website UI | Web Development', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
+      { id: 3, ids: 'fimg3', ptitle:'Swiggy + Bowl Company', pdesc:'Packaging Design | Marketing collaterals | Advertising ', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
+      { id: 4, ids: 'fimg4', ptitle:'Coinsafe', pdesc:'Branding | Website UI | Web Development | Application | Marketing Collaterals ', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
+      { id: 5, ids: 'fimg5', ptitle:'Nutribee', pdesc:'Illustration | Packaging Design', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
+      { id: 6, ids: 'fimg6', ptitle:'Mahatee Interactives', pdesc:'Branding | Website UI | Shopify Development | Ecommerce Setup | Illustrations | Publication & Book Design | Social Media', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
+      { id: 7, ids: 'fimg7', ptitle:'Wuerth Industries', pdesc:'Publication - Coffee Table Book Design | Corporate Giftings', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
+      { id: 8, ids: 'fimg8', ptitle:'Betsetwin', pdesc:'Branding | Website UI | Social Media', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
+      { id: 9, ids: 'fimg9', ptitle:'Tarabai', pdesc:'Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
+      { id: 10, ids: 'fimg10', ptitle:'Little Learners Trove', pdesc:'Branding | Illustrations | Product Design | Packaging Design | Social Media', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
       { id: 11, ids: 'fimg11', ptitle:'Click r&D', pdesc:'Branding | UI ', name: 'Item 11', image: '/home/gallery/gal11.png', category: 'category2' },
       // Add more items with appropriate categories
     ];
-
 
   
       const [index, setIndex] = useState(0);
@@ -455,7 +455,12 @@ const Reachus = () => {
         <div className={styles.clientle}>
             <h2 className={styles.mainheading}>OUR</h2>
             <h2 className={styles.sec_heading}>clientele</h2>
-            <ImageFlip />
+            <div className={styles.desktopv}>
+            <ImageFlip  />
+            </div>
+            <div className={styles.mobilev}>
+            <Logoslide />
+            </div>
        </div>
        <div data-aos="fade-up" className={styles.filtergal}>
         <div className={styles.featured}>
@@ -506,7 +511,7 @@ const Reachus = () => {
           <h3 className={styles.prtitle} data-aos="fade-up">4.2+</h3>
           <p className={styles.prdesc} data-aos="fade-up">Trust Score</p>
         </div>
-        <div className={styles.columnpdiff6} onMouseEnter={() => handleMouseEnter('Design Excellence Across 14 + Industries')} onMouseLeave={handleMouseLeave}>
+        <div className={styles.columnpdiff6} onMouseEnter={() => handleMouseEnter('Design Excellence Across 14+ Industries')} onMouseLeave={handleMouseLeave}>
           <h3 className={styles.prtitle} data-aos="fade-up">14+</h3>
           <p className={styles.prdesc} data-aos="fade-up">Industries served</p>
         </div>
@@ -534,7 +539,7 @@ const Reachus = () => {
       <h3 className={styles.prtitle}>4.2+</h3>
       <p className={styles.prdesc}>Trust Score</p>
     </div>
-    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('Design Excellence Across 14 + Industries')} onMouseLeave={handleMouseLeave}>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('Design Excellence Across 14+ Industries')} onMouseLeave={handleMouseLeave}>
       <h3 className={styles.prtitle}>14+</h3>
       <p className={styles.prdesc}>Industries served</p>
     </div>
@@ -544,8 +549,17 @@ const Reachus = () => {
       <div id="calendly">
       <Calendly />
       </div>
-      
+      <style jsx>{`
+      @media only screen and (max-width: 600px) {
+          .jsx-6aef31e2b66eceb3 .gallery-item {
+              position: relative;
+              width: auto !important;
+              margin: 12px 0 !important;
+          }
+      }
+      `}</style>
         </section>
+       
     );
 };
 

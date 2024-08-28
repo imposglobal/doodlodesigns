@@ -830,8 +830,8 @@
   flex-wrap: wrap;
 }
 .partnerimg {
-  width: 35% !important;
-  margin: 8px 20px;
+  width: 25% !important;
+  margin: 3px 16px;
   height: 35px !important;
   object-fit: contain;
 }
@@ -849,7 +849,7 @@
 .pointer_inner {
   display: flex !important;
   flex-wrap: wrap;
-  padding-bottom: 24px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #9E9E9E80;
   margin-right: -9px;
 }
@@ -857,10 +857,10 @@
   width: 70% !important;
 }
 .pdesc h2{
-  font-size: 18px;
+  font-size: 16px;
 }
 .pdesc p{
-  font-size: 16px;
+  font-size: 14px;
 }
 .pnum {
   width: 100%;
@@ -871,6 +871,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   text-transform: uppercase;
+  display: none !important;
 }
 .pimg {
   height: 92px;
@@ -1036,6 +1037,9 @@
 .shopwi2{
   display: none;
 }
+.ppimg{
+  width: 66% !important;
+}
 .ppimgs{
   margin: 1px 0;
   width: 55% !important;
@@ -1149,4 +1153,7 @@
 }
 .videosec {
   margin: 50px 0px;
+}
+.prtitle:hover{
+  color: rgb(52, 255, 157) !important;
 }

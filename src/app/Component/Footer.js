@@ -226,7 +226,7 @@ const Footer = () => {
                 <div className={`${styles.footerrow} ${styles.footerrowss}`}>
                   
                     <div className={styles.footercol2}>
-                        <div className={styles.footinn}>
+                        <div className={`${styles.footinn} ${styles.footinnm}`}>
                             <h3 className={styles.substext}>
                             Subscribe to our Newsletter 
                             </h3>

@@ -156,11 +156,11 @@
       margin-top: 30px;
     }
     .service_list{
-      font-size: 16px;
+      font-size: 14px;
       color: #9E9E9E;
       font-family: 'poppins';
       font-weight: 300;
-      margin: 4px 0;
+      margin: 5px 0;
     }
     .row{
       display: block;
@@ -172,18 +172,18 @@
       display: block;
     }
     .services_heading {
-      line-height: 37px;
+      line-height: 33px;
       font-family: 'poppins';
-      font-size: 32px;
+      font-size: 26px;
       font-weight: 600;
       color: #fff !important;
       /* margin-bottom: 40px; */
   }
     .services_subheading {
       font-family: 'poppins';
-      font-size: 16px;
+      font-size: 14px;
       color: #fff !important;
-      margin-right: -50px;
+      margin-right: -19px;
   }
   .mobileContentHeight {
     height: 72vh;
@@ -197,22 +197,28 @@
         overflow-x: scroll;
 }
 .brimg2{
-  width: 60% !important;
+ width: 69% !important;
+        height: 104px !important;
 }
 .brimg2{
-  width: 60% !important;
+ width: 69% !important;
+        height: 104px !important;
 }
 .brimg3{
-  width: 60% !important;
+ width: 69% !important;
+        height: 104px !important;
 }
 .brimg4{
-  width: 60% !important;
+ width: 69% !important;
+        height: 104px !important;
 }
 .brimg5{
-  width: 60% !important;
+ width: 69% !important;
+        height: 104px !important;
 }
 .brimg6{
-  width: 60% !important;
+ width: 69% !important;
+        height: 104px !important;
 }
 .grid_container {
   display: flex;

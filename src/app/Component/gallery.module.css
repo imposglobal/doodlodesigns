@@ -20,6 +20,7 @@
     font-family: 'poppins';
   }
   .fdesc{
+    margin-top: 20px;
     font-size: 17px;
     color: #fff;
     font-family: 'poppins';
@@ -287,6 +288,16 @@
   transform: scale(1.3) rotateX(10deg);
 }
 @media only screen and (max-width: 600px) {
+  .fhead{
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  .fdesc{
+    margin-top: 15px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'poppins';
+  }
   .rowfilter {
     padding: 0px 20px 0 20px;
     display: block;

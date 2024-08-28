@@ -8,7 +8,7 @@
   }
   .contcolumn1 {
     flex: 40%;
-    padding: 50px 50px 80px 50px;
+    padding: 20px 50px 80px 50px;
    /* Should be removed. Only for demonstration */
   }
   .contcolumn2 {
@@ -25,6 +25,7 @@
     width: 40% !important;
   }
   .fdesc{
+    margin-top: 8px;
     font-family: 'poppins';
     color: #9E9E9E;
     font-size: 16px;
@@ -362,11 +363,14 @@
   padding-top: 33px;
   padding-left: 0 !important;
 }
+.footinnm{
+  padding-top: 0 !important;
+}
 .subswrap input {
   background: transparent;
-  padding: 12px 60px;
+  padding: 12px 16px;
   font-family: 'poppins';
-  width: 16vh;
+  width: 26vh;
   border-radius: 10px;
   border: 1px solid #000;
 }
