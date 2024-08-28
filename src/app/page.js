@@ -18,6 +18,7 @@ import BrandAnimated from "./Component/Brandlineanimation";
 import ReachusAnimated from "./Component/ReachusAnimation";
 import ContactForm from "./Component/ContactForm";
 import AccordionOne from "./Component/Accordions/AccordianOne";
+import Logoslide from "./Component/Logoslider";
 import VideoComponent from "./Component/VideoComponent";
 import Head from "next/head";
 
@@ -185,7 +186,7 @@ const Home = () => {
                                     priority
                                     />
                                     </Link>
-                                    <Link href="https://www.linkedin.com/company/13436743">
+                                    <Link href="https://www.facebook.com/DoodloDesign/">
                                     <Image
                                     className="msocial"
                                     src="/home/social/ffb.svg"
@@ -255,9 +256,16 @@ const Home = () => {
             priority
           />
      </div>
-      <h2 data-aos="fade-up" className={styles.text_stroke_hover}>We're your go-to</h2>
-      <h2 data-aos="fade-up" className={styles.text_title}>Creative Studio</h2>
-      <p data-aos="fade-up" className={styles.home_hero_desc}>Of Course we're into Branding, Web<br/> Design, Packaging, Illustrations,<br/> Publication, Social Media & What Not!</p>
+      <div className={styles.desktopv}>
+        <h2 data-aos="fade-up" className={styles.text_stroke_hover}>We're your go-to</h2>
+        <h2 data-aos="fade-up" className={styles.text_title}>Creative Studio</h2>
+        <p data-aos="fade-up" className={styles.home_hero_desc}>Of Course we're into Branding, Web<br/> Design, Packaging, Illustrations,<br/> Publication, Social Media & What Not!</p>
+      </div>
+      <div className={styles.mobilev}>
+        <h2  className={styles.text_stroke_hover}>We're your go-to</h2>
+        <h2 className={styles.text_title}>Creative Studio</h2>
+        <p  className={styles.home_hero_desc}>Of Course we're into Branding, Web<br/> Design, Packaging, Illustrations,<br/> Publication, Social Media & What Not!</p>
+      </div>
       <div data-aos="fade-up">
       <Link className="boton_elegante" href="/services">
       EXPLORE MORE
@@ -328,7 +336,12 @@ const Home = () => {
       <h2 data-aos="fade-up" className={styles.mainheading}>OUR</h2>
       <h2 data-aos="fade-up" className={styles.sec_heading}>clientele</h2>
       <div data-aos="fade-up">
+      <div className={styles.desktopv}>
       <ImageFlip  />
+      </div>
+      <div className={styles.mobilev}>
+      <Logoslide />
+      </div>
       </div>
       <div>
       <div data-aos="fade-up" className={styles.divider}>Partnered with</div>
@@ -578,9 +591,9 @@ const Home = () => {
           <p data-aos="fade-up" className={styles.storydesc}>
           At Doodlo, we're storytellers at heart. We believe brands are powerful narratives, and we craft them with simplicity and impact. We don't just design, we translate your vision into actionable solutions that resonate with your audience.<br/><br/>
 
-          <b>Decoding Brands, Website & Designs driven<br/> bypassion & Possibilities.</b><br/><br/>
+          <b>Decoding Brands, Website & Designs driven<br/> by passion & Possibilities.</b><br/><br/>
 
-          Our love for life, color, and endless possibilities fuels our creative fire. It's what we call the "Doodlo 3D's": Doodle, Design, Develop. We guide you through every step of the storytelling journey, from brainstorming to flawless execution. We craft user experiences that are not only beautiful but also functional. With a healthy dose of passion, flexibility, and precision, we build brands that achieve results.
+          Our love for life, color, and endless possibilities fuels our creative fire. It's what we call the "Doodlo 3D's" Doodle, Design, Develop. We guide you through every step of the storytelling journey, from brainstorming to flawless execution. We craft user experiences that are not only beautiful but also functional. With a healthy dose of passion, flexibility, and precision, we build brands that achieve results.
           </p>
           </div>
           <div className={styles.columnst2}>
@@ -629,7 +642,7 @@ const Home = () => {
           <h3 className={styles.prtitle} data-aos="fade-up">4.2+</h3>
           <p className={styles.prdesc} data-aos="fade-up">Trust Score</p>
         </div>
-        <div className={styles.columnpdiff6} onMouseEnter={() => handleMouseEnter('Design Excellence Across 14 + Industries')} onMouseLeave={handleMouseLeave}>
+        <div className={styles.columnpdiff6} onMouseEnter={() => handleMouseEnter('Design Excellence Across 14+ Industries')} onMouseLeave={handleMouseLeave}>
           <h3 className={styles.prtitle} data-aos="fade-up">14+</h3>
           <p className={styles.prdesc} data-aos="fade-up">Industries served</p>
         </div>
@@ -657,7 +670,7 @@ const Home = () => {
       <h3 className={styles.prtitle}>4.2+</h3>
       <p className={styles.prdesc}>Trust Score</p>
     </div>
-    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('Design Excellence Across 14 + Industries')} onMouseLeave={handleMouseLeave}>
+    <div className={styles.gridItem} onMouseEnter={() => handleMouseEnter('Design Excellence Across 14+ Industries')} onMouseLeave={handleMouseLeave}>
       <h3 className={styles.prtitle}>14+</h3>
       <p className={styles.prdesc}>Industries served</p>
     </div>
@@ -973,9 +986,11 @@ const Home = () => {
         <h2 data-aos="fade-up" className={styles.sec_headingdc}>For Cute Goodies</h2>
         <p data-aos="fade-up" className={styles.dcdesc}>Wanna buy some cute stuff? Explore our selection online, then visit our store for even more amazing finds!</p>
         <div data-aos="fade-up">
-          <Link className={styles.dcbtn} href="https://doodlocomics.com/">
+         <div className={styles.btnn}>
+         <Link className={styles.dcbtn} href="https://doodlocomics.com/">
           Shop doodlo comics
           </Link>
+         </div>
       
         </div>
         

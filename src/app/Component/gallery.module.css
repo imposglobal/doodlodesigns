@@ -317,7 +317,46 @@
   font-family: 'poppins';
   font-weight: 300 !important;
 }
+.desktopv{
+  display: none;
+}
+.mobilev{
+  display: block;
+}
 
 
-
+}
+.mobilev{
+  display: none;
+}
+.sliderc {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+.itemc {
+	animation: animate 25s linear infinite;
+}
+.itemc img
+	{
+    min-width: 100px;
+    width: 0;
+    height: 70px !important;
+    object-fit: scale-down;
+	}
+.sliderc:hover .itemc {
+	animation-play-state: paused;
+}
+@keyframes animate {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-2500px, 0, 0);
+	}
 }

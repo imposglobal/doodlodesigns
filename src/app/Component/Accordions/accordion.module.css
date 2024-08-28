@@ -148,14 +148,33 @@
  .active .arrowd {
     transform: scaleY(-1);
   }
+  .mobilev{
+    display: none;
+  }
   @media only screen and (max-width: 600px) {
+    .nwmr{
+      margin-top: 30px;
+    }
+    .service_list{
+      font-size: 16px;
+      color: #9E9E9E;
+      font-family: 'poppins';
+      font-weight: 300;
+      margin: 4px 0;
+    }
     .row{
       display: block;
     }
+    .desktopv{
+      display: none;
+    }
+    .mobilev{
+      display: block;
+    }
     .services_heading {
-      line-height: 41px;
+      line-height: 37px;
       font-family: 'poppins';
-      font-size: 38px;
+      font-size: 32px;
       font-weight: 600;
       color: #fff !important;
       /* margin-bottom: 40px; */
@@ -178,26 +197,27 @@
         overflow-x: scroll;
 }
 .brimg2{
-  width: auto !important;
+  width: 60% !important;
 }
 .brimg2{
-  width: auto !important;
+  width: 60% !important;
 }
 .brimg3{
-  width: auto !important;
+  width: 60% !important;
 }
 .brimg4{
-  width: auto !important;
+  width: 60% !important;
 }
 .brimg5{
-  width: auto !important;
+  width: 60% !important;
 }
 .brimg6{
-  width: auto !important;
+  width: 60% !important;
 }
 .grid_container {
   display: flex;
-  gap: 20px;
+  gap: 0;
+  overflow-x: scroll;
 }
 .digiimgsec {
   display: flex;

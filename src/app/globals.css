@@ -914,11 +914,11 @@ ul.slick-dots {
     padding: 0 0 0 29px;
 }
 .mcopy {
-  margin-top: 122px;
-  text-align: center;
-  font-family: 'poppins';
-  font-size: 14px;
-  padding: 0 23px;
+  margin-top: 35px;
+        text-align: center;
+        font-family: 'poppins';
+        font-size: 12px;
+        padding: 0 23px;
 }
 a.mitem {
   font-size: 20px;
@@ -975,7 +975,7 @@ a.mitem {
   position: static;
   overflow: hidden;
   margin: 30px 0px;
-  padding: 40px 20px;
+  padding: 20px 20px;
   border: 1px solid #fff;
   border-radius: 10px;
   width: 100%;
@@ -1035,7 +1035,7 @@ div#fimg11 {
 .card_inner {
   border: .5px solid #ffffff70;
   width: 90% !important;
-  height: 331px;
+  height: auto;
   padding: 20px;
   border-radius: 8.24px;
   box-sizing: border-box;

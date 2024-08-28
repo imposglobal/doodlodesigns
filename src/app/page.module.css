@@ -331,9 +331,11 @@
 .pnum{
   margin: 0 20px;
   font-size: 26px;
-  font-weight: 600;
-  color: #9E9E9E;
-  font-family: 'poppins';
+  font-family: 'Poppins', sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
 }
 .pimg{
   height: 92px;
@@ -771,28 +773,38 @@
   display: none;
 }
 .text_stroke_hover{
-  font-size: 25px;
+  font-size: 7.8vw;
 }
 .text_title {
   margin-top: -15px;
   text-transform: uppercase;
-  font-size: 31px;
+  font-size: 8.8vw;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
 .homestar {
   width: 37px !important;
-  float: right;
-  position: relative;
-  top: 3px;
-  right: 0vh;
+        float: right;
+        position: relative;
+        top: -1px;
+        right: -3vh;
 }
 .services{
   padding: 63px 20px;
 }
+.dcbtn{
+  background: #fff;
+  padding: 12px 30px;
+  color: #000;
+  font-family: 'poppins';
+  font-size: 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 .mainheading {
   margin-top: 0;
-  font-size: 40px;
+  font-size: 33px;
   font-family: 'Poppins', sans-serif;
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -800,11 +812,11 @@
   text-transform: uppercase;
 }
 .sec_heading {
-  margin-top: -19px;
+  margin-top: -18px;
   padding: 0;
   margin-bottom: 0;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 33px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
@@ -814,9 +826,12 @@
 .clientle {
   padding: 50px 24px;
 }
+.partnerimgsec{
+  flex-wrap: wrap;
+}
 .partnerimg {
-  width: 16% !important;
-  margin: 0 20px;
+  width: 35% !important;
+  margin: 8px 20px;
   height: 35px !important;
   object-fit: contain;
 }
@@ -832,17 +847,30 @@
   margin: 13px 20px;
 }
 .pointer_inner {
-  display: block !important;
+  display: flex !important;
+  flex-wrap: wrap;
   padding-bottom: 24px;
   border-bottom: 1px solid #9E9E9E80;
   margin-right: -9px;
 }
+.pdesc{
+  width: 70% !important;
+}
+.pdesc h2{
+  font-size: 18px;
+}
+.pdesc p{
+  font-size: 16px;
+}
 .pnum {
-  margin: 28px 0;
-  font-size: 26px;
-  font-weight: 600;
-  color: #9E9E9E;
-  font-family: 'poppins';
+  width: 100%;
+  margin: 28px 0 20px 0;
+  font-size: 33px;
+  font-family: 'Poppins', sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
 }
 .pimg {
   height: 92px;
@@ -850,7 +878,7 @@
   margin: 0 0px;
 }
 .discuss_row {
-  height: 63vh;
+  height: auto;
   overflow: hidden;
   padding: 30px 20px;
   margin: 68px 0px;
@@ -972,10 +1000,13 @@
   color: #9E9E9E;
   font-weight: 600;
 }
+.btnn{
+  margin-bottom: 50px;
+}
 .shopsec {
   overflow: hidden;
   margin: 100px 20px;
-  height: 82vh;
+  height: auto;
   background-image: url(/home/shopbg.png);
   background-size: cover;
   background-position: center;
@@ -983,7 +1014,7 @@
 }
 .divider {
   gap: 16px;
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 18px;
   font-weight: 400;
   font-family: 'poppins';
@@ -1071,6 +1102,9 @@
   position: absolute;
   top: 95px;
 }
+.wokeanilr span, .wokeani span{
+  font-size: 22px;
+}
 }
 
 /* end mob view */
@@ -1100,7 +1134,7 @@
 
 .prtitle {
   color: #fff;
-  font-size: 2em;
+  font-size: 1.6em;
  
 }
 
@@ -1111,7 +1145,7 @@
 .overtext{
   color: #fff;
     text-align: left;
-    font-size: 18px;  
+    font-size: 17px;  
 }
 .videosec {
   margin: 50px 0px;

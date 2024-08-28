@@ -259,6 +259,36 @@
   .mtop{
     margin-top: -50px;
   }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-button {
+    padding: 10px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-content label {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
   @media only screen and (max-width: 600px) {
     .contcolumn1 {
       flex: 40% 1;
@@ -293,7 +323,7 @@
 .formhead {
   color: #000000;
   font-family: 'poppins';
-  font-size: 22.5px;
+  font-size: 21.5px;
 }
 .formdesc {
   margin-top: -2px;
@@ -308,7 +338,7 @@
 }
 .footerwrap {
   background: #FFF6E8;
-  padding: 80px 20px;
+  padding: 80px 20px 15px 20px;
 }
 .footdesc {
   font-family: 'poppins';
@@ -336,7 +366,7 @@
   background: transparent;
   padding: 12px 60px;
   font-family: 'poppins';
-  width: 18vh;
+  width: 16vh;
   border-radius: 10px;
   border: 1px solid #000;
 }

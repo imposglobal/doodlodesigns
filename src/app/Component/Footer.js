@@ -132,7 +132,7 @@ const Footer = () => {
                                     priority
                                     />
                                     </Link>
-                                    <Link href="https://www.linkedin.com/company/13436743">
+                                    <Link href="https://www.facebook.com/DoodloDesign">
                                     <Image
                                     className={styles.subbtnisc}
                                     src="/home/social/ffb.svg"
@@ -147,7 +147,7 @@ const Footer = () => {
                     </div>
                     <div className={styles.footercol2}>
                         <div className={styles.footinn}>
-                            <span className={styles.gtintitle}>© 2023 Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</span>
+                            <span className={styles.gtintitle}>@2024 Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</span>
                         </div>
                     </div>
                 </div>
@@ -279,7 +279,7 @@ const Footer = () => {
                                     priority
                                     />
                                     </Link>
-                                    <Link href="https://www.linkedin.com/company/13436743">
+                                    <Link href="https://www.facebook.com/DoodloDesign">
                                     <Image
                                     className={styles.subbtnisc}
                                     src="/home/social/ffb.svg"
@@ -294,7 +294,7 @@ const Footer = () => {
                     </div>
                     <div className={styles.footercol2}>
                         <div className={styles.footinn}>
-                            <span className={styles.gtintitle}>© 2023 Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</span>
+                            <span className={styles.gtintitle}>@2024 Doodlo | All Rights Reserved |<br/> Terms of Use | Privacy Policy</span>
                         </div>
                     </div>
                 </div>

@@ -115,7 +115,7 @@ const AccordionOne = () => {
                 <div className={styles.grid_container}>
                   <div className={styles.grid_item}>
                     <Image
-                      className={`${styles.grid_item_img} ${styles.brimg2}`}
+                      className={`${styles.grid_item_img} ${styles.brimg2} ${styles.desktopv}`}
                       src="/home/branding2.jpg"
                       alt="Branding Image 2"
                       layout="responsive"
@@ -124,7 +124,7 @@ const AccordionOne = () => {
                       priority
                     />
                     <Image
-                      className={`${styles.grid_item_img} ${styles.brimg3}`}
+                      className={`${styles.grid_item_img} ${styles.brimg3} ${styles.desktopv}`}
                       src="/home/branding3.jpg"
                       alt="Branding Image 3"
                       layout="responsive"
@@ -134,6 +134,24 @@ const AccordionOne = () => {
                     />
                   </div>
                   <div className={styles.grid_item}>
+                  <Image
+                      className={`${styles.grid_item_img} ${styles.brimg2} ${styles.mobilev}`}
+                      src="/home/branding2.jpg"
+                      alt="Branding Image 2"
+                      layout="responsive"
+                      width={100}
+                      height={37}
+                      priority
+                    />
+                    <Image
+                      className={`${styles.grid_item_img} ${styles.brimg3} ${styles.mobilev}`}
+                      src="/home/branding3.jpg"
+                      alt="Branding Image 3"
+                      layout="responsive"
+                      width={100}
+                      height={37}
+                      priority
+                    />
                     <Image
                       className={`${styles.grid_item_img} ${styles.brimg4}`}
                       src="/home/branding4.jpg"
