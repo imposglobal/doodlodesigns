@@ -1026,6 +1026,7 @@ a.mitem {
   width: auto !important;
   margin: 12px 10px;
 }
+
 .page_services__yVO5B.undefined  .panel{
   width: 100% !important;
 }
@@ -1145,6 +1146,9 @@ div#fimg8 .pover {
   height: 356px;
   margin-top: 50px;
   overflow-x: scroll;
+}
+.boton_elegante{
+  padding: 15px 20px;
 }
 .circle {
   width: 11px;

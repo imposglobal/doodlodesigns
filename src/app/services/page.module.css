@@ -53,6 +53,16 @@
     -webkit-text-stroke-color: #fff;
     text-transform: uppercase;
   }
+  .stext_stroke_hovers {
+    display: inline-block;
+    position: relative;
+    font-size: 53px;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    text-transform: uppercase;
+  }
   .stext_stroke_hover:hover{
     color: #fff;
   }
@@ -75,7 +85,7 @@
    /* Should be removed. Only for demonstration */
   }
   .storyhero{
-    padding: 30px 150px;
+    padding: 0 20px 30px 20px;
   }
   .desc{
     font-family: 'poppins';
@@ -239,7 +249,25 @@
     -webkit-text-stroke-color: white;
     text-transform: uppercase;
   }
+  .mainheadingdiss {
+    margin-top: 0;
+    font-size: 58px;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-transform: uppercase;
+  }
   .sec_headingdis{
+    margin-top: -35px;
+    padding: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 58px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  .sec_headingdiss{
     margin-top: -35px;
     padding: 0;
     margin-bottom: 0;
@@ -363,7 +391,7 @@
     width: 100px;
   }
 .storyhero {
-  padding: 30px 20px;
+  padding: 0 20px 30px 20px;
 }
 .row {
   display: block;
@@ -384,7 +412,7 @@
 .text_title {
   margin-top: -14px;
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 30px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
@@ -396,9 +424,10 @@
   margin-top: 4px;
   font-family: 'poppins';
   color: #9E9E9E;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300 !important;
   margin-bottom: 37px;
+  margin-right: 31px;
 }
 .ourimg2 {
   margin-top: 0px;
@@ -421,20 +450,20 @@
 .sdesc {
   font-family: 'poppins';
   color: #9E9E9E;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400 !important;
   margin-bottom: 30px;
 }
 .stitle {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
   color: #C9C9C9;
   font-weight: 500;
   font-family: 'poppins';
 }
 .sbtitle {
-  font-size: 15px;
+  font-size: 14px;
   color: #C9C9C9;
   font-weight: bold;
   font-family: 'poppins';
@@ -478,19 +507,43 @@
 }
 .mainheadingdis {
   margin-top: 0;
-  font-size: 20px;
+  font-size: 26px;
   font-family: 'Poppins', sans-serif;
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   text-transform: uppercase;
 }
+.mainheadingdiss {
+  margin-top: 0;
+  font-size: 19px;
+  font-family: 'Poppins', sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  text-transform: uppercase;
+}
+.pmidd{
+  margin-bottom: 0;
+}
+.addsec{
+  padding: 0 0 50px 0;
+}
 .sec_headingdis {
   margin-top: -10px;
   padding: 0;
   margin-bottom: 0;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+.sec_headingdiss {
+  margin-top: -5px;
+  padding: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 19px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
@@ -498,10 +551,11 @@
   margin-bottom: 40px;
   color: #fff;
   font-family: "poppins";
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 300 !important;
   padding-right: 0;
   margin-bottom: 35px;
+  margin-top: 15px;
 }
 .adesc {
   font-size: 16px;
@@ -525,6 +579,17 @@
   -webkit-text-stroke-color: #fff;
   text-transform: uppercase;
 }
+.stext_stroke_hovers {
+  display: inline-block;
+  position: relative;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
 .stext_title {
   margin-top: -11px;
   text-transform: uppercase;
@@ -536,7 +601,7 @@
   margin-top: 30px;
   font-family: 'poppins';
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500 !important;
   padding-bottom: 40px;
 }

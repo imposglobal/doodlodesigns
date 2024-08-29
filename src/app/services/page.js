@@ -206,7 +206,7 @@ const Ourstory = () => {
                     <h2 data-aos="fade-up" className={styles.stext_title}>Experience</h2>
                     </div>
                     <div className={styles.sertcol2}>
-                    <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>01 </h2>
+                    <h2 data-aos="fade-up" className={styles.stext_stroke_hovers}>01 </h2>
                     </div>
                 </div> 
                 <div className={styles.row}>
@@ -296,7 +296,7 @@ const Ourstory = () => {
                     <h2 data-aos="fade-up" className={styles.stext_title}>Experience</h2>
                     </div>
                     <div className={styles.sertcol2}>
-                    <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>02 </h2>
+                    <h2 data-aos="fade-up" className={styles.stext_stroke_hovers}>02 </h2>
                     </div>
                 </div> 
                 <div className={styles.row}>
@@ -387,7 +387,7 @@ const Ourstory = () => {
                     <h2 data-aos="fade-up" className={styles.stext_title}>Experience</h2>
                     </div>
                     <div className={styles.sertcol2}>
-                    <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>03 </h2>
+                    <h2 data-aos="fade-up" className={styles.stext_stroke_hovers}>03 </h2>
                     </div>
                 </div> 
                 <div className={styles.row}>
@@ -477,7 +477,7 @@ const Ourstory = () => {
                     <h2 data-aos="fade-up" className={styles.stext_title}>Experience</h2>
                     </div>
                     <div className={styles.sertcol2}>
-                    <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>04 </h2>
+                    <h2 data-aos="fade-up" className={styles.stext_stroke_hovers}>04 </h2>
                     </div>
                 </div> 
                 <div className={styles.row}>
@@ -621,8 +621,8 @@ const Ourstory = () => {
          {/* Lets Discuss section */}
        <div data-aos="fade-up" className={`${styles.pointer}`}>
         <div className={styles.discuss_row}>
-        <h2 className={styles.mainheadingdis}>Ready to Take Your</h2>
-          <h2 className={styles.sec_headingdis}>Brand to the Next Level?</h2>
+        <h2 className={styles.mainheadingdiss}>Ready to Take Your</h2>
+          <h2 className={styles.sec_headingdiss}>Brand to the Next Level?</h2>
           <p className={styles.disdesc}>Contact Doodlo Design Studio today for your brand consultation!</p>
           <Link href="/reach-us/#calendly" className="boton_elegante mtbtn">Schedule a Free Consultation</Link>
           <div className={styles.booknow}>
