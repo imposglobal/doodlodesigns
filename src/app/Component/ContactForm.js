@@ -81,7 +81,7 @@ const ContactForm = () => {
         }
 
         const result = await response.json();
-        setSuccessMessage("Form submitted successfully!");
+        setSuccessMessage("<b>Inbox Adventure!</b> <br/> Your message is on a journey to our team. We’ll be in touch before the adventure ends!");
         setFormData({
           name: "",
           email: "",
@@ -93,7 +93,7 @@ const ContactForm = () => {
         setSelectedOptions([]); // Clear selected options
 
         // Show success message in alert
-        alert(`Success: ${JSON.stringify(result)}`);
+        //alert(`Success: ${JSON.stringify(result)}`);
         
     } catch (error) {
         console.error('Error submitting form:', error);
@@ -195,7 +195,7 @@ const ContactForm = () => {
             </p>
             {formError && <p className={styles.formError}>{formError}</p>}
             {loading && <div className={styles.loading}>Loading...</div>}
-            {successMessage && <p className={styles.successMessage}>{successMessage}</p>}
+            {successMessage && <p className={styles.successMessage} dangerouslySetInnerHTML={{ __html: successMessage }} />}
             {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
             <form data-aos="fade-up" onSubmit={handleSubmit}>
               <div className={styles.formInput}>
