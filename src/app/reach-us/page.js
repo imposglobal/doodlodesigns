@@ -38,44 +38,24 @@ const Reachus = () => {
   const toggleClass = () => {
     setInactive(!inactive);
   };
-
+  const { countries, loading: countriesLoading, error: countriesError } = useFetchCountries();
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
+    code: "",
+    phone: "",
+    services: []
   });
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      if (!response.ok) {
-        throw new Error('Failed to submit form');
-      }
-      const result = await response.json();
-      console.log(result);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  //form drop and citirs
-  const { countries, loading, error } = useFetchCountries();
 
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOptions, setSelectedOptions] = useState([]);
+  const [loading, setLoading] = useState(false);  // Loading state
+  const [successMessage, setSuccessMessage] = useState("");  // Success message state
+  const [errorMessage, setErrorMessage] = useState("");  // Error message state
+  const [formError, setFormError] = useState("");  // Form validation error state
+
   const options = [
     { id: 'branding', label: 'Branding' },
     { id: 'packaging', label: 'Packaging' },
@@ -84,6 +64,70 @@ const Reachus = () => {
     { id: 'social-media', label: 'Social Media' },
     { id: 'ecommerce', label: 'Ecommerce' },
   ];
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setFormError("");  // Reset form error
+    setLoading(true);  // Set loading to true
+
+    // Validation
+    if (!formData.name || !formData.email || !formData.message || !formData.code || !formData.phone) {
+      setFormError("Please fill in all required fields.");
+      setLoading(false);  // Set loading to false
+      return;
+    }
+
+    // Add selected options to formData
+    setFormData(prevData => ({
+      ...prevData,
+      services: selectedOptions
+    }));
+
+    try {
+        const response = await fetch("https://dds.doodlo.in/API/doodloapi.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`HTTP error! status: ${response.status} - ${errorText}`);
+        }
+
+        const result = await response.json();
+        setSuccessMessage("Form submitted successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+          code: "",
+          phone: "",
+          services: []
+        }); // Clear form data
+        setSelectedOptions([]); // Clear selected options
+
+        // Show success message in alert
+        alert(`Success: ${JSON.stringify(result)}`);
+        
+    } catch (error) {
+        console.error('Error submitting form:', error);
+        setErrorMessage(`Error submitting form: ${error.message}`);
+        alert(`Error submitting form: ${error.message}`); // Show error message in alert
+    } finally {
+        setLoading(false);  // Set loading to false
+    }
+  };
+
   const toggleDropdown = () => {
     setIsOpen(prev => !prev);
   };
@@ -96,6 +140,14 @@ const Reachus = () => {
         : prev.filter(option => option !== value)
     );
   };
+
+  useEffect(() => {
+    // Sync selectedOptions with formData.services
+    setFormData(prevData => ({
+      ...prevData,
+      services: selectedOptions
+    }));
+  }, [selectedOptions]);
 
     //gallery
     const items = [
@@ -412,7 +464,11 @@ const Reachus = () => {
                     <p className={styles.formdesc}>
                     Fill in the details to know more
                     </p>
-                    <form data-aos="fade-up" onSubmit={handleSubmit} netlify>
+                    {formError && <p className={styles.formError}>{formError}</p>}
+            {loading && <div className={styles.loading}>Loading...</div>}
+            {successMessage && <p className={styles.successMessage}>{successMessage}</p>}
+            {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
+            <form data-aos="fade-up" onSubmit={handleSubmit}>
               <div className={styles.formInput}>
                 <input
                   type="text"
@@ -432,10 +488,10 @@ const Reachus = () => {
                 />
               </div>
               <div className={`${styles.formInput} ${styles.flexs}`}>
-                {loading ? (
-                  <p>Loading...</p>
-                ) : error ? (
-                  <p>{error}</p>
+                {countriesLoading ? (
+                  <p>Loading countries...</p>
+                ) : countriesError ? (
+                  <p>{countriesError}</p>
                 ) : (
                   <select
                     name="code"
@@ -444,7 +500,7 @@ const Reachus = () => {
                     id="country-code-select"
                     className={styles.dropdown}
                   >
-                    <option>Country</option>
+                    <option value="">Country</option>
                     {countries.map((country) => (
                       <option
                         key={country.cca2}
@@ -494,7 +550,9 @@ const Reachus = () => {
                   placeholder="Brief about the Project"
                 />
               </div>
-              <button type="submit" className={styles.subsbtns}>Submit</button>
+              <button type="submit" className={styles.subsbtns}>
+              {loading ? 'Submitting...' : 'Submit'}
+              </button>
             </form>
                 </div>
                <div className={styles.caassec}>

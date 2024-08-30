@@ -373,7 +373,7 @@ const AccordionOne = () => {
             <div className={`${styles.column2}`}>
             <div className={styles.digiimgsec}>
         <Image
-            className={styles.ecommimg}
+            className={`${styles.ecommimg} ${styles.ecommimgmob}`}
             src="/home/ecomm1.png"
             alt="Next.js Logo"
             layout="responsive"

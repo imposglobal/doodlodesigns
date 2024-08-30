@@ -52,12 +52,12 @@ const OurProcess = () => {
   };
 
   return (
-    <div>
+    <div className={styles.slideser}>
         <div className={styles.textt}>
         <h2 className={styles.mainheadingdis}>OUR </h2>
         <h2 className={styles.sec_headingdis}>PROCESS </h2>
         </div>
-    <Slider {...settings}>
+    <Slider id="slicckk" {...settings}>
       {slides.map((slide) => (
         <div key={slide.id}>
           <div className={styles.slide_content}>
@@ -74,6 +74,12 @@ const OurProcess = () => {
         </div>
       ))}
     </Slider>
+    <style jsx>{`
+        ul.slick-dots {
+    left: -29px !important;
+    bottom: 41px !important;
+}
+    `}</style>
     </div>
   );
 };

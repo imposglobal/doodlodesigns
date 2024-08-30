@@ -16,6 +16,9 @@
   .slick_dots li button:before {
     color: #fff; /* Change dot color */
   }
+  .slideser{
+    
+  }
   .optitle{
     margin-top: 15px;
     color: #C9C9C9;
@@ -28,7 +31,7 @@
     font-size: 14px;
     font-weight: 300 !important;
     font-family: 'poppins';
-    margin: 5px 52px 0 52px;
+    margin: 5px 20px;
   }
   @media only screen and (max-width: 600px) {
     .sec_headingdis {

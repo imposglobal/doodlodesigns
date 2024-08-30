@@ -325,13 +325,13 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div className={styles.sercol1}>
                         <div data-aos="fade-up" className={styles.serbox}>
-                        <h4  className={styles.sbtitle}><div className={styles.num}> 01.</div> Research & Brand Strategy</h4>
+                        <h4  className={styles.sbtitle}><div className={styles.num}> 01</div> Research & Brand Strategy</h4>
                         <p className={styles.sbdesc1}>Comprehensive research and strategic planning to position your brand effectively.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><div className={styles.num}> 02.</div> Brand Identity</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 02</div> Brand Identity</h4>
                         <p className={styles.sbdesc}>Creating a unique and memorable identity that resonates with your audience.</p>
                         </div>
                     </div>
@@ -339,13 +339,13 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div data-aos="fade-up" className={styles.sercol1}>
                         <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><div className={styles.num}> 03.</div> Brand Guidelines</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 03</div> Brand Guidelines</h4>
                         <p className={styles.sbdesc}>Establish cohesive guidelines to ensure consistency across all your brand touchpoints.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><div className={styles.num}> 04.</div> Naming & Domain</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 04</div> Naming & Domain</h4>
                         <p className={styles.sbdesc4}>Create a powerful name and secure a domain that aligns with your brand’s vision.</p>
                         </div>
                     </div>
@@ -416,13 +416,13 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div className={styles.sercol1}>
                         <div data-aos="fade-up" className={styles.serbox}>
-                        <h4  className={styles.sbtitle}><div className={styles.num}> 01.</div> Website UI Design</h4>
+                        <h4  className={styles.sbtitle}><div className={styles.num}> 01</div> Website UI Design</h4>
                         <p className={styles.sbdesc1}>Create visually stunning and user-friendly websites that captivate your audience and enhance user experience.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><div className={styles.num}> 02.</div> Website Development</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 02</div> Website Development</h4>
                         <p className={styles.sbdesc}>Develop robust and scalable websites tailored to your business needs, ensuring functionality and performance.</p>
                         </div>
                     </div>
@@ -430,13 +430,13 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div data-aos="fade-up" className={styles.sercol1}>
                         <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><div className={styles.num}> 03.</div> Web Hosting</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 03</div> Web Hosting</h4>
                         <p className={styles.sbdesc}>Provide reliable and secure web hosting solutions to keep your website accessible and running smoothly.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><div className={styles.num}> 04.</div> Performance Optimization</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 04</div> Performance Optimization</h4>
                         <p className={styles.sbdesc4}>Optimize your website for speed and SEO, ensuring fast load times and high search engine rankings.</p>
                         </div>
                     </div>
@@ -506,13 +506,13 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div className={styles.sercol1}>
                         <div data-aos="fade-up" className={styles.serbox}>
-                        <h4  className={styles.sbtitle}><div className={styles.num}> 01.</div> Brand Strategy Development</h4>
+                        <h4  className={styles.sbtitle}><div className={styles.num}> 01</div> Brand Strategy Development</h4>
                         <p className={styles.sbdesc1}>crafting a strategic foundation to align with your brand’s vision and market goals.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><div className={styles.num}> 02.</div> Product Positioning</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 02</div> Product Positioning</h4>
                         <p className={styles.sbdesc}>Strategically position your products to ensure maximum market impact and consumer engagement.</p>
                         </div>
                     </div>
@@ -520,13 +520,13 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div data-aos="fade-up" className={styles.sercol1}>
                         <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><div className={styles.num}> 03.</div> Packaging Design for Hero Products</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 03</div> Packaging Design for Hero Products</h4>
                         <p className={styles.sbdesc}>Design unique, eye-catching packaging that makes your hero products irresistible.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><div className={styles.num}> 04.</div> Guideline Formulation</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 04</div> Guideline Formulation</h4>
                         <p className={styles.sbdesc4}>Establish clear and consistent packaging guidelines to maintain brand integrity across all products.</p>
                         </div>
                     </div>
@@ -596,13 +596,13 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div className={styles.sercol1}>
                         <div data-aos="fade-up" className={styles.serbox}>
-                        <h4  className={styles.sbtitle}><div className={styles.num}> 01.</div> Brand Roadmap</h4>
+                        <h4  className={styles.sbtitle}><div className={styles.num}> 01</div> Brand Roadmap</h4>
                         <p className={styles.sbdesc1}>Develop a strategic roadmap to define and achieve your eCommerce goals.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><div className={styles.num}> 02.</div> Communication Design</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 02</div> Communication Design</h4>
                         <p className={styles.sbdesc}>Craft compelling visuals and messaging that resonate with your audience.</p>
                         </div>
                     </div>
@@ -610,13 +610,13 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div data-aos="fade-up" className={styles.sercol1}>
                         <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><div className={styles.num}> 03.</div> E-commerce Store Setup Strategy</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 03</div> E-commerce Store Setup Strategy</h4>
                         <p className={styles.sbdesc}>Implement effective strategies to launch and optimize your online store.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><div className={styles.num}> 04.</div> Front-end & Back-end Development</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 04</div> Front-end & Back-end Development</h4>
                         <p className={styles.sbdesc4}>Build robust and scalable eCommerce platforms for seamless customer experiences.</p>
                         </div>
                     </div>
@@ -683,39 +683,39 @@ const Ourstory = () => {
                 <div className={styles.addcol2}>
                     <div className={styles.numlist}>
                         <div className={styles.innnum} data-aos="fade-up">
-                            <h4 className={styles.numtext}> <span className={styles.numm}>01.</span> Digital Asset Creation</h4>
+                            <h4 className={styles.numtext}> <span className={styles.numm}>01</span> Digital Asset Creation</h4>
                             <div className={styles.borderbot}></div>
                         </div>
                         <div className={styles.innnum} data-aos="fade-up">
-                            <h4 className={styles.numtext}> <span className={styles.numm}>02.</span> Merch Design</h4>
+                            <h4 className={styles.numtext}> <span className={styles.numm}>02</span> Merch Design</h4>
                             <div className={styles.borderbot}></div>
                         </div>
                         <div className={styles.innnum} data-aos="fade-up">
-                            <h4 className={styles.numtext}> <span className={styles.numm}>03.</span> Content creation</h4>
+                            <h4 className={styles.numtext}> <span className={styles.numm}>03</span> Content creation</h4>
                             <div className={styles.borderbot}></div>
                         </div>
                         <div className={styles.innnum} data-aos="fade-up">
-                            <h4 className={styles.numtext}> <span className={styles.numm}>04.</span> Social Media Design</h4>
+                            <h4 className={styles.numtext}> <span className={styles.numm}>04</span> Social Media Design</h4>
                             <div className={styles.borderbot}></div>
                         </div>
                         <div className={styles.innnum} data-aos="fade-up">
-                            <h4 className={styles.numtext}> <span className={styles.numm}>05.</span> Social Media Management</h4>
+                            <h4 className={styles.numtext}> <span className={styles.numm}>05</span> Social Media Management</h4>
                             <div className={styles.borderbot}></div>
                         </div>
                         <div className={styles.innnum} data-aos="fade-up">
-                            <h4 className={styles.numtext}> <span className={styles.numm}>06.</span> Wall & Mural Graffiti</h4>
+                            <h4 className={styles.numtext}> <span className={styles.numm}>06</span> Wall & Mural Graffiti</h4>
                             <div className={styles.borderbot}></div>
                         </div>
                         <div className={styles.innnum} data-aos="fade-up">
-                            <h4 className={styles.numtext}> <span className={styles.numm}>07.</span> Illustrations & mascots</h4>
+                            <h4 className={styles.numtext}> <span className={styles.numm}>07</span> Illustrations & mascots</h4>
                             <div className={styles.borderbot}></div>
                         </div>
                         <div className={styles.innnum} data-aos="fade-up">
-                            <h4 className={styles.numtext}> <span className={styles.numm}>08.</span> Editorial & Book Design</h4>
+                            <h4 className={styles.numtext}> <span className={styles.numm}>08</span> Editorial & Book Design</h4>
                             <div className={styles.borderbot}></div>
                         </div>
                         <div className={styles.innnum} data-aos="fade-up">
-                            <h4 className={styles.numtext}> <span className={styles.numm}>09.</span> Motion Design</h4>
+                            <h4 className={styles.numtext}> <span className={styles.numm}>09</span> Motion Design</h4>
                             <div className={styles.borderbot}></div>
                         </div>
                     </div>

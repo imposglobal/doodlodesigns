@@ -306,6 +306,7 @@
 @media only screen and (max-width: 600px) {
   .grid {
     gap: 1rem;
+    padding-bottom: 10px;
   }
   .logosec {
     padding-left: 20px;
@@ -419,7 +420,7 @@
 .category {
   font-size: 0.7rem;
   color: #bbb;
-  margin-top: 0.5rem;
+  margin-top: 4px;
 }
 .column2{
   flex: 40% 1;

@@ -1079,3 +1079,46 @@
 .checkboxLabel:hover {
   background-color: #f1f1f1;
 }
+/* Loading spinner styles */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Success message styles */
+.successMessage {
+  background-color: rgb(57, 181, 57);
+  text-align: center;
+  font-family: 'poppins';
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* Error message styles */
+.errorMessage {
+  text-align: center;
+  font-family: 'poppins';
+  font-size: 18px;
+  color: #fff;
+  background: red;
+  margin-top: 10px;
+}
+
+/* Form error message styles */
+.formError {
+  text-align: center;
+  font-family: 'poppins';
+  font-size: 14px;
+  color: #fff;
+  border-radius: 10px;
+  background: rgb(247, 79, 79) !important;
+  margin-top: 10px;
+  padding: 12px;
+}
+
+

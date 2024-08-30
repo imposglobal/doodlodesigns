@@ -501,6 +501,9 @@
   font-weight: 500;
   font-family: 'poppins';
 }
+.sstitle{
+  font-size: 20px;
+}
 .sbtitle {
   font-size: 14px;
   color: #C9C9C9;

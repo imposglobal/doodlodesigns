@@ -1190,6 +1190,31 @@ div#fimg8 .pover {
 .boton_elegante {
   font-size: 13px !important;
 }
+.space{
+  padding-bottom: 20px;
+}
+input[type="checkbox"] {
+  accent-color: black;
+}
+.gallery_plinks__riMOI {
+  cursor: none;
+  opacity: 1 !important;
+  width: 95% !important;
+  margin-left: 13px;
+  background: transparent !important;
+}
+.imgtitle {
+  margin-top: -14px;
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.ourpro_slideser__a6jsb > ul.slick-dots {
+  left: -29px;
+  bottom: 41px !important;
+}
+
 }
 .desktopv{
   display: none;

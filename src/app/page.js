@@ -547,7 +547,9 @@ const Home = () => {
         <h2 className={styles.mainheadingdis}>Let’s Discuss </h2>
           <h2 className={styles.sec_headingdis}>Your next project</h2>
           <p className={styles.disdesc}><b>Ready to turn your vision into reality?</b> Whether you need branding, web design, packaging, or digital marketing, we’re here to help. Let’s brainstorm, create, and bring your ideas to life.</p>
-          <a className="boton_elegante mtbtn">Book an appointment </a>
+          <div className="space">
+          <Link href="#" className="boton_elegante mtbtn">Book an appointment </Link>
+          </div>
           <div className={styles.booknow}>
             <div className={styles.bookwrap}>
             <WorkAnimationlr />
@@ -574,7 +576,9 @@ const Home = () => {
         <h2 className={styles.mainheadingdis}>Let’s Discuss </h2>
           <h2 className={styles.sec_headingdis}>Your next project</h2>
           <p className={styles.disdesc}><b>Ready to turn your vision into reality?</b> Whether you need branding, web design, packaging, or digital marketing, we’re here to help. Let’s brainstorm, create, and bring your ideas to life.</p>
-          <a className="boton_elegante mtbtn">Book an appointment </a>
+          <div className="space">
+          <Link href="#" className="boton_elegante mtbtn">Book an appointment </Link>
+          </div>
           
         </div>
       </div>
