@@ -132,6 +132,7 @@
   grid-template-columns: repeat(2, 1fr); /* Two columns */
   gap: 3rem; /* Spacing between items */
   direction: rtl;
+  padding-bottom: 200px;
 }
 
 .card {
@@ -181,7 +182,7 @@
 
 .loadMore {
   display: block;
-  margin: 21rem auto 4rem auto; /* Center the button */
+  margin: 8rem auto 0rem auto;
   padding: 1rem 4rem;
   font-size: 1.2rem;
   color: #fff;

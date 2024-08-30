@@ -99,17 +99,27 @@ const Reachus = () => {
 
     //gallery
     const items = [
-      { id: 1, ids: 'fimg1', ptitle:'Yolomart', pdesc:'Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media', name: 'Item 1', image: '/home/gallery/gal1.png', category: 'category1' },
-      { id: 2, ids: 'fimg2', ptitle:'Black B Finance', pdesc:'Branding | Website UI | Web Development', name: 'Item 2', image: '/home/gallery/gal2.png', category: 'category2' },
-      { id: 3, ids: 'fimg3', ptitle:'Swiggy + Bowl Company', pdesc:'Packaging Design | Marketing collaterals | Advertising ', name: 'Item 3', image: '/home/gallery/gal3.png', category: 'category2' },
-      { id: 4, ids: 'fimg4', ptitle:'Coinsafe', pdesc:'Branding | Website UI | Web Development | Application | Marketing Collaterals ', name: 'Item 4', image: '/home/gallery/gal4.png', category: 'category1' },
-      { id: 5, ids: 'fimg5', ptitle:'Nutribee', pdesc:'Illustration | Packaging Design', name: 'Item 5', image: '/home/gallery/gal5.png', category: 'category2' },
-      { id: 6, ids: 'fimg6', ptitle:'Mahatee Interactives', pdesc:'Branding | Website UI | Shopify Development | Ecommerce Setup | Illustrations | Publication & Book Design | Social Media', name: 'Item 6', image: '/home/gallery/gal6.png', category: 'category1' },
-      { id: 7, ids: 'fimg7', ptitle:'Wuerth Industries', pdesc:'Publication - Coffee Table Book Design | Corporate Giftings', name: 'Item 7', image: '/home/gallery/gal7.png', category: 'category1' },
-      { id: 8, ids: 'fimg8', ptitle:'Betsetwin', pdesc:'Branding | Website UI | Social Media', name: 'Item 8', image: '/home/gallery/gal8.png', category: 'category1' },
-      { id: 9, ids: 'fimg9', ptitle:'Tarabai', pdesc:'Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media', name: 'Item 9', image: '/home/gallery/gal9.png', category: 'category2' },
-      { id: 10, ids: 'fimg10', ptitle:'Little Learners Trove', pdesc:'Branding | Illustrations | Product Design | Packaging Design | Social Media', name: 'Item 10', image: '/home/gallery/gal10.png', category: 'category2' },
-      { id: 11, ids: 'fimg11', ptitle:'Click r&D', pdesc:'Branding | UI ', name: 'Item 11', image: '/home/gallery/gal11.png', category: 'category2' },
+      { id: 1, ids: 'fimg1', ptitle:'SWIGGY + BOWL COMPANY', pdesc:'Packaging Design | Marketing collaterals | Advertising', name: 'Item 1', image: '/home/portfolio/gallery/swiggy.png', category: 'category1' },
+  
+      { id: 2, ids: 'fimg2', ptitle:'COINSAFE VPN', pdesc:'Branding | Website UI | Web Development | Application | Marketing Collaterals', name: 'Item 2', image: '/home/portfolio/gallery/coinsafe.png', category: 'category2' },
+  
+      { id: 3, ids: 'fimg3', ptitle:'BLACK B FINANCE', pdesc:'Branding | Website UI | Web Development', name: 'Item 3', image: '/home/portfolio/gallery/blackb.png', category: 'category2' },
+  
+      { id: 4, ids: 'fimg4', ptitle:'Click R & D', pdesc:'Branding | Website UI | Social Media', name: 'Item 4', image: '/home/portfolio/gallery/clickrnd.png', category: 'category1' },
+  
+      { id: 5, ids: 'fimg5', ptitle:'YOLOMART', pdesc:'Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media', name: 'Item 5', image: '/home/portfolio/gallery/yolomart.png', category: 'category2' },
+  
+      { id: 6, ids: 'fimg6', ptitle:'TARABAI', pdesc:'Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media', name: 'Item 6', image: '/home/portfolio/gallery/tarabai.png', category: 'category1' },
+  
+      { id: 7, ids: 'fimg7', ptitle:'CITIBANK', pdesc:'Illustrations | Presentation | Wall Graffiti', name: 'Item 7', image: '/home/portfolio/gallery/citibank.png', category: 'category1' },
+  
+      { id: 8, ids: 'fimg8', ptitle:'Littile learners trove', pdesc:'Branding | Illustrations | Product Design | Packaging Design | Social Media', name: 'Item 8', image: '/home/portfolio/gallery/flash.png', category: 'category1' },
+  
+      { id: 9, ids: 'fimg9', ptitle:'Royal Wedding', pdesc:'Branding | Business Collaterals', name: 'Item 9', image: '/home/portfolio/gallery/royal.png', category: 'category2' },
+  
+      { id: 10, ids: 'fimg10', ptitle:'Wuerth Industries', pdesc:'Publication - Coffee Table Book Design | Corporate Giftings', name: 'Item 10', image: '/home/portfolio/gallery/wru.png', category: 'category2' },
+  
+      { id: 11, ids: 'fimg11', ptitle:'Nutribee', pdesc:'Illustration | Packaging Design', name: 'Item 11', image: '/home/portfolio/gallery/bread.png', category: 'category2' },
       // Add more items with appropriate categories
     ];
 

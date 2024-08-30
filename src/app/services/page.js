@@ -11,6 +11,7 @@ import BrandAnimated from "../Component/Brandlineanimation";
 import WorkAnimationlr from "../Component/WorkAnimatedLR";
 import Arrows from "../Component/Arrowanimation";
 import Process from "../Component/Process";
+import OurProcess from "../Component/Ourprocess";
 
 const Ourstory = () => {
 
@@ -726,7 +727,14 @@ const Ourstory = () => {
          </div>
          {/* Process */}
          <div className={styles.prosec}>
-         <Process />
+        <div className={styles.desktopv}>
+        <Process />
+        </div>
+        <div className={styles.mobilev}>
+        <OurProcess />
+        </div>
+         
+        
          </div>
          {/* Process */}
          {/* Lets Discuss section */}

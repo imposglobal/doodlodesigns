@@ -660,6 +660,12 @@
   font-weight: 500;
   font-family: 'poppins';
 }
+.desktopv{
+  display: none;
+}
+.mobilev{
+  display: block !important;
+}
 .discuss_row {
   overflow: hidden;
   padding: 25px;
@@ -691,4 +697,7 @@
 .bookwrap1 span, .bookwrap span{
   font-size: 18px;
 }
+}
+.mobilev{
+  display: none;
 }
