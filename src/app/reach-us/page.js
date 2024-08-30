@@ -15,6 +15,7 @@ import React, { useEffect, useRef,useState } from 'react';
 import gsap from 'gsap';
 import Logoslide from "../Component/Logoslider";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import useFetchCountries from "../Component/useFetchCountries";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,6 +71,31 @@ const Reachus = () => {
     }
   };
 
+  //form drop and citirs
+  const { countries, loading, error } = useFetchCountries();
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  const options = [
+    { id: 'branding', label: 'Branding' },
+    { id: 'packaging', label: 'Packaging' },
+    { id: 'website', label: 'Website' },
+    { id: 'publication', label: 'Publication' },
+    { id: 'social-media', label: 'Social Media' },
+    { id: 'ecommerce', label: 'Ecommerce' },
+  ];
+  const toggleDropdown = () => {
+    setIsOpen(prev => !prev);
+  };
+
+  const handleCheckboxChange = (e) => {
+    const { value, checked } = e.target;
+    setSelectedOptions(prev =>
+      checked
+        ? [...prev, value]
+        : prev.filter(option => option !== value)
+    );
+  };
 
     //gallery
     const items = [
@@ -376,66 +402,90 @@ const Reachus = () => {
                     <p className={styles.formdesc}>
                     Fill in the details to know more
                     </p>
-                    <form onSubmit={handleSubmit} netlify>
-                        <div className={styles.formInput}>
+                    <form data-aos="fade-up" onSubmit={handleSubmit} netlify>
+              <div className={styles.formInput}>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Hi, I am"
+                />
+              </div>
+              <div className={styles.formInput}>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="My Email Is"
+                />
+              </div>
+              <div className={`${styles.formInput} ${styles.flexs}`}>
+                {loading ? (
+                  <p>Loading...</p>
+                ) : error ? (
+                  <p>{error}</p>
+                ) : (
+                  <select
+                    name="code"
+                    value={formData.code}
+                    onChange={handleChange}
+                    id="country-code-select"
+                    className={styles.dropdown}
+                  >
+                    <option>Country</option>
+                    {countries.map((country) => (
+                      <option
+                        key={country.cca2}
+                        value={country.idd.root + (country.idd.suffixes ? country.idd.suffixes[0] : "")}
+                      >
+                        {country.name.common} ({country.idd.root}
+                        {country.idd.suffixes ? country.idd.suffixes[0] : ""})
+                      </option>
+                    ))}
+                  </select>
+                )}
+                <input
+                  className={styles.phone}
+                  type="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="& My Mobile Number is"
+                />
+              </div>
+              <div className={`${styles.formInput} ${styles.flexs}`}>
+                <button type="button" className={styles.dropdownButton} onClick={toggleDropdown}>
+                I am looking for
+                </button>
+                {isOpen && (
+                  <div className={styles.dropdownContent}>
+                    {options.map(option => (
+                      <label key={option.id} className={styles.checkboxLabel}>
                         <input
-                            type="text"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            placeholder="Hi, I am"
+                          type="checkbox"
+                          value={option.id}
+                          checked={selectedOptions.includes(option.id)}
+                          onChange={handleCheckboxChange}
                         />
-                        </div>
-                        <div className={styles.formInput}>
-                        <input
-                            type="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            placeholder="My Email Is"
-                        />
-                        </div>
-                        <div className={styles.formInput}>
-                        <input
-                            type="phone"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleChange}
-                            placeholder="& My Mobile Number is"
-                        />
-                        </div>
-                        <div className={styles.formcheck}>
-                            <h4 className={styles.checktitle}>I am looking for</h4>
-                            <div className={styles.chekinput}>
-                                <input type="checkbox" value="" />
-                                <label>Branding</label>
-                                <input type="checkbox" value="" />
-                                <label>Packaging</label>
-                                <input type="checkbox" value="" />
-                                <label>Website</label>
-                            </div>
-                            <div className={styles.chekinputt}>
-                                <input type="checkbox" value="" />
-                                <label>Publication</label>
-                                <input type="checkbox" value="" />
-                                <label>Social Media</label>
-                                <input type="checkbox" value="" />
-                                <label>Ecommerce</label>
-                                
-                            </div>
-
-                        </div>
-                        <div className={styles.formInput}>
-                        <input
-                            type="text"
-                            name="message"
-                            value={formData.message}
-                            onChange={handleChange}
-                            placeholder="Breif about the Project"
-                        />
-                        </div>
-                        <button type="submit" className={styles.subsbtn}>Submit</button>
-                        </form>
+                        {option.label}
+                      </label>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <div className={styles.formInput}>
+                <input
+                  type="text"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Brief about the Project"
+                />
+              </div>
+              <button type="submit" className={styles.subsbtns}>Submit</button>
+            </form>
                 </div>
                <div className={styles.caassec}>
                <Image

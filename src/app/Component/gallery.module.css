@@ -20,7 +20,6 @@
     font-family: 'poppins';
   }
   .fdesc{
-    margin-top: 20px;
     font-size: 17px;
     color: #fff;
     font-family: 'poppins';
@@ -223,7 +222,7 @@
   color: #fff;
 }
 .pover{
- 
+ box-sizing: border-box !important;
   background-color: #000000b9;
 }
   

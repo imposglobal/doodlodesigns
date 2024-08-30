@@ -1,0 +1,132 @@
+/* components/Process.module.css */
+
+.processContainer {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .step:hover .pptitle{
+    color: #fff;
+  }
+  .pptitle{
+    color:#C9C9C9;
+    font-size: 22px;
+    font-family: 'poppins';
+    font-weight:500;
+  }
+  
+  .processSteps {
+    width: 40%;
+  }
+  .processSteps .step{
+    border-top: 1px solid #ffffffba;
+    padding-top: 20px ;
+  }
+  .step:nth-child(5){
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffffba;
+  }
+  .step {
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .description {
+    font-family: 'poppins';
+    margin-top: 5px;
+    color: #F6FA5E;
+    font-size: 18px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease-in-out;
+    position: relative; /* Positioning relative to allow for better control */
+  }
+  
+  .step:hover .description {
+    height: 30px; /* Expand to desired height on hover */
+  }
+  
+  .processImage {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .processImage img {
+    max-width: 100%;
+    height: auto;
+    width: 68%;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .sec_headingdis{
+    margin-top: -35px;
+    padding: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 58px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  .mainheadingdis {
+    margin-top: 0;
+    font-size: 58px;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-transform: uppercase;
+  }
+  @media only screen and (max-width: 600px) {
+    .sec_headingdis {
+        margin-top: -10px;
+        padding: 0;
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+      }
+      .mainheadingdis {
+        margin-top: 0;
+        font-size: 26px;
+        font-family: 'Poppins', sans-serif;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        text-transform: uppercase;
+      }
+      .prosec{
+        padding: 20px;
+      }
+      .pptitle{
+        font-size: 14px;
+      }
+      .processContainer{
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+      .processSteps .step{
+        padding-top: 15px;
+      }
+      .step:hover .description{
+        height: 56px;
+    }
+    .description{
+        font-size: 12px;
+    }
+    .step{
+        margin-bottom: 10px;
+    }
+    .step:nth-child(5){
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ffffffba;
+      }
+      .processImage img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+  }

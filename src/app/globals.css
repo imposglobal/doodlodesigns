@@ -254,6 +254,7 @@ h1,h2,h3,h4,h5,h6,p{
   font-weight: 300 !important;
 }
 .pover{
+  box-sizing: border-box !important ;
    width: 78%;
   transition: .5s ease;
   opacity: 0;
@@ -1204,4 +1205,8 @@ color: #000 !important;
 }
 a{
   cursor: pointer !important;
+}
+select#country-code-select {
+  font-size: 14px;
+  width: 40%;
 }

@@ -10,6 +10,7 @@ import {useState, useEffect} from 'react';
 import BrandAnimated from "../Component/Brandlineanimation";
 import WorkAnimationlr from "../Component/WorkAnimatedLR";
 import Arrows from "../Component/Arrowanimation";
+import Process from "../Component/Process";
 
 const Ourstory = () => {
 
@@ -136,8 +137,8 @@ const Ourstory = () => {
         <div className={styles.storyhero}>
             <div className={styles.row}>
                 <div className={styles.columnst1}>
-                <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Build Brands that</h2>
-                <h2 data-aos="fade-up" className={styles.text_title}>scale businesses</h2>
+                <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Tailor Solutions for</h2>
+                <h2 data-aos="fade-up" className={styles.text_title}>your  business Needs</h2>
                 </div>
                 <div className={styles.columnst2}>
                     <p data-aos="fade-up" className={styles.desc}>Decoding Your Brand story. Crafting seamless & scalable digital experiences. Bringing bespoke doodles and illustrations to life.</p>
@@ -149,49 +150,154 @@ const Ourstory = () => {
                 </div>
             </div>
             <div className={styles.row}>
-                <div className={`${styles.imgcol} ${styles.paddt}`} >
-                     <Image data-aos="fade-up"
+                <div className={`${styles.imgcol}`} >
+                    {/* card */}
+                    <div data-aos="fade-up"  className={`${styles.scard} `}>
+                        <h3 className={styles.sstitle}>Craft Your Brand Identity</h3>
+                        <div className={styles.iconss}>
+                        <Image 
+                                    className={styles.iconimg}
+                                    src="home/tool/notion.png"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+                                    <Image 
+                                    className={styles.iconimg}
+                                    src="home/tool/ai.png"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+                                    <Image 
+                                    className={styles.iconimg}
+                                    src="/home/tool/figma.png"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+                        </div>
+                        <Image 
                                     className={styles.ourimg1}
-                                    src="/home/ourstory/our1.png"
+                                    src="/home/service/service1.png"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
                                     height={37}
                                     priority
                                     />
+
+                    </div>
+                    {/* card end */}
+                    
                 </div>
-                <div className={styles.imgcol}>
-                     <Image data-aos="fade-up"
-                                    className={styles.ourimg2}
-                                    src="/home/ourstory/our2.png"
+                <div data-aos="fade-up" className={`${styles.imgcol} ${styles.paddt}`}>
+                    {/* card */}
+                    <div className={`${styles.scard}`}>
+                        <h3 className={styles.sstitle}>Engage with Stunning Website</h3>
+                        <div className={styles.iconss}>
+                        <Image 
+                                    className={styles.iconimg}
+                                    src="home/tool/figma.png"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
                                     height={37}
                                     priority
                                     />
-                </div>
-                <div className={styles.imgcol}>
-                     <Image data-aos="fade-up"
+                                    <Image 
+                                    className={styles.iconimg}
+                                    src="home/tool/xd.png"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+                        </div>
+                        <Image 
                                     className={styles.ourimg1}
-                                    src="/home/ourstory/our3.png"
+                                    src="/home/service/service2.png"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
                                     height={37}
                                     priority
                                     />
+
+                    </div>
+                    {/* card end */}
                 </div>
-                <div className={styles.imgcol}>
-                     <Image data-aos="fade-up"
-                                    className={styles.ourimg2}
-                                    src="/home/ourstory/our4.png"
+                <div data-aos="fade-up" className={styles.imgcol}>
+                     {/* card */}
+                    <div className={styles.scard}>
+                        <h3 className={styles.sstitle}>Design That Stands Out</h3>
+                        <div className={styles.iconss}>
+                        <Image 
+                                    className={styles.iconimg}
+                                    src="home/tool/ai.png"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
                                     height={37}
                                     priority
                                     />
+                                    <Image 
+                                    className={styles.iconimg}
+                                    src="home/service/star.png"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+                        </div>
+                        <Image 
+                                    className={styles.ourimg1}
+                                    src="/home/service/service3.png"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+
+                    </div>
+                    {/* card end */}
+                </div>
+                <div data-aos="fade-up" className={`${styles.imgcol} ${styles.paddt}`}>
+                     {/* card */}
+                    <div className={styles.scard}>
+                        <h3 className={styles.sstitle}>Take Your Ecom Store Live</h3>
+                        <div className={styles.iconss}>
+                        <Image 
+                                    className={styles.iconimg}
+                                    src="home/tool/shopify.png"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+                        </div>
+                        <Image 
+                                    className={styles.ourimg1}
+                                    src="/home/service/service4.png"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+
+                    </div>
+                    {/* card end */}
                 </div>
             </div>        
         </div>
@@ -218,13 +324,13 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div className={styles.sercol1}>
                         <div data-aos="fade-up" className={styles.serbox}>
-                        <h4  className={styles.sbtitle}><span className={styles.num}> 01.</span> Research & Brand Strategy</h4>
+                        <h4  className={styles.sbtitle}><div className={styles.num}> 01.</div> Research & Brand Strategy</h4>
                         <p className={styles.sbdesc1}>Comprehensive research and strategic planning to position your brand effectively.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><span className={styles.num}> 02.</span> Brand Identity</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 02.</div> Brand Identity</h4>
                         <p className={styles.sbdesc}>Creating a unique and memorable identity that resonates with your audience.</p>
                         </div>
                     </div>
@@ -232,19 +338,19 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div data-aos="fade-up" className={styles.sercol1}>
                         <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><span className={styles.num}> 03.</span> Brand Guidelines</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 03.</div> Brand Guidelines</h4>
                         <p className={styles.sbdesc}>Establish cohesive guidelines to ensure consistency across all your brand touchpoints.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><span className={styles.num}> 04.</span> Naming & Domain</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 04.</div> Naming & Domain</h4>
                         <p className={styles.sbdesc4}>Create a powerful name and secure a domain that aligns with your brand’s vision.</p>
                         </div>
                     </div>
                 </div>
                 <div className={styles.process} data-aos="fade-up">
-                <div className="process-container">
+                {/* <div className="process-container">
                         <div className="process-title">Our Process</div>
                         <div className="process-steps">
                             <div className="line"></div>
@@ -275,7 +381,7 @@ const Ourstory = () => {
                                 <div data-aos="fade-up" className="step-description mdesc">Applying your new brand identity across all channels.</div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className={styles.pmidd}>
                         <h4 data-aos="fade-up" className={styles.promtext}>Decode your Brand Story with us!</h4>
                         <div data-aos="fade-up">
@@ -309,13 +415,13 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div className={styles.sercol1}>
                         <div data-aos="fade-up" className={styles.serbox}>
-                        <h4  className={styles.sbtitle}><span className={styles.num}> 01.</span> Website UI Design</h4>
+                        <h4  className={styles.sbtitle}><div className={styles.num}> 01.</div> Website UI Design</h4>
                         <p className={styles.sbdesc1}>Create visually stunning and user-friendly websites that captivate your audience and enhance user experience.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><span className={styles.num}> 02.</span> Website Development</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 02.</div> Website Development</h4>
                         <p className={styles.sbdesc}>Develop robust and scalable websites tailored to your business needs, ensuring functionality and performance.</p>
                         </div>
                     </div>
@@ -323,19 +429,19 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div data-aos="fade-up" className={styles.sercol1}>
                         <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><span className={styles.num}> 03.</span> Web Hosting</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 03.</div> Web Hosting</h4>
                         <p className={styles.sbdesc}>Provide reliable and secure web hosting solutions to keep your website accessible and running smoothly.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><span className={styles.num}> 04.</span> Performance Optimization</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 04.</div> Performance Optimization</h4>
                         <p className={styles.sbdesc4}>Optimize your website for speed and SEO, ensuring fast load times and high search engine rankings.</p>
                         </div>
                     </div>
                 </div>
                 <div className={styles.process} data-aos="fade-up">
-                <div className="process-container">
+                {/* <div className="process-container">
                         <div className="process-title">Our Process</div>
                         <div className="process-steps">
                             <div className="line"></div>
@@ -366,7 +472,7 @@ const Ourstory = () => {
                                 <div data-aos="fade-up"s className="step-description">Continuously optimize and maintain your website for peak performance.</div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className={styles.pmidd}>
                         <h4 data-aos="fade-up" className={styles.promtext}>Decode your Brand Story with us!</h4>
                         <div data-aos="fade-up">
@@ -399,13 +505,13 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div className={styles.sercol1}>
                         <div data-aos="fade-up" className={styles.serbox}>
-                        <h4  className={styles.sbtitle}><span className={styles.num}> 01.</span> Brand Strategy Development</h4>
+                        <h4  className={styles.sbtitle}><div className={styles.num}> 01.</div> Brand Strategy Development</h4>
                         <p className={styles.sbdesc1}>crafting a strategic foundation to align with your brand’s vision and market goals.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><span className={styles.num}> 02.</span> Product Positioning</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 02.</div> Product Positioning</h4>
                         <p className={styles.sbdesc}>Strategically position your products to ensure maximum market impact and consumer engagement.</p>
                         </div>
                     </div>
@@ -413,19 +519,19 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div data-aos="fade-up" className={styles.sercol1}>
                         <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><span className={styles.num}> 03.</span> Packaging Design for Hero Products</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 03.</div> Packaging Design for Hero Products</h4>
                         <p className={styles.sbdesc}>Design unique, eye-catching packaging that makes your hero products irresistible.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><span className={styles.num}> 04.</span> Guideline Formulation</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 04.</div> Guideline Formulation</h4>
                         <p className={styles.sbdesc4}>Establish clear and consistent packaging guidelines to maintain brand integrity across all products.</p>
                         </div>
                     </div>
                 </div>
                 <div className={styles.process} data-aos="fade-up">
-                <div className="process-container">
+                {/* <div className="process-container">
                         <div className="process-title">Our Process</div>
                         <div className="process-steps">
                             <div className="line"></div>
@@ -456,7 +562,7 @@ const Ourstory = () => {
                                 <div data-aos="fade-up"s className="step-description">Finalize designs and oversee the production process to ensure top quality.</div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className={styles.pmidd}>
                         <h4 data-aos="fade-up" className={styles.promtext}>Decode your Brand Story with us!</h4>
                         <div data-aos="fade-up">
@@ -489,13 +595,13 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div className={styles.sercol1}>
                         <div data-aos="fade-up" className={styles.serbox}>
-                        <h4  className={styles.sbtitle}><span className={styles.num}> 01.</span> Brand Roadmap</h4>
+                        <h4  className={styles.sbtitle}><div className={styles.num}> 01.</div> Brand Roadmap</h4>
                         <p className={styles.sbdesc1}>Develop a strategic roadmap to define and achieve your eCommerce goals.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><span className={styles.num}> 02.</span> Communication Design</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 02.</div> Communication Design</h4>
                         <p className={styles.sbdesc}>Craft compelling visuals and messaging that resonate with your audience.</p>
                         </div>
                     </div>
@@ -503,19 +609,19 @@ const Ourstory = () => {
                 <div className={styles.row}>
                     <div data-aos="fade-up" className={styles.sercol1}>
                         <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><span className={styles.num}> 03.</span> E-commerce Store Setup Strategy</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 03.</div> E-commerce Store Setup Strategy</h4>
                         <p className={styles.sbdesc}>Implement effective strategies to launch and optimize your online store.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className={styles.sercol2}>
                     <div className={styles.serbox}>
-                        <h4 className={styles.sbtitle}><span className={styles.num}> 04.</span> Front-end & Back-end Development</h4>
+                        <h4 className={styles.sbtitle}><div className={styles.num}> 04.</div> Front-end & Back-end Development</h4>
                         <p className={styles.sbdesc4}>Build robust and scalable eCommerce platforms for seamless customer experiences.</p>
                         </div>
                     </div>
                 </div>
                 <div className={styles.process} data-aos="fade-up">
-                <div className="process-container custh">
+                {/* <div className="process-container custh">
                         <div className="process-title">Our Process</div>
                         <div className="process-steps">
                             <div className="line"></div>
@@ -546,7 +652,7 @@ const Ourstory = () => {
                                 <div data-aos="fade-up"s className="step-description">Continuously optimize your eCommerce platform for improved performance and growth.</div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className={styles.pmidd}>
                         <h4 data-aos="fade-up" className={styles.promtext}>Decode your Brand Story with us!</h4>
                         <div data-aos="fade-up">
@@ -618,6 +724,11 @@ const Ourstory = () => {
             {/* Additional Service section end */}
 
          </div>
+         {/* Process */}
+         <div className={styles.prosec}>
+         <Process />
+         </div>
+         {/* Process */}
          {/* Lets Discuss section */}
        <div data-aos="fade-up" className={`${styles.pointer}`}>
         <div className={styles.discuss_row}>
