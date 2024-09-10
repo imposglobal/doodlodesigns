@@ -110,7 +110,7 @@ const Footer = () => {
                     <div className={styles.footercol1}>
                         <div className={styles.gtint}>
                             <span className={styles.gtintitle}>Follow us on </span>
-                                    <Link href="https://www.facebook.com/DoodloDesign">
+                                    <Link href="https://in.linkedin.com/company/doodlodesign">
                                     <Image
                                     className={styles.subbtnisc}
                                     src="/home/social/flinked.svg"
@@ -257,7 +257,7 @@ const Footer = () => {
                     <div className={styles.footercol1}>
                         <div className={styles.gtint}>
                             <span className={styles.gtintitle}>Follow us on </span>
-                                    <Link href="https://www.facebook.com/DoodloDesign">
+                                    <Link href="https://in.linkedin.com/company/doodlodesign">
                                     <Image
                                     className={styles.subbtnisc}
                                     src="/home/social/flinked.svg"

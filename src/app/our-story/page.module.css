@@ -548,3 +548,21 @@
   margin-top: -10px;
   margin-bottom: 20px;
 }
+.prosec{
+  padding: 50px 130px;
+}
+.mobilev{
+  display: none;
+}
+/* Mobile View */
+@media only screen and (max-width: 600px) {
+  .desktopv{
+    display: none;
+  }
+  .mobilev{
+    display: block !important;
+  }
+  .prosec{
+    padding: 50px 0px;
+  }
+}

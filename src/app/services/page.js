@@ -78,7 +78,7 @@ const Ourstory = () => {
             <div className="mcol2">
               <div className="socialsec">
                 <p className="gtt">Get in touch </p>
-                <Link href="https://www.facebook.com/DoodloDesign">
+                <Link href="https://in.linkedin.com/company/doodlodesign">
                                     <Image
                                     className="msocial"
                                     src="/home/social/flinked.svg"
@@ -475,7 +475,7 @@ const Ourstory = () => {
                         </div>
                     </div> */}
                     <div className={styles.pmidd}>
-                        <h4 data-aos="fade-up" className={styles.promtext}>Decode your Brand Story with us!</h4>
+                        <h4 data-aos="fade-up" className={styles.promtext}>Transform Your Digital Presence with Us!</h4>
                         <div data-aos="fade-up">
                         <Link className="boton_elegante" href="/reach-us">
                         Reach Us
@@ -565,7 +565,7 @@ const Ourstory = () => {
                         </div>
                     </div> */}
                     <div className={styles.pmidd}>
-                        <h4 data-aos="fade-up" className={styles.promtext}>Decode your Brand Story with us!</h4>
+                        <h4 data-aos="fade-up" className={styles.promtext}>Wrap Your Products in Creativity!</h4>
                         <div data-aos="fade-up">
                         <Link className="boton_elegante" href="/reach-us">
                         Reach Us
@@ -655,7 +655,7 @@ const Ourstory = () => {
                         </div>
                     </div> */}
                     <div className={styles.pmidd}>
-                        <h4 data-aos="fade-up" className={styles.promtext}>Decode your Brand Story with us!</h4>
+                        <h4 data-aos="fade-up" className={styles.promtext}>Launch Your Online Store with Us!</h4>
                         <div data-aos="fade-up">
                         <Link className="boton_elegante" href="/reach-us">
                         Reach Us

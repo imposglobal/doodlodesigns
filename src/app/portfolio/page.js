@@ -32,10 +32,10 @@ const Portfolio = () => {
 
     const portfolioItems = [
       {no:"01",  id: 1, title: "SWIGGY + BOWL COMPANY", category: "Packaging Design | Marketing collaterals | Advertising ", imageUrl: "/home/portfolio/1.png" },
-      {no:"02",  id: 2, title: "COINSAFE VPN", category: "Branding | Website UI | Web Development | Application | Marketing Collaterals", imageUrl: "/home/portfolio/3.png" },
+      {no:"02",  id: 2, title: "COINSAFE VPN", category: "Branding | Website UI | Web Development | Application | Marketing Collaterals", imageUrl: "/home/portfolio/csafe.gif" },
       {no:"03",  id: 3, title: "TARABAI", category: "Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media", imageUrl: "/home/portfolio/5.png" },
       {no:"04",  id: 4, title: "BLACK B FINANCE", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/blackb.gif" },
-      {no:"05",  id: 5, title: "YOLOMART", category: "Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media", imageUrl: "/home/portfolio/7.png" },
+      {no:"05",  id: 5, title: "YOLOMART", category: "Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media", imageUrl: "/home/portfolio/yolomart.png" },
       {no:"06",  id: 6, title: "MAHATEE INTERACTIVES", category: "Branding | Website UI | Shopify Development | Ecommerce Setup | Illustrations | Publication & Book Design | Social Media", imageUrl: "/home/portfolio/mahatee.gif" },
       {no:"07",  id: 7, title: "Click R & D", category: "Branding | Website UI | Social Media", imageUrl: "/home/portfolio/clickrnd.jpg" },
       {no:"08",  id: 8, title: "CITIBANK", category: "Illustrations | Presentation | Wall Graffiti", imageUrl: "/home/portfolio/6.png" },
@@ -100,7 +100,7 @@ const Portfolio = () => {
             <div className="mcol2">
               <div className="socialsec">
                 <p className="gtt">Get in touch </p>
-                <Link href="https://www.facebook.com/DoodloDesign">
+                <Link href="https://in.linkedin.com/company/doodlodesign">
                                     <Image
                                     className="msocial"
                                     src="/home/social/flinked.svg"

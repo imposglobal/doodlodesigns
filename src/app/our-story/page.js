@@ -8,6 +8,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {useState, useEffect} from 'react';
 import SliderComponent from "../Component/TeamSlider";
+import Process from "../Component/Process";
+import OurProcess from "../Component/Ourprocess";
 
 const OurStory = () => {
 
@@ -302,36 +304,16 @@ const OurStory = () => {
     </div>
 
     {/* who we are section */}
-      {/* Our Story section start */}
-      <div className={styles.story}>
-        <div className={styles.rowstory}>
-        <div className={styles.columnst2}>
-            <div className={styles.stimg1}>
-            <Image data-aos="fade-up"
-                  className={styles.ppimg}
-                  src="/home/storyimg.png"
-                  alt="Next.js Logo"
-                  layout="responsive"
-                  width={100}
-                  height={37}
-                  priority
-                />
-            </div>
-          </div>
-          <div className={styles.columnst1} >
-          <h2 className={styles.mainheading} data-aos="fade-up">OUR Value</h2>
-          <h2 className={styles.sec_heading} data-aos="fade-up">proposition</h2>
-          <p className={styles.storydesc} data-aos="fade-up">
-          To become an Elite Design professional, in providing meaningful, memorable and magnetic design solutions in the competitive global marketplace.<br/><br/>
-          Our vision is to Empowering businesses to thrive with cutting-edge design and branding, transforming digital landscapes.<br/><br/>
-
-          Our mission is to create powerful digital assets that tell compelling stories, shape brand identities, and leave a lasting impact on your audience.
-          </p>
-          </div>
-          
+       {/* Process */}
+       <div className={styles.prosec}>
+        <div className={styles.desktopv}>
+        <Process />
         </div>
-      </div>
-      {/* Our Story section end */}
+        <div className={styles.mobilev}>
+        <OurProcess />
+        </div>
+          </div>
+         {/* Process */}
       {/* our founder  */}
       <div className={styles.whowesecs}>
       <div className={styles.fsec}>

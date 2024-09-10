@@ -174,7 +174,7 @@ const Home = () => {
             <div className="mcol2">
               <div className="socialsec">
                 <p className="gtt">Follow us on </p>
-                <Link href="https://www.facebook.com/DoodloDesign">
+                <Link href="https://in.linkedin.com/company/doodlodesign">
                                     <Image
                                     className="msocial"
                                     src="/home/social/flinked.svg"
