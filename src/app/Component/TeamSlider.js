@@ -24,7 +24,15 @@ const SliderComponent = () => {
       <div className={styles['slide']}>
           <div className={styles['founder-slide']}>
             <div className={styles['founder-image']}>
-            
+            <Image   
+                    className=""
+                    src="/home/team/hitesh.png"
+                    alt="Next.js Logo"
+                    layout="responsive"
+                    width={100}
+                    height={37}
+                    priority
+                  />
             </div>
             <div className={styles['founder-info']}>
               
@@ -72,6 +80,15 @@ const SliderComponent = () => {
         <div className={styles['slide']}>
           <div className={styles['founder-slide']}>
             <div className={styles['founder-image']}>
+            <Image   
+                    className=""
+                    src="/home/team/payal.png"
+                    alt="Next.js Logo"
+                    layout="responsive"
+                    width={100}
+                    height={37}
+                    priority
+                  />
             
             </div>
             <div className={styles['founder-info']}>
@@ -87,16 +104,16 @@ const SliderComponent = () => {
                     priority
                   />
                 <p  className={styles.whodesc}>
-                Our organizational guru who provides the structure needed to make our creatives widespread. He brings his expertise to Business operations, and marketing. Our consistent delivery and results are a testament to his analytical and technical skills. Hitesh unleashes his creative power through logical reasoning, transforming complex designs into reality while managing the numbers behind the scenes.
+                Weaving Brand Stories Through Design. Payal, Doodlo’s Head, translates brands' stories into timeless visuals with her design expertise and strategic thinking. Her focus on continuity, resilience, and simplicity results in elegant, long-lasting designs. A true artisan, when not in front of her laptop, Payal can be found doodling at meetings, planting saplings in her yard, seeking inspiration by antique stores or conversations during chai hour.
                 </p>
           </div>
           <div className={styles.row}>
                     <div className={styles.dcol1}>
                         <h4 className={styles.dtitle}>
-                        Hitesh Nainani
+                        Payal Thubrikar
                         </h4>
                         <p className={styles.desg}>
-                        Managing Director
+                        Creative Head
                         </p>
                     </div>
                     <div className={styles.dcol2}>
