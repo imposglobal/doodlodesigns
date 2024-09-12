@@ -43,4 +43,37 @@
   .faqsec{
     padding: 30px 150px 0px 186px;
   }
+  /* Mobile View */
+@media only screen and (max-width: 600px) {
+  .column2 {
+    flex: 40% 1;
+    padding: 50px 20px;
+}
+.logosec {
+  padding-left: 20px;
+}
+.mlsec svg{
+  width: 100px;
+}
+.faqsec {
+  padding: 20px;
+}
+.text_stroke_hover {
+  display: inline-block;
+  position: relative;
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  text-transform: uppercase;
+}
+.text_title {
+  margin-top: -13px;
+  text-transform: uppercase;
+  font-size: 27px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+}
  

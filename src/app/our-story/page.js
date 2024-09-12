@@ -10,8 +10,14 @@ import {useState, useEffect} from 'react';
 import SliderComponent from "../Component/TeamSlider";
 import Process from "../Component/Process";
 import OurProcess from "../Component/Ourprocess";
+import Link from "next/link";
+import ImageSwitcher from "../Component/Storyimg";
 
 const OurStory = () => {
+  useEffect(() => {
+    document.title = "Our Story - Doodlo Designs Studio";
+  }, []);
+
 
     useEffect(() =>{
         AOS.init({
@@ -30,25 +36,110 @@ const OurStory = () => {
    
     return(
         <section>
-            <div id="wrapper">
-                <div className={`menuwrap ${inactive ? 'inactive' : ''} doodbg`}>
-                    <h1>Content</h1>
-                </div>
-                </div>
-                <div className={styles.faqsecs}>
-                <div className={styles.row}>
-                    <div className={styles.column1}>
-                        <div className={styles.logosec}>
-                        <Logo />
-                        </div>
-                    </div>
-                    <div className={styles.column2}>
-                        <div className={styles.logosec}>
-                        <Menu className={styles.menuicon} onClick={toggleClass} />
-                        </div>
-                    </div>
-                </div>
-                </div>
+              {/* Menu start */}
+              <div id="wrapper">
+      <div className={`menuwrap ${inactive ? 'inactive' : ''} doodbg`}>
+        <div className="menusec">
+          <div className="menurow">
+            <div className="mcol1">
+            <div className="menuitem">
+              <Link href="/" className="mitem">
+                Home
+              </Link>
+              
+            </div>
+
+            <div className="menuitem">
+              <Link href="/portfolio" className="mitem">
+                Portfolio
+              </Link>
+            </div>
+            
+            <div className="menuitem">
+              <Link href="/services" className="mitem">
+              Our Services
+              </Link>
+            </div>
+
+            <div className="menuitem">
+              <Link href="/our-story" className="mitem active">
+                Our Story
+              </Link>
+              <div className="border-bottom"></div>
+            </div>
+
+            <div className="menuitem">
+              <Link href="/reach-us" className="mitem">
+                Reach us
+              </Link>
+            </div>
+
+            <div className="menuitem">
+              <Link href="https://doodlocomics.com/" className="mitem">
+                Shop
+              </Link>
+            </div>
+
+            </div>
+            <div className="mcol2">
+              <div className="socialsec">
+                <p className="gtt">Get in touch </p>
+                <Link href="https://in.linkedin.com/company/doodlodesign">
+                                    <Image
+                                    className="msocial"
+                                    src="/home/social/flinked.svg"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+                                    </Link>
+                                    <Link href="https://www.instagram.com/doodlo_design/">
+                                    <Image
+                                    className="msocial"
+                                    src="/home/social/finsta.svg"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+                                    </Link>
+                                    <Link href="https://www.linkedin.com/company/13436743">
+                                    <Image
+                                    className="msocial"
+                                    src="/home/social/ffb.svg"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+                                    </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mcopy">
+        <p>© 2024 Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</p>
+        </div>
+      </div>
+    </div>
+    {/* Menu end */}
+       
+        <div className={`${styles.row} ${styles.mobrow}`}>
+        <div className={styles.column1}>
+            <div className={`${styles.logosec} ${styles.mlsec}`}>
+            <Logo />
+            </div>
+        </div>
+        <div className={styles.column2}>
+            <div className={styles.logosec}>
+            <Menu className={styles.menuicon} onClick={toggleClass} />
+            </div>
+        </div>
+        </div>
 
             <div className={styles.ourstorysec}>
             <h2 data-aos="fade-up" className={styles.text_stroke_hover}>We ‘re Doodlers & 
@@ -285,7 +376,7 @@ const OurStory = () => {
             </p>
           </div>
           <div>
-          <p className={styles.storydescs}>
+          <p data-aos="fade-up" className={styles.storydescs}>
             To become an Elite Design professional, in providing meaningful, memorable and magnetic design solutions in the competitive global marketplace.<br></br><br></br>
             Our vision is to Empowering businesses to thrive with cutting-edge design and branding, transforming digital landscapes.
             <br></br><br></br>
@@ -335,7 +426,7 @@ const OurStory = () => {
                   priority
                 />
             <div className={styles.descinner}>
-              <div className={styles.row}>
+              <div className={`${styles.row} ${styles.mobrow}`}>
                 <div className={styles.teamcol1}>
                 <h4 className={styles.teamtitle} data-aos="fade-up">Rushikesh K</h4>
                 <p className={styles.ttitle} data-aos="fade-up">Team lead | Sr. web developer</p>
@@ -374,7 +465,7 @@ const OurStory = () => {
                   priority
                 />
             <div className={styles.descinner}>
-              <div className={styles.row}>
+              <div className={`${styles.row} ${styles.mobrow}`}>
                 <div className={styles.teamcol1}>
                 <h4 className={styles.teamtitle} data-aos="fade-up">Aastha Dave</h4>
                 <p className={styles.ttitle} data-aos="fade-up">Visual Designer</p>
@@ -413,7 +504,7 @@ const OurStory = () => {
                   priority
                 />
             <div className={styles.descinner}>
-              <div className={styles.row}>
+              <div className={`${styles.row} ${styles.mobrow}`}>
                 <div className={styles.teamcol1}>
                 <h4 className={styles.teamtitle} data-aos="fade-up">Krushna P</h4>
                 <p className={styles.ttitle} data-aos="fade-up">Jr. web developer</p>
@@ -454,7 +545,7 @@ const OurStory = () => {
                   priority
                 />
             <div className={styles.descinner}>
-              <div className={styles.row}>
+              <div className={`${styles.row} ${styles.mobrow}`}>
                 <div className={styles.teamcol1}>
                 <h4 className={styles.teamtitle} data-aos="fade-up">Vipul Punaskar </h4>
                 <p className={styles.ttitle} data-aos="fade-up">Illustrator, Designer</p>
@@ -493,7 +584,7 @@ const OurStory = () => {
                   priority
                 />
             <div className={styles.descinner}>
-              <div className={styles.row}>
+              <div className={`${styles.row} ${styles.mobrow}`}>
                 <div className={styles.teamcol1}>
                 <h4 className={styles.teamtitle} data-aos="fade-up">Shraddha</h4>
                 <p className={styles.ttitle} data-aos="fade-up">Jr. full-stack Developer</p>
@@ -532,13 +623,13 @@ const OurStory = () => {
                   priority
                 />
             <div className={styles.descinner}>
-              <div className={styles.row}>
+              <div className={`${styles.row} ${styles.mobrow}`}>
                 <div className={styles.teamcol1}>
                 <h4 className={styles.teamtitle} data-aos="fade-up">Yashasvi Satodiya</h4>
                 <p className={styles.ttitle} data-aos="fade-up">Jr. Graphic Designer</p>
                 </div>
                 <div className={styles.teamcol2}>
-               `` <Image data-aos="fade-up"
+               <Image data-aos="fade-up"
                   className={styles.linked}
                   src="/home/linked.svg"
                   alt="Next.js Logo"
@@ -546,7 +637,7 @@ const OurStory = () => {
                   width={100}
                   height={37}
                   priority
-                />``
+                />
                 </div>
               </div>
               <div className={styles.tdetail}>
@@ -573,13 +664,13 @@ const OurStory = () => {
                   priority
                 />
             <div className={styles.descinner}>
-              <div className={styles.row}>
+              <div className={`${styles.row} ${styles.mobrow}`}>
                 <div className={styles.teamcol1}>
                 <h4 className={styles.teamtitle} d>Hanuman</h4>
                 <p className={styles.ttitle} d>Office Assistant</p>
                 </div>
                 <div className={styles.teamcol2}>
-               `` <Image d
+               <Image d
                   className={styles.linked}
                   src="/home/linked.svg"
                   alt="Next.js Logo"
@@ -587,7 +678,7 @@ const OurStory = () => {
                   width={100}
                   height={37}
                   priority
-                />``
+                />
                 </div>
               </div>
               <div className={styles.tdetail}>
@@ -616,76 +707,10 @@ const OurStory = () => {
         </p>
         </div>
       </div>
-      <div className={styles.row}>
-      <div className={styles.tcol}>
-      <Image data-aos="fade-up"
-                  className={styles.ppimgs}
-                  src="/home/team/teamimg.png"
-                  alt="Next.js Logo"
-                  layout="responsive"
-                  width={100}
-                  height={37}
-                  priority
-                />
+      <div data-aos="fade-up">
+      <ImageSwitcher />
       </div>
-      <div className={styles.tcol}>
-      <Image data-aos="fade-up"
-                  className={styles.ppimgs}
-                  src="/home/team/teamimg.png"
-                  alt="Next.js Logo"
-                  layout="responsive"
-                  width={100}
-                  height={37}
-                  priority
-                />
-      </div>
-      <div className={styles.tcol}>
-      <Image data-aos="fade-up"
-                  className={styles.ppimgs}
-                  src="/home/team/teamimg.png"
-                  alt="Next.js Logo"
-                  layout="responsive"
-                  width={100}
-                  height={37}
-                  priority
-                />
-      </div>
-      </div>
-      <div className={styles.row}>
-      <div className={styles.tcol}>
-      <Image data-aos="fade-up"
-                  className={styles.ppimgs}
-                  src="/home/team/teamimg.png"
-                  alt="Next.js Logo"
-                  layout="responsive"
-                  width={100}
-                  height={37}
-                  priority
-                />
-      </div>
-      <div className={styles.tcol}>
-      <Image data-aos="fade-up"
-                  className={styles.ppimgs}
-                  src="/home/team/teamimg.png"
-                  alt="Next.js Logo"
-                  layout="responsive"
-                  width={100}
-                  height={37}
-                  priority
-                />
-      </div>
-      <div className={styles.tcol}>
-      <Image data-aos="fade-up"
-                  className={styles.ppimgs}
-                  src="/home/team/teamimg.png"
-                  alt="Next.js Logo"
-                  layout="responsive"
-                  width={100}
-                  height={37}
-                  priority
-                />
-      </div>
-      </div>
+
       </div>
       
         </section>

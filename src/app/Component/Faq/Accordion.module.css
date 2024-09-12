@@ -101,4 +101,46 @@
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+/* Mobile View */
+@media only screen and (max-width: 600px) {
+    .accordion {
+        width: 90%;
+        margin: 20px auto;
+        padding-bottom: 50px;
+      }
+      .accordion-description{
+        flex-grow: 1;
+        font-family: 'poppins';
+        color: #fff;
+        margin-right: 20px;
+        margin-left: 26px;
+        font-size: 16px;
+    }
+    .accordion-button {
+        background-color: #F6FA5E;
+        border: none;
+        font-family: 'poppins';
+        border-radius: 60%;
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        cursor: pointer;
+        transition: transform 0.2s;
+        padding: 1px 9px;
+    }
+    .accordion-body {
+        padding: 10px 20px 20px 20px;
+        font-family: 'poppins';
+        color: #fff;
+        font-size: 1em;
+        margin-left: 58px;
+        margin-right: 0;
+        background-color: transparent;
+        font-size: 14px !important;
+        font-weight: 300;
+    }
+    .accordion-collapse.show{
+        max-height: 100%;
+    }
+}
 

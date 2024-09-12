@@ -63,6 +63,12 @@ const Ourstory = () => {
             </div>
 
             <div className="menuitem">
+              <Link href="/our-story" className="mitem">
+                Our Story
+              </Link>
+            </div>
+
+            <div className="menuitem">
               <Link href="/reach-us" className="mitem">
                 Reach us
               </Link>

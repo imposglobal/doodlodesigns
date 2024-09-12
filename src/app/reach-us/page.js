@@ -254,6 +254,12 @@ const Reachus = () => {
             </div>
 
             <div className="menuitem">
+              <Link href="/our-story" className="mitem">
+                Our Story
+              </Link>
+            </div>
+
+            <div className="menuitem">
               <Link href="/reach-us" className="mitem active">
                 Reach us
               </Link>

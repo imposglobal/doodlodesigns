@@ -1235,3 +1235,20 @@ select#country-code-select {
   font-size: 14px;
   width: 40%;
 }
+/* story */
+.simage-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.simage-box img {
+  width: 100%;
+  height: auto;
+}
+img#Image\ 4 {
+  margin-top: -4vw;
+}
+img#Image\ 6 {
+  margin-top: -6vw;
+}
