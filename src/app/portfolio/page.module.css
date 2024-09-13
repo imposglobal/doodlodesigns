@@ -285,6 +285,9 @@
 .mlsec svg{
   width: auto;
 }
+.hurl{
+  text-decoration: none;
+}
 /* Responsive Design */
 
 @media (max-width: 767px) {

@@ -90,27 +90,27 @@ const Home = () => {
 
 
    const items = [
-    { id: 1, ids: 'fimg1', ptitle:'SWIGGY + BOWL COMPANY', pdesc:'Packaging Design | Marketing collaterals | Advertising', name: 'Item 1', image: '/home/portfolio/gallery/swiggy.png', category: 'category1' },
+    { id: 1, url:"", ids: 'fimg1', ptitle:'SWIGGY + BOWL COMPANY', pdesc:'Packaging Design | Marketing collaterals | Advertising', name: 'Item 1', image: '/home/portfolio/gallery/swiggy.png', category: 'category1' },
 
-    { id: 2, ids: 'fimg2', ptitle:'COINSAFE VPN', pdesc:'Branding | Website UI | Web Development | Application | Marketing Collaterals', name: 'Item 2', image: '/home/portfolio/gallery/coinsafe.png', category: 'category2' },
+    { id: 2, url:"/portfolio/coinsafe-vpn", ids: 'fimg2', ptitle:'COINSAFE VPN', pdesc:'Branding | Website UI | Web Development | Application | Marketing Collaterals', name: 'Item 2', image: '/home/portfolio/gallery/coinsafe.png', category: 'category2' },
 
-    { id: 3, ids: 'fimg3', ptitle:'BLACK B FINANCE', pdesc:'Branding | Website UI | Web Development', name: 'Item 3', image: '/home/portfolio/gallery/blackb.png', category: 'category2' },
+    { id: 3, url:"", ids: 'fimg3', ptitle:'BLACK B FINANCE', pdesc:'Branding | Website UI | Web Development', name: 'Item 3', image: '/home/portfolio/gallery/blackb.png', category: 'category2' },
 
-    { id: 4, ids: 'fimg4', ptitle:'Click R & D', pdesc:'Branding | Website UI | Social Media', name: 'Item 4', image: '/home/portfolio/gallery/clickrnd.png', category: 'category1' },
+    { id: 4, url:"", ids: 'fimg4', ptitle:'Click R & D', pdesc:'Branding | Website UI | Social Media', name: 'Item 4', image: '/home/portfolio/gallery/clickrnd.png', category: 'category1' },
 
-    { id: 5, ids: 'fimg5', ptitle:'YOLOMART', pdesc:'Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media', name: 'Item 5', image: '/home/portfolio/gallery/yolomart.png', category: 'category2' },
+    { id: 5, url:"", ids: 'fimg5', ptitle:'YOLOMART', pdesc:'Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media', name: 'Item 5', image: '/home/portfolio/gallery/yolomart.png', category: 'category2' },
 
-    { id: 6, ids: 'fimg6', ptitle:'TARABAI', pdesc:'Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media', name: 'Item 6', image: '/home/portfolio/gallery/tarabai.png', category: 'category1' },
+    { id: 6, url:"", ids: 'fimg6', ptitle:'TARABAI', pdesc:'Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media', name: 'Item 6', image: '/home/portfolio/gallery/tarabai.png', category: 'category1' },
 
-    { id: 7, ids: 'fimg7', ptitle:'CITIBANK', pdesc:'Illustrations | Presentation | Wall Graffiti', name: 'Item 7', image: '/home/portfolio/gallery/citibank.png', category: 'category1' },
+    { id: 7, url:"", ids: 'fimg7', ptitle:'CITIBANK', pdesc:'Illustrations | Presentation | Wall Graffiti', name: 'Item 7', image: '/home/portfolio/gallery/citibank.png', category: 'category1' },
 
-    { id: 8, ids: 'fimg8', ptitle:'Littile learners trove', pdesc:'Branding | Illustrations | Product Design | Packaging Design | Social Media', name: 'Item 8', image: '/home/portfolio/gallery/flash.png', category: 'category1' },
+    { id: 8, url:"", ids: 'fimg8', ptitle:'Littile learners trove', pdesc:'Branding | Illustrations | Product Design | Packaging Design | Social Media', name: 'Item 8', image: '/home/portfolio/gallery/flash.png', category: 'category1' },
 
-    { id: 9, ids: 'fimg9', ptitle:'Royal Wedding', pdesc:'Branding | Business Collaterals', name: 'Item 9', image: '/home/portfolio/gallery/royal.png', category: 'category2' },
+    { id: 9, url:"", ids: 'fimg9', ptitle:'Royal Wedding', pdesc:'Branding | Business Collaterals', name: 'Item 9', image: '/home/portfolio/gallery/royal.png', category: 'category2' },
 
-    { id: 10, ids: 'fimg10', ptitle:'Wuerth Industries', pdesc:'Publication - Coffee Table Book Design | Corporate Giftings', name: 'Item 10', image: '/home/portfolio/gallery/wru.png', category: 'category2' },
+    { id: 10, url:"", ids: 'fimg10', ptitle:'Wuerth Industries', pdesc:'Publication - Coffee Table Book Design | Corporate Giftings', name: 'Item 10', image: '/home/portfolio/gallery/wru.png', category: 'category2' },
 
-    { id: 11, ids: 'fimg11', ptitle:'Nutribee', pdesc:'Illustration | Packaging Design', name: 'Item 11', image: '/home/portfolio/gallery/bread.png', category: 'category2' },
+    { id: 11, url:"", ids: 'fimg11', ptitle:'Nutribee', pdesc:'Illustration | Packaging Design', name: 'Item 11', image: '/home/portfolio/gallery/bread.png', category: 'category2' },
     // Add more items with appropriate categories
   ];
 
@@ -702,7 +702,7 @@ const Home = () => {
     <div className={styles.videosec} >
     <div>
       {/* Other components or content */}
-      <VideoComponent />
+      <VideoComponent  videoSrc="/home/video/dds_intro.webm" />
       {/* More content */}
     </div>
     </div>

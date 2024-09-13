@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useEffect } from 'react';
 
-const VideoComponent = () => {
+const VideoComponent = ({ videoSrc }) => {
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const VideoComponent = () => {
       <video
         className="videoint"
         ref={videoRef}
-        src="/home/video/dds_intro.webm" // Replace with your video source
+        src={videoSrc} // Dynamic video source
         controls
         muted // Ensure muted for autoplay compliance
       />

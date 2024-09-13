@@ -45,7 +45,7 @@ const Gallery = ({ items = [] }) => {
                 <h4 className="imgtitle">{item.ptitle} </h4>
                 <p className="portdesc">{item.pdesc} </p>
                 <div className={styles.plink}>
-                  <Link href="#">
+                  <Link href={item.url}>
                   <Image
                     className={styles.plinks}
                     src="/home/plink.svg"
