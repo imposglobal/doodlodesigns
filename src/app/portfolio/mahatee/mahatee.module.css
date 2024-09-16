@@ -1,0 +1,417 @@
+.row {
+    /* padding: 40px 40px 0  40px; */
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px ; */
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    flex: 40%;
+    padding: 50px;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns1 {
+    flex: 60%;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns2 {
+    flex: 40%;
+
+   /* Should be removed. Only for demonstration */
+  }
+  .logosec{
+    padding-left: 80px;
+  }
+  .menuicon{
+    top: 0 !important;
+  }
+  .video{
+    background: #fff;
+  }
+  .headtext{
+    color: #692B82;
+    font-size: 24px;
+    font-family: 'poppins';
+  }
+  .mahateesec{
+    padding: 0 150px 80px 150px;
+    background: #fff;
+  }
+  .rowsec{
+    display: flex;
+    background: #fff;
+    padding: 50px 150px 0 150px;
+    align-items: center;
+  }
+  .rowsecs{
+    display: flex;
+    background: #fff;
+    padding: 0 150px 50px 150px;
+    align-items: center;
+  }
+  .rowsecw{
+    display: flex;
+    background: #fff;
+    padding: 50px 150px 50px 150px;
+    align-items: center;
+  }
+  .col1{
+    flex: 60%;
+  }
+  .col2{
+    flex: 40%;
+  }
+  .content{
+    padding-right: 64px;
+  }
+  .title{
+    font-style: italic;
+    font-size: 36px;
+    font-family: 'poppins';
+    line-height: 44px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-right: 50px;
+  }
+  .titles{
+    font-style: italic;
+    font-size: 36px;
+    font-family: 'poppins';
+    line-height: 44px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    color: #fff;
+    padding: 0 150px;
+    margin-bottom: -37px;
+  }
+  .desc{
+    margin-top: 20px;
+    font-family: 'poppins';
+    color: #692B82;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .highlight{
+    color: #F9A941;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'poppins';
+    margin-bottom: 15px;
+  }
+  .childimg{
+    margin-top: -81px;
+    z-index: 100;
+    position: relative;
+  }
+  .branding{
+    background-color: #fff;
+    text-align: center;
+  }
+  .branding img{
+    width: 100% !important;
+  }
+  .mahateeb{
+    margin-top: -10px;
+  }
+  .booksection{
+    padding: 0 150px;
+    background: #fff;
+  }
+  .brandt{
+    margin-top: 40px;
+    font-family: 'poppins';
+    color: #F9A941;
+    font-size: 34px;
+    line-height: 37px;
+    text-align: right;
+  }
+  .soicialsec{
+    background: #FCAD44;
+    padding: 80px 150px;
+  }
+  .socialt{
+    font-family: 'poppins';
+    color: #FFFFFF;
+    font-size: 34px;
+    line-height: 37px;
+    margin-bottom: 20px;
+  }
+  .socialdesc{
+    font-family: 'poppins';
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-right: 100px;
+  }
+  .websec{
+    background: #E6D1ED;
+    padding: 80px 150px;
+  }
+  .webt{
+    font-family: 'poppins';
+    color: #000;
+    font-size: 34px;
+    line-height: 37px;
+    margin-bottom: 20px;
+  }
+  .webdescs{
+    font-family: 'poppins';
+    color: #692B82;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-right: 400px;
+  }
+  .descbt{
+    margin-top: 20px;
+    font-family: 'poppins';
+    color: #692B82;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-left: 80px;
+  }
+  .slider{
+    background-color: #571977;
+    padding: 0 50px;
+  }
+  .frame{
+    text-align: right;
+  }
+  .frame img{
+    width: 50% !important;
+  }
+  .color{
+    margin-top: -50px;
+    padding-bottom: 50px;
+  }
+  .typo{
+    padding: 80px 150px;
+    background: #fff;
+    text-align: center;
+  }
+  .typo img{
+    width: 70% !important;
+  }
+  .rowcb{
+    display: flex;
+    align-items: center;
+  }
+  .colb1{
+    text-align: center;
+    background: #000;
+  }
+  .colb2{
+    text-align: center;
+    background: #AFFC41;
+  }
+  .colb1 img, .colb2 img{
+    width: 80% !important;
+  }
+  .rowimgs{
+    padding: 0; 
+    display: flex;
+  }
+  .fimg{
+    color: transparent;
+    width: 100%;
+    height: 57vw !important;
+    object-fit: cover;
+  }
+  .lottiesec {
+    padding: 100px 0;
+    background-image: url('/home/portfolios/coinsafe/map.png');
+    background-size: 70%;
+    background-position: center; /* Optional, ensures the image is centered */
+    background-repeat: no-repeat;
+}
+.lottiesec svg{
+    z-index: 100 !important;
+    position: relative;
+    margin-top: -200px;
+    
+}
+.webdesign{
+    text-align: center;
+}
+.webdesign img{
+    width: 70% !important;
+}
+.webdesc{
+    font-family: 'poppins';
+    font-size: 20px;
+    font-style: italic;
+    padding: 30px 80px 0 80px;
+}
+.video2{
+    background: #fff;
+    padding: 50px 0;
+}
+.desktop{
+    background: #fff;
+}
+.approw{
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.appcont{
+    padding: 100px 0;
+    background-image: url('/home/portfolios/coinsafe/map.png');
+    background-size: contain;
+    background-position: right; /* Optional, ensures the image is centered */
+    background-repeat: no-repeat;
+}
+.appdesc{
+    padding: 0 150px 0 40px;
+    font-size: 18px;
+    font-family: 'poppins';
+    color: #fff;
+}
+.thank{
+    padding: 40px 0 0 0;
+}
+.titleapp{
+    font-style: italic;
+    font-size: 36px;
+    font-family: 'poppins';
+    line-height: 44px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    color: #fff;
+    padding: 0 150px;
+    
+  }
+  @media only screen and (max-width: 600px) {
+    .grid {
+      gap: 1rem;
+      padding-bottom: 10px;
+    }
+    .logosec {
+      padding-left: 20px;
+  }
+  .column2 {
+    flex: 40% 1;
+    padding: 50px 20px;
+}
+.mlsec svg{
+    width: 100px;
+  }
+  .rowsec {
+    display: block;
+    background: #fff;
+    padding: 20px;
+    align-items: center;
+}
+.content {
+    padding-right: 0;
+}
+.title {
+    font-style: italic;
+    font-size: 27px;
+    font-family: 'poppins';
+    line-height: 37px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-right: 0;
+    margin-top: 17px;
+}
+.desc {
+    font-size: 16px;
+    font-family: 'poppins';
+    padding-right: 0;
+    padding-bottom: 20px;
+}
+.rowsecs {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    align-items: center;
+}
+.branding img {
+    width: 100% !important;
+}
+.typo {
+    padding: 54px 0;
+    background: #fff;
+    text-align: center;
+}
+.typo img{
+    width: 80% !important;
+}
+.lottiesec svg {
+    z-index: 100 !important;
+    position: relative;
+    margin-top: -66px;
+}
+.lottiesec {
+    padding: 100px 0;
+    background-image: url(/home/portfolios/coinsafe/map.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.rowsecw {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    align-items: center;
+}
+.webdesign img {
+    width: 100% !important;
+}
+.webdesc {
+    font-family: 'poppins';
+    font-size: 16px;
+    font-style: italic;
+    padding: 30px 0;
+}
+.titles {
+    font-style: italic;
+    font-size: 36px;
+    font-family: 'poppins';
+    line-height: 44px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 3px;
+}
+.approw {
+    display: block;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.appcont {
+    padding: 40px 0;
+    background-image: url(/home/portfolios/coinsafe/map.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.appdesc {
+    padding: 23px;
+    font-size: 16px;
+    font-family: 'poppins';
+    color: #fff;
+}
+.titleapp {
+    font-style: italic;
+    font-size: 24px;
+    font-family: 'poppins';
+    line-height: 44px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-right: 0;
+    color: #fff;
+    padding: 0;
+}
+}

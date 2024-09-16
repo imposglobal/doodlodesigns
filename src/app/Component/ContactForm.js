@@ -25,6 +25,45 @@ const ContactForm = () => {
     services: []
   });
 
+// get data from IP
+const [ip, setIp] = useState('');
+const [country, setCountry] = useState('');
+const [phoneCode, setPhoneCode] = useState('');
+
+// Fetch IP and location data
+useEffect(() => {
+  async function fetchData() {
+    try {
+      // Fetch IP address
+      const ipRes = await fetch('https://api.ipify.org?format=json');
+      const ipData = await ipRes.json();
+      setIp(ipData.ip);
+
+      // Fetch location information based on IP
+      const locationRes = await fetch(`https://ipapi.co/${ipData.ip}/json/`);
+      const locationData = await locationRes.json();
+      setCountry(locationData.country_name || 'Unknown');
+      
+      // Use country_calling_code from ipapi response
+      const phoneCode = locationData.country_calling_code || 'Unknown';
+      setPhoneCode(phoneCode);
+
+      // Update formData.code to reflect the phoneCode value
+      setFormData(prevData => ({
+        ...prevData,
+        code: phoneCode
+      }));
+
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setPhoneCode('Unknown');
+    }
+  }
+
+  fetchData();
+}, []);
+  // end
+
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [loading, setLoading] = useState(false);  // Loading state
@@ -41,12 +80,14 @@ const ContactForm = () => {
     { id: 'ecommerce', label: 'Ecommerce' },
   ];
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
+   // Handle changes to select input
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormData(prevData => ({
+    ...prevData,
+    [name]: value
+  }));
+};
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -54,7 +95,7 @@ const ContactForm = () => {
     setLoading(true);  // Set loading to true
 
     // Validation
-    if (!formData.name || !formData.email || !formData.message || !formData.code || !formData.phone) {
+    if (!formData.name || !formData.email || !formData.message  || !formData.phone) {
       setFormError("Please fill in all required fields.");
       setLoading(false);  // Set loading to false
       return;
@@ -229,7 +270,7 @@ const ContactForm = () => {
                     id="country-code-select"
                     className={styles.dropdown}
                   >
-                    <option value="">Country</option>
+                     <option se value={phoneCode}>{country} ({phoneCode})</option>
                     {countries.map((country) => (
                       <option
                         key={country.cca2}

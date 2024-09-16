@@ -17,10 +17,13 @@ const useFetchCountries = () => {
         }
         const data = await response.json();
         setCountries(data);
+        console.log('Countries:', data); // Log the fetched countries
       } catch (error) {
         setError(error.message);
+        console.error('Error:', error.message); // Log the error
       } finally {
         setLoading(false);
+        console.log('Loading state:', false); // Log the loading state
       }
     };
 

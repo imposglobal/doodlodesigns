@@ -145,11 +145,11 @@ const coinsafe = () => {
             </div>
         </div>
         </div>
-        <div data-aos="fade-up" className={styles.video}>
+        <div className={styles.video}>
         <VideoComponent videoSrc="/home/portfolios/coinsafe/Coinsafe-Logo-Reveal-1.mp4" />
         </div>
         <div className={styles.rowsec}>
-            <div className={styles.col1} data-aos="fade-up">
+            <div className={styles.col1}>
                 <Image
                        
                         src="/home/portfolios/coinsafe/laptop.png"
@@ -162,11 +162,11 @@ const coinsafe = () => {
             </div>
             <div className={styles.col2}>
                 <div className={styles.content}>
-                    <h3 data-aos="fade-up" className={styles.title}>
+                    <h3 className={styles.title}>
                     Coinsafe VPN:<br></br>
                     Elevating Cybersecurity
                     </h3>
-                    <p data-aos="fade-up" className={styles.desc}>
+                    <p className={styles.desc}>
                     Collaborating with Coinsafe VPN, a leading provider of cybersecurity solutions, to craft a brand identity and website that truly reflect their commitment to security and innovation.
 
 
@@ -176,10 +176,10 @@ const coinsafe = () => {
         </div>
         <div className={styles.rowsecs}>
             <div className={styles.col2}>
-            <h3 data-aos="fade-up" className={styles.title}>
+            <h3 className={styles.title}>
             Branding:
                     </h3>
-                <div data-aos="fade-up" className={styles.branding}>
+                <div className={styles.branding}>
                 <Image
                        
                        src="/home/portfolios/coinsafe/equal.png"
@@ -192,7 +192,7 @@ const coinsafe = () => {
                 </div>
             </div>
             </div>
-            <div className={styles.coinsafe} data-aos="fade-up">
+            <div className={styles.coinsafe}>
                 <Image
                        
                        src="/home/portfolios/coinsafe/coinsafe.png"
@@ -203,7 +203,7 @@ const coinsafe = () => {
                        priority
                   />
             </div>
-            <div className={styles.typo} data-aos="fade-up">
+            <div className={styles.typo}>
                 <Image
                        
                        src="/home/portfolios/coinsafe/typo.png"
@@ -215,7 +215,7 @@ const coinsafe = () => {
                   />
             </div>
             <div className={styles.rowcb}>
-                <div data-aos="fade-up" className={styles.colb1}>
+                <div className={styles.colb1}>
                     <Image
                        src="/home/portfolios/coinsafe/black.png"
                        alt="Next.js Logo"
@@ -225,7 +225,7 @@ const coinsafe = () => {
                        priority
                   />
                 </div>
-                <div data-aos="fade-up" className={styles.colb2}>
+                <div className={styles.colb2}>
                 <Image
                        src="/home/portfolios/coinsafe/color.png"
                        alt="Next.js Logo"
@@ -240,7 +240,7 @@ const coinsafe = () => {
                 <div className={styles.columns1}>
                     <div className={styles.row}>
                         <div className={styles.col1}>
-                    <Image data-aos="fade-up"
+                    <Image
                        src="/home/portfolios/coinsafe/1.png"
                        alt="Next.js Logo"
                        layout="responsive"
@@ -250,7 +250,7 @@ const coinsafe = () => {
                   />
                         </div>
                         <div className={styles.col2}>
-                        <Image data-aos="fade-up"
+                        <Image
                        src="/home/portfolios/coinsafe/2.png"
                        alt="Next.js Logo"
                        layout="responsive"
@@ -261,7 +261,7 @@ const coinsafe = () => {
                         </div>
                     </div>
                     <div className={styles.row}>
-                    <Image data-aos="fade-up"
+                    <Image
                        src="/home/portfolios/coinsafe/3.png"
                        alt="Next.js Logo"
                        layout="responsive"
@@ -272,7 +272,7 @@ const coinsafe = () => {
                     </div>
                 </div>
                 <div className={styles.columns2}>
-                <Image data-aos="fade-up"
+                <Image
                        className={styles.fimg}
                        src="/home/portfolios/coinsafe/4.png"
                        alt="Next.js Logo"
@@ -288,10 +288,10 @@ const coinsafe = () => {
             </div>
             <div className={styles.rowsecw}>
             <div className={styles.col2}>
-            <h3 data-aos="fade-up" className={styles.title}>
+            <h3 className={styles.title}>
             Website Design:
                     </h3>
-                <div data-aos="fade-up" className={styles.webdesign}>
+                <div className={styles.webdesign}>
                 <Image
                        
                        src="/home/portfolios/coinsafe/websdesign.png"
@@ -307,10 +307,10 @@ const coinsafe = () => {
                 </div>
             </div>
             </div>
-        <div data-aos="fade-up" className={styles.video2}>
+        <div className={styles.video2}>
         <VideoComponent videoSrc="/home/portfolios/coinsafe/video2.mp4" />
         </div>
-        <div className={styles.desktop} data-aos="fade-up">
+        <div className={styles.desktop}>
                 <Image
                        
                        src="/home/portfolios/coinsafe/desktop.png"
@@ -321,8 +321,8 @@ const coinsafe = () => {
                        priority
                   />
             </div>
-            <div data-aos="fade-up" className={styles.video2}>
-            <h3 data-aos="fade-up" className={styles.titles}>
+            <div className={styles.video2}>
+            <h3 className={styles.titles}>
             App:
                     </h3>
         <VideoComponent videoSrc="/home/portfolios/coinsafe/app.mp4" />
@@ -330,7 +330,7 @@ const coinsafe = () => {
         <div className={styles.approw}>
             <div className={styles.col1}>
             <Image
-                       data-aos="fade-up"
+                      
                        src="/home/portfolios/coinsafe/app.png"
                        alt="Next.js Logo"
                        layout="responsive"
@@ -340,20 +340,20 @@ const coinsafe = () => {
                   />
             </div>
             <div className={styles.col2}>
-                <div className={styles.appcont} data-aos="fade-up">
-                    <p className={styles.appdesc} data-aos="fade-up">
+                <div className={styles.appcont}>
+                    <p className={styles.appdesc}>
                     With a blend of captivating visuals, persuasive copy, and seamless functionality, the Coinsafe VPN website and app serve as powerful tools for engaging users and driving conversions.
                     </p>
                 </div>
             </div>
         </div>
-        <div data-aos="fade-up" className={styles.thank}>
-            <h3 data-aos="fade-up" className={styles.titleapp} style={{ textAlign: 'center' }}>
+        <div className={styles.thank}>
+            <h3 className={styles.titleapp} style={{ textAlign: 'center' }}>
             Thanks for watching
                     </h3>
                     <div>
                     <Image 
-                       data-aos="fade-up"
+                      
                        src="/home/portfolios/coinsafe/thank.png"
                        alt="Next.js Logo"
                        layout="responsive"
