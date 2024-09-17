@@ -1,4 +1,4 @@
-"use client()";
+"use client";
 // useFetchCountries.js
 
 import { useState, useEffect } from 'react';
@@ -16,8 +16,12 @@ const useFetchCountries = () => {
           throw new Error('Failed to fetch countries');
         }
         const data = await response.json();
-        setCountries(data);
-        console.log('Countries:', data); // Log the fetched countries
+        // Sort the countries alphabetically by their common name
+        const sortedData = data.sort((a, b) => 
+          (a.name.common > b.name.common) ? 1 : -1
+        );
+        setCountries(sortedData);
+        console.log('Countries:', sortedData); // Log the fetched countries
       } catch (error) {
         setError(error.message);
         console.error('Error:', error.message); // Log the error
