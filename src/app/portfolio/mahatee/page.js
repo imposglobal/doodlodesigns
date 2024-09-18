@@ -164,7 +164,7 @@ const Mahatee = () => {
             </div>
         </div>
         </div>
-        <div data-aos="fade-up" className={styles.video}>
+        <div className={styles.video}>
         <VideoComponent videoSrc="/home/portfolios/mahatee/mahatee.mp4" />
         </div>
         <div className={styles.mahateesec}>
@@ -313,6 +313,88 @@ const Mahatee = () => {
                   />
                 </div>
             </div>
+        </div>
+        <div className={styles.bookdesignsec}>
+          <h3 className={styles.bookdesignt}>Book Design and Illustration</h3>
+          <p className={styles.webdescs}>Doodlo Design Studio ventured into the world of storytelling. With skillful illustrations and captivating book design, they transformed narratives into captivating visual journeys for young readers.</p>
+        </div>
+        <div className={styles.bdprocess}>
+          <div className={styles.row}>
+            <div className={styles.bdcol1}>
+            <h3 className={styles.bdtext}>Book Design and Illustration</h3>
+            <ol className={styles.olist}>
+              <li>Story Book Research & Conceptualization</li>
+              <li>Define your Illustration Style Explorations</li>
+              <li>Character Development</li>
+              <li>First Draft of Storyboarding</li>
+              <li>Detailed Illustration Based on Feedbacks</li>
+              <li>Color and Mood</li>
+              <li>Layout and Design</li>
+              <li>Review and Iteration</li>
+              <li>Finalization</li>
+              <li>Cover Book Design</li>
+            </ol>
+
+            </div>
+            <div className={styles.bdcol2}></div>
+          </div>
+        </div>
+        <div className={styles.storybsec}>
+          <div className={styles.rowsb}>
+            <div className={styles.scol1}>
+            <Image
+                       src="/home/portfolios/mahatee/ganpati.png"
+                       alt="Next.js Logo"
+                       layout="responsive"
+                       width={100}
+                       height={37}
+                       priority
+                  />
+            </div>
+            <div className={styles.scol2}>
+              <h3 className={styles.sbtext}>Ganesha Stories Board Books</h3>
+              <p className={styles.sbdesc}>
+              Based on<br></br>
+              Purāṇas and<br></br>
+              Ancient scriptures.
+              </p>
+            </div>
+            <div className={styles.scol3}>
+            <Image
+                       src="/home/portfolios/mahatee/frame1.webp"
+                       alt="Next.js Logo"
+                       layout="responsive"
+                       width={100}
+                       height={37}
+                       priority
+                  />
+            </div>
+          </div>
+        </div>
+        <div className={styles.books}>
+            <div className={styles.rowsb}>
+            <div className={styles.bocol1}>
+           <p className={styles.bodesc}>
+           With our skillful illustrations and captivating book design, We transformed narratives into captivating visual journeys for young readers.<br></br><br></br>
+
+From branding to storybooks, our creativity resonated with Mahatee Interactives’ vision, leaving an indelible mark on hearts and imaginations.
+           </p>
+            </div>
+            <div className={styles.bocol2}>
+            <Image      className={styles.gimg}
+                       src="/home/portfolios/mahatee/ganpati2.webp"
+                       alt="Next.js Logo"
+                       layout="responsive"
+                       width={100}
+                       height={37}
+                       priority
+                  />
+            </div>
+            </div>
+        </div>
+        <div className={styles.thanku}>
+          <h3>Thank You For Watching
+          </h3>
         </div>
         </div>
     );

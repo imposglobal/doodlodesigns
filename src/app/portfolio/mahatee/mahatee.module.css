@@ -289,6 +289,109 @@
     padding: 0 150px;
     
   }
+  .bookdesignsec{
+    background: #fff;
+    padding: 50px 150px;
+  }
+  .bookdesignt{
+    font-family: 'poppins';
+    color: #000;
+    font-size: 34px;
+    line-height: 37px;
+    margin-bottom: 20px;
+  }
+.bdprocess{
+  background: #fff;
+}
+  .bdcol1{
+    background: #FCAD44;
+    width: 45%;
+    padding: 80px 100px 50px 100px;
+  }
+  .bdcol2{
+    width: 65%;
+    background-image: url(/home/portfolios/mahatee/bdprocess.webp);
+    background-size: cover;
+  }
+  .bdtext{
+    font-family: 'poppins';
+    color: #692B82;
+    font-size: 34px;
+    line-height: 37px;
+    margin-bottom: 20px;
+  }
+  .olist{
+    font-family: 'poppins';
+    color: #fff;
+    font-size: 18px;
+    line-height: 37px;
+    margin-bottom: 20px;
+  }
+  .storybsec{
+    background: #692B82;
+    padding: 50px 150px;
+  }
+  .rowsb{
+    align-items: center;
+    display: flex;
+  }
+  .scol1{
+    width: 50%;
+  }
+  .scol2{
+    padding: 0 0px 0 77px;
+    width: 30%;
+  }
+  .scol3{
+    width: 20%;
+  }
+  .sbtext{
+    color: #FFFFFF;
+    font-size: 34px;
+    line-height: 37px;
+    font-family: 'poppins';
+  }
+  .sbdesc{
+    margin-top: 20px;
+    text-align: left;
+    color: #FFFFFF;
+    font-family: 'poppins';
+    font-size: 16px;
+  }
+ .books{
+  margin-top: -80px;
+  background: #692B82;
+ }
+ .bocol1{
+  padding: 50px 150px;
+  width: 55%;
+  background: #fff;
+ }
+ .bodesc{
+  font-family: 'poppins';
+    color: #692B82;
+    font-size: 16px;
+    margin-bottom: 20px;
+ }
+ .gimg{
+  margin-left: -50px;
+ }
+ .thanku{
+  justify-content: center;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  background-image: url(/home/portfolios/mahatee/bak.webp);
+    background-size: cover;
+ }
+ .thanku h3{
+  text-align: center;
+  color: #FCAD44;
+    font-size: 34px;
+    line-height: 37px;
+    font-family: 'poppins';
+ }
   @media only screen and (max-width: 600px) {
     .grid {
       gap: 1rem;
@@ -413,5 +516,179 @@
     margin-right: 0;
     color: #fff;
     padding: 0;
+}
+.mahateesec {
+  padding: 30px 20px;
+  background: #fff;
+}
+.mahateesec .row{
+  display: block;
+}
+.childimg {
+  margin-top: 0;
+  z-index: 100;
+  position: relative;
+}
+.color{
+  margin-top: 0;
+  padding-bottom: 0;
+}
+.booksection {
+  padding: 20px;
+  background: #fff;
+}
+.booksection .row{
+  display: block;
+}
+.books {
+  margin-top: 9px;
+  background: #692B82;
+}
+.brandt {
+  margin-top: 40px;
+  font-family: 'poppins';
+  color: #F9A941;
+  font-size: 26px;
+  line-height: 37px;
+  text-align: left;
+}
+.descbt {
+  margin-top: 20px;
+  font-family: 'poppins';
+  color: #692B82;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 0;
+}
+.frame img {
+  width: 33% !important;
+}
+.slider {
+  background-color: #571977;
+  padding: 40px 20px;
+}
+.soicialsec {
+  background: #FCAD44;
+  padding: 40px 20px;
+}
+.socialdesc {
+  font-family: 'poppins';
+  color: #FFFFFF;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding-right: 0;
+}
+.websec {
+  background: #E6D1ED;
+  padding: 40px 20px;
+}
+.webdescs {
+  font-family: 'poppins';
+  color: #692B82;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding-right: 0;
+}
+.bookdesignsec {
+  background: #fff;
+  padding: 40px 20px;
+}
+.bookdesignt {
+  font-family: 'poppins';
+  color: #000;
+  font-size: 26px;
+  line-height: 37px;
+  margin-bottom: 20px;
+}
+.bdprocess .row{
+  display: block;
+}
+.bdcol1 {
+  background: #FCAD44;
+  width: 100%;
+  padding: 40px 20px;
+}
+.bdtext {
+  font-family: 'poppins';
+  color: #692B82;
+  font-size: 28px;
+  line-height: 37px;
+  margin-bottom: 20px;
+}
+.olist {
+  font-family: 'poppins';
+  color: #fff;
+  font-size: 14px;
+  line-height: 37px;
+  margin-bottom: 20px;
+}
+.storybsec {
+  background: #692B82;
+  padding: 40px 20px;
+  margin-bottom: -10px;
+}
+.rowsb{
+  display: block;
+}
+.scol1 {
+  width: 100%;
+}
+.scol2 {
+  padding: 0;
+  width: 100%;
+  margin-top: 23px;
+}
+.sbtext {
+  color: #FFFFFF;
+  font-size: 26px;
+  line-height: 31px;
+  font-family: 'poppins';
+}
+.scol3 {
+  width: 100%;
+  text-align: right;
+}
+.scol3 img{
+  margin-top: -50px;
+  width: 50% !important;
+  text-align: right;
+}
+.bocol1 {
+  padding: 40px 20px;
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+}
+.gimg {
+  margin-left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.thanku {
+  justify-content: center;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  height: 170px;
+  background-image: url(/home/portfolios/mahatee/bak.webp);
+  background-size: contain;
+}
+.thanku h3{
+  font-size: 26px;
+}
+.webt {
+  font-family: 'poppins';
+  color: #000;
+  font-size: 26px;
+  line-height: 37px;
+  margin-bottom: 20px;
+}
+.socialt {
+  font-family: 'poppins';
+  color: #FFFFFF;
+  font-size: 26px;
+  line-height: 37px;
+  margin-bottom: 20px;
 }
 }

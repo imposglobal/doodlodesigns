@@ -270,14 +270,14 @@ const handleChange = (e) => {
                     id="country-code-select"
                     className={styles.dropdown}
                   >
-                     <option se value={phoneCode}>{country} ({phoneCode})</option>
+                     <option value={phoneCode}>{phoneCode} ({country})</option>
                     {countries.map((country) => (
                       <option
                         key={country.cca2}
                         value={country.idd.root + (country.idd.suffixes ? country.idd.suffixes[0] : "")}
                       >
-                        {country.name.common} ({country.idd.root}
-                        {country.idd.suffixes ? country.idd.suffixes[0] : ""})
+                        {country.idd.root}
+                        {country.idd.suffixes ? country.idd.suffixes[0] : ""} ({country.name.common})
                       </option>
                     ))}
                   </select>

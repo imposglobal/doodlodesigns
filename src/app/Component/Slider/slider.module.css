@@ -30,4 +30,13 @@
   .swiper-button-next::after, .swiper-button-prev::after {
     font-size: 20px; /* Ensure font size is appropriate */
   }
+  @media only screen and (max-width: 600px) {
+    .slide-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      margin-bottom: 20;
+  }
   
+  }

@@ -31,7 +31,7 @@ const Gallery = ({ items = [] }) => {
       </div>
 
       <div className="gallery">
-        {filteredItems.map(item => (
+      {filteredItems.map(item => (
           <div id={item.ids}  key={item.id} className={`gallery-item ${activeFilter !== 'all' ? 'imgauto' : ''}`}
 >
             <img 
@@ -45,7 +45,7 @@ const Gallery = ({ items = [] }) => {
                 <h4 className="imgtitle">{item.ptitle} </h4>
                 <p className="portdesc">{item.pdesc} </p>
                 <div className={styles.plink}>
-                  <Link href="#">
+                  <Link href={item.url}>
                   <Image
                     className={styles.plinks}
                     src="/home/plink.svg"
