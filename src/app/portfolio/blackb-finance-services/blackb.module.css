@@ -1,0 +1,449 @@
+.row {
+    /* padding: 40px 40px 0  40px; */
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px ; */
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    flex: 40%;
+    padding: 50px;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns1 {
+    flex: 60%;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns2 {
+    flex: 40%;
+
+   /* Should be removed. Only for demonstration */
+  }
+  .logosec{
+    padding-left: 80px;
+  }
+  .menuicon{
+    top: 0 !important;
+  }
+  .video{
+
+  }
+  .rowsec{
+    display: flex;
+    background: #fff;
+    padding: 50px 150px 0 150px;
+    align-items: center;
+  }
+  .rowsecs{
+    display: flex;
+    background: #fff;
+    padding: 0 150px 50px 150px;
+    align-items: center;
+  }
+  .rowsecw{
+    display: flex;
+    background: #fff;
+    padding: 50px 150px 50px 150px;
+    align-items: center;
+  }
+  .col1{
+    flex: 50%;
+  }
+  .col2{
+    flex: 50%;
+  }
+  .content{
+    padding-right: 64px;
+  }
+  .blackb{
+    background-color: black;
+  }
+  .about{
+    margin-top: -5px;
+    background-color: #252364;
+    padding: 50px 150px;
+  }
+  .content{
+    padding: 50px;
+  }
+  .atitle{
+    margin-top: 50px;
+    color: var( --e-global-color-global_color_9 );
+    font-family: "poppins";
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.5px;
+    word-spacing: 0px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .adesc{
+    text-align: left;
+    color: #fff;
+    font-family: "poppins";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  .iconlist{
+    margin-top: 30px;
+  }
+  .icontitle{
+    font-family: "poppins";
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  .icontitle::before{
+    content: '◉';
+    color: yellow;
+    margin-right: 10px;
+  }
+  .icondesc{
+    text-align: left;
+    color: #5D7BBA;
+    font-family: "poppins";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 28px;
+  }
+  .icontitles{
+    font-family: "poppins";
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  .icontitles::before{
+    content: '◉';
+    color: #2367F6;
+    margin-right: 10px;
+  }
+  .divider{
+    margin-top: 20px;
+    width: 100%;
+    height: 1px;
+    background: #fff !important;
+  }
+  .colorpal{
+    text-align: center;
+    padding: 30px;
+  }
+  .colorp{
+    font-family: "poppins";
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-align: left;
+  }
+  .typef{
+    font-family: "poppins";
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: -30px;
+  }
+  .colorpal img{
+    width: 80% !important;
+  }
+  .font{
+    width: 30% !important;
+    object-fit: scale-down;
+  }
+  .font1{
+    width: 30% !important;
+    object-fit: scale-down;
+    margin-right: 40px;
+  }
+  .images{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Optional: to add space between the grid items */
+  }
+  .imgs{
+    width: 102% !important;
+    height: 160px !important;
+    object-fit: scale-down;
+    margin: 36px 0;
+  }
+  .bimg{
+    background: #252364;
+  }
+  .bbvideo{
+    background: #252364;
+  }
+  .thanky{
+    background: #252364;
+    padding: 50px 0;
+  }
+  .msg{
+    font-family: "poppins";
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-align: center;
+    padding: 0 200px;
+  }
+  .tmsg{
+    margin-top: 40px;
+    font-family: "poppins";
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    background: #2367F6;
+  }
+  @media only screen and (max-width: 600px) {
+    .grid {
+      gap: 1rem;
+      padding-bottom: 10px;
+    }
+    .logosec {
+      padding-left: 20px;
+  }
+  .column2 {
+    flex: 40% 1;
+    padding: 50px 20px;
+}
+.mlsec svg{
+    width: 100px;
+  }
+  .rowsec {
+    display: block;
+    background: #fff;
+    padding: 20px;
+    align-items: center;
+}
+.content {
+    padding-right: 0;
+}
+.title {
+    font-style: italic;
+    font-size: 27px;
+    font-family: 'poppins';
+    line-height: 37px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-right: 0;
+    margin-top: 17px;
+}
+.desc {
+    font-size: 16px;
+    font-family: 'poppins';
+    padding-right: 0;
+    padding-bottom: 20px;
+}
+.rowsecs {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    align-items: center;
+}
+.branding img {
+    width: 100% !important;
+}
+.typo {
+    padding: 54px 0;
+    background: #fff;
+    text-align: center;
+}
+.typo img{
+    width: 80% !important;
+}
+.lottiesec svg {
+    z-index: 100 !important;
+    position: relative;
+    margin-top: -66px;
+}
+.lottiesec {
+    padding: 100px 0;
+    background-image: url(/home/portfolios/coinsafe/map.png);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.rowsecw {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+    align-items: center;
+}
+.webdesign img {
+    width: 100% !important;
+}
+.webdesc {
+    font-family: 'poppins';
+    font-size: 16px;
+    font-style: italic;
+    padding: 30px 0;
+}
+.titles {
+    font-style: italic;
+    font-size: 36px;
+    font-family: 'poppins';
+    line-height: 44px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 3px;
+}
+.approw {
+    display: block;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.appcont {
+    padding: 40px 0;
+    background-image: url(/home/portfolios/coinsafe/map.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.appdesc {
+    padding: 23px;
+    font-size: 16px;
+    font-family: 'poppins';
+    color: #fff;
+}
+.titleapp {
+    font-style: italic;
+    font-size: 24px;
+    font-family: 'poppins';
+    line-height: 44px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-right: 0;
+    color: #fff;
+    padding: 0;
+}
+.about {
+  margin-top: -4px;
+  background-color: #252364;
+  padding: 020px;
+}
+.about .row{
+  display: block;
+}
+.content {
+  padding: 0;
+}
+.atitle {
+  margin-top: 36px;
+  color: var(--e-global-color-global_color_9);
+  font-family: "poppins";
+  font-size: 26px;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  word-spacing: 0px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.adesc {
+  text-align: left;
+  color: #fff;
+  font-family: "poppins";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.icontitle {
+  font-family: "poppins";
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.icondesc {
+  text-align: left;
+  color: #5D7BBA;
+  font-family: "poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 28px;
+}
+.icontitles {
+  font-family: "poppins";
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 9px;
+  font-weight: 300;
+}
+.iconlist {
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+.mart{
+  margin-top: -20px;
+}
+.colorp {
+  font-family: "poppins";
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 300;
+  text-align: left;
+}
+.colorpal img {
+  width: 100% !important;
+  margin-top: 30px;
+}
+.font1 {
+  width: 30% !important;
+  object-fit: scale-down;
+  margin-right: 34px;
+}
+.typef {
+  font-family: "poppins";
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.font {
+  width: 18% !important;
+  object-fit: scale-down;
+  margin-right: 28px;
+}
+.imgs {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: scale-down;
+  margin: 10px 0;
+}
+.msg {
+  font-family: "poppins";
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 300;
+  text-align: center;
+  padding: 0 20px;
+}
+}
