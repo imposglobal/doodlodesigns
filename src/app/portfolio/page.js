@@ -31,10 +31,10 @@ const Portfolio = () => {
     };
 
     const portfolioItems = [
-      {no:"01", url:"",  id: 1, title: "SWIGGY + BOWL COMPANY", category: "Packaging Design | Marketing collaterals | Advertising ", imageUrl: "/home/portfolio/1.png" },
+      {no:"01", url:"/portfolio/swiggy-x-the-bowl-company",  id: 1, title: "SWIGGY + BOWL COMPANY", category: "Packaging Design | Marketing collaterals | Advertising ", imageUrl: "/home/portfolio/1.png" },
       {no:"02", url:"/portfolio/coinsafe-vpn",  id: 2, title: "COINSAFE VPN", category: "Branding | Website UI | Web Development | Application | Marketing Collaterals", imageUrl: "/home/portfolio/csafe.gif" },
-      {no:"03", url:"",  id: 3, title: "TARABAI", category: "Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media", imageUrl: "/home/portfolio/5.png" },
-      {no:"04", url:"",  id: 4, title: "BLACK B FINANCE", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/blackb.gif" },
+      {no:"03", url:"/portfolio/tarabai",  id: 3, title: "TARABAI", category: "Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media", imageUrl: "/home/portfolio/5.png" },
+      {no:"04", url:"/portfolio/blackb-finance-services",  id: 4, title: "BLACK B FINANCE", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/blackb.gif" },
       {no:"05", url:"",  id: 5, title: "YOLOMART", category: "Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media", imageUrl: "/home/portfolio/yolomart.png" },
       {no:"06", url:"/portfolio/mahatee",  id: 6, title: "MAHATEE INTERACTIVES", category: "Branding | Website UI | Shopify Development | Ecommerce Setup | Illustrations | Publication & Book Design | Social Media", imageUrl: "/home/portfolio/mahatee.gif" },
       {no:"07", url:"",  id: 7, title: "Click R & D", category: "Branding | Website UI | Social Media", imageUrl: "/home/portfolio/clickrnd.jpg" },

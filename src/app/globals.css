@@ -983,6 +983,12 @@ height: 400px;
 .mahatee_logosec__SYqgY .menuicon {
   top: 0;
 }
+.swiggy_logosec__zvq3W .menuicon {
+  top: 0;
+}
+.tarabai_logosec__h51ld .menuicon {
+  top: 0;
+}
 .mahatee_video__eCDBc video.videoint {
   width: 53%;
   padding: 3px 0 10px 0;
@@ -997,7 +1003,12 @@ height: 400px;
 .blackb_bbvideo__3th9V video.videoint{
   width: 100%;
 }
-
+.tarabai_slidert__DphwH .slider_slide-item__KYud_ img{
+  width: 100%;
+}
+video.videoint::-webkit-media-controls {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   .blackb_bbvideo__3th9V video.videoint {
     width: 100%;

@@ -194,17 +194,17 @@ const handleChange = (e) => {
 
     //gallery
     const items = [
-      { id: 1, url:"", ids: 'fimg1', ptitle:'SWIGGY + BOWL COMPANY', pdesc:'Packaging Design | Marketing collaterals | Advertising', name: 'Item 1', image: '/home/portfolio/gallery/swiggy.png', category: 'category1' },
+      { id: 1, url:"/portfolio/swiggy-x-the-bowl-company", ids: 'fimg1', ptitle:'SWIGGY + BOWL COMPANY', pdesc:'Packaging Design | Marketing collaterals | Advertising', name: 'Item 1', image: '/home/portfolio/gallery/swiggy.png', category: 'category1' },
   
       { id: 2, url:"/portfolio/coinsafe-vpn", ids: 'fimg2', ptitle:'COINSAFE VPN', pdesc:'Branding | Website UI | Web Development | Application | Marketing Collaterals', name: 'Item 2', image: '/home/portfolio/gallery/coinsafe.png', category: 'category2' },
   
-      { id: 3, url:"", ids: 'fimg3', ptitle:'BLACK B FINANCE', pdesc:'Branding | Website UI | Web Development', name: 'Item 3', image: '/home/portfolio/gallery/blackb.png', category: 'category2' },
+      { id: 3, url:"/portfolio/blackb-finance-services", ids: 'fimg3', ptitle:'BLACK B FINANCE', pdesc:'Branding | Website UI | Web Development', name: 'Item 3', image: '/home/portfolio/gallery/blackb.png', category: 'category2' },
   
       { id: 4, url:"", ids: 'fimg4', ptitle:'Click R & D', pdesc:'Branding | Website UI | Social Media', name: 'Item 4', image: '/home/portfolio/gallery/clickrnd.png', category: 'category1' },
   
       { id: 5, url:"", ids: 'fimg5', ptitle:'YOLOMART', pdesc:'Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media', name: 'Item 5', image: '/home/portfolio/gallery/yolomart.png', category: 'category2' },
   
-      { id: 6, url:"", ids: 'fimg6', ptitle:'TARABAI', pdesc:'Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media', name: 'Item 6', image: '/home/portfolio/gallery/tarabai.png', category: 'category1' },
+      { id: 6, url:"/portfolio/tarabai", ids: 'fimg6', ptitle:'TARABAI', pdesc:'Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media', name: 'Item 6', image: '/home/portfolio/gallery/tarabai.png', category: 'category1' },
   
       { id: 7, url:"", ids: 'fimg7', ptitle:'CITIBANK', pdesc:'Illustrations | Presentation | Wall Graffiti', name: 'Item 7', image: '/home/portfolio/gallery/citibank.png', category: 'category1' },
   
