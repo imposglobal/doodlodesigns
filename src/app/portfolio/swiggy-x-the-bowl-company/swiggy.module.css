@@ -1,0 +1,177 @@
+.row {
+    /* padding: 40px 40px 0  40px; */
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px ; */
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    flex: 40%;
+    padding: 50px;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns1 {
+    flex: 60%;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns2 {
+    flex: 40%;
+
+   /* Should be removed. Only for demonstration */
+  }
+  .logosec{
+    padding-left: 80px;
+  }
+  .menuicon{
+    top: 0 !important;
+  }
+
+
+  .herosec
+  {
+   padding: 0;
+   margin: 0;
+  }
+  
+  .rowsec
+  {
+    display: flex;
+    background: #fff;
+    padding: 70px 150px 70px 150px;
+    margin-top: -5px;
+  
+  }
+
+  .col1
+  {
+    flex:60%;
+  }
+
+  .col2
+  {
+    flex:40%;
+  }
+
+  .content
+  {
+    padding-top: 20px;
+    padding-right: 180px;
+  }
+
+  .aboutheading
+  {
+    font-size: 50px;
+    font-family: 'poppins';
+    font-weight: 600;
+  }
+
+  .apara
+  {
+    font-family: 'poppins';
+    font-size: 18px;
+    color: #9E9E9E;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .challengeheading
+  {
+    font-size: 22px;
+    font-family: 'poppins';
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
+  
+
+  .imagesec
+  {
+    margin-top: -5px;
+  }
+
+  .whitebgsec
+  {
+    background-color: #fff;
+    margin-top: -5px;
+    padding: 30px 150px;
+  }
+
+  .fsec
+  {
+    background-color: #fff;
+    padding: 50px 0;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .fimg
+  {
+    width: 25%;
+  }
+
+
+  /* responsive  */
+
+  @media only screen and (max-width: 600px)
+  {
+  .logosec 
+  {
+      padding-left: 20px;
+  }
+  .column2 {
+    flex: 40% 1;
+    padding: 50px 20px;
+   }
+
+   .rowsec
+   {
+    display: block;
+    padding: 40px 20px;
+   }
+
+   .content
+   {
+    padding: 0;
+   }
+
+   .aboutheading
+   {
+    font-size: 27px;
+    font-family: 'poppins';
+    line-height: 37px;
+    margin-bottom: 10px;
+   }
+
+   .apara
+   {
+    font-size: 16px;
+   }
+   .challengeheading
+   {
+    font-size: 18px;
+    padding-top: 20px;
+   }
+
+   .col2
+   {
+    padding: 20px;
+   }
+  .whitebgsec
+  {
+    padding: 10px 20px;
+  }  
+  .fimg
+  {
+    width: 50%;
+  }
+
+  }
+ 
