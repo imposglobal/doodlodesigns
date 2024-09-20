@@ -41,7 +41,7 @@ const Portfolio = () => {
       {no:"08", url:"portfolio/citibank",  id: 8, title: "CITIBANK", category: "Illustrations | Presentation | Wall Graffiti", imageUrl: "/home/portfolio/6.png" },
       {no:"09", url:"/portfolio/nutribee",  id: 9, title: "Nutribee", category: "Illustration | Packaging Design", imageUrl: "/home/portfolio/10.png" },
       {no:"10", url:"",  id: 10, title: "Littile learners trove", category: "Branding | Illustrations | Product Design | Packaging Design | Social Media", imageUrl: "/home/portfolio/12.png" },
-      {no:"11", url:"",  id: 11, title: "Wuerth Industries", category: "Publication - Coffee Table Book Design | Corporate Giftings", imageUrl: "/home/portfolio/8.png" },
+      {no:"11", url:"/portfolio/coffee-table-book",  id: 11, title: "Wuerth Industries", category: "Publication - Coffee Table Book Design | Corporate Giftings", imageUrl: "/home/portfolio/8.png" },
       {no:"12", url:"",  id: 12, title: "Royal Wedding ", category: "Branding | Business Collaterals", imageUrl: "/home/portfolio/11.png" },
       
       // Add more items as needed

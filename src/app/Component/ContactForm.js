@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import useFetchCountries from "./useFetchCountries";
+import Link from "next/link";
 
 const ContactForm = () => {
   useEffect(() => {
@@ -190,7 +191,7 @@ const handleChange = (e) => {
             You can connect us directly on our social media.
           </p>
           <div data-aos="fade-up" className={styles.socialmedia}>
-            <a href="">
+            <Link href="https://in.linkedin.com/company/doodlodesign">
               <Image
                 data-aos="fade-up"
                 className={styles.scicon}
@@ -201,8 +202,8 @@ const handleChange = (e) => {
                 height={37}
                 priority
               />
-            </a>
-            <a href="">
+            </Link>
+            <Link href="https://www.instagram.com/doodlo_design/">
               <Image
                 data-aos="fade-up"
                 className={styles.scicon}
@@ -213,8 +214,8 @@ const handleChange = (e) => {
                 height={37}
                 priority
               />
-            </a>
-            <a href="">
+            </Link>
+            <Link href="https://www.facebook.com/DoodloDesign">
               <Image
                 data-aos="fade-up"
                 className={styles.scicon}
@@ -225,7 +226,7 @@ const handleChange = (e) => {
                 height={37}
                 priority
               />
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles.contcolumn2}>

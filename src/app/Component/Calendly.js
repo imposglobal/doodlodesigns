@@ -17,7 +17,7 @@ const Calendly = () => {
       }, []);
     
     return(
-        <div className={styles.calendlysec}>
+        <div  id="calendly" className={styles.calendlysec}>
             <h2 data-aos="fade-up" className={styles.text_stroke_hoverc}>LETS TALK ABOUT  </h2>
             <h2 data-aos="fade-up" className={styles.text_titlec}>YOUR NEXT BIG PROJECT </h2>
             <h5 className="meeting">Schedule A Meeting</h5>
