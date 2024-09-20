@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.row {
+    /* padding: 40px 40px 0  40px; */
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px ; */
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    flex: 40%;
+    padding: 50px;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns1 {
+    flex: 60%;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns2 {
+    flex: 40%;
+
+   /* Should be removed. Only for demonstration */
+  }
+  .logosec{
+    padding-left: 80px;
+  }
+  .menuicon{
+    top: 0 !important;
+  }
+
+
+  .contentsec
+  {
+    background-color: #fff;
+    padding: 50px 250px;
+    text-align: center;
+    margin-top: -5px;
+  }
+  .paragraph
+  {
+    font-family: "DM Serif Display", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px;
+    color: #02495F;
+    line-height: 30px;
+  }
+
+
+  .rowcenter
+  {
+    padding: 50px 200px;
+    background-color: #fff;
+    margin-top: -5px;
+  }
+  .rowsec
+  {
+    display: flex;
+    background-color: #fff;
+    margin-top: -5px;
+   
+  }
+
+  .col1
+  {
+    flex: 80%;
+  }
+  .col2{
+    flex: 20%;
+
+  }
+
+  .typeface
+  {
+    display: flex;
+    margin-bottom: 30px;
+    padding-top: 30px;
+  }
+ 
+
+  .tface2
+  {
+    margin-left: 100px;
+  }
+
+  .anhead
+  {
+    font-size: 120px;
+    font-weight: 700;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+  }
+  .dmnhead
+  {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+  }
+  .rehead
+  {
+    color: #0DCE54;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    padding-top: 5px;
+
+  }
+
+  .aihead
+  {
+    font-size: 120px;
+    font-weight: 700;
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+  }
+
+  .dmihead
+  {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+  }
+
+  .ihead
+  {
+    color: #0DCE54;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    font-style: italic;
+    padding-top: 5px;
+  }
+
+  .header_heading
+  {
+    color: #02495F;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    padding-top: 20px;
+
+  }
+
+  .header_para
+  {
+    color: #02495F;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    line-height: 30px;
+    padding-top: 20px;
+    margin-right: 70px;
+  }
+
+  .header_number
+  {
+    color: #02495F;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    padding-top: 30px;
+  }
+
+  .vectorimg
+  {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-top: 50px;
+  }
+  .centerhead
+  {
+    text-align: center;
+    font-size: 25px;
+  }
+  .darkbluetext
+  {
+    color: #02495F;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .bluetext
+  {
+    color: #0D95CE;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .greentext
+  {
+    color: #0DCE54;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .img
+  {
+    width: 70% !important;
+  }
+
+  .imagesec
+  {
+    background-color: #fff;
+    margin-top: -5px;
+  }
+
+  .imagerow
+  {
+    display: flex;
+    background-color: #fff;
+    margin-top: -5px;
+
+  }
+  .imgcol1
+  {
+    flex: 35%;
+  }
+  .imgcol2
+  {
+    flex: 65%;
+  }
+
+
+  .contentrow
+  {
+    display: flex;
+    background-color: #02495F;
+  }
+
+  .contentcol1
+  {
+    flex: 40%;
+  }
+  .contentcol2
+  {
+    flex: 60%;
+  }
+
+  .white_heading
+  {
+    color: #02495F;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    padding-top: 20px;
+    color: #fff;
+
+  }
+
+  .white_para
+  {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "DM Serif Display", serif;
+    line-height: 30px;
+    padding-top: 20px;
+    color: #fff;
+    
+  }
+.centertext
+{
+    text-align: left;
+    padding: 260px 50px 220px 80px;
+}
+.videosec
+{
+    text-align: center;
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -5px;
+}
+.videoimg
+{
+    width: 45% !important;
+}
+.mtop
+{
+  margin-top: -270px;
+}
+
+.thanksec
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -5px;
+  background-color: #fff;
+  padding: 20px 0 20px;
+}
+.thankhead
+{
+  font-size: 36px;
+  color: #185470;
+  font-weight: 600;
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
+}
+.ctext
+{
+  text-align: center;
+}
+.avideo
+{
+  width: 80%;
+}
+.typefacehead
+{
+  font-size: 25px;
+}
+
+
+
+@media only screen and (max-width: 600px)
+{
+  .logosec 
+  {
+      padding-left: 20px;
+  }
+  .column2 {
+    flex: 40% 1;
+    padding: 50px 20px;
+   }
+   
+  .contentsec
+  {
+    padding: 20px;
+  }
+  .paragraph
+  {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .rowcenter
+  {
+    padding: 20px;
+  }
+
+  .rowsec
+  {
+    display: block;
+  }
+
+  .tface2
+  {
+  margin-left: 30px;
+  }
+  .contentrow
+  {
+    display: block;
+  }
+
+  .centertext
+  {
+   padding: 30px; 
+  }
+
+  .anhead, .aihead
+  {
+    font-size: 60px;
+  }
+  .dmnhead, .dmihead
+  {
+    font-size: 18px;
+  }
+  .rehead, .ihead
+  {
+    font-size: 16px;
+  }
+  .header_para
+  {
+    margin-right: 0px;
+    text-align: center;
+  }
+  .header_heading, .header_number
+  {
+    font-size: 27px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .centerhead
+  {
+    padding-top: 70px;
+  }
+
+  .vectorimg
+  {
+    flex-direction: row;
+  }
+  .videosec
+  {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .mtop
+  {
+    margin-top: -80px;
+  }
+  .videoimg
+  {
+    width: 80% !important;
+  }
+  .header_para
+  {
+    line-height: 25px;
+    font-size: 18px;
+  }
+  .white_heading
+  {
+    font-size: 27px;
+    padding-top: 0;
+  }
+  .white_para
+  {
+    line-height: 25px;
+    font-size: 18px;
+  }
+  .typefacehead
+  {
+    text-align: center;
+  }
+  .typeface
+  {
+    justify-content: center;
+  }
+  .imagesec
+  {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .thankhead
+  {
+    font-size: 27px;
+  }
+  .thanksec
+  {
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
+}
+
+ 
