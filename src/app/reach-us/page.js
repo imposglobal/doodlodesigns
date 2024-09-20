@@ -206,7 +206,7 @@ const handleChange = (e) => {
   
       { id: 6, url:"/portfolio/tarabai", ids: 'fimg6', ptitle:'TARABAI', pdesc:'Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media', name: 'Item 6', image: '/home/portfolio/gallery/tarabai.png', category: 'category1' },
   
-      { id: 7, url:"", ids: 'fimg7', ptitle:'CITIBANK', pdesc:'Illustrations | Presentation | Wall Graffiti', name: 'Item 7', image: '/home/portfolio/gallery/citibank.png', category: 'category1' },
+      { id: 7, url:"portfolio/citibank", ids: 'fimg7', ptitle:'CITIBANK', pdesc:'Illustrations | Presentation | Wall Graffiti', name: 'Item 7', image: '/home/portfolio/gallery/citibank.png', category: 'category1' },
   
       { id: 8, url:"", ids: 'fimg8', ptitle:'Littile learners trove', pdesc:'Branding | Illustrations | Product Design | Packaging Design | Social Media', name: 'Item 8', image: '/home/portfolio/gallery/flash.png', category: 'category1' },
   
@@ -214,7 +214,7 @@ const handleChange = (e) => {
   
       { id: 10, url:"", ids: 'fimg10', ptitle:'Wuerth Industries', pdesc:'Publication - Coffee Table Book Design | Corporate Giftings', name: 'Item 10', image: '/home/portfolio/gallery/wru.png', category: 'category2' },
   
-      { id: 11, url:"", ids: 'fimg11', ptitle:'Nutribee', pdesc:'Illustration | Packaging Design', name: 'Item 11', image: '/home/portfolio/gallery/bread.png', category: 'category2' },
+      { id: 11, url:"/portfolio/nutribee", ids: 'fimg11', ptitle:'Nutribee', pdesc:'Illustration | Packaging Design', name: 'Item 11', image: '/home/portfolio/gallery/bread.png', category: 'category2' },
       // Add more items with appropriate categories
     ];
 

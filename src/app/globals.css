@@ -989,6 +989,15 @@ height: 400px;
 .tarabai_logosec__h51ld .menuicon {
   top: 0;
 }
+.citibank_logosec__FLDlw .menuicon {
+  top: 0;
+}
+.wurth_logosec__dydCz .menuicon {
+  top: 0;
+}
+.nutibee_logosec__yvicc .menuicon {
+  top: 0;
+}
 .mahatee_video__eCDBc video.videoint {
   width: 53%;
   padding: 3px 0 10px 0;
@@ -1008,6 +1017,12 @@ height: 400px;
 }
 video.videoint::-webkit-media-controls {
   display: none;
+}
+.citibank_slidert__V0x_T .slider_slide-item__KYud_ img{
+  width: 100%;
+}
+.citibank_slidert__V0x_T .slider_slide-item__KYud_{
+  height: auto !important;
 }
 @media only screen and (max-width: 600px) {
   .blackb_bbvideo__3th9V video.videoint {

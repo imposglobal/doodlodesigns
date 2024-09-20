@@ -1,0 +1,184 @@
+.row {
+    /* padding: 40px 40px 0  40px; */
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px ; */
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    flex: 40%;
+    padding: 50px;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns1 {
+    flex: 60%;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns2 {
+    flex: 40%;
+
+   /* Should be removed. Only for demonstration */
+  }
+  .logosec{
+    padding-left: 80px;
+  }
+  .menuicon{
+    top: 0 !important;
+  }
+  .video{
+
+  }
+  .rowsec{
+    display: flex;
+    background: #fff;
+    padding: 50px 150px 0 150px;
+    align-items: center;
+  }
+  .rowsecs{
+    display: flex;
+    background: #fff;
+    padding: 0 150px 50px 150px;
+    align-items: center;
+  }
+  .rowsecw{
+    display: flex;
+    background: #fff;
+    padding: 50px 150px 50px 150px;
+    align-items: center;
+  }
+  .col1{
+    flex: 50%;
+  }
+  .col2{
+    flex: 50%;
+  }
+  .cols1{
+    flex: 40%;
+  }
+  .cols2{
+    flex: 60%;
+  }
+  .content{
+    padding-right: 64px;
+  }
+  .blackb{
+    background-color: black;
+  }
+  
+  .maincont{
+    background: #fff;
+    padding: 50px 150px;
+  }
+  .talesec{
+    margin-top: -4px;
+    background: #fff;
+  }
+  .talesecs{
+    margin-top: -4px;
+    background: #fff;
+    padding: 40px 80px;
+  }
+  .secc{
+    text-align: center;
+  }
+  .talet{
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .rowp{
+    padding-top: 30px;
+    padding: 50px 80px;
+    display: flex;
+    background: #fff;
+  }
+  .taletp{
+    border-top: 1px solid #000 ;
+    padding-top: 20px;
+    margin-right: 50px;
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .talep{
+    margin-top: 20px;
+    color: #000000;
+    font-family: "poppins";
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .talep2{
+    margin-top: 30px;
+    color: #000000;
+    font-family: "poppins";
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .slidert{
+    margin-top: -4px;
+    background: #fff;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  .thankyou{
+    text-align: center;
+    margin-top: 40px;
+  }
+  .thimg{
+    width: 25% !important;
+  }
+  .imgss{
+    margin-top: -4px;
+  }
+  @media only screen and (max-width: 600px) {
+    .grid {
+      gap: 1rem;
+      padding-bottom: 10px;
+    }
+    .logosec {
+      padding-left: 20px;
+  }
+  .column2 {
+    flex: 40% 1;
+    padding: 50px 20px;
+}
+.mlsec svg{
+    width: 100px;
+  }
+  .rowsec {
+    display: block;
+    background: #fff;
+    padding: 20px;
+    align-items: center;
+}
+.maincont {
+    padding: 0;
+}
+.talesec {
+    margin-top: -4px;
+    background: #fff;
+    padding: 40px 20px;
+}
+.rowp {
+    padding-top: 30px;
+    padding: 20px;
+    display: block;
+    background: #fff;
+}
+.thimg {
+    width: 58% !important;
+}
+.talesecs {
+    margin-top: -4px;
+    background: #fff;
+    padding: 40px 20px;
+}
+}
