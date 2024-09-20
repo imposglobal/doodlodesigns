@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+.row {
+    /* padding: 40px 40px 0  40px; */
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px ; */
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    flex: 40%;
+    padding: 50px;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns1 {
+    flex: 60%;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns2 {
+    flex: 40%;
+
+   /* Should be removed. Only for demonstration */
+  }
+  .logosec{
+    padding-left: 80px;
+  }
+  .menuicon{
+    top: 0 !important;
+  }
+
+.spacing
+{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+  .rowsec
+  {
+    text-align: center;
+    background-color: #fff;
+    margin-top: -5px;
+   
+  }
+  .rowcontent
+  {
+    padding: 30px 0px;
+  }
+  
+  .title
+  {
+    color: #FD9806;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    padding: 20px 0;
+  }
+
+  .hrwidth
+  {
+    width: 400px;
+    color: #1b693b;
+    background-color: #1b693b;
+    
+  }
+  .description
+  {
+    text-align: center;
+    color: #1B693B;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 200px;
+    line-height: 30px;
+    
+  }
+
+  .imagesec
+  {
+    background-color: #fff;
+    margin-top: -5px;
+  }
+
+  .contentsec
+  {
+    margin-top: -5px;
+    padding: 80px 70px 50px;
+    display: flex;
+    background-color: #fff;
+  }
+  .content1
+  {
+    flex: 40%;
+  }
+  .content2
+  {
+    flex: 60%;
+  }
+  .logotitle
+  {
+    color: #FD9806;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    padding: 20px 0;
+  }
+  .hrlogo
+  {
+    background-color: #1b693b;
+    margin-right: 250px;
+  }
+  .logodesc
+  {
+    text-align: left;
+    color: #1B693B;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 20px 0 0;
+    line-height: 30px;
+  }
+  .yolosec
+  {
+    background-color: #fff;
+    margin-top: -5px;
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  .yoloimg
+  {
+    width: 35% !important;
+  }
+
+  .yoloiamgesec
+  {
+    background-color: #fff;
+    margin-top: -5px;
+    display: flex;
+    flex-direction: row;
+  
+  }
+
+  .yolocol1
+  {
+    flex: 50%;
+  }
+  .yolocol2
+  {
+    flex: 50%;
+  }
+
+  .storesec
+  {
+    background-color: #fff;
+    margin-top: -5px;
+
+  }
+
+  .storecontent
+  {
+    padding: 50px 220px 0 70px;
+  }
+
+  .storetitle
+  {
+    color: #FD9806;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    padding: 20px 0;
+    
+  }
+
+  .storehr
+  {
+    background-color: #1b693b;
+    width: 500px;
+    margin-left: 0px;
+    
+  }
+  .storedesc
+  {
+    text-align: left;
+    color: #1B693B;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 0;
+    line-height: 30px; 
+  }
+
+  .videosec
+  {
+    background-color: #fff;
+    margin-top: -5px;
+  }
+  .convsec
+  {
+    margin-top: -5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 200px;
+  }
+  .onlineptitle
+  {
+    color: #FD9806;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    padding: 20px 0;
+  }
+  .thanksec
+  {
+    margin-top: -5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0 50px;
+  }
+  .thankcontent
+  {
+    width: 22%;
+  }
+.pt50{
+    padding-top: 50px;
+}
+.slidersec
+{
+    background-color: #fff;
+}
+.slider
+{
+    background-image: url(https://php.imposglobal.com/wp-content/uploads/2023/06/Group-62.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media only screen and (max-width: 600px)
+{
+
+    .logosec 
+    {
+      padding-left: 20px;
+    }
+   .column2 
+   {
+    flex: 40% 1;
+    padding: 50px 20px;
+   }
+
+    .spacing
+    {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .rowcontent
+    {
+        padding: 10px 0;
+    }
+    .title
+    {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .hrwidth
+    {
+        width: 100px;
+    }
+    .description
+    {
+        font-size: 16px;
+        padding: 10px 0;
+        line-height: 25px;
+    }
+    .contentsec
+    {
+        padding: 30px 0 0 0;
+        display: block;
+       
+       
+    }
+    .logotitle
+    {
+        font-size: 20px;
+        padding: 10px 0 10px 10px;
+    }
+    .logodesc
+    {
+        font-size: 16px;
+        padding: 10px 0 40px 10px;
+        line-height: 25px;
+    }
+    .hrlogo
+    {
+        
+        width: 100px;
+        margin-right: 265px;
+    }
+    .yolosec
+    {
+        padding: 60px 0 70px;
+    }
+    .yoloimg
+    {
+        width: 70% !important;
+    }
+    .yoloiamgesec
+    {
+        display: block;
+    }
+    .yolocol2
+    {
+        margin-top: -5px;
+    }
+    .pt50
+    {
+        padding-top: 0px;
+    }
+    .storecontent
+    {
+        padding: 0px 20px 20px 10px;
+    }
+    .storetitle
+    {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .storedesc
+    {
+        font-size: 16px;
+        line-height: 25px;
+        padding: 10px 0;
+    }
+    .storehr
+    {
+        width: 100px;
+    }
+    .convsec
+    {
+        padding: 0px;
+    }
+    .storesec
+    {
+        padding-top: 30px;
+    }
+    .thankcontent
+    {
+        width: 35%;
+    }
+    .onlineptitle
+    {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .yolomart_hrwidth
+    {
+        width: 140px;
+    }
+}
+
+  
+  
+  
+  
+  
