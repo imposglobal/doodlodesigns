@@ -998,6 +998,12 @@ height: 400px;
 .nutibee_logosec__yvicc .menuicon {
   top: 0;
 }
+.yolomart_logosec__4Ewg4 .menuicon {
+  top: 0;
+}
+.alhidaya_logosec__07sXT .menuicon {
+  top: 0;
+}
 .mahatee_video__eCDBc video.videoint {
   width: 53%;
   padding: 3px 0 10px 0;
@@ -1012,6 +1018,9 @@ height: 400px;
 .blackb_bbvideo__3th9V video.videoint{
   width: 100%;
 }
+.yolomart_videosec__JIawq video.videoint{
+  width: 100%;
+}
 .tarabai_slidert__DphwH .slider_slide-item__KYud_ img{
   width: 100%;
 }
@@ -1020,6 +1029,10 @@ video.videoint::-webkit-media-controls {
 }
 .citibank_slidert__V0x_T .slider_slide-item__KYud_ img{
   width: 100%;
+}
+.yolomart_slider__ME3_4 .slider_slide-item__KYud_ img {
+  width: 80%;
+  transition: transform 0.5s ease;
 }
 .citibank_slidert__V0x_T .slider_slide-item__KYud_{
   height: auto !important;

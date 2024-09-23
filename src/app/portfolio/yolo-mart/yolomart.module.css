@@ -241,7 +241,7 @@
     background-image: url(https://php.imposglobal.com/wp-content/uploads/2023/06/Group-62.png);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 @media only screen and (max-width: 600px)
