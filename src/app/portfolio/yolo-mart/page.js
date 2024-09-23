@@ -16,7 +16,7 @@ const yolomart = () => {
 
 
       const images = [
-        { src: "/home/portfolios/yolo-mart/hoodie.webp", alt: "Slide 1", caption: "" },
+        { src: "/home/portfolios/yolo-mart/hoodie.webp", alt: "Slide 1", caption: ""},
         { src: "/home/portfolios/yolo-mart/cap1.webp", alt: "Slide 2", caption: "" },
         { src: "/home/portfolios/yolo-mart/BASKET.webp", alt: "Slide 3", caption: "" },
         { src: "/home/portfolios/yolo-mart/reflector-jacket.webp", alt: "Slide 3", caption: "" },
@@ -25,12 +25,38 @@ const yolomart = () => {
         { src: "/home/portfolios/yolo-mart/yolomart-tshirt.webp", alt: "Slide 3", caption: "" },
       ];
 
+
+      // const images = [
+      //   { src: "/home/portfolios/yolo-mart/hoodie.webp", alt: "Slide 1", caption: "", className:"yoloslideimg" },
+      //   { src: "/home/portfolios/yolo-mart/cap1.webp", alt: "Slide 2", caption: "", className:"yoloslideimg" },
+      //   { src: "/home/portfolios/yolo-mart/BASKET.webp", alt: "Slide 3", caption: "", className:"yoloslideimg"},
+      //   { src: "/home/portfolios/yolo-mart/reflector-jacket.webp", alt: "Slide 3", caption: "", className:"yoloslideimg" },
+      //   { src: "/home/portfolios/yolo-mart/icard.webp", alt: "Slide 3", caption: "", className:"yoloslideimg" },
+      //   { src: "/home/portfolios/yolo-mart/keychain.webp", alt: "Slide 3", caption: "", className:"yoloslideimg" },
+      //   { src: "/home/portfolios/yolo-mart/yolomart-tshirt.webp", alt: "Slide 3", caption: "", className:"yoloslideimg" },
+      // ];
+
       
   const settings = {
-    slidesPerView: 4, // Custom settings if needed
+    slidesPerView: 4, 
     spaceBetween: 20,
     autoplay: { delay: 5000 },
   };
+
+
+  // const settings = () => 
+  //   {
+  //   let config = {
+  //       slidesPerView: 4,
+  //       spaceBetween: 20,
+  //       autoplay: { delay: 5000 },
+  //   };
+
+  //   if (window.innerWidth < 768) {
+  //       config.slidesPerView = 1;
+  //   }
+  //   return config;
+  // };
 
       const [inactive, setInactive] = useState(true); // Set initial state to true
       

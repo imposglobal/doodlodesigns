@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet');
+.row {
+    /* padding: 40px 40px 0  40px; */
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px ; */
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    flex: 40%;
+    padding: 50px;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns1 {
+    flex: 60%;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns2 {
+    flex: 40%;
+
+   /* Should be removed. Only for demonstration */
+  }
+  .logosec{
+    padding-left: 80px;
+  }
+  .menuicon{
+    top: 0 !important;
+  }
+
+  .spacing
+{
+    padding: 40px 70px 70px 70px;
+    background-color: #f9f1ed;
+}
+
+  .colsec
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+  .royalimg
+  {
+    width: 12% !important;
+    padding-bottom: 30px;
+  }
+
+  .memoriesimg
+  {
+    width: 40% !important;
+    padding-bottom: 30px;
+  }
+
+  .patternimg
+  {
+    padding-bottom: 80px;
+  }
+
+  .ganeshimg
+  {
+    width: 10% !important;
+    padding-bottom: 40px;
+  }
+
+  .rowsec
+  {
+    display: flex;
+    flex-direction: row;
+    margin-top: -5px;
+  }
+
+  .row1
+  {
+    flex: 50%;
+    padding-left: 70px;
+  }
+
+  .row2
+  {
+    flex: 50%;
+  }
+
+  .estdimg
+  {
+    width: 70% !important;
+  }
+  .rowcontent
+  {
+    display: flex;
+    flex-direction: column;
+    padding-right: 70px;
+  }
+
+  .proimg
+  {
+    width: 32% !important;
+  }
+  .solutionimg
+  {
+    width: 38% !important;
+  }
+
+  .prodesc
+  {
+    color: #4E4D4D;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 30px 0 20px;
+  }
+
+  .imagesec
+  {
+    margin-bottom: -5px;
+    padding: 80px 0;
+  }
+
+  .imagerow
+  {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .gap
+  {
+     padding-left: 30px;
+     padding-right: 30px;
+  }
+ 
+  .cameraimg
+  {
+    width: 75% !important;
+  }
+  .patternsec
+  {
+    margin-top: -5px;
+    padding: 0 50px;
+  }
+  .textsec
+  {
+    display: flex;
+    padding: 50px 50px;
+  }
+  .typeface
+  {
+    flex: 50%;
+  }
+  .color
+  {
+    flex: 50%;
+  }
+  .typefaceimg
+  {
+    width: 35% !important;
+  }
+  .typefacerow
+  {
+    display: flex;
+  }
+  .tf1
+  {
+    flex: 50%;
+  }
+  .tf2
+  {
+    flex: 50%;
+  }
+  .tf1column
+  {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .pb20
+  {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .blackimg
+  {
+    width: 30% !important;
+  }
+
+  .Body
+  {
+    color: #7C4FAE;
+    font-family: "Poppins", Sans-serif;
+    font-size: 71px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+  }
+  .Poppins
+  {
+    color: #FAC8D0;
+    font-family: "Poppins", Sans-serif;
+    font-size: 37px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+
+  }
+  .Medium
+  {
+    color: #C04849;
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+  }
+
+  .colorcolumn
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagerow
+  {
+    display: flex;
+  }
+  .imagerow1
+  {
+    flex: 50%;
+  }
+  .imagerow2
+  {
+    flex: 50%;
+  }
+  .lastrow
+  {
+    margin-top: -5px;
+  }
+
+  @media only screen and (max-width: 600px)
+  {
+    .logosec 
+    {
+      padding-left: 20px;
+    }
+   .column2 
+   {
+    flex: 40% 1;
+    padding: 50px 20px;
+   }
+  }

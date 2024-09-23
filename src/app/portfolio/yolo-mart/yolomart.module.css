@@ -74,7 +74,7 @@
     font-family: "Montserrat", Sans-serif;
     font-size: 18px;
     font-weight: 400;
-    padding: 20px 200px;
+    padding: 20px 180px;
     line-height: 30px;
     
   }
@@ -111,7 +111,9 @@
   .hrlogo
   {
     background-color: #1b693b;
-    margin-right: 250px;
+    /* margin-right: 250px; */
+    width: 120px;
+    margin-left: 5px;
   }
   .logodesc
   {
@@ -190,7 +192,7 @@
     font-family: "Montserrat", Sans-serif;
     font-size: 18px;
     font-weight: 400;
-    padding: 20px 0;
+    padding: 20px 0 40px;
     line-height: 30px; 
   }
 
@@ -243,6 +245,14 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+/* .yoloslideimg
+{
+  width: 100% !important;
+}
+.slide-item img
+{
+  width: 100% !important;
+} */
 
 @media only screen and (max-width: 600px)
 {
@@ -264,11 +274,11 @@
     }
     .rowcontent
     {
-        padding: 10px 0;
+        padding: 10px 0 40px;
     }
     .title
     {
-        font-size: 20px;
+        font-size: 24px;
         padding: 10px 0;
     }
     .hrwidth
@@ -278,7 +288,7 @@
     .description
     {
         font-size: 16px;
-        padding: 10px 0;
+        padding: 10px 10px;
         line-height: 25px;
     }
     .contentsec
@@ -290,7 +300,7 @@
     }
     .logotitle
     {
-        font-size: 20px;
+        font-size: 24px;
         padding: 10px 0 10px 10px;
     }
     .logodesc
@@ -301,9 +311,7 @@
     }
     .hrlogo
     {
-        
-        width: 100px;
-        margin-right: 265px;
+      margin-left: 10px;
     }
     .yolosec
     {
@@ -331,7 +339,7 @@
     }
     .storetitle
     {
-        font-size: 20px;
+        font-size: 24px;
         padding: 10px 0;
     }
     .storedesc
@@ -358,7 +366,7 @@
     }
     .onlineptitle
     {
-        font-size: 20px;
+        font-size: 24px;
         padding: 10px 0;
     }
     .yolomart_hrwidth
