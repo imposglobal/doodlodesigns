@@ -273,7 +273,8 @@
 .centertext
 {
     text-align: left;
-    padding: 260px 50px 220px 80px;
+    padding: 160px 50px 0px 80px;
+    /* padding: 260px 50px 220px 80px; */
 }
 .videosec
 {
