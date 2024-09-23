@@ -418,7 +418,7 @@ const OurStory = () => {
           <div className={styles.teaminner}>
           <Image data-aos="fade-up"
                   className={styles.ppimgss}
-                  src="/home/team/teamimg.png"
+                  src="/home/team/rushi.png"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}

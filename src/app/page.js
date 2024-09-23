@@ -98,13 +98,13 @@ const Home = () => {
 
     { id: 4, url:"", ids: 'fimg4', ptitle:'Click R & D', pdesc:'Branding | Website UI | Social Media', name: 'Item 4', image: '/home/portfolio/gallery/clickrnd.png', category: 'category1' },
 
-    { id: 5, url:"", ids: 'fimg5', ptitle:'YOLOMART', pdesc:'Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media', name: 'Item 5', image: '/home/portfolio/gallery/yolomart.png', category: 'category2' },
+    { id: 5, url:"portfolio/yolo-mart", ids: 'fimg5', ptitle:'YOLOMART', pdesc:'Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media', name: 'Item 5', image: '/home/portfolio/gallery/yolomart.png', category: 'category2' },
 
     { id: 6, url:"/portfolio/tarabai", ids: 'fimg6', ptitle:'TARABAI', pdesc:'Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media', name: 'Item 6', image: '/home/portfolio/gallery/tarabai.png', category: 'category1' },
 
     { id: 7, url:"portfolio/citibank", ids: 'fimg7', ptitle:'CITIBANK', pdesc:'Illustrations | Presentation | Wall Graffiti', name: 'Item 7', image: '/home/portfolio/gallery/citibank.png', category: 'category1' },
 
-    { id: 8, url:"", ids: 'fimg8', ptitle:'Littile learners trove', pdesc:'Branding | Illustrations | Product Design | Packaging Design | Social Media', name: 'Item 8', image: '/home/portfolio/gallery/flash.png', category: 'category1' },
+    { id: 8, url:"portfolio/flash-card-illustration-and-packaging", ids: 'fimg8', ptitle:'Littile learners trove', pdesc:'Branding | Illustrations | Product Design | Packaging Design | Social Media', name: 'Item 8', image: '/home/portfolio/gallery/flash.png', category: 'category1' },
 
     { id: 9, url:"", ids: 'fimg9', ptitle:'Royal Wedding', pdesc:'Branding | Business Collaterals', name: 'Item 9', image: '/home/portfolio/gallery/royal.png', category: 'category2' },
 
