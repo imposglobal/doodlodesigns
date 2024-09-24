@@ -190,12 +190,50 @@ const appliancecare = () => {
             </div>
             {/*****************************/}
             <div className={styles.rowsec}>
-                <p className={styles.title}>Merchandising Magic</p>
+                <h3 className={styles.title}>Merchandising Magic</h3>
                 <p className={styles.description}>From branded magnets that stick around to quirky keychains that unlock a world of appliance care, we created merchandise that adds a touch of personality to their customers’ everyday lives.</p>
             </div>
              {/*****************************/}
             <div className={styles.slider}>
             <Slidercomponent images={images} settings={settings} />
+            </div>
+             {/*****************************/}
+             <div className={styles.websec}>
+             <h3 className={styles.title}>Web Design Wonder</h3>
+             <p className={styles.description}>Our web-slinging wizards spun a web of seamless functionality and eye-catching aesthetics with a website that showcases Universal Appliance Care’s services, ensuring they stay ahead in the digital realm.</p>
+             </div>
+             {/*****************************/}
+             <div className={styles.carsec}>
+               <Image
+                src="/home/portfolios/universal-appliance-care/image3.webp"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+            </div>
+             {/*****************************/}
+             <div className={styles.carsec}>
+               <Image
+                src="/home/portfolios/universal-appliance-care/image5.webp"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+            </div>
+            {/*****************************/}
+            <div className={styles.repairsec}>
+               <Image
+                src="/home/portfolios/universal-appliance-care/image6.webp"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
             </div>
         </div>
     </div>
