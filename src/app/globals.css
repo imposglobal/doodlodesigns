@@ -543,7 +543,11 @@ h2.client_h2 {
 .msocial{
   width: 30px !important;
     display: block;
-    margin: 23px auto
+    margin: 23px auto;
+    filter: opacity(0.5);
+}
+.msocial:hover{
+  filter: opacity(1);
 }
 .socialsec{
   margin-top: 80px;
@@ -1001,15 +1005,22 @@ height: 400px;
 .yolomart_logosec__4Ewg4 .menuicon {
   top: 0;
 }
+.clickrnd_logosec__N0m36 .menuicon {
+  top: 0;
+}
 .alhidaya_logosec__07sXT .menuicon {
   top: 0;
 }
 .royalwedding_logosec__anXPH .menuicon {
   top: 0;
 }
+.appliancecare_logosec__LMuWw .menuicon {
+  top: 0;
+}
 .flashcard_logosec__KsXi9 .menuicon {
   top: 0;
 }
+
 
 .mahatee_video__eCDBc video.videoint {
   width: 53%;
@@ -1024,6 +1035,11 @@ height: 400px;
 }
 .blackb_bbvideo__3th9V video.videoint{
   width: 100%;
+}
+.clickrnd_videosec__mGfMH video.videoint {
+  padding-top: 0;
+  width: 100%;
+  margin-bottom: -131px;
 }
 .yolomart_videosec__JIawq video.videoint{
   width: 100%;

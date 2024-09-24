@@ -292,6 +292,15 @@ const Ourstory = () => {
                                     height={37}
                                     priority
                                     />
+                                    <Image 
+                                    className={styles.iconimg}
+                                    src="home/tool/wix.png"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
                         </div>
                         <Image 
                                     className={styles.ourimg1}

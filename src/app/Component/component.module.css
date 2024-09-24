@@ -233,6 +233,10 @@
     margin-bottom: -7px;
     width: 25px !important;
     cursor: pointer !important;
+    filter: opacity(0.5);
+  }
+  .subbtnisc:hover{
+    filter: opacity(1);
   }
   .gtintitle{
     font-size: 14px;
