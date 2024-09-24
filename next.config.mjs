@@ -3,9 +3,16 @@ const nextConfig = {
     eslint: {
         ignoreDuringBuilds: true,
     },
+    experimental: {
+        optimizeCss: true, // Enable CSS optimization
+    },
+    compiler: {
+        styledComponents: true,
+      },
+    output: 'export',
     images: {
-        formats: ['image/avif', 'image/webp'], // Keep image optimization formats
-        domains: ['https://doodlodesigns.com'], // Optional: Define allowed domains for external images
+        unoptimized: true,
+        formats: ['image/avif', 'image/webp']
     }
 };
 

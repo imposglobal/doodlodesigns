@@ -9,6 +9,9 @@ html, body {
   box-sizing: border-box;
   
 }
+img {
+  aspect-ratio: attr(width) / attr(height);
+}
 @keyframes rotateCursor {
   from {
       transform: rotate(0deg);
