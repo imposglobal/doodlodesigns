@@ -125,7 +125,7 @@ const royalwedding = () => {
         </div>
         {/* end */}
     <div className={styles.spacing}>
-    <div className={styles.colsec}>      
+    {/* <div className={styles.colsec}>      
           <Image
            src="/home/portfolios/royal-weddings/royal-wedding.webp"
            alt="Next.js"
@@ -177,10 +177,10 @@ const royalwedding = () => {
            className={styles.ganeshimg}
            priority
           />
-    </div>
+    </div> */}
 
 
-      {/* <div className={styles.colsec}>  
+      <div className={styles.colsec}>
         <div>   
           <Image
            src="/home/portfolios/royal-weddings/royal-wedding.webp"
@@ -188,6 +188,7 @@ const royalwedding = () => {
            layout="responsive"
            width={100}
            height={100}
+           className={styles.royalimg}
            priority
           />
           </div>  
@@ -198,6 +199,7 @@ const royalwedding = () => {
            layout="responsive"
            width={100}
            height={100}
+           className={styles.memoriesimg}
            priority
           />
             </div>  
@@ -218,7 +220,6 @@ const royalwedding = () => {
            layout="responsive"
            width={100}
            height={100}
-           className={styles.patternimg}
            priority
           />
   </div>  
@@ -229,10 +230,11 @@ const royalwedding = () => {
            layout="responsive"
            width={100}
            height={100}
+           className={styles.ganeshimg}
            priority
           />
            </div>  
-    </div>  */}
+    </div> 
 
     {/***********************/}
     <div className={styles.rowsec}> 
@@ -283,6 +285,7 @@ const royalwedding = () => {
            layout="responsive"
            width={100}
            height={100}
+           className={styles.royalimg}
            priority
           />
           </div>
@@ -293,6 +296,7 @@ const royalwedding = () => {
            layout="responsive"
            width={100}
            height={100}
+           className={styles.plusimg}
            priority
           />
           </div>
@@ -314,6 +318,7 @@ const royalwedding = () => {
            layout="responsive"
            width={100}
            height={100}
+           className={styles.equalimg}
            priority
           />
           </div>
@@ -324,6 +329,7 @@ const royalwedding = () => {
            layout="responsive"
            width={100}
            height={100}
+           className={styles.weddingimg}
            priority
           />
           </div>
@@ -361,7 +367,7 @@ const royalwedding = () => {
            layout="responsive"
            width={100}
            height={100}
-           className={styles.pb20}
+           className={styles.headingimg}
            priority
            /> 
            <Image
@@ -370,7 +376,7 @@ const royalwedding = () => {
            layout="responsive"
            width={100}
            height={100}
-           className={styles.pb20}
+           className={styles.Elsieimg}
            priority
            /> 
            <Image
@@ -403,7 +409,7 @@ const royalwedding = () => {
            layout="responsive"
            width={100}
            height={100}
-           className={styles.typefaceimg}
+           className={styles.colorimg}
            priority
            /> 
 
@@ -413,6 +419,7 @@ const royalwedding = () => {
            layout="responsive"
            width={100}
            height={100}
+           className={styles.colorpallateimg}
            priority
            /> 
           </div>

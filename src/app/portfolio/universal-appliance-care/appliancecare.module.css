@@ -1,0 +1,78 @@
+
+.row {
+    /* padding: 40px 40px 0  40px; */
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px ; */
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    flex: 40%;
+    padding: 50px;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns1 {
+    flex: 60%;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns2 {
+    flex: 40%;
+
+   /* Should be removed. Only for demonstration */
+  }
+  .logosec{
+    padding-left: 80px;
+  }
+  .menuicon{
+    top: 0 !important;
+  }
+
+  .spacing
+  {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+
+  .contentsec, .rowsec
+  {
+    background-color: #fff;
+    margin-top: -5px;
+    padding: 080px 150px 70px 120px;
+  }
+  .description
+  {
+    color: #424242;
+    font-family: "Glacial Indifference Regular", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 40px;
+    line-height: 35px;
+  }
+
+ .title
+ {
+    font-family: "Glacial Indifference Bold", Sans-serif;
+    font-size: 30px;
+    color: #00102e;
+    font-weight: 600;
+    padding-bottom: 25px;
+ }
+ .himgsec
+ {
+    background-color: #fff;
+    padding-left: 120px;
+    padding-bottom: 50px;
+ }
+ .slider
+ {
+    background-color: #fff;
+ }
+
+  

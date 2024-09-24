@@ -46,12 +46,11 @@
     justify-content: center;
     flex-direction: column;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     text-align: center;
   }
   .royalimg
   {
-    width: 12% !important;
     padding-bottom: 30px;
   }
 
@@ -61,16 +60,13 @@
     padding-bottom: 30px;
   }
 
-  .patternimg
-  {
-    padding-bottom: 80px;
-  }
-
   .ganeshimg
   {
-    width: 10% !important;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    
   }
+
+ 
 
   .rowsec
   {
@@ -146,20 +142,20 @@
   .patternsec
   {
     margin-top: -5px;
-    padding: 0 50px;
+    padding: 0 50px 50px;
   }
   .textsec
   {
     display: flex;
-    padding: 50px 50px;
+    padding: 50px 50px 100px;
   }
   .typeface
   {
-    flex: 50%;
+    flex: 55%;
   }
   .color
   {
-    flex: 50%;
+    flex: 45%;
   }
   .typefaceimg
   {
@@ -168,6 +164,7 @@
   .typefacerow
   {
     display: flex;
+    padding-top: 30px;
   }
   .tf1
   {
@@ -184,15 +181,28 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    
   }
-  .pb20
+  .ptb20
   {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .headingimg
+  {
+    padding-bottom: 25px;
+  }
+  .Elsieimg
+  {
+    padding-bottom: 30px;
+  }
+  .colorpallateimg
+  {
+    padding-top: 70px;
+  }
   .blackimg
   {
-    width: 30% !important;
+    width: 22% !important;
   }
 
   .Body
@@ -202,7 +212,7 @@
     font-size: 71px;
     font-weight: 500;
     padding: 0;
-    margin: 0;
+    margin-top: -15px;
   }
   .Poppins
   {
@@ -218,9 +228,9 @@
   {
     color: #C04849;
     font-family: "Poppins", Sans-serif;
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 500;
-    padding: 0;
+    padding: 15px 0 0 0;
     margin: 0;
   }
 
@@ -228,6 +238,7 @@
   {
     display: flex;
     flex-direction: column;
+  
   }
   .imagerow
   {
@@ -245,6 +256,10 @@
   {
     margin-top: -5px;
   }
+  .colorimg
+  {
+    width: 20% !important;
+  }
 
   @media only screen and (max-width: 600px)
   {
@@ -256,5 +271,156 @@
    {
     flex: 40% 1;
     padding: 50px 20px;
+   }
+
+   .spacing
+   {
+    padding: 30px 0;
+   }
+   .royalimg
+   {
+    width: 45% !important;
+    padding-bottom: 0;
+   }
+   .memoriesimg
+   {
+    width: 70% !important;
+   }
+   .ganeshimg
+   {
+    padding-top: 60px;
+    width: 70% !important;
+   }
+   .rowsec
+   {
+    display: block;
+   }
+   .row1
+   {
+    text-align: center;
+    padding-left: 0;
+   }
+   .row2
+   {
+    text-align: center;
+    padding: 15px 15px;
+   }
+   .rowcontent
+   {
+    align-items: center;
+    padding-right: 0;
+    padding-top: 20px;
+   }
+   .prodesc
+   {
+    font-size: 16px;
+   }
+   .imagerow
+   {
+    display: block;
+   }
+   .royalimg
+   {
+    width: 45% !important;
+   }
+   .plusimg
+   {
+    width: 15% !important;
+   }
+   .cameraimg
+   {
+    width: 40% !important;
+   }
+   .equalimg
+   {
+    width: 15% !important;
+    transform: rotate(269deg);
+    padding-bottom: 20px;
+        padding-top: 20px;
+   }
+
+   .weddingimg
+   {
+    width: 45% !important;
+   }
+   .gap
+   {
+    padding-top: 10px;
+    padding-bottom: 10px;
+   }
+   .patternsec
+   {
+    padding: 0;
+   }
+   .textsec
+   {
+    display: block;
+   }
+   .typefacerow
+   {
+    display: block;
+    
+   }
+   .typeface
+   {
+    text-align: center;
+    padding-top: 80px;
+   }
+   .colorcolumn
+   {
+    align-items: center;
+   }
+   .typefaceimg
+   {
+    width: 50% !important;
+   }
+   .tf2
+   {
+    padding-top: 60px;
+   }
+   .colorimg
+   {
+    width: 35% !important;
+    padding-top: 60px;
+   }
+   .textsec
+   {
+    padding: 0;
+   }
+   .headingimg
+   {
+    padding-top: 20px;
+    width: 70% !important;
+   }
+   .Elsieimg
+   {
+    width: 80% !important;
+   }
+
+   .colorpallateimg
+   {
+    width: 90% !important;
+    padding-bottom: 60px;
+   }
+   .Medium
+   {
+    font-size: 20px;
+   }
+   .blackimg
+   {
+    width: 20% !important;
+   }
+   .imagesec
+   {
+    padding-top: 50px;
+    padding-bottom: 30px;
+   }
+   .imagerow2
+   {
+    margin-top: -5px;
+   }
+   .estdimg
+   {
+    width: 60% !important;
    }
   }
