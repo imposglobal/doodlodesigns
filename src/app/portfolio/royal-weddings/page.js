@@ -125,61 +125,7 @@ const royalwedding = () => {
         </div>
         {/* end */}
     <div className={styles.spacing}>
-    {/* <div className={styles.colsec}>      
-          <Image
-           src="/home/portfolios/royal-weddings/royal-wedding.webp"
-           alt="Next.js"
-           layout="responsive"
-           width={100}
-           height={100}
-           className={styles.royalimg}
-           priority
-          />
-             
-        <Image
-           src="/home/portfolios/royal-weddings/Memories-are-rare_.webp"
-           alt="Next.js"
-           layout="responsive"
-           width={100}
-           height={100}
-           className={styles.memoriesimg}
-           priority
-          />
-        
-        
-        <Image
-           src="/home/portfolios/royal-weddings/pattern1.png"
-           alt="Next.js"
-           layout="responsive"
-           width={100}
-           height={100}
-           priority
-          />
-      
-        
-        <Image
-           src="/home/portfolios/royal-weddings/pattern2.png"
-           alt="Next.js"
-           layout="responsive"
-           width={100}
-           height={100}
-           className={styles.patternimg}
-           priority
-          />
-
-
-        <Image
-           src="/home/portfolios/royal-weddings/image2.png"
-           alt="Next.js"
-           layout="responsive"
-           width={100}
-           height={100}
-           className={styles.ganeshimg}
-           priority
-          />
-    </div> */}
-
-
+  
       <div className={styles.colsec}>
         <div>   
           <Image

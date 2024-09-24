@@ -78,7 +78,7 @@
   .row1
   {
     flex: 50%;
-    padding-left: 70px;
+    padding-left: 80px;
   }
 
   .row2
@@ -88,7 +88,7 @@
 
   .estdimg
   {
-    width: 70% !important;
+    width: 65% !important;
   }
   .rowcontent
   {
@@ -279,12 +279,13 @@
    }
    .royalimg
    {
-    width: 45% !important;
+    width: 50% !important;
     padding-bottom: 0;
    }
    .memoriesimg
    {
     width: 70% !important;
+    padding-top: 20px;
    }
    .ganeshimg
    {
@@ -314,6 +315,7 @@
    .prodesc
    {
     font-size: 16px;
+    padding: 30px 0 30px;
    }
    .imagerow
    {
@@ -359,6 +361,7 @@
    .typefacerow
    {
     display: block;
+    padding-top: 0;
     
    }
    .typeface
@@ -401,6 +404,7 @@
    {
     width: 90% !important;
     padding-bottom: 60px;
+    padding-top: 30px;
    }
    .Medium
    {
