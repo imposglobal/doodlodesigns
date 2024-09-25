@@ -20,7 +20,6 @@ import ContactForm from "./Component/ContactForm";
 import AccordionOne from "./Component/Accordions/AccordianOne";
 import Logoslide from "./Component/Logoslider";
 import VideoComponent from "./Component/VideoComponent";
-import Head from "next/head";
 
 
 
