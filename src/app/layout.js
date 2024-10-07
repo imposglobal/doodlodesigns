@@ -1,3 +1,4 @@
+import BackToTopButton from "./Component/Backtotop";
 import Footer from "./Component/Footer";
 import "./globals.css";
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>{children}
          {/* Footer Starts */}
+         <BackToTopButton />
         <Footer />
       </body>
     </html>

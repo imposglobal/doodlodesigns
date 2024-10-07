@@ -13,7 +13,10 @@ const Menu = ({ onClick }) => {
     };
 
     return (
-        <div className={`menuicon ${isOpen ? 'open' : ''}`} onClick={handleClick}>
+        <div
+            className={`menuicon ${isOpen ? 'open fixed-position' : ''}`}  // Added 'fixed-position' class when open
+            onClick={handleClick}
+        >
             <svg
                 width="50"
                 height="25"

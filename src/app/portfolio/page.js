@@ -37,12 +37,13 @@ const Portfolio = () => {
       {no:"04", url:"/portfolio/blackb-finance-services",  id: 4, title: "BLACK B FINANCE", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/blackb.gif" },
       {no:"05", url:"portfolio/yolo-mart",  id: 5, title: "YOLOMART", category: "Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media", imageUrl: "/home/portfolio/yolomart.png" },
       {no:"06", url:"/portfolio/mahatee",  id: 6, title: "MAHATEE INTERACTIVES", category: "Branding | Website UI | Shopify Development | Ecommerce Setup | Illustrations | Publication & Book Design | Social Media", imageUrl: "/home/portfolio/mahatee.gif" },
-      {no:"07", url:"",  id: 7, title: "Click R & D", category: "Branding | Website UI | Social Media", imageUrl: "/home/portfolio/clickrnd.jpg" },
+      {no:"07", url:"portfolio/clickrnd",  id: 7, title: "Click R & D", category: "Branding | Website UI | Social Media", imageUrl: "/home/portfolio/clickrnd.jpg" },
       {no:"08", url:"portfolio/citibank",  id: 8, title: "CITIBANK", category: "Illustrations | Presentation | Wall Graffiti", imageUrl: "/home/portfolio/6.png" },
       {no:"09", url:"/portfolio/nutribee",  id: 9, title: "Nutribee", category: "Illustration | Packaging Design", imageUrl: "/home/portfolio/10.png" },
       {no:"10", url:"portfolio/flash-card-illustration-and-packaging",  id: 10, title: "Littile learners trove", category: "Branding | Illustrations | Product Design | Packaging Design | Social Media", imageUrl: "/home/portfolio/12.png" },
       {no:"11", url:"/portfolio/coffee-table-book",  id: 11, title: "Wuerth Industries", category: "Publication - Coffee Table Book Design | Corporate Giftings", imageUrl: "/home/portfolio/8.png" },
-      {no:"12", url:"",  id: 12, title: "Royal Wedding ", category: "Branding | Business Collaterals", imageUrl: "/home/portfolio/11.png" },
+      {no:"12", url:"/portfolio/royal-weddings",  id: 12, title: "Royal Wedding ", category: "Branding | Business Collaterals", imageUrl: "/home/portfolio/11.png" },
+      {no:"12", url:"/portfolio/alhidaya",  id: 4, title: "Alhidaya", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/alhidaya.png" },
       
       // Add more items as needed
   ];

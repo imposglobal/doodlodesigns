@@ -155,6 +155,8 @@ const OurStory = () => {
             </h2>
             <h2 data-aos="fade-up" className={styles.text_title}>digital creators </h2>
             <p data-aos="fade-up" className={styles.desc}>Creative Professionals with Business Brains. (yes, it's a thing!), obsessed with bringing fresh ideas and strategic thinking to everything we do.</p>
+            <p data-aos="fade-up" className={styles.desc}>Think of us as your <b>design dream team, fueled by caffine and crazy strategic ideas.</b> We're a tight-knit crew, but with the firepower of a big agency. We tackle a wide range of design challenges, from crafting killer logos and packaging that pops to building websites that wow and branding that sticks.
+            </p>
             <Image data-aos="fade-up"
                                     className={styles.starimgs}
                                     src="home/ourstory/ourstory.png"
@@ -349,7 +351,7 @@ const OurStory = () => {
                 />
                 
             </div>
-           
+           <p className={styles.tooltext}>More tools like our sketch books, pens, pencils, and we love our stationary utterly!</p>
     </div>
     {/* Tool kit end */}
 
@@ -615,7 +617,7 @@ const OurStory = () => {
           <div className={styles.teaminner}>
           <Image data-aos="fade-up"
                   className={styles.ppimgss}
-                  src="/home/team/teamimg.png"
+                  src="/home/team/yashasvi.png"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}

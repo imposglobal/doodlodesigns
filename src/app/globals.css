@@ -1063,6 +1063,17 @@ video.videoint::-webkit-media-controls {
 .citibank_slidert__V0x_T .slider_slide-item__KYud_{
   height: auto !important;
 }
+.fixed-position {
+  position: fixed !important;
+  margin-top: 50px;
+  right: 42px !important;
+}
+.page_deskmenu__LY1g4 .fixed-position {
+  position: absolute;
+  margin-top: 184px;
+  right: 42px !important;
+  z-index: 9999999 !important;
+}
 @media only screen and (max-width: 600px) {
   .blackb_bbvideo__3th9V video.videoint {
     width: 100%;

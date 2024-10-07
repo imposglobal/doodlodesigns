@@ -274,16 +274,17 @@ const Home = () => {
       <div className={styles.desktopv}>
         <h2 data-aos="fade-up" className={styles.text_stroke_hover}>We're your go-to</h2>
         <h2 data-aos="fade-up" className={styles.text_title}>Creative Studio</h2>
-        <p data-aos="fade-up" className={styles.home_hero_desc}>Of Course we're into Branding, Web<br/> Design, Packaging, Illustrations,<br/> Publication, Social Media & What Not!</p>
+        <p data-aos="fade-up" className={styles.home_hero_desc}>Of course we’re into Branding, Web Design,<br></br>Packaging,  Illustrations, Digital Marketing & what not!
+</p>
       </div>
       <div className={styles.mobilev}>
         <h2  className={styles.text_stroke_hover}>We're your go-to</h2>
         <h2 className={styles.text_title}>Creative Studio</h2>
-        <p  className={styles.home_hero_desc}>Of Course we're into Branding, Web<br/> Design, Packaging, Illustrations,<br/> Publication, Social Media & What Not!</p>
+        <p  className={styles.home_hero_desc}>Of course we’re into Branding, Web Design, Packaging,  Illustrations, Digital Marketing & what not!</p>
       </div>
       <div data-aos="fade-up">
       <Link className="boton_elegante" href="/services">
-      EXPLORE MORE
+      Schedule a Call
       </Link>
       <div data-aos="fade-up" className={styles.mobilev}>
       <Image

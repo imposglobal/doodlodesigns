@@ -89,7 +89,7 @@
     font-size: 18px;
     font-weight: 300 !important;
     margin-bottom: 30px;
-    margin-right: 728px;
+    margin-right: 308px;
   }
 
   .imgcol {
@@ -548,6 +548,13 @@
   border-radius: 10px;
 }
 .toottext{
+  font-family: 'poppins';
+  font-size: 18px;
+  text-align: center;
+  color: #9E9E9E;
+  margin-top: 40px;
+}
+.tooltext{
   font-family: 'poppins';
   font-size: 18px;
   text-align: center;

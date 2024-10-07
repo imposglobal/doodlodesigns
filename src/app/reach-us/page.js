@@ -200,7 +200,7 @@ const handleChange = (e) => {
   
       { id: 3, url:"/portfolio/blackb-finance-services", ids: 'fimg3', ptitle:'BLACK B FINANCE', pdesc:'Branding | Website UI | Web Development', name: 'Item 3', image: '/home/portfolio/gallery/blackb.png', category: 'category2' },
   
-      { id: 4, url:"", ids: 'fimg4', ptitle:'Click R & D', pdesc:'Branding | Website UI | Social Media', name: 'Item 4', image: '/home/portfolio/gallery/clickrnd.png', category: 'category1' },
+      { id: 4, url:"/portfolio/clickrnd", ids: 'fimg4', ptitle:'Click R & D', pdesc:'Branding | Website UI | Social Media', name: 'Item 4', image: '/home/portfolio/gallery/clickrnd.png', category: 'category1' },
   
       { id: 5, url:"portfolio/yolo-mart", ids: 'fimg5', ptitle:'YOLOMART', pdesc:'Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media', name: 'Item 5', image: '/home/portfolio/gallery/yolomart.png', category: 'category2' },
   
@@ -210,7 +210,7 @@ const handleChange = (e) => {
   
       { id: 8, url:"portfolio/flash-card-illustration-and-packaging", ids: 'fimg8', ptitle:'Littile learners trove', pdesc:'Branding | Illustrations | Product Design | Packaging Design | Social Media', name: 'Item 8', image: '/home/portfolio/gallery/flash.png', category: 'category1' },
   
-      { id: 9, url:"", ids: 'fimg9', ptitle:'Royal Wedding', pdesc:'Branding | Business Collaterals', name: 'Item 9', image: '/home/portfolio/gallery/royal.png', category: 'category2' },
+      { id: 9, url:"/portfolio/royal-weddings", ids: 'fimg9', ptitle:'Royal Wedding', pdesc:'Branding | Business Collaterals', name: 'Item 9', image: '/home/portfolio/gallery/royal.png', category: 'category2' },
   
       { id: 10, url:"/portfolio/coffee-table-book", ids: 'fimg10', ptitle:'Wuerth Industries', pdesc:'Publication - Coffee Table Book Design | Corporate Giftings', name: 'Item 10', image: '/home/portfolio/gallery/wru.png', category: 'category2' },
   

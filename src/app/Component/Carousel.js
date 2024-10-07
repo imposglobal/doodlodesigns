@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import '../lib/fontawesome'; // Import the configuration
 
 const Carousel = () => {
@@ -67,7 +68,8 @@ const Carousel = () => {
               <FontAwesomeIcon className="stars" icon={faStar} />
               <FontAwesomeIcon className="stars" icon={faStar} />
               <FontAwesomeIcon className="stars" icon={faStar} />
-              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStarHalfStroke} />
+              
             </div>
             <p className="client_review">Working with Doodlo was a Game changer for us. They revamped our brand and website with unmatched creativity & precision. Their team's dedication and attention to detail is truly impressive. Highly recommended for design services.</p>
           </div>
@@ -89,7 +91,22 @@ const Carousel = () => {
         <div className="card">
           <div className="card_inner">
             <h2 className="client_h2">Norman Dental</h2>
-            <p className="client_desg">Operations Manager | Impos Global</p>
+            <p className="client_desg">CEO |  Wurth Industries</p>
+            <div className="starsicon">
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStarHalfStroke} />
+            </div>
+            <p className="client_review">Doodlo is definitely the right choice for our coffee table Project. The team came up with unique set of ideas that clearly sets us apart from being normal. We are very happy with the final book importantly very constructive and flexible collab. Good work team!</p>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="card_inner">
+            <h2 className="client_h2">Monika K</h2>
+            <p className="client_desg">Founder  |  K99 Solutions</p>
             <div className="starsicon">
               <FontAwesomeIcon className="stars" icon={faStar} />
               <FontAwesomeIcon className="stars" icon={faStar} />
@@ -97,7 +114,69 @@ const Carousel = () => {
               <FontAwesomeIcon className="stars" icon={faStar} />
               <FontAwesomeIcon className="stars" icon={faStar} />
             </div>
-            <p className="client_review">Doodlo is definitely the right choice for our coffee table Project. The team came up with unique set of ideas that clearly sets us apart from being normal. We are very happy with the final book importantly very constructive and flexible collab. Good work team!</p>
+            <p className="client_review">You guys nailed it! Their work on our brand and website was absolutely top- notch. It was so good to check the final results. From content to design everything exceeded our expectations.
+            </p>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card_inner">
+            <h2 className="client_h2">Along Molier</h2>
+            <p className="client_desg">Operations Head |  Impos Global</p>
+            <div className="starsicon">
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStarHalfStroke} />
+            </div>
+            <p className="client_review">If you're seeking something truly Out of the world, Doodlo Design is the place to be. Their work is nothing short of inspiring, I've personally experienced that leaves a lasting impact. Keep up the excellent work, Doodlo, your designs truly make a difference!
+            </p>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="card_inner">
+            <h2 className="client_h2">Gayatri Pataskar</h2>
+            <p className="client_desg">Founder |  Mahatee Interactives </p>
+            <div className="starsicon">
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+            </div>
+            <p className="client_review">We approached Payal for illustrations for our venture Mahatee Interactives, where we wanted our pictures to be full of Attractive pictures with vivid colours. And Payal delivered just that. We also trusted them with our branding...and again they gave us an identity!
+            </p>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="card_inner">
+            <h2 className="client_h2">Dev Aditya</h2>
+            <p className="client_desg">Founder |  Mahatee Interactives </p>
+            <div className="starsicon">
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+            </div>
+            <p className="client_review">We had some change requirements for our existing packaging designs to make new variants and they had done a wonderful job at a very competitive rate. We were happy with their work.
+            </p>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card_inner">
+            <h2 className="client_h2">Njoki Faith</h2>
+            <p className="client_desg">Manager |  Yolomart </p>
+            <div className="starsicon">
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+              <FontAwesomeIcon className="stars" icon={faStar} />
+            </div>
+            <p className="client_review">We had some change requirements for our existing packaging designs to make new variants and they had done a wonderful job at a very competitive rate. We were happy with their work.
+            </p>
           </div>
         </div>
 
