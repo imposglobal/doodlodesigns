@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet');
+@font-face {
+    font-family: 'cocon';
+    src: url('/home/portfolios/mediresale/CoconRegularFont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+.row {
+    /* padding: 40px 40px 0  40px; */
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px ; */
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    flex: 40%;
+    padding: 50px;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns1 {
+    flex: 60%;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns2 {
+    flex: 40%;
+
+   /* Should be removed. Only for demonstration */
+  }
+  .logosec{
+    padding-left: 80px;
+  }
+  .menuicon{
+    top: 0 !important;
+  }
+
+  .imgsec
+  {
+    margin-top: -5px;
+  }
+
+
+  .aboutsec
+  {
+    background-color: #fff;
+    margin-top: -5px;
+  }
+  .atitle
+  {
+    font-size: 40px;
+    color: #000;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .aboutsec
+  {
+    margin-top: -5px;
+    padding: 100px 120px;
+  }
+
+  .aboutcontent
+  {
+    display: flex;
+  }
+  .abcol1
+  {
+    flex: 50%;
+  }
+  .abcol2
+  {
+    flex: 50%;
+  }
+
+ 
+
+  .aboutpb
+  {
+    padding-bottom: 50px;
+  }
+
+  .heading
+  {
+    font-size: 18px;
+    color: #000;
+    font-family: Poppins, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+   
+  }
+
+
+  .desc
+  {
+    font-size: 14px;
+    color: #555555;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    padding-bottom: 25px;
+  }
+
+  .btnrow
+  {
+    display: flex;
+  }
+
+  .btnelegant
+  {
+     background-color: #fff;
+     border: 1px #555555 solid;
+     font-size: 14px;
+     padding: 8px 20px;
+     color: #555555;
+     border-radius: 25px;
+     font-weight: 100;
+  }
+
+  .btnelegant1
+  {
+    background-color: #fff;
+    border: 1px #555555 solid;
+    font-size: 14px;
+    padding: 8px 20px;
+    color: #555555;
+    border-radius: 25px;
+    font-weight: 100;
+    margin-left: 10px;
+  }
+  .btnelegant2
+  {
+    background-color: #fff;
+    border: 1px #555555 solid;
+    font-size: 14px;
+    padding: 8px 20px;
+    color: #555555;
+    border-radius: 25px;
+    font-weight: 100;
+    margin-top: 20px;
+  }
+
+  .aboutpb
+  {
+    padding-bottom: 50px;
+  }
+
+
+  .brandingsec
+  {
+    margin-top: -5px;
+    background-color: #fff;
+    padding: 100px 120px;
+    
+  }
+
+
+  .brandtitle
+  {
+    font-size: 50px;
+    color: #000;
+    font-family: cocon;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+  }
+
+  .hrimg
+  {
+    width: 250px !important;
+    margin-bottom: 10px;
+  }
+
+  .brandpb
+  {
+    padding-bottom: 50px;
+  }
+
+  .medirow
+  {
+    padding: 0 0 0 270px;
+    display: flex;
+  }
+  .mheading
+  {
+  font-size: 24px;
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  letter-spacing: 8px !important;
+  }
+ .arrowp
+ {
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+ .arrowimg
+ {
+    width: 80px !important;
+    padding-top: 12px;
+ }
+ .wordmarkrow
+ {
+    display: flex;
+    padding: 50px 30px 50px 270px;
+ }
+ .wmcol1
+ {
+    flex: 50%;
+ }
+ .wmcol2
+ {
+    flex: 50%;
+    padding-left: 50px;
+ }
+
+ .wmtitle
+ {
+    font-size: 24px;
+    color: #000;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+ }
+ .wmdesc
+ {
+    font-size: 20px;
+    color: #56C6DD;
+    font-family: "Nunito", sans-serif;
+ }
+ .wmimage
+ {
+    width:25% !important;
+    padding: 30px 0;
+ }
+
+ .wordmarkimg
+ {
+    width: 85% !important;
+ }
+
+ .resalesec
+ {
+  display: flex;
+  background-color: #fff;
+  margin-top: -5px;
+ }
+ .resalerow1
+ {
+  flex: 59%;
+  padding: 5px 5px 5px 10px;
+ }
+
+ .resalerow2
+ {
+  flex: 40%;
+  padding: 5px 10px 5px 5px;
+ }
+
+ .colorsec
+ {
+  display: flex;
+  background-color: #fff;
+  margin-top: -5px;
+ }
+ .colorrow1
+ {
+  flex: 50%;
+ }
+
+ .colorrow2
+ {
+  flex: 50%;
+  text-align: center;
+  padding-top: 170px;
+ }
+ .colorimage
+ {
+  width: 60% !important;
+ }
+
+
+
+ @media only screen and (max-width: 600px)
+ {
+  .logosec 
+  {
+    padding-left: 20px;
+  }
+ .column2 
+ {
+  flex: 40% 1;
+  padding: 50px 20px;
+ }
+
+ .aboutsec
+ {
+  padding: 40px 10px 0 10px;
+ }
+ .aboutcontent
+ {
+  display: block;
+ }
+ .aboutpb
+{
+  padding-bottom: 30px;
+}
+
+.atitle
+{
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.brandingsec
+{
+  padding: 0;
+}
+.medirow
+{
+  padding: 0;
+}
+.wordmarkrow
+{
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+.resalesec
+{
+  display: block;
+}
+.colorsec
+{
+  display: block;
+ 
+}
+.colorrow2
+{
+  padding-top: 0;
+}
+.wmcol2
+{
+  padding-left: 0px;
+}
+.arrowimg
+{
+  width: 40px !important;
+}
+.mheading
+{
+  font-size: 18px;
+  letter-spacing: 2px !important;
+}
+.hrimg
+{
+  width: 135px !important;
+}
+.brandtitle
+{
+  font-size: 24px;
+}
+.wmcol1
+{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.brandingsec
+{
+  padding: 40px 10px 40px 10px;
+
+}
+.resalesec
+{
+  padding: 40px 10px 40px 10px;
+}
+.resalerow1
+{
+  padding: 0;
+}
+.colorsec
+{
+padding-bottom: 40px;
+}
+.abcol2
+{
+  padding-top: 30px;
+}
+ }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet');
 .row {
     /* padding: 40px 40px 0  40px; */
     display: flex;
@@ -100,7 +101,7 @@
   {
      background-color: #000;
      border: 1px #9E9E9E solid;
-     font-size: 16px;
+     font-size: 14px;
      padding: 8px 30px;
      color: #9E9E9E;
      border-radius: 25px;
@@ -111,7 +112,7 @@
   {
     background-color: #000;
     border: 1px #9E9E9E solid;
-    font-size: 16px;
+    font-size: 14px;
     padding: 8px 30px;
     color: #9E9E9E;
     border-radius: 25px;
@@ -122,7 +123,7 @@
   {
     background-color: #000;
     border: 1px #9E9E9E solid;
-    font-size: 16px;
+    font-size: 14px;
     padding: 8px 30px;
     color: #9E9E9E;
     border-radius: 25px;
@@ -184,7 +185,7 @@
   .abcdtext
   {
     color: #F19307;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     font-family: Poppins, sans-serif;
   }
@@ -192,8 +193,8 @@
   {
     color: #fff;
     font-size: 40px;
-    font-family: Poppins, sans-serif;
-    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     padding: 0;
     margin: 0;
   }
@@ -203,7 +204,7 @@
     font-size: 12px;
     font-family: Poppins, sans-serif;
     font-weight: 500;
-    margin-top: -15px;
+    margin-top: -5px;
     padding-left: 25px;
   }
 
@@ -217,10 +218,10 @@
    font-size: 160px;
     font-family: Poppins, sans-serif;
     color: #fff;
-    padding: 0;
     margin: 0;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 1; 
+    padding-left: 0;
     
   }
 
@@ -275,7 +276,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain; 
-    height: 300px;
+    height: 400px;
     position: relative;
    
   }
@@ -312,7 +313,7 @@
   .whychooseus
   {
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     font-family: Poppins, sans-serif;
     padding: 0 20px;
     text-align: center;
@@ -351,6 +352,7 @@
     font-family: Poppins, sans-serif;
     padding: 0 20px;
     font-weight: 600;
+    line-height: 1;
   }
 
   .fs20
@@ -363,7 +365,7 @@
   }
   .predesc
   {
-    width: 500px;
+    width: 550px;
 
   }
 .description
@@ -374,6 +376,7 @@
     padding: 0 20px;
     text-align: left;
     font-weight: 200; 
+    line-height: 18px;
 }
 
 
@@ -388,10 +391,13 @@
 {
   display: flex;
 }
-
+.mrow1_responsive
+{
+  display: none;
+}
 .mrow1
 {
-    flex: 20%;
+    flex: 19%;
 }
 .mrow2
 {
@@ -401,7 +407,7 @@
 
 .mrow3
 {
-    flex: 40%;
+    flex: 48.5%;
     margin-left: 5px;
 }
 
@@ -422,7 +428,7 @@
     flex-direction: column;
     border: 1px solid #000;
     border-radius: 7px;
-    padding: 50px 30px 30px 30px;
+    padding: 40px 30px 30px 30px;
 }
 .listicle
 {
@@ -434,14 +440,14 @@
 }
 .marketing
 {
-    font-size: 25px;
+    font-size: 30px;
     color: #000;
     font-weight: 700;
     font-family: Poppins, sans-serif;
-    line-height: 30px;
+    line-height: 32px;
     padding-right: 100px;
     text-transform: uppercase;
-    padding-bottom: 20px;
+    padding: 10px 60px 20px 0;
 }
 
 .mlisting
@@ -451,14 +457,14 @@
 }
 .listingli
 {
-    font-size: 14px;
+    font-size: 15px;
     color: #616161;
-    font-weight: 500;
+    font-weight: 400;
     font-family: Poppins, sans-serif;
     line-height: 20px;
     text-transform: capitalize;
     padding-bottom: 15px;
-    margin-right: 40px;
+   margin-left: -22px;
 
     
 }
@@ -502,5 +508,154 @@
 .maccol2
 {
   flex: 54%;
+}
+
+@media only screen and (max-width: 600px)
+{
+  .logosec 
+  {
+    padding-left: 20px;
+  }
+ .column2 
+ {
+  flex: 40% 1;
+  padding: 50px 20px;
+ }
+
+ .aboutsec
+ {
+  padding: 10px;
+ }
+ .aboutcontent
+ {
+  display: block;
+ }
+ .interrow
+ {
+  display: block;
+ 
+ }
+ .intercol1
+ {
+  padding: 10px;
+  margin: 40px 0;
+ }
+ .intertext
+ {
+  font-size: 120px;
+ }
+ .introw1
+ {
+  margin-left: 0px;
+ }
+ .introw
+ {
+margin-top: 10px;
+ }
+ .headerrow
+ {
+  padding: 0;
+ }
+ .bodyrow
+ {
+  padding: 0;
+ }
+ .headertext
+{
+  left: 0;
+}
+.workshowcase
+{
+  padding: 0;
+  font-size: 16px;
+}
+.fs40
+{
+  font-size: 20px;
+}
+.whychooseus
+{
+  padding: 0;
+}
+.head
+{
+  padding: 0 0 0 10px;
+}
+.workcoloum
+{
+  padding: 0 12px;
+}
+.headerimage
+{
+  height: 150px;
+}
+.predesc
+{
+  width: auto;
+}
+.description
+{
+  font-size: 8px;
+  line-height: 12px;
+  padding: 0 10px;
+}
+.bodyimage
+{
+  height: 250px;
+}
+.marketingrow
+{
+  display: block;
+}
+.mrow1
+{
+  display: none;
+}
+.mrow1_responsive
+{
+  display: block;
+  margin: 30px 0;
+}
+.mrow2
+{
+  margin-left: 0;
+}
+.marketing
+{
+  font-size: 24px;
+  padding: 10px 10px 20px 0;
+  line-height: 28px;
+}
+.aboutpb
+{
+  padding-bottom: 30px;
+}
+.atitle
+{
+  font-size: 24px;
+  padding-top: 30px;
+}
+.abcol2
+{
+  padding: 50px 0;
+}
+.abcdtext
+{
+  font-size: 14px;
+  line-height: 20px;
+}
+.intertext
+{
+  font-size: 100px;
+}
+.listingli
+{
+  font-size: 14px;
+}
+.workborder
+{
+  margin-right: 5px;
+}
+
 }
  

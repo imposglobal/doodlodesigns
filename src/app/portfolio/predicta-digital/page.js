@@ -141,10 +141,7 @@ const predicta = () => {
                 <h1 className={styles.atitle}>Predicta Digital</h1>
                 <hr></hr>
             </div>
-            <div className={styles.aboutcontent}>
-
-
-                
+            <div className={styles.aboutcontent}>    
                <div className={styles.abcol1}>
 
                 <div className={styles.aboutpb}>
@@ -186,14 +183,7 @@ const predicta = () => {
                 </button>
                 </div>
                 </div>
-
-
-                  
-               
                </div>
-
-
-
             <div className={styles.abcol2}>
               <h3 className={styles.heading}>About</h3>
               <p className={styles.desc}>Sed tincidunt felis eget aliquam gravida. Fusce iaculis vel nisl ut aliquet. Etiam dapibus est in ante auctor tincidunt. Integer ut ullamcorper diam. Quisque fermentum, dui pellentesque efficitur porttitor, tortor tellus porttitor lectus, vitae pretium risus purus a quam.</p>
@@ -202,8 +192,6 @@ const predicta = () => {
               <h3 className={styles.heading}>Solutions</h3>
               <p className={styles.desc}>Sed tincidunt felis eget aliquam gravida. Fusce iaculis vel nisl ut aliquet. Etiam dapibus est in ante auctor tincidunt. Integer ut ullamcorper diam. Quisque fermentum, dui pellentesque efficitur porttitor, tortor tellus porttitor lectus, vitae pretium risus purus a quam.</p>
             </div>
-
-
             </div>
          </div>
 
@@ -307,8 +295,8 @@ const predicta = () => {
 
 
                 <div className={styles.workborder}>
-                <h5 className={styles.fs15}>15px</h5>
-                <h4 className={styles.fs40}>40px</h4>
+                <h5 className={styles.fs15}>15PX</h5>
+                <h4 className={styles.fs40}>40PX</h4>
                 </div>
               
               </div>   
@@ -333,8 +321,8 @@ const predicta = () => {
 
 
                 <div className={styles.workborder}>
-                <h5 className={styles.fs15}>15px</h5>
-                <h4 className={styles.fs20}>20px</h4>
+              
+                <h4 className={styles.fs20}>20PX</h4>
                 </div>
               
               </div>   
@@ -360,6 +348,17 @@ const predicta = () => {
                      <div className={styles.mrow1}>
                      <Image
                   src="/home/portfolios/predicta-digital/color.png"
+                  alt="Next.js"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                  priority
+                  /> 
+                     </div>
+
+                     <div className={styles.mrow1_responsive}>
+                     <Image
+                  src="/home/portfolios/predicta-digital/color_res.png"
                   alt="Next.js"
                   layout="responsive"
                   width={100}
