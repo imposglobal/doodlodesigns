@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet');
+
+.row {
+    /* padding: 40px 40px 0  40px; */
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px ; */
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    flex: 40%;
+    padding: 50px;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns1 {
+    flex: 60%;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns2 {
+    flex: 40%;
+
+   /* Should be removed. Only for demonstration */
+  }
+  .logosec{
+    padding-left: 80px;
+  }
+  .menuicon{
+    top: 0 !important;
+  }
+
+
+  .herosec
+  {
+    position: relative;
+    text-align: center;
+  }
+
+  .herotext
+   {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+   }
+   .simage
+   {
+    height: 100px !important;
+    width: 70px !important;
+   }
+   .stext
+   {
+     font-size: 18px;
+     color: #FBEDC0;
+     font-weight: 400;
+     line-height: 25px;
+     font-family: "Open Sans", sans-serif;
+     padding-top: 60px;     
+   }
+
+   .rolesec
+   {
+    background-image: url(/home/portfolios/betsetwin/image2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    text-align: center;
+    padding: 100px 60px 160px;
+   }
+   .roletitle
+   {
+    font-size: 28px;
+    color: #D0BC73;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: "Open Sans", sans-serif;
+    
+   }
+   
+   .btnsec
+   {
+    display: flex;
+    flex-direction: column;
+   }
+   
+   
+.btncol1
+{
+ padding-bottom: 30px;
+}
+.btncol2
+{
+    padding: 40px 0;
+}
+   .btnelegant
+   {
+    background-color: #000;
+    border: 1px #D0BC73 solid;
+    font-size: 20px;
+    padding: 8px 10px;
+    color: #FBEDC0;
+    border-radius: 8px;
+    font-weight: 300;
+    letter-spacing: 2px;
+   }
+
+   .btnelegant1
+   {
+    background-color: #000;
+    border: 1px #D0BC73 solid;
+    font-size: 20px;
+    padding: 8px 10px;
+    color: #FBEDC0;
+    border-radius: 8px;
+    font-weight: 300;
+    margin: 0 150px;
+    letter-spacing: 2px;
+   }
+
+   .btnelegant2
+   {
+    background-color: #000;
+    border: 1px #D0BC73 solid;
+    font-size: 20px;
+    padding: 8px 20px;
+    color: #FBEDC0;
+    border-radius: 8px;
+    font-weight: 300;
+    font-weight: lighter !important;
+    margin: 0 50px;
+    letter-spacing: 2px;
+   }

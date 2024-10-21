@@ -524,7 +524,7 @@
 
  .aboutsec
  {
-  padding: 10px;
+  padding: 40px 10px;
  }
  .aboutcontent
  {
@@ -633,11 +633,11 @@ margin-top: 10px;
 .atitle
 {
   font-size: 24px;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .abcol2
 {
-  padding: 50px 0;
+  padding: 40px 0 0;
 }
 .abcdtext
 {
@@ -655,6 +655,10 @@ margin-top: 10px;
 .workborder
 {
   margin-right: 5px;
+}
+.mrow3
+{
+  margin-left: 0;
 }
 
 }
