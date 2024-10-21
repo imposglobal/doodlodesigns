@@ -29,7 +29,9 @@ const Portfolio = () => {
   };
 
   const portfolioItems = [
-    { url: "/portfolio/alhidaya", id: 13, title: "Alhidaya", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/alhidaya.png" },
+    { url: "/portfolio/alhidaya", id: 13, title: "Alhidaya", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/alhidaya.gif" },
+    { url: "#", id: 14, title: "Bet Set Win", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/bsw.gif" },
+    { url: "#", id: 15, title: "Predicta Digital", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/predicta.png" },
     { url: "/portfolio/swiggy-x-the-bowl-company", id: 1, title: "SWIGGY + BOWL COMPANY", category: "Packaging Design | Marketing collaterals | Advertising ", imageUrl: "/home/portfolio/1.png" },
     { url: "/portfolio/coinsafe-vpn", id: 2, title: "COINSAFE VPN", category: "Branding | Website UI | Web Development | Application | Marketing Collaterals", imageUrl: "/home/portfolio/csafe.gif" },
     { url: "/portfolio/tarabai", id: 3, title: "TARABAI", category: "Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media", imageUrl: "/home/portfolio/5.png" },

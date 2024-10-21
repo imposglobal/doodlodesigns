@@ -706,13 +706,22 @@ button.slick-arrow.slick-next {
 .arrowd{
   background: #34FF9D;
   width: 21px !important;
-  padding: 9px 12px;
-  height: 27px !important;
+  padding: 12px 12px;
+  height: auto !important;
   border-radius: 50%;
   cursor: none;
   transition: all 0.3s ease-out;
 }
-
+.accordion_arrsec__EpCCl .arrowd {
+  margin-top: 7px;
+  background: #34FF9D;
+  width: 21px !important;
+  padding: 16px 16px;
+  height: auto !important;
+  border-radius: 50%;
+  cursor: none;
+  transition: all 0.3s ease-out;
+}
 .content, .content2 {
   transition: all 0.3s ease-out;
 }
@@ -724,6 +733,12 @@ button.slick-arrow.slick-next {
   z-index: 300;
 }
 .page_column2__sps9O .menuicon {
+  position: relative;
+  top: 0;
+  float: right;
+  z-index: 300;
+}
+.predicta_logosec__tTdhi .menuicon {
   position: relative;
   top: 0;
   float: right;
@@ -1153,15 +1168,24 @@ a.mitem {
   .arrowd {
     background: #34FF9D;
     width: 21px !important;
-    padding: 7px 10px;
-    height: 27px !important;
+    padding: 12px 10px;
+    height: auto !important;
     border-radius: 50%;
     cursor: none;
     transition: all 0.3s ease-out;
     margin-top: -79px;
     margin-right: -14px;
 }
-
+.accordion_arrsec__EpCCl .arrowd {
+  margin-top: 7px;
+  background: #34FF9D;
+  width: 24px !important;
+  padding: 6px 14px;
+  height: 42px !important;
+  border-radius: 50%;
+  cursor: none;
+  transition: all 0.3s ease-out;
+}
 .panel, .panel2 {
   position: static;
   overflow: hidden;
