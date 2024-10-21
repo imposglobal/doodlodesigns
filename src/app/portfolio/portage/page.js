@@ -2,12 +2,12 @@
 import React from 'react'
 import Link from "next/link"
 import Image from "next/image";
-import styles from "./mediresale.module.css";
+import styles from "./portage.module.css";
 import Logo from "@/app/Images/logo";
 import Menu from "@/app/Component/Menu";
 import {useState, useEffect} from 'react';
 
-const mediresale = () => {
+const portage = () => {
     useEffect(() => {
         document.title = "Portfolio - Doodlo Designs Studio";
       }, []);
@@ -19,7 +19,7 @@ const mediresale = () => {
         };
   return (
     <div>
- <div id="wrapper">
+<div id="wrapper">
       <div className={`menuwrap ${inactive ? 'inactive' : ''} doodbg`}>
         <div className="menusec">
           <div className="menurow">
@@ -110,7 +110,7 @@ const mediresale = () => {
     </div>
     {/* Menu end */}
 
-      <div className={`${styles.row} ${styles.mobrow}`}>
+        <div className={`${styles.row} ${styles.mobrow}`}>
         <div className={styles.column1}>
             <div className={`${styles.logosec} ${styles.mlsec}`}>
             <Logo />
@@ -123,11 +123,11 @@ const mediresale = () => {
         </div>
         </div>
         {/* end */}
-    
 
-         <div className={styles.herosec}>
+
+        <div className={styles.herosec}>
                 <Image
-                src="/home/portfolios/mediresale/Group1.png"
+                src="/home/portfolios/portage/portage.png"
                 alt="Next.js"
                 layout="responsive"
                 width={100}
@@ -135,23 +135,10 @@ const mediresale = () => {
                 priority
                 />
         </div>
-
-        <div className={styles.imgsec}>
-                <Image
-                src="/home/portfolios/mediresale/Group2.png"
-                alt="Next.js"
-                layout="responsive"
-                width={100}
-                height={100}
-                priority
-                />
-        </div>
-
-
-         {/****************/}
-         <div className={styles.aboutsec}>
+        {/*****************/}
+        <div className={styles.aboutsec}>
             <div className={styles.aboutpb}>
-                <h1 className={styles.atitle}>Mediresale</h1>
+                <h1 className={styles.atitle}>Portage</h1>
                 <hr></hr>
             </div>
             <div className={styles.aboutcontent}>    
@@ -184,17 +171,13 @@ const mediresale = () => {
                 <h3 className={styles.heading}>Creative</h3>
                 <div className={styles.btnrow}>              
                 <button className={styles.btnelegant}>
-                Website Re-Design
+                Branding
                 </button>   
                 <button className={styles.btnelegant1}>
-                Social Media
+                Brochure
                 </button>        
                 </div>
-                <div>
-                <button className={styles.btnelegant2}>
-                Website Development
-                </button>
-                </div>
+                
                 </div>
                </div>
             <div className={styles.abcol2}>
@@ -207,126 +190,243 @@ const mediresale = () => {
             </div>
             </div>
          </div>
+         {/*****************/}
 
-          {/****************/}
-
-          <div className={styles.brandingsec}>
-            <div className={styles.brandpb}>
-                <h1 className={styles.brandtitle}>Branding</h1>
-                <Image
-                src="/home/portfolios/mediresale/Group2.png"
-                alt="Next.js"
-                layout="responsive"
-                width={100}
-                height={100}
-                className={styles.hrimg}
-                priority
-                />
+         <div className={styles.brandingsec}>
+             <div>
+                <h1 className={styles.btitle}>Branding</h1>              
             </div>
 
-            <div className={styles.medirow}>
-                 <div><h3 className={styles.mheading}>MK HEALTHCARE</h3></div>
-                 <div className={styles.arrowp}> 
-                <Image
-                src="/home/portfolios/mediresale/Arrow.png"
+            <div className={styles.buttonsec}>
+            <Image
+                src="/home/portfolios/portage/portage3.svg"
                 alt="Next.js"
                 layout="responsive"
                 width={100}
                 height={100}
-                className={styles.arrowimg}
                 priority
-                />
-                </div>
-                 <div><h3 className={styles.mheading}>MEDIRESALE</h3></div>
+                />          
+            </div>            
+         </div>
+          {/*****************/}
+
+          <div className={styles.conceptsec}>
+            <div>
+                <h4 className={styles.ctitle}>Concepts:</h4>              
             </div>
 
-            <div className={styles.wordmarkrow}>
-                <div className={styles.wmcol1}>
-                <Image
-                src="/home/portfolios/mediresale/Group3.png"
+            <div className={styles.conrow1}>
+               <div className={styles.con1}>
+               <Image
+                src="/home/portfolios/portage/logo1 gif.gif"
                 alt="Next.js"
                 layout="responsive"
                 width={100}
                 height={100}
-                className={styles.wordmarkimg}
                 priority
-                />
-                </div>
-                <div className={styles.wmcol2}>
-                <h4 className={styles.wmtitle}>Wordmark</h4>
-                <Image
-                src="/home/portfolios/mediresale/Group4.png"
+                />   
+               </div>
+               <div className={styles.con2}>
+               <Image
+                src="/home/portfolios/portage/logo2 gif.gif"
                 alt="Next.js"
                 layout="responsive"
                 width={100}
                 height={100}
-                className={styles.wmimage}
                 priority
-                />
-                <p className={styles.wmdesc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed vulputate massa, vitae dapibus nisi. Donec non imperdiet diam, eu tincidunt ante. Suspendisse quis nunc vel purus blandit fringilla. </p>   
-                 </div>
+                />   
+               </div>
+               <div className={styles.con2}>
+               <Image
+                src="/home/portfolios/portage/logo1 gif.gif"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />   
+               </div>
+               <div className={styles.con2}>
+               <Image
+                src="/home/portfolios/portage/logo2 gif.gif"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />   
+               </div>
             </div>
+
+
+            <div className={styles.conrow2}>
+               <div className={styles.con1}>
+               <Image
+                src="/home/portfolios/portage/logo1 gif.gif"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />   
+               </div>
+               <div className={styles.con3}>
+               <Image
+                src="/home/portfolios/portage/portage6.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                
+                priority
+                />   
+               </div>                        
+            </div>          
+         </div>
+        {/*****************/}
+
+         <div className={styles.elementsec}>
+              <div className={styles.elementcol1}>
+                <Image
+                src="/home/portfolios/portage/portage1.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                className={styles.portageimg}
+                priority
+                /> 
+              </div>
+              <div className={styles.elementcol2}>
+                <p className={styles.edesc}><strong>Geometric Shape:</strong> Represents a sense of stability and Structure</p>
+                <p className={styles.edesc}><strong>Element:</strong> Represents a sense of stability and Structure</p>
+                <Image
+                src="/home/portfolios/portage/portage2.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                /> 
+              </div>
+           
+         </div>
+
+        {/*****************/}
+      <div className={styles.imagesec}>
+            <div className={styles.imagecol1}> 
+            <Image
+                src="/home/portfolios/portage/tshirt.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                /> 
+            </div>
+            <div className={styles.imagecol2}>  
+               <div className={styles.imagecoloum}>
+                         <div className={styles.imgcol1}>
+                         <Image
+                         src="/home/portfolios/portage/cap.png"
+                         alt="Next.js"
+                         layout="responsive"
+                         width={100}
+                         height={100}
+                         priority
+                         /> 
+                         </div>
+                         <div className={styles.imgcol1}>
+                         <Image
+                         src="/home/portfolios/portage/keychain.png"
+                         alt="Next.js"
+                         layout="responsive"
+                         width={100}
+                         height={100}
+                         priority
+                         /> 
+                         </div>
+               </div>
+            </div>
+      </div>
+ {/*****************/}
+
+ <div className={styles.brochuresec}>
+            <div className={styles.bcol1}> 
+            <Image
+                src="/home/portfolios/portage/brochure.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                /> 
+            </div>
+            <div className={styles.bcol2}>  
+               <div className={styles.brocol}>
+                         <div className={styles.brocol1}>
+                         <Image
+                         src="/home/portfolios/portage/mockup1.png"
+                         alt="Next.js"
+                         layout="responsive"
+                         width={100}
+                         height={100}
+                         priority
+                         /> 
+                         </div>
+                         <div className={styles.brocol2}>
+                         <Image
+                         src="/home/portfolios/portage/mockup2.png"
+                         alt="Next.js"
+                         layout="responsive"
+                         width={100}
+                         height={100}
+                         priority
+                         /> 
+                         </div>
+               </div>
+            </div>
+      </div>
+
+       {/*****************/}
+       <div className={styles.mockupsec}>
+                <Image
+                src="/home/portfolios/portage/mockup3.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+        </div>
+        {/*****************/}
+        <div className={styles.portagesec}>
+          <div className={styles.pcol1}>
+               <Image
+                src="/home/portfolios/portage/mockup4.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
           </div>
-
-        {/****************/}
-
-        <div className={styles.resalesec}>
-        <div className={styles.resalerow1}>
+          <div className={styles.pcol2}>
                <Image
-                src="/home/portfolios/mediresale/image1.png"
-                alt="Next.js"
-                layout="responsive"
-                width={100}
-                height={100}
-              
-                priority
-                />        
-        </div>
-        <div className={styles.resalerow2}>
-               <Image
-                src="/home/portfolios/mediresale/image2.png"
-                alt="Next.js"
-                layout="responsive"
-                width={100}
-                height={100}
-            
-                priority
-                />  
-        </div>
-        </div>
-
-         {/****************/}
-
-     
-
-        <div className={styles.colorsec}>
-        <div className={styles.colorrow1}>
-               <Image
-                src="/home/portfolios/mediresale/MRColor.gif"
+                src="/home/portfolios/portage/mockup5.png"
                 alt="Next.js"
                 layout="responsive"
                 width={100}
                 height={100}
                 priority
-                />        
-        </div>
-        <div className={styles.colorrow2}>
-               <Image
-                src="/home/portfolios/mediresale/color.png"
-                alt="Next.js"
-                layout="responsive"
-                width={100}
-                height={100}
-                className={styles.colorimage}
-                priority
-                />  
-        </div>
-        </div>
-         {/****************/}
-
-         <div className={styles.imgsec}>
+                />
+          </div>
+          </div>
+        {/*****************/}
+       
+       <div className={styles.mockupsec}>
                 <Image
-                src="/home/portfolios/mediresale/maskgroup.svg"
+                src="/home/portfolios/portage/mockup6.png"
                 alt="Next.js"
                 layout="responsive"
                 width={100}
@@ -334,12 +434,38 @@ const mediresale = () => {
                 priority
                 />
         </div>
-         {/****************/}
+       
+                
+      {/*****************/}
 
-
-
+      <div className={styles.tsec}>
+          <div className={styles.tcol1}>
+               <Image
+                src="/home/portfolios/portage/mockup7.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+          </div>
+          <div className={styles.tcol2}>
+               <Image
+                src="/home/portfolios/portage/mockup8.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+          </div>
+          </div>
+         
+        {/*****************/}
+         
+        
     </div>
   )
 }
 
-export default mediresale
+export default portage
