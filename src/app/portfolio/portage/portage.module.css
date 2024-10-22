@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'nexa';
+  src: url('/home/portfolios/portage/Nexa Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 .row {
     /* padding: 40px 40px 0  40px; */
     display: flex;
@@ -142,23 +148,23 @@
   .brandingsec
   {
     margin-top: -5px;
-    padding: 50px 120px 0;
+    padding: 150px 120px 0;
     background-color: #fff;
   }
   .btitle
   {
     font-size: 40px;
     color: #000;
-    font-family: Poppins, sans-serif;
-    font-weight: bold;
+    font-family: nexa !important;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 600;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
   }
 
   .buttonsec
   {
-    padding: 80px;
+    padding: 40px 80px 80px;
   }
 
   .conceptsec
@@ -180,12 +186,10 @@
   .conrow1
   {
     display: flex;
+    gap: 5px;
   }
 
-  .con2
-  {
-    margin-left: 5px;
-  }
+  
 
   .conrow2
   {
@@ -195,7 +199,7 @@
   .elementsec
   {
     display: flex;
-    padding: 0px 120px 200px;
+    padding: 0px 80px 200px;
     background-color: #fff;
   }
   .elementcol1
@@ -216,6 +220,7 @@
     font-family: Poppins, sans-serif;
     font-weight: 400;
     padding-bottom: 25px;
+    margin-right: 150px;
   }
   .portageimg
   {
@@ -279,17 +284,10 @@
     display: flex;
     background-color: #fff;
     padding: 5px 5px 0 5px;
+    gap: 5px;
   }
  
-  .pcol1
-  {
-    flex: 51%;
-  }
-  .pcol2
-  {
-    flex: 54%;
-    margin-left: 5px;
-  }
+  
 
 
   .tsec
@@ -298,18 +296,10 @@
     display: flex;
     background-color: #fff;
     padding: 5px 5px;
+    gap: 5px;
   }
  
-  .tcol1
-  {
-    flex: 43%;
-  }
-  .tcol2
-  {
-    flex: 63%;
-    margin-left: 5px;
-  }
-
+ 
 
   @media only screen and (max-width: 600px)
   {
@@ -347,7 +337,7 @@
 
 .brandingsec
 {
-  padding: 40px 10px 40px 10px;
+  padding: 50px 10px 40px 10px;
 }
 .btitle
 {
@@ -440,5 +430,6 @@
 .edesc
 {
   font-size: 18px;
+  margin-right: 0;
 }
   }

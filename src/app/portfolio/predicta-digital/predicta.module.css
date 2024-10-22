@@ -140,17 +140,9 @@
   {
     display: flex;
     padding: 0 10px;
+    gap: 5px;
   }
-  .irow1
-  {
-    flex: 59%;
-  }
-
-  .irow2
-  {
-    flex: 43%;
-  }
-
+ 
   .interrow
   {
     display: flex;
@@ -159,15 +151,15 @@
   }
   .intercol1
   {
-    flex: 35%;
+    /* flex: 35%; */
     padding: 50px 60px 0 60px;
     border: 1px solid #fff;
     border-radius: 7px;
   }
-  .intercol2
+  /* .intercol2
   {
     flex: 65%;
-  }
+  } */
   .textrow
   {
     display: flex;
@@ -286,7 +278,7 @@
     position: absolute;
     align-items: center;
     justify-content: center;
-    top: 30%;
+    top: 32%;
     left: 12%;
     
   }
@@ -428,7 +420,7 @@
     flex-direction: column;
     border: 1px solid #000;
     border-radius: 7px;
-    padding: 40px 30px 30px 30px;
+    padding: 40px 30px 30px 50px;
 }
 .listicle
 {
@@ -464,8 +456,8 @@
     line-height: 20px;
     text-transform: capitalize;
     padding-bottom: 15px;
-   margin-left: -22px;
-
+    margin-left: -22px;
+    margin-right: 80px;
     
 }
 
@@ -476,7 +468,6 @@
 
 .tcol2
 {
-    border: 1px solid #000;
     border-radius: 7px;
     margin-top: 5px;
    
@@ -485,11 +476,14 @@
 .graphicrow
 {
   background-color: #fff;
+  margin-top: -5px;
 }
 .macbookrow
 {
 
-  padding: 5px;
+  padding: 10px 5px 0px;
+  margin-top: -70px;
+  background-color: #000;
 
 }
 .macrow
@@ -499,16 +493,10 @@
 .maccoloum
 {
   display: flex;
-}
-.maccol1
-{
-  flex: 46%;
+  padding: 0 5px;
+  gap: 5px;
 }
 
-.maccol2
-{
-  flex: 54%;
-}
 
 @media only screen and (max-width: 600px)
 {
@@ -659,6 +647,22 @@ margin-top: 10px;
 .mrow3
 {
   margin-left: 0;
+}
+.maccoloum
+{
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 10px 10px; 
+}
+.macbookrow
+{
+  padding: 10px 10px;
+  margin-top: -20px;
+}
+
+.macrow
+{
+  padding: 0px 10px 10px;
 }
 
 }

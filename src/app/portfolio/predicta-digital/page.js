@@ -198,7 +198,7 @@ const predicta = () => {
           {/****************/}
 
           <div className={styles.imagerow}>
-                  <div className={styles.irow1}>
+                  <div>
                   <Image
                   src="/home/portfolios/predicta-digital/image1.png"
                   alt="Next.js"
@@ -208,7 +208,7 @@ const predicta = () => {
                   priority
                   /> 
                   </div>
-                  <div className={styles.irow2}>
+                  <div>
                   <Image
                   src="/home/portfolios/predicta-digital/image2.png"
                   alt="Next.js"

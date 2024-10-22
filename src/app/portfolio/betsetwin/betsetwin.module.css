@@ -38,18 +38,24 @@
 
   .herosec
   {
-    position: relative;
-    text-align: center;
+    background-image: url(/home/portfolios/betsetwin/image1.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+   
+    background-position: top;
   }
 
   .herotext
    {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
    }
    .simage
    {
@@ -63,8 +69,9 @@
      font-weight: 400;
      line-height: 25px;
      font-family: "Open Sans", sans-serif;
-     padding-top: 60px;     
-   }
+     padding: 60px 280px 0;   
+     text-align: center;
+   } 
 
    .rolesec
    {
@@ -100,41 +107,465 @@
 {
     padding: 40px 0;
 }
+.btncol3
+{
+  padding: 20px 0;
+  
+}
    .btnelegant
    {
-    background-color: #000;
+    background-color: transparent;
     border: 1px #D0BC73 solid;
     font-size: 20px;
-    padding: 8px 10px;
+    padding: 7px 15px;
     color: #FBEDC0;
     border-radius: 8px;
-    font-weight: 300;
-    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
    }
 
    .btnelegant1
    {
-    background-color: #000;
+    background-color: transparent;
     border: 1px #D0BC73 solid;
-    font-size: 20px;
-    padding: 8px 10px;
+    font-size: 22px;
+    padding: 7px 15px;
     color: #FBEDC0;
     border-radius: 8px;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0 150px;
-    letter-spacing: 2px;
+    font-family: "Open Sans", sans-serif;
    }
 
    .btnelegant2
    {
-    background-color: #000;
+    background-color: transparent;
     border: 1px #D0BC73 solid;
-    font-size: 20px;
-    padding: 8px 20px;
+    font-size: 22px;
+    padding: 7px 20px;
     color: #FBEDC0;
     border-radius: 8px;
-    font-weight: 300;
-    font-weight: lighter !important;
+    font-weight: 400;
     margin: 0 50px;
-    letter-spacing: 2px;
+    font-family: "Open Sans", sans-serif;
    }
+
+   .btnelegant3
+   {
+    background-color: transparent;
+    border: 1px #D0BC73 solid;
+    font-size: 22px;
+    padding: 8px 40px;
+    color: #FBEDC0;
+    border-radius: 8px;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+   }
+
+
+   .challengesec
+   {
+        margin-top: -5px;
+        display: flex;
+        padding: 50px 80px;
+   }
+
+   .chflexc
+   {
+    display: flex;
+    flex-direction: column;
+   }
+
+   .chflexr
+   {
+    display: flex;
+   }
+   .chtitle
+   {
+    font-size: 40px;
+    color: #F9E398;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+   }
+   .chdesc
+   {
+    font-size: 16px;
+    color: #F9E398;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px; 
+  
+    
+   }
+
+   
+
+.betsetsec
+{
+  margin-top: -5px;
+}
+.betsetimg
+{
+  width: 30% !important;
+  padding-left: 100px;
+}
+
+.bswsec
+{
+  margin-top: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.bswimg
+{
+  width: 30% !important;
+}
+
+.fontsec
+{
+  display: flex;
+  padding: 80px 120px;
+}
+
+.fontcol1
+{
+  flex: 50%;
+}
+.fontcol2
+{
+  flex: 50%;
+}
+.bfont
+{
+  font-size: 55px;
+  color: #F9E398;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.afont
+{
+  font-size: 55px;
+  color: #F9E398;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-left: 60px;
+}
+.frow1
+{
+  display: flex;
+
+}
+.frow2
+{
+  display: flex;
+  
+}
+.colsec
+{
+  display: flex;
+  
+}
+
+
+
+.regfont
+{
+  font-size: 55px;
+  color: #F9E398;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding: 0 30px;
+}
+
+.boldfont
+{
+  font-size: 55px;
+  color: #F9E398;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0 30px;
+}
+.ofont
+{
+  font-size: 55px;
+  color: #F9E398;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+}
+.srfont
+{
+  font-size: 14px;
+  color: #F9E398;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px; 
+  padding: 0 30px;
+  margin-top: -8px;
+  text-transform: uppercase;
+
+
+}
+.sbfont
+{
+  font-size: 14px;
+  color: #F9E398;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0 30px; 
+  margin-top: -8px;
+  text-transform: uppercase;
+}
+
+.colorsec
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 100px;
+}
+
+.dimg
+{
+width: 80% !important;
+padding-top: 20px;
+}
+
+.textcenter
+{
+  text-align: center;
+}
+
+.pritext
+{
+  font-size: 28px;
+  color: #F9E398;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 60px 0 40px;
+}
+
+.livesec
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 60px;
+}
+.imgsec
+{
+  margin-top: -5px;
+  padding: 40px 60px;
+}
+
+.ptsec
+{
+ margin-top: -5px;
+ padding: 40px 0px;
+}
+
+.websec
+{
+  margin-top: -5px;
+  background-color: #131415;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wtitle
+{
+  font-size: 50px;
+  color: #F9E398;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.wdesc
+{
+  font-size: 18px;
+  color: #FBEDC0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px; 
+  padding: 30px 220px 0px;
+  text-align: center;
+}
+
+.mobilesec
+{
+  margin: -5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.mtitle
+{
+  font-size: 50px;
+  color: #F9E398;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: 150px;
+  text-align: right;
+}
+
+.mdesc
+{
+  font-size: 18px;
+  color: #FBEDC0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px; 
+  text-align: right;
+  margin-top: 20px;
+  padding-left: 60px;
+}
+
+.mcol1
+{
+  flex: 60%;
+}
+
+.mcol2
+{
+  flex: 40%;
+  text-align: center;
+  padding-right: 70px;
+  
+}
+
+@media only screen and (max-width: 600px)
+{
+  .logosec 
+  {
+    padding-left: 20px;
+  }
+ .column2 
+ {
+  flex: 40% 1;
+  padding: 50px 20px;
+ }
+
+ .herosec
+ {
+  height: auto;
+  margin-top: 0;
+  padding: 30px 0px;
+ }
+ .simage
+ {
+  height: 50px !important;
+  width: 40px !important;
+ }
+ .stext
+ {
+  padding: 20px 30px 0;
+  font-size: 14px;
+  line-height: 18px;
+ }
+
+ .rolesec
+ {
+  padding: 20px 10px;
+ }
+
+ .fontsec
+ {
+  display: block;
+  padding: 30px 10px;
+ }
+ .bfont
+ {
+  font-size: 35px;
+ }
+ .afont
+ {
+  font-size: 35px;
+ }
+ .ofont
+ {
+  font-size: 35px;
+ }
+ .regfont
+ {
+  font-size: 35px;
+  padding: 0 10px;
+ }
+ .boldfont
+ {
+  font-size: 35px;
+  padding: 0 10px;
+ }
+ .sbfont
+ {
+  padding: 0 10px;
+ }
+ .srfont
+ {
+  padding: 0 10px;
+ }
+ .frow2
+ {
+  padding-top: 20px;
+ }
+
+ .colorsec
+ {
+  padding: 20px 20px;
+ }
+ .dimg
+ {
+  padding-top: 0;
+  width: 70%;
+ }
+ .wtitle
+ {
+  font-size: 28px;
+ }
+ .wdesc
+ {
+  padding: 30px 10px;
+ }
+ .imgsec
+ {
+  padding: 0;
+ }
+ .mobilesec
+ {
+  display: block;
+  padding: 60px 0;
+    
+ }
+ .mcol2
+ {
+  padding: 0;
+ }
+ .mtitle
+ {
+  padding: 30px 10px;
+  text-align: center;
+  font-size: 30px;
+ }
+ .mdesc
+ {
+  padding: 0;
+  text-align: center;
+ }
+}

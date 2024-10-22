@@ -254,13 +254,11 @@
  }
  .resalerow1
  {
-  flex: 59%;
   padding: 5px 5px 5px 10px;
  }
 
  .resalerow2
  {
-  flex: 40%;
   padding: 5px 10px 5px 5px;
  }
 
@@ -270,22 +268,33 @@
   background-color: #fff;
   margin-top: -5px;
  }
- .colorrow1
- {
-  flex: 50%;
- }
+ 
 
  .colorrow2
  {
-  flex: 50%;
   text-align: center;
   padding-top: 170px;
  }
  .colorimage
  {
-  width: 60% !important;
+  width: 65% !important;
  }
 
+ .mockupsec
+ {
+  margin-top: -5px;
+  background-color: #fff;
+  padding: 5px;
+ }
+.mrowsec
+{
+  margin-top: -5px;
+  background-color: #fff;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
 
 
  @media only screen and (max-width: 600px)
@@ -382,6 +391,10 @@
   padding: 40px 10px 40px 10px;
 }
 .resalerow1
+{
+  padding: 0;
+}
+.resalerow2
 {
   padding: 0;
 }

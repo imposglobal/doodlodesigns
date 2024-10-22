@@ -299,7 +299,7 @@ const portage = () => {
               </div>
               <div className={styles.elementcol2}>
                 <p className={styles.edesc}><strong>Geometric Shape:</strong> Represents a sense of stability and Structure</p>
-                <p className={styles.edesc}><strong>Element:</strong> Represents a sense of stability and Structure</p>
+                <p className={styles.edesc}><strong>Element:</strong> Represents the abstract form of alphabet ‘P’</p>
                 <Image
                 src="/home/portfolios/portage/portage2.png"
                 alt="Next.js"

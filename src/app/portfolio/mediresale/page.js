@@ -289,7 +289,6 @@ const mediresale = () => {
                 layout="responsive"
                 width={100}
                 height={100}
-            
                 priority
                 />  
         </div>
@@ -335,7 +334,50 @@ const mediresale = () => {
                 />
         </div>
          {/****************/}
-
+         <div className={styles.mockupsec}>
+                <Image
+                src="/home/portfolios/mediresale/Mockup1.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+        </div>
+        {/****************/}
+        <div className={styles.mrowsec}>
+          <div>
+                <Image
+                src="/home/portfolios/mediresale/Mockup2.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+          </div>
+          <div>
+                <Image
+                src="/home/portfolios/mediresale/Mockup3.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+          </div>
+          <div>
+                <Image
+                src="/home/portfolios/mediresale/Mockup4.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+          </div>               
+        </div>
+         {/****************/}
 
 
     </div>
