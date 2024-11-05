@@ -218,7 +218,7 @@ const portage = () => {
             <div className={styles.conrow1}>
                <div className={styles.con1}>
                <Image
-                src="/home/portfolios/portage/logo1 gif.gif"
+                src="/home/portfolios/portage/portage1.gif"
                 alt="Next.js"
                 layout="responsive"
                 width={100}
@@ -226,9 +226,9 @@ const portage = () => {
                 priority
                 />   
                </div>
-               <div className={styles.con2}>
+               <div className={styles.con1}>
                <Image
-                src="/home/portfolios/portage/logo2 gif.gif"
+                src="/home/portfolios/portage/portage1.gif"
                 alt="Next.js"
                 layout="responsive"
                 width={100}
@@ -236,9 +236,9 @@ const portage = () => {
                 priority
                 />   
                </div>
-               <div className={styles.con2}>
+               <div className={styles.con1}>
                <Image
-                src="/home/portfolios/portage/logo1 gif.gif"
+                src="/home/portfolios/portage/portage1.gif"
                 alt="Next.js"
                 layout="responsive"
                 width={100}
@@ -246,9 +246,9 @@ const portage = () => {
                 priority
                 />   
                </div>
-               <div className={styles.con2}>
+               <div className={styles.con1}>
                <Image
-                src="/home/portfolios/portage/logo2 gif.gif"
+                src="/home/portfolios/portage/portage1.gif"
                 alt="Next.js"
                 layout="responsive"
                 width={100}
@@ -260,9 +260,9 @@ const portage = () => {
 
 
             <div className={styles.conrow2}>
-               <div className={styles.con1}>
+               <div className={styles.con2}>
                <Image
-                src="/home/portfolios/portage/logo1 gif.gif"
+                src="/home/portfolios/portage/portage1.gif"
                 alt="Next.js"
                 layout="responsive"
                 width={100}
@@ -272,15 +272,17 @@ const portage = () => {
                </div>
                <div className={styles.con3}>
                <Image
-                src="/home/portfolios/portage/portage6.png"
+                src="/home/portfolios/portage/portage7.png"
                 alt="Next.js"
                 layout="responsive"
                 width={100}
                 height={100}
-                
                 priority
                 />   
-               </div>                        
+               </div>
+            
+            
+      
             </div>          
          </div>
         {/*****************/}
@@ -351,6 +353,17 @@ const portage = () => {
       </div>
  {/*****************/}
 
+ <div className={styles.mockupsec}>
+                <Image
+                src="/home/portfolios/portage/deliver.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+        </div>
+{/*****************/}
  <div className={styles.brochuresec}>
             <div className={styles.bcol1}> 
             <Image
@@ -462,8 +475,11 @@ const portage = () => {
           </div>
          
         {/*****************/}
-         
-        
+        <div className={styles.thanksec}>
+        <h4 className={styles.thtitle}>Thanks for scrolling!</h4> 
+        <h6 className={styles.thdesc}>Got a project in mind? Let’s create something awesome together.</h6>  
+       </div>
+         {/*****************/}
     </div>
   )
 }

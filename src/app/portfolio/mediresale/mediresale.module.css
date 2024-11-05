@@ -284,17 +284,56 @@
  {
   margin-top: -5px;
   background-color: #fff;
-  padding: 5px;
+  padding: 10px;
  }
 .mrowsec
 {
   margin-top: -5px;
   background-color: #fff;
-  padding: 5px;
+  padding: 0px 10px 10px 10px;
   display: flex;
   flex-direction: row;
-  gap: 7px;
+  gap: 10px;
 }
+
+.mocksec
+{
+  display: flex;
+  flex-direction: row;
+  margin-top: -5px;
+  padding: 10px 10px 0;
+  gap: 10px;
+  background-color: #fff;
+}
+
+
+.medisec
+{
+  padding: 10px 10px;
+  margin-top: -5px;
+  background-color: #fff; 
+}
+
+.thanksec
+  {
+    background-color: #fff;
+    margin-top: -5px;
+    text-align: center;
+    padding: 50px 0;
+  }
+ 
+  .thtitle
+  {
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    font-weight: 800;
+  }
+  .thdesc
+  {
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400 !important;
+  }
 
 
  @media only screen and (max-width: 600px)
@@ -405,5 +444,18 @@ padding-bottom: 40px;
 .abcol2
 {
   padding-top: 30px;
+}
+
+.mocksec
+{
+  display: block;
+}
+.mrowsec
+{
+  display: block;
+}
+.pt5
+{
+  padding-top: 5px;
 }
  }

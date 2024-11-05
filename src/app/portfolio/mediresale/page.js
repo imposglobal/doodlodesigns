@@ -356,7 +356,7 @@ const mediresale = () => {
                 priority
                 />
           </div>
-          <div>
+          <div className={styles.pt5}>
                 <Image
                 src="/home/portfolios/mediresale/Mockup3.png"
                 alt="Next.js"
@@ -366,7 +366,7 @@ const mediresale = () => {
                 priority
                 />
           </div>
-          <div>
+          <div className={styles.pt5}>
                 <Image
                 src="/home/portfolios/mediresale/Mockup4.png"
                 alt="Next.js"
@@ -378,8 +378,105 @@ const mediresale = () => {
           </div>               
         </div>
          {/****************/}
+         <div className={styles.imgsec}>
+               <Image
+                src="/home/portfolios/mediresale/Mockup5.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+         </div>
+           {/****************/}
+         <div className={styles.mocksec}>
+          <div>
+               <Image
+                src="/home/portfolios/mediresale/Mockup7.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+          </div>
+          <div className={styles.pt5}>
+          <Image
+                src="/home/portfolios/mediresale/Mockup8.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+          </div>
+         </div>
+         {/****************/}
 
+         <div className={styles.mocksec}>
+          <div>
+               <Image
+                src="/home/portfolios/mediresale/Mockup9.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+          </div>
+          <div className={styles.pt5}>
+          <Image
+                src="/home/portfolios/mediresale/Mockup10.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+          </div>
+         </div>
+ {/****************/}
 
+ <div className={styles.mocksec}>
+          <div>
+               <Image
+                src="/home/portfolios/mediresale/Mockup11.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+          </div>
+          <div className={styles.pt5}>
+          <Image
+                src="/home/portfolios/mediresale/Mockup12.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+          </div>
+         </div>
+ {/****************/}
+          <div className={styles.medisec}>
+               <Image
+                src="/home/portfolios/mediresale/Mockup13.png"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                priority
+                />
+         </div>
+     
+            {/*****************/}
+        <div className={styles.thanksec}>
+        <h4 className={styles.thtitle}>Thanks for scrolling!</h4> 
+        <h6 className={styles.thdesc}>Got a project in mind? Let’s create something awesome together.</h6>  
+       </div>
+         {/*****************/}
     </div>
   )
 }
