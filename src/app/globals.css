@@ -1182,6 +1182,11 @@ a.mitem {
   padding: 10px 14px;
   height: 24px !important;
 }
+.fixed-position {
+  position: fixed !important;
+  margin-top: 8px;
+  right: 42px !important;
+}
 .panel, .panel2 {
   position: static;
   overflow: hidden;
