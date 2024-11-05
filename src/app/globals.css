@@ -1178,13 +1178,9 @@ a.mitem {
 }
 .accordion_arrsec__EpCCl .arrowd {
   margin-top: 7px;
-  background: #34FF9D;
-  width: 18px !important;
-  padding: 6px 13px;
-  height: 31px !important;
-  border-radius: 50%;
-  cursor: none;
-  transition: all 0.3s ease-out;
+  width: 19px !important;
+  padding: 10px 14px;
+  height: 24px !important;
 }
 .panel, .panel2 {
   position: static;
