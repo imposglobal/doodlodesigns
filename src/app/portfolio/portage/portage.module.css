@@ -241,7 +241,7 @@
   }
   .edesc
   {
-    font-size: 22px;
+    font-size: 20px;
     color: #000;
     font-family: Poppins, sans-serif;
     font-weight: 400;
@@ -325,7 +325,7 @@
     background-color: #fff;
     margin-top: -5px;
     text-align: center;
-    padding: 50px 0;
+    padding: 60px 0;
   }
  
   .thtitle
@@ -340,7 +340,10 @@
     font-family: Poppins, sans-serif;
     font-weight: 400 !important;
   }
- 
+  .buttonres
+  {
+    display: none;
+  }
  
 
   @media only screen and (max-width: 600px)
@@ -392,7 +395,7 @@
 }
 .conceptsec
 {
-  padding: 0px 10px;
+  padding: 40px 10px;
 }
 .ctitle
 {
@@ -495,6 +498,15 @@
 .mockupsec
 {
   padding: 15px 10px 0px 10px;
+}
+
+.buttondesc
+{
+  display: none;
+}
+.buttonres
+{
+  display: block;
 }
 
   }
