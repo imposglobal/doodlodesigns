@@ -51,8 +51,8 @@ const Portfolio = () => {
    const portfolioItems = [
     { url: "/portfolio/predicta-digital", id: 15, title: "Predicta Digital", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/predicta.png" },
     { url: "/portfolio/swiggy-x-the-bowl-company", id: 1, title: "SWIGGY + BOWL COMPANY", category: "Packaging Design | Marketing collaterals | Advertising ", imageUrl: "/home/portfolio/1.png" },
-    { url: "/portfolio/portage", id: 16, title: "Portage", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/alhidaya.gif" },
-    { url: "/portfolio/dhrona", id: 17, title: "Dhrona", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/alhidaya.gif" },
+    { url: "/portfolio/portage", id: 16, title: "Portage", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/portage.png" },
+    { url: "/portfolio/dhrona", id: 17, title: "Dhrona", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/dhrona.png" },
     { url: "/portfolio/tarabai", id: 3, title: "TARABAI", category: "Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media", imageUrl: "/home/portfolio/5.png" },
     { url: "/portfolio/mahatee", id: 6, title: "MAHATEE INTERACTIVES", category: "Branding | Website UI | Shopify Development | Ecommerce Setup | Illustrations | Publication & Book Design | Social Media", imageUrl: "/home/portfolio/mahatee.gif" },
     { url: "/portfolio/alhidaya", id: 13, title: "Alhidaya", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/alhidaya.gif" },
