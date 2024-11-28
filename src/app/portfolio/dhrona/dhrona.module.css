@@ -198,7 +198,7 @@
     background-color: #fff;
     margin-top: -5px;
     text-align: center;
-    padding: 50px 0;
+    padding: 60px 0;
   }
  
   .thtitle
@@ -247,6 +247,11 @@
   {
     font-size: 24px;
     letter-spacing: 2px;
+  }
+
+  .abcol2
+  {
+  padding-top: 30px;
   }
 
   .dhronaimg

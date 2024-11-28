@@ -419,6 +419,7 @@ const predicta = () => {
                   layout="responsive"
                   width={100}
                   height={100}
+                  className={styles.gifclass}
                   priority
                   /> 
                   </div>
@@ -505,6 +506,13 @@ const predicta = () => {
   </div>
            
   </div>
+
+   {/*****************/}
+   <div className={styles.thanksec}>
+        <h4 className={styles.thtitle}>Thanks for scrolling!</h4> 
+        <h6 className={styles.thdesc}>Got a project in mind? Let’s create something awesome together.</h6>  
+       </div>
+         {/*****************/}
 
   
 

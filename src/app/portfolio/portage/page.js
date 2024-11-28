@@ -204,6 +204,17 @@ const portage = () => {
                 layout="responsive"
                 width={100}
                 height={100}
+                className={styles.buttondesc}
+                priority
+                />
+
+                 <Image
+                src="/home/portfolios/portage/branding.svg"
+                alt="Next.js"
+                layout="responsive"
+                width={100}
+                height={100}
+                className={styles.buttonres}
                 priority
                 />          
             </div>            
