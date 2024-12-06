@@ -148,24 +148,25 @@ const dhrona = () => {
                <div className={styles.abcol1}>
 
                 <div className={styles.aboutpb}>
-                <h3 className={styles.heading}>Industry</h3>
+                <h3 className={styles.heading}>CLIENT</h3>
                 <div className={styles.btnrow}>              
                 <button className={styles.btnelegant}>
-                Lorem Ipsum
+                Dhrona – Nostalgia in Every Bite
                 </button>
-                <button className={styles.btnelegant1}>
-                 Lorem Ipsum
-                </button>
+               
                 </div>
                 </div>
 
 
                 <div className={styles.aboutpb}>
-                <h3 className={styles.heading}>Purpose</h3>
+                <h3 className={styles.heading}>Industry</h3>
                 <div className={styles.btnrow}>              
                 <button className={styles.btnelegant}>
-                 Packaging
-                </button>                              
+                Organic Snacks Manufacturing
+                </button>  
+                <button className={styles.btnelegant1}>
+                Packaging
+                </button>                            
                 </div>
                 </div>
 
@@ -174,10 +175,10 @@ const dhrona = () => {
                 <h3 className={styles.heading}>Creative</h3>
                 <div className={styles.btnrow}>              
                 <button className={styles.btnelegant}>
-                  Illustration
+                Illustration
                 </button>   
                 <button className={styles.btnelegant1}>
-                 Packaging Design
+                Packaging Design
                 </button>        
                 </div>
               
@@ -185,11 +186,19 @@ const dhrona = () => {
                </div>
             <div className={styles.abcol2}>
               <h3 className={styles.heading}>About</h3>
-              <p className={styles.desc}>Sed tincidunt felis eget aliquam gravida. Fusce iaculis vel nisl ut aliquet. Etiam dapibus est in ante auctor tincidunt. Integer ut ullamcorper diam. Quisque fermentum, dui pellentesque efficitur porttitor, tortor tellus porttitor lectus, vitae pretium risus purus a quam.</p>
+              <p className={styles.desc}>Dhrona specializes in crafting organic snacks that bring back the taste of tradition with a modern twist. Their mission is to deliver wholesome, nostalgic flavors through premium, eco-friendly packaging.</p>
               <h3 className={styles.heading}>Challenges</h3>
-              <p className={styles.desc}>Sed tincidunt felis eget aliquam gravida. Fusce iaculis vel nisl ut aliquet. Etiam dapibus est in ante auctor tincidunt. Integer ut ullamcorper diam. Quisque fermentum, dui pellentesque efficitur porttitor, tortor tellus porttitor lectus, vitae pretium risus purus a quam.</p>
+              <ul className={styles.aboutul}>
+                <li className={styles.aboutli}>Designing visually appealing packaging that reflects the essence of nostalgia and tradition.</li>
+                <li className={styles.aboutli}>Ensuring illustrations align with the organic and authentic brand identity.</li>
+                <li className={styles.aboutli}>Creating eco-friendly packaging that balances aesthetics with functionality.</li>
+              </ul>
               <h3 className={styles.heading}>Solutions</h3>
-              <p className={styles.desc}>Sed tincidunt felis eget aliquam gravida. Fusce iaculis vel nisl ut aliquet. Etiam dapibus est in ante auctor tincidunt. Integer ut ullamcorper diam. Quisque fermentum, dui pellentesque efficitur porttitor, tortor tellus porttitor lectus, vitae pretium risus purus a quam.</p>
+              <ul className={styles.aboutul}>
+                <li className={styles.aboutli}>Developed hand-drawn illustrations evoking nostalgia while emphasizing organic ingredients.</li>
+                <li className={styles.aboutli}>Designed clutter-free, vibrant packaging that highlights the brand’s natural ethos.</li>
+                <li className={styles.aboutli}>Incorporated sustainable materials to align with their eco-conscious values.</li>
+              </ul>
             </div>
             </div>
          </div>

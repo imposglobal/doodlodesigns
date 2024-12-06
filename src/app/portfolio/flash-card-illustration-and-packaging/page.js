@@ -10,7 +10,20 @@ import {useState, useEffect} from 'react';
 const flashcard = () => {
 
     useEffect(() => {
-        document.title = "Portfolio - Doodlo Designs Studio";
+        document.title = "Flash Card Illustration and Packaging";
+        const descriptionTag = document.querySelector('meta[name="description"]');
+        if (descriptionTag) {
+        descriptionTag.setAttribute(
+        "content",
+        "Take a look at our portfolio of Branding, Flash Card Illustration & Packaging."
+        );
+        }
+
+      // Update the meta keywords dynamically
+      const keywordsTag = document.querySelector('meta[name="keywords"]');
+      if (keywordsTag) {
+      keywordsTag.setAttribute("content", "Flash Card Illustration");
+      }
       }, []);
 
       const [inactive, setInactive] = useState(true); // Set initial state to true

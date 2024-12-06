@@ -16,7 +16,20 @@ import OurProcess from "../Component/Ourprocess";
 const Ourstory = () => {
 
     useEffect(() => {
-        document.title = "Services - Doodlo Designs Studio";
+        document.title = "Branding Agency in India & UK | Web Design | Doodlo Designs";
+        const descriptionTag = document.querySelector('meta[name="description"]');
+        if (descriptionTag) {
+        descriptionTag.setAttribute(
+        "content",
+        "We offer a range of branding and web design services, including logo design, graphic design, and more. Top Branding Agency in India."
+        );
+        }
+
+        // Update the meta keywords dynamically
+        const keywordsTag = document.querySelector('meta[name="keywords"]');
+        if (keywordsTag) {
+        keywordsTag.setAttribute("content", "Branding Agency in India");
+        }
       }, []);
 
     useEffect(() =>{

@@ -16,7 +16,20 @@ import Slidercomponent from '@/app/Component/Slider/Slidercomponent';
 const Tarabai = () => {
 
     useEffect(() => {
-        document.title = "Black B Finance - Doodlo Designs Studio";
+        document.title = "Tradition to Trendsetting Collaboration By Doodlo Designs";
+        const descriptionTag = document.querySelector('meta[name="description"]');
+        if (descriptionTag) {
+          descriptionTag.setAttribute(
+            "content",
+            "Discover our journey with TaraBai, a fashion clothing brand that seamlessly blends the vibrant essence of Rajasthan & Marwari culture."
+          );
+        }
+    
+        // Update the meta keywords dynamically
+        const keywordsTag = document.querySelector('meta[name="keywords"]');
+        if (keywordsTag) {
+          keywordsTag.setAttribute("content", "Tradition to Trendsetting Collaboration");
+        }
       }, []);
 
     //   lottie Controls

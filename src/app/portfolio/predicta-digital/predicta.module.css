@@ -47,7 +47,7 @@
   .aboutsec
   {
     margin-top: -5px;
-    padding: 100px 120px;
+    padding: 100px 80px 100px 120px;
   }
 
   .aboutcontent
@@ -56,11 +56,11 @@
   }
   .abcol1
   {
-    flex: 50%;
+    flex: 45%;
   }
   .abcol2
   {
-    flex: 50%;
+    flex: 55%;
   }
 
  
@@ -90,6 +90,18 @@
     font-family: Poppins, sans-serif;
     font-weight: 200;
     padding-bottom: 25px;
+  }
+  .aboutul
+  {
+  margin-left: -27px;
+  }
+  .aboutli
+  {
+    font-size: 14px;
+    color: #9E9E9E;
+    font-family: Poppins, sans-serif;
+    font-weight: 200;
+    padding-bottom: 8px;
   }
 
   .btnrow
@@ -502,7 +514,7 @@
     background-color: #fff;
     margin-top: -5px;
     text-align: center;
-    padding: 60px 0;
+    padding: 100px 0;
   }
  
   .thtitle

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+.row {
+  /* padding: 40px 40px 0  40px; */
+  display: flex;
+  /* border: 1px solid #fff; */
+  /* border-radius: 10px ; */
+}
+
+/* Create two equal columns that sits next to each other */
+.column1 {
+  flex: 60%;
+  padding: 30px 0;
+ /* Should be removed. Only for demonstration */
+}
+.column2 {
+  flex: 40%;
+  padding: 50px;
+ /* Should be removed. Only for demonstration */
+}
+.columns1 {
+  flex: 60%;
+ /* Should be removed. Only for demonstration */
+}
+.columns2 {
+  flex: 40%;
+
+ /* Should be removed. Only for demonstration */
+}
+.logosec{
+  padding-left: 80px;
+}
+.menuicon{
+  top: 0 !important;
+}
+
+
+
+.mainsec
+{
+  background-color: #fff;
+  padding: 100px;
+}
+
+.blogsec
+{
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+   
+   margin-top: 60px;
+    gap: 30px;
+}
+.bimg
+{
+   width: 100% !important;
+   border-radius: 7px;
+}
+
+.blogrow {
+    box-sizing: border-box; 
+    margin-bottom: 30px;
+}
+
+.date
+{
+    color: #000;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-top: 8px;
+}
+
+
+.mainheading {
+  margin-top: 0;
+  font-size: 70px;
+  font-family: 'Poppins', sans-serif;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  text-transform: uppercase;
+}
+.sec_heading{
+  margin-top: -40px;
+  padding: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+
+.link
+{
+  text-decoration: none;
+}
+
+
+/* Responsiveness for medium screens */
+@media (max-width: 768px) {
+    .blogsec {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+  }
+  
+  /* Responsiveness for small screens */
+  @media (max-width: 480px) {
+    .blogsec {
+      grid-template-columns: 1fr; /* 1 item per row */
+    }
+  }
+

@@ -42,7 +42,7 @@
   .aboutsec
   {
     margin-top: -5px;
-    padding: 100px 120px;
+    padding: 100px 90px 100px 120px;
     background-color: #F37224;
   }
 
@@ -64,11 +64,11 @@
   }
   .abcol1
   {
-    flex: 50%;
+    flex: 45%;
   }
   .abcol2
   {
-    flex: 50%;
+    flex: 55%;
   }
 
  
@@ -98,6 +98,19 @@
     font-family: Poppins, sans-serif;
     font-weight: 200;
     padding-bottom: 25px;
+  }
+
+  .aboutul
+  {
+  margin-left: -27px;
+  }
+  .aboutli
+  {
+    font-size: 14px;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-weight: 200;
+    padding-bottom: 8px;
   }
 
   .btnrow
@@ -325,7 +338,7 @@
     background-color: #fff;
     margin-top: -5px;
     text-align: center;
-    padding: 60px 0;
+    padding: 100px 0;
   }
  
   .thtitle

@@ -4,7 +4,7 @@
     display: flex;
     border: 1px solid #BCBCBC
     ;
-    border-radius: 10px ;
+    border-radius: 10px;
   }
   .contcolumn1 {
     flex: 40%;
@@ -112,7 +112,8 @@
   }
   .footerwrap{
     background: #FFF6E8;
-    padding: 80px 150px;
+    /* padding: 80px 150px; */
+     padding: 80px 0px 80px 150px;
   }
   .footerrow {
     padding: 0px ;
@@ -122,12 +123,51 @@
     padding: 0px ;
     display: block;
   }
-  .footercol1{
+  /* .footercol1{
     flex: 45%;
   }
   .footercol2{
     flex: 55%;
+  } */
+
+  .footercol1{
+    flex: 45%;
   }
+  .footercol2{
+    flex: 50%;
+  }
+
+  .footercol3{
+    flex: 5%;
+    position: relative;
+
+  }
+
+
+  .corsec
+  {
+ 
+    width: 270px;
+    margin-right: -110px;
+    margin-top: 120px;
+    rotate: -90deg; 
+  }
+  .corbtn
+  {
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'poppins';
+  border-radius: 15px 15px 0 0;
+  text-decoration: none;
+  font-size: 14px;
+  }
+  .footerp
+  {
+    margin-left: -30px;
+  }
+
+
   .footlogo{
     width: 25% !important;
     margin-bottom: 90px;
@@ -493,6 +533,25 @@
   overflow-y: scroll !important;
   background: #fff8f0;
   border-radius: -3px;
+}
+
+/* btn code */
+
+.corressec
+{
+
+  margin-right: -340px;
+  rotate: -90deg; 
+}
+.corresbtn
+{
+padding: 10px 15px;
+background-color: #000;
+color: #fff;
+font-family: 'poppins';
+border-radius: 15px 15px 0 0;
+text-decoration: none;
+font-size: 14px;
 }
 
   }

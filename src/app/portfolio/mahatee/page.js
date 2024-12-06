@@ -16,7 +16,21 @@ import Slidercomponent from '@/app/Component/Slider/Slidercomponent';
 const Mahatee = () => {
 
     useEffect(() => {
-        document.title = "Portfolio - Doodlo Designs Studio";
+        document.title = "Creative Solutions for Mahatee Interactives - Doodlo Designs";
+
+        const descriptionTag = document.querySelector('meta[name="description"]');
+        if (descriptionTag) {
+          descriptionTag.setAttribute(
+            "content",
+            "Branding Bonanza: We sprinkled our creative magic to craft a unique identity that screams â€˜Mahatee Interactives."
+          );
+        }
+    
+        // Update the meta keywords dynamically
+        const keywordsTag = document.querySelector('meta[name="keywords"]');
+        if (keywordsTag) {
+          keywordsTag.setAttribute("content", "Creative Solutions");
+        }
       }, []);
 
       const images = [

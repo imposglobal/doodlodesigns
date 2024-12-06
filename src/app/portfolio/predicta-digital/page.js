@@ -148,20 +148,20 @@ const predicta = () => {
                 <h3 className={styles.heading}>Industry</h3>
                 <div className={styles.btnrow}>              
                 <button className={styles.btnelegant}>
-                Lorem Ipsum
+                 Marketing
                 </button>
-                <button className={styles.btnelegant1}>
-                 Lorem Ipsum
+                 <button className={styles.btnelegant1}>
+                 Automation
                 </button>
                 </div>
                 </div>
 
 
                 <div className={styles.aboutpb}>
-                <h3 className={styles.heading}>Purpose</h3>
+                <h3 className={styles.heading}>Location</h3>
                 <div className={styles.btnrow}>              
                 <button className={styles.btnelegant}>
-                Website Re-vamp
+                Australia
                 </button>                              
                 </div>
                 </div>
@@ -186,11 +186,20 @@ const predicta = () => {
                </div>
             <div className={styles.abcol2}>
               <h3 className={styles.heading}>About</h3>
-              <p className={styles.desc}>Sed tincidunt felis eget aliquam gravida. Fusce iaculis vel nisl ut aliquet. Etiam dapibus est in ante auctor tincidunt. Integer ut ullamcorper diam. Quisque fermentum, dui pellentesque efficitur porttitor, tortor tellus porttitor lectus, vitae pretium risus purus a quam.</p>
+              <p className={styles.desc}>Predicta Digital is a leading marketing and automation agency in Australia, known for its innovative solutions and proprietary marketing automation product. They empower businesses to streamline campaigns and drive measurable growth.</p>
               <h3 className={styles.heading}>Challenges</h3>
-              <p className={styles.desc}>Sed tincidunt felis eget aliquam gravida. Fusce iaculis vel nisl ut aliquet. Etiam dapibus est in ante auctor tincidunt. Integer ut ullamcorper diam. Quisque fermentum, dui pellentesque efficitur porttitor, tortor tellus porttitor lectus, vitae pretium risus purus a quam.</p>
+            
+              <ul className={styles.aboutul}>
+                <li className={styles.aboutli}>Creating a user-centric interface for a highly technical automation platform.</li>
+                <li className={styles.aboutli}>Seamlessly integrating complex functionalities while maintaining design simplicity.</li>
+                <li className={styles.aboutli}>Enhancing responsiveness for a flawless user experience across devices.</li>
+              </ul>
               <h3 className={styles.heading}>Solutions</h3>
-              <p className={styles.desc}>Sed tincidunt felis eget aliquam gravida. Fusce iaculis vel nisl ut aliquet. Etiam dapibus est in ante auctor tincidunt. Integer ut ullamcorper diam. Quisque fermentum, dui pellentesque efficitur porttitor, tortor tellus porttitor lectus, vitae pretium risus purus a quam.</p>
+              <ul className={styles.aboutul}>
+                <li className={styles.aboutli}>Designed an intuitive Web UI focused on user engagement and ease of navigation.</li>
+                <li className={styles.aboutli}>Developed a responsive, fast-loading website aligned with their branding and product features</li>
+                <li className={styles.aboutli}>mplemented scalable web development solutions to support future product expansions.</li>
+              </ul>
             </div>
             </div>
          </div>

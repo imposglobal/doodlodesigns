@@ -10,7 +10,20 @@ import {useState, useEffect} from 'react';
 const royalwedding = () => {
 
     useEffect(() => {
-        document.title = "Portfolio - Doodlo Designs Studio";
+        document.title = "Royal Weddings by Doodlo Designs";
+        const descriptionTag = document.querySelector('meta[name="description"]');
+        if (descriptionTag) {
+        descriptionTag.setAttribute(
+        "content",
+        "Take a look at our portfolio of Branding, Flash Card Illustration & Packaging. Royal Weddings by Doodlo Designs"
+        );
+        }
+
+       // Update the meta keywords dynamically
+       const keywordsTag = document.querySelector('meta[name="keywords"]');
+      if (keywordsTag) {
+      keywordsTag.setAttribute("content", "Royal Weddings by Doodlo Designs");
+      }
       }, []);
 
       const [inactive, setInactive] = useState(true); // Set initial state to true

@@ -16,7 +16,21 @@ import Slidercomponent from '@/app/Component/Slider/Slidercomponent';
 const Nutribee = () => {
 
     useEffect(() => {
-        document.title = "Nutribee - Doodlo Designs Studio";
+        document.title = "Nutribee Packaging Design By Doodlo Design";
+
+        const descriptionTag = document.querySelector('meta[name="description"]');
+        if (descriptionTag) {
+        descriptionTag.setAttribute(
+        "content",
+        "Doodlo Design Studio can create a new Nutribee Packaging Design and illustration design for the whole wheat rusk product."
+        );
+       }
+
+    // Update the meta keywords dynamically
+    const keywordsTag = document.querySelector('meta[name="keywords"]');
+    if (keywordsTag) {
+      keywordsTag.setAttribute("content", "Nutribee Packaging Design");
+    }
       }, []);
 
     //   lottie Controls

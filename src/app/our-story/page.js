@@ -15,7 +15,21 @@ import ImageSwitcher from "../Component/Storyimg";
 
 const OurStory = () => {
   useEffect(() => {
-    document.title = "Our Story - Doodlo Designs Studio";
+    document.title = "About Us | Doodlo Design | Branding & Graphic Design Studio";
+
+    const descriptionTag = document.querySelector('meta[name="description"]');
+    if (descriptionTag) {
+      descriptionTag.setAttribute(
+        "content",
+        "Doodlo Design is a leading branding and Graphic Design Studio with a global presence. Our team work tirelessly to help businesses build brand."
+      );
+    }
+
+    // Update the meta keywords dynamically
+    const keywordsTag = document.querySelector('meta[name="keywords"]');
+    if (keywordsTag) {
+      keywordsTag.setAttribute("content", "Graphic Design Studio");
+    }
   }, []);
 
 

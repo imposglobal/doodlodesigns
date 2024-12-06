@@ -10,7 +10,21 @@ import Slidercomponent from '@/app/Component/Slider/Slidercomponent';
 
 const appliancecare = () => {
     useEffect(() => {
-        document.title = "Portfolio - Doodlo Designs Studio";
+        document.title = "Case Study Universal Appliance Care by Doodlo Design";
+
+        const descriptionTag = document.querySelector('meta[name="description"]');
+        if (descriptionTag) {
+        descriptionTag.setAttribute(
+        "content",
+        "Universal Appliance Care is a brand we've been a part of since its inception, from the identity to the visual language to the website and marketing collateral."
+        );
+        }
+
+       // Update the meta keywords dynamically
+       const keywordsTag = document.querySelector('meta[name="keywords"]');
+       if (keywordsTag) {
+       keywordsTag.setAttribute("content", "Universal Appliance Care by Doodlo Design");
+       }
       }, []);
 
 

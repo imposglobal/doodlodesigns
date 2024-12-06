@@ -16,7 +16,20 @@ import Slidercomponent from '@/app/Component/Slider/Slidercomponent';
 const Wurth = () => {
 
     useEffect(() => {
-        document.title = "CitiBank - Doodlo Designs Studio";
+        document.title = "Coffee Table Book - Best Collage artwork";
+        const descriptionTag = document.querySelector('meta[name="description"]');
+    if (descriptionTag) {
+      descriptionTag.setAttribute(
+        "content",
+        "This Coffee Table Book has remained dedicated to the growth and success for this Wuerth unit."
+      );
+    }
+
+    // Update the meta keywords dynamically
+    const keywordsTag = document.querySelector('meta[name="keywords"]');
+    if (keywordsTag) {
+      keywordsTag.setAttribute("content", "Best Collage artwork");
+    }
       }, []);
 
     //   lottie Controls

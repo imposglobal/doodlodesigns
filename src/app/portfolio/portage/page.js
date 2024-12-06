@@ -148,10 +148,10 @@ const portage = () => {
                 <h3 className={styles.heading}>Industry</h3>
                 <div className={styles.btnrow}>              
                 <button className={styles.btnelegant}>
-                Lorem Ipsum
+                Full Truck Load Transport
                 </button>
                 <button className={styles.btnelegant1}>
-                 Lorem Ipsum
+                Logistics
                 </button>
                 </div>
                 </div>
@@ -161,7 +161,7 @@ const portage = () => {
                 <h3 className={styles.heading}>Purpose</h3>
                 <div className={styles.btnrow}>              
                 <button className={styles.btnelegant}>
-                Website Re-vamp
+                Effective Brand Identity
                 </button>                              
                 </div>
                 </div>
@@ -182,11 +182,20 @@ const portage = () => {
                </div>
             <div className={styles.abcol2}>
               <h3 className={styles.heading}>About</h3>
-              <p className={styles.desc}>Sed tincidunt felis eget aliquam gravida. Fusce iaculis vel nisl ut aliquet. Etiam dapibus est in ante auctor tincidunt. Integer ut ullamcorper diam. Quisque fermentum, dui pellentesque efficitur porttitor, tortor tellus porttitor lectus, vitae pretium risus purus a quam.</p>
+              <p className={styles.desc}>Portage is a trusted name in the logistics sector, specializing in full truckload transport solutions. They streamline freight operations with a commitment to efficiency, reliability, and scalability.
+              </p>
               <h3 className={styles.heading}>Challenges</h3>
-              <p className={styles.desc}>Sed tincidunt felis eget aliquam gravida. Fusce iaculis vel nisl ut aliquet. Etiam dapibus est in ante auctor tincidunt. Integer ut ullamcorper diam. Quisque fermentum, dui pellentesque efficitur porttitor, tortor tellus porttitor lectus, vitae pretium risus purus a quam.</p>
+              <ul className={styles.aboutul}>
+                <li className={styles.aboutli}>Creating a distinctive and professional brand identity for a competitive logistics market.</li>
+                <li className={styles.aboutli}>Designing a brochure that effectively communicates their expertise and services.</li>
+                <li className={styles.aboutli}>Developing comprehensive brand guidelines for consistent communication across channels.</li>
+              </ul>
               <h3 className={styles.heading}>Solutions</h3>
-              <p className={styles.desc}>Sed tincidunt felis eget aliquam gravida. Fusce iaculis vel nisl ut aliquet. Etiam dapibus est in ante auctor tincidunt. Integer ut ullamcorper diam. Quisque fermentum, dui pellentesque efficitur porttitor, tortor tellus porttitor lectus, vitae pretium risus purus a quam.</p>
+              <ul className={styles.aboutul}>
+                <li className={styles.aboutli}>Crafted a modern, impactful logo and brand identity reflecting Portage’s core values.</li>
+                <li className={styles.aboutli}>Designed a compelling, easy-to-navigate brochure highlighting their services and strengths.</li>
+                <li className={styles.aboutli}>Delivered detailed brand guidelines to maintain consistency in visuals and messaging.</li>
+              </ul>
             </div>
             </div>
          </div>

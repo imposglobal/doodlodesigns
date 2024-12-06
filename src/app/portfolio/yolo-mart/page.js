@@ -11,7 +11,20 @@ import Slidercomponent from '@/app/Component/Slider/Slidercomponent';
 
 const yolomart = () => {
     useEffect(() => {
-        document.title = "Portfolio - Doodlo Designs Studio";
+        document.title = "YoloMart Branding Project By Doodlo Design Studio";
+        const descriptionTag = document.querySelector('meta[name="description"]');
+        if (descriptionTag) {
+        descriptionTag.setAttribute(
+        "content",
+        "Our collaboration with YoloMart on their branding project was an exhilarating journey that allowed us to infuse their brand with creativity."
+        );
+        }
+
+       // Update the meta keywords dynamically
+       const keywordsTag = document.querySelector('meta[name="keywords"]');
+       if (keywordsTag) {
+       keywordsTag.setAttribute("content", "Branding Project");
+       }
       }, []);
 
 

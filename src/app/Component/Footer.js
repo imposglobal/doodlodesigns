@@ -69,6 +69,18 @@ const Footer = () => {
                         </div>
                        </div>
                     </div>
+
+                    {/* col3 */}
+                    <div className={styles.footercol3}>
+                        <div className={styles.corsec}>
+                        <a className={styles.corbtn} href='https://doodlocomics.com/products/get-cute-personalise-and-custom-doodle-portrait-doodle-style-gift-portrait-for-couples-family-pets'>
+                         Corporate Gifting - Order Now
+                        </a> 
+                        </div>
+                    
+                    </div>
+                    {/* end */}
+
                 </div>
                 <div className={`${styles.footerrow} ${styles.footerrowss}`}>
                     <div className={styles.footercol1}>
@@ -79,7 +91,8 @@ const Footer = () => {
                     <p className={styles.updatep}>careers@doodlodesigns.com</p>
                     </div>
                     <div className={styles.footercol2}>
-                        <div className={styles.footinn}>
+                        {/* <div className={styles.footinn}> */}
+                          <div className={styles.footerp}>
                             <h3 className={styles.substext}>
                             Subscribe to our Newsletter 
                             </h3>
@@ -146,7 +159,9 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className={styles.footercol2}>
-                        <div className={styles.footinn}>
+                        {/* <div className={styles.footinn}> */}
+                        <div className={styles.footerp}>
+                        
                             <span className={styles.gtintitle}>@2024 Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</span>
                         </div>
                     </div>
@@ -169,6 +184,13 @@ const Footer = () => {
                             <b>Big Dreams, Small Deadlines? We Got You Covered?</b><br/>
                             We're your go-to design studio for everything from logo makeovers to websites that wow and packaging that screams "pick me!" Our team of design superheroes is here to turn your ideas into reality, no matter the project size or deadline.
                         </p>
+                        {/* add button here */}
+                    <div className={styles.corressec}>
+                        <a className={styles.corresbtn} href='#'>
+                         Corporate Gifting - Order Now
+                        </a> 
+                    </div>
+                    {/* end add button here */}
                         
                          <div className={styles.footerrow}>
                          <div className={styles.footercol1}>
@@ -186,6 +208,7 @@ const Footer = () => {
 
                          </div>
                          </div>
+                          
                          <div className={`${styles.footercol1}`}>
                     <h3 className={styles.updatet}>Business Queries:</h3>
                     <p className={styles.updatep}>contact@doodlodesigns.com</p>
@@ -193,6 +216,8 @@ const Footer = () => {
                     <h3 className={styles.updatet}>Job Updates:</h3>
                     <p className={styles.updatep}>careers@doodlodesigns.com</p>
                     </div>
+
+                   
                     </div>
                     {/* col2 */}
                     <div className={styles.footercol2}>

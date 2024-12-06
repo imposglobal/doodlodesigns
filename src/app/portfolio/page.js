@@ -12,7 +12,23 @@ import WorkAnimationlr from "../Component/WorkAnimatedLR";
 
 const Portfolio = () => {
   useEffect(() => {
-    document.title = "Portfolio - Doodlo Designs Studio";
+    document.title = "Portfolio | Creative Case Studies | Brand & Web Design";
+    // document.description = "Take a look at our portfolio of branding & web design projects. We've worked with businesses of all sizes & in all industries.";
+    // document.keywords = "Portfolio";
+
+    const descriptionTag = document.querySelector('meta[name="description"]');
+    if (descriptionTag) {
+      descriptionTag.setAttribute(
+        "content",
+        "Take a look at our portfolio of branding & web design projects. We've worked with businesses of all sizes & in all industries."
+      );
+    }
+
+    // Update the meta keywords dynamically
+    const keywordsTag = document.querySelector('meta[name="keywords"]');
+    if (keywordsTag) {
+      keywordsTag.setAttribute("content", "Portfolio");
+    }
   }, []);
 
   useEffect(() => {
@@ -28,31 +44,12 @@ const Portfolio = () => {
     setInactive(!inactive);
   };
 
-  // const portfolioItems = [
-  //   { url: "/portfolio/alhidaya", id: 13, title: "Alhidaya", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/alhidaya.gif" },
-  //   { url: "#", id: 14, title: "Bet Set Win", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/bsw.gif" },
-  //   { url: "/portfolio/predicta-digital", id: 15, title: "Predicta Digital", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/predicta.png" },
-  //   { url: "/portfolio/swiggy-x-the-bowl-company", id: 1, title: "SWIGGY + BOWL COMPANY", category: "Packaging Design | Marketing collaterals | Advertising ", imageUrl: "/home/portfolio/1.png" },
-  //   { url: "/portfolio/coinsafe-vpn", id: 2, title: "COINSAFE VPN", category: "Branding | Website UI | Web Development | Application | Marketing Collaterals", imageUrl: "/home/portfolio/csafe.gif" },
-  //   { url: "/portfolio/tarabai", id: 3, title: "TARABAI", category: "Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media", imageUrl: "/home/portfolio/5.png" },
-  //   { url: "/portfolio/blackb-finance-services", id: 4, title: "BLACK B FINANCE", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/blackb.gif" },
-  //   { url: "portfolio/yolo-mart", id: 5, title: "YOLOMART", category: "Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media", imageUrl: "/home/portfolio/yolomart.png" },
-  //   { url: "/portfolio/mahatee", id: 6, title: "MAHATEE INTERACTIVES", category: "Branding | Website UI | Shopify Development | Ecommerce Setup | Illustrations | Publication & Book Design | Social Media", imageUrl: "/home/portfolio/mahatee.gif" },
-  //   { url: "portfolio/clickrnd", id: 7, title: "Click R & D", category: "Branding | Website UI | Social Media", imageUrl: "/home/portfolio/clickrnd.jpg" },
-  //   { url: "portfolio/citibank", id: 8, title: "CITIBANK", category: "Illustrations | Presentation | Wall Graffiti", imageUrl: "/home/portfolio/6.png" },
-  //   { url: "/portfolio/nutribee", id: 9, title: "Nutribee", category: "Illustration | Packaging Design", imageUrl: "/home/portfolio/10.png" },
-  //   { url: "portfolio/flash-card-illustration-and-packaging", id: 10, title: "Littile learners trove", category: "Branding | Illustrations | Product Design | Packaging Design | Social Media", imageUrl: "/home/portfolio/12.png" },
-  //   { url: "/portfolio/coffee-table-book", id: 11, title: "Wuerth Industries", category: "Publication - Coffee Table Book Design | Corporate Giftings", imageUrl: "/home/portfolio/8.png" },
-  //   { url: "/portfolio/royal-weddings", id: 12, title: "Royal Wedding ", category: "Branding | Business Collaterals", imageUrl: "/home/portfolio/11.png" },
-  
-  // ];
-
 
    const portfolioItems = [
-    { url: "/portfolio/predicta-digital", id: 15, title: "Predicta Digital", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/predicta.png" },
+    { url: "/portfolio/predicta-digital", id: 15, title: "Predicta Digital", category: "Website UI | Web Development", imageUrl: "/home/portfolio/predicta.png" },
     { url: "/portfolio/swiggy-x-the-bowl-company", id: 1, title: "SWIGGY + BOWL COMPANY", category: "Packaging Design | Marketing collaterals | Advertising ", imageUrl: "/home/portfolio/1.png" },
-    { url: "/portfolio/portage", id: 16, title: "Portage", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/portage.png" },
-    { url: "/portfolio/dhrona", id: 17, title: "Dhrona", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/dhrona.png" },
+    { url: "/portfolio/portage", id: 16, title: "Portage", category: "Branding | Communication Design", imageUrl: "/home/portfolio/portage.png" },
+    { url: "/portfolio/dhrona", id: 17, title: "Dhrona", category: "Packaging Design", imageUrl: "/home/portfolio/dhrona.png" },
     { url: "/portfolio/tarabai", id: 3, title: "TARABAI", category: "Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media", imageUrl: "/home/portfolio/5.png" },
     { url: "/portfolio/mahatee", id: 6, title: "MAHATEE INTERACTIVES", category: "Branding | Website UI | Shopify Development | Ecommerce Setup | Illustrations | Publication & Book Design | Social Media", imageUrl: "/home/portfolio/mahatee.gif" },
     { url: "/portfolio/alhidaya", id: 13, title: "Alhidaya", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/alhidaya.gif" },
