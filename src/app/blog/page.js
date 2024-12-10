@@ -14,7 +14,7 @@ const blog = () => {
 
 
   useEffect(() => {
-    document.title = "Portfolio - Doodlo Designs Studio";
+    document.title = "blog - Doodlo Designs Studio";
   }, []);
 
   const [inactive, setInactive] = useState(true); // Set initial state to true
