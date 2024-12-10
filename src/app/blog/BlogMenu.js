@@ -1,61 +1,25 @@
 "use client";
 import React from 'react'
 import {useState, useEffect} from 'react';
-import axios from 'axios';
-import styles from "./blog.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/app/Images/logo";
 import Menu from "@/app/Component/Menu";
+import styles from "./blog.module.css";
 
 
+const BlogMenu = () => {
 
-const blog = () => {
 
-
-  useEffect(() => {
-    document.title = "Portfolio - Doodlo Designs Studio";
-  }, []);
-
-  const [inactive, setInactive] = useState(true); // Set initial state to true
   
-  const toggleClass = () => {
-      setInactive(!inactive);
-   };
 
-
-  //  to get the blog api
-
-    const [userdata, setData] = useState([]); 
-    useEffect(() => {
-      axios.get("https://doodlodesign.com/wp-json/wp/v2/posts?_embed")
-        .then((response) => {
-          console.log(response);
-          setData(response.data); 
-        })
-        .catch((error) => {
-          console.error("There was an error fetching the data:", error);
-        });
-    }, []);
-
-
-    // Helper function to get category name from class list
-const getCategoryFromClassList = (classList) => {
-  if (Array.isArray(classList)) {
-    // Look for class that contains 'category-' prefix (e.g. 'category-illustration')
-    const categoryClass = classList.find(className => className.startsWith('category-'));
-    if (categoryClass) {
-      // Extract category name (without 'category-' prefix)
-      return categoryClass.replace('category-', '');
-    }
-  }
-  return "No Category"; // Return a default value if no category is found
-};
-
-
+    const [inactive, setInactive] = useState(true); // Set initial state to true
+  
+    const toggleClass = () => {
+        setInactive(!inactive);
+     };
   return (
     <div>
-
 
 <div id="wrapper">
       <div className={`menuwrap ${inactive ? 'inactive' : ''} doodbg`}>
@@ -148,6 +112,7 @@ const getCategoryFromClassList = (classList) => {
     </div>
     {/* Menu end */}
 
+  
     <div className={`${styles.row} ${styles.mobrow}`}>
         <div className={styles.column1}>
             <div className={`${styles.logosec} ${styles.mlsec}`}>
@@ -162,45 +127,9 @@ const getCategoryFromClassList = (classList) => {
     </div>
 
 
-          <div className={styles.mainsec}>
-          <div className={styles.titlesec}>
-          <h2 className={styles.mainheading}>OUR</h2>
-          <h2 className={styles.sec_heading}>BLOGS</h2>
-          </div>
-
-
-          <div className={styles.blogsec}>
-               {userdata.map((data) => (
-                <a className={styles.link} href={`/blog/${data.slug}`} key={data.id}>     
-                <div className={styles.blogrow} >
-                {data._embedded && data._embedded['wp:featuredmedia'] && data._embedded['wp:featuredmedia'][0] && (
-                <Image
-                src={data._embedded['wp:featuredmedia'][0].source_url} 
-                alt={data.title.rendered} 
-                layout="responsive"
-                width={100} 
-                height={100}
-                priority
-                className={styles.bimg}
-                />
-                )}
-                <h3 className={styles.date}>{new Date(data.date).toLocaleDateString()} | {getCategoryFromClassList(data.class_list)}</h3>
-                </div> 
-                </a>
-               
-                 ))}  
-           </div>
-
-
-           
-            
-          </div>
-
-         
-      
 
     </div>
   )
 }
 
-export default blog
+export default BlogMenu

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+.bwrapper
+{
+    padding: 50px 240px;
+    background-color: #fff;
+}
+
+
+.blogtitle
+{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 48px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.blogdesc
+{
+    color: #000;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.blogimg
+{
+padding-bottom: 30px;
+}
+
+.blogdesc h2
+{
+    padding: 20px 0 10px;
+}
+
+.blogdesc h3
+{
+    padding: 20px 0 10px;
+}
+
+.blogdesc p
+{
+    padding: 10px 0 10px;
+}
+
+.blogdesc img
+{
+  text-align: center;
+  padding: 30px 0 10px;
+ 
+}
+
+
+.blogdesc a
+{
+ color: #000;
+ font-weight: 500;
+ text-decoration: none;
+}
+.blogdesc li:not(:last-child) {
+    padding-bottom: 20px;
+}
+.author
+{
+    color: #000;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; 
+    padding-bottom: 30px;
+}
+
+
+@media (max-width: 480px)
+{
+    .logosec 
+  {
+      padding-left: 20px;
+  }
+  .column2 {
+    flex: 40% 1;
+    padding: 50px 20px;
+   }
+
+   .bwrapper
+{
+    padding: 30px 10px;
+    background-color: #fff;
+}
+
+.blogtitle
+{
+    font-size: 28px;
+    line-height: 32px;
+}
+.blogdesc img
+{
+   width: 370px !important;
+}
+
+}

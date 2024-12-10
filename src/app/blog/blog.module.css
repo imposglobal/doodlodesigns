@@ -108,8 +108,34 @@
   
   /* Responsiveness for small screens */
   @media (max-width: 480px) {
+
+    .grid {
+      gap: 1rem;
+      padding-bottom: 10px;
+    }
+    .logosec {
+      padding-left: 20px;
+  }
+  .column2 {
+    flex: 40% 1;
+    padding: 50px 20px;
+}
+
     .blogsec {
       grid-template-columns: 1fr; /* 1 item per row */
     }
+
+    .mainsec
+{
+ 
+  padding: 30px 10px;
+}
+.blogrow
+{
+  margin-bottom: 10px;
+}
+
+    
+
   }
 
