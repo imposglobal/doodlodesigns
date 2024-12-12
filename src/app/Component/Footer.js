@@ -73,7 +73,7 @@ const Footer = () => {
                     {/* col3 */}
                     <div className={styles.footercol3}>
                         <div className={styles.corsec}>
-                        <a className={styles.corbtn} href='https://doodlocomics.com/products/get-cute-personalise-and-custom-doodle-portrait-doodle-style-gift-portrait-for-couples-family-pets'>
+                        <a className={styles.corbtn} href='https://doodlocomics.com/pages/giftings'>
                          Corporate Gifting - Order Now
                         </a> 
                         </div>
@@ -186,7 +186,7 @@ const Footer = () => {
                         </p>
                         {/* add button here */}
                     <div className={styles.corressec}>
-                        <a className={styles.corresbtn} href='#'>
+                        <a className={styles.corresbtn} href='https://doodlocomics.com/pages/giftings'>
                          Corporate Gifting - Order Now
                         </a> 
                     </div>
