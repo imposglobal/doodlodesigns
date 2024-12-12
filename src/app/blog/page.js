@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/app/Images/logo";
 import Menu from "@/app/Component/Menu";
+import WorkAnimationlr from "../Component/WorkAnimatedLR";
 
 
 
@@ -191,10 +192,62 @@ const getCategoryFromClassList = (classList) => {
                  ))}  
            </div>
 
+           </div>
 
-           
-            
+
+           {/* blog section end */}
+
+           <div className={styles.blackbg}>
+{/* Subscribe section */}
+           <div className={styles.desktopv}>
+       
+       <div data-aos="fade-up" className={`${styles.pointer}`}>
+        <div className={styles.discuss_row}>
+        <h2 className={styles.mainheadingdis}>NEVER</h2>
+          <h2 className={styles.sec_headingdis}>MISS AN UPDATE</h2>
+          <p className={styles.disdesc}>Sign up for our newsletter to stay in the loop, Join our newsletter.  </p>
+        
+           <div className={styles.searchbar}>
+    <input type="text" className={styles.subscribei}  placeholder="Email Address"/>
+    <button className={styles.subscribtn}>Subscribe</button>
+  </div>
+          <div className={styles.booknow}>
+            <div className={styles.bookwrap}>
+            <WorkAnimationlr />
+            </div>
+            <div className={styles.bookwrap1}>
+            <WorkAnimationlr />
+            </div>
           </div>
+        </div>
+      </div>
+      </div>
+
+      <div className={styles.mobilev}>
+       {/* Subscribe section */}
+       <div data-aos="fade-up" className={`${styles.pointer}`}>
+        <div className={styles.discuss_row}>
+        <div className={styles.booknow}>
+            <div className={styles.bookwrap}>
+            <WorkAnimationlr />
+            </div>
+            <div className={styles.bookwrap1}>
+            <WorkAnimationlr />
+            </div>
+          </div>
+        <h2 className={styles.mainheadingdis}>NEVER</h2>
+          <h2 className={styles.sec_headingdis}>MISS AN UPDATE</h2>
+          <p className={styles.disdesc}>Sign up for our newsletter to stay in the loop, Join our newsletter.</p>
+          <div className={styles.searchbar}>
+    <input type="text" className={styles.subscribei}  placeholder="Email Address"/>
+    <button className={styles.subscribtn}>Subscribe</button>
+  </div>   
+        </div>
+      </div>
+      </div>
+    
+          </div>
+            {/*Subscribe section End */}
 
          
       

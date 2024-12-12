@@ -6,7 +6,8 @@ import Image from "next/image";
 
 
 
-// Fetch a list of slugs from the WordPress API
+// this function fetches all the available slugs (URLs) of blog posts from the WordPress API
+// The response contains an array of posts. The map function extracts the slug from each post
 const fetchPostSlugs = async () => {
   try {
     const response = await axios.get('https://doodlodesign.com/wp-json/wp/v2/posts?_embed');
@@ -17,7 +18,8 @@ const fetchPostSlugs = async () => {
   }
 };
 
-// This function will be called during the build to generate static paths for each blog post
+// This function is used for static generation (SSG) in Next.js. It is called during the build process to generate a list of dynamic paths (for each blog post based on its slug).
+// The fetchPostSlugs function is called to get all slugs, and then for each slug, it returns an object with that slug.
 export async function generateStaticParams() {
   const slugs = await fetchPostSlugs(); // Get all slugs
   return slugs.map(slug => ({
@@ -25,7 +27,7 @@ export async function generateStaticParams() {
   }));
 }
 
-// Fetch data for the individual blog post based on the slug
+// This function fetches the detailed data of an individual post based on its slug by making a GET request to the WordPress API 
 const fetchPost = async (slug) => {
   try {
     const response = await axios.get(`https://doodlodesign.com/wp-json/wp/v2/posts?slug=${slug}&_embed`);
