@@ -34,7 +34,7 @@ const BlogMenu = () => {
             </div>
 
             <div className="menuitem">
-              <Link href="/portfolio" className="mitem active">
+              <Link href="/portfolio" className="mitem">
                 Portfolio
               </Link>
               <div className="border-bottom"></div>
