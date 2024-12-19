@@ -184,6 +184,7 @@ const getCategoryFromClassList = (classList) => {
                 className={styles.bimg}
                 />
                 )}
+                <h2 className={styles.btitle}>{data.title.rendered}</h2>
                 <h3 className={styles.date}>{new Date(data.date).toLocaleDateString()} | {getCategoryFromClassList(data.class_list)}</h3>
                 </div> 
                 </a>
