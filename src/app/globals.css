@@ -1133,6 +1133,9 @@ a.mitem {
   text-decoration: none;
   font-family: 'Poppins';
 }
+.blog_logosec__KIPd0.undefined svg {
+  width: 107px;
+}
 .mitem:hover{
   transform: scale(1);
   font-size: 25px !important;
