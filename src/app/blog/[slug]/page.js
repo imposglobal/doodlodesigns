@@ -51,6 +51,20 @@ export async function generateMetadata({ params }) {
   }
 }
 
+// Add this function to provide static paths for each post
+export async function generateStaticParams() {
+  try {
+    const response = await axios.get('https://doodlodesign.com/wp-json/wp/v2/posts');
+    const slugs = response.data.map(post => post.slug);
+    return slugs.map(slug => ({
+      slug,
+    }));
+  } catch (error) {
+    console.error('Error fetching posts:', error);
+    return [];
+  }
+}
+
 export default async function BlogDetail({ params }) {
   const { slug } = params;
   const postData = await fetchPost(slug);
