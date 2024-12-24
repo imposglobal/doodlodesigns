@@ -15,6 +15,7 @@ const Blog = () => {
   const [inactive, setInactive] = useState(true);
   const [userdata, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(1); // To keep track of the page for pagination
 
   const toggleClass = () => {
     setInactive(!inactive);
@@ -24,7 +25,9 @@ const Blog = () => {
     axios
       .get("https://doodlodesign.com/wp-json/wp/v2/posts?_embed")
       .then((response) => {
-        setData(response.data);
+        // Reverse the data array to show posts in reverse order
+        const reversedData = response.data.reverse();
+        setData(reversedData);
         setLoading(false);
       })
       .catch((error) => {
@@ -43,6 +46,23 @@ const Blog = () => {
     return "No Category";
   };
 
+
+  // Handle scroll event to trigger loading more posts
+  const handleScroll = () => {
+    const bottom = document.documentElement.scrollHeight === document.documentElement.scrollTop + window.innerHeight;
+    if (bottom && !loading) {
+      setLoading(true);
+      setPage((prevPage) => prevPage + 1); // Increment page number to fetch more posts
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [loading]);
+
   return (
     <div>
       {/* Sidebar Menu */}
@@ -56,31 +76,26 @@ const Blog = () => {
                     Home
                   </Link>
                 </div>
-
                 <div className="menuitem">
                   <Link href="/portfolio" className="mitem">
                     Portfolio
                   </Link>
                 </div>
-
                 <div className="menuitem">
                   <Link href="/services" className="mitem">
                     Our Services
                   </Link>
                 </div>
-
                 <div className="menuitem">
                   <Link href="/our-story" className="mitem">
                     Our Story
                   </Link>
                 </div>
-
                 <div className="menuitem">
                   <Link href="/reach-us" className="mitem">
                     Reach us
                   </Link>
                 </div>
-
                 <div className="menuitem">
                   <Link href="https://doodlocomics.com/" className="mitem">
                     Shop
@@ -147,8 +162,8 @@ const Blog = () => {
         </div>
       </div>
 
-      {/* Main Section */}
-      <div className={styles.mainsec}>
+     {/* Main Section */}
+     <div className={styles.mainsec}>
         <div className={styles.titlesec}>
           <h2 className={styles.mainheading}>OUR</h2>
           <h2 className={styles.sec_heading}>BLOGS</h2>

@@ -29,6 +29,8 @@
 .blogimg
 {
 padding-bottom: 30px;
+width: 100% !important;
+height: auto !important;
 }
 
 .blogdesc h2

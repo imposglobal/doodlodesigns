@@ -90,14 +90,15 @@ export default async function BlogDetail({ params }) {
           {postData._embedded.author[0].name} | {new Date(postData.date).toLocaleDateString()} | {categoryNames}
         </p>
         <Image
-          src={postData._embedded['wp:featuredmedia'][0].source_url}
-          alt={postData.title.rendered}
-          layout="responsive"
-          width={100}
-          height={100}
-          priority
-          className={styles.blogimg}
-        />
+        src={postData._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}
+        alt={postData.title.rendered}
+        layout="responsive"
+        width={1200} // You can set the width to a large value or the original image width
+        height={675} // Set height to maintain the aspect ratio or calculate it based on the original width/height
+        priority
+        className={styles.blogimg}
+      />
+
         <div className={styles.blogdesc} dangerouslySetInnerHTML={{ __html: postData.content.rendered }} />
       </div>
     </div>

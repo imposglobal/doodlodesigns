@@ -37,7 +37,6 @@ const BlogMenu = () => {
               <Link href="/portfolio" className="mitem">
                 Portfolio
               </Link>
-              <div className="border-bottom"></div>
             </div>
 
             <div className="menuitem">
