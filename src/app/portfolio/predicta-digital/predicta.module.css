@@ -511,28 +511,56 @@
 
 .thanksec
   {
-    background-color: #fff;
-    margin-top: -5px;
+    background-color: #000;
     text-align: center;
     padding: 100px 0;
+    margin-top: -5px;
   }
  
   .thtitle
   {
-    font-size: 20px;
+    font-size: 18px;
     font-family: Poppins, sans-serif;
-    font-weight: 800;
+    font-weight: 600;
+    color: #fff;
   }
   .thdesc
   {
-    font-size: 14px;
+    font-size: 18px;
     font-family: Poppins, sans-serif;
-    font-weight: 400 !important;
+    font-weight: 300 !important;
+    color: #fff;
   }
   .gifclass
   {
     border: 1px solid #000;
     border-radius:7px;
+  }
+  .visitsec
+  {
+    background-color: #242424;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  .vtitle
+  {
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-weight: 300 !important;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    white-space: nowrap;
+    text-transform: uppercase;
+  }
+  .vweb:hover{
+    color: #F19307 !important;
+  }
+  .vweb 
+  {
+    color: #fff !important;
+    text-decoration: none;
+
   }
 
 
@@ -703,6 +731,25 @@ margin-top: 10px;
 {
   padding: 0px 10px 10px;
 }
+.vtitle {
+  /* Force line break in mobile view */
+  display: block;
+  font-size: 16px;
+}
 
+.vweb {
+  display: block;
+  
+}
+
+.thtitle
+{
+  font-size: 18px;
+}
+.thdesc
+{
+  font-size: 16px;
+  padding: 0 30px;
+}
 }
  

@@ -48,6 +48,8 @@ const Portfolio = () => {
    const portfolioItems = [
     { url: "/portfolio/predicta-digital", id: 15, title: "Predicta Digital", category: "Website UI | Web Development", imageUrl: "/home/portfolio/predicta.png" },
     { url: "/portfolio/swiggy-x-the-bowl-company", id: 1, title: "SWIGGY + BOWL COMPANY", category: "Packaging Design | Marketing collaterals | Advertising ", imageUrl: "/home/portfolio/1.png" },
+    { url: "/portfolio/eMed", id: 18, title: "eMed", category: "Website UI | Web Development", imageUrl: "/home/portfolio/eMed.png" },
+    // { url: "/portfolio/mediresale", id: 19, title: "mediresale", category: "Website UI | Web Development", imageUrl: "/home/portfolio/mediresale.png" },
     { url: "/portfolio/portage", id: 16, title: "Portage", category: "Branding | Communication Design", imageUrl: "/home/portfolio/portage.png" },
     { url: "/portfolio/dhrona", id: 17, title: "Dhrona", category: "Packaging Design", imageUrl: "/home/portfolio/dhrona.png" },
     { url: "/portfolio/tarabai", id: 3, title: "TARABAI", category: "Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media", imageUrl: "/home/portfolio/5.png" },
@@ -61,9 +63,8 @@ const Portfolio = () => {
     { url: "/portfolio/nutribee", id: 9, title: "Nutribee", category: "Illustration | Packaging Design", imageUrl: "/home/portfolio/10.png" },
     { url: "portfolio/flash-card-illustration-and-packaging", id: 10, title: "Littile learners trove", category: "Branding | Illustrations | Product Design | Packaging Design | Social Media", imageUrl: "/home/portfolio/12.png" },
     { url: "/portfolio/coffee-table-book", id: 11, title: "Wuerth Industries", category: "Publication - Coffee Table Book Design | Corporate Giftings", imageUrl: "/home/portfolio/8.png" },
-    { url: "/portfolio/royal-weddings", id: 12, title: "Royal Wedding ", category: "Branding | Business Collaterals", imageUrl: "/home/portfolio/11.png" },
-    { url: "#", id: 14, title: "Bet Set Win", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/bsw.gif" },
-  
+    // { url: "/portfolio/royal-weddings", id: 12, title: "Royal Wedding ", category: "Branding | Business Collaterals", imageUrl: "/home/portfolio/11.png" },
+    // { url: "#", id: 14, title: "Bet Set Win", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/bsw.gif" },
   ];
 
   // State to track the number of items to display
