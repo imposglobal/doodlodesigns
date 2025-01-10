@@ -202,8 +202,8 @@ const Blog = () => {
                     )}
                   <h2 className={styles.btitle}>{data.title.rendered}</h2>
                   <h3 className={styles.date}>
-                    {new Date(data.date).toLocaleDateString()} |{" "}
-                    {getCategoryFromClassList(data.class_list)}
+                    {new Date(data.date).toLocaleDateString('en-US', {
+                      month: 'long', day: 'numeric', year: 'numeric',})} |{" "} {getCategoryFromClassList(data.class_list)}
                   </h3>
                 </div>
               </a>

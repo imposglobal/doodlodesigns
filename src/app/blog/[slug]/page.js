@@ -87,7 +87,8 @@ export default async function BlogDetail({ params }) {
       <div className={styles.bwrapper}>
         <h1 className={styles.blogtitle}>{postData.title.rendered}</h1>
         <p className={styles.author}>
-          {postData._embedded.author[0].name} | {new Date(postData.date).toLocaleDateString()} | {categoryNames}
+          {postData._embedded.author[0].name} |  {new Date(postData.date).toLocaleDateString('en-US', {
+           month: 'long', day: 'numeric', year: 'numeric', })} {" "} | {categoryNames}
         </p>
         <Image
         src={postData._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}
