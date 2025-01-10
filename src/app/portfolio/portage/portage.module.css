@@ -345,11 +345,11 @@
   {
     font-size: 20px;
     font-family: Poppins, sans-serif;
-    font-weight: 800;
+    font-weight: 600;
   }
   .thdesc
   {
-    font-size: 14px;
+    font-size: 18px;
     font-family: Poppins, sans-serif;
     font-weight: 400 !important;
   }
@@ -520,6 +520,11 @@
 .buttonres
 {
   display: block;
+}
+.thdesc
+{
+  font-size: 16px;
+  padding: 0 30px;
 }
 
   }

@@ -15,22 +15,9 @@ import Slidercomponent from '@/app/Component/Slider/Slidercomponent';
 
 const CitiBank = () => {
 
-    useEffect(() => {
-        document.title = "Doodle Illustration Collaboration with Citi Bank - Doodlo Designs";
-
-        if (descriptionTag) {
-          descriptionTag.setAttribute(
-            "content",
-            "We are thrilled to present our recent Doodle Illustration collaboration with Citi Bank Mumbai BKC."
-          );
-        }
-    
-        // Update the meta keywords dynamically
-        const keywordsTag = document.querySelector('meta[name="keywords"]');
-        if (keywordsTag) {
-          keywordsTag.setAttribute("content", "Doodle Illustration Collaboration");
-        }
-      }, []);
+       useEffect(() => {
+            document.title = "Doodle Illustration Collaboration with Citi Bank - Doodlo Designs";
+        }, []);
 
     //   lottie Controls
     const defaultOptions = {

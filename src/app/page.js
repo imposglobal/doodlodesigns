@@ -108,7 +108,7 @@ const Home = () => {
 
     { id: 3, url:"/portfolio/predicta-digital", ids: 'fimg3', ptitle:'PREDICTA', pdesc:'Website UI | Web Development', name: 'Item 3', image: '/home/portfolio/gallery/predictaa.png', category: 'category2' },
 
-    { id: 4, url:"", ids: 'fimg4', ptitle:'Click R & D', pdesc:'Branding | Website UI | Social Media', name: 'Item 4', image: '/home/portfolio/gallery/clickrnd.png', category: 'category1' },
+    { id: 4, url:"portfolio/clickrnd", ids: 'fimg4', ptitle:'Click R & D', pdesc:'Branding | Website UI | Social Media', name: 'Item 4', image: '/home/portfolio/gallery/clickrnd.png', category: 'category1' },
 
     { id: 5, url:"portfolio/yolo-mart", ids: 'fimg5', ptitle:'YOLOMART', pdesc:'Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media', name: 'Item 5', image: '/home/portfolio/gallery/yolomart.png', category: 'category2' },
 

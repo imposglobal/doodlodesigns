@@ -325,7 +325,7 @@ const mediresale = () => {
 
          <div className={styles.imgsec}>
                 <Image
-                src="/home/portfolios/mediresale/maskgroup.svg"
+                src="/home/portfolios/mediresale/medi.svg"
                 alt="Next.js"
                 layout="responsive"
                 width={100}

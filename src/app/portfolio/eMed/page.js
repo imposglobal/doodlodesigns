@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "./eMed.module.css";
 import Logo from "@/app/Images/logo";
 import Menu from "@/app/Component/Menu";
+import Slidercomponent from '@/app/Component/Slider/Slidercomponent';
 import {useState, useEffect} from 'react';
 
 const eMed = () => {
@@ -16,6 +17,18 @@ const eMed = () => {
           
           const toggleClass = () => {
               setInactive(!inactive);
+            };
+
+
+            const images = [
+              { src: "/home/portfolios/eMed/slider1.png", alt: "Slide 1", caption: "" },
+              { src: "/home/portfolios/eMed/slider2.png", alt: "Slide 2", caption: "" },
+              { src: "/home/portfolios/eMed/slider3.png", alt: "Slide 3", caption: "" },
+            ];
+            const settings = {
+              slidesPerView: 1, // Custom settings if needed
+              spaceBetween: 20,
+              autoplay: { delay: 5000 },
             };
   return (
     <div>
@@ -139,7 +152,7 @@ const eMed = () => {
          {/*****************/}
          <div className={styles.aboutsec}>
             <div className={styles.aboutpb}>
-                <h1 className={styles.atitle}>Portage</h1>
+                <h1 className={styles.atitle}>eMed</h1>
                 <hr></hr>
             </div>
             <div className={styles.aboutcontent}>    
@@ -149,11 +162,11 @@ const eMed = () => {
                 <h3 className={styles.heading}>Industry</h3>
                 <div className={styles.btnrow}>              
                 <button className={styles.btnelegant}>
-                Full Truck Load Transport
+                Telehealth & Healthcare
                 </button>
-                <button className={styles.btnelegant1}>
-                Logistics
-                </button>
+                {/* <button className={styles.btnelegant1}>
+                Lorem Ipsum
+                </button> */}
                 </div>
                 </div>
 
@@ -162,7 +175,7 @@ const eMed = () => {
                 <h3 className={styles.heading}>Purpose</h3>
                 <div className={styles.btnrow}>              
                 <button className={styles.btnelegant}>
-                Effective Brand Identity
+                User friendly website
                 </button>                              
                 </div>
                 </div>
@@ -172,10 +185,10 @@ const eMed = () => {
                 <h3 className={styles.heading}>Creative</h3>
                 <div className={styles.btnrow}>              
                 <button className={styles.btnelegant}>
-                Branding
+                Website Re-Design
                 </button>   
                 <button className={styles.btnelegant1}>
-                Brochure
+                Website Development
                 </button>        
                 </div>
                 
@@ -183,20 +196,24 @@ const eMed = () => {
                </div>
             <div className={styles.abcol2}>
               <h3 className={styles.heading}>About</h3>
-              <p className={styles.desc}>Portage is a trusted name in the logistics sector, specializing in full truckload transport solutions. They streamline freight operations with a commitment to efficiency, reliability, and scalability.
+              <p className={styles.desc}>eMed Specialist Pty Ltd. connects patients with specialists via a secure telehealth platform. It ensures timely, accessible, and effective consultations from the comfort of home, revolutionizing specialist care in Australia.
               </p>
               <h3 className={styles.heading}>Challenges</h3>
               <ul className={styles.aboutul}>
-                <li className={styles.aboutli}>Creating a distinctive and professional brand identity for a competitive logistics market.</li>
-                <li className={styles.aboutli}>Designing a brochure that effectively communicates their expertise and services.</li>
-                <li className={styles.aboutli}>Developing comprehensive brand guidelines for consistent communication across channels.</li>
+                <li className={styles.aboutli}>Existing platform lacked user-friendly design, leading to lower engagement.</li>
+                <li className={styles.aboutli}>Booking and consultation processes were cumbersome for users.</li>
+                <li className={styles.aboutli}>Branding didn’t align with the modern telehealth approach.</li>
               </ul>
+             
               <h3 className={styles.heading}>Solutions</h3>
-              <ul className={styles.aboutul}>
-                <li className={styles.aboutli}>Crafted a modern, impactful logo and brand identity reflecting Portage’s core values.</li>
-                <li className={styles.aboutli}>Designed a compelling, easy-to-navigate brochure highlighting their services and strengths.</li>
-                <li className={styles.aboutli}>Delivered detailed brand guidelines to maintain consistency in visuals and messaging.</li>
+               <ul className={styles.aboutul}>
+                <li className={styles.aboutli}>Designed a seamless, mobile-responsive platform for effortless navigation.</li>
+                <li className={styles.aboutli}>Simplified the booking flow with easy-to-access forms and call-to-actions.</li>
+                <li className={styles.aboutli}>Incorporated a modern design with a professional color palette to reflect trust.</li>
+                <li className={styles.aboutli}>Added patient testimonials and case studies to build credibility and engagement.</li>
+                <li className={styles.aboutli}>Create a user-friendly telehealth platform for seamless consultations, bookings, and enhanced patient-specialist experiences across Australia.</li>
               </ul>
+             
             </div>
             </div>
          </div>
@@ -240,10 +257,13 @@ const eMed = () => {
                         <h3 className={styles.brand}>
                         Typography:
                         </h3>
+                       
                         <h4 className={styles.typography}>
                         Aa
                         </h4>
                         <h6 className={styles.manrope}>Manrope</h6>
+                       
+                       
                     </div>
                   </div>
               </div>
@@ -277,14 +297,115 @@ const eMed = () => {
 
 
                 <div className={styles.workborder}>             
-                <h4 className={styles.fs20}>24PX</h4>
+                <h4 className={styles.fs18}>24PX</h4>
                 </div>
                 </div>
                 
                 </div>   
          </div>
 
- {/*****************/}
+ {/********responsive view*********/}
+
+
+ <div className={styles.colorres}>
+   <div className={styles.rescol1}>
+   <div className={styles.inline}>
+                        <Image
+                   src="/home/portfolios/eMed/Ellipse.png"
+                   alt="Next.js"
+                   layout="responsive"
+                   width={100}
+                   height={100}
+                   priority
+                   className={styles.ellipse}
+                   /> 
+                    <h3 className={styles.color}>
+                        Color & Typography
+                        </h3>
+                        </div>
+   </div>
+   <div className={styles.rescol2}>
+                <div className={styles.flexres}>
+                <div className={styles.resrow1}>
+                  <Image
+                   src="/home/portfolios/eMed/abcdef.png"
+                   alt="Next.js"
+                   layout="responsive"
+                   width={100}
+                   height={100}
+                   priority
+                   className={styles.abcdef}
+                   /> 
+                  </div>
+
+
+                  <div className={styles.resrow2}>
+   
+                        <div className={styles.inline}>
+                          <div>
+                          <h4 className={styles.brand}>
+                          Brand Colors:
+                        </h4>
+                          </div>
+                        <div>
+                        <Image
+                   src="/home/portfolios/eMed/colorres.png"
+                   alt="Next.js"
+                   layout="responsive"
+                   width={100}
+                   height={100}
+                   priority
+                   className={styles.colorresimg}
+                   
+                   /> 
+                        </div>
+                        
+                        </div>
+                        <div className={styles.trow2}>
+                        <h3 className={styles.brand}>
+                        Typography:
+                        </h3>
+                        <div className={styles.textcenter}>
+                        <h4 className={styles.typography}>
+                        Aa
+                        </h4>
+                        <h6 className={styles.manrope}>Manrope</h6>
+                        </div>
+                    </div>
+                    <div className={styles.headertext}>
+                <div className={styles.predesc}>              
+                <p className={styles.eheading}>THIS IS A HEADER </p>
+                </div>
+
+
+                <div className={styles.workborder}>             
+                <h4 className={styles.fs20}>40PX</h4>
+                </div>
+                </div>
+
+                <div className={styles.headertext1}>
+                <div className={styles.predesc}>              
+                <p className={styles.description}>Sed tincidunt felis eget aliquam gravida. Fusce iaculis vel nisl ut aliquet. Etiam dapibus est in ante auctor tincidunt. Integer ut ullamcorper </p>
+                </div>
+
+
+                <div className={styles.workborder}>             
+                <h4 className={styles.fs18}>24PX</h4>
+                </div>
+                </div>
+                       
+   
+    </div> 
+
+                </div>
+   </div>
+
+ 
+   
+    
+ </div>
+
+  {/*********end********/}
  <div className={styles.gifsec}>
                 <Image
                 src="/home/portfolios/eMed/elaptop.gif"
@@ -312,8 +433,8 @@ const eMed = () => {
                     UI Language
                         </h3>
                         </div>
-                        <h4 className={styles.brand}>
-                          Brand Colors:
+                        <h4 className={styles.brandcolor}>
+                        Icon Style:
                         </h4>
   </div>
   <div className={styles.uicol2}>
@@ -339,6 +460,7 @@ const eMed = () => {
     </h5>
   
   <div className={styles.grarow}>
+  
        <div>
        <Image
                    src="/home/portfolios/eMed/graphic1.png"
@@ -393,9 +515,17 @@ const eMed = () => {
   </div>
 
    {/*********responsive view********/}
+   <div className={styles.grares}>
+   <h4 className={styles.graphic}>
+     Graphic Style:
+    </h4>
 
+    <h5 className={styles.vector}>
+    Vectors for different specialties
+    </h5>
 
    <div className={styles.graressec}>
+   
    <div>
        <Image
                    src="/home/portfolios/eMed/graphic1.png"
@@ -416,21 +546,9 @@ const eMed = () => {
                    priority                  
                    /> 
        </div>
-   </div>
-   <div className={styles.graressec}>
-   <div>
-       <Image
-                   src="/home/portfolios/eMed/graphic1.png"
-                   alt="Next.js"
-                   layout="responsive"
-                   width={100}
-                   height={100}
-                   priority                  
-                   /> 
-       </div>
        <div>
        <Image
-                   src="/home/portfolios/eMed/graphic2.png"
+                   src="/home/portfolios/eMed/graphic3.png"
                    alt="Next.js"
                    layout="responsive"
                    width={100}
@@ -442,7 +560,7 @@ const eMed = () => {
    <div className={styles.graressec1}>
    <div>
        <Image
-                   src="/home/portfolios/eMed/graphic1.png"
+                   src="/home/portfolios/eMed/graphic4.png"
                    alt="Next.js"
                    layout="responsive"
                    width={100}
@@ -450,34 +568,50 @@ const eMed = () => {
                    priority                  
                    /> 
        </div>
-      
-   </div>
-
-   {/***********end******/}
-    {/* <div className={styles.imagesec}>
-    <div className={styles.imgcol1}>
-    <Image
-                   src="/home/portfolios/eMed/image11.png"
+       <div>
+       <Image
+                   src="/home/portfolios/eMed/graphic5.png"
                    alt="Next.js"
                    layout="responsive"
                    width={100}
                    height={100}
+                   priority                  
+                   /> 
+       </div>
+   </div>
+ 
+   </div>
+
+   {/***********end******/}
+    <div className={styles.imagesec}>
+    <div className={styles.imgcol1}>
+    <Image
+                   src="/home/portfolios/eMed/vec1.png"
+                   alt="Next.js"
+                   layout="responsive"
+                   width={100}
+                   height={100}
+                   className={styles.vec1}
                    priority                  
                    /> 
     </div>
     <div className={styles.imgcol2}>
     <Image
-                   src="/home/portfolios/eMed/image4.png"
+                   src="/home/portfolios/eMed/vec2.png"
                    alt="Next.js"
                    layout="responsive"
                    width={100}
                    height={100}
+                   className={styles.vec2}
                    priority                  
                    /> 
     </div>
-   </div>  */}
+   </div> 
     {/*****************/}
     <div className={styles.vectorsec}>
+    <h5 className={styles.vectorspe}>
+    Vectors for different Disorders
+    </h5>
       <div className={styles.vectorrow}>
       <Image
                    src="/home/portfolios/eMed/vector1.png"
@@ -774,7 +908,32 @@ const eMed = () => {
                    priority                  
                    /> 
      </div>
+    {/********responsive view of uidesignsec*********/}
+    <div className={styles.uidesignres}>
+     <div className={styles.inline}>
+                   <Image
+                   src="/home/portfolios/eMed/Ellipse.png"
+                   alt="Next.js"
+                   layout="responsive"
+                   width={100}
+                   height={100}
+                   priority
+                   className={styles.uiimg}
+                   /> 
+                  <h3 className={styles.color}>
+                    UI DESIGN
+                  </h3>
+                       
+      </div>
+      <Slidercomponent images={images} settings={settings} />    
+     </div>
+
+     {/* <div className={styles.slider}>
+        <Slidercomponent images={images} settings={settings} />
+      </div> */}
+
     {/*****************/}
+
     <div className={styles.formsec}>
             <h3 className={styles.formtitle}>Start your appointment request here</h3>
             <p className={styles.formdesc}>Your information will be forwarded to a scheduling specialist who will contact you.</p>
@@ -878,14 +1037,26 @@ const eMed = () => {
             layout="responsive"
             width={100}
             height={100}
-            priority                  
+            priority 
+            className={styles.psd7img}                 
             /> 
       </div>
+
+       {/*****************/}
+    <div className={styles.visitbg}>
+   <div className={styles.visitsec}>
+    <h4 className={styles.vtitle}>Explore the full experience — <Link href="https://emedspecialist.com.au/" target="_blank" className={styles.vweb}>visit the live Website</Link></h4> 
+   </div>
+   </div>
+    {/*****************/}
       {/*****************/}
       <div className={styles.thanksec}>
         <h4 className={styles.thtitle}>Thanks for scrolling!</h4> 
         <h6 className={styles.thdesc}>Got a project in mind? Let’s create something awesome together.</h6>  
        </div>
+
+
+      
     </div>
   )
 }

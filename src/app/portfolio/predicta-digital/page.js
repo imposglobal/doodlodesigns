@@ -517,6 +517,15 @@ const predicta = () => {
   </div>
 
    {/*****************/}
+  
+   <div className={styles.visitsec}>
+    <h4 className={styles.vtitle}>Explore the full experience — <Link href="https://www.predictadigital.com/" target="_blank" className={styles.vweb}>visit the live Website</Link></h4> 
+   </div>
+   
+   
+    {/*****************/}
+
+   {/*****************/}
    <div className={styles.thanksec}>
         <h4 className={styles.thtitle}>Thanks for scrolling!</h4> 
         <h6 className={styles.thdesc}>Got a project in mind? Let’s create something awesome together.</h6>  

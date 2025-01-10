@@ -34,6 +34,7 @@ const Gallery = ({ items = [] }) => {
       {filteredItems.map(item => (
           <div id={item.ids}  key={item.id} className={`gallery-item ${activeFilter !== 'all' ? 'imgauto' : ''}`}
 >
+             <Link href={item.url}>
             <img 
               
               src={item.image} 
@@ -45,7 +46,7 @@ const Gallery = ({ items = [] }) => {
                 <h4 className="imgtitle">{item.ptitle} </h4>
                 <p className="portdesc">{item.pdesc} </p>
                 <div className={styles.plink}>
-                  <Link href={item.url}>
+                  {/* <Link href={item.url}> */}
                   <Image
                     className={styles.plinks}
                     src="/home/plink.svg"
@@ -55,12 +56,17 @@ const Gallery = ({ items = [] }) => {
                     height={37}
                     priority
                   />
-                  </Link>
+                  {/* </Link> */}
                 </div>
               </div>
+
+              </Link>
+
           </div>
         ))}
       </div>
+
+
       <div className={styles.btn_center}>
       <Link href="/portfolio" className="boton_elegante">
       EXPLORE MORE
