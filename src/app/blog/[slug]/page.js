@@ -1,5 +1,5 @@
 import axios from 'axios';
-import Head from 'next/head';
+// import Head from 'next/head';
 import BlogMenu from '../BlogMenu';
 import Image from 'next/image';
 import styles from './slug.module.css';
@@ -35,18 +35,24 @@ export async function generateMetadata({ params }) {
     if (postData) {
       return {
         title: postData.title.rendered, // Dynamically set the title from the post title
-        description: postData.excerpt.rendered, // Use the excerpt for the description
+        // description: postData.excerpt.rendered, 
+        description: postData.yoast_head_json?.description || '',
+        keywords: postData.yoast_head_json?.keywords || postData.title.rendered,
+         
       };
+
     }
     return {
       title: 'Post not found',
       description: 'The requested post could not be found.',
+      keywords: 'The requested post could not be found.',
     };
   } catch (error) {
     console.error('Error generating metadata:', error);
     return {
       title: 'Error',
       description: 'There was an error fetching the post metadata.',
+      keywords:'Error',
     };
   }
 }
@@ -78,11 +84,6 @@ export default async function BlogDetail({ params }) {
 
   return (
     <div>
-      <Head>
-        <title>{postData.title.rendered}</title>
-        <meta name="description" content={postData.excerpt.rendered} />
-        <meta name="keywords" content={postData.yoast_head_json?.keywords || ''} />
-      </Head>
       <BlogMenu />
       <div className={styles.bwrapper}>
         <h1 className={styles.blogtitle}>{postData.title.rendered}</h1>
