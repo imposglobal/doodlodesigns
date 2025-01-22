@@ -282,7 +282,13 @@
 
   .imagecol2
   {
-    flex: 34%;
+    flex: 34.5%;
+  }
+
+
+  .imgcol1
+  {
+    flex: 50%;
   }
   .imagecoloum
   {

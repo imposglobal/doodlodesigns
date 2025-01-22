@@ -198,7 +198,7 @@ const predicta = () => {
               <ul className={styles.aboutul}>
                 <li className={styles.aboutli}>Designed an intuitive Web UI focused on user engagement and ease of navigation.</li>
                 <li className={styles.aboutli}>Developed a responsive, fast-loading website aligned with their branding and product features</li>
-                <li className={styles.aboutli}>mplemented scalable web development solutions to support future product expansions.</li>
+                <li className={styles.aboutli}>implemented scalable web development solutions to support future product expansions.</li>
               </ul>
             </div>
             </div>

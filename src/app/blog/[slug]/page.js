@@ -1,5 +1,4 @@
 import axios from 'axios';
-// import Head from 'next/head';
 import BlogMenu from '../BlogMenu';
 import Image from 'next/image';
 import styles from './slug.module.css';
@@ -15,15 +14,16 @@ const fetchPost = async (slug) => {
   }
 };
 
-// Fetch categories for a post
-const fetchCategories = async (categoryIds) => {
-  try {
-    const response = await axios.get(`https://doodlodesign.com/wp-json/wp/v2/categories?include[]=${categoryIds.join(',')}`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching categories:', error);
-    return [];
+
+
+const getCategoryFromClassList = (classList) => {
+  if (Array.isArray(classList)) {
+    const categoryClass = classList.find((className) =>
+      className.startsWith("category-")
+    );
+    return categoryClass ? categoryClass.replace("category-", "") : "No Category";
   }
+  return "No Category";
 };
 
 // This function generates metadata for the page
@@ -34,11 +34,9 @@ export async function generateMetadata({ params }) {
     const postData = await fetchPost(slug);
     if (postData) {
       return {
-        title: postData.title.rendered, // Dynamically set the title from the post title
-        // description: postData.excerpt.rendered, 
-        description: postData.yoast_head_json?.description || '',
-        keywords: postData.yoast_head_json?.keywords || postData.title.rendered,
-         
+        title: postData.yoast_head_json?.title || '',
+        description: postData._yoast_wpseo_metadesc || '',
+        keywords: postData._yoast_wpseo_focuskw || '',         
       };
 
     }
@@ -57,10 +55,16 @@ export async function generateMetadata({ params }) {
   }
 }
 
-// Add this function to provide static paths for each post
+
 export async function generateStaticParams() {
   try {
-    const response = await axios.get('https://doodlodesign.com/wp-json/wp/v2/posts');
+    // Fetch posts with a higher per_page limit to ensure all posts are returned
+    const response = await axios.get('https://doodlodesign.com/wp-json/wp/v2/posts', {
+      params: {
+        per_page: 100,  // Fetch up to 100 posts
+      }
+    });
+
     const slugs = response.data.map(post => post.slug);
     return slugs.map(slug => ({
       slug,
@@ -71,6 +75,7 @@ export async function generateStaticParams() {
   }
 }
 
+
 export default async function BlogDetail({ params }) {
   const { slug } = params;
   const postData = await fetchPost(slug);
@@ -79,9 +84,6 @@ export default async function BlogDetail({ params }) {
     return <p>Post not found</p>;
   }
 
-  const categories = await fetchCategories(postData.categories);
-  const categoryNames = categories.map(category => category.name).join(', ');
-
   return (
     <div>
       <BlogMenu />
@@ -89,7 +91,7 @@ export default async function BlogDetail({ params }) {
         <h1 className={styles.blogtitle}>{postData.title.rendered}</h1>
         <p className={styles.author}>
           {postData._embedded.author[0].name} |  {new Date(postData.date).toLocaleDateString('en-US', {
-           month: 'long', day: 'numeric', year: 'numeric', })} {" "} | {categoryNames}
+           month: 'long', day: 'numeric', year: 'numeric', })} {" "} | {getCategoryFromClassList(postData.class_list)}
         </p>
         <Image
         src={postData._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url}
@@ -100,7 +102,6 @@ export default async function BlogDetail({ params }) {
         priority
         className={styles.blogimg}
       />
-
         <div className={styles.blogdesc} dangerouslySetInnerHTML={{ __html: postData.content.rendered }} />
       </div>
     </div>

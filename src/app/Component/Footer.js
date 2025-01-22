@@ -50,11 +50,11 @@ const Footer = () => {
                             <h3 className={styles.ftitle}>Our Studio</h3>
                             <p className={styles.plink}><Link href='/services' className={styles.flinks}>Services</Link></p>
                             <p className={styles.plink}><Link href='/portfolio' className={styles.flinks}>Portfolio</Link></p>
-                            <p className={styles.plink}><Link href='our-story' className={styles.flinks}>Our Story</Link></p>
+                            <p className={styles.plink}><Link href='/our-story' className={styles.flinks}>Our Story</Link></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Career</a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='/blog'>Blog</a></p>
                             <p className={styles.plink}><Link className={styles.flinks} href='https://doodlocomics.com'>Shop</Link></p>
-                            <p className={styles.plink}><Link href='faqs' className={styles.flinks}>FAQ</Link></p>
+                            <p className={styles.plink}><Link href='/faqs' className={styles.flinks}>FAQ</Link></p>
                          </div>
                          <div className={styles.footercol2}>
                          <h3 className={styles.ftitle}>What we do </h3>
@@ -228,11 +228,11 @@ const Footer = () => {
                             <h3 className={styles.ftitle}>Our Studio</h3>
                             <p className={styles.plink}><Link href='/services' className={styles.flinks}>Services</Link></p>
                             <p className={styles.plink}><Link href='/portfolio' className={styles.flinks}>Portfolio</Link></p>
-                            <p className={styles.plink}><Link href='our-story' className={styles.flinks}>Our Story</Link></p>
+                            <p className={styles.plink}><Link href='/our-story' className={styles.flinks}>Our Story</Link></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Career</a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='/blog'>Blog</a></p>
                             <p className={styles.plink}><Link className={styles.flinks} href='https://doodlocomics.com'>Shop</Link></p>
-                            <p className={styles.plink}><Link href='faqs' className={styles.flinks}>FAQ</Link></p>
+                            <p className={styles.plink}><Link href='/faqs' className={styles.flinks}>FAQ</Link></p>
                          </div>
                          <div className={styles.footercol2}>
                          <h3 className={styles.ftitle}>What we do </h3>

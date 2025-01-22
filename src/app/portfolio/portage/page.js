@@ -230,7 +230,7 @@ const portage = () => {
          </div>
           {/*****************/}
 
-          <div className={styles.conceptsec}>
+          {/* <div className={styles.conceptsec}>
             <div>
                 <h4 className={styles.ctitle}>Concepts:</h4>              
             </div>
@@ -304,7 +304,7 @@ const portage = () => {
             
       
             </div>          
-         </div>
+         </div> */}
         {/*****************/}
 
          <div className={styles.elementsec}>

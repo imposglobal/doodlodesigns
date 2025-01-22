@@ -7,6 +7,7 @@ import Link from "next/link";
 import Logo from "@/app/Images/logo";
 import Menu from "@/app/Component/Menu";
 
+
 const Blog = () => {
   useEffect(() => {
     document.title = "Blog - Doodlo Designs Studio";
@@ -23,7 +24,7 @@ const Blog = () => {
 
   useEffect(() => {
     axios
-      .get("https://doodlodesign.com/wp-json/wp/v2/posts?_embed")
+      .get("https://doodlodesign.com/wp-json/wp/v2/posts?_embed&per_page=100")
       .then((response) => {
         // Reverse the data array to show posts in reverse order
         const reversedData = response.data.reverse();
@@ -212,9 +213,6 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className={styles.blackbg}>
-        {/* Subscribe Section */}
-      </div>
     </div>
   );
 };
