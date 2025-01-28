@@ -23,14 +23,14 @@ const Footer = () => {
                         
                          <div className={styles.footerrow}>
                          <div className={styles.footercol1}>
-                            <h3 className={styles.countrytitle}>IND</h3>
+                            <p className={styles.countrytitle}>IND</p>
                             <p className={styles.addr}>
                             911-914, Clover Hills Plaza, Pune, 411048
                             </p>
 
                          </div>
                          <div className={styles.footercol2}>
-                            <h3 className={styles.countrytitle}>UK</h3>
+                            <p className={styles.countrytitle}>UK</p>
                             <p className={styles.addr}>
                             7 Bell Yard, London, England, WC2A 2JR
                             </p>
@@ -47,7 +47,7 @@ const Footer = () => {
                         </p>
                         <div className={styles.footerrow}>
                          <div className={styles.footercol1}>
-                            <h3 className={styles.ftitle}>Our Studio</h3>
+                            <p className={styles.ftitle}>Our Studio </p>
                             <p className={styles.plink}><Link href='/services' className={styles.flinks}>Services</Link></p>
                             <p className={styles.plink}><Link href='/portfolio' className={styles.flinks}>Portfolio</Link></p>
                             <p className={styles.plink}><Link href='/our-story' className={styles.flinks}>Our Story</Link></p>
@@ -57,7 +57,7 @@ const Footer = () => {
                             <p className={styles.plink}><Link href='/faqs' className={styles.flinks}>FAQ</Link></p>
                          </div>
                          <div className={styles.footercol2}>
-                         <h3 className={styles.ftitle}>What we do </h3>
+                         <p className={styles.ftitle}>What we do </p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Branding Design  </a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Digital Experience </a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Packaging Design</a></p>
@@ -84,18 +84,18 @@ const Footer = () => {
                 </div>
                 <div className={`${styles.footerrow} ${styles.footerrowss}`}>
                     <div className={styles.footercol1}>
-                    <h3 className={`${styles.updatet} ${styles.mtop}`}>Business Queries:</h3>
+                    <p className={`${styles.updatet} ${styles.mtop}`}>Business Queries:</p>
                     <p className={styles.updatep}>contact@doodlodesigns.com</p>
 
-                    <h3 className={styles.updatet}>Job Updates:</h3>
+                    <p className={styles.updatet}>Job Updates:</p>
                     <p className={styles.updatep}>careers@doodlodesigns.com</p>
                     </div>
                     <div className={styles.footercol2}>
                         {/* <div className={styles.footinn}> */}
                           <div className={styles.footerp}>
-                            <h3 className={styles.substext}>
+                            <p className={styles.substext}>
                             Subscribe to our Newsletter 
-                            </h3>
+                            </p>
                             <div className={styles.subswrap}>
                                 <input
                                 type="email"
@@ -194,14 +194,14 @@ const Footer = () => {
                         
                          <div className={styles.footerrow}>
                          <div className={styles.footercol1}>
-                            <h3 className={styles.countrytitle}>IND</h3>
+                            <p className={styles.countrytitle}>IND</p>
                             <p className={styles.addr}>
                             911-914, Clover Hills Plaza, Pune, 411048
                             </p>
 
                          </div>
                          <div className={styles.footercol2}>
-                            <h3 className={styles.countrytitle}>UK</h3>
+                            <p className={styles.countrytitle}>UK</p>
                             <p className={styles.addr}>
                             7 Bell Yard, London, England, WC2A 2JR
                             </p>
@@ -210,10 +210,10 @@ const Footer = () => {
                          </div>
                           
                          <div className={`${styles.footercol1}`}>
-                    <h3 className={styles.updatet}>Business Queries:</h3>
+                    <p className={styles.updatet}>Business Queries:</p>
                     <p className={styles.updatep}>contact@doodlodesigns.com</p>
 
-                    <h3 className={styles.updatet}>Job Updates:</h3>
+                    <p className={styles.updatet}>Job Updates:</p>
                     <p className={styles.updatep}>careers@doodlodesigns.com</p>
                     </div>
 
@@ -225,7 +225,7 @@ const Footer = () => {
                       
                         <div className={styles.footerrow}>
                          <div className={styles.footercol1}>
-                            <h3 className={styles.ftitle}>Our Studio</h3>
+                            <p className={styles.ftitle}>Our Studio</p>
                             <p className={styles.plink}><Link href='/services' className={styles.flinks}>Services</Link></p>
                             <p className={styles.plink}><Link href='/portfolio' className={styles.flinks}>Portfolio</Link></p>
                             <p className={styles.plink}><Link href='/our-story' className={styles.flinks}>Our Story</Link></p>
@@ -235,7 +235,7 @@ const Footer = () => {
                             <p className={styles.plink}><Link href='/faqs' className={styles.flinks}>FAQ</Link></p>
                          </div>
                          <div className={styles.footercol2}>
-                         <h3 className={styles.ftitle}>What we do </h3>
+                         <p className={styles.ftitle}>What we do </p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Branding Design  </a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Digital Experience </a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Packaging Design</a></p>
@@ -252,9 +252,9 @@ const Footer = () => {
                   
                     <div className={styles.footercol2}>
                         <div className={`${styles.footinn} ${styles.footinnm}`}>
-                            <h3 className={styles.substext}>
+                            <p className={styles.substext}>
                             Subscribe to our Newsletter 
-                            </h3>
+                            </p>
                             <div className={styles.subswrap}>
                                 <input
                                 type="email"

@@ -16,12 +16,12 @@ import Slidercomponent from '@/app/Component/Slider/Slidercomponent';
 const Wurth = () => {
 
     useEffect(() => {
-        document.title = "Coffee Table Book - Best Collage artwork";
+        document.title = "Wuerth India | Coffee Table Book Design | Doodlo Design Studio";
         const descriptionTag = document.querySelector('meta[name="description"]');
     if (descriptionTag) {
       descriptionTag.setAttribute(
         "content",
-        "This Coffee Table Book has remained dedicated to the growth and success for this Wuerth unit."
+        "Check out how Doodlo Design infused Indian culture into the German technology company, Wuerth, highlighting their 12-year journey, achievements, and growth."
       );
     }
 
@@ -29,6 +29,11 @@ const Wurth = () => {
     const keywordsTag = document.querySelector('meta[name="keywords"]');
     if (keywordsTag) {
       keywordsTag.setAttribute("content", "Best Collage artwork");
+    }
+
+    const metaTitleTag = document.querySelector('meta[name="title"]');
+    if (metaTitleTag) {
+      metaTitleTag.setAttribute("content", "Wuerth India | Coffee Table Book Design | Doodlo Design Studio");
     }
       }, []);
 
@@ -196,12 +201,15 @@ const Wurth = () => {
                   />
             </div>
             <div className={styles.talesecs}>
-            <h3 className={styles.talet}>
+            {/* <h3 className={styles.talet}>
                 Wuerth Industries/ Celebrating 12 years Anniversary with a coffee Table Book
-                </h3>
+                </h3> */}
+                <h1 className={styles.talet}>Celebrating 12 Years of Wuerth Industries - A Fusion of Indian Culture and German Technology</h1>
                 <p className={styles.talep}>
-                For the past 12 year of manufacturing unit establishment in Pune. This Coffee Table Book has remained dedicated to the growth and success for this Wuerth unit. Alleviating all areas of manufacture and enhancing their quality in industry. This limited edition coffee table book celebrates the organization 12th anniversary and their extra ordinary achievements that led to their success and become the leaders in market. <b>Challenge:</b> To give a Indian touch to their German technology which encourage the upcoming years to work towards company goals
+                For the past 12 year of manufacturing unit establishment in Pune. This Coffee Table Book has remained dedicated to the growth and success for this Wuerth unit. Alleviating all areas of manufacture and enhancing their quality in industry. This limited edition coffee table book celebrates the organization 12th anniversary and their extra ordinary achievements that led to their success and become the leaders in market. 
                 </p>
+                <h2 className={styles.taleth}>The Challenge</h2>
+                <p className={styles.talep}>To give a Indian touch to their German technology which encourage the upcoming years to work towards company goals.</p>
             </div>
             <Image
                        src="https://imagedelivery.net/QeqoqeJCeBWIeVC5sxQgpw/52bf7e2e-e50e-4c15-fc98-89ca7ac6d000/public"

@@ -10,19 +10,24 @@ import {useState, useEffect} from 'react';
 const flashcard = () => {
 
     useEffect(() => {
-        document.title = "Flash Card Illustration and Packaging";
+        document.title = "Little Learner's Trove | Flash Card & Illustration Design | Doodlo Design Studio";
         const descriptionTag = document.querySelector('meta[name="description"]');
         if (descriptionTag) {
         descriptionTag.setAttribute(
         "content",
-        "Take a look at our portfolio of Branding, Flash Card Illustration & Packaging."
+        "Check out Doodlo Design's work with Little Learners Trove, creating playful, educational flashcards with vibrant designs that make learning fun for kids."
         );
         }
 
       // Update the meta keywords dynamically
       const keywordsTag = document.querySelector('meta[name="keywords"]');
       if (keywordsTag) {
-      keywordsTag.setAttribute("content", "Flash Card Illustration");
+      keywordsTag.setAttribute("content", "");
+      }
+
+      const metaTitleTag = document.querySelector('meta[name="title"]');
+      if (metaTitleTag) {
+        metaTitleTag.setAttribute("content", "Little Learner's Trove | Flash Card & Illustration Design | Doodlo Design Studio");
       }
       }, []);
 
@@ -163,8 +168,8 @@ const flashcard = () => {
         {/*********************************************/}
 
         <div className={styles.contentsec}>
-         <h1 className={styles.title}>Little Learners Trove</h1>
-         <h6 className={styles.subtitle}>Branding, Flash Card Illustration & Packaging</h6>
+         <h1 className={styles.title}>Little Learners Trove Flashcard Designs by Doodlo Design</h1>
+         <h2 className={styles.subtitle}>Branding, Flash Card Illustration & Packaging</h2>
          <p className={styles.description}>
          Towards the beginning of 2021 Mumbai-based Little Learners Trove brand got in touch to develop their toddler educational product-based brand. They needed a modern but naive, colorful, and playful brand to take on international markets with a design-driven product line, but without losing focus on their Indian origins. We ended up developing a brand that, although modern, retains a naive feeling through the use of color and Flash Card illustration style.
          </p>

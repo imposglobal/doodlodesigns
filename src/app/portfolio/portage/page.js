@@ -9,7 +9,26 @@ import {useState, useEffect} from 'react';
 
 const portage = () => {
     useEffect(() => {
-        document.title = "Portfolio - Doodlo Designs Studio";
+        document.title = "Portage | Branding | Doodlo Design Studio";
+
+        const descriptionTag = document.querySelector('meta[name="description"]');
+    if (descriptionTag) {
+      descriptionTag.setAttribute(
+        "content",
+        "Check out Doodlo Design's work with Portage, crafting a unique brand identity and innovative design solutions that elevate their business and drive growth."
+      );
+    }
+
+    // Update the meta keywords dynamically
+    const keywordsTag = document.querySelector('meta[name="keywords"]');
+    if (keywordsTag) {
+      keywordsTag.setAttribute("content", " ");
+    }
+
+    const metaTitleTag = document.querySelector('meta[name="title"]');
+    if (metaTitleTag) {
+      metaTitleTag.setAttribute("content", "Portage | Branding | Doodlo Design Studio");
+    }
       }, []);
 
       const [inactive, setInactive] = useState(true); // Set initial state to true
@@ -138,7 +157,7 @@ const portage = () => {
         {/*****************/}
         <div className={styles.aboutsec}>
             <div className={styles.aboutpb}>
-                <h1 className={styles.atitle}>Portage</h1>
+                <h1 className={styles.atitle}>Portage - Crafting a Unique Brand Identity with Innovative Design Solutions</h1>
                 <hr></hr>
             </div>
             <div className={styles.aboutcontent}>    

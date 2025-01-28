@@ -21,7 +21,26 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Reachus = () => {
   useEffect(() => {
-    document.title = "Reach us - Doodlo Designs Studio";
+    document.title = "Reach Us for Creative Solutions | Get Free Design Audit";
+
+    const descriptionTag = document.querySelector('meta[name="description"]');
+    if (descriptionTag) {
+      descriptionTag.setAttribute(
+        "content",
+        "Get in touch with Doodlo Design for innovative branding, design, web, UI/UX &  digital  marketing solutions. We’re here to bring your creative vision to life"
+      );
+    }
+
+    // Update the meta keywords dynamically
+    const keywordsTag = document.querySelector('meta[name="keywords"]');
+    if (keywordsTag) {
+      keywordsTag.setAttribute("content", " ");
+    }
+
+    const metaTitleTag = document.querySelector('meta[name="title"]');
+    if (metaTitleTag) {
+      metaTitleTag.setAttribute("content", "Reach Us for Creative Solutions | Get Free Design Audit");
+    }
   }, []);
 
     const [hoverText, setHoverText] = useState('PROJECTS THAT MAKE A DIFFERENCE');
@@ -622,8 +641,9 @@ const handleChange = (e) => {
             </div>
         </div>
         <div className={styles.clientle}>
-            <h2 className={styles.mainheading}>OUR</h2>
-            <h2 className={styles.sec_heading}>clientele</h2>
+            {/* <h2 className={styles.mainheading}>OUR</h2>
+            <h2 className={styles.sec_heading}>clientele</h2> */}
+            <h2 className={styles.mainheading}>OUR <br></br> <span className={styles.sec_heading}>clientele</span></h2>
             <div className={styles.desktopv}>
             <ImageFlip  />
             </div>
@@ -633,8 +653,8 @@ const handleChange = (e) => {
        </div>
        <div data-aos="fade-up" className={styles.filtergal}>
         <div className={styles.featured}>
-        <h2 className={styles.mainheadingf}>Our</h2>
-        <h2 className={styles.sec_headingf}>Portfolio</h2>
+        
+       <h2 className={styles.mainheadingf}>Our <br></br><span className={styles.sec_headingf}>Portfolio</span></h2>
         </div>
         <Portfolio items={items} />
         </div>
@@ -642,8 +662,7 @@ const handleChange = (e) => {
 
         <div className={`${styles.services} ${styles.srv_scroller}`}>
     <div className={styles.service_hight}>
-    <h2 className={styles.mainheading}>OUR</h2>
-    <h2 className={styles.sec_heading}>SERVICES</h2>
+    <h2 className={styles.mainheading}>OUR <br></br> <span className={styles.sec_heading}>SERVICES</span></h2>
     <div className="accordion">
     <AccordionOne />  
     </div>

@@ -11,6 +11,29 @@ import {useState, useEffect} from 'react';
 
 const Faqs = () => {
 
+  useEffect(() => {
+    document.title = "Doodlo Designs – Everything You Need to Know About Design Services";
+
+    const descriptionTag = document.querySelector('meta[name="description"]');
+    if (descriptionTag) {
+      descriptionTag.setAttribute(
+        "content",
+        "Discover Doodlo Design’s FAQs and our full range of creative services, including web design, branding, packaging, illustrations, & digital marketing."
+      );
+    }
+
+    // Update the meta keywords dynamically
+    const keywordsTag = document.querySelector('meta[name="keywords"]');
+    if (keywordsTag) {
+      keywordsTag.setAttribute("content", "");
+    }
+
+    const metaTitleTag = document.querySelector('meta[name="title"]');
+    if (metaTitleTag) {
+      metaTitleTag.setAttribute("content", "Doodlo Designs – Everything You Need to Know About Design Services");
+    }
+  }, []);
+
     useEffect(() =>{
         AOS.init({
           duration: 1000, // Customize the duration of the animations
@@ -132,8 +155,10 @@ const Faqs = () => {
         </div>
 
             <div className={styles.faqsec}>
-            <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Everything you </h2>
-            <h2 data-aos="fade-up" className={styles.text_title}>need to know </h2>
+            {/* <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Everything you </h2>
+            <h2 data-aos="fade-up" className={styles.text_title}>need to know </h2> */}
+
+            <h1 data-aos="fade-up" className={styles.text_stroke_hover}>Everything you <br></br><span data-aos="fade-up" className={styles.text_title}>need to know</span></h1>
             </div>
             <Accordion />
         </section>

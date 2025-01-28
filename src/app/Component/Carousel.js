@@ -47,7 +47,7 @@ const Carousel = () => {
       <Slider {...settings}>
         <div className="card">
           <div className="card_inner">
-            <h2 className="client_h2">Saurav K</h2>
+            <p className="client_h2">Saurav K</p> 
             <p className="client_desg">Founder | Marmeto</p>
             <div className="starsicon">
               <FontAwesomeIcon className="stars" icon={faStar} />
@@ -61,7 +61,7 @@ const Carousel = () => {
         </div>
         <div className="card">
           <div className="card_inner">
-            <h2 className="client_h2">Dan Gabreil</h2>
+            <p className="client_h2">Dan Gabreil</p>
             <p className="client_desg">Marketing Head | Coinsafe VPN</p>
             <div className="starsicon">
               <FontAwesomeIcon className="stars" icon={faStar} />
@@ -76,7 +76,7 @@ const Carousel = () => {
         </div>
         <div className="card">
           <div className="card_inner">
-            <h2 className="client_h2">Charu Jain</h2>
+            <p className="client_h2">Charu Jain</p>
             <p className="client_desg">Marketing Head | Rishabh Industries Pvt.Ltd</p>
             <div className="starsicon">
               <FontAwesomeIcon className="stars" icon={faStar} />
@@ -90,7 +90,7 @@ const Carousel = () => {
         </div>
         <div className="card">
           <div className="card_inner">
-            <h2 className="client_h2">Norman Dental</h2>
+            <p className="client_h2">Norman Dental</p>
             <p className="client_desg">CEO |  Wurth Industries</p>
             <div className="starsicon">
               <FontAwesomeIcon className="stars" icon={faStar} />
@@ -105,7 +105,7 @@ const Carousel = () => {
 
         <div className="card">
           <div className="card_inner">
-            <h2 className="client_h2">Monika K</h2>
+            <p className="client_h2">Monika K</p>
             <p className="client_desg">Founder  |  K99 Solutions</p>
             <div className="starsicon">
               <FontAwesomeIcon className="stars" icon={faStar} />
@@ -120,7 +120,7 @@ const Carousel = () => {
         </div>
         <div className="card">
           <div className="card_inner">
-            <h2 className="client_h2">Along Molier</h2>
+            <p className="client_h2">Along Molier</p>
             <p className="client_desg">Operations Head |  Impos Global</p>
             <div className="starsicon">
               <FontAwesomeIcon className="stars" icon={faStar} />
@@ -136,7 +136,7 @@ const Carousel = () => {
 
         <div className="card">
           <div className="card_inner">
-            <h2 className="client_h2">Gayatri Pataskar</h2>
+            <p className="client_h2">Gayatri Pataskar</p>
             <p className="client_desg">Founder |  Mahatee Interactives </p>
             <div className="starsicon">
               <FontAwesomeIcon className="stars" icon={faStar} />
@@ -152,7 +152,7 @@ const Carousel = () => {
 
         <div className="card">
           <div className="card_inner">
-            <h2 className="client_h2">Dev Aditya</h2>
+            <p className="client_h2">Dev Aditya</p>
             <p className="client_desg">Founder |  Mahatee Interactives </p>
             <div className="starsicon">
               <FontAwesomeIcon className="stars" icon={faStar} />
@@ -166,7 +166,7 @@ const Carousel = () => {
         </div>
         <div className="card">
           <div className="card_inner">
-            <h2 className="client_h2">Njoki Faith</h2>
+            <p className="client_h2">Njoki Faith</p>
             <p className="client_desg">Manager |  Yolomart </p>
             <div className="starsicon">
               <FontAwesomeIcon className="stars" icon={faStar} />

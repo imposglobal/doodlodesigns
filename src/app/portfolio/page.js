@@ -12,22 +12,26 @@ import WorkAnimationlr from "../Component/WorkAnimatedLR";
 
 const Portfolio = () => {
   useEffect(() => {
-    document.title = "Portfolio | Creative Case Studies | Brand & Web Design";
-    // document.description = "Take a look at our portfolio of branding & web design projects. We've worked with businesses of all sizes & in all industries.";
-    // document.keywords = "Portfolio";
+    document.title = "Design Portfolio | Creative Case Studies | Doodlo Design Studio";
+
 
     const descriptionTag = document.querySelector('meta[name="description"]');
     if (descriptionTag) {
       descriptionTag.setAttribute(
         "content",
-        "Take a look at our portfolio of branding & web design projects. We've worked with businesses of all sizes & in all industries."
+        "Take a glance at Doodlo Design's portfolio featuring renowned brands, specializing in elevating digital presence & improving customer experiences through creative collaboration."
       );
     }
 
     // Update the meta keywords dynamically
     const keywordsTag = document.querySelector('meta[name="keywords"]');
     if (keywordsTag) {
-      keywordsTag.setAttribute("content", "Portfolio");
+      keywordsTag.setAttribute("content", " ");
+    }
+
+    const metaTitleTag = document.querySelector('meta[name="title"]');
+    if (metaTitleTag) {
+      metaTitleTag.setAttribute("content", "Design Portfolio | Creative Case Studies | Doodlo Design Studio");
     }
   }, []);
 
@@ -57,9 +61,9 @@ const Portfolio = () => {
     { url: "/portfolio/alhidaya", id: 13, title: "Alhidaya", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/alhidaya.gif" },
     { url: "/portfolio/coinsafe-vpn", id: 2, title: "COINSAFE VPN", category: "Branding | Website UI | Web Development | Application | Marketing Collaterals", imageUrl: "/home/portfolio/csafe.gif" },
     { url: "/portfolio/blackb-finance-services", id: 4, title: "BLACK B FINANCE", category: "Branding | Website UI | Web Development", imageUrl: "/home/portfolio/blackb.gif" },
-    { url: "portfolio/yolo-mart", id: 5, title: "YOLOMART", category: "Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media", imageUrl: "/home/portfolio/yolomart.png" },
-    { url: "portfolio/clickrnd", id: 7, title: "Click R & D", category: "Branding | Website UI | Social Media", imageUrl: "/home/portfolio/clickrnd.jpg" },
-    { url: "portfolio/citibank", id: 8, title: "CITIBANK", category: "Illustrations | Presentation | Wall Graffiti", imageUrl: "/home/portfolio/6.png" },
+    { url: "/portfolio/yolo-mart", id: 5, title: "YOLOMART", category: "Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media", imageUrl: "/home/portfolio/yolomart.png" },
+    { url: "/portfolio/clickrnd", id: 7, title: "Click R & D", category: "Branding | Website UI | Social Media", imageUrl: "/home/portfolio/clickrnd.jpg" },
+    { url: "/portfolio/citibank", id: 8, title: "CITIBANK", category: "Illustrations | Presentation | Wall Graffiti", imageUrl: "/home/portfolio/6.png" },
     { url: "/portfolio/nutribee", id: 9, title: "Nutribee", category: "Illustration | Packaging Design", imageUrl: "/home/portfolio/10.png" },
     { url: "portfolio/flash-card-illustration-and-packaging", id: 10, title: "Littile learners trove", category: "Branding | Illustrations | Product Design | Packaging Design | Social Media", imageUrl: "/home/portfolio/12.png" },
     { url: "/portfolio/coffee-table-book", id: 11, title: "Wuerth Industries", category: "Publication - Coffee Table Book Design | Corporate Giftings", imageUrl: "/home/portfolio/8.png" },

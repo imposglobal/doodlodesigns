@@ -16,20 +16,25 @@ import OurProcess from "../Component/Ourprocess";
 const Ourstory = () => {
 
     useEffect(() => {
-        document.title = "Branding Agency in India & UK | Web Design | Doodlo Designs";
+        document.title = "Designing Services in India & UK | Web Design | UI/UX | Branding";
         const descriptionTag = document.querySelector('meta[name="description"]');
         if (descriptionTag) {
         descriptionTag.setAttribute(
         "content",
-        "We offer a range of branding and web design services, including logo design, graphic design, and more. Top Branding Agency in India."
+        "Creative Design Solutions by Doodlo Design Studio. We offer Web design & development, Branding, Packaging, & Illustrations services for impactful brand experiences."
         );
         }
 
         // Update the meta keywords dynamically
         const keywordsTag = document.querySelector('meta[name="keywords"]');
         if (keywordsTag) {
-        keywordsTag.setAttribute("content", "Branding Agency in India");
+        keywordsTag.setAttribute("content", " ");
         }
+
+        const metaTitleTag = document.querySelector('meta[name="title"]');
+        if (metaTitleTag) {
+        metaTitleTag.setAttribute("content", "Designing Services in India & UK | Web Design | UI/UX | Branding");
+       }
       }, []);
 
     useEffect(() =>{
@@ -157,8 +162,9 @@ const Ourstory = () => {
         <div className={styles.storyhero}>
             <div className={styles.row}>
                 <div className={styles.columnst1}>
-                <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Tailor Solutions for</h2>
-                <h2 data-aos="fade-up" className={styles.text_title}>your  business Needs</h2>
+                {/* <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Tailor Solutions for</h2>
+                <h2 data-aos="fade-up" className={styles.text_title}>your  business Needs</h2> */}
+                <h1 data-aos="fade-up" className={styles.text_stroke_hover}>Tailor Solutions for <br></br><span className={styles.text_title}>your  business Needs</span></h1>
                 </div>
                 <div className={styles.columnst2}>
                     <p data-aos="fade-up" className={styles.desc}>Decoding Your Brand story. Crafting seamless & scalable digital experiences. Bringing bespoke doodles and illustrations to life.</p>
@@ -173,7 +179,7 @@ const Ourstory = () => {
                 <div className={`${styles.imgcol}`} >
                     {/* card */}
                     <div data-aos="fade-up"  className={`${styles.scard} `}>
-                        <h3 className={styles.sstitle}>Craft Your Brand Identity</h3>
+                        <h2 className={styles.sstitle}>Craft Your Brand Identity</h2>
                         <div className={styles.iconss}>
                         <Image 
                                     className={styles.iconimg}
@@ -220,7 +226,7 @@ const Ourstory = () => {
                 <div data-aos="fade-up" className={`${styles.imgcol} ${styles.paddt}`}>
                     {/* card */}
                     <div className={`${styles.scard}`}>
-                        <h3 className={styles.sstitle}>Engage with Stunning Website</h3>
+                        <h2 className={styles.sstitle}>Engage with Stunning Website</h2>
                         <div className={styles.iconss}>
                         <Image 
                                     className={styles.iconimg}
@@ -257,7 +263,7 @@ const Ourstory = () => {
                 <div data-aos="fade-up" className={styles.imgcol}>
                      {/* card */}
                     <div className={styles.scard}>
-                        <h3 className={styles.sstitle}>Design That Stands Out</h3>
+                        <h2 className={styles.sstitle}>Design That Stands Out</h2>
                         <div className={styles.iconss}>
                         <Image 
                                     className={styles.iconimg}
@@ -294,7 +300,7 @@ const Ourstory = () => {
                 <div data-aos="fade-up" className={`${styles.imgcol} ${styles.paddt}`}>
                      {/* card */}
                     <div className={styles.scard}>
-                        <h3 className={styles.sstitle}>Take Your Ecom Store Live</h3>
+                        <h2 className={styles.sstitle}>Take Your Ecom Store Live</h2>
                         <div className={styles.iconss}>
                         <Image 
                                     className={styles.iconimg}
@@ -337,11 +343,13 @@ const Ourstory = () => {
              <div className={styles.serviceinner}>
                 <div className={styles.row}>
                     <div className={styles.sertcol1}>
-                    <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Branding </h2>
-                    <h2 data-aos="fade-up" className={styles.stext_title}>Experience</h2>
+                    {/* <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Branding </h2>
+                    <h2 data-aos="fade-up" className={styles.stext_title}>Experience</h2> */}
+
+        <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Branding <br></br><span className={styles.stext_title}>Experience</span></h2>
                     </div>
                     <div className={styles.sertcol2}>
-                    <h2 data-aos="fade-up" className={styles.stext_stroke_hovers}>01 </h2>
+                    <p data-aos="fade-up" className={styles.stext_stroke_hovers}>01 </p>
                     </div>
                 </div> 
                 <div className={styles.row}>
@@ -427,11 +435,12 @@ const Ourstory = () => {
             <div className={styles.serviceinner}>
                 <div className={styles.row}>
                     <div className={styles.sertcol1}>
-                    <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Digital </h2>
-                    <h2 data-aos="fade-up" className={styles.stext_title}>Experience</h2>
+                    {/* <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Digital </h2>
+                    <h2 data-aos="fade-up" className={styles.stext_title}>Experience</h2> */}
+                    <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Digital <br></br><span className={styles.stext_title}>Experience</span></h2>
                     </div>
                     <div className={styles.sertcol2}>
-                    <h2 data-aos="fade-up" className={styles.stext_stroke_hovers}>02 </h2>
+                    <p data-aos="fade-up" className={styles.stext_stroke_hovers}>02 </p>
                     </div>
                 </div> 
                 <div className={styles.row}>
@@ -518,11 +527,12 @@ const Ourstory = () => {
             <div className={styles.serviceinner}>
                 <div className={styles.row}>
                     <div className={styles.sertcol1}>
-                    <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Packaging </h2>
-                    <h2 data-aos="fade-up" className={styles.stext_title}>Experience</h2>
+                    {/* <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Packaging </h2>
+                    <h2 data-aos="fade-up" className={styles.stext_title}>Experience</h2> */}
+                    <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Packaging<br></br><span className={styles.stext_title}>Experience</span></h2>
                     </div>
                     <div className={styles.sertcol2}>
-                    <h2 data-aos="fade-up" className={styles.stext_stroke_hovers}>03 </h2>
+                    <p data-aos="fade-up" className={styles.stext_stroke_hovers}>03 </p>
                     </div>
                 </div> 
                 <div className={styles.row}>
@@ -608,11 +618,12 @@ const Ourstory = () => {
             <div className={styles.serviceinner}>
                 <div className={styles.row}>
                     <div className={styles.sertcol1}>
-                    <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Ecommerce </h2>
-                    <h2 data-aos="fade-up" className={styles.stext_title}>Experience</h2>
+                    {/* <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Ecommerce </h2>
+                    <h2 data-aos="fade-up" className={styles.stext_title}>Experience</h2> */}
+                    <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Ecommerce<br></br><span className={styles.stext_title}>Experience</span></h2>
                     </div>
                     <div className={styles.sertcol2}>
-                    <h2 data-aos="fade-up" className={styles.stext_stroke_hovers}>04 </h2>
+                    <p data-aos="fade-up" className={styles.stext_stroke_hovers}>04 </p>
                     </div>
                 </div> 
                 <div className={styles.row}>
@@ -698,8 +709,10 @@ const Ourstory = () => {
             <div className={styles.addsec}>
             <div className={styles.row}>
                 <div className={styles.addcol1}>
-                <h2 className={styles.mainheadingdis}>Additional </h2>
-                <h2 className={styles.sec_headingdis}>Services </h2>
+                {/* <h2 className={styles.mainheadingdis}>Additional </h2>
+                <h2 className={styles.sec_headingdis}>Services </h2> */}
+                <h2 className={styles.mainheadingdis}>Additional <br></br><span className={styles.sec_headingdis}>Services</span></h2>
+                
                 <p className={styles.adesc}>
                 We understand that every brand has unique needs. That's why we offer a comprehensive suite of add-on services to complement your end-to-end brand solution.
                 </p>

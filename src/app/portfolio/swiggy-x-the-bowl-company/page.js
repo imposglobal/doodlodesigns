@@ -10,7 +10,26 @@ import {useState, useEffect} from 'react';
 const Swiggy = () => {
 
     useEffect(() => {
-        document.title = "Portfolio - Doodlo Designs Studio";
+        document.title = "Swiggy & The Bowl Company | Packaging Solutions | Doodlo Design Studio";
+
+        const descriptionTag = document.querySelector('meta[name="description"]');
+        if (descriptionTag) {
+          descriptionTag.setAttribute(
+            "content",
+            "Read more about Doodlo Design's collaboration with Swiggy and The Bowl Company, creating unique branding and packaging solutions that enhance customer experiences."
+          );
+        }
+    
+        // Update the meta keywords dynamically
+        const keywordsTag = document.querySelector('meta[name="keywords"]');
+        if (keywordsTag) {
+          keywordsTag.setAttribute("content", " ");
+        }
+    
+        const metaTitleTag = document.querySelector('meta[name="title"]');
+        if (metaTitleTag) {
+          metaTitleTag.setAttribute("content", "Swiggy & The Bowl Company | Packaging Solutions | Doodlo Design Studio");
+        }
       }, []);
 
       const [inactive, setInactive] = useState(true); // Set initial state to true

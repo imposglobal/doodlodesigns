@@ -384,9 +384,9 @@ YoloMart’s target audience and set them apart in the retail industry.
   {/********************/}
         <div className={styles.rowsec}>
             <div className={styles.rowcontent}>
-              <h1 className={styles.onlineptitle}>
+              <h2 className={styles.onlineptitle}>
               Online Presence
-              </h1>
+              </h2>
               <hr className={styles.hrwidth}></hr>
               <p className={styles.description}>
               We developed a visually striking and user-friendly website for

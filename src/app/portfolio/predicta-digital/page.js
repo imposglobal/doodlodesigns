@@ -9,7 +9,26 @@ import {useState, useEffect} from 'react';
 
 const predicta = () => {
     useEffect(() => {
-        document.title = "Portfolio - Doodlo Designs Studio";
+        document.title = "Predicta Digital Portfolio | Web Design & Development | Doodlo Design Studio";
+
+        const descriptionTag = document.querySelector('meta[name="description"]');
+        if (descriptionTag) {
+          descriptionTag.setAttribute(
+            "content",
+            "Check out Doodlo Design’s work with Predicta Digital, creating impactful digital solutions and a strong brand identity that drives growth and innovation."
+          );
+        }
+    
+        // Update the meta keywords dynamically
+        const keywordsTag = document.querySelector('meta[name="keywords"]');
+        if (keywordsTag) {
+          keywordsTag.setAttribute("content", " ");
+        }
+    
+        const metaTitleTag = document.querySelector('meta[name="title"]');
+        if (metaTitleTag) {
+          metaTitleTag.setAttribute("content", "Predicta Digital Portfolio | Web Design & Development | Doodlo Design Studio");
+        }
       }, []);
 
       const [inactive, setInactive] = useState(true); // Set initial state to true
@@ -138,7 +157,7 @@ const predicta = () => {
         {/****************/}
         <div className={styles.aboutsec}>
             <div className={styles.aboutpb}>
-                <h1 className={styles.atitle}>Predicta Digital</h1>
+                <h1 className={styles.atitle}>Predicta and Doodlo Design Collaboration - Empowering Growth with Innovative Design Solutions</h1>
                 <hr></hr>
             </div>
             <div className={styles.aboutcontent}>    

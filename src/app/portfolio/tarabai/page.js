@@ -16,12 +16,12 @@ import Slidercomponent from '@/app/Component/Slider/Slidercomponent';
 const Tarabai = () => {
 
     useEffect(() => {
-        document.title = "Tradition to Trendsetting Collaboration By Doodlo Designs";
+        document.title = "Tarabai | Packaging & Social Media | Doodlo Design Studio";
         const descriptionTag = document.querySelector('meta[name="description"]');
         if (descriptionTag) {
           descriptionTag.setAttribute(
             "content",
-            "Discover our journey with TaraBai, a fashion clothing brand that seamlessly blends the vibrant essence of Rajasthan & Marwari culture."
+            "Check out Doodlo Design's work on Tarabai's branding, creating a unique visual identity that reflects the brands legacy and vision through innovative design."
           );
         }
     
@@ -29,6 +29,11 @@ const Tarabai = () => {
         const keywordsTag = document.querySelector('meta[name="keywords"]');
         if (keywordsTag) {
           keywordsTag.setAttribute("content", "Tradition to Trendsetting Collaboration");
+        }
+
+        const metaTitleTag = document.querySelector('meta[name="title"]');
+        if (metaTitleTag) {
+          metaTitleTag.setAttribute("content", "Tarabai | Packaging & Social Media | Doodlo Design Studio");
         }
       }, []);
 
@@ -192,9 +197,9 @@ const Tarabai = () => {
                   />
             </div>
             <div className={styles.talesec}>
-                <h3 className={styles.talet}>
+                <h1 className={styles.talet}>
                 The TaraBai Tale: Tradition to Trendsetting Collaboration
-                </h3>
+                </h1>
                 <p className={styles.talep}>
                 Discover our journey with TaraBai, a fashion clothing brand that seamlessly blends the vibrant essence of Rajasthan and Marwari culture with a contemporary twist. Our team at Doodlo Design Studio had the pleasure of working with TaraBai, bringing their vision to life.
                 </p>

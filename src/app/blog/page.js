@@ -10,13 +10,35 @@ import Menu from "@/app/Component/Menu";
 
 const Blog = () => {
   useEffect(() => {
-    document.title = "Blog - Doodlo Designs Studio";
+    document.title = "Doodlo Design Blog | Insights on Branding, Design & More";
+
+    const descriptionTag = document.querySelector('meta[name="description"]');
+    if (descriptionTag) {
+      descriptionTag.setAttribute(
+        "content",
+        "Get insights on the Doodlo Design blog for expert advice on branding, design trends, creative solutions, and tips to elevate your business and digital presence."
+      );
+    }
+
+    
+    const keywordsTag = document.querySelector('meta[name="keywords"]');
+    if (keywordsTag) {
+      keywordsTag.setAttribute("content", " ");
+    }
+
+    const metaTitleTag = document.querySelector('meta[name="title"]');
+    if (metaTitleTag) {
+      metaTitleTag.setAttribute("content", "Doodlo Design Blog | Insights on Branding, Design & More");
+    }
   }, []);
+
+
+ 
 
   const [inactive, setInactive] = useState(true);
   const [userdata, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [page, setPage] = useState(1); // To keep track of the page for pagination
+  const [page, setPage] = useState(true);
 
   const toggleClass = () => {
     setInactive(!inactive);
@@ -63,6 +85,8 @@ const Blog = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [loading]);
+
+  
 
   return (
     <div>
@@ -166,8 +190,10 @@ const Blog = () => {
      {/* Main Section */}
      <div className={styles.mainsec}>
         <div className={styles.titlesec}>
-          <h2 className={styles.mainheading}>OUR</h2>
-          <h2 className={styles.sec_heading}>BLOGS</h2>
+          {/* <h2 className={styles.mainheading}>OUR</h2>
+          <h2 className={styles.sec_heading}>BLOGS</h2> */}
+
+        <h2 className={styles.mainheading}>OUR <br></br><span className={styles.sec_heading}>BLOGS</span></h2>
         </div>
 
         <div className={styles.blogsec}>
@@ -218,3 +244,5 @@ const Blog = () => {
 };
 
 export default Blog;
+
+

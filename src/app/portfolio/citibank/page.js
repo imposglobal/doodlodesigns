@@ -17,6 +17,15 @@ const CitiBank = () => {
 
        useEffect(() => {
             document.title = "Doodle Illustration Collaboration with Citi Bank - Doodlo Designs";
+
+
+            const descriptionTag = document.querySelector('meta[name="description"]');
+            if (descriptionTag) {
+              descriptionTag.setAttribute(
+                "content",
+                "Check out Doodlo Design's creative illustration designs for Citi Bank, including corporate culture doodles, internal communication materials, and inspirational wall art."
+              );
+            }
         }, []);
 
     //   lottie Controls
@@ -183,18 +192,18 @@ const CitiBank = () => {
                   />
             </div>
             <div className={styles.talesecs}>
-                <h3 className={styles.talet}>
+                <h1 className={styles.talet}>
                 Doodle Illustration Collaboration with Citi Bank Mumbai BKC
-                </h3>
+                </h1>
                 <p className={styles.talep}>
                 We are thrilled to present our recent collaboration with Citi Bank Mumbai BKC, where we brought together the power of doodle illustrations and the corporate world. Through this project, we aimed to infuse creativity, playfulness, and innovation into the corporate environment, bridging the gap between the traditional and the contemporary.
                 </p>
             </div>
             <div className={styles.rowp}>
                 <div className={styles.cols1}>
-                <h3 className={styles.taletp}>
+                <h2 className={styles.taletp}>
                 Corporate Culture Doodles:
-                </h3>   
+                </h2>   
                 </div>
                 <div className={styles.cols2}>
                 <p className={styles.talep}>
@@ -211,9 +220,9 @@ const CitiBank = () => {
             </div>
             <div className={styles.rowp}>
                 <div className={styles.cols1}>
-                <h3 className={styles.taletp}>
+                <h2 className={styles.taletp}>
                 Internal Communication Materials:
-                </h3>   
+                </h2>   
                 </div>
                 <div className={styles.cols2}>
                 <p className={styles.talep}>
@@ -226,9 +235,9 @@ const CitiBank = () => {
             </div>
             <div className={styles.rowp}>
                 <div className={styles.cols1}>
-                <h3 className={styles.taletp}>
+                <h2 className={styles.taletp}>
                 Inspirational Wall Art:
-                </h3>   
+                </h2>   
                 </div>
                 <div className={styles.cols2}>
                 <p className={styles.talep}>

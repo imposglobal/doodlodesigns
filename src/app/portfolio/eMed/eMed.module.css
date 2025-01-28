@@ -47,7 +47,7 @@
     color: #fff;
     font-family: "Manrope", serif;
     font-weight: 700;
-   
+    line-height: 45px;
     letter-spacing: 2px;
 
     
@@ -635,8 +635,9 @@
   }
   .atitle
   {
-    font-size: 28px;
+    font-size: 20px;
     letter-spacing: 2px;
+    line-height: 20px;
   }
   .heading
   {

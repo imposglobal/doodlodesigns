@@ -69,7 +69,7 @@
 }
 
 .text_stroke_hover {
-  margin-top: -94px;
+  margin-top: -45px;
   display: inline-block;
   position: relative;
   font-size: 3.4vw;
@@ -78,6 +78,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   text-transform: uppercase;
+  line-height: 60px;
 }
 .text_stroke_hover:hover{
   color: #fff;
@@ -95,12 +96,14 @@
   font-size: 4.1vw;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+  line-height: 0;
 }
 .home_hero_desc{
   padding-bottom: 40px;
   color: #9E9E9E;
   font-size: 18px;
   font-family: 'poppins';
+  padding-top: 15px;
 }
 .services{
   padding: 100px 140px;
@@ -131,6 +134,8 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   text-transform: uppercase;
+  line-height: 65px;
+  margin-bottom: 20px;
 }
 .sec_heading{
   margin-top: -40px;
@@ -655,6 +660,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .sec_headingdc{
   margin-top: -30px;
@@ -664,6 +670,7 @@
   font-size: 56px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+  font-weight: 700;
 }
 .starim{
   width: 30px !important;
@@ -774,13 +781,16 @@
 }
 .text_stroke_hover{
   font-size: 7.8vw;
+  line-height: 34px;
+  margin-top: -18px;
 }
 .text_title {
-  margin-top: -15px;
+  margin-top: -52px;
   text-transform: uppercase;
   font-size: 8.8vw;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+  font-weight: 500;
 }
 .homestar {
   width: 37px !important;
@@ -810,6 +820,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   text-transform: uppercase;
+  line-height: 35px;
 }
 .sec_heading {
   margin-top: -18px;
@@ -819,6 +830,7 @@
   font-size: 33px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+  font-weight: 500;
 }
 .filtergal {
   padding: 50px 0;
