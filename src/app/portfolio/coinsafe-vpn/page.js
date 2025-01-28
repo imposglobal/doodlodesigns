@@ -15,7 +15,26 @@ import VideoComponent from "@/app/Component/VideoComponent";
 const coinsafe = () => {
 
     useEffect(() => {
-        document.title = "Portfolio - Doodlo Designs Studio";
+        document.title = "Coinsafe VPN | Website & App Design | Doodlo Design Studio";
+
+        const descriptionTag = document.querySelector('meta[name="description"]');
+        if (descriptionTag) {
+          descriptionTag.setAttribute(
+            "content",
+            "Check out Doodlo Design’s website and app design portfolio for Coinsafe VPN, featuring user-friendly interfaces and secure, innovative digital solutions."
+          );
+        }
+    
+        // Update the meta keywords dynamically
+        const keywordsTag = document.querySelector('meta[name="keywords"]');
+        if (keywordsTag) {
+          keywordsTag.setAttribute("content", " ");
+        }
+    
+        const metaTitleTag = document.querySelector('meta[name="title"]');
+        if (metaTitleTag) {
+          metaTitleTag.setAttribute("content", "Coinsafe VPN | Website & App Design | Doodlo Design Studio");
+        }
       }, []);
 
     //   lottie Controls
@@ -162,10 +181,15 @@ const coinsafe = () => {
             </div>
             <div className={styles.col2}>
                 <div className={styles.content}>
-                    <h3 className={styles.title}>
+                    {/* <h3 className={styles.title}>
                     Coinsafe VPN:<br></br>
                     Elevating Cybersecurity
-                    </h3>
+                    </h3> */}
+
+                    <h1 className={styles.title}>
+                    Coinsafe VPN - 
+                    Innovative Website & App Design by Doodlo Design
+                    </h1>
                     <p className={styles.desc}>
                     Collaborating with Coinsafe VPN, a leading provider of cybersecurity solutions, to craft a brand identity and website that truly reflect their commitment to security and innovation.
 

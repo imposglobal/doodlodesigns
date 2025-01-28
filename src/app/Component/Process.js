@@ -20,8 +20,7 @@ const Process = () => {
   return (
     <div>
         <div className={styles.textt}>
-        <h2 className={styles.mainheadingdis}>OUR </h2>
-        <h2 className={styles.sec_headingdis}>PROCESS </h2>
+        <h2 className={styles.mainheadingdis}>OUR <br></br><span className={styles.sec_headingdis}>PROCESS</span></h2>
         </div>
     <div className={styles.processContainer}>
       <div className={styles.processSteps}>

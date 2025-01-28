@@ -42,6 +42,7 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3px;
+    line-height: 40px;
   }
 
   .aboutsec
@@ -411,7 +412,7 @@
 
 .mrow3
 {
-    flex: 59%;
+    flex: 48%;
     margin-left: 5px;
 }
 
@@ -686,8 +687,9 @@ margin-top: 10px;
 }
 .atitle
 {
-  font-size: 24px;
+  font-size: 20px;
   padding-top: 10px;
+  line-height: 25px;
 }
 .abcol2
 {

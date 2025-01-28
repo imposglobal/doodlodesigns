@@ -15,20 +15,25 @@ import ImageSwitcher from "../Component/Storyimg";
 
 const OurStory = () => {
   useEffect(() => {
-    document.title = "About Us | Doodlo Design | Branding & Graphic Design Studio";
+    document.title = " ";
 
     const descriptionTag = document.querySelector('meta[name="description"]');
     if (descriptionTag) {
       descriptionTag.setAttribute(
         "content",
-        "Doodlo Design is a leading branding and Graphic Design Studio with a global presence. Our team work tirelessly to help businesses build brand."
+        "Doodlo Design is a leading global branding and design agency, specializing in innovative solutions to elevate brand identity, digital presence, and customer experience."
       );
     }
 
     // Update the meta keywords dynamically
     const keywordsTag = document.querySelector('meta[name="keywords"]');
     if (keywordsTag) {
-      keywordsTag.setAttribute("content", "Graphic Design Studio");
+      keywordsTag.setAttribute("content", " ");
+    }
+
+    const metaTitleTag = document.querySelector('meta[name="title"]');
+    if (metaTitleTag) {
+      metaTitleTag.setAttribute("content", " ");
     }
   }, []);
 
@@ -156,6 +161,19 @@ const OurStory = () => {
         </div>
 
             <div className={styles.ourstorysec}>
+            {/* <h2 data-aos="fade-up" className={styles.text_stroke_hover}>We ‘re Doodlers & 
+                                    <Image data-aos="fade-up"
+                                    className={styles.starimg}
+                                    src="/home/homestar.png"
+                                    alt="Next.js Logo"
+                                    layout="responsive"
+                                    width={100}
+                                    height={37}
+                                    priority
+                                    />
+            </h2> */}
+
+
             <h2 data-aos="fade-up" className={styles.text_stroke_hover}>We ‘re Doodlers & 
                                     <Image data-aos="fade-up"
                                     className={styles.starimg}
@@ -166,8 +184,10 @@ const OurStory = () => {
                                     height={37}
                                     priority
                                     />
+                                    <br></br>
+            <span data-aos="fade-up" className={styles.text_title}>digital creators</span>
             </h2>
-            <h2 data-aos="fade-up" className={styles.text_title}>digital creators </h2>
+            {/* <h2 data-aos="fade-up" className={styles.text_title}>digital creators </h2> */}
             <p data-aos="fade-up" className={styles.desc}>Creative Professionals with Business Brains. (yes, it's a thing!), obsessed with bringing fresh ideas and strategic thinking to everything we do.</p>
             <p data-aos="fade-up" className={styles.desc}>Think of us as your <b>design dream team, fueled by caffine and crazy strategic ideas.</b> We're a tight-knit crew, but with the firepower of a big agency. We tackle a wide range of design challenges, from crafting killer logos and packaging that pops to building websites that wow and branding that sticks.
             </p>
@@ -186,8 +206,9 @@ const OurStory = () => {
       <div className={styles.story}>
         <div className={styles.rowstory}>
           <div className={styles.columnst1}>
-          <h2 className={styles.mainheading}>We Speak</h2>
-          <h2 className={styles.sec_heading}>Strategy Too </h2>
+          {/* <h2 className={styles.mainheading}>We Speak</h2>
+          <h2 className={styles.sec_heading}>Strategy Too </h2> */}
+      <h2 className={styles.mainheading}>We Speak <br></br> <span className={styles.sec_heading}>Strategy Too</span></h2>
           <p className={styles.storydesc}>
           We’re quirky, dedicated, and obsessed with making your brand shine with strategic process, loads of passion & ultimate thrill with results.<br/><br/>
 
@@ -212,8 +233,10 @@ const OurStory = () => {
       {/* Our Story section end */}
     {/* Tool Kit */}
     <div className={styles.ourstorysec}>
-            <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Our Team   </h2>
-            <h2 data-aos="fade-up" className={styles.text_title}>Toolkit looks like</h2>
+            {/* <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Our Team   </h2>
+            <h2 data-aos="fade-up" className={styles.text_title}>Toolkit looks like</h2> */}
+
+    <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Our Team <br></br> <span data-aos="fade-up" className={styles.text_title}>Toolkit looks like</span></h2>
             <div className={styles.toolsec} data-aos="fade-up">
                 <Image
                   className={styles.toolimg}
@@ -373,8 +396,10 @@ const OurStory = () => {
     <div className={styles.whowesec}>
       <div className={styles.row}>
         <div className={styles.whocol1}>
-        <h2 data-aos="fade-up" className={styles.text_stroke_hover}>WHO</h2>
-        <h2 data-aos="fade-up" className={styles.text_title}>we are</h2>
+        {/* <h2 data-aos="fade-up" className={styles.text_stroke_hover}>WHO</h2>
+        <h2 data-aos="fade-up" className={styles.text_title}>we are</h2> */}
+
+        <h2 data-aos="fade-up" className={styles.text_stroke_hover}>WHO <br></br><span data-aos="fade-up" className={styles.text_title}>we are</span></h2>
         </div>
         <div className={styles.whocol2}>
           <div className={styles.quote}>
@@ -426,8 +451,9 @@ const OurStory = () => {
 
       {/* Our team */}
       <div className={styles.teamsec}>
-      <h2 className={styles.mainheading} data-aos="fade-up">meet </h2>
-      <h2 className={styles.sec_heading} data-aos="fade-up">Our team</h2>
+      {/* <h2 className={styles.mainheading} data-aos="fade-up">meet </h2>
+      <h2 className={styles.sec_heading} data-aos="fade-up">Our team</h2> */}
+      <h2 className={styles.mainheading} data-aos="fade-up">meet<br></br><span className={styles.sec_heading}>Our team</span></h2>
       <div className={styles.rows}>
        {/* team inner */}
        <div className={styles.tcol}>
@@ -522,7 +548,7 @@ const OurStory = () => {
             <div className={styles.descinner}>
               <div className={`${styles.row} ${styles.mobrow}`}>
                 <div className={styles.teamcol1}>
-                <h4 className={styles.teamtitle} data-aos="fade-up">Krushna P</h4>
+                <h4 className={styles.teamtitle} data-aos="fade-up">Krushna Phad</h4>
                 <p className={styles.ttitle} data-aos="fade-up">Jr. web developer</p>
                 </div>
                 <div className={styles.teamcol2}>
@@ -602,7 +628,7 @@ const OurStory = () => {
             <div className={styles.descinner}>
               <div className={`${styles.row} ${styles.mobrow}`}>
                 <div className={styles.teamcol1}>
-                <h4 className={styles.teamtitle} data-aos="fade-up">Shraddha</h4>
+                <h4 className={styles.teamtitle} data-aos="fade-up">Shraddha Bokade</h4>
                 <p className={styles.ttitle} data-aos="fade-up">Jr. full-stack Developer</p>
                 </div>
                 <div className={styles.teamcol2}>
@@ -682,7 +708,7 @@ const OurStory = () => {
             <div className={styles.descinner}>
               <div className={`${styles.row} ${styles.mobrow}`}>
                 <div className={styles.teamcol1}>
-                <h4 className={styles.teamtitle} d>Hanuman</h4>
+                <h4 className={styles.teamtitle} d>Hanuman T</h4>
                 <p className={styles.ttitle} d>Office Assistant</p>
                 </div>
                 <div className={styles.teamcol2}>

@@ -10,7 +10,26 @@ import {useState, useEffect} from 'react';
 
 const eMed = () => {
      useEffect(() => {
-            document.title = "Portfolio - Doodlo Designs Studio";
+            document.title = "eMed Branding Portfolio | Innovative Branding Solutions";
+
+            const descriptionTag = document.querySelector('meta[name="description"]');
+            if (descriptionTag) {
+              descriptionTag.setAttribute(
+                "content",
+                "Check out our collaboration with eMed, where we designed a user-friendly digital platform with innovative solutions to enhance the healthcare experience."
+              );
+            }
+        
+            // Update the meta keywords dynamically
+            const keywordsTag = document.querySelector('meta[name="keywords"]');
+            if (keywordsTag) {
+              keywordsTag.setAttribute("content", " ");
+            }
+        
+            const metaTitleTag = document.querySelector('meta[name="title"]');
+            if (metaTitleTag) {
+              metaTitleTag.setAttribute("content", "eMed Branding Portfolio | Innovative Branding Solutions");
+            }
           }, []);
     
           const [inactive, setInactive] = useState(true); // Set initial state to true
@@ -152,7 +171,7 @@ const eMed = () => {
          {/*****************/}
          <div className={styles.aboutsec}>
             <div className={styles.aboutpb}>
-                <h1 className={styles.atitle}>eMed</h1>
+                <h1 className={styles.atitle}>eMed - Innovative Branding & Design Solutions by Doodlo Design</h1>
                 <hr></hr>
             </div>
             <div className={styles.aboutcontent}>    

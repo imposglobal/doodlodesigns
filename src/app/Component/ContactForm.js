@@ -186,7 +186,7 @@ const handleChange = (e) => {
             Reach out to us today and let's bring your ideas to life! Whether it's a new brand identity, a stunning website, eye-catching packaging, or eCommerce solution, we're here to help.
           </p>
 
-          <h3 data-aos="fade-up" className={styles.conhead}>Don’t be afraid Say hellooo!</h3>
+          <p data-aos="fade-up" className={styles.conhead}>Don’t be afraid Say hellooo!</p>
           <p data-aos="fade-up" className={styles.fdesc}>
             You can connect us directly on our social media.
           </p>
@@ -231,7 +231,7 @@ const handleChange = (e) => {
         </div>
         <div className={styles.contcolumn2}>
           <div className={styles.formcontainer}>
-            <h3 data-aos="fade-up" className={styles.formhead}>Get a Free Design Audit</h3>
+            <p data-aos="fade-up" className={styles.formhead}>Get a Free Design Audit</p>
             <p data-aos="fade-up" className={styles.formdesc}>
               Fill in the details to know more
             </p>

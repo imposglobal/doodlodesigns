@@ -82,6 +82,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
   text-transform: uppercase;
+  line-height: 60px;
 }
 .sec_heading{
   margin-top: -40px;
@@ -483,6 +484,7 @@
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #000;
         text-transform: uppercase;
+        line-height: 30px;
 }
 .sec_heading
 {

@@ -35,6 +35,7 @@
     font-family: 'poppins';
     color: #fff;
     font-size: 25px;
+    font-weight: 700;
   }
   .scicon{
     width: 6% !important;
@@ -47,6 +48,7 @@
     color: #000000;
     font-family: 'poppins';
     font-size: 32px;
+    font-weight: 700;
   }
   .formdesc{
     margin-top: -2px;

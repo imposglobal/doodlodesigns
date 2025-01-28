@@ -54,8 +54,9 @@ const OurProcess = () => {
   return (
     <div className={styles.slideser}>
         <div className={styles.textt}>
-        <h2 className={styles.mainheadingdis}>OUR </h2>
-        <h2 className={styles.sec_headingdis}>PROCESS </h2>
+        {/* <h2 className={styles.mainheadingdis}>OUR </h2>
+        <h2 className={styles.sec_headingdis}>PROCESS </h2> */}
+        <h2 className={styles.mainheadingdis}>OUR <br></br><span className={styles.sec_headingdis}>PROCESS</span></h2>
         </div>
     <Slider id="slicckk" {...settings}>
       {slides.map((slide) => (

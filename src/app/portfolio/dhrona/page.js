@@ -9,7 +9,26 @@ import {useState, useEffect} from 'react';
 
 const dhrona = () => {
     useEffect(() => {
-        document.title = "Portfolio - Doodlo Designs Studio";
+        document.title = "Dhrona | Packaging Solutions | Doodlo Design Studio";
+
+        const descriptionTag = document.querySelector('meta[name="description"]');
+        if (descriptionTag) {
+          descriptionTag.setAttribute(
+            "content",
+            "Check out our branding portfolio showcasing innovative packaging designs for Dhrona, from concept to creation, delivering impactful solutions in the food industry."
+          );
+        }
+    
+        // Update the meta keywords dynamically
+        const keywordsTag = document.querySelector('meta[name="keywords"]');
+        if (keywordsTag) {
+          keywordsTag.setAttribute("content", " ");
+        }
+    
+        const metaTitleTag = document.querySelector('meta[name="title"]');
+        if (metaTitleTag) {
+          metaTitleTag.setAttribute("content", "Dhrona | Packaging Solutions | Doodlo Design Studio");
+        }
       }, []);
 
       const [inactive, setInactive] = useState(true); // Set initial state to true

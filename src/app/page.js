@@ -27,19 +27,25 @@ const Home = () => {
   const [selectedOption, setSelectedOption] = useState('someOption');
 
   useEffect(() => {
-    document.title = "Web Design Company in India & UK | Crafting Innovative Brands";
+    document.title = "Design Agency in India & UK | Crafting Innovative Brands";
+
     const descriptionTag = document.querySelector('meta[name="description"]');
     if (descriptionTag) {
       descriptionTag.setAttribute(
         "content",
-        "We are professional branding & web design company in india with presence in UK. We provide cutting-edge design solutions to help businesses."
+        "Doodlo Design is a leading branding and design agency in India and the UK, specializing in web design, packaging, branding, illustrations, UI/UX & Digital Marketing."
       );
     }
 
     // Update the meta keywords dynamically
     const keywordsTag = document.querySelector('meta[name="keywords"]');
     if (keywordsTag) {
-      keywordsTag.setAttribute("content", "web design company");
+      keywordsTag.setAttribute("content", " ");
+    }
+
+    const metaTitleTag = document.querySelector('meta[name="title"]');
+    if (metaTitleTag) {
+      metaTitleTag.setAttribute("content", "Design Agency in India & UK | Crafting Innovative Brands");
     }
   }, []);
 
@@ -285,14 +291,15 @@ const Home = () => {
           />
      </div>
       <div className={styles.desktopv}>
-        <h2 data-aos="fade-up" className={styles.text_stroke_hover}>We're your go-to</h2>
-        <h2 data-aos="fade-up" className={styles.text_title}>Creative Studio</h2>
-        <p data-aos="fade-up" className={styles.home_hero_desc}>Of course we’re into Branding, Web Design,<br></br>Packaging,  Illustrations, Digital Marketing & what not!
+<h1 data-aos="fade-up" className={styles.text_stroke_hover}>We're your go-to <span className={styles.text_title}>Design Studio</span></h1>
+<p data-aos="fade-up" className={styles.home_hero_desc}>Of course we’re into Branding, Web Design,<br></br>Packaging,  Illustrations, Digital Marketing & what not!
 </p>
       </div>
       <div className={styles.mobilev}>
-        <h2  className={styles.text_stroke_hover}>We're your go-to</h2>
-        <h2 className={styles.text_title}>Creative Studio</h2>
+        {/* <h2  className={styles.text_stroke_hover}>We're your go-to</h2>
+        <h2 className={styles.text_title}>Creative Studio</h2> */}
+
+        <h2 className={styles.text_stroke_hover}>We're your go-to <span className={styles.text_title}>Design Studio</span></h2>
         <p  className={styles.home_hero_desc}>Of course we’re into Branding, Web Design, Packaging,  Illustrations, Digital Marketing & what not!</p>
       </div>
       <div data-aos="fade-up">
@@ -332,8 +339,9 @@ const Home = () => {
     
     <div data-aos="fade-up" className={`${styles.services} ${styles.srv_scroller}`}>
     <div className={styles.service_hight}>
-    <h2 className={styles.mainheading}>OUR</h2>
-    <h2 className={styles.sec_heading}>SERVICES</h2>
+    {/* <h2 className={styles.mainheading}>OUR</h2>
+    <h2 className={styles.sec_heading}>SERVICES</h2> */}
+    <h2 className={styles.mainheading}>OUR <br></br><span className={styles.sec_heading}>SERVICES</span></h2>
     <div className="accordion">
     <AccordionOne />  
     </div>
@@ -355,15 +363,17 @@ const Home = () => {
 
     <div data-aos="fade-up" className={styles.filtergal}>
     <div className={styles.galtitle}>
-    <h2 className={styles.mainheading}>OUR</h2>
-    <h2 className={styles.sec_heading}>Portfolio</h2>
+    {/* <h2 className={styles.mainheading}>OUR</h2>
+    <h2 className={styles.sec_heading}>Portfolio</h2> */}
+     <h2 className={styles.mainheading}>OUR <br></br><span className={styles.sec_heading}>Portfolio</span></h2>
     </div>
       <Gallery items={items} />
     </div>
 
     <div className={styles.clientle}>
-      <h2 data-aos="fade-up" className={styles.mainheading}>OUR</h2>
-      <h2 data-aos="fade-up" className={styles.sec_heading}>clientele</h2>
+      {/* <h2 data-aos="fade-up" className={styles.mainheading}>OUR</h2>
+      <h2 data-aos="fade-up" className={styles.sec_heading}>clientele</h2> */}
+      <h2 className={styles.mainheading}>OUR <br></br><span className={styles.sec_heading}>clientele</span></h2>
       <div data-aos="fade-up">
       <div className={styles.desktopv}>
       <ImageFlip  />
@@ -417,15 +427,18 @@ const Home = () => {
 
    {/* review slider */}
    <div className="testimonial">
-    <h2 data-aos="fade-up" className={styles.mainheading}>Client</h2>
-      <h2 data-aos="fade-up" className={styles.sec_heading}>Feedback</h2>
+      {/* <h2 data-aos="fade-up" className={styles.mainheading}>Client</h2>
+      <h2 data-aos="fade-up" className={styles.sec_heading}>Feedback</h2> */}
+
+      <h2 data-aos="fade-up" className={styles.mainheading}>Client<br></br><span className={styles.sec_heading}>Feedback</span></h2>
       </div>
     <Carousel />
     {/* review slider End*/}
     
     <div data-aos="fade-up" className={styles.setsapart}>
-    <h2 className={styles.mainheading}>What</h2>
-      <h2 className={styles.sec_heading}>Sets us apart</h2>
+    {/* <h2 className={styles.mainheading}>What</h2>
+      <h2 className={styles.sec_heading}>Sets us apart</h2> */}
+       <h2 data-aos="fade-up" className={styles.mainheading}>What<br></br><span className={styles.sec_heading}>Sets us apart</span></h2>
       <div className={styles.rowpart}>
         <div className={styles.columnpart1}>
           <Arrows />
@@ -608,8 +621,7 @@ const Home = () => {
       <div className={styles.story}>
         <div className={styles.rowstory}>
           <div className={styles.columnst1}>
-          <h2 data-aos="fade-up" className={styles.mainheading}>Our</h2>
-          <h2 data-aos="fade-up" className={styles.sec_heading}>Story</h2>
+         <h2 data-aos="fade-up" className={styles.mainheading}>Our <br></br><span data-aos="fade-up" className={styles.sec_heading}>Story</span></h2>
           <div className={`${styles.stimg} ${styles.mobilev}`}>
             <Image data-aos="fade-up"
                   className={styles.ppimg}
@@ -1005,7 +1017,7 @@ const Home = () => {
         </div>
         <div className={styles.shopcol2}>
           <div className={styles.shoprow}>
-        <h2 data-aos="fade-up" className={styles.mainheadingdc}>Shop</h2>
+        <p data-aos="fade-up" className={styles.mainheadingdc}>Shop</p>
                 <Image data-aos="fade-up"
                   className={styles.starim}
                   src="/home/startdc.png"
@@ -1016,7 +1028,7 @@ const Home = () => {
                   priority
                 />
         </div>
-        <h2 data-aos="fade-up" className={styles.sec_headingdc}>For Cute Goodies</h2>
+        <p data-aos="fade-up" className={styles.sec_headingdc}>For Cute Goodies</p>
         <p data-aos="fade-up" className={styles.dcdesc}>Wanna buy some cute stuff? Explore our selection online, then visit our store for even more amazing finds!</p>
         <div data-aos="fade-up">
          <div className={styles.btnn}>

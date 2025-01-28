@@ -11,13 +11,13 @@ import VideoComponent from "@/app/Component/VideoComponent";
 const clickrnd = () => {
 
     useEffect(() => {
-        document.title = "Case Study Click R&D By Doodlo Designs";
+        document.title = "Click R&D Branding Case Study by Doodlo Designs";
 
         const descriptionTag = document.querySelector('meta[name="description"]');
         if (descriptionTag) {
           descriptionTag.setAttribute(
             "content",
-            "Take a look at our portfolio of Branding, Flash Card Illustration & Packaging of Case study Click R&D By Doodlo Designs"
+            "ClickRnd's innovative branding and web design, created by Doodlo Designs, offering a modern & responsive user experience for their digital presence."
           );
         }
     
@@ -26,6 +26,11 @@ const clickrnd = () => {
         if (keywordsTag) {
           keywordsTag.setAttribute("content", "Case Study Click R&D");
         }
+
+        const metaTitleTag = document.querySelector('meta[name="title"]');
+    if (metaTitleTag) {
+      metaTitleTag.setAttribute("content", "Click R&D Branding Case Study by Doodlo Designs");
+    }
       }, []);
 
       const [inactive, setInactive] = useState(true); // Set initial state to true
@@ -154,7 +159,7 @@ const clickrnd = () => {
                </div>
                {/*****************************/}
                <div  className={styles.contentsec}>
-                  <h2 className={styles.contentheading}>Challenge</h2>
+                  <h1 className={styles.contentheading}>Challenge</h1>
                   <p className={styles.description}>The Tax Credit Expert company needed a complete branding and website redesign. Our challenge was to create a fresh, modern design that resonated with their target audience.</p>
                   <h2 className={styles.contentheading}>Solution</h2>
                   <p className={styles.description}>We conducted a comprehensive brand audit and worked closely with the client to develop a fresh, modern design that resonated with their target audience. Our team then built a responsive website with easy navigation and engaging visuals to showcase their expertise and services.</p>
