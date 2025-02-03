@@ -174,4 +174,31 @@
   }
 
   }
+
+  @media screen and (min-width: 600px) and (max-width: 1024px) 
+  {
+    .logosec 
+    {
+        padding-left: 40px !important;
+    }
+    .rowsec
+    {
+      padding: 50px 20px 50px 20px;
+      display: block;
+    }
+    .col2
+    {
+      text-align: center;
+      padding-top: 50px;
+    }
+    .bowlimg
+    {
+      width: 50% !important;
+    }
+    .aboutheading
+    {
+      font-size: 35px;
+    }
+  }
+
  

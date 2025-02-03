@@ -163,7 +163,7 @@ const Portfolio = () => {
           <div></div>
           {portfolioItems.slice(0, visibleItems).map((item, index) => (
             <div id={item.id} key={item.id} className={`${styles.card}`}>
-              <h2 data-aos="fade-up" className={styles.titles}>{String(index + 1).padStart(2, '0')}</h2>
+              <p data-aos="fade-up" className={styles.titles}>{String(index + 1).padStart(2, '0')}</p>
               <Link className={styles.hurl} href={item.url}>
                 <img data-aos="fade-up" src={item.imageUrl} alt={item.title} className={styles.image} />
                 <div data-aos="fade-up" className={styles.textContainer}>

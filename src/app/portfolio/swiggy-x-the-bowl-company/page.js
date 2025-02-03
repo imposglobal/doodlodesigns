@@ -187,6 +187,7 @@ const Swiggy = () => {
       width={100}
       height={100}
       priority
+      className={styles.bowlimg}
      />
      </div>
      </div>

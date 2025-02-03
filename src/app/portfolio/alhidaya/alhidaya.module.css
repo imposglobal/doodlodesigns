@@ -453,4 +453,25 @@
   }
 }
 
+
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+  .logosec 
+  {
+      padding-left: 40px !important;
+  }
+  .contentsec
+  {
+    padding: 50px 50px;
+  }
+  .rowcenter
+  {
+    padding: 80px 40px 100px;
+  }
+  .centertext
+  {
+    padding: 20px 20px 0px 20px;
+  }
+}
+
  

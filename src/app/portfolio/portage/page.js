@@ -222,9 +222,8 @@ const portage = () => {
 
          <div className={styles.brandingsec}>
              <div>
-                <h1 className={styles.btitle}>Branding</h1>              
+                <h2 className={styles.btitle}>Branding</h2>              
             </div>
-
             <div className={styles.buttonsec}>
             <Image
                 src="/home/portfolios/portage/portage3.svg"

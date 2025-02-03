@@ -241,6 +241,7 @@ YoloMart’s target audience and set them apart in the retail industry.
            width={100}
            height={100}
            priority
+           className={styles.tabimg}
           />
             </div>
         </div>
@@ -305,6 +306,7 @@ YoloMart’s target audience and set them apart in the retail industry.
            width={100}
            height={100}
            priority
+           className={styles.tabimg}
           />
             </div>
         </div>
@@ -408,7 +410,7 @@ YoloMart’s target audience and set them apart in the retail industry.
 
          {/********************/}
         <div className={styles.videosec}>
-        <VideoComponent  videoSrc="https://php.imposglobal.com/wp-content/uploads/2024/04/Ym-Web-Clip.mp4" autoPlay muted loop controls={false}/>
+        <VideoComponent  videoSrc="/home/portfolios/yolo-mart/yolomart.mp4" autoPlay muted loop controls={false}/>
         </div>
     
          {/********************/}

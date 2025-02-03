@@ -120,3 +120,21 @@
     padding-top: 50px;
    }
   }
+
+  /* tab view */
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+  .logosec 
+  {
+      padding-left: 40px !important;
+  }
+  .spacing
+  {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .contentsec
+  {
+    padding: 50px 40px 100px 40px;
+  }
+}

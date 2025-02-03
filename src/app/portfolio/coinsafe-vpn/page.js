@@ -181,11 +181,6 @@ const coinsafe = () => {
             </div>
             <div className={styles.col2}>
                 <div className={styles.content}>
-                    {/* <h3 className={styles.title}>
-                    Coinsafe VPN:<br></br>
-                    Elevating Cybersecurity
-                    </h3> */}
-
                     <h1 className={styles.title}>
                     Coinsafe VPN - 
                     Innovative Website & App Design by Doodlo Design

@@ -256,10 +256,12 @@
   }
   
   .atitle
-  {
-    font-size: 24px;
-    letter-spacing: 2px;
-  }
+{
+  font-size: 24px;
+  padding-top: 10px;
+  line-height: 20px;
+  word-spacing: 2px;
+}
 
   .abcol2
   {
@@ -294,4 +296,21 @@
   font-size: 16px;
   padding: 0 30px;
 }
+
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1024px) 
+  {
+    .logosec 
+    {
+        padding-left: 40px !important;
+    }
+    .aboutsec
+    {
+      padding: 50px 20px 50px 20px !important;
+    }
+    .atitle
+    {
+      font-size: 28px;
+    }
   }

@@ -284,7 +284,8 @@ h1,h2,h3,h4,h5,h6,p{
   margin: 0;
 }
 div#fimg11 {
-  margin-top: -197px;
+  /* margin-top: -197px; */
+   margin-top: -170px;
 }
 div#fimg1 .pover {
   transform: translate(-150px, -158pt);
@@ -325,10 +326,12 @@ video.videoint {
   background-color: transparent !important;
 }
 #fimg4 {
-  margin-top: -184px;
+  /* margin-top: -184px; */
+  margin-top: -178px;
 }
 #fimg5 {
-  margin-top: -80px;
+  /* margin-top: -80px; */
+  margin-top: -66px;
 }
 #fimg6 {
   margin-top: 0px;
@@ -337,13 +340,15 @@ video.videoint {
   margin-top: -105px;
 }
 #fimg8 {
-  margin-top: -199px;
+  /* margin-top: -199px; */
+   margin-top: -170px;
 }
 #fimg9 {
   margin-top: 0px;
 }
 #fimg10 {
-  margin-top: -300px;
+  /* margin-top: -300px; */
+   margin-top: -284px;
 }
 
 div#fimg2.gallery_plink__u_ez2 {
@@ -427,7 +432,7 @@ p.client_h2 {
 }
 .client_review{
   margin-top: 30px !important;
-  font-size: 2.1vh  !important;
+  font-size: 2.1vh !important;
   font-weight: 300 !important;
   color: #fff;
   line-height: 25px;
@@ -1432,5 +1437,108 @@ input[type="checkbox"] {
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
   display: none;
 }
+
+}
+
+
+/* tab view */
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+  .card_inner
+  {
+    height: 450px;
+    margin: 10px;
+  }
+  .client_review
+  {
+    font-size: 1.6vh !important;
+  }
+  div#fimg4 .pover {
+    transform: translate(-114px, -160pt);
+}
+
+#fimg4 {
+  margin-top: -140px;
+}
+#fimg7 {
+  margin-top: -82px;
+}
+#fimg10 {
+  margin-top: -220px;
+}
+#fimg5 {
+  margin-top: -54px;
+}
+#fimg8 {
+  margin-top: -135px;
+}
+div#fimg11 {
+  margin-top: -134px;
+}
+#fimg10 .pover {
+  transform: translate(-115px, -142pt);
+}
+div#fimg1 .pover {
+  transform: translate(-115px, -132pt);
+}
+div#fimg2 .pover {
+  transform: translate(-115px, -125pt);
+}
+#fimg7 .pover {
+  transform: translate(-115px, -211px);
+}
+#fimg9 .pover {
+  transform: translate(-115px, -130pt);
+}
+div#fimg3 .pover {
+  transform: translate(-115px, -132pt);
+}
+#fimg6 .pover {
+  transform: translate(-115px, -100pt);
+}
+
+div#fimg8 .pover {
+  transform: translate(-115px, -180pt);
+}
+#fimg11 .pover {
+  transform: translate(-115px, -100pt);
+}
+#fimg5 .pover
+{
+  transform: translate(-115px, -1430pt);
+}
+.testimonial {
+  padding: 20px 20px;
+}
+  
+
+/* Reach Us page menu css */
+
+.page_column2__qMozd.page_secondsec__D3bKx .menuicon {
+  display: none;
+}
+.page_mobcol__UcHgm.page_reachuslogo__W7ERA .menuicon {
+  top: 21px !important;
+  fill: #000 !important;
+}
+.page_mobcol__UcHgm.page_reachuslogo__W7ERA .menuicon svg .line{
+top: 0 !important;
+fill: #000 !important;
+}
+.border-bottom {
+background: #9595955e;
+height: 1px;
+margin-top: -9px;
+}
+
+.accordion_arrsec__EpCCl .arrowd
+{
+  margin-bottom: 90px;
+}
+
+
+
 
 }

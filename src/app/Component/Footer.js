@@ -185,11 +185,11 @@ const Footer = () => {
                             We're your go-to design studio for everything from logo makeovers to websites that wow and packaging that screams "pick me!" Our team of design superheroes is here to turn your ideas into reality, no matter the project size or deadline.
                         </p>
                         {/* add button here */}
-                    <div className={styles.corressec}>
+                    {/* <div className={styles.corressec}>
                         <a className={styles.corresbtn} href='https://doodlocomics.com/pages/giftings'>
                          Corporate Gifting - Order Now
                         </a> 
-                    </div>
+                    </div> */}
                     {/* end add button here */}
                         
                          <div className={styles.footerrow}>
@@ -206,6 +206,16 @@ const Footer = () => {
                             7 Bell Yard, London, England, WC2A 2JR
                             </p>
 
+                         </div>
+
+                         <div className={styles.footercol3}>
+                           {/* add button here */}
+                    <div className={styles.corressec}>
+                        <a className={styles.corresbtn} href='https://doodlocomics.com/pages/giftings'>
+                         Corporate Gifting - Order Now
+                        </a> 
+                    </div>
+                    {/* end add button here */}
                          </div>
                          </div>
                           

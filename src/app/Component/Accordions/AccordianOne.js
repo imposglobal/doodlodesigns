@@ -25,7 +25,39 @@ const AccordionOne = () => {
     // Clean up any existing ScrollTriggers
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
 
-    const isMobile = window.innerWidth <= 768; // Define breakpoint for mobile
+    // const isMobile = window.innerWidth <= 768; // Define breakpoint for mobile
+
+    // panelRefs.current.forEach((panel, index) => {
+    //   if (panel) {
+    //     const content = panel.querySelector('.content');
+    //     const height = isMobile ? 'auto' : '324px'; // Set height based on screen size
+
+    //     // Set initial state for each panel
+    //     gsap.set(content, { height: '0', opacity: 0, duration: 0.5 });
+
+    //     // Create ScrollTrigger for each panel
+    //     ScrollTrigger.create({
+    //       trigger: panel,
+    //       start: 'top 30%',
+    //       end: 'top 60%',
+    //       onEnter: () => {
+    //         setActivePanel(index);
+    //         gsap.to(content, { height, opacity: 1, duration: 0.5, ease: 'power2.out' });
+    //         panel.classList.add(styles.active); // Add the active class
+    //       },
+    //       onLeaveBack: () => {
+    //         if (activePanel === index) {
+    //           setActivePanel(null);
+    //           gsap.to(content, { height: '0', opacity: 0, duration: 0.5, ease: 'power2.out' });
+    //           panel.classList.remove(styles.active); // Remove the active class
+    //         }
+    //       },
+    //       markers: false,
+    //     });
+    //   }
+    // });
+// start of new code 
+  const isMobile = window.innerWidth <= 1024; // Define breakpoint for mobile
 
     panelRefs.current.forEach((panel, index) => {
       if (panel) {
@@ -56,7 +88,7 @@ const AccordionOne = () => {
         });
       }
     });
-
+// end of new code
     // Refresh ScrollTrigger to account for dynamic content
     ScrollTrigger.refresh();
   }, [activePanel]);

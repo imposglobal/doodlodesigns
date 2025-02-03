@@ -26,7 +26,7 @@ const SliderComponent = () => {
             <div className={styles['founder-image']}>
             <Image   
                     className=""
-                    src="/home/team/hitesh.png"
+                    src="/home/team/hitesh.webp"
                     alt="Next.js Logo"
                     layout="responsive"
                     width={100}
@@ -82,7 +82,7 @@ const SliderComponent = () => {
             <div className={styles['founder-image']}>
             <Image   
                     className=""
-                    src="/home/team/payal.png"
+                    src="/home/team/payal.webp"
                     alt="Next.js Logo"
                     layout="responsive"
                     width={100}

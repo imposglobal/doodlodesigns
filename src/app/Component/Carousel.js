@@ -13,11 +13,23 @@ const Carousel = () => {
   const [slidesToShow, setSlidesToShow] = useState(4);
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setSlidesToShow(1);
+    // const handleResize = () => {
+    //   if (window.innerWidth < 768) {
+    //     setSlidesToShow(1);
+    //   } else {
+    //     setSlidesToShow(4);
+    //   }
+    // };
+
+
+      const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 768) {
+        setSlidesToShow(1); // Mobile view, show 1 slide
+      } else if (width >= 768 && width <= 1024) {
+        setSlidesToShow(2); // Tablet view, show 2 slides
       } else {
-        setSlidesToShow(4);
+        setSlidesToShow(4); // Desktop view, show 4 slides
       }
     };
 

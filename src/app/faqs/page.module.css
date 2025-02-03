@@ -79,4 +79,27 @@
   font-weight: 500;
 }
 }
+
+
+/* Tab View */
+
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+  {
+    .faqsec
+    {
+      padding: 30px 20px;
+    }
+    .logosec 
+    {
+        padding-left: 40px !important;
+    }
+    .text_stroke_hover_
+    {
+      font-size: 50px;
+    }
+    .text_title
+    {
+      font-size: 50px;
+    }
+  }
  

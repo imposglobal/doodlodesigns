@@ -238,4 +238,15 @@
   width: 400px !important;
 }
 
+
   }
+
+
+  /* media queries for tab view */
+
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+  .service_list{
+    margin: 15px 0!important;
+  }
+}

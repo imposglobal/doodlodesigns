@@ -162,9 +162,7 @@ const Ourstory = () => {
         <div className={styles.storyhero}>
             <div className={styles.row}>
                 <div className={styles.columnst1}>
-                {/* <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Tailor Solutions for</h2>
-                <h2 data-aos="fade-up" className={styles.text_title}>your  business Needs</h2> */}
-                <h1 data-aos="fade-up" className={styles.text_stroke_hover}>Tailor Solutions for <br></br><span className={styles.text_title}>your  business Needs</span></h1>
+                <h1 data-aos="fade-up" className={styles.text_stroke_hover}>Tailor Design Services for <br></br><span className={styles.text_title}>your  business Needs</span></h1>
                 </div>
                 <div className={styles.columnst2}>
                     <p data-aos="fade-up" className={styles.desc}>Decoding Your Brand story. Crafting seamless & scalable digital experiences. Bringing bespoke doodles and illustrations to life.</p>

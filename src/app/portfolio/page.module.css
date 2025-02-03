@@ -116,6 +116,7 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
     text-transform: uppercase;
+    font-weight: 600;
 }
 .sec_heading{
   margin-top: -30px;
@@ -500,5 +501,60 @@
   color: #9E9E9E;
   padding-right: 0;
 }
+}
+
+
+/* tab view */
+
+@media screen and (min-width: 600px) and (max-width: 1024px)
+{
+  .logosec 
+  {
+      padding-left: 40px !important;
+  }
+  .portsec
+  {
+    padding: 0 0px 50px 0px;
+  }
+
+  .texta
+  {
+    text-align: left;
+    padding: 140px 30px 0;
+  }
+
+  .card:nth-child(even) {
+    transform: none !important; /* Resets the transformation on mobile */
+  }
+  .card
+  {
+    padding: 40px 100px;
+  }
+  .grid
+  {
+    display: block;
+    padding-bottom: 0;
+  }
+  .bookwrap1{
+   width: 100%;
+   rotate: 338deg;
+  }
+  .bookwrap
+  {
+    width: 100%;
+    rotate: 325deg;
+  }
+  .sec_heading
+  {
+    font-size: 58px;
+  }
+  .title
+  {
+    font-size: 50px;
+  }
+  .sec_heading
+  {
+    font-size: 50px;
+  }
 }
   
