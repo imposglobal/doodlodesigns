@@ -339,11 +339,7 @@
 
 
 /* Responsiveness for medium screens */
-@media (max-width: 768px) {
-    .blogsec {
-      grid-template-columns: repeat(2, 1fr); /* 2 items per row */
-    }
-  }
+
   
   /* Responsiveness for small screens */
   @media (max-width: 600px) {
@@ -500,3 +496,31 @@
 
   }
 
+
+  /* tab view */
+
+
+  @media screen and (min-width: 600px) and (max-width: 1024px) 
+  {
+    .blogsec {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+    .mainsec
+    {
+      padding: 100px 20px;
+    }
+
+    .logosec 
+    {
+        padding-left: 40px !important;
+    }
+    .mainheading
+    {
+      font-size: 50px;
+      line-height: 45px;
+    }
+    .sec_heading
+    {
+      font-size: 50px;
+    }
+  }

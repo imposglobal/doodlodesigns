@@ -442,7 +442,7 @@
 .text_stroke_hover {
   display: inline-block;
   position: relative;
-  font-size: 26px;
+  font-size: 23px;
   font-family: 'Poppins', sans-serif;
   color: transparent;
   -webkit-text-stroke-width: 1px;
@@ -723,4 +723,64 @@
 }
 .mobilev{
   display: none;
+}
+
+
+
+/* tab view */
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+  .logosec 
+  {
+      padding-left: 40px !important;
+  }
+  .storyhero
+  {
+    padding: 50px 20px 50px 20px;
+  }
+  .servicesec
+  {
+    padding: 50px 20px 50px 20px;
+  }
+  .prosec
+  {
+    padding: 50px 20px;
+  }
+  .discuss_row
+  {
+    margin: 100px 20px;
+  }
+  .sstitle
+  {
+    font-size: 20px;
+    margin-right: 0;
+  }
+  .stext_stroke_hover
+  {
+    font-size: 50px;
+    line-height: 52px;
+  }
+  .text_title
+  {
+    font-size: 50px;
+  }
+  .mainheadingdiss
+  {
+    font-size: 50px;
+    line-height: 85px;
+  }
+  .sec_headingdiss
+  {
+    font-size: 50px;
+  }
+  .sec_headingdis
+  {
+    font-size: 50px;
+  }
+  .mainheadingdis
+  {
+    font-size: 50px;
+  }
 }

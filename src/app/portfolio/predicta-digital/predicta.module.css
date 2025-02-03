@@ -687,9 +687,10 @@ margin-top: 10px;
 }
 .atitle
 {
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 10px;
-  line-height: 25px;
+  line-height: 20px;
+  word-spacing: 2px;
 }
 .abcol2
 {
@@ -754,4 +755,70 @@ margin-top: 10px;
   padding: 0 30px;
 }
 }
+
+
+/* Tab View */
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+  {
+    .logosec 
+    {
+        padding-left: 40px !important;
+    }
+    .aboutsec
+    {
+      padding: 100px 20px 100px 20px !important;
+    }
+    .atitle
+    {
+      font-size: 28px;
+    }
+    .intertext
+    {
+      font-size: 55px;
+    }
+    .intercol1
+    {
+      padding: 30px 20px 0 20px;
+    }
+    .headertext
+    {
+      left: 0;
+    }
+    .workshowcase
+    {
+      font-size: 32px !important;
+    }
+    .bodyrow
+    {
+      padding: 80px 0px 0px 0px;
+      margin-top: -90px;
+    }
+    .headerrow
+    {
+      padding: 180px 0px 0px 0px;
+      margin-top: -90px;
+    }
+    .tcol1
+    {
+      padding: 10px;
+    }
+    .listingli
+    {
+      margin-right: 0px;
+    }
+    .marketing
+    {
+      font-size: 22px;
+      margin-right: 0px;
+      padding: 0;
+    }
+    .macbookrow
+    {
+      margin-top: -48px;
+    }
+  }
+
+
  

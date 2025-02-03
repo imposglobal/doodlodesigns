@@ -971,5 +971,62 @@ padding: 100px 0 40px;
   }
 
 
+  /* Tab View */
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+  .logosec 
+  {
+      padding-left: 40px !important;
+  }
+  .aboutsec
+  {
+    padding: 40px 20px 40px 20px !important;
+  }
+  .atitle
+  {
+    font-size: 28px;
+  }
+  .row2
+  {
+    flex: 34% 1;
+    padding-left: 0;
+  }
+  .uisec
+  {
+    padding: 80px 20px;
+  }
+  .uicol1
+  {
+    padding: 30px 0 0 0px;
+  }
+  .grasec
+  {
+    padding: 80px 20px 40px;
+  }
+  .imagesec
+  {
+    padding: 40px 20px;
+  }
+  .vectorspe
+  {
+    padding: 0 0 60px 20px;
+  }
+  .uidesignsec
+  {
+    padding: 120px 20px 40px;
+  }
+  .formsec
+  {
+    padding: 70px 40px;
+  }
+  .workborder
+  {
+    margin-bottom: 92px;
+  }
+}
+
+
 
  

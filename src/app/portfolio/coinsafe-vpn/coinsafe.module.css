@@ -317,3 +317,46 @@
     padding: 0;
 }
 }
+
+
+/* tab view */
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+  .logosec 
+  {
+      padding-left: 40px !important;
+  }
+  .video
+  {
+    margin-top: 50px;
+  }
+  .rowsec
+  {
+    padding: 50px 20px 0 20px;
+  }
+  .rowsecs
+  {
+    padding: 70px 30px 70px 30px;
+    margin-top: -5px;
+  }
+  .typo
+  {
+    padding: 70px 0px;
+  }
+  .rowsecw
+  {
+    padding: 50px 20px 50px 20px;
+  }
+  .appdesc
+  {
+    padding: 0 40px 0 40px;
+  }
+  .title
+  {
+    margin-right: 0px;
+  }
+  .desc
+  {
+    padding-right: 0;
+  }
+}

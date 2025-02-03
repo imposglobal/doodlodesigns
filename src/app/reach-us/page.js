@@ -213,27 +213,27 @@ const handleChange = (e) => {
 
     //gallery
     const items = [
-      { id: 1, url:"/portfolio/swiggy-x-the-bowl-company", ids: 'fimg1', ptitle:'SWIGGY + BOWL COMPANY', pdesc:'Packaging Design | Marketing collaterals | Advertising', name: 'Item 1', image: '/home/portfolio/gallery/swiggy.png', category: 'category1' },
+      { id: 1, url:"/portfolio/swiggy-x-the-bowl-company", ids: 'fimg1', ptitle:'SWIGGY + BOWL COMPANY', pdesc:'Packaging Design | Marketing collaterals | Advertising', name: 'Item 1', image: '/home/portfolio/gallery/swiggy.webp', category: 'category1' },
   
-      { id: 2, url:"/portfolio/coinsafe-vpn", ids: 'fimg2', ptitle:'COINSAFE VPN', pdesc:'Branding | Website UI | Web Development | Application | Marketing Collaterals', name: 'Item 2', image: '/home/portfolio/gallery/coinsafe.png', category: 'category2' },
+      { id: 2, url:"/portfolio/coinsafe-vpn", ids: 'fimg2', ptitle:'COINSAFE VPN', pdesc:'Branding | Website UI | Web Development | Application | Marketing Collaterals', name: 'Item 2', image: '/home/portfolio/gallery/coinsafe.webp', category: 'category2' },
   
-      { id: 3, url:"/portfolio/predicta-digital", ids: 'fimg3', ptitle:'Predicta', pdesc:'Website UI | Web Development', name: 'Item 3', image: '/home/portfolio/gallery/predictaa.png', category: 'category2' },
+      { id: 3, url:"/portfolio/predicta-digital", ids: 'fimg3', ptitle:'Predicta', pdesc:'Website UI | Web Development', name: 'Item 3', image: '/home/portfolio/gallery/predictaa.webp', category: 'category2' },
   
-      { id: 4, url:"/portfolio/clickrnd", ids: 'fimg4', ptitle:'Click R & D', pdesc:'Branding | Website UI | Social Media', name: 'Item 4', image: '/home/portfolio/gallery/clickrnd.png', category: 'category1' },
+      { id: 4, url:"/portfolio/clickrnd", ids: 'fimg4', ptitle:'Click R & D', pdesc:'Branding | Website UI | Social Media', name: 'Item 4', image: '/home/portfolio/gallery/clickrnd.webp', category: 'category1' },
   
-      { id: 5, url:"portfolio/yolo-mart", ids: 'fimg5', ptitle:'YOLOMART', pdesc:'Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media', name: 'Item 5', image: '/home/portfolio/gallery/yolomart.png', category: 'category2' },
+      { id: 5, url:"portfolio/yolo-mart", ids: 'fimg5', ptitle:'YOLOMART', pdesc:'Branding | Retail Branding | Marketing Collateral | Packaging | Website UI | Web Development | Social Media', name: 'Item 5', image: '/home/portfolio/gallery/yolomart.webp', category: 'category2' },
   
-      { id: 6, url:"/portfolio/tarabai", ids: 'fimg6', ptitle:'TARABAI', pdesc:'Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media', name: 'Item 6', image: '/home/portfolio/gallery/tarabai.png', category: 'category1' },
+      { id: 6, url:"/portfolio/tarabai", ids: 'fimg6', ptitle:'TARABAI', pdesc:'Branding | Packaging | Retail Branding | Marketing Collaterals | Social Media', name: 'Item 6', image: '/home/portfolio/gallery/tarabai.webp', category: 'category1' },
   
-      { id: 7, url:"portfolio/citibank", ids: 'fimg7', ptitle:'CITIBANK', pdesc:'Illustrations | Presentation | Wall Graffiti', name: 'Item 7', image: '/home/portfolio/gallery/citibank.png', category: 'category1' },
+      { id: 7, url:"portfolio/citibank", ids: 'fimg7', ptitle:'CITIBANK', pdesc:'Illustrations | Presentation | Wall Graffiti', name: 'Item 7', image: '/home/portfolio/gallery/citibank.webp', category: 'category1' },
   
-      { id: 8, url:"portfolio/flash-card-illustration-and-packaging", ids: 'fimg8', ptitle:'Littile learners trove', pdesc:'Branding | Illustrations | Product Design | Packaging Design | Social Media', name: 'Item 8', image: '/home/portfolio/gallery/flash.png', category: 'category1' },
+      { id: 8, url:"portfolio/flash-card-illustration-and-packaging", ids: 'fimg8', ptitle:'Littile learners trove', pdesc:'Branding | Illustrations | Product Design | Packaging Design | Social Media', name: 'Item 8', image: '/home/portfolio/gallery/flash.webp', category: 'category1' },
   
-      { id: 9, url:"/portfolio/portage", ids: 'fimg9', ptitle:'PORTAGE', pdesc:'Branding | Communication Design', name: 'Item 9', image: '/home/portfolio/gallery/portage.png', category: 'category2' },
+      { id: 9, url:"/portfolio/portage", ids: 'fimg9', ptitle:'PORTAGE', pdesc:'Branding | Communication Design', name: 'Item 9', image: '/home/portfolio/gallery/portage.webp', category: 'category2' },
   
-      { id: 10, url:"/portfolio/coffee-table-book", ids: 'fimg10', ptitle:'Wuerth Industries', pdesc:'Publication - Coffee Table Book Design | Corporate Giftings', name: 'Item 10', image: '/home/portfolio/gallery/wru.png', category: 'category2' },
+      { id: 10, url:"/portfolio/coffee-table-book", ids: 'fimg10', ptitle:'Wuerth Industries', pdesc:'Publication - Coffee Table Book Design | Corporate Giftings', name: 'Item 10', image: '/home/portfolio/gallery/wru.webp', category: 'category2' },
   
-      { id: 11, url:"/portfolio/dhrona", ids: 'fimg11', ptitle:'DHRONA', pdesc:'Packaging Design', name: 'Item 11', image: '/home/portfolio/gallery/dhrona.png', category: 'category2' },
+      { id: 11, url:"/portfolio/dhrona", ids: 'fimg11', ptitle:'DHRONA', pdesc:'Packaging Design', name: 'Item 11', image: '/home/portfolio/gallery/dhrona.webp', category: 'category2' },
       // Add more items with appropriate categories
     ];
 
@@ -641,8 +641,6 @@ const handleChange = (e) => {
             </div>
         </div>
         <div className={styles.clientle}>
-            {/* <h2 className={styles.mainheading}>OUR</h2>
-            <h2 className={styles.sec_heading}>clientele</h2> */}
             <h2 className={styles.mainheading}>OUR <br></br> <span className={styles.sec_heading}>clientele</span></h2>
             <div className={styles.desktopv}>
             <ImageFlip  />

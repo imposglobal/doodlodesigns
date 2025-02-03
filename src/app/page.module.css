@@ -1176,3 +1176,151 @@
 .prtitle:hover{
   color: rgb(52, 255, 157) !important;
 }
+
+
+
+/* media queries for tab view */
+
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{ 
+  .scrollimg
+  {
+    width: 45%;
+  }
+  .logosec 
+  {
+      padding-left: 40px !important;
+  }
+  .logo_col{
+    width: 15%;
+    padding: 40px 30px;
+  }
+  /* .home_hero_content
+  {
+    width: 42%;
+  } */
+  .trustdesc
+  {
+    display: none;
+  }
+  .home_bg
+  {
+   height: 60vh; 
+  }
+  .services
+  {
+    padding: 100px 50px;
+  }
+  .accordion_arrsec  .arrowd
+  {
+    width: 50% !important;
+  }
+  .filtergal
+  {
+    padding: 50px 20px;
+  }
+  .clientle
+  {
+    padding: 50px 20px;
+  }
+  .setsapart
+  {
+    padding: 80px 20px;
+  }
+  .discuss_row
+  {
+    margin: 100px 20px;
+  }
+  .rowstory
+  {
+    display: block;
+  }
+ 
+  .mobilev
+  {
+    display: block;
+  }
+  .desktopv
+  {
+    display: none;
+  }
+  .gridItem
+  {
+    height: auto;
+    padding: 40px 20px;
+  }
+  .shopsec
+  {
+    margin: 100px 20px !important;
+  }
+   .service_hight
+   {
+    display: block;
+   }
+   .discuss_row
+   {
+    padding: 30px 0 50px 50px;
+   }
+
+   .bookwrap1{
+    width: 900px;
+    rotate: -370deg;
+   }
+   .bookwrap
+   {
+    width: 800px;
+    rotate: 15deg;
+   }
+   .accordion_grid_item_img
+   {
+    padding: 2px !important;
+   }
+   .text_stroke_hover
+   {
+    line-height: 40px;
+   }
+
+   #fimg11 .pover 
+   {
+    transform: translate(-115px, -121pt);
+   }
+   .prtitle
+   {
+    font-size: 2.6em;
+   }
+   .sec_headingdc
+   {
+    font-size: 45px;
+   }
+   .overtext
+   {
+    text-align: center;
+    font-size: 28px;
+   }
+   .formhead
+   {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-bottom: 10px;
+   }
+   .sec_heading
+   {
+    font-size: 50px;
+   }
+   .mainheading
+   {
+    font-size: 50px;
+    line-height: 52px;
+   }
+   .mainheadingdis
+   {
+    font-size: 50px;
+    line-height: 94px;
+   }
+   .sec_headingdis
+   {
+    font-size: 50px;
+   }
+
+}

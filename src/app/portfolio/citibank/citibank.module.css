@@ -179,3 +179,25 @@
   padding: 40px 20px;
 }
 }
+
+
+/* tab view */
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+  .logosec 
+  {
+      padding-left: 40px !important;
+  }
+  .maincont
+  {
+    padding: 51px 20px;
+  }
+  .talesecs
+  {
+    padding: 40px 40px;
+  }
+  .rowp
+  {
+    padding: 50px 40px;
+  }
+}

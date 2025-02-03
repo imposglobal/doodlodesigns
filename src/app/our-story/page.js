@@ -15,7 +15,7 @@ import ImageSwitcher from "../Component/Storyimg";
 
 const OurStory = () => {
   useEffect(() => {
-    document.title = " ";
+    document.title = "Leading Design Agency in India & UK | Doodlo Design Studio";
 
     const descriptionTag = document.querySelector('meta[name="description"]');
     if (descriptionTag) {
@@ -33,7 +33,7 @@ const OurStory = () => {
 
     const metaTitleTag = document.querySelector('meta[name="title"]');
     if (metaTitleTag) {
-      metaTitleTag.setAttribute("content", " ");
+      metaTitleTag.setAttribute("content", "Leading Design Agency in India & UK | Doodlo Design Studio");
     }
   }, []);
 
@@ -174,7 +174,7 @@ const OurStory = () => {
             </h2> */}
 
 
-            <h2 data-aos="fade-up" className={styles.text_stroke_hover}>We ‘re Doodlers & 
+            <h1 data-aos="fade-up" className={styles.text_stroke_hover}>We ‘re Doodlers & 
                                     <Image data-aos="fade-up"
                                     className={styles.starimg}
                                     src="/home/homestar.png"
@@ -186,7 +186,7 @@ const OurStory = () => {
                                     />
                                     <br></br>
             <span data-aos="fade-up" className={styles.text_title}>digital creators</span>
-            </h2>
+            </h1>
             {/* <h2 data-aos="fade-up" className={styles.text_title}>digital creators </h2> */}
             <p data-aos="fade-up" className={styles.desc}>Creative Professionals with Business Brains. (yes, it's a thing!), obsessed with bringing fresh ideas and strategic thinking to everything we do.</p>
             <p data-aos="fade-up" className={styles.desc}>Think of us as your <b>design dream team, fueled by caffine and crazy strategic ideas.</b> We're a tight-knit crew, but with the firepower of a big agency. We tackle a wide range of design challenges, from crafting killer logos and packaging that pops to building websites that wow and branding that sticks.
@@ -233,9 +233,6 @@ const OurStory = () => {
       {/* Our Story section end */}
     {/* Tool Kit */}
     <div className={styles.ourstorysec}>
-            {/* <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Our Team   </h2>
-            <h2 data-aos="fade-up" className={styles.text_title}>Toolkit looks like</h2> */}
-
     <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Our Team <br></br> <span data-aos="fade-up" className={styles.text_title}>Toolkit looks like</span></h2>
             <div className={styles.toolsec} data-aos="fade-up">
                 <Image
@@ -396,9 +393,6 @@ const OurStory = () => {
     <div className={styles.whowesec}>
       <div className={styles.row}>
         <div className={styles.whocol1}>
-        {/* <h2 data-aos="fade-up" className={styles.text_stroke_hover}>WHO</h2>
-        <h2 data-aos="fade-up" className={styles.text_title}>we are</h2> */}
-
         <h2 data-aos="fade-up" className={styles.text_stroke_hover}>WHO <br></br><span data-aos="fade-up" className={styles.text_title}>we are</span></h2>
         </div>
         <div className={styles.whocol2}>
@@ -451,8 +445,6 @@ const OurStory = () => {
 
       {/* Our team */}
       <div className={styles.teamsec}>
-      {/* <h2 className={styles.mainheading} data-aos="fade-up">meet </h2>
-      <h2 className={styles.sec_heading} data-aos="fade-up">Our team</h2> */}
       <h2 className={styles.mainheading} data-aos="fade-up">meet<br></br><span className={styles.sec_heading}>Our team</span></h2>
       <div className={styles.rows}>
        {/* team inner */}
@@ -460,7 +452,7 @@ const OurStory = () => {
           <div className={styles.teaminner}>
           <Image data-aos="fade-up"
                   className={styles.ppimgss}
-                  src="/home/team/rushi.png"
+                  src="/home/team/rushi.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -499,7 +491,7 @@ const OurStory = () => {
           <div className={styles.teaminner}>
           <Image data-aos="fade-up"
                   className={styles.ppimgss}
-                  src="/home/team/aastha.png"
+                  src="/home/team/aastha.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -538,7 +530,7 @@ const OurStory = () => {
           <div className={styles.teaminner}>
           <Image data-aos="fade-up"
                   className={styles.ppimgss}
-                  src="/home/team/krushna.png"
+                  src="/home/team/krushna.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -579,7 +571,7 @@ const OurStory = () => {
           <div className={styles.teaminner}>
           <Image data-aos="fade-up"
                   className={styles.ppimgss}
-                  src="/home/team/vipul.png"
+                  src="/home/team/vipul.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -618,7 +610,7 @@ const OurStory = () => {
           <div className={styles.teaminner}>
           <Image data-aos="fade-up"
                   className={styles.ppimgss}
-                  src="/home/team/shraddha.png"
+                  src="/home/team/shraddha.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -657,7 +649,7 @@ const OurStory = () => {
           <div className={styles.teaminner}>
           <Image data-aos="fade-up"
                   className={styles.ppimgss}
-                  src="/home/team/yashasvi.png"
+                  src="/home/team/yashasvi.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -698,7 +690,7 @@ const OurStory = () => {
           <div className={styles.teaminner}>
           <Image data-aos="fade-up"
                   className={styles.ppimgss}
-                  src="/home/team/hanuman.png"
+                  src="/home/team/hanuman.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -742,8 +734,7 @@ const OurStory = () => {
       <div className={styles.whowesec}>
       <div className={styles.row}>
         <div className={styles.whocol1}>
-        <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Our</h2>
-        <h2 data-aos="fade-up" className={styles.text_title}>office life</h2>
+        <h2 data-aos="fade-up" className={styles.text_stroke_hover}>Our <br></br><span data-aos="fade-up" className={styles.text_title}>office life</span></h2>
         <p data-aos="fade-up" className={styles.odesc}>
         A glimpse into life at Doodlo.
         </p>

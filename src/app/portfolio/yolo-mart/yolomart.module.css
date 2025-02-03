@@ -376,7 +376,39 @@
 }
 
   
-  
+/* tab view */
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+  .description
+  {
+    padding: 20px;
+  }
+  .contentsec
+  {
+    display: block;
+  }
+  .tabimg
+  {
+   padding-top: 40px;
+  }
+  .convsec
+  {
+    padding: 0;
+  }
+  .slider_slide-item
+  {
+    height: 400px !important;
+  }
+  .thanksec
+  {
+    padding: 100px 0 50px;
+  }
+  .spacing
+  {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
   
   
   

@@ -612,7 +612,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   text-transform: uppercase;
-  line-height: 30px;
+  line-height: 27px;
   margin-bottom: 7px;
 }
 .ourstorysec {
@@ -648,7 +648,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   text-transform: uppercase;
-  line-height: 30px;
+  line-height: 27px;
 }
 .rowstory {
   padding: 24px 14px;
@@ -778,4 +778,66 @@ img.linked {
   margin-top: -3px;
   margin-bottom: 20px;
 }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px)
+{
+  .logosec 
+  {
+      padding-left: 40px !important;
+  }
+  .ourstorysec
+  {
+    padding: 50px 20px;
+  }
+  .rowstory
+  {
+    padding: 50px 20px;
+  }
+
+  .toolimg
+  {
+    width: 100px !important;
+  }
+
+  .whowesec
+  {
+    padding: 100px 20px;
+  }
+  .prosec
+  {
+    padding: 50px 20px;
+  }
+  .fsec
+  {
+    padding: 0;
+  }
+  .teamsec
+  {
+    padding: 50px 20px;
+  }
+  .slider_founder-image
+  {
+    height: 290px !important;
+  }
+  .whodesc
+  {
+    font-size: 25px;
+  }
+  .sec_heading
+  {
+    font-size: 50px;
+    line-height: 52px;
+  }
+  .text_title
+  {
+    font-size: 50px;
+  }
+
+  .mainheadings
+  {
+    font-size: 50px;
+  }
+ 
 }

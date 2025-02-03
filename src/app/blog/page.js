@@ -59,15 +59,30 @@ const Blog = () => {
       });
   }, []);
 
+  // const getCategoryFromClassList = (classList) => {
+  //   if (Array.isArray(classList)) {
+  //     const categoryClass = classList.find((className) =>
+  //       className.startsWith("category-")
+  //     );
+  //     return categoryClass ? categoryClass.replace("category-", "") : "No Category";
+  //   }
+  //   return "No Category";
+  // };
+
+
   const getCategoryFromClassList = (classList) => {
     if (Array.isArray(classList)) {
       const categoryClass = classList.find((className) =>
         className.startsWith("category-")
       );
-      return categoryClass ? categoryClass.replace("category-", "") : "No Category";
+      return categoryClass
+        ? categoryClass.replace("category-", "")[0].toUpperCase() + categoryClass.replace("category-", "").slice(1).toLowerCase()
+        : "No category";
     }
-    return "No Category";
+    return "No category";
   };
+  
+
 
 
   // Handle scroll event to trigger loading more posts
@@ -190,10 +205,7 @@ const Blog = () => {
      {/* Main Section */}
      <div className={styles.mainsec}>
         <div className={styles.titlesec}>
-          {/* <h2 className={styles.mainheading}>OUR</h2>
-          <h2 className={styles.sec_heading}>BLOGS</h2> */}
-
-        <h2 className={styles.mainheading}>OUR <br></br><span className={styles.sec_heading}>BLOGS</span></h2>
+        <h1 className={styles.mainheading}>OUR <br></br><span className={styles.sec_heading}>BLOGS</span></h1>
         </div>
 
         <div className={styles.blogsec}>

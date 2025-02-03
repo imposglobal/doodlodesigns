@@ -74,7 +74,7 @@ height: auto !important;
 }
 
 
-@media (max-width: 480px)
+@media (max-width: 600px)
 {
     .logosec 
   {
@@ -101,4 +101,20 @@ height: auto !important;
    width: 340px !important;
 }
 
+}
+
+
+/* tab view */
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+    .logosec 
+    {
+        padding-left: 40px !important;
+    }
+    .bwrapper
+    {
+        padding: 50px 20px;
+    }
 }

@@ -16,14 +16,26 @@ const fetchPost = async (slug) => {
 
 
 
+// const getCategoryFromClassList = (classList) => {
+//   if (Array.isArray(classList)) {
+//     const categoryClass = classList.find((className) =>
+//       className.startsWith("category-")
+//     );
+//     return categoryClass ? categoryClass.replace("category-", "") : "No Category";
+//   }
+//   return "No Category";
+// };
+
 const getCategoryFromClassList = (classList) => {
   if (Array.isArray(classList)) {
     const categoryClass = classList.find((className) =>
       className.startsWith("category-")
     );
-    return categoryClass ? categoryClass.replace("category-", "") : "No Category";
+    return categoryClass
+      ? categoryClass.replace("category-", "")[0].toUpperCase() + categoryClass.replace("category-", "").slice(1).toLowerCase()
+      : "No category";
   }
-  return "No Category";
+  return "No category";
 };
 
 // This function generates metadata for the page

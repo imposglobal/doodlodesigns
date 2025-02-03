@@ -185,7 +185,30 @@
     .rowsec
     {
         padding: 0 0 30px 0;
-    }
+    }   
+}
 
-    
+/* tab view */
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+    .logosec 
+    {
+        padding-left: 40px !important;
+    }
+  .spacing
+  {
+    padding: 40px 40px 70px 40px;
+  }
+  .contentsec
+  {
+    padding: 50px 20px;
+  }
+  .Learnersec
+  {
+    padding: 70px 40px 70px;
+  }
+  .description
+  {
+    padding-right: 0;
+  }
 }

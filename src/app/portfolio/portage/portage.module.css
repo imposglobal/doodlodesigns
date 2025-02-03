@@ -396,9 +396,10 @@
 }
 .atitle
 {
-  font-size: 24px;
-  letter-spacing: 2px;
-  line-height: 26px;
+  font-size: 18px;
+  padding-top: 10px;
+  line-height: 20px;
+  word-spacing: 2px;
 }
 
 .brandingsec
@@ -535,4 +536,42 @@
   padding: 0 30px;
 }
 
+  }
+
+
+  @media screen and (min-width: 600px) and (max-width: 1024px) 
+  {
+    .logosec 
+    {
+        padding-left: 40px !important;
+    }
+    .aboutsec
+    {
+      padding: 50px 20px 50px 20px !important;
+    }
+    .atitle
+    {
+      font-size: 28px;
+    }
+    .brandingsec
+    {
+      padding: 80px 20px 50px;
+    }
+    .elementsec
+    {
+      padding: 30px 20px 30px;
+    }
+    .elementcol2
+    {
+      padding: 0;
+    }
+    .edesc
+    {
+      margin-right: 70px;
+    }
+    .imagesec
+    {
+      padding: 70px 10px 0;
+    }
+   
   }

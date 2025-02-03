@@ -447,3 +447,27 @@
   padding: 0 20px;
 }
 }
+
+
+/* tab view */
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+  .logosec 
+  {
+      padding-left: 40px !important;
+  }
+ 
+ .about
+ {
+  padding: 80px 20px 50px;
+ }
+ .content
+ {
+  padding: 0;
+ }
+ .atitle
+ {
+  margin-top: 0px;
+ }
+
+}

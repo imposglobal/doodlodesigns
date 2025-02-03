@@ -692,3 +692,57 @@
   margin-bottom: 20px;
 }
 }
+
+
+@media screen and (min-width: 600px) and (max-width: 1024px) 
+{
+  .logosec 
+  {
+      padding-left: 40px !important;
+  }
+  .mahateesec
+  {
+    padding: 0 40px 80px 40px;
+    margin-top: -5px;
+  }
+  .booksection
+  {
+    margin-top: -5px;
+    padding: 0 20px;
+  }
+  
+ 
+  .slider_slide-item
+  {
+    height: 400px !important;
+  }
+  .descbt
+  {
+    margin-left: 0px;
+  }
+  .soicialsec
+  {
+    padding: 80px 20px;
+  }
+  .websec
+  {
+    padding: 80px 20px 40px;
+  }
+  .bookdesignsec
+  {
+    padding: 50px 20px;
+  }
+  .bdcol1
+  {
+    padding: 40px 20px 50px;
+  }
+  .bocol1
+  {
+    margin-top: 50px;
+    padding: 50px 75px;
+  }
+  .storybsec
+  {
+    padding: 50px 20px;
+  }
+}
