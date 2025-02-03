@@ -55,13 +55,6 @@ const nextConfig = {
       },
 
       {
-        source: '/blog/faqs',  // Old URL
-        destination: '/faqs',  // New URL
-        permanent: true,  // Permanent redirect (301)
-      },
-
-
-      {
         source: '/10-important-steps-to-successful-social-media-branding',  // Old URL
         destination: '/blog/10-important-steps-to-successful-social-media-branding',  // New URL
         permanent: true,  // Permanent redirect (301)
