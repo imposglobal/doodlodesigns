@@ -154,12 +154,17 @@ const Portfolio = () => {
       </div>
       <div className={styles.portsec}>
         <div className={styles.grid}>
-          <div className={styles.texta}>
+          {/* <div className={styles.texta}>
             <h2 data-aos="fade-up" className={styles.title}>Our 
               <Image data-aos="fade-up" className={styles.homestar} src="/home/homestar.png" alt="Star" layout="responsive" width={100} height={37} priority onClick={toggleClass} />
             </h2>
             <h2 data-aos="fade-up" className={styles.sec_heading}>Portfolio</h2>
-          </div>
+          </div> */}
+
+        <div className={styles.texta}>
+        <h1 data-aos="fade-up" className={styles.title}>OUR  <Image data-aos="fade-up" className={styles.homestar} src="/home/homestar.png" alt="Star" layout="responsive" width={100} height={37} priority onClick={toggleClass} /> <br></br><span data-aos="fade-up" className={styles.sec_heading}>Portfolio</span></h1>
+        </div>
+       
           <div></div>
           {portfolioItems.slice(0, visibleItems).map((item, index) => (
             <div id={item.id} key={item.id} className={`${styles.card}`}>

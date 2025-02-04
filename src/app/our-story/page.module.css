@@ -817,10 +817,6 @@ img.linked {
   {
     padding: 50px 20px;
   }
-  .slider_founder-image
-  {
-    height: 290px !important;
-  }
   .whodesc
   {
     font-size: 25px;
@@ -830,6 +826,10 @@ img.linked {
     font-size: 50px;
     line-height: 52px;
   }
+  .sec_headings
+  {
+    font-size: 50px;
+  }
   .text_title
   {
     font-size: 50px;
@@ -838,6 +838,10 @@ img.linked {
   .mainheadings
   {
     font-size: 50px;
+    line-height: 90px;
   }
- 
+  .mainheading
+  {
+    font-size: 50px;
+  }
 }

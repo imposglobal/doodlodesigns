@@ -161,20 +161,7 @@ const OurStory = () => {
         </div>
 
             <div className={styles.ourstorysec}>
-            {/* <h2 data-aos="fade-up" className={styles.text_stroke_hover}>We ‘re Doodlers & 
-                                    <Image data-aos="fade-up"
-                                    className={styles.starimg}
-                                    src="/home/homestar.png"
-                                    alt="Next.js Logo"
-                                    layout="responsive"
-                                    width={100}
-                                    height={37}
-                                    priority
-                                    />
-            </h2> */}
-
-
-            <h1 data-aos="fade-up" className={styles.text_stroke_hover}>We ‘re Doodlers & 
+            <h1 data-aos="fade-up" className={styles.text_stroke_hover}>We ‘re doodlers &   
                                     <Image data-aos="fade-up"
                                     className={styles.starimg}
                                     src="/home/homestar.png"
@@ -185,7 +172,7 @@ const OurStory = () => {
                                     priority
                                     />
                                     <br></br>
-            <span data-aos="fade-up" className={styles.text_title}>digital creators</span>
+            <span data-aos="fade-up" className={styles.text_title}> digital creators</span>
             </h1>
             {/* <h2 data-aos="fade-up" className={styles.text_title}>digital creators </h2> */}
             <p data-aos="fade-up" className={styles.desc}>Creative Professionals with Business Brains. (yes, it's a thing!), obsessed with bringing fresh ideas and strategic thinking to everything we do.</p>

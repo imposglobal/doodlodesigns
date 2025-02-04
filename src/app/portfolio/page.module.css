@@ -97,7 +97,8 @@
 
 
 .title {
-  margin-right: 31vh;
+  /* margin-right: 31vh; */
+   margin-left: 20vh;
   display: inline-block;
     position: relative;
     font-size: 55px;
@@ -106,6 +107,7 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
     text-transform: uppercase;
+    line-height: 60px;
 }
 .titles {
     direction: ltr;
@@ -126,6 +128,7 @@
   font-size: 60px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+  margin-right: -22vh;
 }
 
 .grid {
@@ -210,7 +213,7 @@
 }
 .texta{
   margin-top: 0;
-  text-align: right;
+  /* text-align: right; */
   direction: ltr !important;
   padding: 0 30px;
 }
@@ -363,10 +366,11 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   text-transform: uppercase;
+  line-height: 35px;
 }
 .texta {
   margin-top: -60px;
-  text-align: right;
+  /* text-align: right; */
   direction: ltr !important;
   margin-bottom: -63px;
   padding: 15px;
@@ -551,10 +555,16 @@
   .title
   {
     font-size: 50px;
+    margin-left: 5vh;
+    line-height: 45px;
   }
   .sec_heading
   {
     font-size: 50px;
+  }
+  .homestar
+  {
+    left: 115px;
   }
 }
   

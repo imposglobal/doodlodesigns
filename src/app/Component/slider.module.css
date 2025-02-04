@@ -166,3 +166,11 @@
 }
 
 }
+
+/* tab view */
+@media screen and (min-width: 600px) and (max-width: 1024px)
+{
+  .founder-image {
+    height: 280px;   
+  }
+}
