@@ -427,8 +427,6 @@ const Home = () => {
     {/* review slider End*/}
     
     <div data-aos="fade-up" className={styles.setsapart}>
-    {/* <h2 className={styles.mainheading}>What</h2>
-      <h2 className={styles.sec_heading}>Sets us apart</h2> */}
        <h2 data-aos="fade-up" className={styles.mainheading}>What<br></br><span className={styles.sec_heading}>Sets us apart</span></h2>
       <div className={styles.rowpart}>
         <div className={styles.columnpart1}>
@@ -749,7 +747,7 @@ const Home = () => {
           <div className={styles.shopwi1}>
           <Image
                   className={styles.ppimgs}
-                  src="/home/crow1.png"
+                  src="/home/crow1.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -758,7 +756,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow2.png"
+                  src="/home/crow2.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -767,7 +765,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow3.png"
+                  src="/home/crow3.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -776,7 +774,7 @@ const Home = () => {
                 />
                  <Image
                   className={styles.ppimgs}
-                  src="/home/crow1.png"
+                  src="/home/crow1.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -785,7 +783,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow2.png"
+                  src="/home/crow2.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -794,7 +792,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow3.png"
+                  src="/home/crow3.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -803,7 +801,7 @@ const Home = () => {
                 />
                  <Image
                   className={styles.ppimgs}
-                  src="/home/crow1.png"
+                  src="/home/crow1.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -812,7 +810,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow2.png"
+                  src="/home/crow2.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -821,7 +819,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow3.png"
+                  src="/home/crow3.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -830,7 +828,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow1.png"
+                  src="/home/crow1.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -839,7 +837,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow2.png"
+                  src="/home/crow2.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -848,7 +846,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow3.png"
+                  src="/home/crow3.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -859,7 +857,7 @@ const Home = () => {
           <div className={styles.shopwi2}>
           <Image
                   className={styles.ppimgs}
-                  src="/home/crow21.png"
+                  src="/home/crow21.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -868,7 +866,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow22.png"
+                  src="/home/crow22.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -877,7 +875,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow23.png"
+                  src="/home/crow23.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -886,7 +884,7 @@ const Home = () => {
                 />
                  <Image
                   className={styles.ppimgs}
-                  src="/home/crow24.png"
+                  src="/home/crow24.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -895,7 +893,7 @@ const Home = () => {
                 />
                  <Image
                   className={styles.ppimgs}
-                  src="/home/crow21.png"
+                  src="/home/crow21.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -904,7 +902,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow22.png"
+                  src="/home/crow22.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -913,7 +911,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow23.png"
+                  src="/home/crow23.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -922,7 +920,7 @@ const Home = () => {
                 />
                  <Image
                   className={styles.ppimgs}
-                  src="/home/crow24.png"
+                  src="/home/crow24.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -931,7 +929,7 @@ const Home = () => {
                 />
                  <Image
                   className={styles.ppimgs}
-                  src="/home/crow21.png"
+                  src="/home/crow21.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -940,7 +938,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow22.png"
+                  src="/home/crow22.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -949,7 +947,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow23.png"
+                  src="/home/crow23.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -958,7 +956,7 @@ const Home = () => {
                 />
                  <Image
                   className={styles.ppimgs}
-                  src="/home/crow24.png"
+                  src="/home/crow24.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -967,7 +965,7 @@ const Home = () => {
                 />
                  <Image
                   className={styles.ppimgs}
-                  src="/home/crow21.png"
+                  src="/home/crow21.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -976,7 +974,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow22.png"
+                  src="/home/crow22.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -985,7 +983,7 @@ const Home = () => {
                 />
                 <Image
                   className={styles.ppimgs}
-                  src="/home/crow23.png"
+                  src="/home/crow23.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -994,7 +992,7 @@ const Home = () => {
                 />
                  <Image
                   className={styles.ppimgs}
-                  src="/home/crow24.png"
+                  src="/home/crow24.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}

@@ -1,0 +1,118 @@
+.row {
+    /* padding: 40px 40px 0  40px; */
+    display: flex;
+    /* border: 1px solid #fff; */
+    /* border-radius: 10px ; */
+  }
+
+  /* Create two equal columns that sits next to each other */
+  .column1 {
+    flex: 60%;
+    padding: 30px 0;
+   /* Should be removed. Only for demonstration */
+  }
+  .column2 {
+    flex: 40%;
+    padding: 50px;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns1 {
+    flex: 60%;
+   /* Should be removed. Only for demonstration */
+  }
+  .columns2 {
+    flex: 40%;
+
+   /* Should be removed. Only for demonstration */
+  }
+  .logosec{
+    padding-left: 80px;
+  }
+  .menuicon{
+    top: 0 !important;
+  }
+  .custom
+  {
+    padding: 140px 0 200px;
+    background-color: black;
+    text-align: center;
+    
+  }
+  .whtitle
+  {
+    display: inline-block;
+    position: relative;
+    font-size: 80px;
+    font-family: 'Poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f6fa5e;
+    text-transform: uppercase;
+  }
+  .whdesc
+  {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+  }
+  .whbtn
+  {
+    text-decoration: none;
+    margin-top: 10px;
+    font-family: 'poppins';
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+  }
+  
+
+  @media only screen and (max-width: 600px)
+  {
+
+    .logosec 
+    {
+      padding-left: 20px;
+    }
+   .column2 
+   {
+    flex: 40% 1;
+    padding: 50px 20px;
+   }
+
+    .custom
+    {
+      padding: 120px 0 200px;
+    }
+    .whtitle
+    {
+      font-size: 33px;
+    }
+    .whdesc
+    {
+      font-size: 16px;
+      padding: 0 30px;
+    }
+    
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1024px)
+  {
+    .logosec 
+    {
+        padding-left: 40px !important;
+    }
+    .whtitle
+    {
+      font-size: 50px;
+    }
+  }
