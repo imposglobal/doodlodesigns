@@ -26,10 +26,13 @@ const Blog = () => {
       keywordsTag.setAttribute("content", " ");
     }
 
-    const metaTitleTag = document.querySelector('meta[name="title"]');
-    if (metaTitleTag) {
-      metaTitleTag.setAttribute("content", "Doodlo Design Blog | Insights on Branding, Design & More");
-    }
+     // Add the canonical tag 
+     const canonicalTag = document.querySelector('link[rel="canonical"]');
+     if (canonicalTag) {
+       canonicalTag.setAttribute("href", "https://doodlodesigns.com/blog"); 
+     } 
+
+    
   }, []);
 
 

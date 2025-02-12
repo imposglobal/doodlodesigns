@@ -28,10 +28,11 @@ const Faqs = () => {
       keywordsTag.setAttribute("content", "");
     }
 
-    const metaTitleTag = document.querySelector('meta[name="title"]');
-    if (metaTitleTag) {
-      metaTitleTag.setAttribute("content", "Doodlo Designs – Everything You Need to Know About Design Services");
-    }
+      // Add the canonical tag 
+      const canonicalTag = document.querySelector('link[rel="canonical"]');
+      if (canonicalTag) {
+        canonicalTag.setAttribute("href", "https://doodlodesigns.com/faqs"); 
+      } 
   }, []);
 
     useEffect(() =>{

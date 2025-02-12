@@ -31,6 +31,12 @@ const Mahatee = () => {
         if (keywordsTag) {
           keywordsTag.setAttribute("content", "Creative Solutions");
         }
+
+        // Add the canonical tag 
+        const canonicalTag = document.querySelector('link[rel="canonical"]');
+        if (canonicalTag) {
+        canonicalTag.setAttribute("href", "https://doodlodesigns.com/portfolio/mahatee"); 
+       } 
       }, []);
 
       const images = [

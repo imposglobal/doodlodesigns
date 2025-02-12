@@ -31,10 +31,11 @@ const Wurth = () => {
       keywordsTag.setAttribute("content", "Best Collage artwork");
     }
 
-    const metaTitleTag = document.querySelector('meta[name="title"]');
-    if (metaTitleTag) {
-      metaTitleTag.setAttribute("content", "Wuerth India | Coffee Table Book Design | Doodlo Design Studio");
-    }
+    // Add the canonical tag 
+    const canonicalTag = document.querySelector('link[rel="canonical"]');
+    if (canonicalTag) {
+    canonicalTag.setAttribute("href", "https://doodlodesigns.com/portfolio/coffee-table-book"); 
+   } 
       }, []);
 
     //   lottie Controls

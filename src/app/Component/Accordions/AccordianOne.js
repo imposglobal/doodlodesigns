@@ -138,7 +138,7 @@ const AccordionOne = () => {
                 <div className={styles.grimg1}>
                   <Image
                     className={styles.grid_item_img}
-                    src="/home/brandin1.jpg"
+                    src="/home/brandin1.webp"
                     alt="Branding Image 1"
                     layout="responsive"
                     width={100}
@@ -150,7 +150,7 @@ const AccordionOne = () => {
                   <div className={styles.grid_item}>
                     <Image
                       className={`${styles.grid_item_img} ${styles.brimg2} ${styles.desktopv}`}
-                      src="/home/branding2.jpg"
+                      src="/home/branding2.webp"
                       alt="Branding Image 2"
                       layout="responsive"
                       width={100}
@@ -159,7 +159,7 @@ const AccordionOne = () => {
                     />
                     <Image
                       className={`${styles.grid_item_img} ${styles.brimg3} ${styles.desktopv}`}
-                      src="/home/branding3.jpg"
+                      src="/home/branding3.webp"
                       alt="Branding Image 3"
                       layout="responsive"
                       width={100}
@@ -170,7 +170,7 @@ const AccordionOne = () => {
                   <div className={styles.grid_item}>
                   <Image
                       className={`${styles.grid_item_img} ${styles.brimg2} ${styles.mobilev}`}
-                      src="/home/branding2.jpg"
+                      src="/home/branding2.webp"
                       alt="Branding Image 2"
                       layout="responsive"
                       width={100}
@@ -179,7 +179,7 @@ const AccordionOne = () => {
                     />
                     <Image
                       className={`${styles.grid_item_img} ${styles.brimg3} ${styles.mobilev}`}
-                      src="/home/branding3.jpg"
+                      src="/home/branding3.webp"
                       alt="Branding Image 3"
                       layout="responsive"
                       width={100}
@@ -188,7 +188,7 @@ const AccordionOne = () => {
                     />
                     <Image
                       className={`${styles.grid_item_img} ${styles.brimg4}`}
-                      src="/home/branding4.jpg"
+                      src="/home/branding4.webp"
                       alt="Branding Image 4"
                       layout="responsive"
                       width={100}
@@ -197,7 +197,7 @@ const AccordionOne = () => {
                     />
                     <Image
                       className={`${styles.grid_item_img} ${styles.brimg5}`}
-                      src="/home/branding5.png"
+                      src="/home/branding5.webp"
                       alt="Branding Image 5"
                       layout="responsive"
                       width={100}
@@ -206,7 +206,7 @@ const AccordionOne = () => {
                     />
                     <Image
                       className={`${styles.grid_item_img} ${styles.brimg6}`}
-                      src="/home/branding6.jpg"
+                      src="/home/branding6.webp"
                       alt="Branding Image 6"
                       layout="responsive"
                       width={100}
@@ -262,7 +262,7 @@ const AccordionOne = () => {
             <div className={styles.digiimgsec}>
         <Image
             className={styles.digiimg}
-            src="/home/digi1.png"
+            src="/home/digi1.webp"
             alt="Next.js Logo"
             layout="responsive"
             width={100}
@@ -271,7 +271,7 @@ const AccordionOne = () => {
           />
           <Image
             className={styles.digiimg}
-            src="/home/digi2.png"
+            src="/home/digi2.webp"
             alt="Next.js Logo"
             layout="responsive"
             width={100}
@@ -280,7 +280,7 @@ const AccordionOne = () => {
           />
           <Image
             className={styles.digiimg}
-            src="/home/digi3.png"
+            src="/home/digi3.webp"
             alt="Next.js Logo"
             layout="responsive"
             width={100}
@@ -336,7 +336,7 @@ const AccordionOne = () => {
             <div className={styles.digiimgsec}>
         <Image
             className={styles.digiimg}
-            src="/home/pkg1.png"
+            src="/home/pkg1.webp"
             alt="Next.js Logo"
             layout="responsive"
             width={100}
@@ -345,7 +345,7 @@ const AccordionOne = () => {
           />
           <Image
             className={styles.digiimg}
-            src="/home/pkg2.png"
+            src="/home/pkg2.webp"
             alt="Next.js Logo"
             layout="responsive"
             width={100}
@@ -354,7 +354,7 @@ const AccordionOne = () => {
           />
           <Image
             className={styles.digiimg}
-            src="/home/pkg3.png"
+            src="/home/pkg3.webp"
             alt="Next.js Logo"
             layout="responsive"
             width={100}
@@ -409,7 +409,7 @@ const AccordionOne = () => {
             <div className={styles.digiimgsec}>
         <Image
             className={`${styles.ecommimg} ${styles.ecommimgmob}`}
-            src="/home/ecomm1.png"
+            src="/home/ecomm1.webp"
             alt="Next.js Logo"
             layout="responsive"
             width={100}

@@ -26,10 +26,11 @@ const eMed = () => {
               keywordsTag.setAttribute("content", " ");
             }
         
-            const metaTitleTag = document.querySelector('meta[name="title"]');
-            if (metaTitleTag) {
-              metaTitleTag.setAttribute("content", "eMed Branding Portfolio | Innovative Branding Solutions");
-            }
+             // Add the canonical tag 
+    const canonicalTag = document.querySelector('link[rel="canonical"]');
+    if (canonicalTag) {
+    canonicalTag.setAttribute("href", "https://doodlodesigns.com/portfolio/emed"); 
+   } 
           }, []);
     
           const [inactive, setInactive] = useState(true); // Set initial state to true

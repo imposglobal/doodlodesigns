@@ -15,17 +15,6 @@ const fetchPost = async (slug) => {
 };
 
 
-
-// const getCategoryFromClassList = (classList) => {
-//   if (Array.isArray(classList)) {
-//     const categoryClass = classList.find((className) =>
-//       className.startsWith("category-")
-//     );
-//     return categoryClass ? categoryClass.replace("category-", "") : "No Category";
-//   }
-//   return "No Category";
-// };
-
 const getCategoryFromClassList = (classList) => {
   if (Array.isArray(classList)) {
     const categoryClass = classList.find((className) =>

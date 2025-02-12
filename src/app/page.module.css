@@ -78,7 +78,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   text-transform: uppercase;
-  line-height: 60px;
+  line-height: 55px;
 }
 .text_stroke_hover:hover{
   color: #fff;
@@ -97,6 +97,8 @@
   font-family: 'Poppins', sans-serif;
   color: #fff;
   line-height: 0;
+  -webkit-text-stroke-width: none;
+  -webkit-text-stroke-color: transparent;
 }
 .home_hero_desc{
   padding-bottom: 40px;
@@ -134,7 +136,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   text-transform: uppercase;
-  line-height: 65px;
+  line-height: 62px;
   margin-bottom: 20px;
 }
 .sec_heading{
@@ -145,6 +147,7 @@
   font-size: 70px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
+  -webkit-text-stroke-color: transparent;
 }
 .sevices_heading{
   line-height: 45px;
@@ -790,7 +793,7 @@
   font-size: 8.8vw;
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  font-weight: 500;
+  
 }
 .homestar {
   width: 37px !important;
@@ -820,7 +823,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
   text-transform: uppercase;
-  line-height: 35px;
+  line-height: 32px;
 }
 .sec_heading {
   margin-top: -18px;
@@ -830,7 +833,7 @@
   font-size: 33px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  font-weight: 500;
+  
 }
 .filtergal {
   padding: 50px 0;
@@ -1322,5 +1325,17 @@
    {
     font-size: 50px;
    }
+   .ppimg{
+    width: 90% !important;
+  }
+  .columnpart1
+  {
+    flex: 25%;
+  }
+  .stimg
+  {
+    width: 45%;
+  }
 
+ 
 }

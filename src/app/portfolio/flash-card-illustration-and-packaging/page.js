@@ -22,13 +22,14 @@ const flashcard = () => {
       // Update the meta keywords dynamically
       const keywordsTag = document.querySelector('meta[name="keywords"]');
       if (keywordsTag) {
-      keywordsTag.setAttribute("content", "");
+      keywordsTag.setAttribute("content", " ");
       }
 
-      const metaTitleTag = document.querySelector('meta[name="title"]');
-      if (metaTitleTag) {
-        metaTitleTag.setAttribute("content", "Little Learner's Trove | Flash Card & Illustration Design | Doodlo Design Studio");
-      }
+        // Add the canonical tag 
+        const canonicalTag = document.querySelector('link[rel="canonical"]');
+        if (canonicalTag) {
+        canonicalTag.setAttribute("href", "https://doodlodesigns.com/portfolio/flash-card-illustration-and-packaging"); 
+       } 
       }, []);
 
       const [inactive, setInactive] = useState(true); // Set initial state to true

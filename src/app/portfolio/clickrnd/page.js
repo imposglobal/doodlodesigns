@@ -27,10 +27,11 @@ const clickrnd = () => {
           keywordsTag.setAttribute("content", "Case Study Click R&D");
         }
 
-        const metaTitleTag = document.querySelector('meta[name="title"]');
-    if (metaTitleTag) {
-      metaTitleTag.setAttribute("content", "Click R&D Branding Case Study by Doodlo Designs");
-    }
+        // Add the canonical tag 
+       const canonicalTag = document.querySelector('link[rel="canonical"]');
+       if (canonicalTag) {
+       canonicalTag.setAttribute("href", "https://doodlodesigns.com/portfolio/clickrnd"); 
+      } 
       }, []);
 
       const [inactive, setInactive] = useState(true); // Set initial state to true

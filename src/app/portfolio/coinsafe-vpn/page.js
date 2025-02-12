@@ -31,11 +31,12 @@ const coinsafe = () => {
           keywordsTag.setAttribute("content", " ");
         }
     
-        const metaTitleTag = document.querySelector('meta[name="title"]');
-        if (metaTitleTag) {
-          metaTitleTag.setAttribute("content", "Coinsafe VPN | Website & App Design | Doodlo Design Studio");
-        }
-      }, []);
+         // Add the canonical tag 
+    const canonicalTag = document.querySelector('link[rel="canonical"]');
+    if (canonicalTag) {
+    canonicalTag.setAttribute("href", "https://doodlodesigns.com/portfolio/coinsafe-vpn"); 
+   } 
+   }, []);
 
     //   lottie Controls
     const defaultOptions = {

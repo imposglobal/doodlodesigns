@@ -82,7 +82,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
   text-transform: uppercase;
-  line-height: 60px;
+  line-height: 58px;
 }
 .sec_heading{
   margin-top: -40px;
@@ -92,6 +92,8 @@
   font-size: 70px;
   font-family: 'Poppins', sans-serif;
   color: #000;
+  -webkit-text-stroke-width: none;
+  -webkit-text-stroke-color: transparent;
 }
 
 .link

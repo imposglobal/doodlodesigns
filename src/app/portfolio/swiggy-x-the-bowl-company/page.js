@@ -26,10 +26,11 @@ const Swiggy = () => {
           keywordsTag.setAttribute("content", " ");
         }
     
-        const metaTitleTag = document.querySelector('meta[name="title"]');
-        if (metaTitleTag) {
-          metaTitleTag.setAttribute("content", "Swiggy & The Bowl Company | Packaging Solutions | Doodlo Design Studio");
-        }
+        // Add the canonical tag 
+    const canonicalTag = document.querySelector('link[rel="canonical"]');
+    if (canonicalTag) {
+    canonicalTag.setAttribute("href", "https://doodlodesigns.com/portfolio/swiggy-x-the-bowl-company"); 
+   } 
       }, []);
 
       const [inactive, setInactive] = useState(true); // Set initial state to true

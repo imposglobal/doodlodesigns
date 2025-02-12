@@ -26,6 +26,12 @@ const CitiBank = () => {
                 "Check out Doodlo Design's creative illustration designs for Citi Bank, including corporate culture doodles, internal communication materials, and inspirational wall art."
               );
             }
+
+             // Add the canonical tag 
+            const canonicalTag = document.querySelector('link[rel="canonical"]');
+            if (canonicalTag) {
+            canonicalTag.setAttribute("href", "https://doodlodesigns.com/portfolio/citibank"); 
+           } 
         }, []);
 
     //   lottie Controls

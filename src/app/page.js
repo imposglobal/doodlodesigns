@@ -43,10 +43,12 @@ const Home = () => {
       keywordsTag.setAttribute("content", " ");
     }
 
-    const metaTitleTag = document.querySelector('meta[name="title"]');
-    if (metaTitleTag) {
-      metaTitleTag.setAttribute("content", "Design Agency in India & UK | Crafting Innovative Brands");
-    }
+     // Add the canonical tag 
+     const canonicalTag = document.querySelector('link[rel="canonical"]');
+     if (canonicalTag) {
+       canonicalTag.setAttribute("href", "https://doodlodesigns.com/"); 
+     } 
+
   }, []);
 
   useEffect(() => {
@@ -66,44 +68,44 @@ const Home = () => {
     };
   }, []);
   const imagesRow1 = [
-    "/home/nrow1img1.png",
-    "/home/row1img1.jpg",
-    "/home/row1img2.jpg",
-    "/home/row1img3.jpg",
-    "/home/nrow1last.png",
-    "/home/nrow1img1.png",
-    "/home/row1img1.jpg",
-    "/home/row1img2.jpg",
-    "/home/row1img3.jpg",
-    "/home/nrow1last.png",
+    "/home/nrow1img1.webp",
+    "/home/row1img1.webp",
+    "/home/row1img2.webp",
+    "/home/row1img3.webp",
+    "/home/nrow1last.webp",
+    "/home/nrow1img1.webp",
+    "/home/row1img1.webp",
+    "/home/row1img2.webp",
+    "/home/row1img3.webp",
+    "/home/nrow1last.webp",
   ];
 
   const imagesRow2 = [
-    "/home/nrow2img1.png",
-    "/home/row2img1.jpg",
-    "/home/row2img2.jpg",
-    "/home/row2img3.jpg",
+    "/home/nrow2img1.webp",
+    "/home/row2img1.webp",
+    "/home/row2img2.webp",
+    "/home/row2img3.webp",
     "/home/row2last.webp",
-    "/home/row2img1.jpg",
-    "/home/row2img2.jpg",
-    "/home/row2img3.jpg",
+    "/home/row2img1.webp",
+    "/home/row2img2.webp",
+    "/home/row2img3.webp",
     "/home/row2last.webp",
-    "/home/row2img1.jpg",
-    "/home/row2img2.jpg",
-    "/home/row2img3.jpg",
+    "/home/row2img1.webp",
+    "/home/row2img2.webp",
+    "/home/row2img3.webp",
   ];
 
   const imagesRow3 = [
-    "/home/nrow3img1.png",
-    "/home/nrow3img2.png",
-     "/home/row3img1.jpg",
-     "/home/row3img2.jpg",
-      "/home/row2img4.jpg",
-      "/home/nrow3img1.png",
-      "/home/nrow3img2.png",
-     "/home/row3img1.jpg",
-     "/home/row3img2.jpg",
-      "/home/row2img4.jpg",
+    "/home/nrow3img1.webp",
+    "/home/nrow3img2.webp",
+     "/home/row3img1.webp",
+     "/home/row3img2.webp",
+      "/home/row2img4.webp",
+      "/home/nrow3img1.webp",
+      "/home/nrow3img2.webp",
+     "/home/row3img1.webp",
+     "/home/row3img2.webp",
+      "/home/row2img4.webp",
    ];
 
 
@@ -614,7 +616,7 @@ const Home = () => {
           <div className={`${styles.stimg} ${styles.mobilev}`}>
             <Image data-aos="fade-up"
                   className={styles.ppimg}
-                  src="/home/storyimg.png"
+                  src="/home/storyimg.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -634,7 +636,7 @@ const Home = () => {
             <div className={`${styles.stimg} ${styles.desktopv}`}>
             <Image data-aos="fade-up"
                   className={styles.ppimg}
-                  src="/home/storyimg.png"
+                  src="/home/storyimg.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}

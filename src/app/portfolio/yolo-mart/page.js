@@ -23,8 +23,14 @@ const yolomart = () => {
        // Update the meta keywords dynamically
        const keywordsTag = document.querySelector('meta[name="keywords"]');
        if (keywordsTag) {
-       keywordsTag.setAttribute("content", "Branding Project");
+       keywordsTag.setAttribute("content", " ");
        }
+
+       // Add the canonical tag 
+       const canonicalTag = document.querySelector('link[rel="canonical"]');
+       if (canonicalTag) {
+       canonicalTag.setAttribute("href", "https://doodlodesigns.com/portfolio/yolo-mart"); 
+      } 
       }, []);
 
 

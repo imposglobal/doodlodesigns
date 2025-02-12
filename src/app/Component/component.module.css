@@ -750,5 +750,12 @@ line-height: 90px;
 {
   font-size: 52px;
 }
+.formcontainer{
+  padding: 60px 50px !important;
+}
+.formhead
+{
+  font-size: 25px;
+}
   
 }

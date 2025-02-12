@@ -27,7 +27,7 @@ const Carousel = () => {
       if (width < 768) {
         setSlidesToShow(1); // Mobile view, show 1 slide
       } else if (width >= 768 && width <= 1024) {
-        setSlidesToShow(2); // Tablet view, show 2 slides
+        setSlidesToShow(1); // Tablet view, show 2 slides
       } else {
         setSlidesToShow(4); // Desktop view, show 4 slides
       }

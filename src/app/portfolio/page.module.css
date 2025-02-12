@@ -107,7 +107,7 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
     text-transform: uppercase;
-    line-height: 60px;
+    line-height: 52px;
 }
 .titles {
     direction: ltr;
@@ -129,6 +129,8 @@
   font-family: 'Poppins', sans-serif;
   color: #fff;
   margin-right: -22vh;
+  -webkit-text-stroke-width: none;
+  -webkit-text-stroke-color: transparent;
 }
 
 .grid {
@@ -366,7 +368,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   text-transform: uppercase;
-  line-height: 35px;
+  line-height: 32px;
 }
 .texta {
   margin-top: -60px;

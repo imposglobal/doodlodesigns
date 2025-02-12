@@ -288,7 +288,7 @@ div#fimg11 {
    margin-top: -170px;
 }
 div#fimg1 .pover {
-  transform: translate(-150px, -158pt);
+  transform: translate(-150px, -165pt);
 }
 div#fimg4 .pover {
   transform: translate(-150px, -196pt);
@@ -297,7 +297,7 @@ div#fimg4 .pover {
   transform: translate(-150px, -131pt);
 }
 #fimg5 .pover{
-  transform: translate(-150px, -170pt);
+  transform: translate(-150px, -165pt);
 }
 #fimg7 .pover {
   transform: translate(-150px, -277px);
@@ -1448,7 +1448,7 @@ input[type="checkbox"] {
 {
   .card_inner
   {
-    height: 450px;
+    height: 360px;
     margin: 10px;
   }
   .client_review
@@ -1460,7 +1460,7 @@ input[type="checkbox"] {
 }
 
 #fimg4 {
-  margin-top: -140px;
+  margin-top: -135px;
 }
 #fimg7 {
   margin-top: -82px;
@@ -1493,7 +1493,7 @@ div#fimg2 .pover {
   transform: translate(-115px, -130pt);
 }
 div#fimg3 .pover {
-  transform: translate(-115px, -132pt);
+  transform: translate(-115px, -122pt);
 }
 #fimg6 .pover {
   transform: translate(-115px, -100pt);
@@ -1507,7 +1507,7 @@ div#fimg8 .pover {
 }
 #fimg5 .pover
 {
-  transform: translate(-115px, -1430pt);
+  transform: translate(-115px, -100pt);
 }
 .testimonial {
   padding: 20px 20px;
@@ -1537,8 +1537,18 @@ margin-top: -9px;
 {
   margin-bottom: 90px;
 }
+.carousel-container
+{
+  width: 70%;
+}
 
-
+select#country-code-select {
+  width: 60%;
+}
+video.videoint {
+  width: 85%;
+  
+}
 
 
 }

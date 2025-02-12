@@ -31,10 +31,10 @@ const Ourstory = () => {
         keywordsTag.setAttribute("content", " ");
         }
 
-        const metaTitleTag = document.querySelector('meta[name="title"]');
-        if (metaTitleTag) {
-        metaTitleTag.setAttribute("content", "Designing Services in India & UK | Web Design | UI/UX | Branding");
-       }
+        const canonicalTag = document.querySelector('link[rel="canonical"]');
+        if (canonicalTag) {
+        canonicalTag.setAttribute("href", "https://doodlodesigns.com/services"); 
+        } 
       }, []);
 
     useEffect(() =>{

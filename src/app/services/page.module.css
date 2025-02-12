@@ -43,6 +43,8 @@
     font-size: 53px;
     font-family: 'Poppins', sans-serif;
     color: #fff;
+    -webkit-text-stroke-width: none;
+    -webkit-text-stroke-color: transparent;
   }
   .stext_stroke_hover {
     display: inline-block;
@@ -53,7 +55,7 @@
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
     text-transform: uppercase;
-    line-height: 55px;
+    line-height: 50px;
   }
   .stext_stroke_hovers {
     display: inline-block;
@@ -77,6 +79,7 @@
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-weight: 700;
+    -webkit-text-stroke-color: transparent;
   }
    /* Create two equal columns that sits next to each other */
    .columnst1 {
@@ -299,6 +302,7 @@
     font-size: 58px;
     font-family: 'Poppins', sans-serif;
     color: #fff;
+    -webkit-text-stroke-color: transparent;
   }
   .prosec{
     padding: 50px 130px;
@@ -442,14 +446,13 @@
 .text_stroke_hover {
   display: inline-block;
   position: relative;
-  font-size: 23px;
+  font-size: 22px;
   font-family: 'Poppins', sans-serif;
   color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   text-transform: uppercase;
   line-height: 30px;
-  font-weight: 500;
   padding-bottom: 10px;
 }
 .stext_stroke_hover:hover{
@@ -594,7 +597,7 @@
   font-size: 26px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  font-weight: 500;
+  
 }
 .prosec{
   padding: 20px;
@@ -646,7 +649,7 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   text-transform: uppercase;
-  line-height: 30px;
+  line-height: 27px;
   margin-top: 20px;
   
 }
@@ -667,7 +670,6 @@
   font-size: 27px;
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  font-weight: 500;
 }
 .promtext {
   margin-top: 30px;
@@ -782,5 +784,26 @@
   .mainheadingdis
   {
     font-size: 50px;
+  }
+  .sbdesc4
+  {
+    margin-left: 40px;
+  }
+  .sbtitle
+  {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .addcol1 {
+    flex: 50%;
+   
+  }
+  .addcol2 {
+    flex: 50%;
+   
+  }
+  .adesc
+  {
+    padding-right: 40px;
   }
 }

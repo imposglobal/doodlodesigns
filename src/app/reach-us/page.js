@@ -37,10 +37,11 @@ const Reachus = () => {
       keywordsTag.setAttribute("content", " ");
     }
 
-    const metaTitleTag = document.querySelector('meta[name="title"]');
-    if (metaTitleTag) {
-      metaTitleTag.setAttribute("content", "Reach Us for Creative Solutions | Get Free Design Audit");
-    }
+    // Add the canonical tag 
+    const canonicalTag = document.querySelector('link[rel="canonical"]');
+    if (canonicalTag) {
+    canonicalTag.setAttribute("href", "https://doodlodesigns.com/reach-us"); 
+   } 
   }, []);
 
     const [hoverText, setHoverText] = useState('PROJECTS THAT MAKE A DIFFERENCE');
@@ -432,7 +433,7 @@ const handleChange = (e) => {
                                 
                                     <Image data-aos="fade-up"
                                     className={styles.reachimg1}
-                                    src="/home/reach/reach1.png"
+                                    src="/home/reach/reach1.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
@@ -442,7 +443,7 @@ const handleChange = (e) => {
                                 
                                     <Image data-aos="fade-up"
                                     className={styles.reachimg2}
-                                    src="/home/reach/reach2.png"
+                                    src="/home/reach/reach2.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
@@ -453,7 +454,7 @@ const handleChange = (e) => {
                             <div className={styles.rowimg}>
                             <Image data-aos="fade-up"
                                     className={styles.reachimg3}
-                                    src="/home/reach/reach3.jpg"
+                                    src="/home/reach/reach3.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
@@ -467,7 +468,7 @@ const handleChange = (e) => {
                                 
                                 <Image data-aos="fade-up"
                                 className={styles.reachimg}
-                                src="/home/reach/reachuslast.png"
+                                src="/home/reach/reachuslast.webp"
                                 alt="Next.js Logo"
                                 layout="responsive"
                                 width={100}

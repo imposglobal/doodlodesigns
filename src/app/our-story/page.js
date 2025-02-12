@@ -31,10 +31,12 @@ const OurStory = () => {
       keywordsTag.setAttribute("content", " ");
     }
 
-    const metaTitleTag = document.querySelector('meta[name="title"]');
-    if (metaTitleTag) {
-      metaTitleTag.setAttribute("content", "Leading Design Agency in India & UK | Doodlo Design Studio");
-    }
+     // Add the canonical tag 
+     const canonicalTag = document.querySelector('link[rel="canonical"]');
+     if (canonicalTag) {
+       canonicalTag.setAttribute("href", "https://doodlodesigns.com/our-story"); 
+     } 
+
   }, []);
 
 
@@ -206,7 +208,7 @@ const OurStory = () => {
             <div className={styles.stimg}>
             <Image
                   className={styles.ppimg}
-                  src="/home/storyimg.png"
+                  src="/home/storyimg.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -478,6 +480,86 @@ const OurStory = () => {
           <div className={styles.teaminner}>
           <Image data-aos="fade-up"
                   className={styles.ppimgss}
+                  src="/home/team/ninad.webp"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+            <div className={styles.descinner}>
+              <div className={`${styles.row} ${styles.mobrow}`}>
+                <div className={styles.teamcol1}>
+                <h4 className={styles.teamtitle} data-aos="fade-up">Ninad Sonawane</h4>
+                <p className={styles.ttitle} data-aos="fade-up">Digital Marketing Manager</p>
+                </div>
+                <div className={styles.teamcol2}>
+                <Image data-aos="fade-up"
+                  className={styles.linked}
+                  src="/home/linked.svg"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                </div>
+              </div>
+              <div className={styles.tdetail}>
+                <p className={styles.tdesc}>
+                Ninad Sonawane is a Digital Marketing Manager with a passion for driving brand growth through strategic online campaigns. Outside of work, he’s an avid lover of music, movies, and, of course, football. Whether he’s exploring the latest film or catching a game, Ninad enjoys balancing creativity with a competitive spirit. When it comes to food, he’s all about non-veg Chinese dishes, and he’s also a keen chess player—always up for a challenge, both online and offline.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+       {/* team Inner End */}
+       {/* team inner */}
+       <div className={styles.tcol}>
+          <div className={styles.teaminner}>
+          <Image data-aos="fade-up"
+                  className={styles.ppimgss}
+                  src="/home/team/akber.webp"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+            <div className={styles.descinner}>
+              <div className={`${styles.row} ${styles.mobrow}`}>
+                <div className={styles.teamcol1}>
+                <h4 className={styles.teamtitle} data-aos="fade-up">Akber Ali</h4>
+                <p className={styles.ttitle} data-aos="fade-up">Digital Marketer</p>
+                </div>
+                <div className={styles.teamcol2}>
+                <Image data-aos="fade-up"
+                  className={styles.linked}
+                  src="/home/linked.svg"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                </div>
+              </div>
+              <div className={styles.tdetail}>
+                <p className={styles.tdesc}>
+                Akber Ali is a Digital Marketer with a passion for crafting effective online campaigns. Outside of his professional life, he enjoys cricket, indulging in flavorful biryani, and exploring new ideas through podcasts. A shy and introspective person, Akber finds joy in movies featuring cars, where high-speed action and thrilling moments take center stage.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+       {/* team Inner End */}
+      </div>
+      <div className={styles.rows}>
+       {/* team inner */} 
+       <div className={styles.tcol}>
+          <div className={styles.teaminner}>
+          <Image data-aos="fade-up"
+                  className={styles.ppimgss}
                   src="/home/team/aastha.webp"
                   alt="Next.js Logo"
                   layout="responsive"
@@ -528,7 +610,7 @@ const OurStory = () => {
               <div className={`${styles.row} ${styles.mobrow}`}>
                 <div className={styles.teamcol1}>
                 <h4 className={styles.teamtitle} data-aos="fade-up">Krushna Phad</h4>
-                <p className={styles.ttitle} data-aos="fade-up">Jr. web developer</p>
+                <p className={styles.ttitle} data-aos="fade-up">Jr. web developer </p>
                 </div>
                 <div className={styles.teamcol2}>
                 <Image data-aos="fade-up"
@@ -545,47 +627,6 @@ const OurStory = () => {
               <div className={styles.tdetail}>
                 <p className={styles.tdesc}>
                 Wise owl of our team, bringing depth and insight to every project. A back end expert by day, he's also a talented musician, often found playing various instruments. As a natural teacher, he enjoys sharing his knowledge & guiding others. Off the clock, Krishna sharpens his strategic skills as a formidable chess player.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-       {/* team Inner End */}
-      </div>
-      <div className={styles.rows}>
-       {/* team inner */} 
-       <div className={styles.tcol}>
-          <div className={styles.teaminner}>
-          <Image data-aos="fade-up"
-                  className={styles.ppimgss}
-                  src="/home/team/vipul.webp"
-                  alt="Next.js Logo"
-                  layout="responsive"
-                  width={100}
-                  height={37}
-                  priority
-                />
-            <div className={styles.descinner}>
-              <div className={`${styles.row} ${styles.mobrow}`}>
-                <div className={styles.teamcol1}>
-                <h4 className={styles.teamtitle} data-aos="fade-up">Vipul Punaskar </h4>
-                <p className={styles.ttitle} data-aos="fade-up">Illustrator, Designer</p>
-                </div>
-                <div className={styles.teamcol2}>
-                <Image data-aos="fade-up"
-                  className={styles.linked}
-                  src="/home/linked.svg"
-                  alt="Next.js Logo"
-                  layout="responsive"
-                  width={100}
-                  height={37}
-                  priority
-                />
-                </div>
-              </div>
-              <div className={styles.tdetail}>
-                <p className={styles.tdesc}>
-                Our amazing illustrator & designer who doubles as the office DJ, filling our workspace with great vibes. An active & extroverted soul, he's always welcoming & ready to engage. Despite his love for naps, he's always active & amazing at his work. When he's not crafting stunning designs, you'll find him riding his bike or trekking through nature, constantly seeking new adventures.
                 </p>
               </div>
             </div>
@@ -611,45 +652,6 @@ const OurStory = () => {
                 <p className={styles.ttitle} data-aos="fade-up">Jr. full-stack Developer</p>
                 </div>
                 <div className={styles.teamcol2}>
-                <Image data-aos="fade-up"
-                  className={styles.linked}
-                  src="/home/linked.svg"
-                  alt="Next.js Logo"
-                  layout="responsive"
-                  width={100}
-                  height={37}
-                  priority
-                />
-                </div>
-              </div>
-              <div className={styles.tdetail}>
-                <p className={styles.tdesc}>
-                Our disciplined and focused junior fullstack developer. A dedicated chai lover with the longest hair in the office, Shaddha is known for her hard-working nature and attention to detail. Just be careful not to catch her on a bad day—she's easily annoyed!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-       {/* team Inner End */}
-       {/* team inner */}
-       <div className={styles.tcol}>
-          <div className={styles.teaminner}>
-          <Image data-aos="fade-up"
-                  className={styles.ppimgss}
-                  src="/home/team/yashasvi.webp"
-                  alt="Next.js Logo"
-                  layout="responsive"
-                  width={100}
-                  height={37}
-                  priority
-                />
-            <div className={styles.descinner}>
-              <div className={`${styles.row} ${styles.mobrow}`}>
-                <div className={styles.teamcol1}>
-                <h4 className={styles.teamtitle} data-aos="fade-up">Yashasvi Satodiya</h4>
-                <p className={styles.ttitle} data-aos="fade-up">Jr. Graphic Designer</p>
-                </div>
-                <div className={styles.teamcol2}>
                <Image data-aos="fade-up"
                   className={styles.linked}
                   src="/home/linked.svg"
@@ -663,7 +665,7 @@ const OurStory = () => {
               </div>
               <div className={styles.tdetail}>
                 <p data-aos="fade-up" className={styles.tdesc}>
-                Meet Yashsvi, or as we like to call her, Jiggu! This talented designer has a passion for animation and doodling, which she turns into delightful designs that brighten our day. Whether she's adding a splash of creativity or a touch of fun to our projects, Jiggu’s playful spirit and artistic flair make her a key part of our team.
+                Our disciplined and focused junior fullstack developer. A dedicated chai lover with the longest hair in the office, Shaddha is known for her hard-working nature and attention to detail. Just be careful not to catch her on a bad day—she's easily annoyed!
                 </p>
               </div>
             </div>
@@ -677,7 +679,7 @@ const OurStory = () => {
           <div className={styles.teaminner}>
           <Image data-aos="fade-up"
                   className={styles.ppimgss}
-                  src="/home/team/hanuman.webp"
+                  src="/home/team/rohan.webp"
                   alt="Next.js Logo"
                   layout="responsive"
                   width={100}
@@ -687,8 +689,8 @@ const OurStory = () => {
             <div className={styles.descinner}>
               <div className={`${styles.row} ${styles.mobrow}`}>
                 <div className={styles.teamcol1}>
-                <h4 className={styles.teamtitle} d>Hanuman T</h4>
-                <p className={styles.ttitle} d>Office Assistant</p>
+                <h4 className={styles.teamtitle} d>Rohan Polley</h4>
+                <p className={styles.ttitle} d>Visual Designer</p>
                 </div>
                 <div className={styles.teamcol2}>
                <Image d
@@ -704,14 +706,50 @@ const OurStory = () => {
               </div>
               <div className={styles.tdetail}>
                 <p d className={styles.tdesc}>
-                Our youngest office assistant, is a hands-on worker known for his honesty and curiosity to learn. Responsible and always eager to help, he's also a big fan of the office AC, making sure everyone stays cool and comfortable.
+                Rohan Polley, or “Polley” as we like to call him, is a skilled graphic designer with a unique blend of creativity and precision. With a deep passion for hip-hop dance, he channels his love for movement into his designs, bringing energy and dynamism to every project he touches. Outside of work, Rohan is an avid football fan. He combines his creative expertise with a positive attitude, always looking for new opportunities to innovate.
                 </p>
               </div>
             </div>
           </div>
         </div>
        {/* team Inner End */}
-       <div className={styles.tcol}></div>
+       <div className={styles.tcol}>
+       <div className={styles.teaminner}>
+          <Image data-aos="fade-up"
+                  className={styles.ppimgss}
+                  src="/home/team/hanuman.webp"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+            <div className={styles.descinner}>
+              <div className={`${styles.row} ${styles.mobrow}`}>
+                <div className={styles.teamcol1}>
+                <h4 className={styles.teamtitle} data-aos="fade-up">Hanuman T</h4>
+                <p className={styles.ttitle} data-aos="fade-up">Office Assistant</p>
+                </div>
+                <div className={styles.teamcol2}>
+               <Image data-aos="fade-up"
+                  className={styles.linked}
+                  src="/home/linked.svg"
+                  alt="Next.js Logo"
+                  layout="responsive"
+                  width={100}
+                  height={37}
+                  priority
+                />
+                </div>
+              </div>
+              <div className={styles.tdetail}>
+                <p data-aos="fade-up" className={styles.tdesc}>
+                Our youngest office assistant, is a hands-on worker known for his honesty and curiosity to learn. Responsible and always eager to help, he's also a big fan of the office AC, making sure everyone stays cool and comfortable.
+                </p>
+              </div>
+            </div>
+          </div>
+       </div>
        <div className={styles.tcol}></div>
 
       </div>

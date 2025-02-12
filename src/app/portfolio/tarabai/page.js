@@ -31,10 +31,11 @@ const Tarabai = () => {
           keywordsTag.setAttribute("content", "Tradition to Trendsetting Collaboration");
         }
 
-        const metaTitleTag = document.querySelector('meta[name="title"]');
-        if (metaTitleTag) {
-          metaTitleTag.setAttribute("content", "Tarabai | Packaging & Social Media | Doodlo Design Studio");
-        }
+        // Add the canonical tag 
+    const canonicalTag = document.querySelector('link[rel="canonical"]');
+    if (canonicalTag) {
+    canonicalTag.setAttribute("href", "https://doodlodesigns.com/portfolio/tarabai"); 
+   } 
       }, []);
 
     //   lottie Controls

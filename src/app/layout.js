@@ -15,7 +15,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>   
-      <meta name="title" content=" " />
+      <link rel="canonical" href=" "/>
+      <meta name='robots' content="index, follow"/>
       {/* <!-- Google Tag Manager --> */}
       <script 
           dangerouslySetInnerHTML={{

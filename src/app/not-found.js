@@ -46,6 +46,33 @@ const NotFound = () => {
         '/websites-that-tell-your-story-combining-design-and-function/': '/blog/websites-that-tell-your-story-combining-design-and-function',
         '/websites-that-tell-your-story-combining-design-and-function': '/blog/websites-that-tell-your-story-combining-design-and-function',
 
+        '/bringing-concepts-to-life-the-art-of-illustration-in-design-studios/': '/blog/from-idea-to-image-the-role-of-illustration-in-design-studios',
+        '/bringing-concepts-to-life-the-art-of-illustration-in-design-studios': '/blog/from-idea-to-image-the-role-of-illustration-in-design-studios',
+
+        '/importance-of-branding-for-small-businesses/': '/blog/what-is-branding-how-to-take-advantage-of-the-potential-branding',
+        '/importance-of-branding-for-small-businesses': '/blog/what-is-branding-how-to-take-advantage-of-the-potential-branding',
+
+        '/flash-card-illustration-and-packaging/': '/portfolio/flash-card-illustration-and-packaging',
+        '/flash-card-illustration-and-packaging': '/portfolio/flash-card-illustration-and-packaging',
+
+        '/the-top-10-google-fonts-for-websites/feed/': '/blog/the-top-10-google-fonts-for-websites',
+        '/the-top-10-google-fonts-for-websites/feed': '/blog/the-top-10-google-fonts-for-websites',
+
+        '/calls-to-action-the-game-changing-element-of-high-performing-campaigns/': '/blog',
+        '/calls-to-action-the-game-changing-element-of-high-performing-campaigns': '/blog',
+
+        '/portfolio/privacy-policy/': '/portfolio',
+        '/portfolio/privacy-policy': '/portfolio',
+
+        '/how-to-design-effective-packaging-for-your-brand/feed/': '/blog/how-to-design-effective-packaging-for-your-brand',
+        '/how-to-design-effective-packaging-for-your-brand/feed': '/blog/how-to-design-effective-packaging-for-your-brand',
+
+        '/a-story-of-successful-design-project-the-importance-of-a-strong-client-and-designer-relationship/feed/': '/our-story',
+        '/a-story-of-successful-design-project-the-importance-of-a-strong-client-and-designer-relationship/feed': '/our-story',
+
+        '/author/admin/': '/our-story',
+        '/author/admin': '/our-story',
+
         '/lead-generation/': '/',
         '/lead-generation': '/',
         
