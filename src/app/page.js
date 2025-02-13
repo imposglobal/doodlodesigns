@@ -302,7 +302,8 @@ const Home = () => {
         <p  className={styles.home_hero_desc}>Of course we’re into Branding, Web Design, Packaging,  Illustrations, Digital Marketing & what not!</p>
       </div>
       <div data-aos="fade-up">
-      <Link className="boton_elegante" href="/services">
+      {/* <Link className="boton_elegante" href="/services"> */}
+      <Link className="boton_elegante" href="/reach-us">
       Schedule a Call
       </Link>
       <div data-aos="fade-up" className={styles.mobilev}>

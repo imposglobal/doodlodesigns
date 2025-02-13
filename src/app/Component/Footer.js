@@ -51,7 +51,7 @@ const Footer = () => {
                             <p className={styles.plink}><Link href='/services' className={styles.flinks}>Services</Link></p>
                             <p className={styles.plink}><Link href='/portfolio' className={styles.flinks}>Portfolio</Link></p>
                             <p className={styles.plink}><Link href='/our-story' className={styles.flinks}>Our Story</Link></p>
-                            <p className={styles.plink}><a className={styles.flinks} href='#'>Career</a></p>
+                            {/* <p className={styles.plink}><a className={styles.flinks} href='#'>Career</a></p> */}
                             <p className={styles.plink}><a className={styles.flinks} href='/blog'>Blog</a></p>
                             <p className={styles.plink}><Link className={styles.flinks} href='https://doodlocomics.com'>Shop</Link></p>
                             <p className={styles.plink}><Link href='/faqs' className={styles.flinks}>FAQ</Link></p>
@@ -162,7 +162,7 @@ const Footer = () => {
                         {/* <div className={styles.footinn}> */}
                         <div className={styles.footerp}>
                         
-                            <span className={styles.gtintitle}>@2024 Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</span>
+                            <span className={styles.gtintitle}>@2025 Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</span>
                         </div>
                     </div>
                 </div>
@@ -329,7 +329,7 @@ const Footer = () => {
                     </div>
                     <div className={styles.footercol2}>
                         <div className={styles.footinn}>
-                            <span className={styles.gtintitle}>@2024 Doodlo | All Rights Reserved |<br/> Terms of Use | Privacy Policy</span>
+                            <span className={styles.gtintitle}>@2025 Doodlo | All Rights Reserved |<br/> Terms of Use | Privacy Policy</span>
                         </div>
                     </div>
                 </div>
