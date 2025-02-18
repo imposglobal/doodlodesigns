@@ -79,6 +79,8 @@ useEffect(() => {
     { id: 'publication', label: 'Publication' },
     { id: 'social-media', label: 'Social Media' },
     { id: 'ecommerce', label: 'Ecommerce' },
+    { id: 'digital-marketing', label: 'Digital Marketing' },
+    { id: 'others', label: 'Others' },
   ];
 
    // Handle changes to select input
