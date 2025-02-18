@@ -749,6 +749,12 @@ button.slick-arrow.slick-next {
   float: right;
   z-index: 300;
 }
+.privacy_logosec__zJJjJ .menuicon {
+  position: relative;
+  top: 0;
+  float: right;
+  z-index: 300;
+}
 .page_column2__qMozd .menuicon .line {
   transition: transform 0.3s ease, opacity 0.3s ease, stroke 0.3s ease;
   fill: #000;
