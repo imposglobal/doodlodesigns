@@ -56,7 +56,7 @@ const BackToTopButton = () => {
 const styles = {
   stickyButton: {
     position: 'fixed',
-    bottom: '20px',
+    bottom: '10px',
     right: '20px',
     borderRadius: '50%',
     border: 'none',

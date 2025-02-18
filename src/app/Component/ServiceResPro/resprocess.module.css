@@ -1,0 +1,36 @@
+.slide_content {
+    text-align: center;
+    padding: 40px 20px 100px 20px;
+  }
+  
+  .slider_image {
+    margin: 0 auto;
+  }
+  
+  .slick_slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slick_dots li button:before {
+    color: #fff; /* Change dot color */
+  }
+  .slideser{
+    
+  }
+  .optitle{
+    margin-top: 15px;
+    color: #C9C9C9;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'poppins';
+  }
+  .opdesc{
+    color: #F6FA5E;
+    font-size: 14px;
+    font-weight: 300 !important;
+    font-family: 'poppins';
+    margin: 5px 20px;
+  }
+  

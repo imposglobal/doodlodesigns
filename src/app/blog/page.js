@@ -47,12 +47,28 @@ const Blog = () => {
     setInactive(!inactive);
   };
 
+  // useEffect(() => {
+  //   axios
+  //     .get("https://doodlodesign.com/wp-json/wp/v2/posts?_embed&per_page=100")
+  //     .then((response) => {
+  //       // Reverse the data array to show posts in reverse order
+  //       const reversedData = response.data.reverse();
+  //       setData(reversedData);
+  //       setLoading(false);
+  //     })
+  //     .catch((error) => {
+  //       console.error("There was an error fetching the data:", error);
+  //       setLoading(false);
+  //     });
+  // }, []);
+
+
   useEffect(() => {
     axios
       .get("https://doodlodesign.com/wp-json/wp/v2/posts?_embed&per_page=100")
       .then((response) => {
         // Reverse the data array to show posts in reverse order
-        const reversedData = response.data.reverse();
+        const reversedData = response.data;
         setData(reversedData);
         setLoading(false);
       })
@@ -62,15 +78,7 @@ const Blog = () => {
       });
   }, []);
 
-  // const getCategoryFromClassList = (classList) => {
-  //   if (Array.isArray(classList)) {
-  //     const categoryClass = classList.find((className) =>
-  //       className.startsWith("category-")
-  //     );
-  //     return categoryClass ? categoryClass.replace("category-", "") : "No Category";
-  //   }
-  //   return "No Category";
-  // };
+  
 
 
   const getCategoryFromClassList = (classList) => {

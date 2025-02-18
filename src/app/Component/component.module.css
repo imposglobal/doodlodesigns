@@ -225,6 +225,16 @@
     font-family: 'poppins';
     font-weight: 300 !important;
   }
+  .applyLink {
+    color: #000000; /* Change to your preferred color */
+    text-decoration: none;
+    font-weight: 300 !important;
+  }
+  
+  .applyLink:hover {
+    text-decoration: underline;
+  }
+  
   .footerrowss{
     margin-top: 50px;
   }

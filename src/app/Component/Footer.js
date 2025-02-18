@@ -88,7 +88,11 @@ const Footer = () => {
                     <p className={styles.updatep}>contact@doodlodesigns.com</p>
 
                     <p className={styles.updatet}>Job Updates:</p>
-                    <p className={styles.updatep}>careers@doodlodesigns.com</p>
+                    <p className={styles.updatep}>Current openings - 
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScfFywoWJFwg6R2Q82LMgqk2iZ7iiYqWMAePNCsQFq9bJP_Dg/viewform" target="_blank" rel="noopener noreferrer" className={styles.applyLink}>
+                    <i> <b>Click here</b> </i> </a> to apply
+                    
+                    </p>
                     </div>
                     <div className={styles.footercol2}>
                         {/* <div className={styles.footinn}> */}
@@ -162,7 +166,7 @@ const Footer = () => {
                         {/* <div className={styles.footinn}> */}
                         <div className={styles.footerp}>
                         
-                            <span className={styles.gtintitle}>@2025 Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</span>
+                            <span className={styles.gtintitle}>@{new Date().getFullYear()} Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</span>
                         </div>
                     </div>
                 </div>

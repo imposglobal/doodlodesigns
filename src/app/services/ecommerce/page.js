@@ -1,21 +1,34 @@
 "use client";
 import Link from "next/link"
 import Image from "next/image";
-import styles from "./branding.module.css";
+import styles from "./ecommerce.module.css";
 import Logobw from "../../Images/logobw";
 import Menu from "../../Component/Menu";
+import AccordionOne from "../../Component/Accordions/AccordianOne";
 import React, { useEffect, useRef,useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import useFetchCountries from "../../Component/useFetchCountries";
+import SerProcess from "../../Component/ServiceProcess/SerProcess";
+import ResProcess from "../../Component/ServiceResPro/ResProcess";
+import SerResLogo from "../../Component/SerResLogo";
 import WorkAnimationlr from "../../Component/WorkAnimatedLR";
-
+import SerAccordian from "../../Component/ServiceAccordians/SerAccordian";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const branding = () => {
+const ecommerce = () => {
  
 
+  const [hoverText, setHoverText] = useState('PROJECTS THAT MAKE A DIFFERENCE');
+
+  const handleMouseEnter = (text) => {
+    setHoverText(text);
+  };
+
+  const handleMouseLeave = () => {
+    setHoverText('PROJECTS THAT MAKE A DIFFERENCE');
+  };
   const [inactive, setInactive] = useState(true); // Set initial state to true
 
   const toggleClass = () => {
@@ -87,6 +100,8 @@ useEffect(() => {
     { id: 'publication', label: 'Publication' },
     { id: 'social-media', label: 'Social Media' },
     { id: 'ecommerce', label: 'Ecommerce' },
+    { id: 'digital-marketing', label: 'Digital Marketing' },
+    { id: 'others', label: 'Others' },
   ];
 
   // Handle changes to select input
@@ -176,9 +191,6 @@ const handleChange = (e) => {
   }, [selectedOptions]);
 
     
-  
- 
-    
     // image scroll 
     const [rotation, setRotation] = useState(0);
 
@@ -195,12 +207,9 @@ const handleChange = (e) => {
     };
   }, []);
 
-  // comprehensive solutions box toggle 
-  const [openBox, setOpenBox] = useState(null); // this line Tracks which box is open
 
-  const toggleBox = (boxNumber) => {
-    setOpenBox(openBox === boxNumber ? null : boxNumber); // toggleBox Closes if already open, else open the selected box
-  };
+  // comprehensive solutions box toggle 
+   
 
     return(
         <section>
@@ -321,10 +330,10 @@ const handleChange = (e) => {
                     <div>
                 </div>
                 <div className={styles.container} data-aos="fade-up">
-                  <h1 className={styles.text}>
-                    LET’S BUILD Your <span className={styles.rotatingText}></span>
-                  </h1>
-                </div>
+      <h1 className={styles.text}>
+        LET’S BUILD Your <span className={styles.rotatingText}></span>
+      </h1>
+    </div>
       
                     <div className={styles.row}>
                         <div className={styles.innercolumn1}>
@@ -540,12 +549,22 @@ const handleChange = (e) => {
                 </div>
             </div>
         </div>
-        
        
+      
+   {/* have to remove this section  */}
 
-{/******************************/}
-  
-<div className={styles.brandsec}>
+    <div className={`${styles.services} ${styles.srv_scroller}`}>
+    <div className={styles.service_hight}>
+    <h2 className={styles.mainheading}>OUR <br></br> <span className={styles.sec_heading}>SERVICES</span></h2>
+    <div className="accordion">
+    <AccordionOne />  
+    </div>
+    </div>
+   </div>
+
+ {/* have to remove this section  */}
+
+ <div className={styles.brandsec}>
   <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Branding <br></br><span className={styles.stext_title}>Experience</span></h2>
 
   <h4 className={styles.shead}>Strategic Branding for Every Business</h4>
@@ -571,218 +590,17 @@ const handleChange = (e) => {
   </div>
 
 
-{/******************************/}   
+  {/*************** comprehension solutions ***************/}
+
+  <div className={styles.compsec}>
+   <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>comprehensive solutions <br></br><span className={styles.stext_title}>full-scope branding services</span></h2>
+   </div>
+
+   <SerAccordian/> 
 
 
-{/*************** comprehension solutions ***************/}
+  {/* our work section  start*/}
 
-<div className={styles.compsec}>
-  <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>comprehensive solutions <br></br><span className={styles.stext_title}>full-scope branding services</span></h2>
-</div>
-
-<div className={styles.comprow}>
-      {/********************* Box 1 ****************************/}
-      <div className={styles.row1} onClick={() => toggleBox(1)}>
-        <div className={styles.innerWrapper}>
-          <div className={styles.header}>
-            <div className={styles.textContent}>
-              <h2 className={`${styles.brandtitle} ${openBox === 1 ? styles.openHeader : ''}`}>
-                Brand Development
-              </h2>
-              {openBox === 1 && (
-                <div className={styles.sectionContent}>
-                  <div className={styles.header}>
-                  <div className={styles.textContent}>
-                    <p className={styles.description}>
-                      Starting from scratch? Craft a robust, one-of-a-kind foundation that ensures engagement and resonance across all platforms and audiences.
-                    </p>
-                    </div>
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src="/home/services/branding/comprehension.png"
-                      alt="Brand Development"
-                      width={400}
-                      height={200}
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/********************* Box 2 ****************************/}
-      <div className={styles.row2} onClick={() => toggleBox(2)}>
-        <div className={styles.innerWrapper}>
-          <div className={styles.header}>
-            <div className={styles.textContent}>
-              <h2 className={`${styles.brandtitle} ${openBox === 2 ? styles.openHeader : ''}`}>
-                Brand Design
-              </h2>
-              {openBox === 2 && (
-                <div className={styles.sectionContent}>
-                  <div className={styles.header}>
-                  <div className={styles.textContent}>
-                  <p className={styles.description}>
-                   From fundamentals like logos, colors, and typography to templates and custom image libraries, get the tools you need to get to market faster.                  </p>
-                  </div>
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src="/home/services/branding/branddesign.png"
-                      alt="Brand Design"
-                      width={400}
-                      height={200}
-                      className="object-cover"
-                    />
-                  </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/********************* Box 3 ****************************/}
-      <div className={styles.row2} onClick={() => toggleBox(3)}>
-        <div className={styles.innerWrapper}>
-          <div className={styles.header}>
-            <div className={styles.textContent}>
-              <h2 className={`${styles.brandtitle} ${openBox === 3 ? styles.openHeader : ''}`}>
-                Logo Design
-              </h2>
-              {openBox === 3 && (
-                <div className={styles.sectionContent}>
-                  <div className={styles.header}>
-                  <div className={styles.textContent}>
-                  <p className={styles.description}>
-                  Need help updating existing logos or creating new ones? Create a range of options, including static and animated logos suitable for a range of platforms.
-                  </p>
-                  </div>
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src="/home/services/branding/logo_design.png"
-                      alt="Logo Design"
-                      width={400}
-                      height={200}
-                      className="object-cover"
-                    />
-                  </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/********************* Box 4 ****************************/}
-      <div className={styles.row2} onClick={() => toggleBox(4)}>
-        <div className={styles.innerWrapper}>
-          <div className={styles.header}>
-            <div className={styles.textContent}>
-              <h2 className={`${styles.brandtitle} ${openBox === 4 ? styles.openHeader : ''}`}>
-                Brand Guidelines
-              </h2>
-              {openBox === 4 && (
-                <div className={styles.sectionContent}>
-                  <div className={styles.header}>
-                  <div className={styles.textContent}>
-                  <p className={styles.description}>
-                  Ensure brand consistency, capture your distinct voice and tone, and gather ad templates, logos, images, and iconography all in one place for ease of use.
-                  </p>
-                  </div>
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src="/home/services/branding/brand_guidelines.png"
-                      alt="Brand Guidelines"
-                      width={400}
-                      height={200}
-                      className="object-cover"
-                    />
-                  </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/********************* Box 5 ****************************/}
-      <div className={styles.row2} onClick={() => toggleBox(5)}>
-        <div className={styles.innerWrapper}>
-          <div className={styles.header}>
-            <div className={styles.textContent}>
-              <h2 className={`${styles.brandtitle} ${openBox === 5 ? styles.openHeader : ''}`}>
-                Brand Story Development
-              </h2>
-              {openBox === 5 && (
-                <div className={styles.sectionContent}>
-                  <div className={styles.header}>
-                  <div className={styles.textContent}>
-                  <p className={styles.description}>
-                  Your brand has a feel as well as a look. Develop a narrative that speaks to this essence and can be expressed time and again.
-                  </p>
-                  </div>
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src="/home/services/branding/brand_story.png"
-                      alt="Brand Story Development"
-                      width={400}
-                      height={200}
-                      className="object-cover"
-                    />
-                  </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/********************* Box 6 ****************************/}
-      <div className={styles.row6} onClick={() => toggleBox(6)}>
-        <div className={styles.innerWrapper}>
-          <div className={styles.header}>
-            <div className={styles.textContent}>
-              <h2 className={`${styles.brandtitle} ${openBox === 6 ? styles.openHeader : ''}`}>
-                Rebranding Services
-              </h2>
-              {openBox === 6 && (
-                <div className={styles.sectionContent}>
-                  <div className={styles.header}>
-                  <div className={styles.textContent}>
-                  <p className={styles.description}>
-                  From a refresh to a full rebrand, revitalize your brand seamlessly with a global network of branding talent that brings diverse perspectives and strategies.
-                  </p>
-                  </div>
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src="/home/services/branding/rebranding.png"
-                      alt="Rebranding Services"
-                      width={400}
-                      height={200}
-                      className="object-cover"
-                    />
-                  </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      
-    </div>
-       
-{/* our work section  start*/}
 
 <div className={styles.worksec}>
   <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>our <br></br><span className={styles.stext_title}>work</span></h2>
@@ -795,45 +613,51 @@ const handleChange = (e) => {
         <Image
           src="/home/services/branding/gif1.gif"
           alt="Brand Development"
-          width={270}
-          height={200}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
       <div className={styles.workimg}>
         <Image
           src="/home/services/branding/gif2.gif"
           alt="Logo Design"
-          width={270}
-          height={200}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
       <div className={styles.workimg}>
         <Image
           src="/home/services/branding/gif3.gif"
           alt="Brand Guidelines"
-          width={270}
-          height={200}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
       <div className={styles.workimg}>
         <Image
           src="/home/services/branding/gif4.gif"
           alt="Brand Story Development"
-          width={270}
-          height={200}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
 
     </div>
-    <div>
+    <div className={styles.btncenter}>
       <button className={styles.explorebtn}>Explore More</button>
     </div>
-
 {/* our work section ends */}
 
-
 {/* logos section start */}
-  
+  <div className={styles.desktopv}>
 <div className={styles.logoimages}>
       <div className={styles.logoimg}>
         <Image
@@ -847,41 +671,68 @@ const handleChange = (e) => {
         <Image
           src="/home/services/branding/yolomart.png"
           alt="Logo Design"
-          width={175}
-          height={45}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
       <div className={styles.logoimg}>
         <Image
           src="/home/services/branding/med.png"
           alt="Brand Guidelines"
-          width={215}
-          height={40}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
       <div className={styles.logoimg}>
         <Image
           src="/home/services/branding/portage.png"
           alt="Brand Story Development"
-          width={175}
-          height={40}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
       <div className={styles.logoimg}>
         <Image
           src="/home/services/branding/mahatee.png"
           alt="Brand Story Development"
-          width={175}
-          height={50}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
 
     </div>
+    </div>
+    {/* responsive */}
+
+    <div className={styles.mobilev}>
+        <SerResLogo />
+        </div>
 
 {/* logos section end */}
 
+  {/* Process */}
+        <div className={styles.prosec}>
+        <div className={styles.desktopv}>
+        <SerProcess />
+        </div>
 
- {/* lets discuss section starts */}
+        <div className={styles.mobilev}>
+        <ResProcess />
+        </div>
+       
+          </div>
+         {/* Process */}
+
+
+          {/* lets discuss section starts */}
 
  <div className={styles.desktopv}>
        {/* Lets Discuss section */}
@@ -928,15 +779,9 @@ const handleChange = (e) => {
       </div>
       {/* Lets Discuss section End */}
 
- {/* lets discuss section ends */}
-
-   
-   
         </section>
        
     );
 };
 
-export default branding;
-
-
+export default ecommerce;
