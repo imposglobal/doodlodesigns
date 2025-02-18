@@ -3,8 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 80px;
-    padding: 40px 60px 120px 60px;
+    padding: 100px 200px 100px 200px;
   }
   
   .pptitle {

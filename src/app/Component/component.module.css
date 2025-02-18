@@ -251,7 +251,7 @@
   }
   .subswrap input{
     background: transparent;
-    padding: 12px 60px;
+    padding: 12px 15px;
     font-family: 'poppins';
     width: 45vh;
     border-radius: 10px;
@@ -350,6 +350,14 @@
   .dropdown-content label {
     padding: 8px;
     cursor: pointer;
+  }
+  .termslink
+  {
+    font-size: 14px;
+    font-family: 'poppins';
+    font-weight: 300 !important;
+    text-decoration: none;
+    color: #000;
   }
   
   @media only screen and (max-width: 600px) {

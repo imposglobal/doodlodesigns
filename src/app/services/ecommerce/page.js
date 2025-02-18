@@ -5,7 +5,7 @@ import styles from "./ecommerce.module.css";
 import Logobw from "../../Images/logobw";
 import Menu from "../../Component/Menu";
 import AccordionOne from "../../Component/Accordions/AccordianOne";
-import React, { useEffect, useRef,useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import useFetchCountries from "../../Component/useFetchCountries";

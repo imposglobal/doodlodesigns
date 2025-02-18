@@ -84,7 +84,7 @@ const Footer = () => {
                 </div>
                 <div className={`${styles.footerrow} ${styles.footerrowss}`}>
                     <div className={styles.footercol1}>
-                    <p className={`${styles.updatet} ${styles.mtop}`}>Business Queries:</p>
+                    <p className={`${styles.updatet} ${styles.mtop}`}>Business Enquiries:</p>
                     <p className={styles.updatep}>contact@doodlodesigns.com</p>
 
                     <p className={styles.updatet}>Job Updates:</p>
@@ -166,7 +166,7 @@ const Footer = () => {
                         {/* <div className={styles.footinn}> */}
                         <div className={styles.footerp}>
                         
-                            <span className={styles.gtintitle}>@{new Date().getFullYear()} Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</span>
+                            <span className={styles.gtintitle}>@{new Date().getFullYear()} Doodlo | All Rights Reserved | <Link href="/terms-of-use" className={styles.termslink}>Terms of Use</Link> | <Link href="/privacy-policy" className={styles.termslink}>Privacy Policy</Link></span>
                         </div>
                     </div>
                 </div>
@@ -224,11 +224,18 @@ const Footer = () => {
                          </div>
                           
                          <div className={`${styles.footercol1}`}>
-                    <p className={styles.updatet}>Business Queries:</p>
+                    <p className={styles.updatet}>Business Enquiries:</p>
                     <p className={styles.updatep}>contact@doodlodesigns.com</p>
 
-                    <p className={styles.updatet}>Job Updates:</p>
-                    <p className={styles.updatep}>careers@doodlodesigns.com</p>
+                    {/* <p className={styles.updatet}>Job Updates:</p>
+                    <p className={styles.updatep}>careers@doodlodesigns.com</p> */}
+
+<p className={styles.updatet}>Job Updates:</p>
+                    <p className={styles.updatep}>Current openings - 
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScfFywoWJFwg6R2Q82LMgqk2iZ7iiYqWMAePNCsQFq9bJP_Dg/viewform" target="_blank" rel="noopener noreferrer" className={styles.applyLink}>
+                    <i> <b>Click here</b> </i> </a> to apply
+                    
+                    </p>
                     </div>
 
                    
@@ -243,7 +250,6 @@ const Footer = () => {
                             <p className={styles.plink}><Link href='/services' className={styles.flinks}>Services</Link></p>
                             <p className={styles.plink}><Link href='/portfolio' className={styles.flinks}>Portfolio</Link></p>
                             <p className={styles.plink}><Link href='/our-story' className={styles.flinks}>Our Story</Link></p>
-                            <p className={styles.plink}><a className={styles.flinks} href='#'>Career</a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='/blog'>Blog</a></p>
                             <p className={styles.plink}><Link className={styles.flinks} href='https://doodlocomics.com'>Shop</Link></p>
                             <p className={styles.plink}><Link href='/faqs' className={styles.flinks}>FAQ</Link></p>
@@ -333,7 +339,7 @@ const Footer = () => {
                     </div>
                     <div className={styles.footercol2}>
                         <div className={styles.footinn}>
-                            <span className={styles.gtintitle}>@2025 Doodlo | All Rights Reserved |<br/> Terms of Use | Privacy Policy</span>
+                            <span className={styles.gtintitle}>@2025 Doodlo | All Rights Reserved |<br/> <Link href="/terms-of-use" className={styles.termslink}>Terms of Use</Link> | <Link href="/privacy-policy" className={styles.termslink}>Privacy Policy</Link></span>
                         </div>
                     </div>
                 </div>

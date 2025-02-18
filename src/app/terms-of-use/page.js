@@ -1,13 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import styles from "./privacy.module.css";
+import styles from "./terms.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/app/Images/logo";
 import Menu from "@/app/Component/Menu";
 
-const privacy = () => {
+const terms = () => {
 
     const [inactive, setInactive] = useState(true);
     const toggleClass = () => {
@@ -113,55 +113,63 @@ const privacy = () => {
       </div>
 
       <div className={styles.mainsec}>
-        <h1 className={styles.mainhead}>Privacy Policy</h1>
+        <h1 className={styles.mainhead}>Terms of Use</h1>
 
-        <p className={styles.desc}>Doodlo Design Studio is committed to protecting your privacy. This privacy policy describes how we collect, use, and disclose information about you when you use our website.</p>
+        <p className={styles.desc}>Welcome to Doodlo Design Studio’s website. By accessing or using our website, you agree to comply with the following terms of use. If you do not agree with these terms, please do not use our website.</p>
 
         <ol className={styles.ol}>
 
-        <li className={styles.litext}><b>Information We Collect: </b>We may collect personal information from you when you use our website, including but not limited to your name, email address, phone number, and mailing address. We may also collect information about your device, browser, and internet connection.
+        <li className={styles.litext}><b>Intellectual Property Rights: </b>All content on our website, including but not limited to text, images, graphics, logos, and software, is the property of Doodlo Design Studio or its content providers and is protected by intellectual property laws. You may not reproduce, modify, distribute, or display any content from our website without our prior written consent.
         </li>
 
 
-            <li className={styles.litext}><b>How We Use Your Information: </b>We use your personal information to provide you with the services you have requested, to communicate with you about our services, and to improve our website. We may also use your information to send you marketing communications about our services.
-            </li>
-
-            <li className={styles.litext}><b>Sharing Your Information: </b> We do not sell, rent, or trade your personal information to third parties. We may share your information with our service providers who assist us in providing our services. We may also share your information to comply with legal obligations or in connection with a merger, acquisition, or sale of our business.
+            <li className={styles.litext}><b>Use of Website: </b>You may only use our website for lawful purposes and in a manner that does not infringe on the rights of others. You may not use our website to transmit any malicious or harmful code, conduct fraudulent activities, or engage in any activities that could damage our website or its users.
 
             </li>
 
-            <li className={styles.litext}><b>Cookies: </b> We use cookies and similar technologies to collect information about your use of our website, such as your browsing history and preferences. You can disable cookies in your browser settings, but this may limit your ability to use some features of our website.
+            <li className={styles.litext}><b>User Content: </b> Any content that you upload or submit to our website, including but not limited to comments, reviews, and testimonials, is your responsibility. You grant Doodlo Design Studio a non-exclusive, royalty-free, perpetual, and irrevocable license to use, reproduce, modify, distribute, and display your content on our website and in our marketing materials.
+
+</li>
+
+            <li className={styles.litext}><b> Links to Third-Party Websites: </b> Our website may contain links to third-party websites that are not under our control. We are not responsible for the content or privacy practices of these websites and provide these links for your convenience only.
 
             </li>
 
-
-            <li className={styles.litext}><b>Third-Party Links:</b> Our website may contain links to third-party websites that are not under our control. We are not responsible for the content or privacy practices of these websites and provide these links for your convenience only.
-
-            </li>
-
-
-            <li className={styles.litext}><b>Security:</b> We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or electronic storage is completely secure.
+            <li className={styles.litext}><b>Disclaimer of Warranties: </b> We make no representations or warranties about the accuracy, completeness, reliability, or suitability of the content on our website. We provide our website "as is" and without any warranty or condition, express or implied.
 
             </li>
 
 
-            <li className={styles.litext}><b>Children's Privacy:</b> Our website is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us immediately.
+            <li className={styles.litext}><b>Limitation of Liability:</b> We will not be liable for any damages arising out of or in connection with the use or inability to use our website, including but not limited to direct, indirect, incidental, punitive, and consequential damages.
+
 
             </li>
 
 
-            <li className={styles.litext}><b>Your Choices:</b> You may opt-out of receiving marketing communications from us at any time by following the instructions in the communication. You may also request access to, correction of, or deletion of your personal information by contacting us at <b>contact@doodlodesigns.com</b>
+            <li className={styles.litext}><b>Indemnification:</b> You agree to indemnify and hold Doodlo Design Studio, its employees, officers, directors, agents, and affiliates harmless from any claims, damages, and expenses, including attorneys' fees, arising out of or in connection with your use of our website or violation of these terms of use.
+
 
             </li>
 
 
-            <li className={styles.litext}><b>Changes to Privacy Policy:</b> We may update or modify this privacy policy at any time without prior notice. Your continued use of our website after any changes to this privacy policy constitutes your acceptance of the modified policy.
+            <li className={styles.litext}><b>Changes to Terms of Use: </b> We may update or modify these terms of use at any time without prior notice. Your continued use of our website after any changes to these terms of use constitutes your acceptance of the modified terms.
 
             </li>
 
 
-            <li className={styles.litext}><b>Governing Law:</b> This privacy policy shall be governed by and construed in accordance with the laws of United of Kingdom & India, without giving effect to any principles of conflicts of law.
+            <li className={styles.litext}><b>Governing Law:</b> These terms of use shall be governed by and construed in accordance with the laws of United of Kingdom & India, without giving effect to any principles of conflicts of law.
+
             </li>
+
+
+            <li className={styles.litext}><b>Entire Agreement: </b> These terms of use constitute the entire agreement between you and Doodlo Design Studio regarding your use of our website.
+
+            </li>
+
+
+            
+
+
         </ol>
 
         <p className={styles.endtext}>If you have any questions or concerns about these terms of use, please contact us at <b>contact@doodlodesigns.com</b></p>
@@ -170,4 +178,4 @@ const privacy = () => {
   )
 }
 
-export default privacy
+export default terms
