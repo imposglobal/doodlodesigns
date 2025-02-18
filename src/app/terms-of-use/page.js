@@ -165,11 +165,6 @@ const terms = () => {
             <li className={styles.litext}><b>Entire Agreement: </b> These terms of use constitute the entire agreement between you and Doodlo Design Studio regarding your use of our website.
 
             </li>
-
-
-            
-
-
         </ol>
 
         <p className={styles.endtext}>If you have any questions or concerns about these terms of use, please contact us at <b>contact@doodlodesigns.com</b></p>
