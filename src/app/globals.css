@@ -1067,6 +1067,16 @@ height: 400px;
 .blog_logosec__KIPd0 .menuicon {
   top: 0;
 }
+.ecommerce_column2__zZORH .menuicon,.digital_column2__PieBD  .menuicon,.packaging_column2__Wymb_ .menuicon, .branding_column2__ajpNO .menuicon {
+  position: relative;
+  top: 0;
+  float: right;
+  z-index: 300;
+}
+.ecommerce_column2__zZORH .menuicon .line,.digital_column2__PieBD  .menuicon .line,.packaging_column2__Wymb_ .menuicon .line,.branding_column2__ajpNO .menuicon .line {
+  transition: transform 0.3s ease, opacity 0.3s ease, stroke 0.3s ease;
+  fill: #000;
+}
 
 .mahatee_video__eCDBc video.videoint {
   width: 53%;
