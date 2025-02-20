@@ -5,36 +5,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image';
 import styles from './resprocess.module.css';
 
-const slides = [
-  {
-    id: 1,
-    image: '/home/services/process/spro1.png', // replace with your image path
-    title: 'Custom-Tailored Branding Solutions',
-    
-  },
-  {
-    id: 2,
-    image: '/home/services/process/spro2.png', // replace with your image path
-    title: 'Data-Driven & Market-Researched Designs',
-    
-  },
-  {
-    id: 3,
-    image: '/home/services/process/spro3.png', // replace with your image path
-    title: 'Unique, Creative & Timeless Visual Identity',
-   
-  },
-  {
-    id: 4,
-    image: '/home/services/process/spro4.png', // replace with your image path
-    title: 'End-to-End Support from Concept to Execution',
-    
-  },
-  
-  // Add more slides as needed
-];
 
-const ResProcess = () => {
+
+const ResProcess = ({slides}) => {
   const settings = {
     dots: true,
     infinite: true,

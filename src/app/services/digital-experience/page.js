@@ -4,18 +4,72 @@ import Image from "next/image";
 import styles from "./digital.module.css";
 import Logobw from "../../Images/logobw";
 import Menu from "../../Component/Menu";
-import React, { useEffect, useRef,useState } from 'react';
+import AccordionOne from "../../Component/Accordions/AccordianOne";
+import React, { useEffect, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import useFetchCountries from "../../Component/useFetchCountries";
+import SerProcess from "../../Component/ServiceProcess/SerProcess";
+import ResProcess from "../../Component/ServiceResPro/ResProcess";
 import WorkAnimationlr from "../../Component/WorkAnimatedLR";
-
 
 gsap.registerPlugin(ScrollTrigger);
 
-const branding = () => {
- 
+const digital = () => {
 
+
+  const steps = [
+    { title: 'Custom, High-Performance Websites', image: '/home/services/digital/d1.webp' },
+    { title: 'SEO-Optimized for Maximum Visibility', image: '/home/services/digital/d2.webp' },
+    { title: 'Mobile-First & User-Friendly Approach', image: '/home/services/digital/d3.webp' },
+    { title: 'Ongoing Support & Maintenance', image: '/home/services/digital/d4.webp' },
+  ];
+
+
+  const slides = [
+  {
+    id: 1,
+    image: '/home/services/digital/d1.webp', 
+    title: 'Custom, High-Performance Websites',
+    
+  },
+  {
+    id: 2,
+    image: '/home/services/digital/d2.webp', 
+    title: 'SEO-Optimized for Maximum Visibility',
+    
+  },
+  {
+    id: 3,
+    image: '/home/services/digital/d3.webp', 
+    title: 'Mobile-First & User-Friendly Approach',
+   
+  },
+  {
+    id: 4,
+    image: '/home/services/digital/d4.webp', 
+    title: 'Ongoing Support & Maintenance',
+    
+  },
+];
+   
+
+  // comprehensive solutions box toggle 
+        const [openBox, setOpenBox] = useState(null); // this line Tracks which box is open
+      
+        const toggleBox = (boxNumber) => {
+          setOpenBox(openBox === boxNumber ? null : boxNumber); // toggleBox Closes if already open, else open the selected box
+        };
+
+  const [hoverText, setHoverText] = useState('PROJECTS THAT MAKE A DIFFERENCE');
+
+  const handleMouseEnter = (text) => {
+    setHoverText(text);
+  };
+
+  const handleMouseLeave = () => {
+    setHoverText('PROJECTS THAT MAKE A DIFFERENCE');
+  };
   const [inactive, setInactive] = useState(true); // Set initial state to true
 
   const toggleClass = () => {
@@ -87,6 +141,8 @@ useEffect(() => {
     { id: 'publication', label: 'Publication' },
     { id: 'social-media', label: 'Social Media' },
     { id: 'ecommerce', label: 'Ecommerce' },
+    { id: 'digital-marketing', label: 'Digital Marketing' },
+    { id: 'others', label: 'Others' },
   ];
 
   // Handle changes to select input
@@ -176,9 +232,6 @@ const handleChange = (e) => {
   }, [selectedOptions]);
 
     
-  
- 
-    
     // image scroll 
     const [rotation, setRotation] = useState(0);
 
@@ -195,12 +248,9 @@ const handleChange = (e) => {
     };
   }, []);
 
-  // comprehensive solutions box toggle 
-  const [openBox, setOpenBox] = useState(null); // this line Tracks which box is open
 
-  const toggleBox = (boxNumber) => {
-    setOpenBox(openBox === boxNumber ? null : boxNumber); // toggleBox Closes if already open, else open the selected box
-  };
+  // comprehensive solutions box toggle 
+   
 
     return(
         <section>
@@ -321,10 +371,10 @@ const handleChange = (e) => {
                     <div>
                 </div>
                 <div className={styles.container} data-aos="fade-up">
-                  <h1 className={styles.text}>
-                    LET’S BUILD Your <span className={styles.rotatingText}></span>
-                  </h1>
-                </div>
+      <h1 className={styles.text}>
+      LET’S BUILD <br></br><span className={styles.rotatingText}>YOUR Website</span>
+      </h1>
+    </div>
       
                     <div className={styles.row}>
                         <div className={styles.innercolumn1}>
@@ -332,7 +382,7 @@ const handleChange = (e) => {
                                 
                                     <Image data-aos="fade-up"
                                     className={styles.reachimg1}
-                                    src="/home/reach/reach1.webp"
+                                    src="/home/services/digital/digi1.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
@@ -342,7 +392,7 @@ const handleChange = (e) => {
                                 
                                     <Image data-aos="fade-up"
                                     className={styles.reachimg2}
-                                    src="/home/reach/reach2.webp"
+                                    src="/home/services/digital/digi2.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
@@ -353,7 +403,7 @@ const handleChange = (e) => {
                             <div className={styles.rowimg}>
                             <Image data-aos="fade-up"
                                     className={styles.reachimg3}
-                                    src="/home/reach/reach3.webp"
+                                    src="/home/services/digital/digi3.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
@@ -367,7 +417,7 @@ const handleChange = (e) => {
                                 
                                 <Image data-aos="fade-up"
                                 className={styles.reachimg}
-                                src="/home/reach/reachuslast.webp"
+                                src="/home/services/digital/digi4.webp"
                                 alt="Next.js Logo"
                                 layout="responsive"
                                 width={100}
@@ -540,358 +590,524 @@ const handleChange = (e) => {
                 </div>
             </div>
         </div>
-        
        
+      
+   {/* have to remove this section  */}
 
-{/******************************/}
-  
-<div className={styles.brandsec}>
-  <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Branding <br></br><span className={styles.stext_title}>Experience</span></h2>
+    <div className={`${styles.services} ${styles.srv_scroller}`}>
+    <div className={styles.service_hight}>
+    <h2 className={styles.mainheading}>OUR <br></br> <span className={styles.sec_heading}>SERVICES</span></h2>
+    <div className="accordion">
+    <AccordionOne />  
+    </div>
+    </div>
+   </div>
 
-  <h4 className={styles.shead}>Strategic Branding for Every Business</h4>
-  <p className={styles.sdesc}>Brands are fueled by a mixture of emotion and strategy. The true art of branding design is combining both—to stand out from the competition and forge memorable connections.</p>
-  <h4 className={styles.yhead}>Your brand is more than just a logo—it's an experience.</h4>
+ {/* have to remove this section  */}
+
+ <div className={styles.brandsec}>
+  <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Digital <br></br><span className={styles.stext_title}>Experience</span></h2>
+
+  <h4 className={styles.shead}>Build a Website That Works For You</h4>
+  <p className={styles.sdesc}>Your website is the face of your brand in the digital world. At Doodlo Design Studio, we blend creativity, strategy, and technology to create stunning websites that drive engagement, boost conversions, and enhance user experience. Whether you need a sleek portfolio, a lead-generating business website, or a high-performance platform, we’ve got you covered.</p>
+  <h4 className={styles.yhead}>Built for Creative, Performance & Marketing Teams</h4>
 
   <div className={styles.brandrow}>
     <div className={styles.brow1}>
       <Image 
                                     
-                                    src="/home/services/branding/brand.webp"
+                                    src="/home/services/digital/digitalexperience.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={270}
                                     height={260}
+                                    className={styles.bimg}
                                     priority
                                     />
     </div>
     <div className={styles.brow2}>
-      <p className={styles.bdesc}>As Doodlers, we craft cohesive brand identities that capture your essence, resonate with your audience, and leave a lasting impact. Whether you’re a startup looking for a fresh identity or an established business needing a rebrand, we bring strategic creativity to the table.</p>  
+    <h4 className={styles.phead}>Get streamlined web design that converts</h4>
+      <p className={styles.bdesc}>We go beyond aesthetics—our web design solutions are built to captivate, engage, and drive real results. We create seamless, user-centric digital experiences that not only look stunning but also boost conversions and enhance brand credibility.</p>
+      <p className={`${styles.bdesc} ${styles.brdesc}`}>From concept to launch, our expert designers collaborate closely with you to craft intuitive, high-performing websites that align with your business goals. The outcome? A powerful online presence that attracts, retains, and converts your audience effortlessly.</p>  
     </div>
   </div>
   </div>
 
 
-{/******************************/}   
+  {/* accordian section */}
 
+  <div className={styles.compsec}>
+   <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Tailored creative solutions<br></br><span className={styles.stext_title}>Full-stack Web Design Services</span></h2>
+   </div>
 
-{/*************** comprehension solutions ***************/}
-
-<div className={styles.compsec}>
-  <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>comprehensive solutions <br></br><span className={styles.stext_title}>full-scope branding services</span></h2>
-</div>
-
-<div className={styles.comprow}>
-      {/********************* Box 1 ****************************/}
-      <div className={styles.row1} onClick={() => toggleBox(1)}>
-        <div className={styles.innerWrapper}>
-          <div className={styles.header}>
-            <div className={styles.textContent}>
-              <h2 className={`${styles.brandtitle} ${openBox === 1 ? styles.openHeader : ''}`}>
-                Brand Development
-              </h2>
-              {openBox === 1 && (
-                <div className={styles.sectionContent}>
-                  <div className={styles.header}>
-                  <div className={styles.textContent}>
-                    <p className={styles.description}>
-                      Starting from scratch? Craft a robust, one-of-a-kind foundation that ensures engagement and resonance across all platforms and audiences.
-                    </p>
-                    </div>
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src="/home/services/branding/comprehension.png"
-                      alt="Brand Development"
-                      width={400}
-                      height={200}
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                </div>
-              )}
-            </div>
+   <div className={styles.comprow}>
+    {/* Box 1 */}
+    <div className={styles.row1} onClick={() => toggleBox(1)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 1 ? styles.openHeader : ''}`}>
+            Custom Website Design & Website Strategy
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 1 ? styles.open : ''}`}>
+          <img
+            src={openBox === 1 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
           </div>
         </div>
-      </div>
-
-      {/********************* Box 2 ****************************/}
-      <div className={styles.row2} onClick={() => toggleBox(2)}>
-        <div className={styles.innerWrapper}>
-          <div className={styles.header}>
-            <div className={styles.textContent}>
-              <h2 className={`${styles.brandtitle} ${openBox === 2 ? styles.openHeader : ''}`}>
-                Brand Design
-              </h2>
-              {openBox === 2 && (
-                <div className={styles.sectionContent}>
-                  <div className={styles.header}>
-                  <div className={styles.textContent}>
-                  <p className={styles.description}>
-                   From fundamentals like logos, colors, and typography to templates and custom image libraries, get the tools you need to get to market faster.                  </p>
-                  </div>
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src="/home/services/branding/branddesign.png"
-                      alt="Brand Design"
-                      width={400}
-                      height={200}
-                      className="object-cover"
-                    />
-                  </div>
-                  </div>
-                </div>
-              )}
+        <div className={`${styles.sectionContent} ${openBox === 1 ? styles.showContent : ''}`}>
+          {openBox === 1 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                User-focused, mobile-first designs built for seamless experiences. Our UI/UX experts help strategize campaigns that drive traffic and boost engagement.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/digital/digital1.webp"
+                  alt="Brand Development"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                  priority
+                  className="object-cover"
+                />
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
-
-      {/********************* Box 3 ****************************/}
-      <div className={styles.row2} onClick={() => toggleBox(3)}>
-        <div className={styles.innerWrapper}>
-          <div className={styles.header}>
-            <div className={styles.textContent}>
-              <h2 className={`${styles.brandtitle} ${openBox === 3 ? styles.openHeader : ''}`}>
-                Logo Design
-              </h2>
-              {openBox === 3 && (
-                <div className={styles.sectionContent}>
-                  <div className={styles.header}>
-                  <div className={styles.textContent}>
-                  <p className={styles.description}>
-                  Need help updating existing logos or creating new ones? Create a range of options, including static and animated logos suitable for a range of platforms.
-                  </p>
-                  </div>
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src="/home/services/branding/logo_design.png"
-                      alt="Logo Design"
-                      width={400}
-                      height={200}
-                      className="object-cover"
-                    />
-                  </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/********************* Box 4 ****************************/}
-      <div className={styles.row2} onClick={() => toggleBox(4)}>
-        <div className={styles.innerWrapper}>
-          <div className={styles.header}>
-            <div className={styles.textContent}>
-              <h2 className={`${styles.brandtitle} ${openBox === 4 ? styles.openHeader : ''}`}>
-                Brand Guidelines
-              </h2>
-              {openBox === 4 && (
-                <div className={styles.sectionContent}>
-                  <div className={styles.header}>
-                  <div className={styles.textContent}>
-                  <p className={styles.description}>
-                  Ensure brand consistency, capture your distinct voice and tone, and gather ad templates, logos, images, and iconography all in one place for ease of use.
-                  </p>
-                  </div>
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src="/home/services/branding/brand_guidelines.png"
-                      alt="Brand Guidelines"
-                      width={400}
-                      height={200}
-                      className="object-cover"
-                    />
-                  </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/********************* Box 5 ****************************/}
-      <div className={styles.row2} onClick={() => toggleBox(5)}>
-        <div className={styles.innerWrapper}>
-          <div className={styles.header}>
-            <div className={styles.textContent}>
-              <h2 className={`${styles.brandtitle} ${openBox === 5 ? styles.openHeader : ''}`}>
-                Brand Story Development
-              </h2>
-              {openBox === 5 && (
-                <div className={styles.sectionContent}>
-                  <div className={styles.header}>
-                  <div className={styles.textContent}>
-                  <p className={styles.description}>
-                  Your brand has a feel as well as a look. Develop a narrative that speaks to this essence and can be expressed time and again.
-                  </p>
-                  </div>
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src="/home/services/branding/brand_story.png"
-                      alt="Brand Story Development"
-                      width={400}
-                      height={200}
-                      className="object-cover"
-                    />
-                  </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/********************* Box 6 ****************************/}
-      <div className={styles.row6} onClick={() => toggleBox(6)}>
-        <div className={styles.innerWrapper}>
-          <div className={styles.header}>
-            <div className={styles.textContent}>
-              <h2 className={`${styles.brandtitle} ${openBox === 6 ? styles.openHeader : ''}`}>
-                Rebranding Services
-              </h2>
-              {openBox === 6 && (
-                <div className={styles.sectionContent}>
-                  <div className={styles.header}>
-                  <div className={styles.textContent}>
-                  <p className={styles.description}>
-                  From a refresh to a full rebrand, revitalize your brand seamlessly with a global network of branding talent that brings diverse perspectives and strategies.
-                  </p>
-                  </div>
-                  <div className={styles.imageWrapper}>
-                    <Image
-                      src="/home/services/branding/rebranding.png"
-                      alt="Rebranding Services"
-                      width={400}
-                      height={200}
-                      className="object-cover"
-                    />
-                  </div>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      
     </div>
-       
-{/* our work section  start*/}
+
+    {/* Box 2 */}
+    <div className={styles.row2} onClick={() => toggleBox(2)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 2 ? styles.openHeader : ''}`}>
+            UI Design Systems
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 2 ? styles.open : ''}`}>
+          <img
+            src={openBox === 2 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 2 ? styles.showContent : ''}`}>
+          {openBox === 2 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Compilation and development of a design system taking into account your brand’s requirements and objectives.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/digital/digital2.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Box 3 */}
+
+    <div className={styles.row2} onClick={() => toggleBox(3)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 3 ? styles.openHeader : ''}`}>
+            Content Development
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 3 ? styles.open : ''}`}>
+          <img
+            src={openBox === 3 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 3 ? styles.showContent : ''}`}>
+          {openBox === 3 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Our copywriters develop compelling, clear content that communicates your message and drives conversions.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/digital/digital3.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Box 4 */}
+
+    <div className={styles.row2} onClick={() => toggleBox(4)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 4 ? styles.openHeader : ''}`}>
+            Website Development
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 4 ? styles.open : ''}`}>
+          <img
+            src={openBox === 4 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 4 ? styles.showContent : ''}`}>
+          {openBox === 4 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Fast, responsive, and SEO-friendly websites.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/digital/digital4.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+{/* Box 5 */}
+
+<div className={styles.row2} onClick={() => toggleBox(5)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 5 ? styles.openHeader : ''}`}>
+            Landing Page Design
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 5 ? styles.open : ''}`}>
+          <img
+            src={openBox === 5 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 5 ? styles.showContent : ''}`}>
+          {openBox === 5 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                A UX/UI audit optimizes digital products by identifying design Landing page templates and designs created from scratch to maximize conversions of your products or services.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/digital/digital5.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Box 6 */}
+    <div className={styles.row2} onClick={() => toggleBox(6)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 6 ? styles.openHeader : ''}`}>
+            Website Revamp & Redesign
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 6 ? styles.open : ''}`}>
+          <img
+            src={openBox === 6 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 6 ? styles.showContent : ''}`}>
+          {openBox === 6 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Refresh your website for better performance, brand goals & aesthetics.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/digital/digital6.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Box 7 */}
+    <div className={styles.row2} onClick={() => toggleBox(7)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 7 ? styles.openHeader : ''}`}>
+            CRM Solutions
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 7 ? styles.open : ''}`}>
+          <img
+            src={openBox === 7 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 7 ? styles.showContent : ''}`}>
+          {openBox === 7 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Full-fledged Custom automated business solutions for seamless business experiences.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/digital/digital7.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+    
+    {/* Box 8 */}
+    
+    <div className={styles.row2} onClick={() => toggleBox(8)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 8 ? styles.openHeader : ''}`}>
+            SEO & Performance Optimization
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 8 ? styles.open : ''}`}>
+          <img
+            src={openBox === 8 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 8 ? styles.showContent : ''}`}>
+          {openBox === 8 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Ensuring top Google rankings and fast loading speeds.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/digital/digital8.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    <div className={styles.row6} onClick={() => toggleBox(9)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 9 ? styles.openHeader : ''}`}>
+            Website Maintenance & Support (AMC)
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 9 ? styles.open : ''}`}>
+          <img
+            src={openBox === 9 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 9 ? styles.showContent : ''}`}>
+          {openBox === 9 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                 Keeping your website up-to-date and secure.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/digital/digital9.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+  </div>
+  {/* our work section  start*/}
+
 
 <div className={styles.worksec}>
   <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>our <br></br><span className={styles.stext_title}>work</span></h2>
-  <h4 className={styles.worksubhead}>These brands have already stepped up their game with our branding expertise.</h4>
-  <p className={styles.workdesc}>Join them and build a powerful brand identity that resonates and converts.</p>
+  <h4 className={styles.worksubhead}>These brands have already stepped up their game with our Digital Expertise.</h4>
+  <p className={styles.workdesc}>Join them and to create a compelling website that engages and converts.</p>
 </div>
 
 <div className={styles.workimages}>
       <div className={styles.workimg}>
         <Image
-          src="/home/services/branding/gif1.gif"
+          src="/home/services/digital/work1.gif"
           alt="Brand Development"
-          width={270}
-          height={200}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
       <div className={styles.workimg}>
-        <Image
-          src="/home/services/branding/gif2.gif"
-          alt="Logo Design"
-          width={270}
-          height={200}
-        />
+          <Image
+            src="/home/services/digital/work2.gif"
+            alt="Logo Design"
+            layout="responsive"
+            width={100}
+            height={100}
+            priority
+          />
       </div>
       <div className={styles.workimg}>
         <Image
-          src="/home/services/branding/gif3.gif"
+          src="/home/services/digital/work3.gif"
           alt="Brand Guidelines"
-          width={270}
-          height={200}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
       <div className={styles.workimg}>
         <Image
-          src="/home/services/branding/gif4.gif"
+          src="/home/services/digital/work4.gif"
           alt="Brand Story Development"
-          width={270}
-          height={200}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
 
     </div>
-    <div>
-      <button className={styles.explorebtn}>Explore More</button>
+    <div className={styles.btncenter}>  
+      <Link href="/portfolio" className={styles.explorebtn}>Explore More</Link>
     </div>
-
 {/* our work section ends */}
-
-
-{/* logos section start */}
-  
-<div className={styles.logoimages}>
-      <div className={styles.logoimg}>
-        <Image
-          src="/home/services/branding/impos.png"
-          alt="Brand Development"
-          width={170}
-          height={30}
-        />
-      </div>
-      <div className={styles.logoimg}>
-        <Image
-          src="/home/services/branding/yolomart.png"
-          alt="Logo Design"
-          width={175}
-          height={45}
-        />
-      </div>
-      <div className={styles.logoimg}>
-        <Image
-          src="/home/services/branding/med.png"
-          alt="Brand Guidelines"
-          width={215}
-          height={40}
-        />
-      </div>
-      <div className={styles.logoimg}>
-        <Image
-          src="/home/services/branding/portage.png"
-          alt="Brand Story Development"
-          width={175}
-          height={40}
-        />
-      </div>
-      <div className={styles.logoimg}>
-        <Image
-          src="/home/services/branding/mahatee.png"
-          alt="Brand Story Development"
-          width={175}
-          height={50}
-        />
-      </div>
-
-    </div>
 
 {/* logos section end */}
 
+  {/* Process */}
+        <div className={styles.prosec}>
+        <div className={styles.serdesktopv}>
+        <SerProcess  steps={steps}/>
+        </div>
 
- {/* lets discuss section starts */}
+        <div className={styles.sermobilev}>
+        <ResProcess slides={slides}/>
+        </div>
+       
+          </div>
+         {/* Process */}
+
+
+          {/* lets discuss section starts */}
 
  <div className={styles.desktopv}>
        {/* Lets Discuss section */}
        <div data-aos="fade-up" className={`${styles.pointer}`}>
         <div className={styles.discuss_row}>
-        <h2 className={styles.mainheadingdis}>Let’s CREATE A brand  </h2>
-          <h2 className={styles.sec_headingdis}>THAT speaks volumes!</h2>
-          <p className={styles.disdesc}><b>Build a brand</b> that commands attention and leaves a lasting impact. Let’s bring your vision to life with creativity and strategy!</p>
+        <h2 className={styles.mainheadingdis}>Your website deserves</h2>
+          <h2 className={styles.sec_headingdis}>a digital glow-up!</h2>
+          <p className={styles.disdesc}><b>Transform your online presence</b> with stunning design and seamless functionality. Elevate your brand with a website that captivates and converts!</p>
           <div className="space">
-          <Link href="/reach-us" className="boton_elegante mtbtn">Book an appointment </Link>
+          <Link href="/reach-us" className="boton_elegante mtbtn">Start Your Website Project</Link>
           </div>
           <div className={styles.booknow}>
             <div className={styles.bookwrap}>
@@ -916,11 +1132,11 @@ const handleChange = (e) => {
             <WorkAnimationlr />
             </div>
           </div>
-        <h2 className={styles.mainheadingdis}>Let’s Discuss </h2>
-          <h2 className={styles.sec_headingdis}>Your next project</h2>
-          <p className={styles.disdesc}><b>Ready to turn your vision into reality?</b> Whether you need branding, web design, packaging, or digital marketing, we’re here to help. Let’s brainstorm, create, and bring your ideas to life.</p>
+        <h2 className={styles.mainheadingdis}>Your website deserves</h2>
+          <h2 className={styles.sec_headingdis}>a digital glow-up!</h2>
+          <p className={styles.disdesc}><b>Transform your online presence</b> with stunning design and seamless functionality. Elevate your brand with a website that captivates and converts!</p>
           <div className="space">
-          <Link href="#" className="boton_elegante mtbtn">Book an appointment </Link>
+          <Link href="#" className="boton_elegante mtbtn">Start Your Website Project</Link>
           </div>
           
         </div>
@@ -928,15 +1144,9 @@ const handleChange = (e) => {
       </div>
       {/* Lets Discuss section End */}
 
- {/* lets discuss section ends */}
-
-   
-   
         </section>
        
     );
 };
 
-export default branding;
-
-
+export default digital;

@@ -128,7 +128,7 @@ const AccordionOne = () => {
               <p className={styles.service_list}>3. Brand Identity & Positioning</p>
               <p className={styles.service_list}>4. Naming & Domain</p>
               <div className={styles.nwmr}>
-              <Link className="boton_elegante" href="/reach-us">
+              <Link className="boton_elegante" href="/services/branding">
               KNOW MORE
               </Link>
               </div>
@@ -253,7 +253,7 @@ const AccordionOne = () => {
             <p className={styles.service_list}>4. Performance Optimisation</p>
 
             <div className={styles.nwmr}>
-            <Link className="boton_elegante" href="/reach-us">
+            <Link className="boton_elegante" href="/services/digital-experience">
             KNOW MORE
             </Link>
             </div>
@@ -327,7 +327,7 @@ const AccordionOne = () => {
             <p className={styles.service_list}>4. Guideline formulation</p>
 
             <div className={styles.nwmr}>
-            <Link className="boton_elegante" href="/reach-us">
+            <Link className="boton_elegante" href="/services/packaging">
             KNOW MORE
             </Link>
             </div>
@@ -400,7 +400,7 @@ const AccordionOne = () => {
             <p className={styles.service_list}>3. E-com store Set up Strategy</p>
             <p className={styles.service_list}>4. Front-end & Back-end development</p>
             <div className={styles.nwmr}>
-            <Link className="boton_elegante" href="/reach-us">
+            <Link className="boton_elegante" href="/services/ecommerce">
             KNOW MORE
             </Link>
             </div>

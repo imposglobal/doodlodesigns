@@ -119,55 +119,55 @@ const terms = () => {
 
         <ol className={styles.ol}>
 
-        <li className={styles.litext}><b>Intellectual Property Rights: </b>All content on our website, including but not limited to text, images, graphics, logos, and software, is the property of Doodlo Design Studio or its content providers and is protected by intellectual property laws. You may not reproduce, modify, distribute, or display any content from our website without our prior written consent.
+        <li className={styles.litext}><span className={styles.fb}>Intellectual Property Rights: </span>All content on our website, including but not limited to text, images, graphics, logos, and software, is the property of Doodlo Design Studio or its content providers and is protected by intellectual property laws. You may not reproduce, modify, distribute, or display any content from our website without our prior written consent.
         </li>
 
 
-            <li className={styles.litext}><b>Use of Website: </b>You may only use our website for lawful purposes and in a manner that does not infringe on the rights of others. You may not use our website to transmit any malicious or harmful code, conduct fraudulent activities, or engage in any activities that could damage our website or its users.
+            <li className={styles.litext}><span className={styles.fb}>Use of Website: </span>You may only use our website for lawful purposes and in a manner that does not infringe on the rights of others. You may not use our website to transmit any malicious or harmful code, conduct fraudulent activities, or engage in any activities that could damage our website or its users.
 
             </li>
 
-            <li className={styles.litext}><b>User Content: </b> Any content that you upload or submit to our website, including but not limited to comments, reviews, and testimonials, is your responsibility. You grant Doodlo Design Studio a non-exclusive, royalty-free, perpetual, and irrevocable license to use, reproduce, modify, distribute, and display your content on our website and in our marketing materials.
+            <li className={styles.litext}><span className={styles.fb}>User Content: </span> Any content that you upload or submit to our website, including but not limited to comments, reviews, and testimonials, is your responsibility. You grant Doodlo Design Studio a non-exclusive, royalty-free, perpetual, and irrevocable license to use, reproduce, modify, distribute, and display your content on our website and in our marketing materials.
 
 </li>
 
-            <li className={styles.litext}><b> Links to Third-Party Websites: </b> Our website may contain links to third-party websites that are not under our control. We are not responsible for the content or privacy practices of these websites and provide these links for your convenience only.
+            <li className={styles.litext}><span className={styles.fb}> Links to Third-Party Websites: </span> Our website may contain links to third-party websites that are not under our control. We are not responsible for the content or privacy practices of these websites and provide these links for your convenience only.
 
             </li>
 
-            <li className={styles.litext}><b>Disclaimer of Warranties: </b> We make no representations or warranties about the accuracy, completeness, reliability, or suitability of the content on our website. We provide our website "as is" and without any warranty or condition, express or implied.
-
-            </li>
-
-
-            <li className={styles.litext}><b>Limitation of Liability:</b> We will not be liable for any damages arising out of or in connection with the use or inability to use our website, including but not limited to direct, indirect, incidental, punitive, and consequential damages.
-
+            <li className={styles.litext}><span className={styles.fb}>Disclaimer of Warranties: </span> We make no representations or warranties about the accuracy, completeness, reliability, or suitability of the content on our website. We provide our website "as is" and without any warranty or condition, express or implied.
 
             </li>
 
 
-            <li className={styles.litext}><b>Indemnification:</b> You agree to indemnify and hold Doodlo Design Studio, its employees, officers, directors, agents, and affiliates harmless from any claims, damages, and expenses, including attorneys' fees, arising out of or in connection with your use of our website or violation of these terms of use.
+            <li className={styles.litext}><span className={styles.fb}>Limitation of Liability:</span> We will not be liable for any damages arising out of or in connection with the use or inability to use our website, including but not limited to direct, indirect, incidental, punitive, and consequential damages.
 
 
             </li>
 
 
-            <li className={styles.litext}><b>Changes to Terms of Use: </b> We may update or modify these terms of use at any time without prior notice. Your continued use of our website after any changes to these terms of use constitutes your acceptance of the modified terms.
+            <li className={styles.litext}><span className={styles.fb}>Indemnification:</span> You agree to indemnify and hold Doodlo Design Studio, its employees, officers, directors, agents, and affiliates harmless from any claims, damages, and expenses, including attorneys' fees, arising out of or in connection with your use of our website or violation of these terms of use.
+
 
             </li>
 
 
-            <li className={styles.litext}><b>Governing Law:</b> These terms of use shall be governed by and construed in accordance with the laws of United of Kingdom & India, without giving effect to any principles of conflicts of law.
+            <li className={styles.litext}><span className={styles.fb}>Changes to Terms of Use: </span> We may update or modify these terms of use at any time without prior notice. Your continued use of our website after any changes to these terms of use constitutes your acceptance of the modified terms.
 
             </li>
 
 
-            <li className={styles.litext}><b>Entire Agreement: </b> These terms of use constitute the entire agreement between you and Doodlo Design Studio regarding your use of our website.
+            <li className={styles.litext}><span className={styles.fb}>Governing Law:</span> These terms of use shall be governed by and construed in accordance with the laws of United of Kingdom & India, without giving effect to any principles of conflicts of law.
+
+            </li>
+
+
+            <li className={styles.litext}><span className={styles.fb}>Entire Agreement: </span> These terms of use constitute the entire agreement between you and Doodlo Design Studio regarding your use of our website.
 
             </li>
         </ol>
 
-        <p className={styles.endtext}>If you have any questions or concerns about these terms of use, please contact us at <b>contact@doodlodesigns.com</b></p>
+        <p className={styles.endtext}>If you have any questions or concerns about these terms of use, please contact us at <span className={styles.fb}>contact@doodlodesigns.com</span></p>
       </div>
     </div>
   )

@@ -13,12 +13,54 @@ import SerProcess from "../../Component/ServiceProcess/SerProcess";
 import ResProcess from "../../Component/ServiceResPro/ResProcess";
 import SerResLogo from "../../Component/SerResLogo";
 import WorkAnimationlr from "../../Component/WorkAnimatedLR";
-import SerAccordian from "../../Component/ServiceAccordians/SerAccordian";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const branding = () => {
- 
+
+
+  const steps = [
+    { title: 'Custom-Tailored Branding Solutions', image: '/home/services/branding/spro1.png' },
+    { title: 'Data-Driven & Market-Researched Designs', image: '/home/services/branding/spro2.png' },
+    { title: 'Unique, Creative & Timeless Visual Identity', image: '/home/services/branding/spro3.png' },
+    { title: 'End-to-End Support from Concept to Execution', image: '/home/services/branding/spro4.png' },
+  ];
+
+
+  const slides = [
+  {
+    id: 1,
+    image: '/home/services/branding/spro1.png', 
+    title: 'Custom-Tailored Branding Solutions',
+    
+  },
+  {
+    id: 2,
+    image: '/home/services/branding/spro2.png', 
+    title: 'Data-Driven & Market-Researched Designs',
+    
+  },
+  {
+    id: 3,
+    image: '/home/services/branding/spro3.png', 
+    title: 'Unique, Creative & Timeless Visual Identity',
+   
+  },
+  {
+    id: 4,
+    image: '/home/services/branding/spro4.png', 
+    title: 'End-to-End Support from Concept to Execution',
+    
+  },
+];
+   
+
+  // comprehensive solutions box toggle 
+        const [openBox, setOpenBox] = useState(null); // this line Tracks which box is open
+      
+        const toggleBox = (boxNumber) => {
+          setOpenBox(openBox === boxNumber ? null : boxNumber); // toggleBox Closes if already open, else open the selected box
+        };
 
   const [hoverText, setHoverText] = useState('PROJECTS THAT MAKE A DIFFERENCE');
 
@@ -590,13 +632,280 @@ const handleChange = (e) => {
   </div>
 
 
-  {/*************** comprehension solutions ***************/}
+  {/* accordian section */}
 
   <div className={styles.compsec}>
    <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>comprehensive solutions <br></br><span className={styles.stext_title}>full-scope branding services</span></h2>
    </div>
 
-   <SerAccordian/> 
+  <div className={styles.comprow}>
+    {/* Box 1 */}
+    <div className={styles.row1} onClick={() => toggleBox(1)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 1 ? styles.openHeader : ''}`}>
+              Brand Development
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 1 ? styles.open : ''}`}>
+            <img
+            src={openBox === 1 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 1 ? styles.showContent : ''}`}>
+          {openBox === 1 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                  Starting from scratch? Craft a robust, one-of-a-kind foundation that ensures engagement and resonance across all platforms and audiences.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/branding/comprehension.png"
+                  alt="Brand Development"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                  priority
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Box 2 */}
+    <div className={styles.row2} onClick={() => toggleBox(2)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 2 ? styles.openHeader : ''}`}>
+              Brand Design
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 2 ? styles.open : ''}`}>
+          <img
+            src={openBox === 2 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 2 ? styles.showContent : ''}`}>
+          {openBox === 2 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                  From fundamentals like logos, colors, and typography to templates and custom image libraries, get the tools you need to get to market faster.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/branding/branddesign.png"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Box 3 */}
+
+    <div className={styles.row2} onClick={() => toggleBox(3)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 3 ? styles.openHeader : ''}`}>
+            Logo Design
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 3 ? styles.open : ''}`}>
+          <img
+            src={openBox === 3 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 3 ? styles.showContent : ''}`}>
+          {openBox === 3 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Need help updating existing logos or creating new ones? Create a range of options, including static and animated logos suitable for a range of platforms.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/branding/logo_design.png"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Box 4 */}
+
+    <div className={styles.row2} onClick={() => toggleBox(4)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 4 ? styles.openHeader : ''}`}>
+            Brand Guidelines
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 4 ? styles.open : ''}`}>
+          <img
+            src={openBox === 4 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 4 ? styles.showContent : ''}`}>
+          {openBox === 4 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Ensure brand consistency, capture your distinct voice and tone, and gather ad templates, logos, images, and iconography all in one place for ease of use.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/branding/brand_guidelines.png"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+{/* Box 5 */}
+
+<div className={styles.row2} onClick={() => toggleBox(5)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 5 ? styles.openHeader : ''}`}>
+            Brand Story Development
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 5 ? styles.open : ''}`}>
+          <img
+            src={openBox === 5 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 5 ? styles.showContent : ''}`}>
+          {openBox === 5 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Your brand has a feel as well as a look. Develop a narrative that speaks to this essence and can be expressed time and again.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/branding/brand_story.png"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Box 5 */}
+
+    <div className={styles.row6} onClick={() => toggleBox(6)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 6 ? styles.openHeader : ''}`}>
+            Rebranding Services
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 6 ? styles.open : ''}`}>
+          <img
+            src={openBox === 6 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 6 ? styles.showContent : ''}`}>
+          {openBox === 6 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                From a refresh to a full rebrand, revitalize your brand seamlessly with a global network of branding talent that brings diverse perspectives and strategies.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/branding/rebranding.png"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+ {/* accordian section */}
+  {/*************** comprehension solutions ***************/}
+
+  {/* <div className={styles.compsec}>
+   <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>comprehensive solutions <br></br><span className={styles.stext_title}>full-scope branding services</span></h2>
+   </div>
+
+   <SerAccordian/>  */}
 
 
   {/* our work section  start*/}
@@ -651,9 +960,11 @@ const handleChange = (e) => {
       </div>
 
     </div>
-    <div className={styles.btncenter}>
-      <button className={styles.explorebtn}>Explore More</button>
+
+    <div className={styles.btncenter}>  
+      <Link href="/portfolio" className={styles.explorebtn}>Explore More</Link>
     </div>
+   
 {/* our work section ends */}
 
 {/* logos section start */}
@@ -720,12 +1031,12 @@ const handleChange = (e) => {
 
   {/* Process */}
         <div className={styles.prosec}>
-        <div className={styles.desktopv}>
-        <SerProcess />
+        <div className={styles.serdesktopv}>
+        <SerProcess  steps={steps}/>
         </div>
 
-        <div className={styles.mobilev}>
-        <ResProcess />
+        <div className={styles.sermobilev}>
+        <ResProcess slides={slides}/>
         </div>
        
           </div>
@@ -767,11 +1078,11 @@ const handleChange = (e) => {
             <WorkAnimationlr />
             </div>
           </div>
-        <h2 className={styles.mainheadingdis}>Let’s Discuss </h2>
-          <h2 className={styles.sec_headingdis}>Your next project</h2>
-          <p className={styles.disdesc}><b>Ready to turn your vision into reality?</b> Whether you need branding, web design, packaging, or digital marketing, we’re here to help. Let’s brainstorm, create, and bring your ideas to life.</p>
+        <h2 className={styles.mainheadingdis}>Let’s CREATE A brand</h2>
+          <h2 className={styles.sec_headingdis}>THAT speaks volumes!</h2>
+          <p className={styles.disdesc}><b>Build a brand</b> that commands attention and leaves a lasting impact. Let’s bring your vision to life with creativity and strategy!</p>
           <div className="space">
-          <Link href="#" className="boton_elegante mtbtn">Book an appointment </Link>
+          <Link href="#" className="boton_elegante mtbtn">Get Started Today</Link>
           </div>
           
         </div>

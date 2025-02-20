@@ -106,6 +106,60 @@ const servicelogo = () => {
                     priority
                   />
                 </div>
+
+
+                 <div className={styles.itemc}>
+                <Image
+                    src="/home/services/branding/impos.png"
+                    alt="Next.js Logo"
+                    layout="responsive"
+                    width={100}
+                    height={37}
+                    priority
+                  />
+                </div>
+                <div className={styles.itemc}>
+                <Image
+                    src="/home/services/branding/yolomart.png"
+                    alt="Next.js Logo"
+                    layout="responsive"
+                    width={100}
+                    height={37}
+                    priority
+                  />
+                </div>
+                <div className={styles.itemc}>
+                <Image
+                    src="/home/services/branding/med.png"
+                    alt="Next.js Logo"
+                    layout="responsive"
+                    width={100}
+                    height={37}
+                    priority
+                  />
+                </div>
+                <div className={styles.itemc}>
+                <Image
+                    src="/home/services/branding/portage.png"
+                    alt="Next.js Logo"
+                    layout="responsive"
+                    width={100}
+                    height={37}
+                    priority
+                  />
+                </div>
+                <div className={styles.itemc}>
+                <Image
+                    src="/home/services/branding/mahatee.png"
+                    alt="Next.js Logo"
+                    layout="responsive"
+                    width={100}
+                    height={37}
+                    priority
+                  />
+                </div>
+
+                
                 
               </div>
     );

@@ -119,52 +119,52 @@ const privacy = () => {
 
         <ol className={styles.ol}>
 
-        <li className={styles.litext}><b>Information We Collect: </b>We may collect personal information from you when you use our website, including but not limited to your name, email address, phone number, and mailing address. We may also collect information about your device, browser, and internet connection.
+        <li className={styles.litext}><span className={styles.fb}>Information We Collect: </span>We may collect personal information from you when you use our website, including but not limited to your name, email address, phone number, and mailing address. We may also collect information about your device, browser, and internet connection.
         </li>
 
 
-            <li className={styles.litext}><b>How We Use Your Information: </b>We use your personal information to provide you with the services you have requested, to communicate with you about our services, and to improve our website. We may also use your information to send you marketing communications about our services.
+            <li className={styles.litext}><span className={styles.fb}>How We Use Your Information: </span>We use your personal information to provide you with the services you have requested, to communicate with you about our services, and to improve our website. We may also use your information to send you marketing communications about our services.
             </li>
 
-            <li className={styles.litext}><b>Sharing Your Information: </b> We do not sell, rent, or trade your personal information to third parties. We may share your information with our service providers who assist us in providing our services. We may also share your information to comply with legal obligations or in connection with a merger, acquisition, or sale of our business.
-
-            </li>
-
-            <li className={styles.litext}><b>Cookies: </b> We use cookies and similar technologies to collect information about your use of our website, such as your browsing history and preferences. You can disable cookies in your browser settings, but this may limit your ability to use some features of our website.
+            <li className={styles.litext}><span className={styles.fb}>Sharing Your Information: </span> We do not sell, rent, or trade your personal information to third parties. We may share your information with our service providers who assist us in providing our services. We may also share your information to comply with legal obligations or in connection with a merger, acquisition, or sale of our business.
 
             </li>
 
-
-            <li className={styles.litext}><b>Third-Party Links:</b> Our website may contain links to third-party websites that are not under our control. We are not responsible for the content or privacy practices of these websites and provide these links for your convenience only.
+            <li className={styles.litext}><span className={styles.fb}>Cookies: </span> We use cookies and similar technologies to collect information about your use of our website, such as your browsing history and preferences. You can disable cookies in your browser settings, but this may limit your ability to use some features of our website.
 
             </li>
 
 
-            <li className={styles.litext}><b>Security:</b> We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or electronic storage is completely secure.
+            <li className={styles.litext}><span className={styles.fb}>Third-Party Links:</span> Our website may contain links to third-party websites that are not under our control. We are not responsible for the content or privacy practices of these websites and provide these links for your convenience only.
 
             </li>
 
 
-            <li className={styles.litext}><b>Children's Privacy:</b> Our website is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us immediately.
+            <li className={styles.litext}><span className={styles.fb}>Security:</span> We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or electronic storage is completely secure.
 
             </li>
 
 
-            <li className={styles.litext}><b>Your Choices:</b> You may opt-out of receiving marketing communications from us at any time by following the instructions in the communication. You may also request access to, correction of, or deletion of your personal information by contacting us at <b>contact@doodlodesigns.com</b>
+            <li className={styles.litext}><span className={styles.fb}>Children's Privacy:</span> Our website is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us immediately.
 
             </li>
 
 
-            <li className={styles.litext}><b>Changes to Privacy Policy:</b> We may update or modify this privacy policy at any time without prior notice. Your continued use of our website after any changes to this privacy policy constitutes your acceptance of the modified policy.
+            <li className={styles.litext}><span className={styles.fb}>Your Choices:</span> You may opt-out of receiving marketing communications from us at any time by following the instructions in the communication. You may also request access to, correction of, or deletion of your personal information by contacting us at <span className={styles.fb}>contact@doodlodesigns.com</span>
 
             </li>
 
 
-            <li className={styles.litext}><b>Governing Law:</b> This privacy policy shall be governed by and construed in accordance with the laws of United of Kingdom & India, without giving effect to any principles of conflicts of law.
+            <li className={styles.litext}><span className={styles.fb}>Changes to Privacy Policy:</span> We may update or modify this privacy policy at any time without prior notice. Your continued use of our website after any changes to this privacy policy constitutes your acceptance of the modified policy.
+
+            </li>
+
+
+            <li className={styles.litext}><span className={styles.fb}>Governing Law:</span> This privacy policy shall be governed by and construed in accordance with the laws of United of Kingdom & India, without giving effect to any principles of conflicts of law.
             </li>
         </ol>
 
-        <p className={styles.endtext}>If you have any questions or concerns about these terms of use, please contact us at <b>contact@doodlodesigns.com</b></p>
+        <p className={styles.endtext}>If you have any questions or concerns about these terms of use, please contact us at <span className={styles.fb}>contact@doodlodesigns.com</span></p>
       </div>
     </div>
   )

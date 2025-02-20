@@ -5,20 +5,63 @@ import styles from "./packaging.module.css";
 import Logobw from "../../Images/logobw";
 import Menu from "../../Component/Menu";
 import AccordionOne from "../../Component/Accordions/AccordianOne";
-import SerAccordian from "../../Component/ServiceAccordians/SerAccordian";
-import React, { useEffect, useRef,useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import gsap from 'gsap';
-import Logoslide from "../../Component/Logoslider";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import useFetchCountries from "../../Component/useFetchCountries";
 import SerProcess from "../../Component/ServiceProcess/SerProcess";
+import ResProcess from "../../Component/ServiceResPro/ResProcess";
+import WorkAnimationlr from "../../Component/WorkAnimatedLR";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const packaging = () => {
- 
 
-    const [hoverText, setHoverText] = useState('PROJECTS THAT MAKE A DIFFERENCE');
+
+  const steps = [
+    { title: 'Unique, Bespoke Packaging Designs', image: '/home/services/packaging/p1.webp' },
+    { title: 'Functional & User-Centric Packaging Solutions', image: '/home/services/packaging/p2.webp' },
+    { title: 'Sustainable & Market-Ready Packaging', image: '/home/services/packaging/p3.webp' },
+    { title: 'Proven Track Record in Various Industries', image: '/home/services/packaging/p4.webp' },
+  ];
+
+
+  const slides = [
+  {
+    id: 1,
+    image: '/home/services/packaging/p1.webp', 
+    title: 'Unique, Bespoke Packaging Designs',
+    
+  },
+  {
+    id: 2,
+    image: '/home/services/packaging/p2.webp', 
+    title: 'Functional & User-Centric Packaging Solutions',
+    
+  },
+  {
+    id: 3,
+    image: '/home/services/packaging/p3.webp', 
+    title: 'Sustainable & Market-Ready Packaging',
+   
+  },
+  {
+    id: 4,
+    image: '/home/services/packaging/p4.webp', 
+    title: 'Proven Track Record in Various Industries',
+    
+  },
+];
+   
+
+  // comprehensive solutions box toggle 
+        const [openBox, setOpenBox] = useState(null); // this line Tracks which box is open
+      
+        const toggleBox = (boxNumber) => {
+          setOpenBox(openBox === boxNumber ? null : boxNumber); // toggleBox Closes if already open, else open the selected box
+        };
+
+  const [hoverText, setHoverText] = useState('PROJECTS THAT MAKE A DIFFERENCE');
 
   const handleMouseEnter = (text) => {
     setHoverText(text);
@@ -98,6 +141,8 @@ useEffect(() => {
     { id: 'publication', label: 'Publication' },
     { id: 'social-media', label: 'Social Media' },
     { id: 'ecommerce', label: 'Ecommerce' },
+    { id: 'digital-marketing', label: 'Digital Marketing' },
+    { id: 'others', label: 'Others' },
   ];
 
   // Handle changes to select input
@@ -186,12 +231,6 @@ const handleChange = (e) => {
     }));
   }, [selectedOptions]);
 
-    
-
-  
-    
-    
-    
     
     // image scroll 
     const [rotation, setRotation] = useState(0);
@@ -333,7 +372,7 @@ const handleChange = (e) => {
                 </div>
                 <div className={styles.container} data-aos="fade-up">
       <h1 className={styles.text}>
-        LET’S BUILD Your <span className={styles.rotatingText}></span>
+      LET’S PACKAGE <br></br><span className={styles.rotatingText}>YOUR Product</span>
       </h1>
     </div>
       
@@ -343,7 +382,7 @@ const handleChange = (e) => {
                                 
                                     <Image data-aos="fade-up"
                                     className={styles.reachimg1}
-                                    src="/home/reach/reach1.webp"
+                                    src="/home/services/packaging/pac1.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
@@ -353,7 +392,7 @@ const handleChange = (e) => {
                                 
                                     <Image data-aos="fade-up"
                                     className={styles.reachimg2}
-                                    src="/home/reach/reach2.webp"
+                                    src="/home/services/packaging/pac2.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
@@ -364,7 +403,7 @@ const handleChange = (e) => {
                             <div className={styles.rowimg}>
                             <Image data-aos="fade-up"
                                     className={styles.reachimg3}
-                                    src="/home/reach/reach3.webp"
+                                    src="/home/services/packaging/pac3.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
@@ -378,7 +417,7 @@ const handleChange = (e) => {
                                 
                                 <Image data-aos="fade-up"
                                 className={styles.reachimg}
-                                src="/home/reach/reachuslast.webp"
+                                src="/home/services/packaging/pac4.webp"
                                 alt="Next.js Logo"
                                 layout="responsive"
                                 width={100}
@@ -566,19 +605,18 @@ const handleChange = (e) => {
 
  {/* have to remove this section  */}
 
-
  <div className={styles.brandsec}>
-  <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Branding <br></br><span className={styles.stext_title}>Experience</span></h2>
+  <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Packaging <br></br><span className={styles.stext_title}>Experience</span></h2>
 
-  <h4 className={styles.shead}>Strategic Branding for Every Business</h4>
-  <p className={styles.sdesc}>Brands are fueled by a mixture of emotion and strategy. The true art of branding design is combining both—to stand out from the competition and forge memorable connections.</p>
-  <h4 className={styles.yhead}>Your brand is more than just a logo—it's an experience.</h4>
+  <h4 className={styles.shead}>Turn Your Products Into Shelf-Stoppers</h4>
+  <p className={styles.sdesc}>Great packaging isn’t just about aesthetics; it’s about storytelling, functionality, and making an impact at first sight. Doodlo Design Studio specializes in crafting packaging designs that not only look stunning but also communicate your brand’s message effectively. From eco-friendly materials to eye-catching visuals, we design for all industries and products.</p>
+  <h4 className={styles.yhead}>Built for Creative, Performance & Marketing Teams</h4>
 
   <div className={styles.brandrow}>
     <div className={styles.brow1}>
       <Image 
                                     
-                                    src="/home/services/branding/brand.webp"
+                                    src="/home/services/packaging/packaging.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={270}
@@ -587,122 +625,522 @@ const handleChange = (e) => {
                                     />
     </div>
     <div className={styles.brow2}>
-      <p className={styles.bdesc}>As Doodlers, we craft cohesive brand identities that capture your essence, resonate with your audience, and leave a lasting impact. Whether you’re a startup looking for a fresh identity or an established business needing a rebrand, we bring strategic creativity to the table.</p>  
+    <h4 className={styles.phead}>Custom Packaging & Merch for Leading Brands</h4>
+      <p className={styles.bdesc}>From posters and label designs to magazines, apparel, books, tradeshow graphics, and more—Doodlo has got you covered. a dedicated design team, delivering exceptional and consistent concepts.</p>  
     </div>
   </div>
   </div>
-   {/*************** comprehension solutions ***************/}
 
-   <div className={styles.compsec}>
-   <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>comprehensive solutions <br></br><span className={styles.stext_title}>full-scope branding services</span></h2>
+
+  {/* accordian section */}
+
+  <div className={styles.compsec}>
+   <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>adaptive solutions <br></br><span className={styles.stext_title}>Holistic packaging & Merchandise services</span></h2>
    </div>
 
-   <SerAccordian/> 
+  <div className={styles.comprow}>
+    {/* Box 1 */}
+    <div className={styles.row1} onClick={() => toggleBox(1)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 1 ? styles.openHeader : ''}`}>
+            Product Packaging Design
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 1 ? styles.open : ''}`}>
+          <img
+            src={openBox === 1 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 1 ? styles.showContent : ''}`}>
+          {openBox === 1 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Creating high-impact packaging for retail, FMCG, cosmetics, and more.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/packaging/pack1.webp"
+                  alt="Brand Development"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                  priority
+                  className="object-cover"
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
 
-{/* our work section  start*/}
+    {/* Box 2 */}
+    <div className={styles.row2} onClick={() => toggleBox(2)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 2 ? styles.openHeader : ''}`}>
+            Custom Label Design
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 2 ? styles.open : ''}`}>
+          <img
+            src={openBox === 2 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 2 ? styles.showContent : ''}`}>
+          {openBox === 2 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Unique, detail-rich labels that grab attention.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/packaging/pack2.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Box 3 */}
+
+    <div className={styles.row2} onClick={() => toggleBox(3)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 3 ? styles.openHeader : ''}`}>
+            Box & Cartoon Packaging
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 3 ? styles.open : ''}`}>
+          <img
+            src={openBox === 3 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 3 ? styles.showContent : ''}`}>
+          {openBox === 3 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Structural packaging solutions tailored to your product.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/packaging/pack3.jpg"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Box 4 */}
+
+    <div className={styles.row2} onClick={() => toggleBox(4)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 4 ? styles.openHeader : ''}`}>
+            Sustainable Packaging Solutions
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 4 ? styles.open : ''}`}>
+          <img
+            src={openBox === 4 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 4 ? styles.showContent : ''}`}>
+          {openBox === 4 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Eco-friendly designs that align with green initiatives.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/packaging/pack4.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+{/* Box 5 */}
+
+<div className={styles.row2} onClick={() => toggleBox(5)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 5 ? styles.openHeader : ''}`}>
+            Luxury & Premium Packaging
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 5 ? styles.open : ''}`}>
+          <img
+            src={openBox === 5 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 5 ? styles.showContent : ''}`}>
+          {openBox === 5 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                High-end design for exclusive products.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/packaging/pack5.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Box 6 */}
+    <div className={styles.row2} onClick={() => toggleBox(6)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 6 ? styles.openHeader : ''}`}>
+            Merchandise Design
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 6 ? styles.open : ''}`}>
+          <img
+            src={openBox === 6 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 6 ? styles.showContent : ''}`}>
+          {openBox === 6 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                From digital assets to physical merchandise, we create designs that seamlessly integrate with your brand identity and leave a lasting impact on your audience
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/packaging/pack6.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Box 7 */}
+    <div className={styles.row2} onClick={() => toggleBox(7)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 7 ? styles.openHeader : ''}`}>
+            3D Packaging Mockups
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 7 ? styles.open : ''}`}>
+          <img
+            src={openBox === 7 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 7 ? styles.showContent : ''}`}>
+          {openBox === 7 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Realistic previews before final production.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/packaging/pack7.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+    {/* Box 8 */}
+    <div className={styles.row2} onClick={() => toggleBox(8)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 8 ? styles.openHeader : ''}`}>
+            Regulatory & Compliance Assistance
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 8 ? styles.open : ''}`}>
+          <img
+            src={openBox === 8 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 8 ? styles.showContent : ''}`}>
+          {openBox === 8 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Ensuring your packaging meets industry standards.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/packaging/pack8.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+    {/* Box 9 */}
+    
+    <div className={styles.row6} onClick={() => toggleBox(9)}>
+      <div className={styles.innerWrapper}>
+        <div className={styles.header}>
+          <div className={styles.textContent}>
+            <h2 className={`${styles.brandtitle} ${openBox === 9 ? styles.openHeader : ''}`}>
+            Event Collaterals
+            </h2>
+          </div>
+          {/* Arrow Icon */}
+          <div className={`${styles.arrow} ${openBox === 9 ? styles.open : ''}`}>
+          <img
+            src={openBox === 9 ? '/home/services/up.webp' : '/home/services/down.webp'}
+            alt="Arrow Icon"
+            className={styles.arrowImage}
+            />
+          </div>
+        </div>
+        <div className={`${styles.sectionContent} ${openBox === 9 ? styles.showContent : ''}`}>
+          {openBox === 9 && (
+            <div className={styles.contentWrapper}>
+              <div className={styles.textContent}>
+                <p className={styles.description}>
+                Ensure your brand stands out at every event with eye-catching collateral that demands attention and strengthens your brand presence.
+                </p>
+              </div>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/home/services/packaging/pack9.webp"
+                  alt="Brand Design"  
+                  className="object-cover"
+                  layout="responsive"
+                  width={100}
+                  height={100}
+                />
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+
+  </div>
+  {/* our work section  start*/}
 
 
 <div className={styles.worksec}>
   <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>our <br></br><span className={styles.stext_title}>work</span></h2>
-  <h4 className={styles.worksubhead}>These brands have already stepped up their game with our branding expertise.</h4>
-  <p className={styles.workdesc}>Join them and build a powerful brand identity that resonates and converts.</p>
+  <h4 className={styles.worksubhead}>These brands have already stepped up their game with our Packaging expertise.</h4>
+  <p className={styles.workdesc}>Join them and build a powerful Packaging that stands out.</p>
 </div>
 
 <div className={styles.workimages}>
       <div className={styles.workimg}>
         <Image
-          src="/home/services/branding/gif1.gif"
+          src="/home/services/packaging/work1.webp"
           alt="Brand Development"
-          width={270}
-          height={200}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
       <div className={styles.workimg}>
-        <Image
-          src="/home/services/branding/gif2.gif"
-          alt="Logo Design"
-          width={270}
-          height={200}
-        />
+          <Image
+            src="/home/services/packaging/work2.webp"
+            alt="Logo Design"
+            layout="responsive"
+            width={100}
+            height={100}
+            priority
+          />
       </div>
       <div className={styles.workimg}>
         <Image
-          src="/home/services/branding/gif3.gif"
+          src="/home/services/packaging/work3.webp"
           alt="Brand Guidelines"
-          width={270}
-          height={200}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
       <div className={styles.workimg}>
         <Image
-          src="/home/services/branding/gif4.gif"
+          src="/home/services/packaging/work4.webp"
           alt="Brand Story Development"
-          width={270}
-          height={200}
+          layout="responsive"
+          width={100}
+          height={100}
+          priority
         />
       </div>
 
     </div>
-    <div className={styles.btncenter}>
-      <button className={styles.explorebtn}>Explore More</button>
+    <div className={styles.btncenter}>  
+      <Link href="/portfolio" className={styles.explorebtn}>Explore More</Link>
     </div>
 {/* our work section ends */}
-{/* logos section start */}
-  
-<div className={styles.logoimages}>
-      <div className={styles.logoimg}>
-        <Image
-          src="/home/services/branding/impos.png"
-          alt="Brand Development"
-          width={170}
-          height={30}
-        />
-      </div>
-      <div className={styles.logoimg}>
-        <Image
-          src="/home/services/branding/yolomart.png"
-          alt="Logo Design"
-          width={175}
-          height={45}
-        />
-      </div>
-      <div className={styles.logoimg}>
-        <Image
-          src="/home/services/branding/med.png"
-          alt="Brand Guidelines"
-          width={215}
-          height={40}
-        />
-      </div>
-      <div className={styles.logoimg}>
-        <Image
-          src="/home/services/branding/portage.png"
-          alt="Brand Story Development"
-          width={175}
-          height={40}
-        />
-      </div>
-      <div className={styles.logoimg}>
-        <Image
-          src="/home/services/branding/mahatee.png"
-          alt="Brand Story Development"
-          width={175}
-          height={50}
-        />
-      </div>
-
-    </div>
 
 {/* logos section end */}
 
-       {/* Process */}
-       <div className={styles.prosec}>
-        <div className={styles.desktopv}>
-        <SerProcess />
+  {/* Process */}
+        <div className={styles.prosec}>
+        <div className={styles.serdesktopv}>
+        <SerProcess  steps={steps}/>
+        </div>
+
+        <div className={styles.sermobilev}>
+        <ResProcess slides={slides}/>
         </div>
        
           </div>
          {/* Process */}
+
+
+          {/* lets discuss section starts */}
+
+ <div className={styles.desktopv}>
+       {/* Lets Discuss section */}
+       <div data-aos="fade-up" className={`${styles.pointer}`}>
+        <div className={styles.discuss_row}>
+        <h2 className={styles.mainheadingdis}>Your product deserves</h2>
+          <h2 className={styles.sec_headingdis}>packaging that sells!</h2>
+          <p className={styles.disdesc}><b>Make a lasting impression with packaging </b>that captivates and converts. Elevate your brand with designs that speak for themselves!</p>
+          <div className="space">
+          <Link href="/reach-us" className="boton_elegante mtbtn">Let’s Design Something Amazing</Link>
+          </div>
+          <div className={styles.booknow}>
+            <div className={styles.bookwrap}>
+            <WorkAnimationlr />
+            </div>
+            <div className={styles.bookwrap1}>
+            <WorkAnimationlr />
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div className={styles.mobilev}>
+       {/* Lets Discuss section */}
+       <div data-aos="fade-up" className={`${styles.pointer}`}>
+        <div className={styles.discuss_row}>
+        <div className={styles.booknow}>
+            <div className={styles.bookwrap}>
+            <WorkAnimationlr />
+            </div>
+            <div className={styles.bookwrap1}>
+            <WorkAnimationlr />
+            </div>
+          </div>
+        <h2 className={styles.mainheadingdis}>Your product deserves</h2>
+          <h2 className={styles.sec_headingdis}>packaging that sells!</h2>
+          <p className={styles.disdesc}><b>Make a lasting impression with packaging</b>that captivates and converts. Elevate your brand with designs that speak for themselves!</p>
+          <div className="space">
+          <Link href="#" className="boton_elegante mtbtn">Let’s Design Something Amazing</Link>
+          </div>
+          
+        </div>
+      </div>
+      </div>
+      {/* Lets Discuss section End */}
 
         </section>
        
