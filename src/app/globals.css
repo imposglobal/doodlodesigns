@@ -1188,6 +1188,74 @@ a.mitem {
   top: 0 !important;
   fill: #000 !important;
 }
+
+.ecommerce_column2__zZORH .menuicon
+{
+  display: none;
+}
+.ecommerce_reachuslogo__bCDxP .menuicon
+{
+  top: 21px !important;
+  fill: #000 !important;
+}
+
+.ecommerce_reachuslogo__bCDxP .menuicon svg .line
+{
+  top: 0 !important;
+  fill: #000 !important;
+}
+
+.branding_column2__ajpNO .menuicon 
+{
+  display: none;
+}
+
+.branding_reachuslogo__oRcwU .menuicon
+{
+  top: 21px !important;
+  fill: #000 !important;
+} 
+
+.branding_reachuslogo__oRcwU .menuicon svg .line
+{
+  top: 0 !important;
+  fill: #000 !important;
+}
+
+.digital_column2__PieBD .menuicon
+{
+  display: none;
+}
+
+.digital_reachuslogo__xqqFQ .menuicon
+{
+  top: 21px !important;
+  fill: #000 !important;
+}
+
+.digital_reachuslogo__xqqFQ .menuicon svg .line
+{
+  top: 0 !important;
+  fill: #000 !important;
+}
+
+.packaging_column2__Wymb_ .menuicon
+{
+  display: none;
+}
+
+.packaging_reachuslogo__xQyhz .menuicon
+{
+  top: 21px !important;
+  fill: #000 !important;
+}
+
+.packaging_reachuslogo__xQyhz .menuicon svg .line
+{
+  top: 0 !important;
+  fill: #000 !important;
+}
+
 .border-bottom {
   background: #9595955e;
   height: 1px;
@@ -1570,6 +1638,74 @@ select#country-code-select {
 video.videoint {
   width: 85%;
   
+}
+
+
+.ecommerce_column2__zZORH .menuicon
+{
+  display: none;
+}
+.ecommerce_reachuslogo__bCDxP .menuicon
+{
+  top: 21px !important;
+  fill: #000 !important;
+}
+
+.ecommerce_reachuslogo__bCDxP .menuicon svg .line
+{
+  top: 0 !important;
+  fill: #000 !important;
+}
+
+.branding_column2__ajpNO .menuicon 
+{
+  display: none;
+}
+
+.branding_reachuslogo__oRcwU .menuicon
+{
+  top: 21px !important;
+  fill: #000 !important;
+} 
+
+.branding_reachuslogo__oRcwU .menuicon svg .line
+{
+  top: 0 !important;
+  fill: #000 !important;
+}
+
+.digital_column2__PieBD .menuicon
+{
+  display: none;
+}
+
+.digital_reachuslogo__xqqFQ .menuicon
+{
+  top: 21px !important;
+  fill: #000 !important;
+}
+
+.digital_reachuslogo__xqqFQ .menuicon svg .line
+{
+  top: 0 !important;
+  fill: #000 !important;
+}
+
+.packaging_column2__Wymb_ .menuicon
+{
+  display: none;
+}
+
+.packaging_reachuslogo__xQyhz .menuicon
+{
+  top: 21px !important;
+  fill: #000 !important;
+}
+
+.packaging_reachuslogo__xQyhz .menuicon svg .line
+{
+  top: 0 !important;
+  fill: #000 !important;
 }
 
 

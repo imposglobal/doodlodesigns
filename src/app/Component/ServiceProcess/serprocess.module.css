@@ -7,84 +7,32 @@
   }
   
   .pptitle {
-    color: #C9C9C9;
-    font-size: 22px;
     font-family: 'poppins';
-    font-weight: 300;
-    
+    font-weight: lighter;
   }
-  
+
+
   .processSteps {
-    width: 70%;
+    width: 75%;
   }
   
   .processSteps .step {
     position: relative;
-    border-left: 2px solid #ffffffba;
-    padding-top: 40px;
-    padding-left: 40px;
+    padding: 30px 0 30px 40px;
     transition: border-left 0.3s, color 0.3s;
   }
   
-  .step:nth-child(4) {
-    padding-bottom: 20px;
-  }
+ 
   
   .step {
     cursor: pointer;
     position: relative;
   }
-  
-  /* Always keep the first step yellow */
-  /* .processSteps .step:first-child {
-    border-left: 2px solid yellow; 
-    border-radius: 0px 5px 5px 0px;
-  } */
-  
-  /* .processSteps .step:first-child .pptitle {
-    color: #fff;
-    font-weight: 600;
-  } */
-  
-  /* Hover effect for other steps */
-  .step:hover {
-    border-left: 2px solid yellow; 
-  }
-  
-  .step:hover .pptitle {
-    color: #fff; 
-    font-weight: 500;
-  }
-  
-  /* Reset first step's color when hovering over other steps */
-  /* .processSteps .step:first-child:hover {
-    border-left: 2px solid yellow; 
-  } */
-  
-  /* .processSteps .step:first-child:hover .pptitle {
-    color: #C9C9C9; 
-  } */
-  
-  /* Remove hover effect on other steps that overrides the first step */
-  /* .processSteps .step:not(:first-child):hover {
-    border-left: 2px solid yellow; 
-  } */
-  
-  /* .processSteps .step:not(:first-child):hover .pptitle {
-    color: yellow;
-  } */
 
+  /* .step:nth-child(4) {
+    padding-bottom: 30px;
+  }  */
 
-  /* .processSteps .step:first-child {
-    border-left: 2px solid yellow;
-    border-radius: 0px 5px 5px 0px;
-  }
-  
-  .processSteps .step:first-child .pptitle {
-    color: #fff;
-    font-weight: 600;
-  } */
-  
   .processImage {
     width: 60%;
     text-align: center;

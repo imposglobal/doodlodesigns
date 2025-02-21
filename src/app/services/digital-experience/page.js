@@ -55,7 +55,8 @@ const digital = () => {
    
 
   // comprehensive solutions box toggle 
-        const [openBox, setOpenBox] = useState(null); // this line Tracks which box is open
+        // const [openBox, setOpenBox] = useState(null); // this line Tracks which box is open
+        const [openBox, setOpenBox] = useState(1); // Initialize with 1 to keep Box 1 open by default
       
         const toggleBox = (boxNumber) => {
           setOpenBox(openBox === boxNumber ? null : boxNumber); // toggleBox Closes if already open, else open the selected box
@@ -640,7 +641,7 @@ const handleChange = (e) => {
    <h2 data-aos="fade-up" className={styles.stext_stroke_hover}>Tailored creative solutions<br></br><span className={styles.stext_title}>Full-stack Web Design Services</span></h2>
    </div>
 
-   <div className={styles.comprow}>
+   <div className={styles.comprow} data-aos="fade-up">
     {/* Box 1 */}
     <div className={styles.row1} onClick={() => toggleBox(1)}>
       <div className={styles.innerWrapper}>

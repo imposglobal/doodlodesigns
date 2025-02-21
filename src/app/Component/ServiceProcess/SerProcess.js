@@ -20,47 +20,22 @@ const SerProcess = ({ steps }) => {
 
   return (
     <div>
-      {/* <div className={styles.processContainer}>
-        <div className={styles.processSteps}>
-          {steps.map((step, index) => (
-            <div
-              key={index}
-              className={styles.step}
-              onMouseEnter={() => handleMouseOver(step.image, index)}
-              onMouseLeave={handleMouseLeave}
-              style={{
-                borderLeft: index === 0 ? '2px solid yellow' : hoveredStep === index ? '2px solid yellow' : '', 
-              }}
-            >
-              <h3
-                className={styles.pptitle}
-                style={{
-                  color: hoveredStep === index || index === 0 ? '#fff' : '#C9C9C9', 
-                  fontWeight: hoveredStep === index || index === 0 ? '600' : '300', 
-                }}
-              >
-                {step.title}
-              </h3>
-            </div>
-          ))}
-        </div>
-        <div className={styles.processImage}>
-          <img src={currentImage} alt="Process Image" />
-        </div>
-      </div> */}
-
-
       <div className={styles.processContainer}>
       <div className={styles.processSteps}>
         {steps.map((step, index) => (
           <div
             key={index}
             className={styles.step}
-            onMouseOver={() => handleMouseOver(step.image)}
+            onMouseOver={() => handleMouseOver(step.image, index)}
+            onMouseLeave={handleMouseLeave}
+            style={{
+              color: hoveredStep === index || (index === 0 && hoveredStep === null) ? "#fff" : "#C9C9C9",
+              borderLeft: hoveredStep === index || (index === 0 && hoveredStep === null) ? "6px solid yellow" : "6px solid #C9C9C9",
+              fontSize: hoveredStep === index || (index === 0 && hoveredStep === null) ? "20px" : "16px",
+              fontWeight: hoveredStep === index || (index === 0 && hoveredStep === null) ? "600" : "lighter"
+            }}
           >
             <h3 className={styles.pptitle}>{step.title}</h3>
-            
-           
           </div>
         ))}
       </div>
@@ -68,7 +43,6 @@ const SerProcess = ({ steps }) => {
         <img src={currentImage} alt="Process Image" />
       </div>
     </div>
-      
     </div>
   );
 };
