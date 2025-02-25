@@ -182,7 +182,7 @@ const OurStory = () => {
             </p>
             <Image data-aos="fade-up"
                                     className={styles.starimgs}
-                                    src="home/ourstory/ourstory.png"
+                                    src="home/ourstory/ourstory.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
