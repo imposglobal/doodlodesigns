@@ -20,8 +20,6 @@ import ContactForm from "./Component/ContactForm";
 import AccordionOne from "./Component/Accordions/AccordianOne";
 import Logoslide from "./Component/Logoslider";
 import VideoComponent from "./Component/VideoComponent";
-import CookieBanner from "./Component/CookieBanner";
-
 
 const Home = () => {
   const [selectedOption, setSelectedOption] = useState('someOption');
@@ -1034,9 +1032,6 @@ const Home = () => {
         </div>
       </div>
     </div>
-
-    
-      <CookieBanner /> {/* CookieBanner component to store cookies */}
     </section>
   );
 };

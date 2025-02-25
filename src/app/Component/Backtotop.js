@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import Image from "next/image";
+import styles from './backtotop.module.css'; 
 
 const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,18 +35,19 @@ const BackToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          style={styles.stickyButton}
+          // className="stickyButton"
+          className={styles.stickyButton}
         >
-          <Image
+           <Image
             onClick={scrollToTop}
             src="/home/dwn.svg"
             alt="Scroll to top"
             layout="responsive"
             width={100}
             height={37}
-            className='arrowd'
+            className={styles.rotatedImage}
             priority
-            style={styles.rotatedImage} // Apply rotation here
+           
           />
         </button>
       )}
@@ -53,36 +55,6 @@ const BackToTopButton = () => {
   );
 };
 
-const styles = {
-  stickyButton: {
-    position: 'fixed',
-    bottom: '10px',
-    right: '20px',
-    borderRadius: '50%',
-    border: 'none',
-    cursor: 'pointer',
-    zIndex: 1000,
-    backgroundColor: 'transparent',
-    padding: '0',
-    background: 'transparent',
-    
-  },
-  
-  rotatedImage: {
-    transform: 'rotate(-180deg)', // Rotate image by -180 degrees
-    transition: 'transform 0.3s ease', // Smooth transition for rotation
-  },
 
-  // Media query for mobile view
-  'media only screen and (max-width: 600px)': {
-    stickyButton: {
-      position: 'fixed',
-      bottom: '10px',
-      right: '10px',
-      width: '70px',
-      height: '70px',
-    },
-  },
-};
 
 export default BackToTopButton;

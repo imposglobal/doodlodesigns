@@ -1,6 +1,8 @@
 import BackToTopButton from "./Component/Backtotop";
 import Footer from "./Component/Footer";
+import CookieBanner from "./Component/CookieBanner";
 import "./globals.css";
+
 
 
 
@@ -37,8 +39,9 @@ height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe>
       {/* <!-- End Google Tag Manager (noscript) --> */}
         {children}
          {/* Footer Starts */}
-         <BackToTopButton />
+        <BackToTopButton />
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   );

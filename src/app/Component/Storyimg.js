@@ -10,16 +10,16 @@ const ImageSwitcher = () => {
     '/home/ourstory/gallery/3.png',
     '/home/ourstory/gallery/4.png',
     '/home/ourstory/gallery/5.png',
-    '/home/ourstory/gallery/6.png',
+    '/home/ourstory/gallery/6.webp',
   ];
 
   const imagesSet2 = [
-    '/home/ourstory/gallery/11.png',
+    '/home/ourstory/gallery/11.webp',
     '/home/ourstory/gallery/22.png',
     '/home/ourstory/gallery/33.png',
     '/home/ourstory/gallery/44.png',
     '/home/ourstory/gallery/55.png',
-    '/home/ourstory/gallery/66.png',
+    '/home/ourstory/gallery/66.webp',
   ];
 
   // State to track which set of images to show

@@ -1,28 +1,39 @@
 
-  /* Styling for the text */
+  .contentWrapper
+  {
+    display: flex;
+  }
   .cookietext {
-    font-size: 14px;
+    font-size: 13px;
     color: #9e9e9e;
     font-family: "Poppins", sans-serif;
-    margin-right: 300px;
+    margin-left: 40px;
   }
-  .linktext
-  {
-    color: #F6FA5E;
-    text-decoration: none;
+  .cookieConsentWrapper {
+    padding: 0; /* Default padding for desktop */
   }
 
 
+  
   @media only screen and (max-width: 600px)
   {
     .cookietext
     {
-        text-align: center;
+        text-align: left;
         margin-right: 0;
+        margin-left: 0;
     }
     .contentWrapper
     {
         text-align: center;
+    }
+    .CookieConsent
+    {
+      display: flex;
+      align-items: center;
+    }
+    .cookieConsentWrapper {
+      padding: 15px 0; /* Padding for mobile/tablet view */
     }
   }
 
