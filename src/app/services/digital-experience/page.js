@@ -275,9 +275,10 @@ const handleChange = (e) => {
             </div>
 
             <div className="menuitem">
-              <Link href="/services" className="mitem">
+              <Link href="/services" className="mitem active">
                 Our Services
               </Link>
+              <div className="border-bottom"></div>
             </div>
 
             <div className="menuitem">
@@ -287,11 +288,17 @@ const handleChange = (e) => {
             </div>
 
             <div className="menuitem">
-              <Link href="/reach-us" className="mitem active">
+              <Link href="/reach-us" className="mitem">
                 Reach us
               </Link>
-              <div className="border-bottom"></div>
+              
 
+            </div>
+
+            <div className="menuitem">
+              <Link href="/blog" className="mitem">
+                Blogs
+              </Link>
             </div>
 
             <div className="menuitem">
@@ -342,7 +349,7 @@ const handleChange = (e) => {
           </div>
         </div>
         <div className="mcopy">
-        <p>© 2024 Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</p>
+        <p>© 2025 Doodlo | All Rights Reserved | <Link href="/terms-of-use" className="lcopy">Terms of Use</Link> |<Link href="/privacy-policy" className="lcopy"> Privacy Policy </Link> </p>
         </div>
       </div>
     </div>

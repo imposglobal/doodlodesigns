@@ -534,7 +534,7 @@ p.client_h2 {
     margin: 0 0 0 40px;
 }
 .menusec {
-  margin-top: 168px;
+  margin-top: 140px;
   padding: 0 0 0 60px;
 }
 .menurow {
@@ -604,6 +604,11 @@ a.mitem {
   text-align: center;
   font-family: 'poppins';
   font-size: 14px;
+}
+.lcopy
+{
+  text-decoration: none;
+  color: #000;
 }
 #wrapper {
   overflow: hidden;
@@ -1134,7 +1139,7 @@ video.videoint::-webkit-media-controls {
     border-radius: 10px !important;
   }
   .menusec {
-    margin-top: 150px;
+    margin-top: 130px;
     padding: 0 0 0 29px;
 }
 .gallery_fcolumn2__UWqUp {
@@ -1293,7 +1298,7 @@ a.mitem {
 }
 .fixed-position {
   position: fixed !important;
-  margin-top: 8px;
+  margin-top: 12px;
   right: 42px !important;
 }
 .panel, .panel2 {

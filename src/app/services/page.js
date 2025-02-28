@@ -93,6 +93,12 @@ const Ourstory = () => {
             </div>
 
             <div className="menuitem">
+              <Link href="/blog" className="mitem">
+                Blogs
+              </Link>
+            </div>
+
+            <div className="menuitem">
               <Link href="https://doodlocomics.com/" className="mitem">
                 Shop
               </Link>
@@ -140,7 +146,7 @@ const Ourstory = () => {
           </div>
         </div>
         <div className="mcopy">
-        <p>© 2024 Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</p>
+        <p>© 2025 Doodlo | All Rights Reserved | <Link href="/terms-of-use" className="lcopy">Terms of Use</Link> |<Link href="/privacy-policy" className="lcopy"> Privacy Policy </Link> </p>
         </div>
       </div>
     </div>
@@ -420,7 +426,7 @@ const Ourstory = () => {
                     <div className={styles.pmidd}>
                         <h4 data-aos="fade-up" className={styles.promtext}>Decode your Brand Story with us!</h4>
                         <div data-aos="fade-up">
-                        <Link className="boton_elegante" href="/reach-us">
+                        <Link className="boton_elegante" href="/services/branding">
                         Reach Us
                         </Link>
                         </div>
@@ -512,7 +518,7 @@ const Ourstory = () => {
                     <div className={styles.pmidd}>
                         <h4 data-aos="fade-up" className={styles.promtext}>Transform Your Digital Presence with Us!</h4>
                         <div data-aos="fade-up">
-                        <Link className="boton_elegante" href="/reach-us">
+                        <Link className="boton_elegante" href="/services/digital-experience">
                         Reach Us
                         </Link>
                         </div>
@@ -603,7 +609,7 @@ const Ourstory = () => {
                     <div className={styles.pmidd}>
                         <h4 data-aos="fade-up" className={styles.promtext}>Wrap Your Products in Creativity!</h4>
                         <div data-aos="fade-up">
-                        <Link className="boton_elegante" href="/reach-us">
+                        <Link className="boton_elegante" href="/services/packaging">
                         Reach Us
                         </Link>
                         </div>
@@ -694,7 +700,7 @@ const Ourstory = () => {
                     <div className={styles.pmidd}>
                         <h4 data-aos="fade-up" className={styles.promtext}>Launch Your Online Store with Us!</h4>
                         <div data-aos="fade-up">
-                        <Link className="boton_elegante" href="/reach-us">
+                        <Link className="boton_elegante" href="/services/ecommerce">
                         Reach Us
                         </Link>
                         </div>

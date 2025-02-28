@@ -213,7 +213,6 @@ return(
               <Link href="/portfolio" className="mitem active">
                 Portfolio
               </Link>
-              <div className="border-bottom"></div>
             </div>
 
             <div className="menuitem">
@@ -231,6 +230,12 @@ return(
             <div className="menuitem">
               <Link href="/reach-us" className="mitem">
                 Reach us
+              </Link>
+            </div>
+
+            <div className="menuitem">
+              <Link href="/blog" className="mitem">
+                Blogs
               </Link>
             </div>
 
@@ -282,7 +287,7 @@ return(
           </div>
         </div>
         <div className="mcopy">
-        <p>© 2024 Doodlo | All Rights Reserved | Terms of Use | Privacy Policy</p>
+        <p>© 2025 Doodlo | All Rights Reserved | <Link href="/terms-of-use" className="lcopy">Terms of Use</Link> |<Link href="/privacy-policy" className="lcopy"> Privacy Policy </Link> </p>
         </div>
       </div>
     </div>
