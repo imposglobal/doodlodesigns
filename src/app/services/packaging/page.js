@@ -17,6 +17,29 @@ gsap.registerPlugin(ScrollTrigger);
 
 const packaging = () => {
 
+  // Meta tags
+       useEffect(() => {
+          document.title = "Leading Packaging Design Agency | Custom Packaging Solutions";
+          const descriptionTag = document.querySelector('meta[name="description"]');
+          if (descriptionTag) {
+          descriptionTag.setAttribute(
+          "content",
+          "Strengthen your brand with a top packaging design agency in India & UK. Doodlo Design Studio crafts custom packaging solutions that stand out."
+          );
+          }
+      
+          // Update the meta keywords dynamically
+          const keywordsTag = document.querySelector('meta[name="keywords"]');
+          if (keywordsTag) {
+          keywordsTag.setAttribute("content", " ");
+          }
+      
+          const canonicalTag = document.querySelector('link[rel="canonical"]');
+          if (canonicalTag) {
+          canonicalTag.setAttribute("href", "https://doodlodesigns.com/services/packaging"); 
+          } 
+        }, []);
+
 
   const steps = [
     { title: 'Unique, Bespoke Packaging Designs', image: '/home/services/packaging/p1.webp' },
@@ -589,7 +612,7 @@ const handleChange = (e) => {
                 layout="responsive"
                 width={100}
                 height={37}
-                priority
+                priority={true}
                 style={{ transform: `rotate(${rotation}deg)` }}
                />
                </div>

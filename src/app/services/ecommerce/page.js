@@ -17,6 +17,29 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ecommerce = () => {
 
+  // Meta tags
+     useEffect(() => {
+        document.title = "The Best E-commerce Services for your Online Store | Doodlo Design Studio";
+        const descriptionTag = document.querySelector('meta[name="description"]');
+        if (descriptionTag) {
+        descriptionTag.setAttribute(
+        "content",
+        "At Doodlo Design Studio, we offer end to end custom ecommerce design, development, packaging & branding services for scalable, high-converting stores."
+        );
+        }
+    
+        // Update the meta keywords dynamically
+        const keywordsTag = document.querySelector('meta[name="keywords"]');
+        if (keywordsTag) {
+        keywordsTag.setAttribute("content", " ");
+        }
+    
+        const canonicalTag = document.querySelector('link[rel="canonical"]');
+        if (canonicalTag) {
+        canonicalTag.setAttribute("href", "https://doodlodesigns.com/services/ecommerce"); 
+        } 
+      }, []);
+
 
   const steps = [
     { title: 'High-Conversion Online Stores', image: '/home/services/ecommerce/e1.webp' },
@@ -592,7 +615,7 @@ const handleChange = (e) => {
                 layout="responsive"
                 width={100}
                 height={37}
-                priority
+                priority={true}
                 style={{ transform: `rotate(${rotation}deg)` }}
                />
                </div>

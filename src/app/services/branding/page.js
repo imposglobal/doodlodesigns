@@ -18,6 +18,30 @@ gsap.registerPlugin(ScrollTrigger);
 
 const branding = () => {
 
+  // Meta tags
+
+  useEffect(() => {
+    document.title = "Your Go-To Branding Agency in India & UK | Doodlo Desgin Studio";
+    const descriptionTag = document.querySelector('meta[name="description"]');
+    if (descriptionTag) {
+    descriptionTag.setAttribute(
+    "content",
+    "Craft a unique brand identity with expert branding services. From logo design to rebranding, we create impactful, strategic, and memorable brand experiences."
+    );
+    }
+
+    // Update the meta keywords dynamically
+    const keywordsTag = document.querySelector('meta[name="keywords"]');
+    if (keywordsTag) {
+    keywordsTag.setAttribute("content", " ");
+    }
+
+    const canonicalTag = document.querySelector('link[rel="canonical"]');
+    if (canonicalTag) {
+    canonicalTag.setAttribute("href", "https://doodlodesigns.com/services/branding"); 
+    } 
+  }, []);
+
 
   const steps = [
     { title: 'Custom-Tailored Branding Solutions', image: '/home/services/branding/spro1.png' },
@@ -591,7 +615,7 @@ const handleChange = (e) => {
                 layout="responsive"
                 width={100}
                 height={37}
-                priority
+                priority={true}
                 style={{ transform: `rotate(${rotation}deg)` }}
                />
                </div>

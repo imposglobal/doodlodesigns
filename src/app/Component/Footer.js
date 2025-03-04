@@ -61,7 +61,6 @@ const Footer = () => {
                             <p className={styles.plink}><a className={styles.flinks} href='/services/branding'>Branding Design  </a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='/services/digital-experience'>Digital Experience </a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='/services/packaging'>Packaging Design</a></p>
-                            <p className={styles.plink}><a className={styles.flinks} href='#'>Web Design & Development</a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Social Media</a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Publication</a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='/services/ecommerce'>E-commerce Experience</a></p>
@@ -259,7 +258,6 @@ const Footer = () => {
                             <p className={styles.plink}><a className={styles.flinks} href='/services/branding'>Branding Design  </a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='/services/digital-experience'>Digital Experience </a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='/services/packaging'>Packaging Design</a></p>
-                            <p className={styles.plink}><a className={styles.flinks} href='#'>Web Design & Development</a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Social Media</a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='#'>Publication</a></p>
                             <p className={styles.plink}><a className={styles.flinks} href='/services/ecommerce'>E-commerce Experience</a></p>

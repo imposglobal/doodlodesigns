@@ -215,7 +215,7 @@ const Ourstory = () => {
                         </div>
                         <Image 
                                     className={styles.ourimg1}
-                                    src="/home/service/service1.png"
+                                    src="/home/service/service1.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
@@ -253,7 +253,7 @@ const Ourstory = () => {
                         </div>
                         <Image 
                                     className={styles.ourimg1}
-                                    src="/home/service/service2.png"
+                                    src="/home/service/service2.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
@@ -290,7 +290,7 @@ const Ourstory = () => {
                         </div>
                         <Image 
                                     className={styles.ourimg1}
-                                    src="/home/service/service3.png"
+                                    src="/home/service/service3.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}
@@ -327,7 +327,7 @@ const Ourstory = () => {
                         </div>
                         <Image 
                                     className={styles.ourimg1}
-                                    src="/home/service/service4.png"
+                                    src="/home/service/service4.webp"
                                     alt="Next.js Logo"
                                     layout="responsive"
                                     width={100}

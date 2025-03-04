@@ -17,6 +17,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 const digital = () => {
 
+// Meta tags
+   useEffect(() => {
+      document.title = "Leading Web Design & Development Agency in India & UK";
+      const descriptionTag = document.querySelector('meta[name="description"]');
+      if (descriptionTag) {
+      descriptionTag.setAttribute(
+      "content",
+      "Enhance engagement with the leading web design & development agency. Doodlo Design Studio creates high-performance websites that boost UX, conversions, & branding for your business."
+      );
+      }
+  
+      // Update the meta keywords dynamically
+      const keywordsTag = document.querySelector('meta[name="keywords"]');
+      if (keywordsTag) {
+      keywordsTag.setAttribute("content", " ");
+      }
+  
+      const canonicalTag = document.querySelector('link[rel="canonical"]');
+      if (canonicalTag) {
+      canonicalTag.setAttribute("href", "https://doodlodesigns.com/services/digital-experience"); 
+      } 
+    }, []);
 
   const steps = [
     { title: 'Custom, High-Performance Websites', image: '/home/services/digital/d1.webp' },
@@ -591,7 +613,7 @@ const handleChange = (e) => {
                 layout="responsive"
                 width={100}
                 height={37}
-                priority
+                priority={true}
                 style={{ transform: `rotate(${rotation}deg)` }}
                />
                </div>

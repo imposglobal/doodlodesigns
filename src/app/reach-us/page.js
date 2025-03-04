@@ -642,7 +642,7 @@ const handleChange = (e) => {
                 layout="responsive"
                 width={100}
                 height={37}
-                priority
+                priority={true}
                 style={{ transform: `rotate(${rotation}deg)` }}
                />
                </div>
